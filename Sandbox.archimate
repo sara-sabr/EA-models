@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="sandbox" id="f959d1ef-2707-438f-be19-d162292beafe" version="4.4.0">
-  <folder name="Strategy" id="5b3f352a-ad45-40d6-ba13-dac3acf6da58" type="strategy"/>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="sandbox" id="f959d1ef-2707-438f-be19-d162292beafe" version="4.6.0">
+  <folder name="Strategy" id="5b3f352a-ad45-40d6-ba13-dac3acf6da58" type="strategy">
+    <element xsi:type="archimate:Capability" name="Capability" id="a241628d-a4f9-430d-8f22-680e3ffe8bf4"/>
+  </folder>
   <folder name="Business" id="f5aee221-1d95-422e-a804-4bfcd1d0f8ec" type="business"/>
   <folder name="Application" id="b012a100-be9f-4cd3-b64e-3810bb4a09d1" type="application">
     <element xsi:type="archimate:ApplicationComponent" name="Application Component A " id="57c556b9-b349-4888-8f43-b8394de7269c"/>
@@ -134,6 +136,9 @@ Two Application Components collaborate in transaction administration: an Account
         <sourceConnection xsi:type="archimate:Connection" id="72d501ac-60b5-4b5d-9241-b048f61f8310" source="bd80d61e-0a2f-439c-a30f-3c77fce0eb92" target="e4fcaef3-17e0-439c-b513-a6dd19fa2d61" archimateRelationship="0ba81039-3369-446a-b383-7e72ddd3a486">
           <bendpoint startX="-24" startY="45" endX="-24" endY="-39"/>
         </sourceConnection>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3ebfcdca-29c0-4332-830b-da40ff403a73" archimateElement="a241628d-a4f9-430d-8f22-680e3ffe8bf4">
+        <bounds x="31" y="87" width="120" height="55"/>
       </child>
     </element>
   </folder>
