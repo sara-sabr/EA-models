@@ -1,0 +1,3 @@
+## In a nutshell
+
+This is where we keep external files pertinent to the DevOps effort, e.g. the PDFs someone sent us ...
