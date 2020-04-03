@@ -17,7 +17,7 @@ The toolbox we use:
   
   ![Archi and coArchi versions](/Documents/Services/Projects/ESDC-EA-SAS/archi_version.png)
   
-  * Atom: TBD
+* Atom: TBD
 
 ## How to contribute (procedures and guidelines)
 
