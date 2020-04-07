@@ -1,7 +1,6 @@
 # Procedures and Guidelines for distributed Archi Modeling collaboration <!-- omit in toc -->
 
 The following are procedures and guidelines that contributors to the same Archi models should follow.
-You must have the [coArchi plugin](https://www.archimatetool.com/plugins/#coArchi) plugin installed.
 
 - [Procedures](#procedures)
   - [Setting your Github account security settings (optional)](#setting-your-github-account-security-settings-optional)
@@ -103,15 +102,4 @@ _Note_: The easiest way to get the Git repository URL is to go on GitHub wiht yo
 
 ## Guidelines
 
-Barious guidelines contributors should use to enhance collaboration and reduce frictions between the teams
-
-## Behind the scene information
-
-The following is information that may help some contributors familiar with git and GitHug concepts better understand what is happening behind the scene.
-
-* In Archi, a **Workspace** is the equivalent of a **local git repository**
-* In Archi, a **single model** is associated to a **single git repository**
-* in Archi, **publishing** is equivalent of **comitting** a change to a local repository and **pushing** to the remote git repository
-* In Archi, **importing a Remote Model to a Workspace** is equivalent of cloning a remote repository into the local computer, as a local repository
-* In Archi, **adding a Local Model to Workspace and Publish** is equivalent as **initiating** a local git repository, **adding** the local model files to staged area, **committing** that local change, and **pushing** those changes to the remote git repository
-* In Archi, the **local Workspace** gets created in the local user's AppData (Windows) folder, by default, as a **local git repository**. This setting can be changed by modifying the "Edit &gt; Preferences &gt; Collaboration &gt; Collaboration Workspace folder" parameters
+Various guidelines contributors should use to enhance collaboration and reduce frictions between the teams
