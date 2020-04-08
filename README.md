@@ -28,6 +28,10 @@ You will **need** to understand the [concepts of a distributed version control s
 
 [See here procedures and guidelines for contributing to Archi models](procedures_archi.md)
 
+### For Review
+
+![DevOps Lifecycle Mesh](/_assets/images/DevOps_Lifecycle_Mesh.png)
+
 ### General repository contributions
 
 to come...
