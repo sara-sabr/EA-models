@@ -133,17 +133,33 @@ providing an effective interface that helps your API's consumers better understa
  &#xD;
 The coordination and execution of activities that enable the ongoing management and operation of products or services in the computing environment</documentation>
     </element>
-    <element xsi:type="archimate:BusinessFunction" name="Service Bus Operations" id="debd1229-4b29-46ce-ad57-4caa0aa9a502"/>
+    <element xsi:type="archimate:BusinessFunction" name="Service Bus Operations" id="debd1229-4b29-46ce-ad57-4caa0aa9a502">
+      <documentation>The ESB platform acts as a shared messaging layer for connecting applications and other services throughout an enterprise computing infrastructure. It supplements its core asynchronous messaging backbone with intelligent transformation and routing to ensure messages are passed reliably. Services participate in the ESB using either web services messaging standards or the Java Message System (JMS). Originally defined by analysts at Gartner, ESB is increasingly seen as a core component in a service-oriented infrastructure. </documentation>
+    </element>
     <element xsi:type="archimate:BusinessFunction" name="API Gateway" id="e3cb1cd0-68de-4334-bd8a-72fad5192d3a"/>
     <element xsi:type="archimate:BusinessFunction" name="Message Fabric" id="2b5d2cd9-9110-4888-9941-469b26c0262a"/>
-    <element xsi:type="archimate:BusinessFunction" name="API Store Operations" id="8dbe7640-bc53-40be-b285-6e416640261f"/>
-    <element xsi:type="archimate:BusinessFunction" name="CI/CD Pipeline" id="755bf645-421d-47b5-9147-45ba9192c2f5"/>
-    <element xsi:type="archimate:BusinessFunction" name="API Tooling Operations" id="7f96ce85-78f1-4a1e-bc8c-3ebc79b0f688"/>
-    <element xsi:type="archimate:BusinessFunction" name="SOA Operations" id="6d20590a-55d3-4c00-9644-e5e9340e4796"/>
-    <element xsi:type="archimate:BusinessFunction" name="MFT Operations" id="b33ae80c-a84a-448b-9679-f985662ce2cf"/>
+    <element xsi:type="archimate:BusinessFunction" name="API Store Operations" id="8dbe7640-bc53-40be-b285-6e416640261f">
+      <documentation>The API Store is a Web application which hosts published APIs. It provides a structured GUI, designed for API consumers and partners to self-register to find, explore, subscribe to and evaluate available resources.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="CI/CD Pipeline" id="755bf645-421d-47b5-9147-45ba9192c2f5">
+      <documentation>The CI/CD pipeline is a set of automated processes that allow Developers and DevOps professionals to reliably and efficiently compile, build and deploy their code to their production compute platforms. The most common components of a pipeline are; build automation/continuous integration, test automation, and deployment automation.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="API Tooling Operations" id="7f96ce85-78f1-4a1e-bc8c-3ebc79b0f688">
+      <documentation>The API Tooling platform includes components to assist API developers to design, build, document, test APIs according to specifications-based standards.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="SOA Operations" id="6d20590a-55d3-4c00-9644-e5e9340e4796">
+      <documentation>The SOA platform enables system developers to set up and manage services and to orchestrate them into composite applications and business processes. It provides the tools to design, implement, manage, and maintain service-oriented computing infrastructure across the enterprise,</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="MFT Operations" id="b33ae80c-a84a-448b-9679-f985662ce2cf">
+      <documentation>The MFT platform enables secure file exchange and management with internal departments and external partners. It protects against inadvertent access to unsecured files in the end-to-end transfer of files. It includes monitoring and reporting capabilities.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessFunction" name="Infrastructure" id="0170cf62-9e2b-41ad-9a82-618b71c42fb1"/>
-    <element xsi:type="archimate:BusinessFunction" name="On-Premise Operations" id="eb3655a1-4a08-492d-95df-452f5112db3e"/>
-    <element xsi:type="archimate:BusinessFunction" name="Cloud Infrastructure Operations" id="a8181b0e-4768-42f4-9ac4-5ddceb100225"/>
+    <element xsi:type="archimate:BusinessFunction" name="On-Premise Operations" id="eb3655a1-4a08-492d-95df-452f5112db3e">
+      <documentation>&quot;On-prem&quot;refers to private data centres that companies house in their own facilities and maintain themselves. On-prem infrastructure can be used to run private clouds, in which compute resources are virtualised in much the same way as those of public cloud.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Cloud Infrastructure Operations" id="a8181b0e-4768-42f4-9ac4-5ddceb100225">
+      <documentation>Infrastructure as a service (IaaS) is a form of cloud computing that provides virtualized computing resources over the internet instantly.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessFunction" name="Business Service Management" id="dbd1b906-fc8e-4103-8997-1e4104a02470">
       <documentation>Business Services are services that perform specific business functions and are required for the successful completion of a business process. They might also be called Application Services since they are used to develop composite services and business applications that automate business processes.</documentation>
     </element>
@@ -1984,22 +2000,22 @@ Financial System</content>
         <sourceConnection xsi:type="archimate:Connection" id="49f5acea-5932-42ce-8a5a-86d5d88b7092" source="cfe838c4-b29e-4561-a4d7-cca1ddf5b8d4" target="36e63c7a-7e46-4ef7-8ecc-41a01302ef9f" archimateRelationship="c3f60228-10bf-41ae-aad9-535814ca6767"/>
         <sourceConnection xsi:type="archimate:Connection" id="c5d9714e-2f2f-407b-b9bc-6ed751fa07fb" source="cfe838c4-b29e-4561-a4d7-cca1ddf5b8d4" target="4c51b279-48ca-479e-802e-8034ab11c502" archimateRelationship="ee0970fd-8860-42df-9653-e78a9b342159"/>
         <child xsi:type="archimate:DiagramObject" id="4c51b279-48ca-479e-802e-8034ab11c502" targetConnections="c5d9714e-2f2f-407b-b9bc-6ed751fa07fb" archimateElement="5fe57f52-1a42-4664-be42-80529c81c0ad">
-          <bounds x="12" y="36" width="276" height="142"/>
+          <bounds x="12" y="24" width="276" height="175"/>
           <sourceConnection xsi:type="archimate:Connection" id="6a964434-0afc-4022-88f3-96b67496fb05" source="4c51b279-48ca-479e-802e-8034ab11c502" target="c1151b30-120c-4a91-9078-ec5c55e54af6" archimateRelationship="2525fa8a-92cc-4e3b-bb1b-d6edad7a034d"/>
           <sourceConnection xsi:type="archimate:Connection" id="23fb5418-37bb-4db6-9e12-50c5f6ca9efb" source="4c51b279-48ca-479e-802e-8034ab11c502" target="b1960d4f-cb80-4f89-adb8-2c6c245f27e2" archimateRelationship="f23686b0-35ec-498d-bd89-af9437152c20"/>
           <sourceConnection xsi:type="archimate:Connection" id="9c769a4a-5207-41e8-a975-1e249e946db1" source="4c51b279-48ca-479e-802e-8034ab11c502" target="21bc9856-67a5-4b76-ae24-d8ac54578aa9" archimateRelationship="e7c899a5-52a2-45c9-8f46-a02911d169ed"/>
           <sourceConnection xsi:type="archimate:Connection" id="7b9bf00f-1325-4817-80bc-10a10d4dd261" source="4c51b279-48ca-479e-802e-8034ab11c502" target="18bf0202-0ff9-4958-ae10-a3e6e0864dc1" archimateRelationship="8f9c438e-b7e1-4c7d-80e5-d9b6bcda3e17"/>
           <child xsi:type="archimate:DiagramObject" id="c1151b30-120c-4a91-9078-ec5c55e54af6" targetConnections="6a964434-0afc-4022-88f3-96b67496fb05" archimateElement="3145f942-d04c-4787-9c8f-c0749f69e321">
-            <bounds x="12" y="24" width="120" height="55"/>
+            <bounds x="12" y="36" width="120" height="55"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="21bc9856-67a5-4b76-ae24-d8ac54578aa9" targetConnections="9c769a4a-5207-41e8-a975-1e249e946db1" archimateElement="1068ed25-dac0-4c3c-ab2f-950c804c4c47">
-            <bounds x="11" y="84" width="120" height="55"/>
+            <bounds x="11" y="96" width="120" height="55"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="b1960d4f-cb80-4f89-adb8-2c6c245f27e2" targetConnections="23fb5418-37bb-4db6-9e12-50c5f6ca9efb" archimateElement="bfe9fb5c-d27a-4a0c-9859-6ea2569d3712">
-            <bounds x="144" y="24" width="120" height="55"/>
+            <bounds x="144" y="36" width="120" height="55"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="18bf0202-0ff9-4958-ae10-a3e6e0864dc1" targetConnections="7b9bf00f-1325-4817-80bc-10a10d4dd261" archimateElement="af8707f8-5a1b-4968-8868-423de38f7ebc">
-            <bounds x="143" y="84" width="120" height="55"/>
+            <bounds x="143" y="96" width="120" height="55"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="4e530270-589f-4a2f-9b89-348b352e8d53" targetConnections="52315367-352f-43f2-b489-a5f5eda414b7" archimateElement="9c2f8fce-0eab-435a-9fb2-359258745324">
