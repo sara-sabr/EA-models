@@ -136,8 +136,16 @@ The coordination and execution of activities that enable the ongoing management 
     <element xsi:type="archimate:BusinessFunction" name="Service Bus Operations" id="debd1229-4b29-46ce-ad57-4caa0aa9a502">
       <documentation>The ESB platform acts as a shared messaging layer for connecting applications and other services throughout an enterprise computing infrastructure. It supplements its core asynchronous messaging backbone with intelligent transformation and routing to ensure messages are passed reliably. Services participate in the ESB using either web services messaging standards or the Java Message System (JMS). Originally defined by analysts at Gartner, ESB is increasingly seen as a core component in a service-oriented infrastructure. </documentation>
     </element>
-    <element xsi:type="archimate:BusinessFunction" name="API Gateway" id="e3cb1cd0-68de-4334-bd8a-72fad5192d3a"/>
-    <element xsi:type="archimate:BusinessFunction" name="Message Fabric" id="2b5d2cd9-9110-4888-9941-469b26c0262a"/>
+    <element xsi:type="archimate:BusinessFunction" name="API Gateway" id="e3cb1cd0-68de-4334-bd8a-72fad5192d3a">
+      <documentation>An API gateway is the core of an API management solution. It acts as the single entryway into a system allowing multiple APIs or microservices to act cohesively and provide a uniform experience to the user. The most important role the API gateway plays is ensuring reliable processing of every API call. In addition, the API gateway provides the ability to design API specs, help provide enterprise-grade security, and manage APIs centrally. &#xD;
+https://apigee.com/about/cp/api-gateway</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Message Fabric" id="2b5d2cd9-9110-4888-9941-469b26c0262a">
+      <documentation>The message fabric is a messaging infrastructure that connects the system components and allows them to communicate.&#xD;
+Messages are transmitted to the components over the message fabric. The message fabric constitutes the message queues to write and retrieve application-specific data to and from the queues without the requirement for a private, dedicated connection to link the components.&#xD;
+https://www.ibm.com/support/knowledgecenter/SSYJCD_1.0.0/com.ibm.help.meigV100.doc/com.ibm.help.meg.welcome.doc/meig_as4_messagefabricoverview.html&#xD;
+</documentation>
+    </element>
     <element xsi:type="archimate:BusinessFunction" name="API Store Operations" id="8dbe7640-bc53-40be-b285-6e416640261f">
       <documentation>The API Store is a Web application which hosts published APIs. It provides a structured GUI, designed for API consumers and partners to self-register to find, explore, subscribe to and evaluate available resources.</documentation>
     </element>
@@ -200,7 +208,12 @@ The coordination and execution of activities that enable the ongoing management 
     <element xsi:type="archimate:BusinessFunction" name="CI/CD Pipeline" id="227d28c5-8fed-4e62-aaa6-697c33461c9c"/>
     <element xsi:type="archimate:BusinessFunction" name="Feedback" id="426e30cc-1989-4514-8e2e-81eadcc5900e"/>
     <element xsi:type="archimate:BusinessFunction" name="UAT" id="8434a930-1c1e-4e42-9a25-89dea34f1dbe"/>
-    <element xsi:type="archimate:BusinessFunction" name="Event Broker" id="654ee258-e717-4146-8c64-ed5535c566aa"/>
+    <element xsi:type="archimate:BusinessFunction" name="Event Broker" id="654ee258-e717-4146-8c64-ed5535c566aa">
+      <documentation>An event broker is middleware software, appliance or SaaS used to transmit events between event producers and consumers in a publish-subscribe pattern.&#xD;
+According to Gartner, event brokers “are middleware products that are used to facilitate, mediate and enrich the interactions of sources and handlers in event-driven computing.”&#xD;
+“Event-driven architectures (EDA) is inherently intermediated. Therefore, the intermediating role of event brokering is a definitional part of EDA. All implementations of event-driven applications must use some technology in the role of an event broker.”*&#xD;
+https://solace.com/what-is-an-event-broker/</documentation>
+    </element>
     <element xsi:type="archimate:BusinessInteraction" name="Business Interaction" id="37c8c3e3-e1ad-4a29-80f4-67e51d7698b7"/>
     <element xsi:type="archimate:BusinessCollaboration" name="ESDC Interoperability Platform (EIP)" id="2a330583-7585-4eea-8a04-a70a516d0d23"/>
   </folder>
@@ -677,6 +690,8 @@ Features (Consul lingo):&#xD;
     <element xsi:type="archimate:AssignmentRelationship" id="c3f60228-10bf-41ae-aad9-535814ca6767" source="2a330583-7585-4eea-8a04-a70a516d0d23" target="dbd1b906-fc8e-4103-8997-1e4104a02470"/>
     <element xsi:type="archimate:AssignmentRelationship" id="f10f76ce-cfdd-4fb3-874c-4826d487b6c3" source="2a330583-7585-4eea-8a04-a70a516d0d23" target="9c2f8fce-0eab-435a-9fb2-359258745324"/>
     <element xsi:type="archimate:AssignmentRelationship" id="ee0970fd-8860-42df-9653-e78a9b342159" source="2a330583-7585-4eea-8a04-a70a516d0d23" target="5fe57f52-1a42-4664-be42-80529c81c0ad"/>
+    <element xsi:type="archimate:CompositionRelationship" id="6e17d97e-1cfc-4261-9b09-6b76b4cebfa1" source="cd55c327-5467-4227-bc3a-71a85882625c" target="26e4f2c8-c531-46d2-acb0-d525418c1b7c"/>
+    <element xsi:type="archimate:ServingRelationship" id="ef6f5f2a-3f64-45ae-9f06-71d8d640af34" source="26e4f2c8-c531-46d2-acb0-d525418c1b7c" target="dbd1b906-fc8e-4103-8997-1e4104a02470"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
@@ -733,6 +748,7 @@ Features (Consul lingo):&#xD;
         <sourceConnection xsi:type="archimate:Connection" id="01944377-9f83-4abe-b2cc-2f1b44e2e817" source="6b4e1c55-b206-4604-8cd3-1b17fdd96c6f" target="4e1caf79-fbb7-44df-9c44-0c94d4e74127" archimateRelationship="252a5cf0-c27a-4f5d-b797-d24bd9227ff3"/>
         <sourceConnection xsi:type="archimate:Connection" id="f132582b-b797-4b64-9ffc-711377eb09b7" source="6b4e1c55-b206-4604-8cd3-1b17fdd96c6f" target="f76c2496-517d-46a0-80ac-71e77992f1b3" archimateRelationship="7415ccd7-eca5-4833-9187-09598ab04084"/>
         <sourceConnection xsi:type="archimate:Connection" id="18d6b81e-2b47-4c46-a1f1-72c58120cbe4" source="6b4e1c55-b206-4604-8cd3-1b17fdd96c6f" target="80335518-6210-4256-a2eb-afc7495f94c9" archimateRelationship="c5e525c9-5a63-4db2-baca-62e45aee88b5"/>
+        <sourceConnection xsi:type="archimate:Connection" id="36c2e0bc-54e1-4a92-aff6-d597da22f09c" source="6b4e1c55-b206-4604-8cd3-1b17fdd96c6f" target="b0f6b45e-64f9-4731-92cd-f8bb63383975" archimateRelationship="6e17d97e-1cfc-4261-9b09-6b76b4cebfa1"/>
         <child xsi:type="archimate:DiagramObject" id="dc569883-a13d-434c-94f7-ebeda5a8e8a7" targetConnections="9a472812-6465-449f-ab33-c497ed13b793" archimateElement="a7f18948-38f6-44d3-bbf8-b7b6172030be">
           <bounds x="24" y="49" width="301" height="25"/>
         </child>
@@ -869,7 +885,7 @@ Features (Consul lingo):&#xD;
           <bounds x="276" y="276" width="121" height="55"/>
         </child>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="f76c2496-517d-46a0-80ac-71e77992f1b3" targetConnections="f132582b-b797-4b64-9ffc-711377eb09b7" archimateElement="dbd1b906-fc8e-4103-8997-1e4104a02470">
+      <child xsi:type="archimate:DiagramObject" id="f76c2496-517d-46a0-80ac-71e77992f1b3" targetConnections="f132582b-b797-4b64-9ffc-711377eb09b7 323c1566-da8d-4361-a09d-fb6def186b61" archimateElement="dbd1b906-fc8e-4103-8997-1e4104a02470">
         <bounds x="1296" y="216" width="277" height="397"/>
         <sourceConnection xsi:type="archimate:Connection" id="d918bd82-dadf-4548-8dc6-2ca48cbd549c" source="f76c2496-517d-46a0-80ac-71e77992f1b3" target="17a0278a-3dd8-4251-94ec-49668e456ded" archimateRelationship="646770a3-8025-4dab-8bd0-ab468918509b"/>
         <sourceConnection xsi:type="archimate:Connection" id="2e22063e-3e9e-4ff3-8a9d-0116ba001549" source="f76c2496-517d-46a0-80ac-71e77992f1b3" target="136584d2-ff64-48bf-b424-df10a377bbc8" archimateRelationship="4a3e499a-4014-428c-be60-0a3bd6b2fbac"/>
@@ -896,7 +912,7 @@ Features (Consul lingo):&#xD;
           <bounds x="144" y="168" width="121" height="55"/>
         </child>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="b0f6b45e-64f9-4731-92cd-f8bb63383975" targetConnections="a067482f-6443-4d24-8d64-4533aca8ad34 1621ada0-18ca-4b91-8ea7-2173ff2dc197" archimateElement="26e4f2c8-c531-46d2-acb0-d525418c1b7c">
+      <child xsi:type="archimate:DiagramObject" id="b0f6b45e-64f9-4731-92cd-f8bb63383975" targetConnections="a067482f-6443-4d24-8d64-4533aca8ad34 1621ada0-18ca-4b91-8ea7-2173ff2dc197 36c2e0bc-54e1-4a92-aff6-d597da22f09c" archimateElement="26e4f2c8-c531-46d2-acb0-d525418c1b7c">
         <bounds x="804" y="216" width="445" height="397"/>
         <sourceConnection xsi:type="archimate:Connection" id="9d008d8d-1dde-4df1-9757-601d7244db68" source="b0f6b45e-64f9-4731-92cd-f8bb63383975" target="2fb1ef71-e206-48cc-9dc5-62f6b90a2984" archimateRelationship="0b69dda8-772b-4eea-8131-4baa20f1380d"/>
         <sourceConnection xsi:type="archimate:Connection" id="5919124f-2f38-4470-9a74-e37672605aee" source="b0f6b45e-64f9-4731-92cd-f8bb63383975" target="1e261be7-c0f1-4019-a80f-569753a2fd34" archimateRelationship="a33573f2-4f50-444d-9029-5c510c622510"/>
@@ -906,6 +922,7 @@ Features (Consul lingo):&#xD;
         <sourceConnection xsi:type="archimate:Connection" id="bb190ed6-2fb8-4387-991e-d9f9c6cc77ec" source="b0f6b45e-64f9-4731-92cd-f8bb63383975" target="4ae3c318-ddd2-48fd-bb59-e24a9bba2e9a" archimateRelationship="164b2298-37f3-4f18-88ff-89c18910d89d"/>
         <sourceConnection xsi:type="archimate:Connection" id="7cfa2ba3-6693-4b24-9295-834059ef6ec8" source="b0f6b45e-64f9-4731-92cd-f8bb63383975" target="cce87674-6a03-4f84-9847-0cc50b9af9ce" archimateRelationship="fb2e0eec-1d78-4f02-a790-412c11bc90c0"/>
         <sourceConnection xsi:type="archimate:Connection" id="7e29f4c9-2915-4e3d-bf95-55bdc81dc307" source="b0f6b45e-64f9-4731-92cd-f8bb63383975" target="34de4c7e-0781-4f27-bf65-89f15ebd3b3d" archimateRelationship="3f7840a3-c78f-4f88-90dc-05cfdb33cb08"/>
+        <sourceConnection xsi:type="archimate:Connection" id="323c1566-da8d-4361-a09d-fb6def186b61" source="b0f6b45e-64f9-4731-92cd-f8bb63383975" target="f76c2496-517d-46a0-80ac-71e77992f1b3" archimateRelationship="ef6f5f2a-3f64-45ae-9f06-71d8d640af34"/>
         <child xsi:type="archimate:DiagramObject" id="986aa62c-478f-4b7a-bb32-b3daed7ab73b" archimateElement="debd1229-4b29-46ce-ad57-4caa0aa9a502">
           <bounds x="60" y="216" width="121" height="55"/>
         </child>
@@ -942,7 +959,7 @@ Features (Consul lingo):&#xD;
           <bounds x="192" y="216" width="121" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="5a0ff6e2-834d-4f3f-95ab-f3c8e2280425" archimateElement="654ee258-e717-4146-8c64-ed5535c566aa">
-          <bounds x="324" y="24" width="109" height="241"/>
+          <bounds x="324" y="24" width="109" height="55"/>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="6fe3a8e8-3726-4100-b1f9-33ec330b3fe4" targetConnections="196eaa69-2ed7-443d-bcbb-e2130386f740" archimateElement="1068ed25-dac0-4c3c-ab2f-950c804c4c47">
