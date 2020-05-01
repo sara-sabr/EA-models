@@ -2197,5 +2197,80 @@ Document Management</content>
         <content>Rules Engine</content>
       </child>
     </element>
+    <element xsi:type="archimate:SketchModel" name="Income Security COVID-19 Benefit" id="eb1472eb-ed15-41e8-a8df-b23e0a05e23a">
+      <child xsi:type="archimate:SketchModelSticky" id="4024320c-1494-4bce-a01d-6268967a09fa" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="141" y="204" width="135" height="70"/>
+        <sourceConnection id="31b359a5-2e60-48d9-9971-54c9d1e4534d" source="4024320c-1494-4bce-a01d-6268967a09fa" target="59c10407-04fa-47a3-b9f7-77063eba152e"/>
+        <content>OAS Data</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="b4003345-553b-4cc1-959c-7bd536c9b9c8" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="141" y="300" width="135" height="70"/>
+        <sourceConnection id="0cff645c-af31-431e-8fec-59f02ce0baad" source="b4003345-553b-4cc1-959c-7bd536c9b9c8" target="59c10407-04fa-47a3-b9f7-77063eba152e"/>
+        <content>CPP-D Data</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="2b082d31-e94a-456d-8940-762dfb6ae770" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="141" y="414" width="135" height="70"/>
+        <sourceConnection id="d4a8b293-3449-48b5-a478-d7fe34f29bae" source="2b082d31-e94a-456d-8940-762dfb6ae770" target="59c10407-04fa-47a3-b9f7-77063eba152e"/>
+        <content>Veterans Affairs Canada Data</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="59c10407-04fa-47a3-b9f7-77063eba152e" name="Sticky" targetConnections="31b359a5-2e60-48d9-9971-54c9d1e4534d 0cff645c-af31-431e-8fec-59f02ce0baad d4a8b293-3449-48b5-a478-d7fe34f29bae" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="312" y="300" width="135" height="70"/>
+        <sourceConnection id="1764f224-5193-4252-9580-8405f173b120" source="59c10407-04fa-47a3-b9f7-77063eba152e" target="8082eb2c-00dd-40db-a779-b9f797581ccf" type="1"/>
+        <content>Data Analytics</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="8082eb2c-00dd-40db-a779-b9f797581ccf" name="Sticky" targetConnections="1764f224-5193-4252-9580-8405f173b120 ad0577ed-ed27-4ed5-8370-5dadf721704b f9ef49e7-c6b0-4b37-8c22-2d0acbccc434" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="468" y="300" width="135" height="70"/>
+        <content>ISCEB Client Catalog and Payment Instructions</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="9f1e895f-59ad-4091-a4c0-4fa184924a4c" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="636" y="300" width="135" height="70"/>
+        <sourceConnection id="ad0577ed-ed27-4ed5-8370-5dadf721704b" source="9f1e895f-59ad-4091-a4c0-4fa184924a4c" target="8082eb2c-00dd-40db-a779-b9f797581ccf"/>
+        <sourceConnection id="08c95776-9c67-48b1-b5e6-fba74324da1c" name="JV" source="9f1e895f-59ad-4091-a4c0-4fa184924a4c" target="ac654e88-cdef-4d2c-a505-9c8dc8aeb4cd" type="1"/>
+        <sourceConnection id="bf6fbc8b-0f9f-49a8-b11c-407e499bd284" name="Control file" source="9f1e895f-59ad-4091-a4c0-4fa184924a4c" target="c040b551-44b7-48e0-b20d-a60dc6c6fab9" type="1"/>
+        <sourceConnection id="9625d081-e49b-4ad4-91b9-1757e8d37da4" name="Summary Report" source="9f1e895f-59ad-4091-a4c0-4fa184924a4c" target="a1a94f6e-497e-435f-882c-9a105afc0573" type="1"/>
+        <content>Payment Processing</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="ac654e88-cdef-4d2c-a505-9c8dc8aeb4cd" name="Sticky" targetConnections="08c95776-9c67-48b1-b5e6-fba74324da1c" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="636" y="414" width="135" height="70"/>
+        <content>Finacial System</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="c040b551-44b7-48e0-b20d-a60dc6c6fab9" name="Sticky" targetConnections="bf6fbc8b-0f9f-49a8-b11c-407e499bd284 cf5c0295-d39e-4e75-bab5-87f16643c670" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="864" y="300" width="135" height="70"/>
+        <sourceConnection id="03454271-699a-4e9f-919c-d49f1396a7bb" source="c040b551-44b7-48e0-b20d-a60dc6c6fab9" target="f29f3ff2-4f41-484b-ba31-539e3bb0bbda"/>
+        <content>PSPC</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="f29f3ff2-4f41-484b-ba31-539e3bb0bbda" name="Sticky" targetConnections="ec2342d7-c3c6-4c05-909f-9e21f30f10d9 03454271-699a-4e9f-919c-d49f1396a7bb" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="864" y="204" width="135" height="70"/>
+        <content>Payment Data</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="a56b5724-afad-426a-ac99-cda7b0a215d3" name="Sticky" targetConnections="4998a2d7-c4c4-4957-baa5-3bcf2091c6e4 467b0d13-c7d2-4849-a832-6139bc80000b 05dce5aa-c438-4db4-b8c8-327bb9a0de0e" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="636" y="120" width="135" height="70"/>
+        <content>HCCS</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="8d23602a-f9e0-42c8-9a17-d040e2abdd17" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="636" y="204" width="135" height="70"/>
+        <sourceConnection id="f9ef49e7-c6b0-4b37-8c22-2d0acbccc434" source="8d23602a-f9e0-42c8-9a17-d040e2abdd17" target="8082eb2c-00dd-40db-a779-b9f797581ccf"/>
+        <sourceConnection id="ec2342d7-c3c6-4c05-909f-9e21f30f10d9" source="8d23602a-f9e0-42c8-9a17-d040e2abdd17" target="f29f3ff2-4f41-484b-ba31-539e3bb0bbda"/>
+        <sourceConnection id="05dce5aa-c438-4db4-b8c8-327bb9a0de0e" source="8d23602a-f9e0-42c8-9a17-d040e2abdd17" target="a56b5724-afad-426a-ac99-cda7b0a215d3"/>
+        <content>Case Management CRM</content>
+      </child>
+      <child xsi:type="archimate:SketchModelActor" id="b42c6fb7-45de-4387-8b74-48c934e992ac" name="Client">
+        <bounds x="648" y="-12" width="97" height="100"/>
+        <sourceConnection id="467b0d13-c7d2-4849-a832-6139bc80000b" source="b42c6fb7-45de-4387-8b74-48c934e992ac" target="a56b5724-afad-426a-ac99-cda7b0a215d3" type="1"/>
+      </child>
+      <child xsi:type="archimate:SketchModelActor" id="fedf7e08-32f8-4d6c-a175-fb3cf1bcdf6e" name="Agent">
+        <bounds x="1044" y="87" width="97" height="100"/>
+        <sourceConnection id="4998a2d7-c4c4-4957-baa5-3bcf2091c6e4" source="fedf7e08-32f8-4d6c-a175-fb3cf1bcdf6e" target="a56b5724-afad-426a-ac99-cda7b0a215d3" type="1"/>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="a1a94f6e-497e-435f-882c-9a105afc0573" name="Sticky" targetConnections="9625d081-e49b-4ad4-91b9-1757e8d37da4 50b876e0-10e5-4ec3-94a1-7eb556ed5f66" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="864" y="414" width="135" height="70"/>
+        <sourceConnection id="cf5c0295-d39e-4e75-bab5-87f16643c670" name="Payment File" source="a1a94f6e-497e-435f-882c-9a105afc0573" target="c040b551-44b7-48e0-b20d-a60dc6c6fab9" type="1"/>
+        <content>File Repository</content>
+      </child>
+      <child xsi:type="archimate:SketchModelActor" id="38417565-140e-4fc3-a7cb-e65f1401dccd" name="Finacial Officer">
+        <bounds x="1044" y="384" width="97" height="100"/>
+        <sourceConnection id="50b876e0-10e5-4ec3-94a1-7eb556ed5f66" source="38417565-140e-4fc3-a7cb-e65f1401dccd" target="a1a94f6e-497e-435f-882c-9a105afc0573" type="1"/>
+      </child>
+    </element>
   </folder>
 </archimate:model>
