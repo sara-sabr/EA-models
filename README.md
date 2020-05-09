@@ -4,7 +4,6 @@ Here are the recommended ways (tool-agnostic!) to contribute to this repo:
 
 * use [branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) when making changes. These are required to initiate pull requsts
 * always create a pull request to propose changes to the remote repository (GitHub), even if the assignee is yourself;
-* do not alter the model directory manually, it's operated by the coArchi plugin and any manual alteration would most likely break it.
   
 ## In a nutbasket
 
