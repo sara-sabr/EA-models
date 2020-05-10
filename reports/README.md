@@ -1,8 +1,13 @@
 ## EA-models/reports directory
 
 The EA-models/reports directory contains the HTML code of the Archi-generated reports for CommonSandbox.archimate and ReleaseCandidate.archimate. The reports are rendered as GitHub Pages and only the content in master is viewable:
+<<<<<<< HEAD
 * [CommonSandbox Report]("https://sara-sabr.github.io/EA-models/reports/CommonSandbox%20Report/index.html");
 * [ReleaseCandidate Report]('https://sara-sabr.github.io/EA-models/reports/CommonSandbox%20Report/index.html').
+=======
+* [CommonSandbox Report]("https://sara-sabr.github.io/EA-models/reports/CommonSandbox Report/index.html");
+* [ReleaseCandidate Report]('https://sara-sabr.github.io/EA-models/reports/CommonSandbox Report/index.html').
+>>>>>>> 1cec9110888914ce47daea43b6f07582bf7d583c
 
 The workflow for regenerating of these reports is the same as for any other contribution:
 
