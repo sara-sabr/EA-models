@@ -4,7 +4,7 @@ Here are the recommended ways (tool-agnostic!) to contribute to this repo:
 
 * use [branches](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) when making changes. These are required to initiate pull requsts
 * always create a pull request to propose changes to the remote repository (GitHub), even if the assignee is yourself;
-  
+
 ## In a nutbasket
 
 The toolbox we use:
@@ -12,10 +12,10 @@ The toolbox we use:
 * [GitHub Desktop](https://desktop.github.com). See [here](https://youtu.be/S7f8qJscmRE) for a quick video
 * [Archi](https://www.archimatetool.com/download/) .
   * _Note_: For Windows users, the most convenient Archi installation would be the portable ZIP (make sure you download the correct architecture, e.g. x64). The screenshot below shows proven to work versions of Archi (4.6.0).
-  
+
   ![Archi version](/Documents/Services/Projects/ESDC-EA-SAS/archi_version.png)
-  
-* Atom: TBD
+
+* [Atom](https://atom.io/). Very convenient for resolving merge conflicts. See [here](https://youtu.be/HqrkEVWBifw) for a video.
 
 ## How to contribute (procedures and guidelines)
 
@@ -29,7 +29,8 @@ You will **need** to understand the [concepts of a distributed version control s
 
 ### For Review
 
-![DevOps Lifecycle Mesh](/_assets/images/DevOps_Lifecycle_Mesh.png)
+* [CommonSandbox Report](https://sara-sabr.github.io/EA-models/reports/CommonSandbox Report/index.html);
+* [ReleaseCandidate Report](https://sara-sabr.github.io/EA-models/reports/CommonSandbox Report/index.html).
 
 ### General repository contributions
 
