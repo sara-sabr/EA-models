@@ -251,6 +251,7 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:BusinessFunction" name="Solution Train" id="65968819-2406-493d-9a0d-e3e2b6e426f4"/>
     <element xsi:type="archimate:BusinessObject" name="Use Case" id="4e83ea88-5062-4ce4-aa8f-1a8ca18eb60a"/>
     <element xsi:type="archimate:BusinessProcess" name="Storyboarding" id="aed9aa6e-3d0e-4b70-96ee-df2b7d26dbb2"/>
+    <element xsi:type="archimate:Product" name="Cloud Native Computing Foundation Landscape" id="3011511b-ca35-4bd2-9a66-3026e9879e0f"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -296,6 +297,13 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:ApplicationFunction" name="IDE" id="a8720142-b397-4242-b057-30e23e03f8c2"/>
     <element xsi:type="archimate:ApplicationFunction" name="Cloud Service Provider" id="5cfb751d-0d38-42d7-8296-ef026a1ec9d0"/>
     <element xsi:type="archimate:ApplicationFunction" name="Messaging" id="7d4f43f4-6354-4115-9a58-1b425e7652b8"/>
+    <element xsi:type="archimate:ApplicationFunction" name="App Definition and Development" id="0afa003f-28c0-4029-9987-01a6ea9806b2"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Database" id="cdfd270a-c931-46d4-9c33-82e568e6b801"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Streaming &amp; Messaging" id="931afb1c-f02f-4459-bf91-5b400b6fdfef"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Application Definition &amp; Image Build" id="8b63ed11-7b24-4d1f-bc3f-5535b0b4a368"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Continuous Integration &amp; Delivery" id="b7d286a5-7dbe-43a5-842e-09ba4b5f5769"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Orchestration &amp; Management" id="ccb3e4be-33ca-40c8-b157-c1261cab46df"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Scheduling &amp; Orchestration" id="d6762259-0169-4ce0-973c-9e4b99300ef2"/>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
     <element xsi:type="archimate:SystemSoftware" name="Java" id="22462922-2b4d-498a-ba44-0ab95aa51f53">
@@ -842,6 +850,13 @@ https://dotnet.microsoft.com/languages&#xD;
     <element xsi:type="archimate:CompositionRelationship" id="5d3c17b0-4288-4355-8d9d-9fd29baad658" source="5f918893-7260-4bf3-96fd-4a3e17db4799" target="03d8abae-0b87-4c0e-8cda-bf8cbb2ee180"/>
     <element xsi:type="archimate:CompositionRelationship" id="317ac0d6-f636-4083-bdb3-ceae198f3904" source="5f918893-7260-4bf3-96fd-4a3e17db4799" target="29f61e08-e3da-4d32-8221-c438727453c2"/>
     <element xsi:type="archimate:CompositionRelationship" id="bf4fe422-93c2-4f4d-98c2-228afbb2e461" source="5f918893-7260-4bf3-96fd-4a3e17db4799" target="f340ca47-568f-4fd6-9989-68d60a6d63cf"/>
+    <element xsi:type="archimate:AggregationRelationship" id="815f4a5a-f893-4018-82ae-74ac6f69450c" source="0afa003f-28c0-4029-9987-01a6ea9806b2" target="f24dec0f-25a5-4bff-9436-121d61583faa"/>
+    <element xsi:type="archimate:AggregationRelationship" id="902c843c-7099-4027-8c5f-1de004a2fa25" source="0afa003f-28c0-4029-9987-01a6ea9806b2" target="7d4f43f4-6354-4115-9a58-1b425e7652b8"/>
+    <element xsi:type="archimate:AggregationRelationship" id="b169a335-d276-4183-be16-fc152fcfe606" source="0afa003f-28c0-4029-9987-01a6ea9806b2" target="cdfd270a-c931-46d4-9c33-82e568e6b801"/>
+    <element xsi:type="archimate:CompositionRelationship" id="b33f5159-674a-49f8-8fe4-88f9de2bffad" source="0afa003f-28c0-4029-9987-01a6ea9806b2" target="931afb1c-f02f-4459-bf91-5b400b6fdfef"/>
+    <element xsi:type="archimate:AggregationRelationship" id="1ba86a21-235b-41ac-ab88-3be2e7b1e516" source="0afa003f-28c0-4029-9987-01a6ea9806b2" target="8b63ed11-7b24-4d1f-bc3f-5535b0b4a368"/>
+    <element xsi:type="archimate:AggregationRelationship" id="30218f4d-6c47-44a7-ac80-24140dde63d3" source="0afa003f-28c0-4029-9987-01a6ea9806b2" target="b7d286a5-7dbe-43a5-842e-09ba4b5f5769"/>
+    <element xsi:type="archimate:AggregationRelationship" id="2888c93d-a8e9-48f1-969b-355fd59b6b81" source="ccb3e4be-33ca-40c8-b157-c1261cab46df" target="d6762259-0169-4ce0-973c-9e4b99300ef2"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
@@ -2720,6 +2735,37 @@ Cloud Service Provider</content>
           <content>CXP</content>
         </child>
         <content>SCED HUB</content>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps CNCF View" id="d7b85537-2515-4f49-860a-aabf54b947d2">
+      <child xsi:type="archimate:DiagramObject" id="2c89d98f-2624-41fb-a9d8-bca13ff67715" archimateElement="3011511b-ca35-4bd2-9a66-3026e9879e0f">
+        <bounds x="81" y="68" width="1300" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5b4e2bef-6cc9-4de6-b40d-3f66167193d7" archimateElement="0afa003f-28c0-4029-9987-01a6ea9806b2">
+        <bounds x="81" y="132" width="1300" height="181"/>
+        <sourceConnection xsi:type="archimate:Connection" id="4d801268-7568-4402-b1be-8231336387e8" source="5b4e2bef-6cc9-4de6-b40d-3f66167193d7" target="7fc76488-8d7d-45d8-9455-3a5960386527" archimateRelationship="b169a335-d276-4183-be16-fc152fcfe606"/>
+        <sourceConnection xsi:type="archimate:Connection" id="147c76eb-3a4a-47af-a63b-b6e006143b9d" source="5b4e2bef-6cc9-4de6-b40d-3f66167193d7" target="5d23bc75-42d8-40fc-bd90-a6e396b4c398" archimateRelationship="b33f5159-674a-49f8-8fe4-88f9de2bffad"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2307a70d-75e7-4ed4-a2ae-61a2342e1ede" source="5b4e2bef-6cc9-4de6-b40d-3f66167193d7" target="e4142b29-c3b5-43e2-bf60-d9b2e623027e" archimateRelationship="1ba86a21-235b-41ac-ab88-3be2e7b1e516"/>
+        <sourceConnection xsi:type="archimate:Connection" id="34a47319-f456-438c-b270-2de9e99f12ed" source="5b4e2bef-6cc9-4de6-b40d-3f66167193d7" target="89d27780-7883-43e9-9fb2-4b4276161a42" archimateRelationship="30218f4d-6c47-44a7-ac80-24140dde63d3"/>
+        <child xsi:type="archimate:DiagramObject" id="7fc76488-8d7d-45d8-9455-3a5960386527" targetConnections="4d801268-7568-4402-b1be-8231336387e8" archimateElement="cdfd270a-c931-46d4-9c33-82e568e6b801">
+          <bounds x="38" y="37" width="166" height="81"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="5d23bc75-42d8-40fc-bd90-a6e396b4c398" targetConnections="147c76eb-3a4a-47af-a63b-b6e006143b9d" archimateElement="931afb1c-f02f-4459-bf91-5b400b6fdfef">
+          <bounds x="228" y="40" width="166" height="81"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="e4142b29-c3b5-43e2-bf60-d9b2e623027e" targetConnections="2307a70d-75e7-4ed4-a2ae-61a2342e1ede" archimateElement="8b63ed11-7b24-4d1f-bc3f-5535b0b4a368">
+          <bounds x="408" y="40" width="166" height="81"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="89d27780-7883-43e9-9fb2-4b4276161a42" targetConnections="34a47319-f456-438c-b270-2de9e99f12ed" archimateElement="b7d286a5-7dbe-43a5-842e-09ba4b5f5769">
+          <bounds x="600" y="40" width="169" height="81"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c3dc7e2a-3998-429b-bdd7-5e1657d8ea2d" archimateElement="ccb3e4be-33ca-40c8-b157-c1261cab46df">
+        <bounds x="81" y="336" width="1300" height="157"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2f438d5e-ff5e-4e56-b019-7d6ecd4c4425" source="c3dc7e2a-3998-429b-bdd7-5e1657d8ea2d" target="697d8af1-2a22-45ed-9ffb-d1cf95d1c5a6" archimateRelationship="2888c93d-a8e9-48f1-969b-355fd59b6b81"/>
+        <child xsi:type="archimate:DiagramObject" id="697d8af1-2a22-45ed-9ffb-d1cf95d1c5a6" targetConnections="2f438d5e-ff5e-4e56-b019-7d6ecd4c4425" archimateElement="d6762259-0169-4ce0-973c-9e4b99300ef2">
+          <bounds x="51" y="32" width="166" height="81"/>
+        </child>
       </child>
     </element>
   </folder>
