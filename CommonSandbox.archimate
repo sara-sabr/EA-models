@@ -3000,5 +3000,103 @@ Cloud Service Provider</content>
         <sourceConnection xsi:type="archimate:Connection" id="88dd4409-a2b7-4ee4-8476-77f0a39211c2" source="47baa416-e47f-48cf-a1ff-a44e4003be68" target="f5449156-3483-4788-96dc-ec3cdf0ca352" archimateRelationship="004fc715-de6a-4037-951e-4764e056419c"/>
       </child>
     </element>
+    <element xsi:type="archimate:SketchModel" name="API LM" id="0f93275e-3081-4109-8943-8d71e18829c9">
+      <child xsi:type="archimate:SketchModelSticky" id="4404149f-9bc8-450b-9bf8-2b8aa4c89862" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="108" y="6" width="769" height="769"/>
+        <child xsi:type="archimate:SketchModelActor" id="00df0c0c-0856-4f26-aecb-0096153171c7" name="Operator">
+          <bounds x="674" y="24" width="75" height="100"/>
+          <sourceConnection id="04801255-ec0d-4a87-b68b-3c83da49e616" source="00df0c0c-0856-4f26-aecb-0096153171c7" target="b38f47f3-cba7-418c-b6dd-028c839ae9a2"/>
+        </child>
+        <child xsi:type="archimate:SketchModelActor" id="cd08603e-4c8d-436b-a149-8ec00b34ac8b" name="Developer">
+          <bounds x="600" y="24" width="75" height="100"/>
+          <sourceConnection id="3e1c29d9-37a0-4e0d-8341-c4254c52de9a" source="cd08603e-4c8d-436b-a149-8ec00b34ac8b" target="b38f47f3-cba7-418c-b6dd-028c839ae9a2">
+            <bendpoint startX="-25" startY="94" endX="5" endY="-71"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="c91a09f0-2ab0-45d4-9d30-1d5e81b44000" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="12" y="156" width="445" height="337"/>
+          <child xsi:type="archimate:SketchModelSticky" id="567fd9b2-812b-4244-a275-205043d4d5ac" name="Sticky" targetConnections="4e4d6d35-773b-4447-8820-d5b41279a575 003d1ed2-5ade-48dd-8e6a-20aa5a8470bf" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+            <bounds x="12" y="48" width="421" height="277"/>
+            <sourceConnection id="3922bc1a-1a3e-4480-9195-5e1ff9da5ff6" source="567fd9b2-812b-4244-a275-205043d4d5ac" target="abb9eaf0-3c03-47b0-b36d-a8c2c938edf1" type="1"/>
+            <child xsi:type="archimate:SketchModelSticky" id="3e474114-3e09-4867-a8be-783943ec5c22" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="24" y="144" width="135" height="70"/>
+              <sourceConnection id="6154c87c-9fdc-4d2d-a5a7-4c4dcdd71ea4" source="3e474114-3e09-4867-a8be-783943ec5c22" target="54e301c5-3168-4d91-8346-05e79306ee1d" type="1"/>
+              <sourceConnection id="926fdb31-b9c1-44bb-bc16-8c018b8c0825" source="3e474114-3e09-4867-a8be-783943ec5c22" target="207f98ce-ef67-4656-a7d5-848c3583cdc5" type="3"/>
+              <sourceConnection id="c52740bf-04ff-4bfc-bc24-ffa4b598e09e" source="3e474114-3e09-4867-a8be-783943ec5c22" target="cbb132dc-02c2-498d-ae66-397b73c5b120" type="1"/>
+              <content>Message Processor</content>
+            </child>
+            <child xsi:type="archimate:SketchModelSticky" id="54e301c5-3168-4d91-8346-05e79306ee1d" name="Sticky" targetConnections="6154c87c-9fdc-4d2d-a5a7-4c4dcdd71ea4" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="24" y="24" width="135" height="70"/>
+              <sourceConnection id="3e61ec5e-e9f5-487a-8b3c-77fcf1d12462" source="54e301c5-3168-4d91-8346-05e79306ee1d" target="c2c89817-fc67-44c0-b0e0-a31c4e26716b" type="9"/>
+              <content>Cassandra datastore</content>
+            </child>
+            <child xsi:type="archimate:SketchModelSticky" id="c2c89817-fc67-44c0-b0e0-a31c4e26716b" name="Sticky" targetConnections="3e61ec5e-e9f5-487a-8b3c-77fcf1d12462" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="264" y="24" width="135" height="70"/>
+              <content>Management API for Runtime data (MART)</content>
+            </child>
+            <child xsi:type="archimate:SketchModelSticky" id="cbb132dc-02c2-498d-ae66-397b73c5b120" name="Sticky" targetConnections="c52740bf-04ff-4bfc-bc24-ffa4b598e09e" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="264" y="108" width="135" height="70"/>
+              <content>Universal Data Collection Agent (UDCA) </content>
+            </child>
+            <child xsi:type="archimate:SketchModelSticky" id="207f98ce-ef67-4656-a7d5-848c3583cdc5" name="Sticky" targetConnections="926fdb31-b9c1-44bb-bc16-8c018b8c0825" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="264" y="192" width="135" height="70"/>
+              <content>Synchronizer</content>
+            </child>
+            <content>Kubernetes </content>
+          </child>
+          <content>Runtime Plane</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="bc2246f2-5c93-43fa-bb66-f8a531f8a44b" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+          <bounds x="336" y="528" width="325" height="222"/>
+          <sourceConnection id="003d1ed2-5ade-48dd-8e6a-20aa5a8470bf" source="bc2246f2-5c93-43fa-bb66-f8a531f8a44b" target="567fd9b2-812b-4244-a275-205043d4d5ac"/>
+          <sourceConnection id="38a24433-8d7e-417e-b9d0-135109108aeb" source="bc2246f2-5c93-43fa-bb66-f8a531f8a44b" target="aa3c6410-28f9-4c37-8911-f0f4e6651ce9"/>
+          <child xsi:type="archimate:SketchModelSticky" id="eb0bf0d6-52de-4c6c-b0c3-83a77fc59cda" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+            <bounds x="168" y="24" width="135" height="53"/>
+            <content>Metrics </content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="dfcd5252-cdc5-4581-8a9f-492ffb67c6f6" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+            <bounds x="12" y="24" width="135" height="53"/>
+            <content>Identity Credential Authentication </content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="74097ca6-045e-4da4-994e-af4c01dfbbb7" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+            <bounds x="12" y="93" width="135" height="53"/>
+            <content>Role Access Management</content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="bb5d5a7c-86f9-45ad-9c22-05afa9e37315" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+            <bounds x="168" y="93" width="135" height="53"/>
+            <content>Logging </content>
+          </child>
+          <child xsi:type="archimate:SketchModelSticky" id="1e85247e-9b61-4850-81a0-7fdc877decad" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+            <bounds x="12" y="158" width="135" height="53"/>
+            <content>Resource Hierarchy </content>
+          </child>
+          <content>PaaS</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="fca67755-8c61-409f-80bc-8d63240ee797" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="504" y="156" width="257" height="337"/>
+          <child xsi:type="archimate:SketchModelSticky" id="aa3c6410-28f9-4c37-8911-f0f4e6651ce9" name="Sticky" targetConnections="38a24433-8d7e-417e-b9d0-135109108aeb" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+            <bounds x="36" y="48" width="181" height="277"/>
+            <child xsi:type="archimate:SketchModelSticky" id="b38f47f3-cba7-418c-b6dd-028c839ae9a2" name="Sticky" targetConnections="3e1c29d9-37a0-4e0d-8341-c4254c52de9a 04801255-ec0d-4a87-b68b-3c83da49e616" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="12" y="24" width="157" height="37"/>
+              <sourceConnection id="31645613-29fd-4d36-8f16-d6b83a175692" source="b38f47f3-cba7-418c-b6dd-028c839ae9a2" target="ad4e0ec4-ad31-4cd1-9393-4d32f0c74d48" type="1"/>
+              <content>Hybrid UI</content>
+            </child>
+            <child xsi:type="archimate:SketchModelSticky" id="ad4e0ec4-ad31-4cd1-9393-4d32f0c74d48" name="Sticky" targetConnections="31645613-29fd-4d36-8f16-d6b83a175692" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="12" y="96" width="157" height="73"/>
+              <sourceConnection id="be21c4ef-ee17-4440-a8b0-2d9ea02c2ae4" source="ad4e0ec4-ad31-4cd1-9393-4d32f0c74d48" target="abb9eaf0-3c03-47b0-b36d-a8c2c938edf1" type="1"/>
+              <sourceConnection id="4e4d6d35-773b-4447-8820-d5b41279a575" source="ad4e0ec4-ad31-4cd1-9393-4d32f0c74d48" target="567fd9b2-812b-4244-a275-205043d4d5ac" type="1"/>
+              <content>Management Server</content>
+            </child>
+            <child xsi:type="archimate:SketchModelSticky" id="abb9eaf0-3c03-47b0-b36d-a8c2c938edf1" name="Sticky" targetConnections="3922bc1a-1a3e-4480-9195-5e1ff9da5ff6 be21c4ef-ee17-4440-a8b0-2d9ea02c2ae4" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+              <bounds x="12" y="192" width="157" height="70"/>
+              <content>Unified Analytics Platform</content>
+            </child>
+            <content>SaaS</content>
+          </child>
+          <content>Management Plane</content>
+        </child>
+        <content>API Gateway Lifecycle Management</content>
+      </child>
+    </element>
   </folder>
 </archimate:model>
