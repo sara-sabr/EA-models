@@ -30,8 +30,7 @@ You will **need** to understand the [concepts of a distributed version control s
 ### For Review
 
 * [ReleaseCandidate Report](https://sara-sabr.github.io/EA-models/reports/ReleaseCandidate%20Report/index.html).
-* [CommonSandbox Report](https://sara-sabr.github.io/EA-models/reports/CommonSandbox%20Report/index.html).
-
+* [CommonSandbox Report](https://sara-sabr.github.io/EA-models/reports/CommonSandbox_Report/index.html).
 ### General repository contributions
 
 to come...
