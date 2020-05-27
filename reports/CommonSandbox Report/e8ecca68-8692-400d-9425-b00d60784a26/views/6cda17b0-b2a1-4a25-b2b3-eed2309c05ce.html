@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>API Gateway Conceptual</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>API Gateway Conceptual</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/6cda17b0-b2a1-4a25-b2b3-eed2309c05ce.png" alt="API Gateway Conceptual" usemap="#6cda17b0-b2a1-4a25-b2b3-eed2309c05cemap"/>
+			   <map name="6cda17b0-b2a1-4a25-b2b3-eed2309c05cemap">
+				  						<area shape="rect" coords="537,388,657,443" href="../elements/cd68bc4e-06ba-42b2-a92b-13a2746f9bcc.html"  target="element">
+				  						<area shape="rect" coords="715,382,835,449" href="../elements/eccaeffa-f76b-4b08-b536-2dc4f9bbb826.html"  target="element">
+				  						<area shape="rect" coords="715,316,835,371" href="../elements/44eee917-6eba-4cf9-bc70-2909c8c9bffc.html"  target="element">
+				  						<area shape="rect" coords="711,250,838,305" href="../elements/b154df25-5d3a-45e1-8b5e-e1d4d64624d1.html"  target="element">
+				  						<area shape="rect" coords="531,250,651,305" href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html"  target="element">
+
+				  				<area shape="rect" coords="507,226,862,479" href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html"  target="element">
+
+				  		<area shape="rect" coords="477,202,898,503" href="../elements/e97a083a-dd92-4d9d-9163-98e7ae91bb45.html"  target="element">
+				  				<area shape="rect" coords="525,127,616,164" href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html"  target="element">
+
+				  		<area shape="rect" coords="477,97,654,179" href="../elements/47155fe3-766a-4587-a61b-6ce9d6656d66.html"  target="element">
+				  		<area shape="rect" coords="10,148,130,203" href="../elements/78b51f6c-661f-4f35-86de-12b33ea4359a.html"  target="element">
+				  						<area shape="rect" coords="234,274,354,317" href="../elements/eb597fb5-0359-408d-925d-b7cd9a1dae97.html"  target="element">
+
+				  				<area shape="rect" coords="210,238,371,329" href="../elements/e8b18c28-b95a-43bb-af7d-6535ac3759d5.html"  target="element">
+				  						<area shape="rect" coords="264,172,355,197" href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html"  target="element">
+
+				  				<area shape="rect" coords="210,136,371,227" href="../elements/4775edd0-5c04-4282-90e7-b836070926ee.html"  target="element">
+
+				  		<area shape="rect" coords="162,106,445,347" href="../elements/91ebd99d-96cf-417f-b8bf-5090bcf08b68.html"  target="element">
+				  		<area shape="rect" coords="162,10,439,77" href="../elements/5cfb751d-0d38-42d7-8296-ef026a1ec9d0.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<textarea id="docsrc" style="display:none"></textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/5cfb751d-0d38-42d7-8296-ef026a1ec9d0.html" target="element"> Cloud Service Provider </a> </td>
+											    <td> <a href="../elements/5cfb751d-0d38-42d7-8296-ef026a1ec9d0.html" target="element" class="i18n-elementtype-ApplicationFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/91ebd99d-96cf-417f-b8bf-5090bcf08b68.html" target="element"> ESDC instance </a> </td>
+											    <td> <a href="../elements/91ebd99d-96cf-417f-b8bf-5090bcf08b68.html" target="element" class="i18n-elementtype-ApplicationCollaboration"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/4775edd0-5c04-4282-90e7-b836070926ee.html" target="element"> ESDC applications </a> </td>
+													    <td> <a href="../elements/4775edd0-5c04-4282-90e7-b836070926ee.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element"> API </a> </td>
+															    <td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element" class="i18n-elementtype-ApplicationFunction"> </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/e8b18c28-b95a-43bb-af7d-6535ac3759d5.html" target="element"> ESDC Data Layer </a> </td>
+													    <td> <a href="../elements/e8b18c28-b95a-43bb-af7d-6535ac3759d5.html" target="element" class="i18n-elementtype-ApplicationFunction"> </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/eb597fb5-0359-408d-925d-b7cd9a1dae97.html" target="element"> ESDC Data </a> </td>
+															    <td> <a href="../elements/eb597fb5-0359-408d-925d-b7cd9a1dae97.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+															</tr>
+
+													
+											
+											<tr>
+											    <td> <a href="../elements/78b51f6c-661f-4f35-86de-12b33ea4359a.html" target="element"> ESDC User </a> </td>
+											    <td> <a href="../elements/78b51f6c-661f-4f35-86de-12b33ea4359a.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/47155fe3-766a-4587-a61b-6ce9d6656d66.html" target="element"> Application Instance </a> </td>
+											    <td> <a href="../elements/47155fe3-766a-4587-a61b-6ce9d6656d66.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element"> API </a> </td>
+													    <td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element" class="i18n-elementtype-ApplicationFunction"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/e97a083a-dd92-4d9d-9163-98e7ae91bb45.html" target="element"> API Gateway Agent - Cloud Install </a> </td>
+											    <td> <a href="../elements/e97a083a-dd92-4d9d-9163-98e7ae91bb45.html" target="element" class="i18n-elementtype-ApplicationFunction"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element"> Certified Kubernetes - Hosted </a> </td>
+													    <td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element" class="i18n-elementtype-ApplicationFunction"> </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html" target="element"> Message Processor </a> </td>
+															    <td> <a href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/b154df25-5d3a-45e1-8b5e-e1d4d64624d1.html" target="element"> Syncronizer </a> </td>
+															    <td> <a href="../elements/b154df25-5d3a-45e1-8b5e-e1d4d64624d1.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/44eee917-6eba-4cf9-bc70-2909c8c9bffc.html" target="element"> Universal Data Collection Agent (UDCA) </a> </td>
+															    <td> <a href="../elements/44eee917-6eba-4cf9-bc70-2909c8c9bffc.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/eccaeffa-f76b-4b08-b536-2dc4f9bbb826.html" target="element"> Management API for Runtime Data (MART) </a> </td>
+															    <td> <a href="../elements/eccaeffa-f76b-4b08-b536-2dc4f9bbb826.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/cd68bc4e-06ba-42b2-a92b-13a2746f9bcc.html" target="element"> Cassandra Datastore </a> </td>
+															    <td> <a href="../elements/cd68bc4e-06ba-42b2-a92b-13a2746f9bcc.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+															</tr>
+
+													
+											
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/a1cce8ac-bacb-41b9-968e-fa2fe4a510ba.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a1cce8ac-bacb-41b9-968e-fa2fe4a510ba.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/91ebd99d-96cf-417f-b8bf-5090bcf08b68.html" target="element"> ESDC instance </a> </td>
+																		<td> <a href="../elements/4775edd0-5c04-4282-90e7-b836070926ee.html" target="element"> ESDC applications </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/e573183e-aa1a-4549-884d-c69591d382b4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/e573183e-aa1a-4549-884d-c69591d382b4.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/91ebd99d-96cf-417f-b8bf-5090bcf08b68.html" target="element"> ESDC instance </a> </td>
+																		<td> <a href="../elements/5cfb751d-0d38-42d7-8296-ef026a1ec9d0.html" target="element"> Cloud Service Provider </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/178d7ed2-52ff-4d93-8da9-dd80d1a276f2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/178d7ed2-52ff-4d93-8da9-dd80d1a276f2.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/91ebd99d-96cf-417f-b8bf-5090bcf08b68.html" target="element"> ESDC instance </a> </td>
+																		<td> <a href="../elements/e8b18c28-b95a-43bb-af7d-6535ac3759d5.html" target="element"> ESDC Data Layer </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/70f48286-3b37-4818-974c-b56cf7d5de4d.html" target="element">  </a> </td>
+																				<td> <a href="../elements/70f48286-3b37-4818-974c-b56cf7d5de4d.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/4775edd0-5c04-4282-90e7-b836070926ee.html" target="element"> ESDC applications </a> </td>
+																				<td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element"> API </a> </td>
+																			</tr>
+
+													
+																			<tr>
+																				<td> <a href="../elements/dc1c2deb-74a8-46ef-8ce9-a1821a8aa2fa.html" target="element">  </a> </td>
+																				<td> <a href="../elements/dc1c2deb-74a8-46ef-8ce9-a1821a8aa2fa.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																				<td> <a href="../elements/e8b18c28-b95a-43bb-af7d-6535ac3759d5.html" target="element"> ESDC Data Layer </a> </td>
+																				<td> <a href="../elements/eb597fb5-0359-408d-925d-b7cd9a1dae97.html" target="element"> ESDC Data </a> </td>
+																			</tr>
+
+													
+											
+																	<tr>
+																		<td> <a href="../elements/a6ba47a5-9cbc-4ad1-a019-cd739762a055.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a6ba47a5-9cbc-4ad1-a019-cd739762a055.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/78b51f6c-661f-4f35-86de-12b33ea4359a.html" target="element"> ESDC User </a> </td>
+																		<td> <a href="../elements/4775edd0-5c04-4282-90e7-b836070926ee.html" target="element"> ESDC applications </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/fdb39e08-5c87-4ed7-95d0-35209ea27949.html" target="element">  </a> </td>
+																		<td> <a href="../elements/fdb39e08-5c87-4ed7-95d0-35209ea27949.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/47155fe3-766a-4587-a61b-6ce9d6656d66.html" target="element"> Application Instance </a> </td>
+																		<td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element"> API </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/36bb8cc2-31f5-49d8-a92b-8a0bec74dfa5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/36bb8cc2-31f5-49d8-a92b-8a0bec74dfa5.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/e97a083a-dd92-4d9d-9163-98e7ae91bb45.html" target="element"> API Gateway Agent - Cloud Install </a> </td>
+																		<td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element"> Certified Kubernetes - Hosted </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/74fb4d88-642d-4b0a-af7e-bb553d7e90e6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/74fb4d88-642d-4b0a-af7e-bb553d7e90e6.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/e97a083a-dd92-4d9d-9163-98e7ae91bb45.html" target="element"> API Gateway Agent - Cloud Install </a> </td>
+																		<td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element"> API </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/74fb4d88-642d-4b0a-af7e-bb553d7e90e6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/74fb4d88-642d-4b0a-af7e-bb553d7e90e6.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/e97a083a-dd92-4d9d-9163-98e7ae91bb45.html" target="element"> API Gateway Agent - Cloud Install </a> </td>
+																		<td> <a href="../elements/7447fc39-5670-437e-8dcf-2738a1729f98.html" target="element"> API </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/534acfb9-b64c-46fe-a198-34042172cdab.html" target="element">  </a> </td>
+																				<td> <a href="../elements/534acfb9-b64c-46fe-a198-34042172cdab.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element"> Certified Kubernetes - Hosted </a> </td>
+																				<td> <a href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html" target="element"> Message Processor </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/2cacf186-f873-44f3-a56d-def800d48576.html" target="element">  </a> </td>
+																				<td> <a href="../elements/2cacf186-f873-44f3-a56d-def800d48576.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element"> Certified Kubernetes - Hosted </a> </td>
+																				<td> <a href="../elements/b154df25-5d3a-45e1-8b5e-e1d4d64624d1.html" target="element"> Syncronizer </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/6584e756-a39a-4a67-9a93-3317ec86584a.html" target="element">  </a> </td>
+																				<td> <a href="../elements/6584e756-a39a-4a67-9a93-3317ec86584a.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element"> Certified Kubernetes - Hosted </a> </td>
+																				<td> <a href="../elements/44eee917-6eba-4cf9-bc70-2909c8c9bffc.html" target="element"> Universal Data Collection Agent (UDCA) </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/7ee919b2-ede0-4689-91c4-0e83b956ff2c.html" target="element">  </a> </td>
+																				<td> <a href="../elements/7ee919b2-ede0-4689-91c4-0e83b956ff2c.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element"> Certified Kubernetes - Hosted </a> </td>
+																				<td> <a href="../elements/eccaeffa-f76b-4b08-b536-2dc4f9bbb826.html" target="element"> Management API for Runtime Data (MART) </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/0c1826e7-d5e2-4a2b-9fca-c3273bd8d72d.html" target="element">  </a> </td>
+																				<td> <a href="../elements/0c1826e7-d5e2-4a2b-9fca-c3273bd8d72d.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/3d2242d4-aa91-40e1-9e6a-df6ee89ebd1a.html" target="element"> Certified Kubernetes - Hosted </a> </td>
+																				<td> <a href="../elements/cd68bc4e-06ba-42b2-a92b-13a2746f9bcc.html" target="element"> Cassandra Datastore </a> </td>
+																			</tr>
+
+																					<tr>
+																						<td> <a href="../elements/96d090df-440f-4b4f-b3e1-a6c2b24d5766.html" target="element">  </a> </td>
+																						<td> <a href="../elements/96d090df-440f-4b4f-b3e1-a6c2b24d5766.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																						<td> <a href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html" target="element"> Message Processor </a> </td>
+																						<td> <a href="../elements/b154df25-5d3a-45e1-8b5e-e1d4d64624d1.html" target="element"> Syncronizer </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/84cc3867-0aa1-4b1b-b2c2-bc9f0368909e.html" target="element">  </a> </td>
+																						<td> <a href="../elements/84cc3867-0aa1-4b1b-b2c2-bc9f0368909e.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																						<td> <a href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html" target="element"> Message Processor </a> </td>
+																						<td> <a href="../elements/44eee917-6eba-4cf9-bc70-2909c8c9bffc.html" target="element"> Universal Data Collection Agent (UDCA) </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/ca03c913-5b17-4b23-becb-52ddb7e48881.html" target="element">  </a> </td>
+																						<td> <a href="../elements/ca03c913-5b17-4b23-becb-52ddb7e48881.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																						<td> <a href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html" target="element"> Message Processor </a> </td>
+																						<td> <a href="../elements/eccaeffa-f76b-4b08-b536-2dc4f9bbb826.html" target="element"> Management API for Runtime Data (MART) </a> </td>
+																					</tr>
+																					<tr>
+																						<td> <a href="../elements/9bd229cd-4273-4954-8929-2cb68bb46edb.html" target="element">  </a> </td>
+																						<td> <a href="../elements/9bd229cd-4273-4954-8929-2cb68bb46edb.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																						<td> <a href="../elements/1f690383-6b7a-4552-b47f-a3d7f769b088.html" target="element"> Message Processor </a> </td>
+																						<td> <a href="../elements/cd68bc4e-06ba-42b2-a92b-13a2746f9bcc.html" target="element"> Cassandra Datastore </a> </td>
+																					</tr>
+
+																					<tr>
+																						<td> <a href="../elements/410e2346-8e5b-4deb-9f3a-8725b50852ee.html" target="element">  </a> </td>
+																						<td> <a href="../elements/410e2346-8e5b-4deb-9f3a-8725b50852ee.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																						<td> <a href="../elements/eccaeffa-f76b-4b08-b536-2dc4f9bbb826.html" target="element"> Management API for Runtime Data (MART) </a> </td>
+																						<td> <a href="../elements/cd68bc4e-06ba-42b2-a92b-13a2746f9bcc.html" target="element"> Cassandra Datastore </a> </td>
+																					</tr>
+
+																					<tr>
+																						<td> <a href="../elements/73f4dc4d-fc97-4348-be54-df18c88e1fc1.html" target="element">  </a> </td>
+																						<td> <a href="../elements/73f4dc4d-fc97-4348-be54-df18c88e1fc1.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																						<td> <a href="../elements/cd68bc4e-06ba-42b2-a92b-13a2746f9bcc.html" target="element"> Cassandra Datastore </a> </td>
+																						<td> <a href="../elements/eccaeffa-f76b-4b08-b536-2dc4f9bbb826.html" target="element"> Management API for Runtime Data (MART) </a> </td>
+																					</tr>
+
+													
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
