@@ -306,6 +306,7 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:BusinessInterface" name="Digital Channel" id="1a2eacce-b1fa-4a67-a1f2-d1d06f440936"/>
     <element xsi:type="archimate:BusinessRole" name="Cloud Service Provider" id="21f455d8-6ee0-4a5d-ad65-4e5a8a2e6fb9"/>
     <element xsi:type="archimate:BusinessRole" name="ESDC User" id="fef0a611-c0ea-489d-9a4b-511d49281f6f"/>
+    <element xsi:type="archimate:BusinessFunction" name="Business Function" id="2ff8f8cc-8b55-4ef7-9d8f-6dcee208c2db"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -464,6 +465,8 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:ApplicationFunction" name="ESDC Application " id="cd1ffe50-c957-4730-ad27-c208794dfa43"/>
     <element xsi:type="archimate:ApplicationEvent" name="ESDC Application Event" id="2745e34d-4533-4bf1-9914-aea44113e807"/>
     <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="094d1bb4-c73f-4608-b0be-f74eebb17bb9"/>
+    <element xsi:type="archimate:ApplicationEvent" name="Partner Event" id="70f3f74f-a64e-4383-a753-7ab976325acd"/>
+    <element xsi:type="archimate:ApplicationService" name="Partner Service" id="891e9224-de03-42f4-917f-3276fc4fef0f"/>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
     <element xsi:type="archimate:SystemSoftware" name="Java" id="22462922-2b4d-498a-ba44-0ab95aa51f53">
@@ -4070,10 +4073,10 @@ Cloud Service Provider</content>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="API Gateway Conceptual" id="6cda17b0-b2a1-4a25-b2b3-eed2309c05ce">
       <child xsi:type="archimate:DiagramObject" id="33afb078-1c5d-443c-aa84-7977fa99383d" archimateElement="47155fe3-766a-4587-a61b-6ce9d6656d66">
-        <bounds x="652" y="14" width="177" height="82"/>
+        <bounds x="588" y="636" width="177" height="82"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="7e980469-d5bb-4eed-939c-74e23608b9c3" archimateElement="8726b506-0549-4441-87f7-1d0c79905af3">
-        <bounds x="660" y="108" width="161" height="69"/>
+        <bounds x="588" y="540" width="161" height="69"/>
         <sourceConnection xsi:type="archimate:Connection" id="bc7b7013-ca5a-4336-8f8e-e4ba987f5f43" source="7e980469-d5bb-4eed-939c-74e23608b9c3" target="c9ad05b0-b13d-46b7-91f8-edbb5adf3b59" archimateRelationship="eef3bd1a-37ac-45f3-8f3f-123c3edce762"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="993ffc8d-66e0-419d-9bc3-1175771edb56" archimateElement="41959efc-6315-4555-accb-85767b82685c">
@@ -4084,7 +4087,7 @@ Cloud Service Provider</content>
         <bounds x="300" y="276" width="161" height="91"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="594bce90-0ac4-4815-b28a-5397129d1ed3" archimateElement="eb597fb5-0359-408d-925d-b7cd9a1dae97">
-        <bounds x="36" y="276" width="120" height="43"/>
+        <bounds x="12" y="276" width="120" height="43"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="7ff294c1-c54d-4001-8cb0-94b7cad6cf72" archimateElement="1a2eacce-b1fa-4a67-a1f2-d1d06f440936">
         <bounds x="24" y="96" width="120" height="55"/>
@@ -4139,6 +4142,32 @@ Cloud Service Provider</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="e2a78772-2ca2-4613-a798-2b678bdf1fa1" archimateElement="fef0a611-c0ea-489d-9a4b-511d49281f6f">
         <bounds x="24" y="27" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b3ecf414-fe6f-4185-b2cd-b50b803e7040" archimateElement="70f3f74f-a64e-4383-a753-7ab976325acd">
+        <bounds x="432" y="708" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c8a20010-a192-46af-a106-ba8c78f18b85" archimateElement="1ffed886-217c-444f-9a2d-9b24f25cc898">
+        <bounds x="588" y="12" width="311" height="97"/>
+        <sourceConnection xsi:type="archimate:Connection" id="6ef7df0a-9748-4473-bd9c-70437320aa97" source="c8a20010-a192-46af-a106-ba8c78f18b85" target="8fa13dc3-52ed-40a2-bc2e-df3311b3fe7e" archimateRelationship="d16890c3-4852-47e8-b446-f5d07e0a3a0c"/>
+        <sourceConnection xsi:type="archimate:Connection" id="edabf306-3d1f-4fe3-a463-b670bf59b909" source="c8a20010-a192-46af-a106-ba8c78f18b85" target="cbcb1add-dcc1-4eeb-b826-645a1603f166" archimateRelationship="13bd69e6-761b-46cb-a723-0efe4033e33f"/>
+        <child xsi:type="archimate:DiagramObject" id="8fa13dc3-52ed-40a2-bc2e-df3311b3fe7e" targetConnections="6ef7df0a-9748-4473-bd9c-70437320aa97" archimateElement="e3cb1cd0-68de-4334-bd8a-72fad5192d3a">
+          <bounds x="24" y="27" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="cbcb1add-dcc1-4eeb-b826-645a1603f166" targetConnections="edabf306-3d1f-4fe3-a463-b670bf59b909" archimateElement="8dbe7640-bc53-40be-b285-6e416640261f">
+          <bounds x="156" y="27" width="120" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0b4b8404-3fc7-44a9-ac3d-401a6b1d0a6b" archimateElement="04d56aa3-18de-492c-98e1-2210b579a014">
+        <bounds x="684" y="120" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="377c8a9c-274a-450e-a293-118799befafa" archimateElement="1735b795-333f-4652-baeb-3d216f5b0dd3">
+        <bounds x="540" y="120" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e7d09cfb-613c-429a-a1b3-5cd4bec6dda3" archimateElement="dbb1dc7f-1840-4a3d-bb85-d7e4a349bd48">
+        <bounds x="828" y="120" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="052deef0-77d3-4046-a7af-030086ca043d" archimateElement="891e9224-de03-42f4-917f-3276fc4fef0f">
+        <bounds x="432" y="624" width="120" height="55"/>
       </child>
     </element>
   </folder>
