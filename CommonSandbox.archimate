@@ -4135,7 +4135,9 @@ Cloud Service Provider</content>
             <sourceConnection xsi:type="archimate:Connection" id="17f3beb7-0622-430e-b636-00350b1d1def" source="7c20b236-a093-4740-9006-fab9a7217a68" target="2e350b74-05e4-48ab-af31-15d6083d7653" archimateRelationship="b040d0cc-3f47-4941-bc35-d61a355855b6"/>
             <child xsi:type="archimate:DiagramObject" id="b3cd069a-2e6f-4f80-a330-72045b32f834" targetConnections="7e6a7bd3-f366-438e-ae8c-b355cff4df91 9916bad8-e3c5-417d-9122-4bfafde23869 8b96dad7-20e8-4839-9125-410e3f6347c9" archimateElement="eccaeffa-f76b-4b08-b536-2dc4f9bbb826">
               <bounds x="204" y="174" width="120" height="67"/>
-              <sourceConnection xsi:type="archimate:Connection" id="fc090c08-51a3-4a51-888b-b8a0e0091c7c" source="b3cd069a-2e6f-4f80-a330-72045b32f834" target="2e350b74-05e4-48ab-af31-15d6083d7653" archimateRelationship="410e2346-8e5b-4deb-9f3a-8725b50852ee"/>
+              <sourceConnection xsi:type="archimate:Connection" id="fc090c08-51a3-4a51-888b-b8a0e0091c7c" source="b3cd069a-2e6f-4f80-a330-72045b32f834" target="2e350b74-05e4-48ab-af31-15d6083d7653" archimateRelationship="410e2346-8e5b-4deb-9f3a-8725b50852ee">
+                <bendpoint startX="-84" startY="9" endX="94" endY="9"/>
+              </sourceConnection>
             </child>
             <child xsi:type="archimate:DiagramObject" id="3563c8bf-d9b6-498d-a21f-851cac0bc541" targetConnections="a7956ecf-034d-4d97-8c1b-abdcdc1992b7 8813144f-342e-4e38-9f91-affb3ff87254" archimateElement="44eee917-6eba-4cf9-bc70-2909c8c9bffc">
               <bounds x="204" y="108" width="120" height="55"/>
@@ -4277,6 +4279,130 @@ Cloud Service Provider</content>
         <child xsi:type="archimate:DiagramObject" id="986fd962-b1ac-461f-ac56-9d158bad60cb" archimateElement="0d7b2518-04b8-4b6b-82fb-df23b6ade708">
           <bounds x="156" y="84" width="120" height="55"/>
         </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:SketchModel" name="HTTPS Everywhere" id="d2e2d1a7-50ed-4678-8bd8-f6a1eb40468f">
+      <child xsi:type="archimate:SketchModelActor" id="3ec1e261-c6a5-4a25-a5ab-7a8c5ffea7f7" name="IT SEC">
+        <bounds x="60" y="204" width="75" height="100"/>
+        <sourceConnection id="63ee3fa0-9007-4470-af90-18475b08c02e" source="3ec1e261-c6a5-4a25-a5ab-7a8c5ffea7f7" target="ddc0f613-0aa1-49e7-a744-876b5a1576cc" type="1"/>
+      </child>
+      <child xsi:type="archimate:SketchModelActor" id="5f2dda76-dd63-49eb-b20d-1c08ff4c53f8" name="System Owner">
+        <bounds x="72" y="324" width="75" height="100"/>
+        <sourceConnection id="577a9f2d-01f8-4f95-833d-dab12dec5386" source="5f2dda76-dd63-49eb-b20d-1c08ff4c53f8" target="ddc0f613-0aa1-49e7-a744-876b5a1576cc" type="1"/>
+      </child>
+      <child xsi:type="archimate:SketchModelActor" id="65321bf5-2292-4bb6-a605-d8eda6a8372d" name="SSC">
+        <bounds x="72" y="444" width="75" height="100"/>
+        <sourceConnection id="81874129-6e91-405c-adf8-93bc96dd7dbc" source="65321bf5-2292-4bb6-a605-d8eda6a8372d" target="ddc0f613-0aa1-49e7-a744-876b5a1576cc" type="1"/>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="ddc0f613-0aa1-49e7-a744-876b5a1576cc" name="Sticky" targetConnections="63ee3fa0-9007-4470-af90-18475b08c02e 577a9f2d-01f8-4f95-833d-dab12dec5386 81874129-6e91-405c-adf8-93bc96dd7dbc" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="264" y="216" width="325" height="349"/>
+        <sourceConnection id="f0b2996c-e0f0-471e-aaf4-3381350f4401" name="Push control" source="ddc0f613-0aa1-49e7-a744-876b5a1576cc" target="4f510dc2-391e-4760-ae9a-7ac2fd377aa7" type="1"/>
+        <child xsi:type="archimate:SketchModelSticky" id="06d12544-1248-4353-86b6-646465990301" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#0080c0">
+          <bounds x="48" y="48" width="243" height="43"/>
+          <content>Security Control</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="c9d70c93-3b9c-4feb-a261-de8cccb9e5c8" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#0080c0">
+          <bounds x="48" y="246" width="243" height="43"/>
+          <content>Security Control</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="18a9a699-1b54-4f25-b567-63d09265464f" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#0080c0">
+          <bounds x="46" y="96" width="243" height="43"/>
+          <content>Security Control</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="694759a8-cd5f-4927-a19b-4e20c34d1113" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#0080c0">
+          <bounds x="46" y="147" width="243" height="43"/>
+          <content>Security Control</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="13f2d650-f2bf-42d3-9eba-0db6e6111b20" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#0080c0">
+          <bounds x="46" y="196" width="243" height="43"/>
+          <content>Security Control</content>
+        </child>
+        <content>HTTPS Everywhere</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="fcabe52a-efc3-4e77-b093-e3b14994427c" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="708" y="468" width="265" height="70"/>
+        <sourceConnection id="41366512-8c1e-4034-81f3-bf2bc35baf7d" name="Monitor" source="fcabe52a-efc3-4e77-b093-e3b14994427c" target="61cd8b4b-15dc-4ed3-b48b-ebd4a2a68a8f" type="1"/>
+        <sourceConnection id="13fd9a92-9607-4032-acf5-6715aee1d2f2" name="Monitor" source="fcabe52a-efc3-4e77-b093-e3b14994427c" target="4f510dc2-391e-4760-ae9a-7ac2fd377aa7" type="1"/>
+        <content>TBS</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="6b19c6a9-20cf-4581-bb08-f7d0165aca11" name="Sticky" targetConnections="8ecab4a0-aef1-486d-b47e-bc506e40df06" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="794" y="144" width="135" height="70"/>
+        <content>HTTPS&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="4a708bdc-33b9-422a-82ee-0086c03a8555" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="804" y="154" width="135" height="70"/>
+        <content>HTTPS&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="4c4cd566-8891-403b-ab30-886cfd19ff17" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="814" y="164" width="135" height="70"/>
+        <content>HTTPS&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="794b5868-edc3-4819-8e42-5def9a3de4ff" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="824" y="174" width="135" height="70"/>
+        <content>HTTPS&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="f421ec31-fc6a-4a6e-9782-3b9410ab9aa8" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="834" y="184" width="135" height="70"/>
+        <content>HTTPS&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="6f25ded3-59b7-49ab-a511-f2e6b20ffb48" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="844" y="194" width="135" height="70"/>
+        <content>HTTPS&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="61cd8b4b-15dc-4ed3-b48b-ebd4a2a68a8f" name="Sticky" targetConnections="41366512-8c1e-4034-81f3-bf2bc35baf7d" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="854" y="204" width="135" height="70"/>
+        <content>HTTPS&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="fd5e8dfb-d18c-45ff-9f9d-06761270ad41" name="Sticky" targetConnections="0fc2fc61-a412-4f93-bfaa-e62fa0df5a8a" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="660" y="294" width="135" height="70"/>
+        <content>HTTP&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="0d4cab13-fef8-4a25-9c5f-5bca08f946dc" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="670" y="304" width="135" height="70"/>
+        <content>HTTP&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="94030663-d7e0-4b03-8897-9cba85bf995b" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="680" y="314" width="135" height="70"/>
+        <content>HTTP&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="aa7fc5f4-4c30-43bf-aee8-5f409db5e269" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="690" y="324" width="135" height="70"/>
+        <content>HTTP&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="ab492470-7a0d-4a05-a7e7-3bf0c0cdb51d" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="700" y="334" width="135" height="70"/>
+        <content>HTTP&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="a1a7d10c-9583-4bda-9e3b-88ccf8736b0d" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="710" y="344" width="135" height="70"/>
+        <content>HTTP&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="4f510dc2-391e-4760-ae9a-7ac2fd377aa7" name="Sticky" targetConnections="f0b2996c-e0f0-471e-aaf4-3381350f4401 13fd9a92-9607-4032-acf5-6715aee1d2f2" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="720" y="354" width="135" height="70"/>
+        <content>HTTP&#xD;
+ESDC Applications</content>
+      </child>
+      <child xsi:type="archimate:SketchModelActor" id="22f2f544-e276-43f2-a79c-4bc0e0d16f18" name="Threat Agent">
+        <bounds x="670" y="24" width="75" height="100"/>
+        <sourceConnection id="8ecab4a0-aef1-486d-b47e-bc506e40df06" source="22f2f544-e276-43f2-a79c-4bc0e0d16f18" target="6b19c6a9-20cf-4581-bb08-f7d0165aca11" type="1"/>
+        <sourceConnection id="0fc2fc61-a412-4f93-bfaa-e62fa0df5a8a" source="22f2f544-e276-43f2-a79c-4bc0e0d16f18" target="fd5e8dfb-d18c-45ff-9f9d-06761270ad41" type="1"/>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="190ceda5-ff3c-4810-a13c-bfd4d5b618bb" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="264" y="564" width="325" height="70"/>
+        <content>Security Control Repository</content>
       </child>
     </element>
   </folder>
