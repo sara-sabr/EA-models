@@ -445,18 +445,23 @@ https://solace.com/what-is-an-event-broker/</documentation>
       <property key="20200527source" value="created in CommonSandbox"/>
     </element>
     <element xsi:type="archimate:ApplicationService" name="Message Processor" id="1f690383-6b7a-4552-b47f-a3d7f769b088">
+      <documentation>The message processor is essentially the engine that receives and processes all your API requests, applies the policies to the runtime requests and serves the response.​</documentation>
       <property key="20200527source" value="created in CommonSandbox"/>
     </element>
     <element xsi:type="archimate:ApplicationService" name="Syncronizer" id="b154df25-5d3a-45e1-8b5e-e1d4d64624d1">
+      <documentation>The Synchronizer fetches configuration data about an API environment from the management plane and propagates it across the runtime plane. This downloaded data is also called the contract and is stored on the local file system​</documentation>
       <property key="20200527source" value="created in CommonSandbox"/>
     </element>
     <element xsi:type="archimate:ApplicationService" name="Universal Data Collection Agent (UDCA)" id="44eee917-6eba-4cf9-bc70-2909c8c9bffc">
+      <documentation>The Universal Data Collection Agent (UDCA) is a service running within the data collection pod in the runtime plane that extracts analytics, trace, and deployment status data and sends it to the UAP.</documentation>
       <property key="20200527source" value="created in CommonSandbox"/>
     </element>
     <element xsi:type="archimate:ApplicationService" name="Management API for Runtime Data (MART)" id="eccaeffa-f76b-4b08-b536-2dc4f9bbb826">
+      <documentation>The MART server (Management API for Runtime data) processes the API calls against the runtime datastore.​</documentation>
       <property key="20200527source" value="created in CommonSandbox"/>
     </element>
     <element xsi:type="archimate:ApplicationService" name="Cassandra Datastore" id="cd68bc4e-06ba-42b2-a92b-13a2746f9bcc">
+      <documentation>Cassandra is a free and open-source, distributed, wide column store, NoSQL database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure.</documentation>
       <property key="20200527source" value="created in CommonSandbox"/>
     </element>
     <element xsi:type="archimate:ApplicationInterface" name="&lt;&lt;Machine to Machine Interface>>Partner  API" id="8726b506-0549-4441-87f7-1d0c79905af3"/>
@@ -468,14 +473,31 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:ApplicationComponent" name="Application Component" id="094d1bb4-c73f-4608-b0be-f74eebb17bb9"/>
     <element xsi:type="archimate:ApplicationEvent" name="Partner Event" id="70f3f74f-a64e-4383-a753-7ab976325acd"/>
     <element xsi:type="archimate:ApplicationService" name="Partner Service" id="891e9224-de03-42f4-917f-3276fc4fef0f"/>
-    <element xsi:type="archimate:ApplicationInterface" name="&lt;&lt;Human to Machine >> Hybrid UI" id="7efc7ea8-c8ad-428e-83ba-11fd4428907c"/>
-    <element xsi:type="archimate:ApplicationService" name="Management Server" id="632c0e68-a4b4-4c9c-b9a9-ae5c8107c376"/>
-    <element xsi:type="archimate:ApplicationService" name="Unified Analytics Platform" id="25c7ea3f-e497-44ab-82da-e6519618e3cb"/>
-    <element xsi:type="archimate:ApplicationService" name="Logging" id="e3ecdfb1-2f37-484b-bdfe-2f6e26979fe3"/>
-    <element xsi:type="archimate:ApplicationService" name="Identity Credential Authentication " id="9626279b-be6f-4bbb-9a10-c9773b2c47fc"/>
-    <element xsi:type="archimate:ApplicationService" name="Role Access Management" id="3134f6e0-8e8d-45ee-8076-c095912d9387"/>
-    <element xsi:type="archimate:ApplicationService" name="Resource Hierarchy " id="bc2ccf3c-e876-4cd0-bfa0-db823be0d155"/>
-    <element xsi:type="archimate:ApplicationService" name="Metrics" id="0d7b2518-04b8-4b6b-82fb-df23b6ade708"/>
+    <element xsi:type="archimate:ApplicationInterface" name="&lt;&lt;Human to Machine >> Hybrid UI" id="7efc7ea8-c8ad-428e-83ba-11fd4428907c">
+      <documentation>Hybrid UI: Apigee hybrid UI: Provides a UI for developers to create and deploy API proxies, configure policies, create API products, and create developer apps. Administrators can use the Apigee hybrid UI to monitor deployment status​</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Management Server" id="632c0e68-a4b4-4c9c-b9a9-ae5c8107c376">
+      <documentation>Management Server:  The Synchronizer periodically polls the Management Server for changes and downloads a new configuration whenever changes are detected. The configuration data is retrieved and stored locally as a JSON file on the local file system, where the Message Processors can access it.​</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Unified Analytics Platform" id="25c7ea3f-e497-44ab-82da-e6519618e3cb">
+      <documentation>Unified Analytics Platform: Unified Analytics Platform (UAP): Receives and processes analytics and deployment status data from the runtime plane.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Logging" id="e3ecdfb1-2f37-484b-bdfe-2f6e26979fe3">
+      <documentation>Logging helps provide insight to the current and past activities taking place within the services. By default, Edge components use a logging level of INFO. However, you can set the logging level for each Edge component. For example, you might want to set it to DEBUG for the Message Processor, or to ERROR for the Management Server.  the associated message level helps increase or decrease the verboseness of the outputted information to help debug a situation that may be taking place, or monitor ongoing activities of a solution to catch any errors as they occur</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Identity Credential Authentication " id="9626279b-be6f-4bbb-9a10-c9773b2c47fc">
+      <documentation>Identity Credential Authentication User account authentication uses Google Cloud Platform accounts. Authorization uses GCP service accounts.​&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Role Access Management" id="3134f6e0-8e8d-45ee-8076-c095912d9387">
+      <documentation>Role Access Management: Access management for hybrid uses Google’s roles engine, IAM, and supports default Apigee roles.​</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Resource Hierarchy " id="bc2ccf3c-e876-4cd0-bfa0-db823be0d155">
+      <documentation>Resource Hierarchy: Resources are organized in GCP projects (linked to Apigee organizations).</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Metrics" id="0d7b2518-04b8-4b6b-82fb-df23b6ade708">
+      <documentation>Metrics: the measurement of API traffic relating to usage rates, date/time related usage, error rates, availability rates</documentation>
+    </element>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
     <element xsi:type="archimate:SystemSoftware" name="Java" id="22462922-2b4d-498a-ba44-0ab95aa51f53">
@@ -1240,9 +1262,14 @@ Kafka Streams is a client library for building applications and microservices, w
     <element xsi:type="archimate:SystemSoftware" name="Azure DevOps" id="524a06ca-087a-4c36-b759-fa13d457adce">
       <documentation>Azure DevOps is a Software as a service (SaaS) platform from Microsoft that provides an end-to-end DevOps toolchain for developing and deploying software.  It also integrates with most leading tools on the market and is a great option for orchestrating a DevOps toolchain. https://www.devopsgroup.com/insights/resources/tutorials/all/what-is-azure-devops/</documentation>
     </element>
-    <element xsi:type="archimate:Node" name="API Gateway Agent - Cloud Install" id="27a79ef9-892c-407e-907d-9e98117f041f"/>
+    <element xsi:type="archimate:Node" name="API Gateway Agent - Cloud Install" id="27a79ef9-892c-407e-907d-9e98117f041f">
+      <documentation>API Gateway Cloud Agent – Cloud Install : Installation of all components relating to the API Gateway are installed in the Cloud​</documentation>
+    </element>
     <element xsi:type="archimate:Node" name="Node" id="176b68f8-22b0-4beb-8fb4-182292f6c320"/>
-    <element xsi:type="archimate:SystemSoftware" name="Certified Kubernetes " id="494a66db-874f-4059-bb34-995ea39d1c1c"/>
+    <element xsi:type="archimate:SystemSoftware" name="Certified Kubernetes " id="494a66db-874f-4059-bb34-995ea39d1c1c">
+      <documentation>Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available. https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/  Kubernetes is acontainer-orchestration system for automating application deployment, scaling, and management. It was originally designed by Google, and is now maintained by the Cloud Native Computing Foundation​&#xD;
+</documentation>
+    </element>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -1270,8 +1297,13 @@ Kafka Streams is a client library for building applications and microservices, w
     <element xsi:type="archimate:Junction" name="Junction" id="544ff2e8-3bd2-41ea-84fe-85acb5eff061" type="or"/>
     <element xsi:type="archimate:Junction" name="Junction" id="c4f39b1e-03bb-4556-9b9b-7e4641855c8a" type="or"/>
     <element xsi:type="archimate:Junction" name="Junction" id="3c83a90c-87ce-4c5f-95d2-51e2b125b800" type="or"/>
-    <element xsi:type="archimate:Grouping" name="Runtime Plane" id="9cf23af9-606b-4ac9-9e51-fb1d7b0bbb54"/>
-    <element xsi:type="archimate:Grouping" name="Management Plane" id="3552ad31-9b4a-47d6-b758-fd0a64fcc3e7"/>
+    <element xsi:type="archimate:Grouping" name="Runtime Plane" id="9cf23af9-606b-4ac9-9e51-fb1d7b0bbb54">
+      <documentation>The runtime plane is a set of containerized runtime services that you set up and maintain in your own Kubernetes cluster running on a supported Kubernetes platform. All API traffic passes through and is processed within the runtime plane.​&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Management Plane" id="3552ad31-9b4a-47d6-b758-fd0a64fcc3e7">
+      <documentation>Management Plane Management Plane :  monitoring and configuration for all layers of stacks, centralized control area. These services include the UI, management API, and analytics.​</documentation>
+    </element>
     <element xsi:type="archimate:Grouping" name="Common Services" id="a62ce0e1-43a5-413a-8258-ec9ad80dbc80"/>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
