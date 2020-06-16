@@ -4406,9 +4406,40 @@ ESDC Applications</content>
       </child>
     </element>
     <element xsi:type="archimate:SketchModel" name="baseline Spring Sketch" id="e2c054a2-5248-4ed1-9cfc-363a7195afd6">
-      <child xsi:type="archimate:SketchModelSticky" id="8afcbdcf-89c2-42c6-a9ef-bef6a32be1c1" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+      <child xsi:type="archimate:Group" id="f8544809-d57c-4ee1-a807-fa8193e3ba74" name="Enterprise Portal and Cyber Authentication Solutions" textAlignment="1" fillColor="#d5ffff">
+        <bounds x="276" y="84" width="877" height="457"/>
+        <child xsi:type="archimate:SketchModelSticky" id="71bff805-5a76-4332-8dd6-52fed66f0c0a" name="Sticky" targetConnections="0021bc6a-8f62-4d43-a37b-5591a0d87e19 d4fe080e-99b3-49f7-bf42-cccb49686fcc 838a0cc6-12c9-41d5-89e8-96f77d14db3f e87c66cb-1a4a-42b2-8525-652a72d3aad9" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="504" y="264" width="361" height="181"/>
+          <sourceConnection id="26951fc3-518a-4917-8099-de90db996e67" source="71bff805-5a76-4332-8dd6-52fed66f0c0a" target="a7ba3e31-b71a-4e08-a9d0-1f9ec5be39ad"/>
+          <content>WebCenter Portal</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="0747845f-0d59-443d-8c62-cd8f1a73cd04" name="Sticky" targetConnections="52ae4db8-2c8f-4ff1-9beb-4ea70456aa1b 53b70425-8984-4f42-8b05-6075ec7bb025" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="96" y="168" width="135" height="70"/>
+          <sourceConnection id="d4fe080e-99b3-49f7-bf42-cccb49686fcc" source="0747845f-0d59-443d-8c62-cd8f1a73cd04" target="71bff805-5a76-4332-8dd6-52fed66f0c0a" type="1">
+            <bendpoint startX="353" startY="-11" endX="-168" endY="-162"/>
+          </sourceConnection>
+          <sourceConnection id="2a6fdfb5-0d7b-4f1e-a912-3fc60ea22ab0" source="0747845f-0d59-443d-8c62-cd8f1a73cd04" target="a7ba3e31-b71a-4e08-a9d0-1f9ec5be39ad"/>
+          <content>WebCenter Admin Portal</content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="a7ba3e31-b71a-4e08-a9d0-1f9ec5be39ad" name="Sticky" targetConnections="7196280e-d91d-4163-9c54-eeea89f49fc3 49260e19-9503-4957-aec6-1027a9426258 2a6fdfb5-0d7b-4f1e-a912-3fc60ea22ab0 26951fc3-518a-4917-8099-de90db996e67" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="288" y="360" width="135" height="70"/>
+          <content>Oracle Internet Directory </content>
+        </child>
+        <child xsi:type="archimate:SketchModelSticky" id="acbcc848-6369-485a-b48d-cc6e6b55d70a" name="Sticky" targetConnections="bf6601d4-3095-4ceb-a6a7-8a9d13947c6d 32f39df1-3d59-497b-8904-ea543547ee4a" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="288" y="264" width="135" height="70"/>
+          <sourceConnection id="c1b11536-ace0-4cd2-b46a-cd312979fb81" source="acbcc848-6369-485a-b48d-cc6e6b55d70a" target="a60f537a-1d48-46c9-a137-862d596e39d6">
+            <bendpoint startX="101" startY="85" endX="-258" endY="-19"/>
+          </sourceConnection>
+          <content>MSCBA Admin</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="8afcbdcf-89c2-42c6-a9ef-bef6a32be1c1" name="Sticky" targetConnections="a1a4b042-b572-40da-a9a5-2d4dcddb510d c25b8274-efb8-4c23-a4ad-2a78421b2f29" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
         <bounds x="849" y="120" width="283" height="204"/>
-        <sourceConnection id="5f89322e-d64e-49a7-88cb-a5eff54c3f4a" source="8afcbdcf-89c2-42c6-a9ef-bef6a32be1c1" target="2eeb2117-98ad-44d9-9719-129551f3379f" type="1"/>
+        <sourceConnection id="e87c66cb-1a4a-42b2-8525-652a72d3aad9" source="8afcbdcf-89c2-42c6-a9ef-bef6a32be1c1" target="71bff805-5a76-4332-8dd6-52fed66f0c0a"/>
+        <sourceConnection id="cd50ed9c-9bb7-4b1e-ae2f-d70adaa9c50e" source="8afcbdcf-89c2-42c6-a9ef-bef6a32be1c1" target="2053861b-ed60-49a8-a98e-8a24203d402b">
+          <bendpoint startX="-426" startY="-54" endX="86" endY="-322"/>
+          <bendpoint startX="-462" startY="246" endX="50" endY="-22"/>
+        </sourceConnection>
         <child xsi:type="archimate:SketchModelSticky" id="7cae1f0b-0a1b-411b-8fb7-f0def6a5d0e3" name="Sticky" targetConnections="fa87fd28-350f-4c1e-b84f-19fff1e4216f" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
           <bounds x="36" y="108" width="227" height="24"/>
           <sourceConnection id="ef7539e7-57c5-43ad-a0bc-18c3fd12ae55" source="7cae1f0b-0a1b-411b-8fb7-f0def6a5d0e3" target="d3370766-2d99-4f3c-94ad-d97f3f62ca8b" type="1"/>
@@ -4419,49 +4450,48 @@ ESDC Applications</content>
           <content>Enrolment Validation Component</content>
         </child>
         <child xsi:type="archimate:SketchModelSticky" id="b94d8f3d-c4e9-4eeb-9887-75e4948d2e12" name="Sticky" targetConnections="ea46062c-69a2-4a41-b650-8382fc3108e3" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-          <bounds x="36" y="48" width="219" height="47"/>
+          <bounds x="40" y="48" width="219" height="47"/>
           <sourceConnection id="fa87fd28-350f-4c1e-b84f-19fff1e4216f" source="b94d8f3d-c4e9-4eeb-9887-75e4948d2e12" target="7cae1f0b-0a1b-411b-8fb7-f0def6a5d0e3" type="1"/>
           <sourceConnection id="fbdd78d0-c497-42ed-b823-d1e27a72a848" source="b94d8f3d-c4e9-4eeb-9887-75e4948d2e12" target="32cdc295-02d5-4680-8825-ef9d93ffdaab" type="1"/>
+          <sourceConnection id="bf6601d4-3095-4ceb-a6a7-8a9d13947c6d" source="b94d8f3d-c4e9-4eeb-9887-75e4948d2e12" target="acbcc848-6369-485a-b48d-cc6e6b55d70a" type="1">
+            <bendpoint startX="-370" startY="13" endX="-7" endY="-179"/>
+          </sourceConnection>
           <content>Application Request Broker &#xD;
 </content>
         </child>
         <content>ECAS</content>
       </child>
       <child xsi:type="archimate:SketchModelActor" id="d76c39bd-29e8-40df-9338-acd28ebd0eaa" name="Client">
-        <bounds x="953" y="-60" width="75" height="100"/>
+        <bounds x="959" y="-132" width="75" height="100"/>
         <sourceConnection id="92bca2f4-45cb-4ea0-a9e1-e2ca655d8c43" source="d76c39bd-29e8-40df-9338-acd28ebd0eaa" target="2c6cbb52-7d13-4678-b219-172f958e762e" type="1"/>
       </child>
-      <child xsi:type="archimate:SketchModelActor" id="7dd5b41d-8a4a-4850-a722-44ad965d2785" name="Portal Support">
-        <bounds x="168" y="302" width="109" height="100"/>
-        <sourceConnection id="c4c45379-3e44-47ba-affc-51aa0d3a3371" source="7dd5b41d-8a4a-4850-a722-44ad965d2785" target="050179a2-5984-4e76-b061-e2594d4e3128" type="1">
-          <bendpoint startX="1" startY="80" endX="-750" endY="18"/>
+      <child xsi:type="archimate:SketchModelActor" id="7dd5b41d-8a4a-4850-a722-44ad965d2785" name="Portal steward">
+        <bounds x="120" y="280" width="109" height="100"/>
+        <sourceConnection id="53b70425-8984-4f42-8b05-6075ec7bb025" source="7dd5b41d-8a4a-4850-a722-44ad965d2785" target="0747845f-0d59-443d-8c62-cd8f1a73cd04" type="1">
+          <bendpoint startX="210" startY="-44" endX="-233" endY="-9"/>
         </sourceConnection>
-        <sourceConnection id="2ae1bca1-6181-471d-9fca-987a0c388509" source="7dd5b41d-8a4a-4850-a722-44ad965d2785" target="a60f537a-1d48-46c9-a137-862d596e39d6" type="1">
-          <bendpoint startX="-23" startY="92" endX="-774" endY="-47"/>
-          <bendpoint startX="553" startY="92" endX="-198" endY="-47"/>
-        </sourceConnection>
+        <sourceConnection id="32f39df1-3d59-497b-8904-ea543547ee4a" source="7dd5b41d-8a4a-4850-a722-44ad965d2785" target="acbcc848-6369-485a-b48d-cc6e6b55d70a" type="1"/>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="050179a2-5984-4e76-b061-e2594d4e3128" name="Sticky" targetConnections="c4c45379-3e44-47ba-affc-51aa0d3a3371" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+      <child xsi:type="archimate:SketchModelSticky" id="050179a2-5984-4e76-b061-e2594d4e3128" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
         <bounds x="852" y="379" width="277" height="70"/>
+        <sourceConnection id="03732b93-c396-4bb2-9180-dfb4b286225a" source="050179a2-5984-4e76-b061-e2594d4e3128" target="a8b1b51e-36cf-497d-a14e-9c5aead09482"/>
         <content>My Service Canada Account</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="a60f537a-1d48-46c9-a137-862d596e39d6" name="Sticky" targetConnections="2ae1bca1-6181-471d-9fca-987a0c388509" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+      <child xsi:type="archimate:SketchModelSticky" id="a60f537a-1d48-46c9-a137-862d596e39d6" name="Sticky" targetConnections="c1b11536-ace0-4cd2-b46a-cd312979fb81" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
         <bounds x="852" y="448" width="277" height="78"/>
+        <sourceConnection id="dba773c2-3630-4cfc-9c01-bba99ea5d8ec" source="a60f537a-1d48-46c9-a137-862d596e39d6" target="4fabb721-2e4a-49fd-8608-656386ef00a1"/>
+        <sourceConnection id="1256bd42-97a4-4ecf-842b-9e45df0d5ce0" source="a60f537a-1d48-46c9-a137-862d596e39d6" target="448844d1-f2be-46ce-99ad-84cdeb4479a4">
+          <bendpoint startX="18" startY="53" endX="-67" endY="-47"/>
+        </sourceConnection>
         <content>My Service Canada Business Account &#xD;
 </content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="32cdc295-02d5-4680-8825-ef9d93ffdaab" name="Sticky" targetConnections="39a90d8b-67c2-49e3-b2fa-23d852f32373 fbdd78d0-c497-42ed-b823-d1e27a72a848" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
         <bounds x="382" y="156" width="135" height="70"/>
-        <sourceConnection id="0021bc6a-8f62-4d43-a37b-5591a0d87e19" source="32cdc295-02d5-4680-8825-ef9d93ffdaab" target="71bff805-5a76-4332-8dd6-52fed66f0c0a" type="1"/>
+        <sourceConnection id="0021bc6a-8f62-4d43-a37b-5591a0d87e19" source="32cdc295-02d5-4680-8825-ef9d93ffdaab" target="71bff805-5a76-4332-8dd6-52fed66f0c0a" type="1">
+          <bendpoint startX="367" startY="25" endX="-144" endY="-222"/>
+        </sourceConnection>
         <content>WebGate</content>
-      </child>
-      <child xsi:type="archimate:SketchModelSticky" id="71bff805-5a76-4332-8dd6-52fed66f0c0a" name="Sticky" targetConnections="0021bc6a-8f62-4d43-a37b-5591a0d87e19 d4fe080e-99b3-49f7-bf42-cccb49686fcc 838a0cc6-12c9-41d5-89e8-96f77d14db3f" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="382" y="254" width="135" height="70"/>
-        <content>WebCenter Portal</content>
-      </child>
-      <child xsi:type="archimate:SketchModelSticky" id="a3ffbefd-43b8-4e44-8128-74f199f618cd" name="Sticky" targetConnections="8080ffc1-8b38-4623-915b-8e4da1b34db1 c01d841d-fad4-457f-b0a5-12f6a4a58e77" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="372" y="348" width="135" height="70"/>
-        <content>WebCenter Portlet</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="438f1187-8d38-48bc-bbfb-00aae8246ea3" name="Sticky" targetConnections="6f7a1e92-e45b-409a-83ba-d1ad48b6e582" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
         <bounds x="382" y="448" width="135" height="70"/>
@@ -4469,16 +4499,17 @@ ESDC Applications</content>
           <bendpoint startX="-149" startY="9" endX="-149" endY="301"/>
           <bendpoint startX="-149" startY="-279" endX="-149" endY="13"/>
         </sourceConnection>
+        <sourceConnection id="49260e19-9503-4957-aec6-1027a9426258" source="438f1187-8d38-48bc-bbfb-00aae8246ea3" target="a7ba3e31-b71a-4e08-a9d0-1f9ec5be39ad"/>
+        <child xsi:type="archimate:SketchModelSticky" id="2053861b-ed60-49a8-a98e-8a24203d402b" name="Sticky" targetConnections="cd50ed9c-9bb7-4b1e-ae2f-d70adaa9c50e" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="72" y="24" width="49" height="37"/>
+          <content>CUPS</content>
+        </child>
         <content>Oracle Access Manager </content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="f74331e3-3138-4b77-9727-7eee9e18b450" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
         <bounds x="446" y="552" width="135" height="70"/>
         <sourceConnection id="6f7a1e92-e45b-409a-83ba-d1ad48b6e582" source="f74331e3-3138-4b77-9727-7eee9e18b450" target="438f1187-8d38-48bc-bbfb-00aae8246ea3"/>
         <content>Oracle Access Manager Database</content>
-      </child>
-      <child xsi:type="archimate:SketchModelSticky" id="a7ba3e31-b71a-4e08-a9d0-1f9ec5be39ad" name="Sticky" targetConnections="7196280e-d91d-4163-9c54-eeea89f49fc3" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="528" y="448" width="135" height="70"/>
-        <content>Oracle Internet Directory </content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="0199e171-4554-4567-aab2-fa5108726b09" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
         <bounds x="588" y="552" width="135" height="70"/>
@@ -4487,15 +4518,12 @@ ESDC Applications</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="da7941b9-6fd0-4e2e-8131-e55391b2c532" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
         <bounds x="302" y="552" width="135" height="70"/>
-        <sourceConnection id="c01d841d-fad4-457f-b0a5-12f6a4a58e77" source="da7941b9-6fd0-4e2e-8131-e55391b2c532" target="a3ffbefd-43b8-4e44-8128-74f199f618cd">
-          <bendpoint startX="-9" startY="-179" endX="-79" endY="25"/>
-        </sourceConnection>
         <sourceConnection id="838a0cc6-12c9-41d5-89e8-96f77d14db3f" source="da7941b9-6fd0-4e2e-8131-e55391b2c532" target="71bff805-5a76-4332-8dd6-52fed66f0c0a">
-          <bendpoint startX="-33" startY="-299" endX="-113" endY="-1"/>
+          <bendpoint startX="3" startY="-155" endX="-588" endY="-6"/>
         </sourceConnection>
         <sourceConnection id="52ae4db8-2c8f-4ff1-9beb-4ea70456aa1b" source="da7941b9-6fd0-4e2e-8131-e55391b2c532" target="0747845f-0d59-443d-8c62-cd8f1a73cd04">
           <bendpoint startX="51" startY="-59" endX="-221" endY="183"/>
-          <bendpoint startX="303" startY="-59" endX="31" endY="183"/>
+          <bendpoint startX="-21" startY="-287" endX="-91" endY="13"/>
         </sourceConnection>
         <content>WebCenterPortal Database</content>
       </child>
@@ -4503,61 +4531,98 @@ ESDC Applications</content>
         <bounds x="852" y="552" width="157" height="70"/>
         <content>MSCA/MSCBA Database</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="0747845f-0d59-443d-8c62-cd8f1a73cd04" name="Sticky" targetConnections="52ae4db8-2c8f-4ff1-9beb-4ea70456aa1b" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="574" y="310" width="135" height="70"/>
-        <sourceConnection id="d4fe080e-99b3-49f7-bf42-cccb49686fcc" source="0747845f-0d59-443d-8c62-cd8f1a73cd04" target="71bff805-5a76-4332-8dd6-52fed66f0c0a" type="1"/>
-        <sourceConnection id="8080ffc1-8b38-4623-915b-8e4da1b34db1" source="0747845f-0d59-443d-8c62-cd8f1a73cd04" target="a3ffbefd-43b8-4e44-8128-74f199f618cd" type="1"/>
-        <content>WebCenter Admin Portal</content>
-      </child>
       <child xsi:type="archimate:SketchModelSticky" id="2c6cbb52-7d13-4678-b219-172f958e762e" name="Sticky" targetConnections="92bca2f4-45cb-4ea0-a9e1-e2ca655d8c43" lineColor="#5c5c5c" textAlignment="1" fillColor="#ff8080">
-        <bounds x="840" y="48" width="289" height="70"/>
+        <bounds x="852" width="289" height="70"/>
         <sourceConnection id="ea46062c-69a2-4a41-b650-8382fc3108e3" source="2c6cbb52-7d13-4678-b219-172f958e762e" target="b94d8f3d-c4e9-4eeb-9887-75e4948d2e12" type="1"/>
         <content>Canada.ca</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="2eeb2117-98ad-44d9-9719-129551f3379f" name="Sticky" targetConnections="5f89322e-d64e-49a7-88cb-a5eff54c3f4a" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
-        <bounds x="1188" y="156" width="217" height="65"/>
+      <child xsi:type="archimate:SketchModelSticky" id="2eeb2117-98ad-44d9-9719-129551f3379f" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1188" y="156" width="145" height="65"/>
+        <sourceConnection id="c25b8274-efb8-4c23-a4ad-2a78421b2f29" source="2eeb2117-98ad-44d9-9719-129551f3379f" target="8afcbdcf-89c2-42c6-a9ef-bef6a32be1c1"/>
         <content>SIN/SIR</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="448844d1-f2be-46ce-99ad-84cdeb4479a4" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+      <child xsi:type="archimate:SketchModelSticky" id="448844d1-f2be-46ce-99ad-84cdeb4479a4" name="Sticky" targetConnections="1256bd42-97a4-4ecf-842b-9e45df0d5ce0" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
         <bounds x="1008" y="552" width="135" height="70"/>
         <content>R&amp;A Database</content>
       </child>
+      <child xsi:type="archimate:SketchModelSticky" id="91ed7e83-06bf-4061-86c9-8615e58ab4a9" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1212" y="337" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="4bc24441-7fb5-4998-bbd2-edd4d0dc0b0b" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1222" y="347" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="4f29d5ad-6d3a-491e-b871-5c605afcfe03" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1232" y="357" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="5b1f9b85-f4f6-4ef0-a3ca-496e5234bd54" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1242" y="367" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="a8b1b51e-36cf-497d-a14e-9c5aead09482" name="Sticky" targetConnections="03732b93-c396-4bb2-9180-dfb4b286225a" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1252" y="377" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="55871ac2-758a-4894-b95c-0c31c43aaa86" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1256" y="486" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="f7defaf1-1889-4637-8510-721067685fe2" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1266" y="496" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="4fabb721-2e4a-49fd-8608-656386ef00a1" name="Sticky" targetConnections="dba773c2-3630-4cfc-9c01-bba99ea5d8ec" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1276" y="506" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelActor" id="60dbfd1f-ee28-4b9c-b93e-8b1aeae7efcd" name="ECAS steward">
+        <bounds x="144" y="108" width="109" height="100"/>
+        <sourceConnection id="a1a4b042-b572-40da-a9a5-2d4dcddb510d" source="60dbfd1f-ee28-4b9c-b93e-8b1aeae7efcd" target="8afcbdcf-89c2-42c6-a9ef-bef6a32be1c1" type="1">
+          <bendpoint startX="354" startY="-14" endX="-438" endY="-78"/>
+        </sourceConnection>
+      </child>
     </element>
     <element xsi:type="archimate:SketchModel" name="solution Spring Sketch" id="51d5b232-01b5-4cc8-85af-11f38b0c3610">
+      <child xsi:type="archimate:Group" id="6712fd67-e27d-4630-bd41-1e9bbbf519ab" name="Enterprise Portal and Cyber Authentication Solutions" textAlignment="1" fillColor="#d5ffff">
+        <bounds x="612" y="504" width="565" height="433"/>
+      </child>
       <child xsi:type="archimate:SketchModelActor" id="d54c6db5-103a-45ef-8bde-8000233afa58" name="Client">
-        <bounds x="912" y="337" width="114" height="100"/>
+        <bounds x="918" y="264" width="114" height="100"/>
+        <sourceConnection id="b1fa1d5a-91bc-47a5-87dd-3250b8e43450" source="d54c6db5-103a-45ef-8bde-8000233afa58" target="fa1446e8-12ad-4926-bb94-a17b03ddbd02" type="1"/>
       </child>
       <child xsi:type="archimate:SketchModelActor" id="69fa8409-cf89-4aa9-bdbf-3edd24bee0e0" name="Portal Steward">
         <bounds x="489" y="776" width="114" height="100"/>
-        <sourceConnection id="a96f28f5-1f62-42a5-a3cd-d9a4e200406f" source="69fa8409-cf89-4aa9-bdbf-3edd24bee0e0" target="4b9a1a01-ff76-419b-a4c1-9d9f90389231" type="1"/>
         <sourceConnection id="106d8b38-e76a-4e37-ba6d-faaaf9e8e5c7" source="69fa8409-cf89-4aa9-bdbf-3edd24bee0e0" target="88546b4c-fcfc-4a88-b60f-0f8fdd0cb7ab" type="1"/>
+        <sourceConnection id="1a2f693e-3185-441d-b70b-6c87aa0c53ba" source="69fa8409-cf89-4aa9-bdbf-3edd24bee0e0" target="4b9a1a01-ff76-419b-a4c1-9d9f90389231" type="1"/>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="88546b4c-fcfc-4a88-b60f-0f8fdd0cb7ab" name="Sticky" targetConnections="106d8b38-e76a-4e37-ba6d-faaaf9e8e5c7 319a92c9-8e4f-4c83-8044-4952186be9e3" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="850" y="776" width="277" height="70"/>
+        <bounds x="850" y="776" width="277" height="53"/>
+        <sourceConnection id="80daafb8-9493-459c-8b1d-03de5bbf9b95" source="88546b4c-fcfc-4a88-b60f-0f8fdd0cb7ab" target="f82a44f3-6662-48f1-a3e0-50dda56130c5"/>
         <content>My Service Canada Account</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="4b9a1a01-ff76-419b-a4c1-9d9f90389231" name="Sticky" targetConnections="a96f28f5-1f62-42a5-a3cd-d9a4e200406f 2d8dafd2-4b04-4888-b6ef-cd87ba845e2e" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+      <child xsi:type="archimate:SketchModelSticky" id="4b9a1a01-ff76-419b-a4c1-9d9f90389231" name="Sticky" targetConnections="2d8dafd2-4b04-4888-b6ef-cd87ba845e2e 1a2f693e-3185-441d-b70b-6c87aa0c53ba" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
         <bounds x="850" y="845" width="277" height="78"/>
-        <sourceConnection id="5461eabf-4dc2-4023-88b0-57778d7c604c" source="4b9a1a01-ff76-419b-a4c1-9d9f90389231" target="e2ebc461-cdb3-4ae9-8a3b-f35ca3f8f5ab"/>
-        <sourceConnection id="a21406df-1d77-43b5-a757-3d19c1a52bb6" source="4b9a1a01-ff76-419b-a4c1-9d9f90389231" target="5e176323-5c51-4a4a-bdce-43890ae9522d"/>
-        <content>My Service Canada Business Account &#xD;
+        <sourceConnection id="c39b656b-cc84-4d07-9e12-02bf2265f7c4" source="4b9a1a01-ff76-419b-a4c1-9d9f90389231" target="ddb03735-4571-4785-939d-9c1bb4e4416c"/>
+        <content>My Service Canada Business Account (MSCBA Admin)&#xD;
 </content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="e2ebc461-cdb3-4ae9-8a3b-f35ca3f8f5ab" name="Sticky" targetConnections="5461eabf-4dc2-4023-88b0-57778d7c604c" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+      <child xsi:type="archimate:SketchModelSticky" id="e2ebc461-cdb3-4ae9-8a3b-f35ca3f8f5ab" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
         <bounds x="850" y="949" width="157" height="70"/>
         <content>MSCA/MSCBA Database</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="fa1446e8-12ad-4926-bb94-a17b03ddbd02" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ff8080">
-        <bounds x="838" y="445" width="289" height="70"/>
+      <child xsi:type="archimate:SketchModelSticky" id="fa1446e8-12ad-4926-bb94-a17b03ddbd02" name="Sticky" targetConnections="b1fa1d5a-91bc-47a5-87dd-3250b8e43450" lineColor="#5c5c5c" textAlignment="1" fillColor="#ff8080">
+        <bounds x="876" y="396" width="289" height="70"/>
         <sourceConnection id="223353b1-8791-426c-a655-5d78ffe96523" source="fa1446e8-12ad-4926-bb94-a17b03ddbd02" target="1822a23f-f400-49b7-b1f5-1019826df585" type="1"/>
         <content>Canada.ca</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="9eb7f32e-45bb-4a7e-974a-f10d0d32c5b2" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
-        <bounds x="1186" y="553" width="217" height="65"/>
+        <bounds x="1247" y="564" width="147" height="65"/>
         <sourceConnection id="de0a63f8-f22d-4573-af26-9deec1680904" source="9eb7f32e-45bb-4a7e-974a-f10d0d32c5b2" target="1822a23f-f400-49b7-b1f5-1019826df585"/>
         <content>SIN/SIR</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="5e176323-5c51-4a4a-bdce-43890ae9522d" name="Sticky" targetConnections="a21406df-1d77-43b5-a757-3d19c1a52bb6" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+      <child xsi:type="archimate:SketchModelSticky" id="5e176323-5c51-4a4a-bdce-43890ae9522d" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
         <bounds x="1006" y="949" width="135" height="70"/>
         <content>R&amp;A Database</content>
       </child>
@@ -4580,7 +4645,8 @@ ESDC Applications</content>
             <bendpoint startX="-212" startY="169" endX="-208" endY="-31"/>
           </sourceConnection>
           <sourceConnection id="2d8dafd2-4b04-4888-b6ef-cd87ba845e2e" source="a7c3f1b3-50d3-414d-8b94-526783369cd9" target="4b9a1a01-ff76-419b-a4c1-9d9f90389231">
-            <bendpoint startX="160" startY="-11" endX="164" endY="-284"/>
+            <bendpoint startX="160" startY="1" endX="164" endY="-272"/>
+            <bendpoint startX="160" startY="181" endX="164" endY="-92"/>
             <bendpoint startX="160" startY="265" endX="164" endY="-8"/>
           </sourceConnection>
           <content>Application Request Broker &#xD;
@@ -4590,14 +4656,56 @@ ESDC Applications</content>
       </child>
       <child xsi:type="archimate:SketchModelActor" id="79dcbbba-a05d-45f5-8714-a966f27d7818" name="ECAS Steward ">
         <bounds x="516" y="552" width="75" height="100"/>
-        <sourceConnection id="99a48e85-a6d7-49d2-8b31-ef9a2c63e6da" source="79dcbbba-a05d-45f5-8714-a966f27d7818" target="1822a23f-f400-49b7-b1f5-1019826df585" type="1"/>
+        <sourceConnection id="99a48e85-a6d7-49d2-8b31-ef9a2c63e6da" source="79dcbbba-a05d-45f5-8714-a966f27d7818" target="1822a23f-f400-49b7-b1f5-1019826df585" type="1">
+          <bendpoint startX="167" startY="-14" endX="-268" endY="-54"/>
+        </sourceConnection>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="762f3e1d-a6d7-4ebe-a516-f9558328bc09" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1220" y="716" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="b5e0de0c-ce37-4f8a-9e33-55fecd0e32ca" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1230" y="726" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="31627f9d-270d-4757-92e9-ac379fe1f967" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1240" y="736" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="10465995-0f01-47aa-b700-32b1916138f9" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1250" y="746" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="f82a44f3-6662-48f1-a3e0-50dda56130c5" name="Sticky" targetConnections="80daafb8-9493-459c-8b1d-03de5bbf9b95" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1260" y="756" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="18d926a6-2307-4971-8a9a-d1cff7ad6132" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1264" y="865" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="91380c9f-a7fe-4b16-a2fd-b5ce0bfb2169" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1274" y="875" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="ddb03735-4571-4785-939d-9c1bb4e4416c" name="Sticky" targetConnections="c39b656b-cc84-4d07-9e12-02bf2265f7c4" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1284" y="885" width="141" height="65"/>
+        <content>ESDC Application</content>
       </child>
     </element>
     <element xsi:type="archimate:SketchModel" name="target Spring Sketch" id="1c0c03a1-f8e9-4f1e-a23b-6b7d35e71f73">
+      <child xsi:type="archimate:Group" id="de2e00df-ba46-4edc-b88d-9cd8f0f336c7" name="Enterprise Portal and Cyber Authentication Solutions" textAlignment="1" fillColor="#d5ffff">
+        <bounds x="622" y="528" width="565" height="419"/>
+        <child xsi:type="archimate:SketchModelSticky" id="b7e326d9-7869-4904-a023-8fa16ac9e947" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="240" y="288" width="277" height="31"/>
+          <content>BDM Social Program Managment Platform</content>
+        </child>
+      </child>
       <child xsi:type="archimate:SketchModelSticky" id="58d98ecb-cb5f-413a-9699-c70321def55a" name="Sticky" targetConnections="fe8de9fb-507d-41ac-b64a-65ea930a334a" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="860" y="561" width="277" height="220"/>
+        <bounds x="860" y="561" width="277" height="196"/>
         <child xsi:type="archimate:SketchModelSticky" id="bff81b51-caa9-4ba2-85f2-9e0fe3edd96e" name="Sticky" targetConnections="ed6018af-2628-4b37-ad68-8a90c7b3e9a9" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
           <bounds x="40" y="36" width="209" height="48"/>
+          <sourceConnection id="2a6bc522-98d6-42db-a64e-a90b02b0d7de" source="bff81b51-caa9-4ba2-85f2-9e0fe3edd96e" target="d83d8831-0e0e-40fd-ab18-140a51447a81"/>
           <content>Registration and Authentication </content>
         </child>
         <child xsi:type="archimate:SketchModelSticky" id="8c7505ed-87fc-4504-862a-45b41e98edca" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
@@ -4612,42 +4720,64 @@ ESDC Applications</content>
         <bounds x="948" y="348" width="114" height="100"/>
         <sourceConnection id="ed6018af-2628-4b37-ad68-8a90c7b3e9a9" source="585f0bb0-771c-4db4-9662-e6144080e080" target="bff81b51-caa9-4ba2-85f2-9e0fe3edd96e" type="1"/>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="56efef58-096a-4208-864a-ceb6c751446f" name="Sticky" targetConnections="c56687cb-96e9-4f50-b6b4-4f2165fc67db 7e37866f-beff-48a4-b45e-5a29b7f649a9 53553f2f-1422-410d-8a93-96c4f80b6194" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="860" y="786" width="277" height="70"/>
-        <content>BDM Universal Access / Social Program Managment&#xD;
+      <child xsi:type="archimate:SketchModelSticky" id="56efef58-096a-4208-864a-ceb6c751446f" name="Sticky" targetConnections="c56687cb-96e9-4f50-b6b4-4f2165fc67db 53553f2f-1422-410d-8a93-96c4f80b6194" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="860" y="786" width="277" height="31"/>
+        <sourceConnection id="e0244498-97c9-4431-8051-3eb0e87088f8" source="56efef58-096a-4208-864a-ceb6c751446f" target="bc15e669-9a37-46ee-80bc-1beca0545c46"/>
+        <content>BDM Universal Access&#xD;
 </content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="81adcd20-1fe6-4002-93dd-6a7ffd4905e5" name="Sticky" targetConnections="795e1c2a-86d2-4176-97a3-24e44c198590 7ecf7b50-3e7d-40f3-aad6-e485f1d1db57" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+      <child xsi:type="archimate:SketchModelSticky" id="81adcd20-1fe6-4002-93dd-6a7ffd4905e5" name="Sticky" targetConnections="7ecf7b50-3e7d-40f3-aad6-e485f1d1db57" lineColor="#5c5c5c" textAlignment="1" fillColor="#ff8080">
         <bounds x="860" y="855" width="277" height="78"/>
+        <sourceConnection id="6278230c-dfbd-4aac-bce5-c973fa9b28ce" source="81adcd20-1fe6-4002-93dd-6a7ffd4905e5" target="065a6b58-2577-4020-aa57-9e294ffc44e9"/>
+        <sourceConnection id="c84ab45d-8b80-4771-bde7-942b7ebedb67" source="81adcd20-1fe6-4002-93dd-6a7ffd4905e5" target="18ddbe40-70e9-4445-9577-32ef34d82f2e"/>
+        <sourceConnection id="2118bde0-f568-4615-9b06-91eab3026192" source="81adcd20-1fe6-4002-93dd-6a7ffd4905e5" target="4637e300-7af6-4032-b41c-21bc0bda758c"/>
         <content>OneGC Portal&#xD;
 </content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="4637e300-7af6-4032-b41c-21bc0bda758c" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
-        <bounds x="860" y="932" width="149" height="70"/>
+      <child xsi:type="archimate:SketchModelSticky" id="4637e300-7af6-4032-b41c-21bc0bda758c" name="Sticky" targetConnections="2118bde0-f568-4615-9b06-91eab3026192" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="848" y="996" width="149" height="70"/>
         <content>CIAM Database</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="e28590b4-eb8a-406b-874f-30e30925b7f0" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ff8080">
         <bounds x="848" y="455" width="289" height="70"/>
         <content>Canada.ca</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="18ddbe40-70e9-4445-9577-32ef34d82f2e" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
-        <bounds x="1008" y="932" width="129" height="70"/>
+      <child xsi:type="archimate:SketchModelSticky" id="18ddbe40-70e9-4445-9577-32ef34d82f2e" name="Sticky" targetConnections="c84ab45d-8b80-4771-bde7-942b7ebedb67" lineColor="#5c5c5c" textAlignment="1" fillColor="#c9e7b7">
+        <bounds x="996" y="996" width="129" height="70"/>
         <content>Portal Database</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="38918681-69a2-44c2-b4d1-132dbbf44529" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
-        <bounds x="1188" y="816" width="135" height="70"/>
-        <sourceConnection id="7e37866f-beff-48a4-b45e-5a29b7f649a9" source="38918681-69a2-44c2-b4d1-132dbbf44529" target="56efef58-096a-4208-864a-ceb6c751446f"/>
-        <sourceConnection id="795e1c2a-86d2-4176-97a3-24e44c198590" source="38918681-69a2-44c2-b4d1-132dbbf44529" target="81adcd20-1fe6-4002-93dd-6a7ffd4905e5"/>
-        <content>ESDC Application</content>
-      </child>
       <child xsi:type="archimate:SketchModelActor" id="e801a665-2685-4ea4-ba7f-b248d1189d70" name="Portal Steward">
-        <bounds x="543" y="828" width="147" height="100"/>
+        <bounds x="432" y="816" width="147" height="100"/>
         <sourceConnection id="53553f2f-1422-410d-8a93-96c4f80b6194" source="e801a665-2685-4ea4-ba7f-b248d1189d70" target="56efef58-096a-4208-864a-ceb6c751446f" type="1"/>
         <sourceConnection id="7ecf7b50-3e7d-40f3-aad6-e485f1d1db57" source="e801a665-2685-4ea4-ba7f-b248d1189d70" target="81adcd20-1fe6-4002-93dd-6a7ffd4905e5" type="1"/>
       </child>
       <child xsi:type="archimate:SketchModelActor" id="05afe1a6-9ae1-42b5-8a05-f05547b4135e" name="iSAMS /  BDM ICAM Steward">
-        <bounds x="516" y="628" width="156" height="100"/>
+        <bounds x="428" y="636" width="156" height="100"/>
         <sourceConnection id="fe8de9fb-507d-41ac-b64a-65ea930a334a" source="05afe1a6-9ae1-42b5-8a05-f05547b4135e" target="58d98ecb-cb5f-413a-9699-c70321def55a" type="1"/>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="d83d8831-0e0e-40fd-ab18-140a51447a81" name="Sticky" targetConnections="2a6bc522-98d6-42db-a64e-a90b02b0d7de" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1248" y="572" width="147" height="65"/>
+        <content>SIN/SIR</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="bc15e669-9a37-46ee-80bc-1beca0545c46" name="Sticky" targetConnections="e0244498-97c9-4431-8051-3eb0e87088f8" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1224" y="816" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="f409c8a2-f689-4966-8190-77e771426683" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1234" y="826" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="327bca88-b9f7-48ca-a122-a2a49c62bed2" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1244" y="836" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="17359d01-f721-41ef-a0e8-1a72a1d29c17" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1254" y="846" width="141" height="65"/>
+        <content>ESDC Application</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="065a6b58-2577-4020-aa57-9e294ffc44e9" name="Sticky" targetConnections="6278230c-dfbd-4aac-bce5-c973fa9b28ce" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffffb5">
+        <bounds x="1264" y="856" width="141" height="65"/>
+        <content>ESDC Application</content>
       </child>
     </element>
   </folder>
