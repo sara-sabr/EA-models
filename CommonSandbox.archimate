@@ -312,6 +312,8 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:BusinessActor" name="Business Actor" id="c4300264-3ac1-41cd-ba95-9bdec2941738"/>
     <element xsi:type="archimate:BusinessInterface" name="Business Interface" id="f4c7f0e7-c848-4b94-acc3-56dee6cbee35"/>
     <element xsi:type="archimate:Representation" name="Representation" id="7a7e6cde-b01b-4d79-a325-0a87a5b55227"/>
+    <element xsi:type="archimate:BusinessCollaboration" name="User Pillar" id="822d3cf8-1492-4833-9ffb-8d653e42e510"/>
+    <element xsi:type="archimate:BusinessFunction" name="Business Function" id="b4cf8702-0134-4d6b-bf3a-b36aced8b6ba"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -1288,6 +1290,14 @@ Kafka Streams is a client library for building applications and microservices, w
     <element xsi:type="archimate:Principle" name="Principles Catalog" id="6155f236-8ace-4b73-80b0-be22c7022c6c"/>
     <element xsi:type="archimate:Assessment" name="Feature Outcome" id="f0e2d878-7797-45ed-bef5-28ca977ead13"/>
     <element xsi:type="archimate:Assessment" name="Feature Success Critera" id="9b563ad2-a1a6-4a6a-8e3d-5e94c5780e86"/>
+    <element xsi:type="archimate:Goal" name="Enabling the establishment of a secure and resilient enterprise digital security ecosystem in which government services are delivered safely and securely" id="5f317053-266f-4f78-9d05-9dc7d5f59057"/>
+    <element xsi:type="archimate:Goal" name="Providing a secure platform that ensures safety and protection of systems and data hosted (physical &amp; virtual) within the converged Government of Canada’s (GC) network environment." id="a8bb821c-5375-4ec8-b47d-e5476e0c1f0d"/>
+    <element xsi:type="archimate:Driver" name="End-to-end safety and protection of GC’s information, applications, devices, network, hardware and physical facilities" id="7b52ddce-feec-4f2c-9566-c2b1ef30f219"/>
+    <element xsi:type="archimate:Driver" name="Develop, adopt, and enforce mature security processes, governance structure and standard " id="87617511-b347-4350-ad63-6c349c2316f8"/>
+    <element xsi:type="archimate:Driver" name="Develop, adapt and implement the Security Control Framework (SCF) in order to enable key Government business activities" id="4c084bc8-7c07-45e4-81b4-bfa9c546dc68"/>
+    <element xsi:type="archimate:Driver" name="Ensuring the confidentiality, integrity, and availability of the GC’s IT infrastructure and the Government’s critical business and customer data" id="78729405-ada3-472b-8ecd-e8fb7c2fcc27"/>
+    <element xsi:type="archimate:Assessment" name="Users" id="f8f21382-a1e0-4098-899a-4c80851deff2"/>
+    <element xsi:type="archimate:Assessment" name="User Devices" id="2d58565a-c85c-4895-8a7f-59ec0cbf5d6b"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Feature Gap" id="9ff8a02c-23f7-41f7-9ee7-0a1373ad231a"/>
@@ -1311,6 +1321,11 @@ Kafka Streams is a client library for building applications and microservices, w
     <element xsi:type="archimate:Grouping" name="Common Services" id="a62ce0e1-43a5-413a-8258-ec9ad80dbc80"/>
     <element xsi:type="archimate:Junction" name="Junction (copy) (copy)" id="75f933f5-2557-4d4d-b5e2-265569ccfdeb" type="or"/>
     <element xsi:type="archimate:Junction" name="Junction (copy) (copy) (copy)" id="fb43f589-f12b-4d46-a0c6-da4c6a63afa5" type="or"/>
+    <element xsi:type="archimate:Grouping" name="Users" id="6d16df7f-9c81-47fd-96ed-47a7248aa301"/>
+    <element xsi:type="archimate:Grouping" name="User Devices" id="5206f0d3-e25b-43ed-a813-78a263e6c190"/>
+    <element xsi:type="archimate:Grouping" name="Network" id="97bff89d-4c61-4e27-a68d-b0b08db0bb65"/>
+    <element xsi:type="archimate:Grouping" name="Resource Protection" id="b9b85c52-b22d-45de-bb50-ca01eaca0e4b"/>
+    <element xsi:type="archimate:Grouping" name="Continuous Monitoring" id="f8abb2ee-cabd-4ce5-a879-6f7865ba28f8"/>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e307ac9a-b3a7-4aa5-9133-6cf506203141" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="b29c1bc0-9c06-4484-9748-d797806e08b7"/>
@@ -5504,6 +5519,41 @@ ESDC Applications</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="d6cabea3-bb02-4f93-ba2e-642b076d1370" font="1|Segoe UI|10.2|1|WINDOWS|1|-17|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" archimateElement="cd377207-3dc5-4088-8db6-4fb3126a7f53">
         <bounds x="2513" y="434" width="143" height="181"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Zero Trust Layered " id="5e2d089c-19e7-4665-b1a0-f8e90a0b5d87">
+      <child xsi:type="archimate:DiagramObject" id="2d006b01-2c57-45da-b153-609ed79327ff" archimateElement="5f317053-266f-4f78-9d05-9dc7d5f59057">
+        <bounds x="12" y="12" width="644" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0e43e645-f796-43d8-b820-619bd4876870" archimateElement="a8bb821c-5375-4ec8-b47d-e5476e0c1f0d">
+        <bounds x="667" y="12" width="644" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="d87f9a01-f927-47c7-a2f2-1e63641db200" archimateElement="7b52ddce-feec-4f2c-9566-c2b1ef30f219">
+        <bounds x="12" y="84" width="320" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="622ebd98-9ad5-4ccb-82b7-ddfd162120d7" archimateElement="87617511-b347-4350-ad63-6c349c2316f8">
+        <bounds x="336" y="84" width="320" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="ac96c633-ae24-44db-ace0-057893ea9804" archimateElement="4c084bc8-7c07-45e4-81b4-bfa9c546dc68">
+        <bounds x="667" y="84" width="320" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0245a7af-aa15-4108-86e7-1f4bc6d92b8d" archimateElement="78729405-ada3-472b-8ecd-e8fb7c2fcc27">
+        <bounds x="996" y="84" width="320" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e474fc12-0d94-4e01-a59a-05f8d34171b9" textAlignment="1" archimateElement="6d16df7f-9c81-47fd-96ed-47a7248aa301">
+        <bounds x="36" y="180" width="226" height="140"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="aabb2eee-8a34-4f12-bd15-e732b85958ef" textAlignment="1" archimateElement="5206f0d3-e25b-43ed-a813-78a263e6c190">
+        <bounds x="296" y="180" width="226" height="140"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c5d91d2f-7415-4013-b8c4-5ccd93b38127" textAlignment="1" archimateElement="97bff89d-4c61-4e27-a68d-b0b08db0bb65">
+        <bounds x="540" y="180" width="226" height="140"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="3fbfbb63-4bef-4e03-b645-18845faee653" textAlignment="1" archimateElement="b9b85c52-b22d-45de-bb50-ca01eaca0e4b">
+        <bounds x="780" y="180" width="226" height="140"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="ac1d1158-3e9b-4869-b452-790d6f5f555f" textAlignment="1" archimateElement="f8abb2ee-cabd-4ce5-a879-6f7865ba28f8">
+        <bounds x="1020" y="180" width="226" height="140"/>
       </child>
     </element>
   </folder>
