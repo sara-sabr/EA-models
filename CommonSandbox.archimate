@@ -1295,6 +1295,9 @@ Kafka Streams is a client library for building applications and microservices, w
     <element xsi:type="archimate:Device" name="Managed Devices" id="45f53d3c-c217-4566-afde-1f4029c22993"/>
     <element xsi:type="archimate:Device" name="Unmanaged Devices" id="868913b4-7851-4492-b067-3a0758a68b7e"/>
     <element xsi:type="archimate:TechnologyService" name="Implemented Control Measures" id="4a08afe0-12e8-4801-a594-9810042fda1d"/>
+    <element xsi:type="archimate:SystemSoftware" name="RabbitMQ" id="f4f67dea-b059-4d3c-8283-ad6059d995e2">
+      <documentation>https://www.rabbitmq.com/</documentation>
+    </element>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -1955,6 +1958,7 @@ Kafka Streams is a client library for building applications and microservices, w
     <element xsi:type="archimate:RealizationRelationship" id="092ac9bf-6f16-466b-90f6-55f6c635e1dc" source="7eeaee28-f907-4fcb-ac67-0f49ab44afae" target="f01c2e7c-8b84-4887-9704-065a53dba3ec"/>
     <element xsi:type="archimate:RealizationRelationship" id="d88220f8-7818-438e-bc01-c7aa4fe76807" source="7eeaee28-f907-4fcb-ac67-0f49ab44afae" target="79feb974-20da-4539-a450-8c0af0f9f3fc"/>
     <element xsi:type="archimate:RealizationRelationship" id="21a24fd3-aeab-4076-97cc-71dd6dd17a5c" source="7eeaee28-f907-4fcb-ac67-0f49ab44afae" target="039707d5-be0e-47c2-b090-bc6bf20f8d8a"/>
+    <element xsi:type="archimate:RealizationRelationship" id="69387fb3-18fd-4dc5-ac2e-833577d139bf" source="f4f67dea-b059-4d3c-8283-ad6059d995e2" target="a9d5183f-96db-4acd-bdcc-6ec86557eaa5"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
@@ -4018,8 +4022,8 @@ Cloud Service Provider</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="1a78350c-265e-4413-ace6-0a51b171b7c9" targetConnections="f9bcc3ba-bb9b-432a-bcec-8abdc7c64318 6923a590-cc6d-484c-a756-cd38d8fc2139 0e2d97fc-172f-43c9-aabb-21f63fa6a885 866cfbdf-5d9d-439f-8406-b611b293b6a3 bbeced90-f1a9-4b2d-9e6d-bb56a5444405 e9fced91-8b89-4bb7-b750-cc3fa98d7989 89faa958-9ee8-4c3c-9d76-54ffa9ea6772" archimateElement="2809115b-cc8b-4e49-a267-6f8bb1e34a32">
         <bounds x="1347" y="225" width="480" height="1084"/>
-        <child xsi:type="archimate:DiagramObject" id="954546c8-e427-4cb6-a2f8-4ba13b59b87d" targetConnections="c0f9a547-7e39-4699-86a0-d4fa0dd62b0c cc3fc9c1-c011-4da4-b060-c22b4872a564 576c3eb4-a0c7-4682-80c2-35097e61d5dd" archimateElement="a9d5183f-96db-4acd-bdcc-6ec86557eaa5">
-          <bounds x="12" y="192" width="143" height="325"/>
+        <child xsi:type="archimate:DiagramObject" id="954546c8-e427-4cb6-a2f8-4ba13b59b87d" targetConnections="c0f9a547-7e39-4699-86a0-d4fa0dd62b0c cc3fc9c1-c011-4da4-b060-c22b4872a564 576c3eb4-a0c7-4682-80c2-35097e61d5dd 624eb10a-f585-444a-9f3c-8c0a6e9bd803" archimateElement="a9d5183f-96db-4acd-bdcc-6ec86557eaa5">
+          <bounds x="12" y="192" width="143" height="445"/>
           <child xsi:type="archimate:DiagramObject" id="a19fc9b8-a15d-4126-a079-c898e21ff3cc" archimateElement="169564f0-61b2-4a43-9766-35863e0b6e5b">
             <bounds x="12" y="132" width="120" height="84"/>
             <sourceConnection xsi:type="archimate:Connection" id="576c3eb4-a0c7-4682-80c2-35097e61d5dd" source="a19fc9b8-a15d-4126-a079-c898e21ff3cc" target="954546c8-e427-4cb6-a2f8-4ba13b59b87d" archimateRelationship="a9cc45ea-058c-4d3b-ba29-3afabb52d114"/>
@@ -4031,6 +4035,10 @@ Cloud Service Provider</content>
           <child xsi:type="archimate:DiagramObject" id="941038e6-761d-47a3-9eca-14fa3c721887" archimateElement="826d6b6e-15ea-440a-a02c-afb3dbfc4cba">
             <bounds x="12" y="228" width="120" height="84"/>
             <sourceConnection xsi:type="archimate:Connection" id="c0f9a547-7e39-4699-86a0-d4fa0dd62b0c" source="941038e6-761d-47a3-9eca-14fa3c721887" target="954546c8-e427-4cb6-a2f8-4ba13b59b87d" archimateRelationship="1b0d45f0-5300-4fcc-95d6-f5acb3cd8f0c"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="99d04826-a6ed-4fb7-bd86-e1f24d648fb2" archimateElement="f4f67dea-b059-4d3c-8283-ad6059d995e2">
+            <bounds x="12" y="336" width="120" height="84"/>
+            <sourceConnection xsi:type="archimate:Connection" id="624eb10a-f585-444a-9f3c-8c0a6e9bd803" source="99d04826-a6ed-4fb7-bd86-e1f24d648fb2" target="954546c8-e427-4cb6-a2f8-4ba13b59b87d" archimateRelationship="69387fb3-18fd-4dc5-ac2e-833577d139bf"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="8791e930-f9a2-4f6b-a573-0090e0ec48cd" archimateElement="963dce01-c17b-4d04-82e5-7258f7c17a0a">
@@ -4049,7 +4057,7 @@ Cloud Service Provider</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="bd2b0465-bf77-4e2b-9690-16e43a8aecad" targetConnections="8d3e83b4-b199-4d49-9cef-4d39218e635b" archimateElement="89e8faf8-8abb-47bb-9a05-878f8f8810de">
-          <bounds x="324" y="372" width="143" height="121"/>
+          <bounds x="324" y="294" width="143" height="121"/>
           <sourceConnection xsi:type="archimate:Connection" id="866cfbdf-5d9d-439f-8406-b611b293b6a3" source="bd2b0465-bf77-4e2b-9690-16e43a8aecad" target="1a78350c-265e-4413-ace6-0a51b171b7c9" archimateRelationship="e134e266-3afa-4ce1-ac40-fd4553642436"/>
           <child xsi:type="archimate:DiagramObject" id="402f6092-7b22-46d1-a536-671778702249" archimateElement="ba057726-2b91-41e0-8ac7-41849857ddb9">
             <bounds x="12" y="24" width="120" height="84"/>
@@ -4057,7 +4065,7 @@ Cloud Service Provider</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="2f4e36fe-e6ce-4a76-9502-ef8242fae1b3" archimateElement="dafe72aa-6817-4917-a540-8ecc725facbe">
-          <bounds x="168" y="300" width="143" height="601"/>
+          <bounds x="324" y="432" width="143" height="601"/>
           <sourceConnection xsi:type="archimate:Connection" id="e9fced91-8b89-4bb7-b750-cc3fa98d7989" source="2f4e36fe-e6ce-4a76-9502-ef8242fae1b3" target="1a78350c-265e-4413-ace6-0a51b171b7c9" archimateRelationship="e048410f-5f23-4775-8490-71b99917e29d"/>
           <child xsi:type="archimate:DiagramObject" id="56489d00-ce00-4c05-83f2-9cfe541765ac" archimateElement="673918e2-0c6f-49a5-ad6e-f780ad6d560b">
             <bounds x="12" y="24" width="120" height="84"/>
@@ -4079,14 +4087,14 @@ Cloud Service Provider</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="56cef467-3cdd-4e61-8b95-e330e3e86c59" archimateElement="aa06682b-fd15-41be-a909-d51f296c075a">
-          <bounds x="324" y="744" width="143" height="181"/>
+          <bounds x="168" y="300" width="143" height="181"/>
           <sourceConnection xsi:type="archimate:Connection" id="bbeced90-f1a9-4b2d-9e6d-bb56a5444405" source="56cef467-3cdd-4e61-8b95-e330e3e86c59" target="1a78350c-265e-4413-ace6-0a51b171b7c9" archimateRelationship="45e9e7ae-97b4-474b-80af-596ffbff6d65"/>
           <child xsi:type="archimate:DiagramObject" id="635fd822-2c4c-4a59-99f2-8784852aa3e7" archimateElement="bbfe614a-53ea-474d-aa20-e80d4739543b">
             <bounds x="12" y="84" width="120" height="84"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="300b862f-d3fc-48e6-985e-cfa18d7eba68" targetConnections="97f9337c-68c0-478c-a8f5-0b3b7aaf1884 a3b06627-4281-480c-9230-d6cbc074b800" archimateElement="6788c05d-ce47-40b0-9994-21a4a98707b4">
-          <bounds x="324" y="504" width="143" height="229"/>
+          <bounds x="324" y="54" width="143" height="229"/>
           <sourceConnection xsi:type="archimate:Connection" id="89faa958-9ee8-4c3c-9d76-54ffa9ea6772" source="300b862f-d3fc-48e6-985e-cfa18d7eba68" target="1a78350c-265e-4413-ace6-0a51b171b7c9" archimateRelationship="662939d6-2757-4469-bb38-2b7e04a5d4ed"/>
           <child xsi:type="archimate:DiagramObject" id="9029e120-825d-4aa0-950b-db8f80adc3ab" archimateElement="38321488-83a1-4e84-b4f2-22f836da067c">
             <bounds x="12" y="36" width="120" height="84"/>
@@ -4098,7 +4106,7 @@ Cloud Service Provider</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="a6757f28-8466-43c7-a661-442c4b2776b9" targetConnections="af50ba46-1d42-4bac-8b37-793a5b89c47d 944d24ca-d869-485d-bd33-07efdd356023 6e6a705c-88ab-497c-ae03-5265b414d108 c8f7ea64-8bc4-4790-ac73-8fa62b7aff81 073e0dee-5dd4-444b-bfcf-e46075be3375" archimateElement="49457183-f76f-4d47-8daa-922d59390b76">
-          <bounds x="12" y="528" width="143" height="505"/>
+          <bounds x="168" y="504" width="143" height="505"/>
           <sourceConnection xsi:type="archimate:Connection" id="6923a590-cc6d-484c-a756-cd38d8fc2139" source="a6757f28-8466-43c7-a661-442c4b2776b9" target="1a78350c-265e-4413-ace6-0a51b171b7c9" archimateRelationship="0f5049b8-3d41-4813-9908-3adb0378525f"/>
           <child xsi:type="archimate:DiagramObject" id="eb64aa44-e19b-467c-b74a-04a0958e6f38" archimateElement="dcaed50b-7377-4e00-b267-a90303b3befc">
             <bounds x="12" y="24" width="120" height="84"/>
