@@ -330,8 +330,6 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:BusinessEvent" name="Loss Event" id="e79ceb34-b965-4a1f-9cae-9375429f557d"/>
     <element xsi:type="archimate:BusinessService" name="Implemented Control Measure" id="c4967d72-ce41-49a7-832b-0a735da76436"/>
     <element xsi:type="archimate:BusinessService" name="&lt;&lt;Implemented Control Measure>> Network Segmentation" id="d1c4389d-9a84-4034-9e7c-e05ac7ccb198"/>
-    <element xsi:type="archimate:BusinessService" name="&lt;&lt;Implemented Control Measure>> Identity Provider" id="2df51f75-2834-4259-b331-b4ab17cd0e8b"/>
-    <element xsi:type="archimate:BusinessService" name="&lt;&lt;Implemented Control Measure>> Conditional Access" id="c22e341b-cfb5-4a06-b3f2-080f94aa6e2b"/>
     <element xsi:type="archimate:BusinessService" name="&lt;&lt;Implemented Control Measure>>  Trust Engine" id="ddaba9f3-fe73-41da-8c9c-bbdc4c3cb396"/>
     <element xsi:type="archimate:BusinessService" name="&lt;&lt;Implemented Control Measure>>  User Entity Behavior Analytics (UEBA)" id="5899f3a9-c77a-4c12-878d-4e29abeea6aa">
       <documentation>A type of cyber security process that models and identifies typical and abnormal behavior of humans and systems within a network and can help in discovering security anomalies in user and system behavior. UEBA uses advanced analysis, aggregates data from logs and reports, and looks at packet, flow, file and other types of information, as well as certain kinds of threat data to figure out whether certain kinds of activity and behavior are likely to constitute a cyberattac</documentation>
@@ -554,6 +552,20 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:ApplicationService" name="Implemented Control Measure" id="cd1bc7a8-00ea-4f92-854b-eb0032fbf0a5"/>
     <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>>  Trust Engine" id="ace1423c-f463-4b38-b715-700968259bb9"/>
     <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Device  Management" id="bd36372c-2b38-47b2-afa1-b3a9b78789b9"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Identity Provider" id="9bf9f407-c68a-4f89-ba40-499660671a99"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Conditional Access" id="961d7901-e200-46fa-acd8-d2211f88912d"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Network Segmentation" id="1469aaac-c990-408a-88bc-74bff8b95e89"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Network and infrastructure protection" id="dc68eaaa-e9a4-4133-a5af-845b35b6ceb6"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>>  In-app and session monitoring" id="9fb8fef2-4d14-4e51-aaae-bb88820a16b9"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Conditional access policies" id="13388b30-3f8e-4b2e-8b3c-01df5a758384"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Automated remediation" id="4e586392-d49b-4896-8a1a-ff961883df3e"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Device directory" id="a423041e-e759-4ed2-9590-106e80ebd82d"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> End-to-end encryption" id="3cbee885-4c0a-4f58-b913-909936d96e59"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Endpoint protection" id="0e705692-458a-4668-908b-c700008bd93c"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>>  Context based authentication" id="94981ffb-fa3c-483e-9774-04eaf3f4df36"/>
+    <element xsi:type="archimate:ApplicationService" name=" &lt;&lt;Implemented Control Measure>> Application Whitelisting and Ring-fencing" id="2d93da23-b860-42ec-bba4-4d4c3ee93a9f"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>>   Service Mesh" id="08a4661b-4ea4-46ab-8831-69c478efeb36"/>
+    <element xsi:type="archimate:ApplicationService" name="&lt;&lt;Implemented Control Measure>> Secrets Management" id="7df999a0-3fee-454b-a96c-f6811bc8e72c"/>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
     <element xsi:type="archimate:SystemSoftware" name="Java" id="22462922-2b4d-498a-ba44-0ab95aa51f53">
@@ -1335,6 +1347,9 @@ Kafka Streams is a client library for building applications and microservices, w
 RabbitMQ is an open-source message-broker software (sometimes called message-oriented middleware) that originally implemented the Advanced Message Queuing Protocol (AMQP) and has since been extended with a plug-in architecture to support Streaming Text Oriented Messaging Protocol (STOMP), MQ Telemetry Transport (MQTT), and other protocols.  The RabbitMQ server program is written in the Erlang programming language and is built on the Open Telecom Platform framework for clustering and failover. Client libraries to interface with the broker are available for all major programming languages. &#xD;
 </documentation>
     </element>
+    <element xsi:type="archimate:TechnologyService" name="&lt;&lt;Implemented Control Measure>>  JSON Web Token (JWT))" id="7aa67b8a-7f80-402b-b192-9dee9dc73edd"/>
+    <element xsi:type="archimate:TechnologyService" name="&lt;&lt;Implemented Control Measure>> Encryption in Transit" id="2827551d-3fc4-47e5-bb1a-c153e688d6d5"/>
+    <element xsi:type="archimate:TechnologyService" name="&lt;&lt;Implemented Control Measure>> Web application Firewall" id="f4bf7895-ebbb-4914-a2bb-f8b9d9fca819"/>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -5964,20 +5979,11 @@ ESDC Applications</content>
           <bounds x="276" y="48" width="120" height="55"/>
         </child>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="106025ef-0e08-433a-aac5-07c90dc9b1e9" archimateElement="d1c4389d-9a84-4034-9e7c-e05ac7ccb198">
-        <bounds x="1212" y="72" width="251" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="b7dd3dcb-f241-479d-8dfd-772b78f81967" archimateElement="2df51f75-2834-4259-b331-b4ab17cd0e8b">
-        <bounds x="1212" y="205" width="251" height="55"/>
-      </child>
-      <child xsi:type="archimate:DiagramObject" id="a03c2b99-ae1e-4fd3-aba3-7f70f8a22f95" archimateElement="c22e341b-cfb5-4a06-b3f2-080f94aa6e2b">
-        <bounds x="1212" y="133" width="251" height="55"/>
-      </child>
       <child xsi:type="archimate:DiagramObject" id="671de9bf-147b-42c8-bc4b-34469a23ac87" archimateElement="5899f3a9-c77a-4c12-878d-4e29abeea6aa">
-        <bounds x="924" y="68" width="251" height="55"/>
+        <bounds x="924" y="-3" width="251" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="dec2313b-ee40-4c49-94db-8be251e56fb5" archimateElement="2c222644-a9a7-4e8a-a8a8-47525b1b4da2">
-        <bounds x="924" width="251" height="55"/>
+        <bounds x="924" y="68" width="251" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="5375be96-7263-4e11-b2e0-0cb02db07187" archimateElement="44388cb1-d602-4fb7-8535-21cd4162f951">
         <bounds x="924" y="-72" width="251" height="55"/>
@@ -6001,10 +6007,58 @@ ESDC Applications</content>
         <bounds x="924" y="451" width="251" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="664f1558-1473-407d-8ed6-ad6a5d97d0bf" archimateElement="ace1423c-f463-4b38-b715-700968259bb9">
-        <bounds x="1212" y="451" width="251" height="55"/>
+        <bounds x="1187" y="203" width="251" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="5345d1e2-ee96-44ec-a810-4bc991540a99" archimateElement="bd36372c-2b38-47b2-afa1-b3a9b78789b9">
-        <bounds x="1212" y="385" width="251" height="55"/>
+        <bounds x="1188" y="-3" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="59262894-2903-407a-bae9-bd542151e32f" archimateElement="9bf9f407-c68a-4f89-ba40-499660671a99">
+        <bounds x="1188" y="-72" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0d7016d2-02c5-41c2-ad1e-328d1b3d77da" archimateElement="1469aaac-c990-408a-88bc-74bff8b95e89">
+        <bounds x="1188" y="68" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b902d402-f7a7-42d1-8cbd-c34ddf42c33b" archimateElement="dc68eaaa-e9a4-4133-a5af-845b35b6ceb6">
+        <bounds x="1452" y="-72" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="1347b707-e409-4936-8e1b-212530618e40" archimateElement="9fb8fef2-4d14-4e51-aaae-bb88820a16b9">
+        <bounds x="1452" y="-3" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="83d5296e-be35-41e7-bcfb-3a6b5f2cc98b" archimateElement="13388b30-3f8e-4b2e-8b3c-01df5a758384">
+        <bounds x="1187" y="133" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="4a6b178a-c29f-4bb8-8d7e-668797b8d9ff" archimateElement="4e586392-d49b-4896-8a1a-ff961883df3e">
+        <bounds x="1187" y="325" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="b2be6657-22c5-4f46-a322-8d3373b13dd4" archimateElement="a423041e-e759-4ed2-9590-106e80ebd82d">
+        <bounds x="1452" y="60" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="bf2c477f-1b10-40e3-9362-1fb4d7085e86" archimateElement="3cbee885-4c0a-4f58-b913-909936d96e59">
+        <bounds x="1188" y="451" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="107f5585-89f3-4d43-bdd2-f3b1c7d8b734" archimateElement="0e705692-458a-4668-908b-c700008bd93c">
+        <bounds x="1188" y="385" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="342f0fbe-d742-4fd8-9e20-4dc4d36dbdd8" archimateElement="94981ffb-fa3c-483e-9774-04eaf3f4df36">
+        <bounds x="1187" y="265" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="9796633c-113c-4562-b5a4-880e2d19e951" archimateElement="2d93da23-b860-42ec-bba4-4d4c3ee93a9f">
+        <bounds x="1452" y="133" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="133cec31-07fd-42b8-a617-c614a35ba543" archimateElement="7aa67b8a-7f80-402b-b192-9dee9dc73edd">
+        <bounds x="1452" y="451" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e45d11f3-b9c3-47f5-9a52-a74e5e2ffafa" archimateElement="2827551d-3fc4-47e5-bb1a-c153e688d6d5">
+        <bounds x="1452" y="385" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="1182de45-81cd-4056-bc86-62363b490b13" archimateElement="08a4661b-4ea4-46ab-8831-69c478efeb36">
+        <bounds x="1452" y="265" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="150e89cd-ee88-44d5-8f01-e3987fbf8fcb" archimateElement="7df999a0-3fee-454b-a96c-f6811bc8e72c">
+        <bounds x="1452" y="199" width="251" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="9e9c6838-42ed-47e0-ae65-283f8747eadf" archimateElement="f4bf7895-ebbb-4914-a2bb-f8b9d9fca819">
+        <bounds x="1452" y="325" width="251" height="55"/>
       </child>
       <documentation>.</documentation>
     </element>
