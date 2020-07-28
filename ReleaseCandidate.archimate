@@ -661,7 +661,7 @@ HTTP REST, JMS, TCP/IP, SOAP, FTP, SSH, XML, JSON and more!&#xD;
       <documentation>Cypress is a JavaScript-based end-to-end testing framework that doesn't use Selenium at all. It is built on top of Mocha, which is again a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and fun. https://www.cypress.io/</documentation>
     </element>
     <element xsi:type="archimate:SystemSoftware" name="ARMA" id="8f3617b5-a409-4ade-be4b-c6dc422b3efe"/>
-    <element xsi:type="archimate:SystemSoftware" name="mocha" id="169fa6cb-027b-4f93-9069-715cc7e24cd3">
+    <element xsi:type="archimate:SystemSoftware" name="Mocha" id="169fa6cb-027b-4f93-9069-715cc7e24cd3">
       <documentation>Mocha is a JavaScript Test Framework. (https://codeburst.io/javascript-unit-testing-using-mocha-and-chai-1d97d9f18e71)&#xD;
 &#xD;
 Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on GitHub. https://mochajs.org/</documentation>
@@ -2001,7 +2001,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
       <child xsi:type="archimate:DiagramObject" id="3a267e10-2240-4dac-bf46-3c30cd467050" targetConnections="334d87cc-ec3c-4940-a6d7-d711c4161511 ec948ee8-101f-45a4-8c5f-cbe021cb5135 4895402e-38e2-4b2d-b617-7887b74be0ee 0aba0db7-9551-4ae6-a7ea-bab3868b7f6e ec109f99-59fe-47fd-a4d0-3d3d84f1f314 539dc421-7f3f-40db-8265-01a820b22316 189d000b-2841-4318-8ac6-3912d5c1dc85 d4df8e37-25bf-43fa-8bb2-afc26ac2e184 df56b4f6-3df4-46dc-899b-04ad1a5adfea" archimateElement="d7602c5a-7642-4dde-bec8-4104d1973689">
         <bounds x="503" y="204" width="481" height="1092"/>
         <child xsi:type="archimate:DiagramObject" id="fdf61a58-baf2-4567-9b28-2e548c013084" archimateElement="a14071f0-a126-4e5d-9e45-b2115fba740e">
-          <bounds x="12" y="492" width="143" height="133"/>
+          <bounds x="12" y="384" width="143" height="133"/>
           <sourceConnection xsi:type="archimate:Connection" id="ec948ee8-101f-45a4-8c5f-cbe021cb5135" source="fdf61a58-baf2-4567-9b28-2e548c013084" target="3a267e10-2240-4dac-bf46-3c30cd467050" archimateRelationship="4075ad4b-1208-49c1-b175-714bfe5413f4"/>
           <child xsi:type="archimate:DiagramObject" id="fc5cc4cb-63c5-4e41-835d-185fa747da67" archimateElement="97fb42f3-4236-452c-a3eb-300cb8a1e1f9">
             <bounds x="12" y="36" width="120" height="84"/>
@@ -2056,7 +2056,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="9f6386d1-fc26-4dc7-8c0c-7edbc05e2235" targetConnections="6e42cc44-452b-4d86-ad22-f71bb1011b2f" archimateElement="fa05c2ae-dffe-4851-a0cf-8be7a4c229d4">
-          <bounds x="12" y="636" width="143" height="229"/>
+          <bounds x="12" y="528" width="143" height="229"/>
           <sourceConnection xsi:type="archimate:Connection" id="334d87cc-ec3c-4940-a6d7-d711c4161511" source="9f6386d1-fc26-4dc7-8c0c-7edbc05e2235" target="3a267e10-2240-4dac-bf46-3c30cd467050" archimateRelationship="93898034-5f5e-43f8-9e3d-08818300b762"/>
           <child xsi:type="archimate:DiagramObject" id="c8203c3b-4bd1-4e53-b509-30c70403d00d" archimateElement="911afec0-cf2f-4dea-9fc9-1120f75b8c98">
             <bounds x="12" y="36" width="120" height="84"/>
@@ -2067,7 +2067,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="2d335a3f-ea5c-45b2-8059-234f1a60176c" targetConnections="598d7563-ed2c-4a47-ae14-4b22ce579082" archimateElement="a56f768f-bad2-4301-9437-e700dc12e293">
-          <bounds x="12" y="48" width="143" height="433"/>
+          <bounds x="12" y="48" width="143" height="325"/>
           <sourceConnection xsi:type="archimate:Connection" id="df56b4f6-3df4-46dc-899b-04ad1a5adfea" source="2d335a3f-ea5c-45b2-8059-234f1a60176c" target="3a267e10-2240-4dac-bf46-3c30cd467050" archimateRelationship="aabdea19-0f66-425d-8d5c-5efc4788fcc8"/>
           <child xsi:type="archimate:DiagramObject" id="a8901ebe-02c3-4c94-b6f1-227a7e44bc36" archimateElement="c7f8b0bb-4287-41aa-92c2-a249561809fc">
             <bounds x="12" y="36" width="120" height="84"/>
@@ -2075,11 +2075,8 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
           <child xsi:type="archimate:DiagramObject" id="fbcc37bc-e43d-44b5-bbc9-d3ba0a95c3ad" archimateElement="4536d0f3-161f-4105-8552-7ec753b518d9">
             <bounds x="12" y="132" width="120" height="84"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="d07576d4-6247-420d-8730-3d636c4f37ba" archimateElement="8f3617b5-a409-4ade-be4b-c6dc422b3efe">
-            <bounds x="12" y="228" width="120" height="84"/>
-          </child>
           <child xsi:type="archimate:DiagramObject" id="705f0c2e-7038-4a3b-8278-8c30d286e550" archimateElement="169fa6cb-027b-4f93-9069-715cc7e24cd3">
-            <bounds x="12" y="324" width="120" height="84"/>
+            <bounds x="12" y="228" width="120" height="84"/>
             <sourceConnection xsi:type="archimate:Connection" id="598d7563-ed2c-4a47-ae14-4b22ce579082" source="705f0c2e-7038-4a3b-8278-8c30d286e550" target="2d335a3f-ea5c-45b2-8059-234f1a60176c" archimateRelationship="a70a5fb3-e333-4bca-91aa-f0d136294230"/>
           </child>
         </child>
