@@ -894,6 +894,36 @@ manage the direction, acquisition and investment, as well as the overall perform
     <element xsi:type="archimate:BusinessFunction" name="Service Strategy Development" id="d941fef8-0736-45f8-be71-18deb92e12db">
       <documentation>Service Strategy development is to decide on a strategy to serve clients. Starting from an assessment of client needs and the market place, the service strategy development determines which services the IT organization is to offer and what capabilities need to be developed. Its ultimate goal is to make the IT organization think and act in a strategic manner.</documentation>
     </element>
+    <element xsi:type="archimate:BusinessCollaboration" name="ESDC Interoperability Platform (EIP)" id="8606e959-6d9b-4de4-ae2a-5ae7a61f28c3"/>
+    <element xsi:type="archimate:BusinessFunction" name="Solution Enablement" id="a52cdb4c-0674-467c-aa4c-591a1670dbdf">
+      <documentation>Required Guardrails</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Governnance" id="cabc0e9f-ee45-4e21-86ce-aacc0e2fd158">
+      <documentation>Governance ensures that stakeholder needs, conditions and options are evaluated to determine balanced, agreed-on enterprise objectives to be achieved; setting direction through prioritisation and decision making; and monitoring performance and compliance against agreed-on direction and objectives. Governance is the responsibility of the Enterprise Architecture Review Board under the leadership of the ADMs of TISMB and IITB.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Support" id="93236141-3a4f-4133-b4ae-27cc908af93f">
+      <documentation>Provide the support processes common to all services delivered by the program</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Management" id="3266f9b2-7579-4b88-9d55-afe0ff7f769d">
+      <documentation>Management plans, builds, runs and monitors activities in alignment with the direction set by the governance body to achieve the enterprise objectives.&#xD;
+manage the direction, acquisition and investment, as well as the overall performance of the program</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Delivery" id="8ab6a70d-8e17-4d07-be4f-f565d7a59259">
+      <documentation>Provide the service specific planning, provisioning, delivery, and decommissioning processes for the services provided by the program</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Solution Delivery" id="0cc323dd-985f-4b18-90c1-7b94810a5867">
+      <documentation>An integrated approach to enable technology transformation and solve complex business challenges</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Business Service Management" id="682fcca9-0374-4976-8824-d8d8b99de720">
+      <documentation>Business Services are services that perform specific business functions and are required for the successful completion of a business process. They might also be called Application Services since they are used to develop composite services and business applications that automate business processes.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Platform Operations" id="49f9a370-a80d-4d4c-8bac-702cd1b0bd95">
+      <documentation>Information technology operations, or IT operations, are the set of all processes and services that are both provisioned by an IT staff to their internal or external clients and used by themselves, to run themselves as a business. It involves monitoring and controlling the IT services and their underlying infrastructure, the fulfilling of user requests, resolving service failures, fixing problems, as well as carrying out routine operational tasks.&#xD;
+ &#xD;
+The coordination and execution of activities that enable the ongoing management and operation of products or services in the computing environment</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Platform Stewards" id="ea386350-da81-404a-8e53-304aa53397fa"/>
+    <element xsi:type="archimate:BusinessActor" name="Interoperability Service Division (ISD)." id="07de9236-d4c0-476b-9f4b-934aacb5ba6f"/>
   </folder>
   <folder name="Application" id="8157a20a-a4a1-4881-aa90-52589da9c759" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="API Gateway" id="69c9dba7-e85b-451e-9d60-727c9a51dd47"/>
@@ -1826,6 +1856,16 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:CompositionRelationship" id="583c2df8-5203-4a73-b244-918cad509327" source="274b6c6c-6690-4220-b869-50678ff37d23" target="48fb742a-6688-42e3-b71c-0837f863d5e8"/>
     <element xsi:type="archimate:CompositionRelationship" id="25051392-e051-41b2-93e2-e934298108e1" source="274b6c6c-6690-4220-b869-50678ff37d23" target="13a78968-a261-4c1a-9840-d93bee8b4ef3"/>
     <element xsi:type="archimate:CompositionRelationship" id="fd64d6ec-527d-4363-8f8e-cfbd91846842" source="50ea9f9a-59fb-4ab4-af4e-05af3d8c5520" target="6d79bab5-15c5-4f09-8f1c-32cdba2a35b3"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="1267669b-87bd-4cb1-a316-23edcef6feef" source="07de9236-d4c0-476b-9f4b-934aacb5ba6f" target="ea386350-da81-404a-8e53-304aa53397fa"/>
+    <element xsi:type="archimate:ServingRelationship" id="0ab6e816-0352-4612-8471-13c7107f6289" source="ea386350-da81-404a-8e53-304aa53397fa" target="8606e959-6d9b-4de4-ae2a-5ae7a61f28c3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="5ad7e39c-c7ea-4196-bed8-0e8200cf944f" source="a52cdb4c-0674-467c-aa4c-591a1670dbdf" target="8ab6a70d-8e17-4d07-be4f-f565d7a59259"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="c572721d-c996-4eb8-b73d-37ddee908de8" source="8606e959-6d9b-4de4-ae2a-5ae7a61f28c3" target="682fcca9-0374-4976-8824-d8d8b99de720"/>
+    <element xsi:type="archimate:CompositionRelationship" id="f2bc65ea-7467-4c98-93a3-9871f400c693" source="a52cdb4c-0674-467c-aa4c-591a1670dbdf" target="3266f9b2-7579-4b88-9d55-afe0ff7f769d"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="9210a082-ebca-40de-9c4d-cf1bc20595cb" source="8606e959-6d9b-4de4-ae2a-5ae7a61f28c3" target="49f9a370-a80d-4d4c-8bac-702cd1b0bd95"/>
+    <element xsi:type="archimate:CompositionRelationship" id="bb3c2d9e-76b6-4031-886c-3f3e0a06b08b" source="a52cdb4c-0674-467c-aa4c-591a1670dbdf" target="93236141-3a4f-4133-b4ae-27cc908af93f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="d1fc9271-8919-4322-bd97-e632428349ef" source="a52cdb4c-0674-467c-aa4c-591a1670dbdf" target="cabc0e9f-ee45-4e21-86ce-aacc0e2fd158"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="25eaec5b-3acd-4007-9f3b-0a71f697a001" source="8606e959-6d9b-4de4-ae2a-5ae7a61f28c3" target="a52cdb4c-0674-467c-aa4c-591a1670dbdf"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="d2588318-dd1f-4eb9-a793-be43ce3241dc" source="8606e959-6d9b-4de4-ae2a-5ae7a61f28c3" target="0cc323dd-985f-4b18-90c1-7b94810a5867"/>
   </folder>
   <folder name="Views" id="3ed9d441-8195-42f6-879d-77a24c46fb68" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="SDLC High Level Flow" id="d619622a-1016-4a7b-a9e9-51d71c8e585f">
@@ -1883,40 +1923,48 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
       <documentation>Key business functions and flow for implementing DevOps at ESDC. This view is used to discuss the most basic, coarse grained functions required  by service providers.</documentation>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="EIP High Level Business Functions" id="f9f6ac39-2492-455d-ad09-70b0ddf2eef5">
-      <child xsi:type="archimate:DiagramObject" id="1a3025fa-1978-4036-b8a0-d681ca788229" archimateElement="b0c465fc-be64-49f7-a0e4-88c5b2acc893">
-        <bounds x="36" y="36" width="600" height="217"/>
-        <sourceConnection xsi:type="archimate:Connection" id="2e1a5243-7b13-4cc1-ad1d-a55b68d29832" source="1a3025fa-1978-4036-b8a0-d681ca788229" target="5e99ee30-0fb5-4d1a-aa6c-3fee8a54ca55" archimateRelationship="e64868ec-b38e-45ff-b141-51d722704a5a"/>
-        <sourceConnection xsi:type="archimate:Connection" id="83083723-1fb3-4df3-a741-fe53f75454db" source="1a3025fa-1978-4036-b8a0-d681ca788229" target="071bbc04-8a2c-4b57-ba54-e594f29a3f28" archimateRelationship="8b711c35-7234-4490-a496-3d36c0450bef"/>
-        <sourceConnection xsi:type="archimate:Connection" id="3a942548-d952-42a7-86e7-8821a80cde56" source="1a3025fa-1978-4036-b8a0-d681ca788229" target="c3d4a3e3-3287-46b2-a8a9-da206745f1c3" archimateRelationship="64b4ed4a-b37c-4939-b69c-01fddeb38a56"/>
-        <sourceConnection xsi:type="archimate:Connection" id="6540d35f-9c4a-4c6d-b95a-439736f5b1f3" source="1a3025fa-1978-4036-b8a0-d681ca788229" target="019da98f-3a32-44c8-b050-615eff94b917" archimateRelationship="15c7d533-5939-4d68-9da4-35c498045563"/>
-        <child xsi:type="archimate:DiagramObject" id="5e99ee30-0fb5-4d1a-aa6c-3fee8a54ca55" targetConnections="2e1a5243-7b13-4cc1-ad1d-a55b68d29832" archimateElement="f9b2ee93-aa2f-4ece-ad00-20baa7a270df">
-          <bounds x="312" y="24" width="276" height="55"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="071bbc04-8a2c-4b57-ba54-e594f29a3f28" targetConnections="83083723-1fb3-4df3-a741-fe53f75454db" archimateElement="ceec05f0-d4e7-4aba-a1f0-6e5035049d72">
-          <bounds x="313" y="144" width="276" height="55"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="c3d4a3e3-3287-46b2-a8a9-da206745f1c3" targetConnections="3a942548-d952-42a7-86e7-8821a80cde56" archimateElement="661f5bf5-25ee-4555-a6d0-d00a8ca77bfa">
-          <bounds x="313" y="84" width="276" height="55"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="019da98f-3a32-44c8-b050-615eff94b917" targetConnections="6540d35f-9c4a-4c6d-b95a-439736f5b1f3" archimateElement="97ff8771-f868-4a6b-ba38-43531ce4a85e">
-          <bounds x="24" y="24" width="276" height="175"/>
-          <sourceConnection xsi:type="archimate:Connection" id="c3aa6a03-87d8-4332-b2aa-f3559f169887" source="019da98f-3a32-44c8-b050-615eff94b917" target="dd3e1f1f-7d69-4315-9006-13af17dcd88f" archimateRelationship="37349af5-5748-4500-8c41-b386dd265a4a"/>
-          <sourceConnection xsi:type="archimate:Connection" id="561705e9-6fbe-4011-a8e4-2b80d3d79c7a" source="019da98f-3a32-44c8-b050-615eff94b917" target="fde7c69d-5d09-4d9d-8e84-b576396bf36b" archimateRelationship="abc01bea-8780-42d3-88f4-af10ec594482"/>
-          <sourceConnection xsi:type="archimate:Connection" id="bbee8c7b-da68-4bee-a358-74de038f385d" source="019da98f-3a32-44c8-b050-615eff94b917" target="00dc9de7-ec13-47ea-bd6c-bda2341c94a3" archimateRelationship="8194f857-e6fe-4f2f-b44c-60b788e5e5eb"/>
-          <sourceConnection xsi:type="archimate:Connection" id="0cbab6ac-46cc-4949-8f3f-ee6d2eae577b" source="019da98f-3a32-44c8-b050-615eff94b917" target="6dded8d6-ef9b-4042-bac6-7bca4d14f4ba" archimateRelationship="1757c22e-fe91-40aa-b765-b7ccf0df7f16"/>
-          <child xsi:type="archimate:DiagramObject" id="fde7c69d-5d09-4d9d-8e84-b576396bf36b" targetConnections="561705e9-6fbe-4011-a8e4-2b80d3d79c7a" archimateElement="ff622d6f-caf0-4554-9fb9-8b9aac9a5e95">
+      <child xsi:type="archimate:DiagramObject" id="b5e2c327-b287-4822-8ee7-3d70e560badb" targetConnections="5bcd9025-6a0e-46f2-b009-9a4b6e9f0932" archimateElement="8606e959-6d9b-4de4-ae2a-5ae7a61f28c3">
+        <bounds x="6" y="156" width="600" height="217"/>
+        <sourceConnection xsi:type="archimate:Connection" id="129bfebd-de2a-4431-b73d-af6b2d8ee5ab" source="b5e2c327-b287-4822-8ee7-3d70e560badb" target="a9d563e3-b306-4196-bb38-b8b3e5e01860" archimateRelationship="25eaec5b-3acd-4007-9f3b-0a71f697a001"/>
+        <sourceConnection xsi:type="archimate:Connection" id="791ddffd-d84d-4930-903b-0e21bf1b916c" source="b5e2c327-b287-4822-8ee7-3d70e560badb" target="5229935e-a1ee-496d-881b-843ae1a094e1" archimateRelationship="d2588318-dd1f-4eb9-a793-be43ce3241dc"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b21d2847-5031-48ed-b65e-0409f33a28ba" source="b5e2c327-b287-4822-8ee7-3d70e560badb" target="376373da-537c-4291-8000-ff26ccd0022d" archimateRelationship="c572721d-c996-4eb8-b73d-37ddee908de8"/>
+        <sourceConnection xsi:type="archimate:Connection" id="ae3956fb-4bea-4024-9d36-7d578612d93d" source="b5e2c327-b287-4822-8ee7-3d70e560badb" target="2c1cb5de-82c6-468c-a273-7c3cc9650c54" archimateRelationship="9210a082-ebca-40de-9c4d-cf1bc20595cb"/>
+        <child xsi:type="archimate:DiagramObject" id="a9d563e3-b306-4196-bb38-b8b3e5e01860" targetConnections="129bfebd-de2a-4431-b73d-af6b2d8ee5ab" archimateElement="a52cdb4c-0674-467c-aa4c-591a1670dbdf">
+          <bounds x="12" y="24" width="276" height="175"/>
+          <sourceConnection xsi:type="archimate:Connection" id="6ba30e20-6137-49d0-a55f-601629fcd52c" source="a9d563e3-b306-4196-bb38-b8b3e5e01860" target="b062e29c-5224-4ba9-b573-d16cb28307cb" archimateRelationship="f2bc65ea-7467-4c98-93a3-9871f400c693"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a3258a12-bf45-4fb5-9d46-4cdf144935d5" source="a9d563e3-b306-4196-bb38-b8b3e5e01860" target="5b5f28c6-5b48-426e-aec8-972097444171" archimateRelationship="5ad7e39c-c7ea-4196-bed8-0e8200cf944f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="47ff7dd2-3793-42a2-b040-1c2d32a3ec8e" source="a9d563e3-b306-4196-bb38-b8b3e5e01860" target="d3897196-abe5-46f1-bc2c-954420a9e925" archimateRelationship="bb3c2d9e-76b6-4031-886c-3f3e0a06b08b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="c5caeb20-e3d7-4ffe-b65c-9bcd690ac4e6" source="a9d563e3-b306-4196-bb38-b8b3e5e01860" target="8821b043-d07a-4302-ba1c-46852e45e513" archimateRelationship="d1fc9271-8919-4322-bd97-e632428349ef"/>
+          <child xsi:type="archimate:DiagramObject" id="8821b043-d07a-4302-ba1c-46852e45e513" targetConnections="c5caeb20-e3d7-4ffe-b65c-9bcd690ac4e6" archimateElement="cabc0e9f-ee45-4e21-86ce-aacc0e2fd158">
             <bounds x="12" y="36" width="120" height="55"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="6dded8d6-ef9b-4042-bac6-7bca4d14f4ba" targetConnections="0cbab6ac-46cc-4949-8f3f-ee6d2eae577b" archimateElement="cc646ce2-f9ec-487f-b58a-fd31b7473c4b">
+          <child xsi:type="archimate:DiagramObject" id="d3897196-abe5-46f1-bc2c-954420a9e925" targetConnections="47ff7dd2-3793-42a2-b040-1c2d32a3ec8e" archimateElement="93236141-3a4f-4133-b4ae-27cc908af93f">
             <bounds x="11" y="96" width="120" height="55"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="00dc9de7-ec13-47ea-bd6c-bda2341c94a3" targetConnections="bbee8c7b-da68-4bee-a358-74de038f385d" archimateElement="b9fe4245-ae71-4952-96f8-21f67422e4a6">
+          <child xsi:type="archimate:DiagramObject" id="b062e29c-5224-4ba9-b573-d16cb28307cb" targetConnections="6ba30e20-6137-49d0-a55f-601629fcd52c" archimateElement="3266f9b2-7579-4b88-9d55-afe0ff7f769d">
             <bounds x="144" y="36" width="120" height="55"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="dd3e1f1f-7d69-4315-9006-13af17dcd88f" targetConnections="c3aa6a03-87d8-4332-b2aa-f3559f169887" archimateElement="1d4f63ba-0245-42d6-a8e7-f1188c238125">
+          <child xsi:type="archimate:DiagramObject" id="5b5f28c6-5b48-426e-aec8-972097444171" targetConnections="a3258a12-bf45-4fb5-9d46-4cdf144935d5" archimateElement="8ab6a70d-8e17-4d07-be4f-f565d7a59259">
             <bounds x="143" y="96" width="120" height="55"/>
           </child>
         </child>
+        <child xsi:type="archimate:DiagramObject" id="5229935e-a1ee-496d-881b-843ae1a094e1" targetConnections="791ddffd-d84d-4930-903b-0e21bf1b916c" archimateElement="0cc323dd-985f-4b18-90c1-7b94810a5867">
+          <bounds x="312" y="24" width="276" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="376373da-537c-4291-8000-ff26ccd0022d" targetConnections="b21d2847-5031-48ed-b65e-0409f33a28ba" archimateElement="682fcca9-0374-4976-8824-d8d8b99de720">
+          <bounds x="313" y="84" width="276" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="2c1cb5de-82c6-468c-a273-7c3cc9650c54" targetConnections="ae3956fb-4bea-4024-9d36-7d578612d93d" archimateElement="49f9a370-a80d-4d4c-8bac-702cd1b0bd95">
+          <bounds x="313" y="144" width="276" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="6e8d5fd5-8559-4664-a20d-aa9a747bc16d" targetConnections="3a7f9a2b-66c3-4c6a-ab22-c6f4d64dd71b" archimateElement="ea386350-da81-404a-8e53-304aa53397fa">
+        <bounds x="246" y="72" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="5bcd9025-6a0e-46f2-b009-9a4b6e9f0932" source="6e8d5fd5-8559-4664-a20d-aa9a747bc16d" target="b5e2c327-b287-4822-8ee7-3d70e560badb" archimateRelationship="0ab6e816-0352-4612-8471-13c7107f6289"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="30aac298-5383-4500-a02a-ed8b7c3c2ce5" archimateElement="07de9236-d4c0-476b-9f4b-934aacb5ba6f">
+        <bounds x="246" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="3a7f9a2b-66c3-4c6a-ab22-c6f4d64dd71b" source="30aac298-5383-4500-a02a-ed8b7c3c2ce5" target="6e8d5fd5-8559-4664-a20d-aa9a747bc16d" archimateRelationship="1267669b-87bd-4cb1-a316-23edcef6feef"/>
       </child>
       <documentation>Key business collaberation and functions for the  ESDC Interoprability Platform (EIP. This view is used to discuss the most basic, coarse grained functions required  by EIP for delivery of services.</documentation>
     </element>
