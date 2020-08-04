@@ -1509,6 +1509,16 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuous monitoring of user actions for abnormal behavior" id="0d99b788-82d3-4a9c-9e28-6997b267dc4d"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Encrypted traffic between authorized user and enterprise resource" id="cac077ab-3e8f-4499-8b4b-b773d5cff985"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Ensure real time assessment of device security prior to granting access to enterpriseresources" id="f23550f5-daeb-4d16-86cc-02153cc8f7ea"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Strategic objectives and priorities fulfilled by Zero Trust•Privileged access for admin purposes should be leveraged by a centralized PAM solution" id="b2f4bc32-f015-427f-b595-fcacc28cb424"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Users authentication should be enhanced with the use of MFA" id="8b0a9853-779f-4207-87ca-0fb23a4918ea"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuous monitoring of user actions for abnormal behavior" id="bc3b473a-9875-4e15-a7cf-be942e97897c"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Least privilege principle in place for permissions within the enterprise resources" id="89a11c0e-edb0-4894-942a-b31397bfaa4f"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Limited access to the organization’s resources from unmanaged devices throughconditional access controls" id="1abb4bff-7831-4a9d-80aa-b4480741b665"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Enforced device authentication prior to access corporate resources" id="33301797-e7b9-44cd-93c7-f513c9b97294"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Leverage multi factor authentication (MFA) as part of the authentication process for theuser" id="61bb057e-d258-4784-b1cd-f710a32aa7c0"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuous visibility and control" id="35ffe52b-1aaa-48d8-849b-e7d55bdae61e"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> End to end encryption of traffic" id="9faec27e-408b-44df-9f60-d63f0a9ce6a0"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Device security assessment to ensure required security posture is in place prior togranting access" id="b1235903-b01c-470c-b6b4-3b75d731f6bf"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Feature Gap" id="9ff8a02c-23f7-41f7-9ee7-0a1373ad231a"/>
@@ -2279,6 +2289,16 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:CompositionRelationship" id="7e3244cf-edfc-4538-bbfc-d4ec12ef996c" source="da82b46d-dffb-46b6-aa44-2b6d91b877da" target="0d99b788-82d3-4a9c-9e28-6997b267dc4d"/>
     <element xsi:type="archimate:CompositionRelationship" id="4eb9f165-2196-4861-b367-27b71d1d2d58" source="da82b46d-dffb-46b6-aa44-2b6d91b877da" target="cac077ab-3e8f-4499-8b4b-b773d5cff985"/>
     <element xsi:type="archimate:CompositionRelationship" id="a890d43a-1a9c-40c7-b71c-3d6070f0c532" source="da82b46d-dffb-46b6-aa44-2b6d91b877da" target="f23550f5-daeb-4d16-86cc-02153cc8f7ea"/>
+    <element xsi:type="archimate:CompositionRelationship" id="d208ebf2-3772-4180-8f15-0a82f31fe98a" source="c31def47-fbb2-4269-8218-aee4f63b3009" target="b2f4bc32-f015-427f-b595-fcacc28cb424"/>
+    <element xsi:type="archimate:CompositionRelationship" id="efcbae2a-b7c2-4e60-bb49-08431ce4ddd7" source="c31def47-fbb2-4269-8218-aee4f63b3009" target="8b0a9853-779f-4207-87ca-0fb23a4918ea"/>
+    <element xsi:type="archimate:CompositionRelationship" id="d2bb9929-a99e-4455-b95d-f6c71342bd21" source="c31def47-fbb2-4269-8218-aee4f63b3009" target="bc3b473a-9875-4e15-a7cf-be942e97897c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="4b72e6c0-7943-4dfa-84e5-9e00e9d3b532" source="c31def47-fbb2-4269-8218-aee4f63b3009" target="89a11c0e-edb0-4894-942a-b31397bfaa4f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="763c1bc7-e1ed-4068-838a-37133dca38ce" source="69854685-c059-4ff1-ac00-4284a380358a" target="1abb4bff-7831-4a9d-80aa-b4480741b665"/>
+    <element xsi:type="archimate:CompositionRelationship" id="2fa2b736-1c8d-4194-83dc-7926bc44128e" source="69854685-c059-4ff1-ac00-4284a380358a" target="33301797-e7b9-44cd-93c7-f513c9b97294"/>
+    <element xsi:type="archimate:CompositionRelationship" id="8e01b0d1-7bf6-4fee-9fa5-f2aed1d6da2f" source="69854685-c059-4ff1-ac00-4284a380358a" target="9faec27e-408b-44df-9f60-d63f0a9ce6a0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="47b294b1-d415-4626-bee4-6340e32eccbf" source="69854685-c059-4ff1-ac00-4284a380358a" target="b1235903-b01c-470c-b6b4-3b75d731f6bf"/>
+    <element xsi:type="archimate:CompositionRelationship" id="ccb6e706-4b0b-471b-84d8-faf6fdf0c065" source="69854685-c059-4ff1-ac00-4284a380358a" target="61bb057e-d258-4784-b1cd-f710a32aa7c0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="0102d308-95b0-4bd5-b177-45e25194b819" source="69854685-c059-4ff1-ac00-4284a380358a" target="35ffe52b-1aaa-48d8-849b-e7d55bdae61e"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
@@ -4323,14 +4343,11 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
       <child xsi:type="archimate:DiagramObject" id="586569e8-f078-4a5c-8801-bdbe2e628d49" archimateElement="8cd362fe-b1bc-4096-a46d-dbf5b304db36">
         <bounds x="1716" y="-72" width="251" height="55"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="ac4c5972-6d52-4b1f-95f6-ef2002d9e8aa" archimateElement="dfffe8db-3b6f-4491-b54f-fb91877c7da3">
-        <bounds x="1716" y="60" width="253" height="55"/>
-      </child>
       <child xsi:type="archimate:DiagramObject" id="2938ec32-6977-4201-bb06-0404bd63f2bf" archimateElement="871c482a-713c-4212-89c4-893f94ace379">
         <bounds x="1716" y="-3" width="253" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="e0b544f3-f6b1-4b36-a5e1-938bce82fbf3" archimateElement="aec1deda-0a27-4dd9-a036-85f8244bada0">
-        <bounds x="1716" y="122" width="253" height="55"/>
+        <bounds x="1716" y="68" width="253" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="96f56997-011c-4282-8298-29059ea3047d" archimateElement="7dcf6e5e-41a3-4575-91c3-64cbf4f64d9c">
         <bounds x="12" y="684" width="1405" height="953"/>
@@ -4528,7 +4545,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="ce76ec48-63d6-4f8f-85ad-705035db3e70" textAlignment="1" archimateElement="c84ee573-da88-473d-848d-552870616bd3">
-        <bounds x="2064" y="1472" width="481" height="336"/>
+        <bounds x="1956" y="1712" width="481" height="336"/>
         <sourceConnection xsi:type="archimate:Connection" id="caedc7f7-4509-49e3-aecf-96ac3625d992" source="ce76ec48-63d6-4f8f-85ad-705035db3e70" target="2c2865da-f68a-4cac-a06e-c83277c26f2a" archimateRelationship="c9312aaa-d1d5-46ed-ab72-e336724408ca"/>
         <sourceConnection xsi:type="archimate:Connection" id="4fe66439-4c43-43b3-be2b-e71d3f3f4df9" source="ce76ec48-63d6-4f8f-85ad-705035db3e70" target="c50d5be3-6e4d-4f8b-bd02-5cc8809006d2" archimateRelationship="117ce605-ba39-42db-8d39-01fc9410205b"/>
         <sourceConnection xsi:type="archimate:Connection" id="b7e4ff1e-d616-4839-b6fc-47368793173a" source="ce76ec48-63d6-4f8f-85ad-705035db3e70" target="ab336a65-32c8-4a78-82d9-7d47abd21bd1" archimateRelationship="f2bdb766-3765-42c9-9d89-f60ec308677d"/>
@@ -4551,7 +4568,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="0a490b8f-c547-4d3d-9b6a-c5d1dbe41d65" textAlignment="1" archimateElement="2d161669-1a50-4bc1-b2b5-13b6d94e5723">
-        <bounds x="2064" y="1100" width="481" height="349"/>
+        <bounds x="1956" y="1340" width="481" height="349"/>
         <sourceConnection xsi:type="archimate:Connection" id="35c6f0d5-f23f-45b0-9b74-2b3be67b8c81" source="0a490b8f-c547-4d3d-9b6a-c5d1dbe41d65" target="907fa942-f97c-4e18-84cb-8ef468319d30" archimateRelationship="345119d5-a8c1-4937-9c68-26b4cfaef823"/>
         <sourceConnection xsi:type="archimate:Connection" id="26078c67-093e-4980-8d5b-bf67e356ab7c" source="0a490b8f-c547-4d3d-9b6a-c5d1dbe41d65" target="f2854a8f-4fc5-428a-ba1d-ecc65e00e705" archimateRelationship="293832b0-13ba-44c2-a81e-59c95938bc7f"/>
         <sourceConnection xsi:type="archimate:Connection" id="c6f0167e-d4f7-49f5-a2a9-d88dcdb70b55" source="0a490b8f-c547-4d3d-9b6a-c5d1dbe41d65" target="0fd168e4-ad2f-4adc-887f-0f2ce9f79d46" archimateRelationship="2c64a8aa-8e71-428e-a59f-267ff4a22f2a"/>
@@ -4574,7 +4591,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="66dbb4f7-0083-4101-b1ca-2704cb3e6bdc" textAlignment="1" archimateElement="3aabc3d1-cb90-4916-b11a-57a3b7c3b747">
-        <bounds x="2064" y="872" width="481" height="216"/>
+        <bounds x="1956" y="1112" width="481" height="216"/>
         <sourceConnection xsi:type="archimate:Connection" id="f21bd283-2cf2-4604-85db-3ac0786b2eaa" source="66dbb4f7-0083-4101-b1ca-2704cb3e6bdc" target="a699192b-bb36-4400-b983-e92b0acff0e6" archimateRelationship="d3826098-5c3c-4148-9ecd-3f1c0eeb417a"/>
         <sourceConnection xsi:type="archimate:Connection" id="1c3f38c8-53df-4dd3-ace6-75bfc77a5066" source="66dbb4f7-0083-4101-b1ca-2704cb3e6bdc" target="9663e488-1ac1-47d0-9685-a2600cb0509f" archimateRelationship="179da283-8baa-4d3e-a722-6dfe8698e5e6"/>
         <sourceConnection xsi:type="archimate:Connection" id="f20b5f25-77c7-4734-9497-965d1d2d615b" source="66dbb4f7-0083-4101-b1ca-2704cb3e6bdc" target="817c9d1d-c625-405d-9127-c294a288b1ee" archimateRelationship="75824924-8e58-4e85-a926-d34d6137eedf"/>
@@ -4589,7 +4606,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="94998dfa-c75b-4724-9b8a-b92f7f66bc6e" textAlignment="1" archimateElement="db4cbc72-c37d-470a-896a-6ded22665a59">
-        <bounds x="2064" y="516" width="481" height="348"/>
+        <bounds x="1956" y="756" width="481" height="348"/>
         <sourceConnection xsi:type="archimate:Connection" id="5cd1ad29-f89c-440f-b073-d05aaeba8fcf" source="94998dfa-c75b-4724-9b8a-b92f7f66bc6e" target="ba7eaf21-dbb1-433a-9666-657d90b2e46c" archimateRelationship="dbbcdee7-d4c9-4f4a-9993-b27a26abdcd2"/>
         <sourceConnection xsi:type="archimate:Connection" id="f8143d5a-58b5-4738-8e99-49441d582deb" source="94998dfa-c75b-4724-9b8a-b92f7f66bc6e" target="e95ae3bd-070e-4dd0-af8e-838c55e74007" archimateRelationship="11c46843-14aa-423c-84af-0e9184174687"/>
         <sourceConnection xsi:type="archimate:Connection" id="cb46f246-bdfe-4d23-b143-81a1bf15a9cb" source="94998dfa-c75b-4724-9b8a-b92f7f66bc6e" target="4595621c-d0da-4a39-816f-3658daca2e6c" archimateRelationship="14d5d462-280a-4fb5-a5ce-27f0aa22acb3"/>
@@ -4612,7 +4629,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="4fb386ae-58ef-451e-a562-a43ca3053fe8" textAlignment="1" archimateElement="23736740-724e-496a-bcb6-a83650b78c5f">
-        <bounds x="1572" y="1632" width="481" height="205"/>
+        <bounds x="1956" y="540" width="481" height="205"/>
         <sourceConnection xsi:type="archimate:Connection" id="7b0a3eda-12fa-4659-adcc-b2fa3ba1e40e" source="4fb386ae-58ef-451e-a562-a43ca3053fe8" target="566dc675-87c1-4be5-8719-51f0e1b63ff8" archimateRelationship="265c693b-03a8-4af5-9997-1058213cf47e"/>
         <sourceConnection xsi:type="archimate:Connection" id="9eca824b-ea59-419a-b17d-0f97efb378c3" source="4fb386ae-58ef-451e-a562-a43ca3053fe8" target="948aa9c5-2124-4e2b-bb58-aabc5ba0e233" archimateRelationship="75d0c0f5-e418-4506-b398-c3ffc0b504ae"/>
         <child xsi:type="archimate:DiagramObject" id="948aa9c5-2124-4e2b-bb58-aabc5ba0e233" targetConnections="9eca824b-ea59-419a-b17d-0f97efb378c3" archimateElement="8ac93123-3ef8-4f53-bd62-95482926e501">
@@ -4623,7 +4640,7 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="f25d611c-2c8f-4d92-acf7-154d69d91022" textAlignment="1" archimateElement="489e61a3-815c-4eae-8d17-6052c1fa342b">
-        <bounds x="1572" y="1339" width="481" height="265"/>
+        <bounds x="1452" y="1704" width="481" height="265"/>
         <sourceConnection xsi:type="archimate:Connection" id="fee0480c-4e90-4f24-8d22-33aee3e1c14f" source="f25d611c-2c8f-4d92-acf7-154d69d91022" target="7aa68d65-4375-4088-a6f9-48682c37b8f7" archimateRelationship="46bf9d4c-0b1c-4686-870f-99aa9948fb42"/>
         <sourceConnection xsi:type="archimate:Connection" id="51656794-c8d4-4695-b491-bec72e7443f7" source="f25d611c-2c8f-4d92-acf7-154d69d91022" target="4f5d9e29-213e-433c-b54d-4cfae45ab474" archimateRelationship="6f0cba92-4d54-43b1-b258-58c57ae994a1"/>
         <sourceConnection xsi:type="archimate:Connection" id="a75c9213-881a-4c94-af91-9d5e3e5beb96" source="f25d611c-2c8f-4d92-acf7-154d69d91022" target="4e072ff2-64bb-43cf-ae27-e4794e070356" archimateRelationship="bfdbc0a5-a322-4049-8420-88e12af975a2"/>
@@ -4642,13 +4659,53 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="3e945743-2b4c-4c6d-aea1-6c64e74e0c73" textAlignment="1" archimateElement="69854685-c059-4ff1-ac00-4284a380358a">
-        <bounds x="1573" y="1193" width="480" height="140"/>
+        <bounds x="1453" y="1296" width="480" height="393"/>
+        <sourceConnection xsi:type="archimate:Connection" id="cd28d556-1cab-4e72-bd97-d7dc28de45b2" source="3e945743-2b4c-4c6d-aea1-6c64e74e0c73" target="99ec0f0d-3ff4-4515-82ed-9ca4e68c8d3e" archimateRelationship="763c1bc7-e1ed-4068-838a-37133dca38ce"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a63d7f55-b08c-483b-8787-f2b73bc650b5" source="3e945743-2b4c-4c6d-aea1-6c64e74e0c73" target="8154e7c4-5b6c-4506-aedc-6d1320254ea3" archimateRelationship="2fa2b736-1c8d-4194-83dc-7926bc44128e"/>
+        <sourceConnection xsi:type="archimate:Connection" id="08d0637a-4a26-4f6e-b401-734a05937b17" source="3e945743-2b4c-4c6d-aea1-6c64e74e0c73" target="34aef1bb-54a3-4ad4-ad47-d3822e111a7e" archimateRelationship="8e01b0d1-7bf6-4fee-9fa5-f2aed1d6da2f"/>
+        <sourceConnection xsi:type="archimate:Connection" id="01425db2-1a5e-4551-96d1-94c664076ea7" source="3e945743-2b4c-4c6d-aea1-6c64e74e0c73" target="618bc713-a973-4de8-88d7-ee5048ec16cb" archimateRelationship="47b294b1-d415-4626-bee4-6340e32eccbf"/>
+        <sourceConnection xsi:type="archimate:Connection" id="1d863b1f-955d-46b9-a8e4-bdeb00d36d22" source="3e945743-2b4c-4c6d-aea1-6c64e74e0c73" target="39666aa5-2618-4968-a113-032d8fa17d5a" archimateRelationship="ccb6e706-4b0b-471b-84d8-faf6fdf0c065"/>
+        <sourceConnection xsi:type="archimate:Connection" id="b044edef-7a50-45b8-87ed-eb891e91a9d9" source="3e945743-2b4c-4c6d-aea1-6c64e74e0c73" target="ff5ab20e-0727-4cf8-bec8-8dc24c1252aa" archimateRelationship="0102d308-95b0-4bd5-b177-45e25194b819"/>
+        <child xsi:type="archimate:DiagramObject" id="99ec0f0d-3ff4-4515-82ed-9ca4e68c8d3e" targetConnections="cd28d556-1cab-4e72-bd97-d7dc28de45b2" archimateElement="1abb4bff-7831-4a9d-80aa-b4480741b665">
+          <bounds x="24" y="24" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="8154e7c4-5b6c-4506-aedc-6d1320254ea3" targetConnections="a63d7f55-b08c-483b-8787-f2b73bc650b5" archimateElement="33301797-e7b9-44cd-93c7-f513c9b97294">
+          <bounds x="24" y="84" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="34aef1bb-54a3-4ad4-ad47-d3822e111a7e" targetConnections="08d0637a-4a26-4f6e-b401-734a05937b17" archimateElement="9faec27e-408b-44df-9f60-d63f0a9ce6a0">
+          <bounds x="24" y="264" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="618bc713-a973-4de8-88d7-ee5048ec16cb" targetConnections="01425db2-1a5e-4551-96d1-94c664076ea7" archimateElement="b1235903-b01c-470c-b6b4-3b75d731f6bf">
+          <bounds x="24" y="324" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="39666aa5-2618-4968-a113-032d8fa17d5a" targetConnections="1d863b1f-955d-46b9-a8e4-bdeb00d36d22" archimateElement="61bb057e-d258-4784-b1cd-f710a32aa7c0">
+          <bounds x="24" y="144" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ff5ab20e-0727-4cf8-bec8-8dc24c1252aa" targetConnections="b044edef-7a50-45b8-87ed-eb891e91a9d9" archimateElement="35ffe52b-1aaa-48d8-849b-e7d55bdae61e">
+          <bounds x="24" y="204" width="421" height="55"/>
+        </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="3896dedf-9264-479a-a9e8-75cdaf81321a" textAlignment="1" archimateElement="c31def47-fbb2-4269-8218-aee4f63b3009">
-        <bounds x="1573" y="984" width="480" height="200"/>
+        <bounds x="1453" y="1013" width="480" height="272"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a1411f88-cefc-4a26-891a-d25076606a17" source="3896dedf-9264-479a-a9e8-75cdaf81321a" target="ba215d1e-715f-4d94-bb4b-fb398ab136f0" archimateRelationship="d208ebf2-3772-4180-8f15-0a82f31fe98a"/>
+        <sourceConnection xsi:type="archimate:Connection" id="6f2b90d7-c78f-4b58-afef-abd82382df41" source="3896dedf-9264-479a-a9e8-75cdaf81321a" target="111e584d-8541-4e77-afbe-8579b25c1b8c" archimateRelationship="efcbae2a-b7c2-4e60-bb49-08431ce4ddd7"/>
+        <sourceConnection xsi:type="archimate:Connection" id="c923e5cb-2ee2-4ea5-9365-5157390b94cd" source="3896dedf-9264-479a-a9e8-75cdaf81321a" target="1dc8da75-07e1-43cf-ad0e-384389c856fe" archimateRelationship="d2bb9929-a99e-4455-b95d-f6c71342bd21"/>
+        <sourceConnection xsi:type="archimate:Connection" id="e7d85b1c-66c6-43b0-a639-5057d9f8d585" source="3896dedf-9264-479a-a9e8-75cdaf81321a" target="ac7608cb-d5e8-4cc8-89f9-00b59e56b337" archimateRelationship="4b72e6c0-7943-4dfa-84e5-9e00e9d3b532"/>
+        <child xsi:type="archimate:DiagramObject" id="ba215d1e-715f-4d94-bb4b-fb398ab136f0" targetConnections="a1411f88-cefc-4a26-891a-d25076606a17" archimateElement="b2f4bc32-f015-427f-b595-fcacc28cb424">
+          <bounds x="24" y="24" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="111e584d-8541-4e77-afbe-8579b25c1b8c" targetConnections="6f2b90d7-c78f-4b58-afef-abd82382df41" archimateElement="8b0a9853-779f-4207-87ca-0fb23a4918ea">
+          <bounds x="24" y="84" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="1dc8da75-07e1-43cf-ad0e-384389c856fe" targetConnections="c923e5cb-2ee2-4ea5-9365-5157390b94cd" archimateElement="bc3b473a-9875-4e15-a7cf-be942e97897c">
+          <bounds x="24" y="144" width="421" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ac7608cb-d5e8-4cc8-89f9-00b59e56b337" targetConnections="e7d85b1c-66c6-43b0-a639-5057d9f8d585" archimateElement="89a11c0e-edb0-4894-942a-b31397bfaa4f">
+          <bounds x="24" y="204" width="421" height="55"/>
+        </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="a581a5bd-32b3-4859-826e-a537b3001dda" textAlignment="1" archimateElement="da82b46d-dffb-46b6-aa44-2b6d91b877da">
-        <bounds x="1572" y="511" width="481" height="462"/>
+        <bounds x="1452" y="540" width="481" height="462"/>
         <sourceConnection xsi:type="archimate:Connection" id="62061da4-5d97-4a35-b9fd-7fcd8890843a" source="a581a5bd-32b3-4859-826e-a537b3001dda" target="234d7f3b-bad8-40f6-865f-0189ae144c99" archimateRelationship="c7aa9c34-b133-47b5-81ba-574e43b47026"/>
         <sourceConnection xsi:type="archimate:Connection" id="38eff2ef-25ea-4cfc-8af4-ded931a38b07" source="a581a5bd-32b3-4859-826e-a537b3001dda" target="f7817a08-e868-48b0-8adb-4064fd18e825" archimateRelationship="280dcb29-c0b0-46b3-8ea3-a8ed76ed0c50"/>
         <sourceConnection xsi:type="archimate:Connection" id="a9ed1c7d-893b-44d0-9e4f-c3cddff58771" source="a581a5bd-32b3-4859-826e-a537b3001dda" target="e583d041-fd66-41b6-87d3-ed66ce7385b5" archimateRelationship="f2e4b1ea-e70b-4556-afa0-6ccafc517c08"/>
