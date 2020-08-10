@@ -337,7 +337,7 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:BusinessEvent" name="Loss Event" id="e79ceb34-b965-4a1f-9cae-9375429f557d"/>
     <element xsi:type="archimate:BusinessService" name="Implemented Control Measure" id="c4967d72-ce41-49a7-832b-0a735da76436"/>
     <element xsi:type="archimate:BusinessService" name="&lt;&lt;Implemented Control Measure>>  User Entity Behavior Analytics (UEBA)" id="5899f3a9-c77a-4c12-878d-4e29abeea6aa">
-      <documentation>A type of cyber security process that models and identifies typical and abnormal behavior of humans and systems within a network and can help in discovering security anomalies in user and system behavior. UEBA uses advanced analysis, aggregates data from logs and reports, and looks at packet, flow, file and other types of information, as well as certain kinds of threat data to figure out whether certain kinds of activity and behavior are likely to constitute a cyberattac</documentation>
+      <documentation>A type of cyber security process that models and identifies typical and abnormal behavior of humans and systems within a network and can help in discovering security anomalies in user and system behavior. UEBA uses advanced analysis, aggregates data from logs and reports, and looks at packet, flow, file and other types of information, as well as certain kinds of threat data to figure out whether certain kinds of activity and behavior are likely to constitute a cyberattack</documentation>
     </element>
     <element xsi:type="archimate:BusinessService" name="&lt;&lt;Implemented Control Measure>>  Microsegmentation" id="2c222644-a9a7-4e8a-a8a8-47525b1b4da2">
       <documentation>A method of creating secure zones within the network at the applications and services layer or below to allow better monitoring of lateral network traffic and management of access to those zones. Microsegmentation could enable zero trust principles by allowing administrators to control authentication and authorization at a more granular level than the network perimeter</documentation>
@@ -1373,7 +1373,7 @@ Kafka Streams is a client library for building applications and microservices, w
 RabbitMQ is an open-source message-broker software (sometimes called message-oriented middleware) that originally implemented the Advanced Message Queuing Protocol (AMQP) and has since been extended with a plug-in architecture to support Streaming Text Oriented Messaging Protocol (STOMP), MQ Telemetry Transport (MQTT), and other protocols.  The RabbitMQ server program is written in the Erlang programming language and is built on the Open Telecom Platform framework for clustering and failover. Client libraries to interface with the broker are available for all major programming languages. &#xD;
 </documentation>
     </element>
-    <element xsi:type="archimate:TechnologyService" name="&lt;&lt;Implemented Control Measure>>  JSON Web Token (JWT))" id="7aa67b8a-7f80-402b-b192-9dee9dc73edd"/>
+    <element xsi:type="archimate:TechnologyService" name="&lt;&lt;Implemented Control Measure>>  JSON Web Token (JWT)" id="7aa67b8a-7f80-402b-b192-9dee9dc73edd"/>
     <element xsi:type="archimate:TechnologyService" name="&lt;&lt;Implemented Control Measure>> Encryption in Transit" id="2827551d-3fc4-47e5-bb1a-c153e688d6d5"/>
     <element xsi:type="archimate:TechnologyService" name="&lt;&lt;Implemented Control Measure>> Web application Firewall" id="f4bf7895-ebbb-4914-a2bb-f8b9d9fca819"/>
     <element xsi:type="archimate:Device" name="Managed Devices (copy)" id="ea3fb378-02e2-4005-a0f8-d1cc9fd18a75"/>
@@ -1393,7 +1393,9 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:Assessment" name="Feature Outcome" id="f0e2d878-7797-45ed-bef5-28ca977ead13"/>
     <element xsi:type="archimate:Assessment" name="Feature Success Critera" id="9b563ad2-a1a6-4a6a-8e3d-5e94c5780e86"/>
     <element xsi:type="archimate:Goal" name="&lt;&lt;Control Objective>> Enabling the establishment of a secure and resilient enterprise digital security ecosystem in which government services are delivered safely and securely" id="5f317053-266f-4f78-9d05-9dc7d5f59057"/>
-    <element xsi:type="archimate:Goal" name="&lt;&lt;Control Objective>> Providing a secure platform that ensures safety and protection of systems and data hosted (physical &amp; virtual) within the converged Government of Canada’s (GC) network environment." id="a8bb821c-5375-4ec8-b47d-e5476e0c1f0d"/>
+    <element xsi:type="archimate:Goal" name="&lt;&lt;Control Objective>> Providing a secure platform that ensures safety and protection of systems and data" id="a8bb821c-5375-4ec8-b47d-e5476e0c1f0d">
+      <documentation>Providing a secure platform that ensures safety and protection of systems and data hosted (physical and virtual) within the converged Government of Canada’s (GC) network environment.</documentation>
+    </element>
     <element xsi:type="archimate:Driver" name="End-to-end safety and protection of GC’s information, applications, devices, network, hardware and physical facilities" id="7b52ddce-feec-4f2c-9566-c2b1ef30f219"/>
     <element xsi:type="archimate:Driver" name="Develop, adopt, and enforce mature security processes, governance structure and standard " id="87617511-b347-4350-ad63-6c349c2316f8"/>
     <element xsi:type="archimate:Driver" name="Develop, adapt and implement the Security Control Framework (SCF) in order to enable key Government business activities" id="4c084bc8-7c07-45e4-81b4-bfa9c546dc68"/>
@@ -1422,26 +1424,26 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Secure boot considerations" id="7a424d15-154a-40de-8461-e50de7b1d211"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Limit access in accordance with policy " id="2da0b8f6-2a9e-454f-bd2d-2674eee6dd10"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Use of Mobile Threat Defense (MTD) tools/integration " id="b3fb40dd-c611-47b7-b7b7-1464a0c3ee0d"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Identify and catalogue all network devices/components" id="7decf60f-f397-47c9-92bd-5aeea24f9737"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Minimize unauthorized lateral movement using network segmentation " id="df9da132-274f-423c-9a66-b6f3cc65f676"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Limit physical and logical access to authorized personnel" id="4af9b97c-42d7-4ab9-9538-fa4e6e29cd78"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Identify and catalogue all Applications and Services" id="d86083bf-e12f-4552-8627-f39bd87d8057"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Implement micro-segmentation to isolate applications and workflows" id="4b410912-6209-4899-b683-920bf3d814f5"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Implement resource obfuscation " id="9bc86087-e369-4be2-a807-8e55a0ad1793"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Secure application development" id="36dc9deb-88a7-4ade-930b-7bae6bce066b"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Software assurance and supply chain risk management" id="5ca3a48c-2908-477b-abde-4a32934ee0dc"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Automation and orchestration" id="63b800d7-046b-4c09-8641-46fa5c2c8eac"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Identify and catalogue all data resources" id="d32e6964-c9ce-4f43-bc35-88f63ac864ff"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Label data to distinguish sensitive from non-sensitive data" id="1594e8a5-413f-4b1a-92a7-fd298a1d508b"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Encrypt sensitive data at rest" id="0027a54a-0efd-4d2b-9826-db28868940b7"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Encrypt all end-to-end communication" id="417d3619-9777-47dc-8d45-62ffe177d49a"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Security Information and Event Management (SIEM)" id="f01c2e7c-8b84-4887-9704-065a53dba3ec"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Traffic flow inspection and analysis" id="30a267be-9e01-4b6f-bda2-8b0e6ab27d75"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Traffic flow inspection and analysis" id="79feb974-20da-4539-a450-8c0af0f9f3fc"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Real-time correlation, assessment and response based on inputs from multiple sources (including data from automated monitoring tools)" id="039707d5-be0e-47c2-b090-bc6bf20f8d8a"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Identify and catalogue all network devices/components" id="7decf60f-f397-47c9-92bd-5aeea24f9737"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Minimize unauthorized lateral movement using network segmentation " id="df9da132-274f-423c-9a66-b6f3cc65f676"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Limit physical and logical access to authorized personnel" id="4af9b97c-42d7-4ab9-9538-fa4e6e29cd78"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Identify and catalogue all Applications and Services" id="d86083bf-e12f-4552-8627-f39bd87d8057"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Implement micro-segmentation to isolate applications and workflows" id="4b410912-6209-4899-b683-920bf3d814f5"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Implement resource obfuscation " id="9bc86087-e369-4be2-a807-8e55a0ad1793"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Secure application development" id="36dc9deb-88a7-4ade-930b-7bae6bce066b"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Software assurance and supply chain risk management" id="5ca3a48c-2908-477b-abde-4a32934ee0dc"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Automation and orchestration" id="63b800d7-046b-4c09-8641-46fa5c2c8eac"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Identify and catalogue all data resources" id="d32e6964-c9ce-4f43-bc35-88f63ac864ff"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Label data to distinguish sensitive from non-sensitive data" id="1594e8a5-413f-4b1a-92a7-fd298a1d508b"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Encrypt sensitive data at rest" id="0027a54a-0efd-4d2b-9826-db28868940b7"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Encrypt all end-to-end communication" id="417d3619-9777-47dc-8d45-62ffe177d49a"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Security Information and Event Management (SIEM)" id="f01c2e7c-8b84-4887-9704-065a53dba3ec"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Traffic flow inspection and analysis" id="30a267be-9e01-4b6f-bda2-8b0e6ab27d75"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Traffic flow inspection and analysis" id="79feb974-20da-4539-a450-8c0af0f9f3fc"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Real-time correlation, assessment and response based on inputs from multiple sources (including data from automated monitoring tools)" id="039707d5-be0e-47c2-b090-bc6bf20f8d8a"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>>Enable throttling and cache" id="2001e4f1-6689-4fc1-91fa-1b4b858a5497"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Authentication using user identity, app identity, device identity" id="cd079ed5-d24d-4a18-8ec9-7e6aee710c6c"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>>Enable identity context in the API traffic to authenticate all packets to the application (orservice) whether the APIs are internal or external to the domain" id="ecc54c9d-e404-4bdc-be32-956e02e0971b"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>>Enable identity context in the API traffic to authenticate all packets to the application (or service) whether the APIs are internal or external to the domain" id="ecc54c9d-e404-4bdc-be32-956e02e0971b"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Comprehensive Identity, Credential and Access Management (ICAM) (copy)" id="4397d52d-1a51-4f23-8eec-32a3b6bd2033"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Centralized authentication  (copy)" id="b11d127e-a5a3-4f72-9dcf-00544c60eac1"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Strong two-factor authentication (2FA) for all users, regardless of location (copy)" id="3ac96948-3e80-4331-832e-0bcd7623d825"/>
@@ -1457,23 +1459,23 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Secure boot considerations (copy)" id="d80ab546-ad4e-4394-b63b-2ee00705fe2e"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Limit access in accordance with policy  (copy)" id="43d86f9d-dcbe-4080-a4eb-d361b456cecb"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Use of Mobile Threat Defense (MTD) tools/integration  (copy)" id="2cc0381a-75b8-4aa0-882f-429ff9156549"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Limit physical and logical access to authorized personnel (copy)" id="3544e204-01be-476c-8e21-6da23ba0171c"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Minimize unauthorized lateral movement using network segmentation  (copy)" id="c3ebac52-f034-4413-b04a-c3aa1ba4b750"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Identify and catalogue all network devices/components (copy)" id="0fdbda69-5910-4368-9926-7bee6ed254f3"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Identify and catalogue all data resources (copy)" id="5839f6fb-6416-4f21-a3a3-457a7736314a"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Label data to distinguish sensitive from non-sensitive data (copy)" id="b01f4690-2ac8-4feb-a5b6-2410383070d1"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Encrypt sensitive data at rest (copy)" id="93e14582-b387-4af3-ba45-e26929de6c12"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Encrypt all end-to-end communication (copy)" id="e7edb0d0-0a0c-4511-9ea8-be454094fd10"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Identify and catalogue all Applications and Services (copy)" id="f601247f-9289-45a5-997e-6e3dce998825"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Implement resource obfuscation  (copy)" id="3e77d5cc-9d33-4239-8585-4d1d4ddd781f"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Automation and orchestration (copy)" id="6b353133-c6f0-4c08-9398-f27f198c7d41"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Implement micro-segmentation to isolate applications and workflows (copy)" id="9b43e842-cef2-4fd0-8302-b61904bf8f7f"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Secure application development (copy)" id="6ddbae6f-2181-464a-b7ce-e95edc272b99"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Software assurance and supply chain risk management (copy)" id="7dbcbc63-c20e-42e6-a52a-905c73aeaee8"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Traffic flow inspection and analysis (copy)" id="5338b1b1-323e-437c-8c07-dce06af7e901"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Security Information and Event Management (SIEM) (copy)" id="09d17ee9-2cf1-4b6b-a861-81460a411f3d"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Traffic flow inspection and analysis (copy)" id="33a4f24f-bc5f-406f-b652-0474733b4ab1"/>
-    <element xsi:type="archimate:Requirement" name="&lt;Security Requirement>> Real-time correlation, assessment and response based on inputs from multiple sources (including data from automated monitoring tools) (copy)" id="3414b3d5-d53c-4499-a412-ce241439c3c6"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Limit physical and logical access to authorized personnel (copy)" id="3544e204-01be-476c-8e21-6da23ba0171c"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Minimize unauthorized lateral movement using network segmentation  (copy)" id="c3ebac52-f034-4413-b04a-c3aa1ba4b750"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Identify and catalogue all network devices/components (copy)" id="0fdbda69-5910-4368-9926-7bee6ed254f3"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Identify and catalogue all data resources (copy)" id="5839f6fb-6416-4f21-a3a3-457a7736314a"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Label data to distinguish sensitive from non-sensitive data (copy)" id="b01f4690-2ac8-4feb-a5b6-2410383070d1"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Encrypt sensitive data at rest (copy)" id="93e14582-b387-4af3-ba45-e26929de6c12"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Encrypt all end-to-end communication (copy)" id="e7edb0d0-0a0c-4511-9ea8-be454094fd10"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Identify and catalogue all Applications and Services (copy)" id="f601247f-9289-45a5-997e-6e3dce998825"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Implement resource obfuscation  (copy)" id="3e77d5cc-9d33-4239-8585-4d1d4ddd781f"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Automation and orchestration (copy)" id="6b353133-c6f0-4c08-9398-f27f198c7d41"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Implement micro-segmentation to isolate applications and workflows (copy)" id="9b43e842-cef2-4fd0-8302-b61904bf8f7f"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Secure application development (copy)" id="6ddbae6f-2181-464a-b7ce-e95edc272b99"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Software assurance and supply chain risk management (copy)" id="7dbcbc63-c20e-42e6-a52a-905c73aeaee8"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Traffic flow inspection and analysis (copy)" id="5338b1b1-323e-437c-8c07-dce06af7e901"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Security Information and Event Management (SIEM) (copy)" id="09d17ee9-2cf1-4b6b-a861-81460a411f3d"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Traffic flow inspection and analysis (copy)" id="33a4f24f-bc5f-406f-b652-0474733b4ab1"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Real-time correlation, assessment and response based on inputs from multiple sources (including data from automated monitoring tools) (copy)" id="3414b3d5-d53c-4499-a412-ce241439c3c6"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Security Requirement>> Zero Trust Requirements" id="7dcf6e5e-41a3-4575-91c3-64cbf4f64d9c"/>
     <element xsi:type="archimate:Requirement" name="User Devices" id="0ee6a5d6-c2e2-46d9-a9db-66e33994e2bf"/>
     <element xsi:type="archimate:Requirement" name="Network" id="670fe7a9-4837-4a69-a4fd-c225ec25bf2c"/>
@@ -1483,18 +1485,22 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Enforce user/developer authentication using MFA to separate domain users for leastprivileged access to production and development system" id="7d0afa4b-fd46-48f5-aa70-9c8c1580d50a"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Enforce segregation of duties" id="c2d56988-5078-4512-a042-743fca0d53d8"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Enable audit logs" id="fae0554e-3062-4564-88ec-a433f2b783a8"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> The permission should be short term and enforce MFA with jump boxes for Interactiveaccess where applicable" id="4391a939-367e-4696-8c78-184130fd19d1"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Enforce authentication and authorization for short term access against Identity andaccess control to ensure build tool appropriately access repository in addition to MFArequest and push notification" id="a06d50d3-29a3-47d0-b15d-49706daaad4b"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Whitelisting of traffic to deny all connections by default except specific connection thatare enabled" id="8ac93123-3ef8-4f53-bd62-95482926e501"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Encryption in transit (e.g. Mutual TLS authentication, encrypting payload with JSON webtokens Mutual authentication) should be implemented for applications to secureservice to service communication by passing end user context, to share user contextbetween micro services in different trust domains" id="2e779a50-cd77-4852-8a23-e4eda837a67e"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> The permission should be short term and enforce MFA with jump boxes for Interactive access where applicable" id="4391a939-367e-4696-8c78-184130fd19d1"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Enforce authentication and authorization for short term access against Identity and Access Control" id="a06d50d3-29a3-47d0-b15d-49706daaad4b">
+      <documentation>This is to ensure build tool appropriately access repository in addition to MFA request and push notification.</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Whitelisting of traffic to deny all connections by default except specific connection that are enabled" id="8ac93123-3ef8-4f53-bd62-95482926e501"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Encryption in transit (e.g. Mutual TLS authentication, encrypting payload with JSON webtokens)" id="2e779a50-cd77-4852-8a23-e4eda837a67e">
+      <documentation>Mutual authentication should be implemented for applications to secure service communication by passing end user context, to share user context between micro services in different trust domains.</documentation>
+    </element>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Server to server communication should be restricted (default deny) to only approvedinter application, server or hosts communication" id="337d1ccf-aa6c-4114-b424-781ee6050fac"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Applications should be grouped into different zones (micro perimeters) based on the risklevel and data within the application" id="2bde9184-cd83-4543-84b6-c9446048241c"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Applications should be grouped into different zones (micro perimeters) based on the risk level and data within the application" id="2bde9184-cd83-4543-84b6-c9446048241c"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Apply application level segmentation policies" id="42b512b0-a55e-4639-ad8d-0d5f0cea39f0"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Application segmentation should apply regardless of the physical location of theapplication" id="ad471bb2-396e-4e98-beb1-2648602d5c7e"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Application segmentation should apply regardless of the physical location of the application" id="ad471bb2-396e-4e98-beb1-2648602d5c7e"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Applications are verified for proper authentication and authorization before eachsend/connect request" id="3a4a3b17-6017-4983-be67-3a94d683f274"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Ensure only known, allowed traffic or legitimate application communication is allowed bysegmentation" id="fd531004-a8e9-4fe1-b718-44750930285d"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Ensure only known, allowed traffic or legitimate application communication is allowed by segmentation" id="fd531004-a8e9-4fe1-b718-44750930285d"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Allow permissions only on a least privilege bases i.e. deny by default" id="23f50fdf-1064-4365-b09f-36cbaef2e68f"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuously log and monitor all traffic between applications and enforce securitypolicies on an ongoing basis" id="ade5be94-a7a4-48c0-99c1-536d46374e60"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuously log and monitor all traffic between applications and enforce security policies on an ongoing basis" id="ade5be94-a7a4-48c0-99c1-536d46374e60"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Ensure data security through end to end encryption at the application level" id="10d62fe4-ad5b-4615-9695-2e63b1fe2fa1"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Isolate workloads through implementation of micro segmentation and granularperimeters policy enforcement" id="a833a7ad-4b4b-481f-a365-5da718e35409"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Control access to content by allowing/blocking web requests through robust accesspolicies" id="008296e3-5658-4165-8bb7-315ce723f59d"/>
@@ -1508,13 +1514,13 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuous monitoring of user actions for abnormal behavior" id="0d99b788-82d3-4a9c-9e28-6997b267dc4d"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Encrypted traffic between authorized user and enterprise resource" id="cac077ab-3e8f-4499-8b4b-b773d5cff985"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Ensure real time assessment of device security prior to granting access to enterpriseresources" id="f23550f5-daeb-4d16-86cc-02153cc8f7ea"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Strategic objectives and priorities fulfilled by Zero Trust•Privileged access for admin purposes should be leveraged by a centralized PAM solution" id="b2f4bc32-f015-427f-b595-fcacc28cb424"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Privileged access for admin purposes should be leveraged by a centralized PAM solution" id="b2f4bc32-f015-427f-b595-fcacc28cb424"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Users authentication should be enhanced with the use of MFA" id="8b0a9853-779f-4207-87ca-0fb23a4918ea"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuous monitoring of user actions for abnormal behavior" id="bc3b473a-9875-4e15-a7cf-be942e97897c"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Least privilege principle in place for permissions within the enterprise resources" id="89a11c0e-edb0-4894-942a-b31397bfaa4f"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Limited access to the organization’s resources from unmanaged devices throughconditional access controls" id="1abb4bff-7831-4a9d-80aa-b4480741b665"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Enforced device authentication prior to access corporate resources" id="33301797-e7b9-44cd-93c7-f513c9b97294"/>
-    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Leverage multi factor authentication (MFA) as part of the authentication process for theuser" id="61bb057e-d258-4784-b1cd-f710a32aa7c0"/>
+    <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Leverage multi factor authentication (MFA) as part of the authentication process for the user" id="61bb057e-d258-4784-b1cd-f710a32aa7c0"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Continuous visibility and control" id="35ffe52b-1aaa-48d8-849b-e7d55bdae61e"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> End to end encryption of traffic" id="9faec27e-408b-44df-9f60-d63f0a9ce6a0"/>
     <element xsi:type="archimate:Requirement" name="&lt;&lt;Control Measure>> Device security assessment to ensure required security posture is in place prior togranting access" id="b1235903-b01c-470c-b6b4-3b75d731f6bf"/>
