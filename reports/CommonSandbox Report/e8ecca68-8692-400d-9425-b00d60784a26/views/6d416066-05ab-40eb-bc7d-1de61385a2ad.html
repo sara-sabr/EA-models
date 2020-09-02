@@ -1,0 +1,305 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>ESDC Conceptual Security Model</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>ESDC Conceptual Security Model</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/6d416066-05ab-40eb-bc7d-1de61385a2ad.png" alt="ESDC Conceptual Security Model" usemap="#6d416066-05ab-40eb-bc7d-1de61385a2admap"/>
+			   <map name="6d416066-05ab-40eb-bc7d-1de61385a2admap">
+				  		<area shape="rect" coords="658,160,778,215" href="../elements/dbaff8e4-0157-4265-b766-9acbcc280bc6.html"  target="element">
+				  		<area shape="rect" coords="10,10,130,65" href="../elements/33e3cc51-6af4-4714-84dc-bbb6e5a28679.html"  target="element">
+				  				<area shape="rect" coords="617,358,737,413" href="../elements/4a08afe0-12e8-4801-a594-9810042fda1d.html"  target="element">
+				  				<area shape="rect" coords="483,358,603,413" href="../elements/cd1bc7a8-00ea-4f92-854b-eb0032fbf0a5.html"  target="element">
+				  				<area shape="rect" coords="353,358,473,413" href="../elements/c4967d72-ce41-49a7-832b-0a735da76436.html"  target="element">
+
+				  		<area shape="rect" coords="341,310,741,450" href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html"  target="element">
+				  		<area shape="rect" coords="512,238,632,293" href="../elements/17f13e5f-dffc-4d42-9c3a-7780957feea7.html"  target="element">
+				  		<area shape="rect" coords="512,160,632,215" href="../elements/e659e95c-bac9-469a-aa20-4f67431fa79c.html"  target="element">
+				  		<area shape="rect" coords="512,83,632,138" href="../elements/54e8ea5c-1ffc-4498-bcd1-f5f7bbf96c91.html"  target="element">
+				  		<area shape="rect" coords="512,10,632,65" href="../elements/2908da53-a6dd-42c2-982d-820067370b51.html"  target="element">
+				  		<area shape="rect" coords="184,137,304,192" href="../elements/8ca174bf-bd69-4e5b-95b0-9e756d7aeb9f.html"  target="element">
+				  		<area shape="rect" coords="184,226,304,281" href="../elements/844fdeb0-0d1b-4172-8e1f-5f8c52f92376.html"  target="element">
+				  		<area shape="rect" coords="324,10,444,65" href="../elements/e79ceb34-b965-4a1f-9cae-9375429f557d.html"  target="element">
+				  		<area shape="rect" coords="162,10,282,65" href="../elements/82ba2cf3-26ac-49e6-9adb-3cbecfe56228.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<textarea id="docsrc" style="display:none"></textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/82ba2cf3-26ac-49e6-9adb-3cbecfe56228.html" target="element"> Threat Event </a> </td>
+											    <td> <a href="../elements/82ba2cf3-26ac-49e6-9adb-3cbecfe56228.html" target="element" class="i18n-elementtype-BusinessEvent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/e79ceb34-b965-4a1f-9cae-9375429f557d.html" target="element"> Loss Event </a> </td>
+											    <td> <a href="../elements/e79ceb34-b965-4a1f-9cae-9375429f557d.html" target="element" class="i18n-elementtype-BusinessEvent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/844fdeb0-0d1b-4172-8e1f-5f8c52f92376.html" target="element"> Asset at Risk </a> </td>
+											    <td> <a href="../elements/844fdeb0-0d1b-4172-8e1f-5f8c52f92376.html" target="element" class="i18n-elementtype-Resource"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/8ca174bf-bd69-4e5b-95b0-9e756d7aeb9f.html" target="element"> Vunerability </a> </td>
+											    <td> <a href="../elements/8ca174bf-bd69-4e5b-95b0-9e756d7aeb9f.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/2908da53-a6dd-42c2-982d-820067370b51.html" target="element"> Risk </a> </td>
+											    <td> <a href="../elements/2908da53-a6dd-42c2-982d-820067370b51.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/54e8ea5c-1ffc-4498-bcd1-f5f7bbf96c91.html" target="element"> Control Objective </a> </td>
+											    <td> <a href="../elements/54e8ea5c-1ffc-4498-bcd1-f5f7bbf96c91.html" target="element" class="i18n-elementtype-Goal"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/e659e95c-bac9-469a-aa20-4f67431fa79c.html" target="element"> Security Requirement </a> </td>
+											    <td> <a href="../elements/e659e95c-bac9-469a-aa20-4f67431fa79c.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/17f13e5f-dffc-4d42-9c3a-7780957feea7.html" target="element"> Control Measure </a> </td>
+											    <td> <a href="../elements/17f13e5f-dffc-4d42-9c3a-7780957feea7.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element"> Implemented Control Measures </a> </td>
+											    <td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/c4967d72-ce41-49a7-832b-0a735da76436.html" target="element"> Implemented Control Measure </a> </td>
+													    <td> <a href="../elements/c4967d72-ce41-49a7-832b-0a735da76436.html" target="element" class="i18n-elementtype-BusinessService"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/cd1bc7a8-00ea-4f92-854b-eb0032fbf0a5.html" target="element"> Implemented Control Measure </a> </td>
+													    <td> <a href="../elements/cd1bc7a8-00ea-4f92-854b-eb0032fbf0a5.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/4a08afe0-12e8-4801-a594-9810042fda1d.html" target="element"> Implemented Control Measures </a> </td>
+													    <td> <a href="../elements/4a08afe0-12e8-4801-a594-9810042fda1d.html" target="element" class="i18n-elementtype-TechnologyService"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/33e3cc51-6af4-4714-84dc-bbb6e5a28679.html" target="element"> Threat Agent </a> </td>
+											    <td> <a href="../elements/33e3cc51-6af4-4714-84dc-bbb6e5a28679.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/dbaff8e4-0157-4265-b766-9acbcc280bc6.html" target="element"> Security Principle </a> </td>
+											    <td> <a href="../elements/dbaff8e4-0157-4265-b766-9acbcc280bc6.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/7076e10c-c478-44cb-aeb2-2248b6f6ce0c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/7076e10c-c478-44cb-aeb2-2248b6f6ce0c.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/82ba2cf3-26ac-49e6-9adb-3cbecfe56228.html" target="element"> Threat Event </a> </td>
+																		<td> <a href="../elements/8ca174bf-bd69-4e5b-95b0-9e756d7aeb9f.html" target="element"> Vunerability </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/264a9f1e-9d78-49ae-a1bd-3f83b392ae24.html" target="element">  </a> </td>
+																		<td> <a href="../elements/264a9f1e-9d78-49ae-a1bd-3f83b392ae24.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/82ba2cf3-26ac-49e6-9adb-3cbecfe56228.html" target="element"> Threat Event </a> </td>
+																		<td> <a href="../elements/e79ceb34-b965-4a1f-9cae-9375429f557d.html" target="element"> Loss Event </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/104d31c5-9b20-43ca-bd6c-00feda2e928a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/104d31c5-9b20-43ca-bd6c-00feda2e928a.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/e79ceb34-b965-4a1f-9cae-9375429f557d.html" target="element"> Loss Event </a> </td>
+																		<td> <a href="../elements/8ca174bf-bd69-4e5b-95b0-9e756d7aeb9f.html" target="element"> Vunerability </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/9dd5a1ee-cab6-4b1b-968e-3dc43aaa09a2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/9dd5a1ee-cab6-4b1b-968e-3dc43aaa09a2.html" target="element" class="i18n-elementtype-InfluenceRelationship"></a> </td>
+																		<td> <a href="../elements/e79ceb34-b965-4a1f-9cae-9375429f557d.html" target="element"> Loss Event </a> </td>
+																		<td> <a href="../elements/2908da53-a6dd-42c2-982d-820067370b51.html" target="element"> Risk </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/57f0dbd5-a7e6-4b4d-82ff-8bfa612131f3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/57f0dbd5-a7e6-4b4d-82ff-8bfa612131f3.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/844fdeb0-0d1b-4172-8e1f-5f8c52f92376.html" target="element"> Asset at Risk </a> </td>
+																		<td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element"> Implemented Control Measures </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/5559bee1-2997-4431-88bf-d63e7ebd15d5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/5559bee1-2997-4431-88bf-d63e7ebd15d5.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/8ca174bf-bd69-4e5b-95b0-9e756d7aeb9f.html" target="element"> Vunerability </a> </td>
+																		<td> <a href="../elements/844fdeb0-0d1b-4172-8e1f-5f8c52f92376.html" target="element"> Asset at Risk </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/1b89c137-7918-4b3a-af78-c02e1ca29005.html" target="element">  </a> </td>
+																		<td> <a href="../elements/1b89c137-7918-4b3a-af78-c02e1ca29005.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/54e8ea5c-1ffc-4498-bcd1-f5f7bbf96c91.html" target="element"> Control Objective </a> </td>
+																		<td> <a href="../elements/2908da53-a6dd-42c2-982d-820067370b51.html" target="element"> Risk </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/8db9b598-71b6-41d1-80fc-cd05beffba48.html" target="element">  </a> </td>
+																		<td> <a href="../elements/8db9b598-71b6-41d1-80fc-cd05beffba48.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/e659e95c-bac9-469a-aa20-4f67431fa79c.html" target="element"> Security Requirement </a> </td>
+																		<td> <a href="../elements/54e8ea5c-1ffc-4498-bcd1-f5f7bbf96c91.html" target="element"> Control Objective </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/1648c89b-f1e3-4e72-b270-2c5b67d8647c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/1648c89b-f1e3-4e72-b270-2c5b67d8647c.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/17f13e5f-dffc-4d42-9c3a-7780957feea7.html" target="element"> Control Measure </a> </td>
+																		<td> <a href="../elements/e659e95c-bac9-469a-aa20-4f67431fa79c.html" target="element"> Security Requirement </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a025b274-d6d2-4c0f-a6b4-0e8fd51b35db.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a025b274-d6d2-4c0f-a6b4-0e8fd51b35db.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/17f13e5f-dffc-4d42-9c3a-7780957feea7.html" target="element"> Control Measure </a> </td>
+																		<td> <a href="../elements/dbaff8e4-0157-4265-b766-9acbcc280bc6.html" target="element"> Security Principle </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/a1925d19-e601-4913-ab20-2386acd3f6d3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a1925d19-e601-4913-ab20-2386acd3f6d3.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element"> Implemented Control Measures </a> </td>
+																		<td> <a href="../elements/cd1bc7a8-00ea-4f92-854b-eb0032fbf0a5.html" target="element"> Implemented Control Measure </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/b7ca903a-7828-49b9-beb6-2aedf5a81f24.html" target="element">  </a> </td>
+																		<td> <a href="../elements/b7ca903a-7828-49b9-beb6-2aedf5a81f24.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element"> Implemented Control Measures </a> </td>
+																		<td> <a href="../elements/4a08afe0-12e8-4801-a594-9810042fda1d.html" target="element"> Implemented Control Measures </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/4c733c07-f9d1-48b3-824c-ea409ff689b9.html" target="element">  </a> </td>
+																		<td> <a href="../elements/4c733c07-f9d1-48b3-824c-ea409ff689b9.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element"> Implemented Control Measures </a> </td>
+																		<td> <a href="../elements/17f13e5f-dffc-4d42-9c3a-7780957feea7.html" target="element"> Control Measure </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/5a76d165-c2f4-4f49-98be-5b1963f36e52.html" target="element">  </a> </td>
+																		<td> <a href="../elements/5a76d165-c2f4-4f49-98be-5b1963f36e52.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element"> Implemented Control Measures </a> </td>
+																		<td> <a href="../elements/c4967d72-ce41-49a7-832b-0a735da76436.html" target="element"> Implemented Control Measure </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/9febf804-fb60-4336-8362-ba41c05e8ddd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/9febf804-fb60-4336-8362-ba41c05e8ddd.html" target="element" class="i18n-elementtype-InfluenceRelationship"></a> </td>
+																		<td> <a href="../elements/e1574688-af5c-40f4-a55c-8cf4b446f80e.html" target="element"> Implemented Control Measures </a> </td>
+																		<td> <a href="../elements/8ca174bf-bd69-4e5b-95b0-9e756d7aeb9f.html" target="element"> Vunerability </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/f81b52a9-662b-4c01-b727-ad8a7b22c978.html" target="element">  </a> </td>
+																		<td> <a href="../elements/f81b52a9-662b-4c01-b727-ad8a7b22c978.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/33e3cc51-6af4-4714-84dc-bbb6e5a28679.html" target="element"> Threat Agent </a> </td>
+																		<td> <a href="../elements/82ba2cf3-26ac-49e6-9adb-3cbecfe56228.html" target="element"> Threat Event </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/e4861864-730e-4e1d-8b37-219ee61273a5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/e4861864-730e-4e1d-8b37-219ee61273a5.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/dbaff8e4-0157-4265-b766-9acbcc280bc6.html" target="element"> Security Principle </a> </td>
+																		<td> <a href="../elements/54e8ea5c-1ffc-4498-bcd1-f5f7bbf96c91.html" target="element"> Control Objective </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
