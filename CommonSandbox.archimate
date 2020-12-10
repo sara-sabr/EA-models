@@ -1272,6 +1272,20 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessEvent" name="&lt;&lt;Loss Event>>  Fraudulent Payment" id="ae4dc003-6854-4642-be7b-b0af4ce82739"/>
     <element xsi:type="archimate:BusinessRole" name="&lt;&lt;Threat Agent>> Td4 :  Sophisticated adversary with moderate resources who is willing to take little risk (e.g., organized crime, sophisticated hackers, international corporations)" id="0d876470-255f-4c9c-b3b9-5a48c517a50a"/>
     <element xsi:type="archimate:BusinessRole" name="&lt;&lt;Threat Agent>>  Td3 - Adversary with minimal resources who is willing to take significant risk (e.g., unsophisticated hackers)" id="9d7acd24-360a-4c8b-af79-157795ed25c9"/>
+    <element xsi:type="archimate:BusinessObject" name="Pan Canadian Trust Framework" id="4ffbb39d-d018-477c-b828-b5efc914afb7"/>
+    <element xsi:type="archimate:BusinessRole" name="Issuer" id="7fed3a19-d159-43ad-aee1-1c4e5fdd6958">
+      <documentation>Participants that provide the 'full package' of a trusted digital identity. Typically, this is a provincial, territorial, or federal digital identity program that is providing trusted digital identities to another jurisdiction. These may also be providers serving each other within an  industry sector. Trusted Digital Identity Providers are a type of Claims Provider. </documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Holder" id="cd5a8459-a54f-47b7-b50a-8eed48ecbea1">
+      <documentation>Holder: An entity that controls one or more Credentials from which a Presentation can be expressed to a Verifier. A Holder is usually, but not always, the Subject of a Credential. Digital Identity Owner, Card Holder </documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Verifier" id="9cb60a59-0d1c-4164-ae6e-c985bb92a7ef">
+      <documentation>Verifier: An entity that accepts a Presentation from a Holder for the purposes of delivering services or administering programs Relying Party, Credential Verification Service Provider, Credential Authentication Service Provider, Authentication Service Provider, Digital Identity Consumer, Delegated Service Provider.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Subject" id="1af802f8-ef57-459c-b558-5ebdc29b9648">
+      <documentation>Subject: An entity about which Claims are asserted by an Issuer. Person, Organization, Device </documentation>
+    </element>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5168,6 +5182,10 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
     <element xsi:type="archimate:RealizationRelationship" id="2e47ab1c-3975-4678-949c-77bd7f3722cb" source="0b656da1-63fe-4374-b307-f0d6db8a710f" target="9ae6d296-b76e-4f87-b2e4-bfb0f13bdba3"/>
     <element xsi:type="archimate:RealizationRelationship" id="2dc5507a-55ef-400f-855f-3043f48f140b" source="efb97b5e-bf50-46f4-9fe6-47b39c1c9e2e" target="0de5fd19-81ea-499b-bde2-4b489cf5cf33"/>
     <element xsi:type="archimate:RealizationRelationship" id="bf64b211-b251-4fa5-9361-0d2aa8304fa3" source="f39197ac-aefe-412c-b445-5582023230d9" target="2c516317-d6ab-4aa7-bfcd-d8db37958cf8"/>
+    <element xsi:type="archimate:AssociationRelationship" id="0814757d-a856-4c8a-8be1-3a6839c6bf07" source="7fed3a19-d159-43ad-aee1-1c4e5fdd6958" target="4ffbb39d-d018-477c-b828-b5efc914afb7"/>
+    <element xsi:type="archimate:AssociationRelationship" id="9ee45b77-49b9-4572-b61c-ff08c52e8d9b" source="4ffbb39d-d018-477c-b828-b5efc914afb7" target="1af802f8-ef57-459c-b558-5ebdc29b9648"/>
+    <element xsi:type="archimate:AssociationRelationship" id="af096223-abaf-43c0-b229-bf6ac9e89207" source="4ffbb39d-d018-477c-b828-b5efc914afb7" target="9cb60a59-0d1c-4164-ae6e-c985bb92a7ef"/>
+    <element xsi:type="archimate:AssociationRelationship" id="7a94313c-bcc1-4350-934d-6867b2123d40" source="4ffbb39d-d018-477c-b828-b5efc914afb7" target="cd5a8459-a54f-47b7-b50a-8eed48ecbea1"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -11540,6 +11558,28 @@ The threat agent was potentially able to:&#xD;
       <child xsi:type="archimate:DiagramObject" id="99a79eec-6061-43db-964d-5410be3f1c31" archimateElement="9d7acd24-360a-4c8b-af79-157795ed25c9">
         <bounds x="63" y="321" width="157" height="145"/>
       </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="PCTF Canadian Digital Ecosystem Roles" id="93c7dda3-1f14-4a3d-b300-73e3184b39f1">
+      <child xsi:type="archimate:DiagramObject" id="3cf97c6e-96e5-490d-b30f-81aa29f828b7" targetConnections="9c36f5f8-374d-4d71-add6-0ec2e618a8dd" archimateElement="4ffbb39d-d018-477c-b828-b5efc914afb7">
+        <bounds x="405" y="222" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="5ba66199-d443-47d3-b7d4-897ab3e9daae" source="3cf97c6e-96e5-490d-b30f-81aa29f828b7" target="29a1349a-68ed-4600-8a01-e535d57591aa" archimateRelationship="9ee45b77-49b9-4572-b61c-ff08c52e8d9b"/>
+        <sourceConnection xsi:type="archimate:Connection" id="2398d39c-7b0c-4779-ae34-135abee1a5b0" source="3cf97c6e-96e5-490d-b30f-81aa29f828b7" target="c5af8058-8270-4c44-8a55-e04ce3e612bf" archimateRelationship="af096223-abaf-43c0-b229-bf6ac9e89207"/>
+        <sourceConnection xsi:type="archimate:Connection" id="d03153ac-7ce1-40f7-8548-73d046ce9740" source="3cf97c6e-96e5-490d-b30f-81aa29f828b7" target="0757d15f-239d-469d-8bca-5296e44e9814" archimateRelationship="7a94313c-bcc1-4350-934d-6867b2123d40"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="fe46fd89-d52a-4672-99bd-b9128238d283" archimateElement="7fed3a19-d159-43ad-aee1-1c4e5fdd6958">
+        <bounds x="185" y="222" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="9c36f5f8-374d-4d71-add6-0ec2e618a8dd" source="fe46fd89-d52a-4672-99bd-b9128238d283" target="3cf97c6e-96e5-490d-b30f-81aa29f828b7" archimateRelationship="0814757d-a856-4c8a-8be1-3a6839c6bf07"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="0757d15f-239d-469d-8bca-5296e44e9814" targetConnections="d03153ac-7ce1-40f7-8548-73d046ce9740" archimateElement="cd5a8459-a54f-47b7-b50a-8eed48ecbea1">
+        <bounds x="405" y="115" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c5af8058-8270-4c44-8a55-e04ce3e612bf" targetConnections="2398d39c-7b0c-4779-ae34-135abee1a5b0" archimateElement="9cb60a59-0d1c-4164-ae6e-c985bb92a7ef">
+        <bounds x="625" y="222" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="29a1349a-68ed-4600-8a01-e535d57591aa" targetConnections="5ba66199-d443-47d3-b7d4-897ab3e9daae" archimateElement="1af802f8-ef57-459c-b558-5ebdc29b9648">
+        <bounds x="405" y="345" width="120" height="55"/>
+      </child>
+      <documentation>The Pan-Canadian Trust Framework (PCTF) is a model that consists of a set of agreed-on concepts, definitions, processes, conformance criteria, and an assessment approach. It is not a standard as such, but is, instead, a framework that relates and applies existing standards, policies, guidelines, and practices, and where such standards and policies do not exist, specifies additional criteria.</documentation>
     </element>
   </folder>
 </archimate:model>
