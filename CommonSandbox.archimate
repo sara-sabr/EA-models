@@ -1286,6 +1286,7 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessRole" name="Subject" id="1af802f8-ef57-459c-b558-5ebdc29b9648">
       <documentation>Subject: An entity about which Claims are asserted by an Issuer. Person, Organization, Device </documentation>
     </element>
+    <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-281f93e95ca0458ea7c093c0b5c13526"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -1526,6 +1527,7 @@ Recommendation 41: Enforcement segregates sensitive investigations that follow a
 *The term “investigation” is used here to describe any investigation with the predominant purpose of determining criminal liability under either ESDC-administered legislation or the Criminal Code of Canada.</documentation>
     </element>
     <element xsi:type="archimate:ApplicationService" name="Implemented Control Measure" id="10b9e132-87ca-4997-98a0-228ac960dcf7"/>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Application Collaboration" id="id-cedebf6011424027b16bb62b4a190b21"/>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
     <element xsi:type="archimate:SystemSoftware" name="Java" id="22462922-2b4d-498a-ba44-0ab95aa51f53">
@@ -11580,6 +11582,14 @@ The threat agent was potentially able to:&#xD;
         <bounds x="405" y="345" width="120" height="55"/>
       </child>
       <documentation>The Pan-Canadian Trust Framework (PCTF) is a model that consists of a set of agreed-on concepts, definitions, processes, conformance criteria, and an assessment approach. It is not a standard as such, but is, instead, a framework that relates and applies existing standards, policies, guidelines, and practices, and where such standards and policies do not exist, specifies additional criteria.</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="test" id="id-f9b64d80c64f4f1cbcc5eabb2d188e4b">
+      <child xsi:type="archimate:DiagramObject" id="id-cd2e3a1dfa7f44c4a6d2ff9f4bdfd0aa" archimateElement="id-281f93e95ca0458ea7c093c0b5c13526">
+        <bounds x="549" y="246" width="184" height="103"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d1783beb60db4c75b6d2870b37ed332e" archimateElement="id-cedebf6011424027b16bb62b4a190b21">
+        <bounds x="821" y="292" width="120" height="55"/>
+      </child>
     </element>
   </folder>
 </archimate:model>
