@@ -1301,6 +1301,8 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessInteraction" name="Appoint" id="2fd084cc-f138-4dea-bee3-2bcbd46c5241"/>
     <element xsi:type="archimate:BusinessProcess" name="Relationship Continuity" id="2771166b-f43a-4d09-bc70-341ef407d9f6"/>
     <element xsi:type="archimate:BusinessService" name="Balanced Relationship" id="5c8ad1f7-271d-49b5-8d23-5729fa3c8513"/>
+    <element xsi:type="archimate:BusinessActor" name="Nik" id="053d5d40-9254-423f-bba1-feb536961fa6"/>
+    <element xsi:type="archimate:BusinessRole" name="Architect" id="53e974bd-023d-4eb5-9ea8-adf89315feb2"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5216,6 +5218,7 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
     <element xsi:type="archimate:RealizationRelationship" id="87a86242-981c-4b76-a8f2-67467ef8b94e" source="2771166b-f43a-4d09-bc70-341ef407d9f6" target="5c8ad1f7-271d-49b5-8d23-5729fa3c8513"/>
     <element xsi:type="archimate:RealizationRelationship" id="477ae27c-95dc-4367-9c97-9cb57976bc13" source="2d6ba712-5fc3-4304-8be3-28f3dab4243c" target="c224ca48-ad69-454c-8e51-5565b0fbaf3b"/>
     <element xsi:type="archimate:RealizationRelationship" id="798447e4-d0dc-490f-b5f4-2d00816d0c69" source="9581fb78-fb5d-44c3-a39c-9529ad2ccd16" target="c224ca48-ad69-454c-8e51-5565b0fbaf3b"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="1537f853-c0f4-4940-b097-887f7d88df32" source="053d5d40-9254-423f-bba1-feb536961fa6" target="53e974bd-023d-4eb5-9ea8-adf89315feb2"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -5997,6 +6000,15 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
         </child>
         <child xsi:type="archimate:DiagramObject" id="8e4a774a-e4f7-4927-83a2-ce185f69a7dd" targetConnections="c749531d-3091-4ff1-b899-237e7de85d1d fca5b278-d5f1-4a6d-964b-e24c86d38e18" archimateElement="5c8ad1f7-271d-49b5-8d23-5729fa3c8513">
           <bounds x="225" y="120" width="120" height="55"/>
+        </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Test for Gertrude to Delete" id="f63847ab-7888-4108-bca0-4f55ba205122">
+        <child xsi:type="archimate:DiagramObject" id="82e814e9-4261-4301-8cfc-7e0996340131" archimateElement="053d5d40-9254-423f-bba1-feb536961fa6">
+          <bounds x="362" y="307" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f8659011-621c-4ef1-8a39-3189479df8fc" source="82e814e9-4261-4301-8cfc-7e0996340131" target="4225b06f-c251-4551-8f68-35f48f5a2f49" archimateRelationship="1537f853-c0f4-4940-b097-887f7d88df32"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4225b06f-c251-4551-8f68-35f48f5a2f49" targetConnections="f8659011-621c-4ef1-8a39-3189479df8fc" archimateElement="53e974bd-023d-4eb5-9ea8-adf89315feb2">
+          <bounds x="580" y="300" width="120" height="55"/>
         </child>
       </element>
     </folder>
