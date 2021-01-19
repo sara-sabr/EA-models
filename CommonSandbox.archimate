@@ -1304,6 +1304,10 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessActor" name="Nik" id="053d5d40-9254-423f-bba1-feb536961fa6"/>
     <element xsi:type="archimate:BusinessRole" name="Architect" id="53e974bd-023d-4eb5-9ea8-adf89315feb2"/>
     <element xsi:type="archimate:BusinessActor" name="Nik" id="088824b6-374d-46f2-8c2a-1ae6f1399fea"/>
+    <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity1)" id="ef3fdee0-4878-4487-98ce-dd07451b8ca6"/>
+    <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity2) " id="0f065f8d-3704-4272-b284-2ffd2f8ab522"/>
+    <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity3)" id="ffd80fb0-9df2-44d0-86d9-cf94cbf19514"/>
+    <element xsi:type="archimate:BusinessProcess" name="Organization (Compound Entity)" id="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5220,6 +5224,8 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
     <element xsi:type="archimate:RealizationRelationship" id="477ae27c-95dc-4367-9c97-9cb57976bc13" source="2d6ba712-5fc3-4304-8be3-28f3dab4243c" target="c224ca48-ad69-454c-8e51-5565b0fbaf3b"/>
     <element xsi:type="archimate:RealizationRelationship" id="798447e4-d0dc-490f-b5f4-2d00816d0c69" source="9581fb78-fb5d-44c3-a39c-9529ad2ccd16" target="c224ca48-ad69-454c-8e51-5565b0fbaf3b"/>
     <element xsi:type="archimate:AssignmentRelationship" id="1537f853-c0f4-4940-b097-887f7d88df32" source="053d5d40-9254-423f-bba1-feb536961fa6" target="53e974bd-023d-4eb5-9ea8-adf89315feb2"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="b467649c-83d6-4dbb-a48c-9ec90fdc88d8" source="0f065f8d-3704-4272-b284-2ffd2f8ab522" target="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="beaaefb9-becb-49de-89dc-a4c19ffed93f" source="ffd80fb0-9df2-44d0-86d9-cf94cbf19514" target="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -6002,6 +6008,25 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
         <child xsi:type="archimate:DiagramObject" id="8e4a774a-e4f7-4927-83a2-ce185f69a7dd" targetConnections="c749531d-3091-4ff1-b899-237e7de85d1d fca5b278-d5f1-4a6d-964b-e24c86d38e18" archimateElement="5c8ad1f7-271d-49b5-8d23-5729fa3c8513">
           <bounds x="225" y="120" width="120" height="55"/>
         </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="PCTF 1.2 Entities" id="d774e597-d6ec-417f-9512-6b34d75bdff8">
+        <child xsi:type="archimate:DiagramObject" id="b29e1876-37a1-4ba1-a8a7-217f5da4c34f" archimateElement="ef3fdee0-4878-4487-98ce-dd07451b8ca6">
+          <bounds x="288" y="216" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="957f1317-a191-4a8b-87b9-0bbf08ba05e0" archimateElement="0f065f8d-3704-4272-b284-2ffd2f8ab522">
+          <bounds x="648" y="300" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="339d74e8-b46f-458e-bd7e-1f209230657d" source="957f1317-a191-4a8b-87b9-0bbf08ba05e0" target="3ad68676-dbc7-420c-84db-e2d834191117" archimateRelationship="b467649c-83d6-4dbb-a48c-9ec90fdc88d8"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="28695774-3ef7-4e37-a606-cb99e3cdb66a" archimateElement="ffd80fb0-9df2-44d0-86d9-cf94cbf19514">
+          <bounds x="480" y="300" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7bef0485-3ba8-4dfe-9a89-b3dacb76a157" source="28695774-3ef7-4e37-a606-cb99e3cdb66a" target="3ad68676-dbc7-420c-84db-e2d834191117" archimateRelationship="beaaefb9-becb-49de-89dc-a4c19ffed93f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="3ad68676-dbc7-420c-84db-e2d834191117" targetConnections="339d74e8-b46f-458e-bd7e-1f209230657d 7bef0485-3ba8-4dfe-9a89-b3dacb76a157" archimateElement="2c92d564-b537-477b-bdba-d78b3ea3c72f">
+          <bounds x="555" y="188" width="120" height="55"/>
+        </child>
+        <documentation>2.3.1.1 Entities&#xD;
+An entity is a thing with a distinct and independent existence such as a person, organization, or device that can be subject to legislation, policy, or regulations within a&#xD;
+context, and which may have certain rights, duties, and obligations. An entity can perform one or more roles in the digital ecosystem. There are two types of entities: atomic entities and compound entities. An atomic entity is an entity that cannot be decomposed into smaller units. Persons are atomic entities. A compound entity is an entity that is comprised of one or more atomic entities. Organizations are compound entities. </documentation>
       </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
