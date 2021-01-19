@@ -1308,6 +1308,16 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity2) " id="0f065f8d-3704-4272-b284-2ffd2f8ab522"/>
     <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity3)" id="ffd80fb0-9df2-44d0-86d9-cf94cbf19514"/>
     <element xsi:type="archimate:BusinessProcess" name="Organization (Compound Entity)" id="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
+    <element xsi:type="archimate:BusinessObject" name="Credential" id="id-2c8017b667a2483981fa4b624de863e7"/>
+    <element xsi:type="archimate:BusinessObject" name="Content " id="id-64f01f5ecbdf4e22a039b593ddd2f796">
+      <documentation>A content is a set of claims.</documentation>
+    </element>
+    <element xsi:type="archimate:Representation" name="Witness" id="id-ff31b7597bce4597b42a93eed0730bce">
+      <documentation>An attestation to the content </documentation>
+    </element>
+    <element xsi:type="archimate:Representation" name="Container" id="id-84dc6ac2c98a4b3eb8c0fd7b1b3b37f9">
+      <documentation>A documentary proof of the credential </documentation>
+    </element>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5226,6 +5236,7 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
     <element xsi:type="archimate:AssignmentRelationship" id="1537f853-c0f4-4940-b097-887f7d88df32" source="053d5d40-9254-423f-bba1-feb536961fa6" target="53e974bd-023d-4eb5-9ea8-adf89315feb2"/>
     <element xsi:type="archimate:AssignmentRelationship" id="b467649c-83d6-4dbb-a48c-9ec90fdc88d8" source="0f065f8d-3704-4272-b284-2ffd2f8ab522" target="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
     <element xsi:type="archimate:AssignmentRelationship" id="beaaefb9-becb-49de-89dc-a4c19ffed93f" source="ffd80fb0-9df2-44d0-86d9-cf94cbf19514" target="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-84f75371227a433d9e038a4d8b0adf80" source="id-2c8017b667a2483981fa4b624de863e7" target="id-64f01f5ecbdf4e22a039b593ddd2f796"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -6027,6 +6038,21 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
         <documentation>2.3.1.1 Entities&#xD;
 An entity is a thing with a distinct and independent existence such as a person, organization, or device that can be subject to legislation, policy, or regulations within a&#xD;
 context, and which may have certain rights, duties, and obligations. An entity can perform one or more roles in the digital ecosystem. There are two types of entities: atomic entities and compound entities. An atomic entity is an entity that cannot be decomposed into smaller units. Persons are atomic entities. A compound entity is an entity that is comprised of one or more atomic entities. Organizations are compound entities. </documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="PCTF 1.2 Credential" id="id-4ae0379f0029481fb4c180f49209f99a">
+        <child xsi:type="archimate:DiagramObject" id="id-d61c3fc97a5c4790ac451f52ceb423fb" archimateElement="id-2c8017b667a2483981fa4b624de863e7">
+          <bounds x="116" y="59" width="997" height="493"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2c7590af4fbf4d0d872bebc42fcd0c4b" source="id-d61c3fc97a5c4790ac451f52ceb423fb" target="id-9f95f8afdda34fb492d032b3deca212b" archimateRelationship="id-84f75371227a433d9e038a4d8b0adf80"/>
+          <child xsi:type="archimate:DiagramObject" id="id-9f95f8afdda34fb492d032b3deca212b" targetConnections="id-2c7590af4fbf4d0d872bebc42fcd0c4b" archimateElement="id-64f01f5ecbdf4e22a039b593ddd2f796">
+            <bounds x="372" y="216" width="181" height="157"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b9dd7c9ac96b47918193535a6ed9a26f" archimateElement="id-ff31b7597bce4597b42a93eed0730bce">
+            <bounds x="84" y="216" width="120" height="157"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-24bd6f09f22b40519e1fcb6b81e50acb" archimateElement="id-84dc6ac2c98a4b3eb8c0fd7b1b3b37f9">
+            <bounds x="720" y="216" width="120" height="145"/>
+          </child>
+        </child>
       </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
