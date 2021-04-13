@@ -1341,6 +1341,8 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessObject" name="SOA Architecture Guardrails" id="265afe5d-2835-4126-b62c-ef4df6f67d1b"/>
     <element xsi:type="archimate:BusinessObject" name="Master DM Architecture Guardrails" id="947884df-efc0-43f5-a37a-c35792cffa6c"/>
     <element xsi:type="archimate:BusinessObject" name=" Reference DM Architecture Guardrails" id="aff8ab10-9d6c-4b8f-9b0c-0f25fe5c2d5a"/>
+    <element xsi:type="archimate:BusinessObject" name="External" id="5dff957a-8be6-4078-91fb-82da8abefbd2"/>
+    <element xsi:type="archimate:BusinessObject" name="Internal" id="5d2162f8-f209-4747-b617-38861b9877d8"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5391,6 +5393,8 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
     <element xsi:type="archimate:AssociationRelationship" id="81e1d01d-1eef-49ab-8552-20e72d3f095c" source="1ffed886-217c-444f-9a2d-9b24f25cc898" target="ae0a607e-3e24-4230-8bdd-9173655b9c1e"/>
     <element xsi:type="archimate:AssociationRelationship" id="be728f16-c5c0-41af-81d9-7aa665761733" source="04d56aa3-18de-492c-98e1-2210b579a014" target="ae0a607e-3e24-4230-8bdd-9173655b9c1e"/>
     <element xsi:type="archimate:SpecializationRelationship" id="7ec93144-1038-445a-b697-d3bfdd18d852" source="f22d2a8b-a695-4fba-8f5d-97db3677919c" target="ae0a607e-3e24-4230-8bdd-9173655b9c1e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="e45f33c6-3b66-497e-ad37-a75b0e3ab086" source="77602c24-1722-41cb-9b4f-f9cf13e0d914" target="5d2162f8-f209-4747-b617-38861b9877d8"/>
+    <element xsi:type="archimate:CompositionRelationship" id="55e364ce-0802-41e1-b47c-e8747eac174d" source="77602c24-1722-41cb-9b4f-f9cf13e0d914" target="5dff957a-8be6-4078-91fb-82da8abefbd2"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -12047,7 +12051,7 @@ The threat agent was potentially able to:&#xD;
         <sourceConnection xsi:type="archimate:Connection" id="c56ec73f-9098-4dae-898a-7888073a6ac7" source="4dad3d85-81a7-4ebc-9350-d1c91912ff10" target="c1a853a6-cfa5-4efb-8fdf-9cbaf202fedc" archimateRelationship="171e31d4-19cb-43a7-8c4b-826d6cecaaa0"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="5d03b0b5-ff0a-4fb7-b887-56242f619c5e" targetConnections="2cbcbc4c-cab5-47f2-a649-ec8c08c5d5c0" archimateElement="80522499-7dd8-4d73-bfce-c003bc3c3649">
-        <bounds x="432" y="-48" width="409" height="55"/>
+        <bounds x="432" y="-60" width="409" height="61"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="e0ade429-0d69-42b7-a765-781db2a1e495" targetConnections="35765c19-b93a-4360-bff8-76b09c9648f5" archimateElement="ddda3e6f-4795-4d97-8ae9-968147229cf7">
         <bounds x="432" y="204" width="409" height="97"/>
@@ -12059,7 +12063,15 @@ The threat agent was potentially able to:&#xD;
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="c872850d-b6cb-4aac-b377-ce620bbeae69" targetConnections="6812d19e-4364-4843-9482-82e4c8651186" archimateElement="77602c24-1722-41cb-9b4f-f9cf13e0d914">
-        <bounds x="432" y="24" width="409" height="55"/>
+        <bounds x="432" y="12" width="409" height="73"/>
+        <sourceConnection xsi:type="archimate:Connection" id="4d3dbeb7-acd7-4cb9-8f45-2e0a57344cc2" source="c872850d-b6cb-4aac-b377-ce620bbeae69" target="692f5c72-9b70-4462-9804-60b9d4b42434" archimateRelationship="e45f33c6-3b66-497e-ad37-a75b0e3ab086"/>
+        <sourceConnection xsi:type="archimate:Connection" id="be152e30-f5a5-4342-86f3-22f44e34b10b" source="c872850d-b6cb-4aac-b377-ce620bbeae69" target="4b8bb3f3-913d-4cbb-8c85-293f75345f6d" archimateRelationship="55e364ce-0802-41e1-b47c-e8747eac174d"/>
+        <child xsi:type="archimate:DiagramObject" id="692f5c72-9b70-4462-9804-60b9d4b42434" targetConnections="4d3dbeb7-acd7-4cb9-8f45-2e0a57344cc2" archimateElement="5d2162f8-f209-4747-b617-38861b9877d8">
+          <bounds x="204" y="36" width="120" height="31"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="4b8bb3f3-913d-4cbb-8c85-293f75345f6d" targetConnections="be152e30-f5a5-4342-86f3-22f44e34b10b" archimateElement="5dff957a-8be6-4078-91fb-82da8abefbd2">
+          <bounds x="72" y="36" width="120" height="31"/>
+        </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="e1bfbd43-d6af-4313-9df9-4522dcb16a6c" targetConnections="cbbdbf51-9e8a-41f3-9b90-18b725a7b8dd" archimateElement="74680ec8-2528-4bbb-96d9-6cdcddea3a5b">
         <bounds x="432" y="324" width="409" height="67"/>
