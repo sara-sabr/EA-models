@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title></title>
+	<title>Monitor and Log API Activity</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -22,10 +22,11 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b class="i18n-elementtype-SpecializationRelationship"></b>
+               <b>Monitor and Log API Activity</b>
+
             <!-- If a View with Viewpoint -->
-			   (<span class="i18n-elementtype-SpecializationRelationship"></span>)
-			   <a class="glyphicon glyphicon-info-sign" id="hint-SpecializationRelationship" target="hint"></a>
+			   (<span class="i18n-elementtype-Requirement"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Requirement" target="hint"></a>
 		</div>
 
 		<div class="panel-body root-panel-body">
@@ -45,17 +46,10 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-							<br>
-							<b class="i18n-relation-source"></b>
-								<a href="../elements/06c492be-ccd5-4fff-83f4-f98b7fc4f906.html" target="element">
-									Architecture Guardrails
-								</a> <br>
-							<b class="i18n-relation-target"></b>
-								<a href="../elements/6ef8bc4e-4689-4fd6-bc4a-0b0910844ebf.html" target="element">
-									Data Exchange Architecture Guardrails
-								</a> <br>
-							<br>
-						<textarea id="docsrc" style="display:none"></textarea>
+						<textarea id="docsrc" style="display:none">track API usage and activity to identify performance bottlenecks, peak usage periods and abnormal access patterns. Use open standards-based logging frameworks such as CEF (Common Event Format) and collect logs in a central repository
+o	When usage limits are exceeded, by default, a 1-hour timeout (block) will be used
+o	X-RATELIMIT-LIMIT and X-RATELIMIT-REMAINING can be inspected in the HTTP response to view current usage
+</textarea>
 						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
