@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>API Lifecycle Management</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>API Lifecycle Management</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/68f84804-90e4-4231-b574-073085720edc.png" alt="API Lifecycle Management" usemap="#68f84804-90e4-4231-b574-073085720edcmap"/>
+			   <map name="68f84804-90e4-4231-b574-073085720edcmap">
+				  		<area shape="rect" coords="514,262,634,317" href="../elements/04d56aa3-18de-492c-98e1-2210b579a014.html"  target="element">
+				  		<area shape="rect" coords="682,238,802,293" href="../elements/e3cb1cd0-68de-4334-bd8a-72fad5192d3a.html"  target="element">
+				  		<area shape="rect" coords="682,172,802,227" href="../elements/8dbe7640-bc53-40be-b285-6e416640261f.html"  target="element">
+				  		<area shape="rect" coords="514,322,634,377" href="../elements/1735b795-333f-4652-baeb-3d216f5b0dd3.html"  target="element">
+				  		<area shape="rect" coords="514,205,634,260" href="../elements/1ffed886-217c-444f-9a2d-9b24f25cc898.html"  target="element">
+				  		<area shape="rect" coords="514,82,634,137" href="../elements/f0fcaa17-75d5-41ce-90e9-71ad8bfb59b5.html"  target="element">
+				  		<area shape="rect" coords="514,142,634,197" href="../elements/c0d19d7d-90bf-4fbb-b8d4-4c0a3e902ef8.html"  target="element">
+				  		<area shape="rect" coords="269,10,389,65" href="../elements/b473190d-b5e1-4655-8c3f-bf87099ce8be.html"  target="element">
+				  		<area shape="rect" coords="10,238,130,293" href="../elements/f72a2a44-a6c2-4779-9cc0-75b9f423f653.html"  target="element">
+				  				<area shape="rect" coords="214,202,334,257" href="../elements/9e5b47d4-a690-4a31-810d-819a1bebd28d.html"  target="element">
+				  				<area shape="rect" coords="346,268,466,323" href="../elements/81a0c8f4-5e47-4042-ae47-7444718cf0e0.html"  target="element">
+				  				<area shape="rect" coords="346,208,466,263" href="../elements/12dbddf9-732c-41be-9bec-aed1c452c69e.html"  target="element">
+				  				<area shape="rect" coords="214,142,334,197" href="../elements/82d74c3c-0028-4380-9b46-6bb7be39f7bd.html"  target="element">
+				  				<area shape="rect" coords="346,142,466,197" href="../elements/ea0b6be4-0e17-4910-86f5-a1cc08759ff5.html"  target="element">
+				  				<area shape="rect" coords="214,262,334,317" href="../elements/b2c0c98f-3ad2-4bcb-84ed-69cf6a05f653.html"  target="element">
+
+				  		<area shape="rect" coords="178,106,479,359" href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html"  target="element">
+				  		<area shape="rect" coords="10,166,130,221" href="../elements/521f8a36-07e7-4645-8e75-2a3047c99399.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<textarea id="docsrc" style="display:none"></textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/521f8a36-07e7-4645-8e75-2a3047c99399.html" target="element">  Digital Standards </a> </td>
+											    <td> <a href="../elements/521f8a36-07e7-4645-8e75-2a3047c99399.html" target="element" class="i18n-elementtype-Value"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+											    <td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/b2c0c98f-3ad2-4bcb-84ed-69cf6a05f653.html" target="element"> URI vs Accept Header Versioning  </a> </td>
+													    <td> <a href="../elements/b2c0c98f-3ad2-4bcb-84ed-69cf6a05f653.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/ea0b6be4-0e17-4910-86f5-a1cc08759ff5.html" target="element"> Respect Existing Consumer Dependencies </a> </td>
+													    <td> <a href="../elements/ea0b6be4-0e17-4910-86f5-a1cc08759ff5.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/82d74c3c-0028-4380-9b46-6bb7be39f7bd.html" target="element"> Use Standard Endpoints </a> </td>
+													    <td> <a href="../elements/82d74c3c-0028-4380-9b46-6bb7be39f7bd.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/12dbddf9-732c-41be-9bec-aed1c452c69e.html" target="element"> API Ownership  </a> </td>
+													    <td> <a href="../elements/12dbddf9-732c-41be-9bec-aed1c452c69e.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/81a0c8f4-5e47-4042-ae47-7444718cf0e0.html" target="element"> API Publishing  </a> </td>
+													    <td> <a href="../elements/81a0c8f4-5e47-4042-ae47-7444718cf0e0.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/9e5b47d4-a690-4a31-810d-819a1bebd28d.html" target="element"> API Versioning </a> </td>
+													    <td> <a href="../elements/9e5b47d4-a690-4a31-810d-819a1bebd28d.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/f72a2a44-a6c2-4779-9cc0-75b9f423f653.html" target="element"> Non - Functional Requirement </a> </td>
+											    <td> <a href="../elements/f72a2a44-a6c2-4779-9cc0-75b9f423f653.html" target="element" class="i18n-elementtype-Requirement"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/b473190d-b5e1-4655-8c3f-bf87099ce8be.html" target="element"> API Architecture Guardrails </a> </td>
+											    <td> <a href="../elements/b473190d-b5e1-4655-8c3f-bf87099ce8be.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/c0d19d7d-90bf-4fbb-b8d4-4c0a3e902ef8.html" target="element"> Business Intake Management </a> </td>
+											    <td> <a href="../elements/c0d19d7d-90bf-4fbb-b8d4-4c0a3e902ef8.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/f0fcaa17-75d5-41ce-90e9-71ad8bfb59b5.html" target="element"> Service Architecture Standards </a> </td>
+											    <td> <a href="../elements/f0fcaa17-75d5-41ce-90e9-71ad8bfb59b5.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/1ffed886-217c-444f-9a2d-9b24f25cc898.html" target="element"> API Lifecycle Management </a> </td>
+											    <td> <a href="../elements/1ffed886-217c-444f-9a2d-9b24f25cc898.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/1735b795-333f-4652-baeb-3d216f5b0dd3.html" target="element"> API Security </a> </td>
+											    <td> <a href="../elements/1735b795-333f-4652-baeb-3d216f5b0dd3.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/8dbe7640-bc53-40be-b285-6e416640261f.html" target="element"> API Store Operations </a> </td>
+											    <td> <a href="../elements/8dbe7640-bc53-40be-b285-6e416640261f.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/e3cb1cd0-68de-4334-bd8a-72fad5192d3a.html" target="element"> API Gateway </a> </td>
+											    <td> <a href="../elements/e3cb1cd0-68de-4334-bd8a-72fad5192d3a.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/04d56aa3-18de-492c-98e1-2210b579a014.html" target="element"> API Monitoring </a> </td>
+											    <td> <a href="../elements/04d56aa3-18de-492c-98e1-2210b579a014.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/9b2aa525-4d35-4991-84b8-ca71e8fb64e5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/9b2aa525-4d35-4991-84b8-ca71e8fb64e5.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/521f8a36-07e7-4645-8e75-2a3047c99399.html" target="element">  Digital Standards </a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/1323c09a-f7f9-4883-b603-186d759c8794.html" target="element">  </a> </td>
+																		<td> <a href="../elements/1323c09a-f7f9-4883-b603-186d759c8794.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/b2c0c98f-3ad2-4bcb-84ed-69cf6a05f653.html" target="element"> URI vs Accept Header Versioning  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/77b0f58c-1929-42d6-9ff9-03296d3cd70d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/77b0f58c-1929-42d6-9ff9-03296d3cd70d.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/ea0b6be4-0e17-4910-86f5-a1cc08759ff5.html" target="element"> Respect Existing Consumer Dependencies </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a910dabf-5b4d-41aa-8eed-0e68468230c9.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a910dabf-5b4d-41aa-8eed-0e68468230c9.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/82d74c3c-0028-4380-9b46-6bb7be39f7bd.html" target="element"> Use Standard Endpoints </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/82200c22-54c9-4d32-9d7e-6eed941918b4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/82200c22-54c9-4d32-9d7e-6eed941918b4.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/12dbddf9-732c-41be-9bec-aed1c452c69e.html" target="element"> API Ownership  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/b72159fb-88bd-4495-b843-64eaeb7e324b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/b72159fb-88bd-4495-b843-64eaeb7e324b.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/81a0c8f4-5e47-4042-ae47-7444718cf0e0.html" target="element"> API Publishing  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a149d0db-487e-4258-88a5-6d529a700a2a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a149d0db-487e-4258-88a5-6d529a700a2a.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/9e5b47d4-a690-4a31-810d-819a1bebd28d.html" target="element"> API Versioning </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/82827a88-2727-4332-8f08-11da6f87dfb7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/82827a88-2727-4332-8f08-11da6f87dfb7.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/1735b795-333f-4652-baeb-3d216f5b0dd3.html" target="element"> API Security </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/75f65f36-2f9f-47ee-b81c-dc5c8c1a7557.html" target="element">  </a> </td>
+																		<td> <a href="../elements/75f65f36-2f9f-47ee-b81c-dc5c8c1a7557.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/04d56aa3-18de-492c-98e1-2210b579a014.html" target="element"> API Monitoring </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/ed6511d4-6d43-4f3e-81a5-b22578c78209.html" target="element">  </a> </td>
+																		<td> <a href="../elements/ed6511d4-6d43-4f3e-81a5-b22578c78209.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/1ffed886-217c-444f-9a2d-9b24f25cc898.html" target="element"> API Lifecycle Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/2c67d015-3e54-4ecf-a331-52286d2b4d8d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/2c67d015-3e54-4ecf-a331-52286d2b4d8d.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/c0d19d7d-90bf-4fbb-b8d4-4c0a3e902ef8.html" target="element"> Business Intake Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/9d51c879-78b4-4ff3-8dfb-1393028d370b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/9d51c879-78b4-4ff3-8dfb-1393028d370b.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/f0fcaa17-75d5-41ce-90e9-71ad8bfb59b5.html" target="element"> Service Architecture Standards </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/eabb2e7e-9263-4f31-a20d-c018065ac6d1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/eabb2e7e-9263-4f31-a20d-c018065ac6d1.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/f72a2a44-a6c2-4779-9cc0-75b9f423f653.html" target="element"> Non - Functional Requirement </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/8ce6d5a2-945b-486b-8e16-ff767d83e3f4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/8ce6d5a2-945b-486b-8e16-ff767d83e3f4.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/b473190d-b5e1-4655-8c3f-bf87099ce8be.html" target="element"> API Architecture Guardrails </a> </td>
+																		<td> <a href="../elements/97283225-f9a6-4604-8772-d60298f6017f.html" target="element"> API Lifecycle Management </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/13bd69e6-761b-46cb-a723-0efe4033e33f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/13bd69e6-761b-46cb-a723-0efe4033e33f.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/1ffed886-217c-444f-9a2d-9b24f25cc898.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/8dbe7640-bc53-40be-b285-6e416640261f.html" target="element"> API Store Operations </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/d16890c3-4852-47e8-b446-f5d07e0a3a0c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d16890c3-4852-47e8-b446-f5d07e0a3a0c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/1ffed886-217c-444f-9a2d-9b24f25cc898.html" target="element"> API Lifecycle Management </a> </td>
+																		<td> <a href="../elements/e3cb1cd0-68de-4334-bd8a-72fad5192d3a.html" target="element"> API Gateway </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
