@@ -1343,6 +1343,7 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessObject" name=" Reference DM Architecture Guardrails" id="aff8ab10-9d6c-4b8f-9b0c-0f25fe5c2d5a"/>
     <element xsi:type="archimate:BusinessObject" name="External" id="5dff957a-8be6-4078-91fb-82da8abefbd2"/>
     <element xsi:type="archimate:BusinessObject" name="Internal" id="5d2162f8-f209-4747-b617-38861b9877d8"/>
+    <element xsi:type="archimate:Representation" name="Business Case" id="f7898772-abf9-411e-99bd-1dfcaa46b428"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -3304,11 +3305,21 @@ To fulfill its mission, Integrity Operations investigates allegations of non-eli
     <element xsi:type="archimate:Assessment" name="&lt;&lt;Vunerability>> No risk based authentication" id="d66b7bc0-ff0f-4fd8-b64c-05c65c977f8f"/>
     <element xsi:type="archimate:Principle" name="API Design Principles" id="60f63855-a828-4b5b-9268-417df8350d0e"/>
     <element xsi:type="archimate:Value" name="Value" id="5ba95759-e9aa-425c-95f2-177bcc321286"/>
-    <element xsi:type="archimate:Requirement" name="API Security" id="ae0a607e-3e24-4230-8bdd-9173655b9c1e"/>
-    <element xsi:type="archimate:Requirement" name="API Encoding and Metadata" id="5b7fb433-497c-48bc-b8b5-4431d25a8e15"/>
-    <element xsi:type="archimate:Requirement" name="API Documentation" id="825a3a8c-1c2a-4e9e-a5d4-f68cec47d618"/>
-    <element xsi:type="archimate:Requirement" name="API Consumption" id="146c40d8-0153-496b-a1bf-01b4795850b3"/>
-    <element xsi:type="archimate:Requirement" name="API Lifecycle Management" id="97283225-f9a6-4604-8772-d60298f6017f"/>
+    <element xsi:type="archimate:Requirement" name="API Security" id="ae0a607e-3e24-4230-8bdd-9173655b9c1e">
+      <documentation>as part of a &quot;security by design&quot; philosophy for all API development. Outside of this baseline set of security controls, additional controls (e.g., message-level encryption, mutual authentication, and digital signatures) may be required based on the sensitivity of the data</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="API Encoding and Metadata" id="5b7fb433-497c-48bc-b8b5-4431d25a8e15">
+      <documentation>Consistent metadata and encoding ensures that APIs are interoperable across organizations and helps to maintain data consistency. </documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="API Documentation" id="825a3a8c-1c2a-4e9e-a5d4-f68cec47d618">
+      <documentation>ESDC APIs must be published to the Government of Canada API store to be discoverable. The documentation MVP for ESDC APIs includes everything the API does, including resources, endpoints and methods, parameters, error codes, and example requests and responses</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="API Consumption" id="146c40d8-0153-496b-a1bf-01b4795850b3">
+      <documentation>The best way to validate your API design is to consume it with a production application within your organization. Ideally, once the data layer is built, the next step is to build the application on top of an API</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="API Lifecycle Management" id="97283225-f9a6-4604-8772-d60298f6017f">
+      <documentation>APIs will change over time as corresponding source systems evolve. To provide a robust and durable interface to applications, API lifecycle management must include a standard versioning scheme such that any changes to an API do not break the contract with existing consumers</documentation>
+    </element>
     <element xsi:type="archimate:Requirement" name="API Performance Management" id="1570995a-d5b9-45ac-b3e9-fff4eac89163">
       <documentation>API performance should be benchmarked periodically to ensure the performance and capacity meets the expectations of the SLO.  </documentation>
     </element>
@@ -5422,6 +5433,7 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
     <element xsi:type="archimate:AssociationRelationship" id="47288ec3-88e1-4092-9e40-523e65cc53d2" source="04d56aa3-18de-492c-98e1-2210b579a014" target="1570995a-d5b9-45ac-b3e9-fff4eac89163"/>
     <element xsi:type="archimate:AssociationRelationship" id="d5473e51-6328-464c-a380-245bc293e08a" source="1ffed886-217c-444f-9a2d-9b24f25cc898" target="1570995a-d5b9-45ac-b3e9-fff4eac89163"/>
     <element xsi:type="archimate:AssociationRelationship" id="e2786408-855c-484a-813c-18580ffdfda4" source="6155f236-8ace-4b73-80b0-be22c7022c6c" target="60f63855-a828-4b5b-9268-417df8350d0e"/>
+    <element xsi:type="archimate:SpecializationRelationship" id="da318212-3cfa-4263-8d00-2549464537cc" source="06c492be-ccd5-4fff-83f4-f98b7fc4f906" target="b473190d-b5e1-4655-8c3f-bf87099ce8be"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -7274,6 +7286,9 @@ context, and which may have certain rights, duties, and obligations. An entity c
       </child>
       <child xsi:type="archimate:DiagramObject" id="ce85641c-2756-4e7e-b97b-5fb76d5b6a62" archimateElement="521f8a36-07e7-4645-8e75-2a3047c99399">
         <bounds x="735" y="228" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="99226e8f-319b-4fc4-9373-25eeb9bdbb26" archimateElement="f7898772-abf9-411e-99bd-1dfcaa46b428">
+        <bounds x="459" y="625" width="120" height="55"/>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="SDLC High Level  Flow" id="3074ce92-3c22-4203-bcca-58ad72537954">
@@ -11914,10 +11929,10 @@ The threat agent was potentially able to:&#xD;
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="API Guidelines" id="5a58bb99-e3ee-4f0b-a285-39b2571485c9">
-      <child xsi:type="archimate:Group" id="8d04530c-8e5d-425f-8958-49e44c1f3661" name="API Guidlines" targetConnections="8bfa0093-86dd-4729-867d-a58815c9045f 1ad7a3b6-256e-4ce6-800b-c05bca82c8cf 3d34cccd-eb13-47a9-bc04-9a83f605fe80 1eeb69d8-48cd-45b5-a163-966dcf73d043 b2d28210-9472-45bd-9bf8-7477f0f8c680 48d81034-2dbc-4291-8663-e3c6d33994a3 7b83f1b7-7b79-44d2-84ca-b83c8c79f2f5" textAlignment="1">
-        <bounds x="235" y="132" width="155" height="609"/>
+      <child xsi:type="archimate:Group" id="8d04530c-8e5d-425f-8958-49e44c1f3661" name="API Guidlines" targetConnections="8bfa0093-86dd-4729-867d-a58815c9045f 1ad7a3b6-256e-4ce6-800b-c05bca82c8cf 3d34cccd-eb13-47a9-bc04-9a83f605fe80 1eeb69d8-48cd-45b5-a163-966dcf73d043 b2d28210-9472-45bd-9bf8-7477f0f8c680 48d81034-2dbc-4291-8663-e3c6d33994a3 7b83f1b7-7b79-44d2-84ca-b83c8c79f2f5 f2eb65e8-b8c0-4960-a4ec-fad3329a87e0" textAlignment="1">
+        <bounds x="235" y="132" width="155" height="646"/>
         <child xsi:type="archimate:DiagramObject" id="7a749550-fdd3-4e03-b5f5-a558aaf8d567" archimateElement="97283225-f9a6-4604-8772-d60298f6017f">
-          <bounds x="12" y="536" width="128" height="55"/>
+          <bounds x="12" y="492" width="128" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="802c7897-4837-471f-887b-0183024f446b" archimateElement="57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3">
           <bounds x="12" y="156" width="128" height="55"/>
@@ -11929,16 +11944,16 @@ The threat agent was potentially able to:&#xD;
           <bounds x="12" y="228" width="128" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="da0d38f4-03a0-4e09-a210-4a63e731611a" archimateElement="146c40d8-0153-496b-a1bf-01b4795850b3">
-          <bounds x="12" y="476" width="128" height="55"/>
+          <bounds x="12" y="420" width="128" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="c235e5f8-972e-4188-96e1-3162ffac68a8" archimateElement="5b7fb433-497c-48bc-b8b5-4431d25a8e15">
           <bounds x="12" y="288" width="128" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="709dbb43-c39e-4e9f-b070-94892e2b3346" archimateElement="825a3a8c-1c2a-4e9e-a5d4-f68cec47d618">
-          <bounds x="12" y="416" width="128" height="55"/>
+          <bounds x="12" y="360" width="128" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="24b0b68d-7e08-4b65-83c3-ab38717488b2" archimateElement="1570995a-d5b9-45ac-b3e9-fff4eac89163">
-          <bounds x="12" y="356" width="128" height="55"/>
+          <bounds x="12" y="564" width="128" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="19b228d4-f21f-46e4-8f07-1f72f182581c" archimateElement="7c7fffee-32fe-47f2-8cc0-763f676c1a0e">
           <bounds x="16" y="24" width="120" height="55"/>
@@ -11946,9 +11961,11 @@ The threat agent was potentially able to:&#xD;
       </child>
       <child xsi:type="archimate:DiagramObject" id="012d2612-adf0-4fa2-a2dc-a9a04c9cb34e" targetConnections="afc57971-33cc-4629-a6e0-0f90b33cec8c" archimateElement="06c492be-ccd5-4fff-83f4-f98b7fc4f906">
         <bounds x="228" y="12" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="9925641e-f098-4406-bbbd-765d9988a38d" source="012d2612-adf0-4fa2-a2dc-a9a04c9cb34e" target="363f0c37-9432-491f-a857-5980823d6da7" archimateRelationship="da318212-3cfa-4263-8d00-2549464537cc"/>
       </child>
-      <child xsi:type="archimate:DiagramObject" id="363f0c37-9432-491f-a857-5980823d6da7" archimateElement="b473190d-b5e1-4655-8c3f-bf87099ce8be">
-        <bounds x="375" y="12" width="120" height="55"/>
+      <child xsi:type="archimate:DiagramObject" id="363f0c37-9432-491f-a857-5980823d6da7" targetConnections="9925641e-f098-4406-bbbd-765d9988a38d" archimateElement="b473190d-b5e1-4655-8c3f-bf87099ce8be">
+        <bounds x="228" y="72" width="120" height="55"/>
+        <sourceConnection id="f2eb65e8-b8c0-4960-a4ec-fad3329a87e0" source="363f0c37-9432-491f-a857-5980823d6da7" target="8d04530c-8e5d-425f-8958-49e44c1f3661"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="40cc01db-901d-41b2-89dd-eb80afe61a2c" archimateElement="cf3130d5-3924-40c4-bf19-37470c013751">
         <bounds x="87" y="12" width="120" height="55"/>
