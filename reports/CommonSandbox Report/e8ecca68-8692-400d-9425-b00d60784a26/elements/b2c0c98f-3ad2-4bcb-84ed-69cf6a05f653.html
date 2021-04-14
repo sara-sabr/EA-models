@@ -46,7 +46,13 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<textarea id="docsrc" style="display:none"></textarea>
+						<textarea id="docsrc" style="display:none">both URI and Accept Header versioning are acceptable and the following guidelines are recommended:
+			o Using a resource specific header approach can be used to maintain a single and consistent URI for an API. This method also allows for other parameters such as caching, compression and content negotiation
+			o The base URI for the API should always correspond to the latest version
+					&#167; e.g. https://api.example.com
+			o Previous versions of an API can use a versioned style URI
+			o e.g. https://api.example.com/v1
+Accept header versioning is recommended for API's designed exclusively for machine to machine interfaces as well as non breaking changes (minor/patch)</textarea>
 						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">

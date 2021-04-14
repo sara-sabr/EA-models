@@ -46,7 +46,13 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<textarea id="docsrc" style="display:none"></textarea>
+						<textarea id="docsrc" style="display:none"> each iteration of an API that changes the response type, data format, API functionality or breaks the contract with consumers must be versioned. Follow the v&lt;Major&gt;.&lt;Minor&gt;.&lt;Patch&gt; versioning structure whereby:
+			o Major = Significant release that introduces incompatible API changes
+			o Minor = Addition of optional attributes or new functionality that is backwards compatible, but should be tested
+			o Patch = Internal fix which should not impact the schema and/or contract of the API
+	For example:
+			o moving from v1.1.0 to v1.1.1 would allow a simple deploy-in-place upgrade
+moving from v1.1.0 to v2.0.0 would be a major release and would require the legacy version to be kept while consumers test and migrate to the new version</textarea>
 						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">

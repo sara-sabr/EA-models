@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>API Ownership </title>
+	<title>Define an SLO up Front </title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -22,7 +22,7 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b>API Ownership </b>
+               <b>Define an SLO up Front </b>
 
             <!-- If a View with Viewpoint -->
 			   (<span class="i18n-elementtype-Requirement"></span>)
@@ -46,7 +46,14 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<textarea id="docsrc" style="display:none">publish and maintain a designated point of contact to the API Registry as part of the metadata record; including name, organization, email and phone (for high critically API's)</textarea>
+						<textarea id="docsrc" style="display:none">each API should have a clearly defined Service Level Objective (SLO), which should include:
+			o Support contact and availability
+			o Service uptime objective (e.g., 99%)
+			o Support response time (e.g., within the hour, 24 hours, best effort)
+			o Scheduled outages (e.g., nightly, weekly, every 2nd Sunday evening)
+			o Throughput limit (e.g., 100 requests per second per consumer)
+			o Message size limit (e.g., &lt;1Mb per request)
+</textarea>
 						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
