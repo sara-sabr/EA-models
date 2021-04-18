@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Respond with message schemas that are easy to understand and consume</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Respond with message schemas that are easy to understand and consume</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-CourseOfAction"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-CourseOfAction" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<textarea id="docsrc" style="display:none">Respond with message schemas that are easy to understand and consume -the following practices should be applied:oUse common information models&#8211;Leverage industry recognized common information models where possible. If you must define your own information model, create a model which is technology and platform agnostic and avoid using proprietary schemasoStandardized error codes&#8211;Avoid building custom error codes and schemes which require heavy parsing by the consuming system. Conform to common HTTP status codes when building RESTful API's -https://www.w3.org/Protocols/HTTP/HTRESP.htmloA quality error code will indicate what went wrong and why and should include 3 basic criteria:1)HTTP Status Code2)Internal reference ID mapped to internal reference documentation3)Human readable messaging to summarize the context, cause and a general solution oStandard HTTP error codes are classified as follows: &#9642;1XX &#8211;Informational -protocol state and state of the original request&#9642;2XX &#8211;Success -whether a request was successful, fulfilled or accepted&#9642;3XX &#8211;Redirection -to indicate status of the resource or endpoint; useful in subdomains or moving a resource from one server to another&#9642;4XX &#8211;Client Error -occurences such as when a URI is incorrectly formed or the client has sent too many requests
+5XX &#8211;Server Error -indicates a server side error (not a client issue)oAbstract internal technical details&#8211;Responses, including error messages, should abstract technical details which the API consumer has no visibility into. Internal technical errors, thread dumps, and process identifiers should all be removed from response dataoImplement stateless interactions&#8211;The interaction between API consumer and provider must be stateless. APIs must not expect any concept of session or management of state on the part of the consumer. Any transaction where multiple APIs are called in a repeatable sequence to create a singular business interaction should be implemented as a composite APIoPrefer 'Pull' over 'Push'&#8211;use APIs to pull data rather than push data into databases. Having consuming systems query APIs based on specific parameters ensures that only data that's required in the context of a business process or transaction is being passed, and that the transmission of data is granular and secure. Data sink APIs and Event Driven Architectures (EDA) often require additional complexity in queuing considerations; however, this approach to data streams can provide lower latency and intermittent fault tolerance than batch or bulk data integration techniques. Bulk or batch data integration techniques and tools should be reserved for data synchronization patterns when network limitations are prevalent, or another limitation dictates its necessityoBulk Dataset's via API's&#8211;in some cases APIs will be used to transfer bulk datasets between systems or external to ESDC. In those scenarios, apply the following considerations:osmall datasets&#8211;Smaller datasets should be returned in low overhead formats (e.g., Comma-separated values (CSV) or JSON) rather than XML. Do not use compressed file attachments as this is a possible method of bypassing content scanning mechanismsotrigger API&#8211;An API may be implemented as a trigger to initiate an out-of-band interface such as a managed file transferosearch and link API&#8211;If the dataset is published on file servers already available to the consumer, an API could be implemented to return a link to a specific file based on specific request parameters</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
