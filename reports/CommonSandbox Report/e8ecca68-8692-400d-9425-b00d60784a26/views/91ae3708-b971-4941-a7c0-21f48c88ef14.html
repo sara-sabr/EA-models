@@ -1,0 +1,301 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>API Design Pattern</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>API Design Pattern</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/91ae3708-b971-4941-a7c0-21f48c88ef14.png" alt="API Design Pattern" usemap="#91ae3708-b971-4941-a7c0-21f48c88ef14map"/>
+			   <map name="91ae3708-b971-4941-a7c0-21f48c88ef14map">
+				  		<area shape="rect" coords="10,262,130,317" href="../elements/13c4f518-4585-49e3-8914-424a0bedd3d4.html"  target="element">
+				  				<area shape="rect" coords="370,379,622,431" href="../elements/46235dfe-8a0e-4d34-b910-acd2a5988cdb.html"  target="element">
+				  				<area shape="rect" coords="370,114,622,155" href="../elements/d545f8e3-1ee2-4b92-8fc4-55aadbd083d8.html"  target="element">
+				  				<area shape="rect" coords="370,268,622,309" href="../elements/7e4c7215-2219-45f4-bdcd-2dd6ed00b5ba.html"  target="element">
+				  				<area shape="rect" coords="370,322,622,363" href="../elements/ee3371b6-9e7c-4504-9900-88566bd4e0cc.html"  target="element">
+				  						<area shape="rect" coords="670,161,935,216" href="../elements/b90768e3-340e-4c55-afda-03d1df4ef35b.html"  target="element">
+				  						<area shape="rect" coords="670,400,935,455" href="../elements/ea165438-f60f-47e1-84b5-e0367c3a8b0f.html"  target="element">
+				  						<area shape="rect" coords="670,340,935,395" href="../elements/4441ed75-1aba-4fde-a744-1e47d652749f.html"  target="element">
+				  						<area shape="rect" coords="670,215,935,270" href="../elements/e0059440-699d-4c4c-90f3-e37d98199561.html"  target="element">
+				  						<area shape="rect" coords="670,109,935,164" href="../elements/a7843db0-1712-4ea1-9d5d-5103ac634a6c.html"  target="element">
+				  						<area shape="rect" coords="670,274,935,329" href="../elements/6b61138f-4bee-46f1-b940-2b406fae1ddd.html"  target="element">
+
+				  				<area shape="rect" coords="646,49,947,479" href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html"  target="element">
+				  				<area shape="rect" coords="370,58,622,99" href="../elements/78af7f8e-38ad-4e98-a73b-371d08938b79.html"  target="element">
+				  				<area shape="rect" coords="370,208,622,249" href="../elements/0b7d819c-a4b2-48e4-9d61-d369f2be60c4.html"  target="element">
+				  				<area shape="rect" coords="370,154,622,195" href="../elements/45908208-1737-4d2d-a98b-78d9e5cc7919.html"  target="element">
+
+				  		<area shape="rect" coords="334,10,960,503" href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<textarea id="docsrc" style="display:none"></textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+											    <td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/45908208-1737-4d2d-a98b-78d9e5cc7919.html" target="element"> Use URIs to represent resources </a> </td>
+													    <td> <a href="../elements/45908208-1737-4d2d-a98b-78d9e5cc7919.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/0b7d819c-a4b2-48e4-9d61-d369f2be60c4.html" target="element"> Always Use HTTPS  </a> </td>
+													    <td> <a href="../elements/0b7d819c-a4b2-48e4-9d61-d369f2be60c4.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/78af7f8e-38ad-4e98-a73b-371d08938b79.html" target="element"> Use a RESTful Approach  </a> </td>
+													    <td> <a href="../elements/78af7f8e-38ad-4e98-a73b-371d08938b79.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+													    <td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+															<tr>
+															    <td> <a href="../elements/6b61138f-4bee-46f1-b940-2b406fae1ddd.html" target="element"> Implement stateless interactions  </a> </td>
+															    <td> <a href="../elements/6b61138f-4bee-46f1-b940-2b406fae1ddd.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/a7843db0-1712-4ea1-9d5d-5103ac634a6c.html" target="element"> Use common information models  </a> </td>
+															    <td> <a href="../elements/a7843db0-1712-4ea1-9d5d-5103ac634a6c.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/e0059440-699d-4c4c-90f3-e37d98199561.html" target="element"> Abstract internal technical details </a> </td>
+															    <td> <a href="../elements/e0059440-699d-4c4c-90f3-e37d98199561.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/4441ed75-1aba-4fde-a744-1e47d652749f.html" target="element"> Prefer 'Pull' over 'Push' </a> </td>
+															    <td> <a href="../elements/4441ed75-1aba-4fde-a744-1e47d652749f.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/ea165438-f60f-47e1-84b5-e0367c3a8b0f.html" target="element"> Bulk Dataset's via API's </a> </td>
+															    <td> <a href="../elements/ea165438-f60f-47e1-84b5-e0367c3a8b0f.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+															</tr>
+
+															<tr>
+															    <td> <a href="../elements/b90768e3-340e-4c55-afda-03d1df4ef35b.html" target="element"> Standardized error codes  </a> </td>
+															    <td> <a href="../elements/b90768e3-340e-4c55-afda-03d1df4ef35b.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+															</tr>
+
+													
+													<tr>
+													    <td> <a href="../elements/ee3371b6-9e7c-4504-9900-88566bd4e0cc.html" target="element"> USE W3C HTTP Methods  </a> </td>
+													    <td> <a href="../elements/ee3371b6-9e7c-4504-9900-88566bd4e0cc.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/7e4c7215-2219-45f4-bdcd-2dd6ed00b5ba.html" target="element"> Don't overload verbs  </a> </td>
+													    <td> <a href="../elements/7e4c7215-2219-45f4-bdcd-2dd6ed00b5ba.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/d545f8e3-1ee2-4b92-8fc4-55aadbd083d8.html" target="element"> Use JSON  </a> </td>
+													    <td> <a href="../elements/d545f8e3-1ee2-4b92-8fc4-55aadbd083d8.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/46235dfe-8a0e-4d34-b910-acd2a5988cdb.html" target="element"> Follow properties according to RFC 7231 and RFC 5789: </a> </td>
+													    <td> <a href="../elements/46235dfe-8a0e-4d34-b910-acd2a5988cdb.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/13c4f518-4585-49e3-8914-424a0bedd3d4.html" target="element"> Constraints and Assumptions </a> </td>
+											    <td> <a href="../elements/13c4f518-4585-49e3-8914-424a0bedd3d4.html" target="element" class="i18n-elementtype-Constraint"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/d0ebbcd1-daf9-4a51-af41-df2e66ee0e98.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d0ebbcd1-daf9-4a51-af41-df2e66ee0e98.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/45908208-1737-4d2d-a98b-78d9e5cc7919.html" target="element"> Use URIs to represent resources </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/40163ddf-6227-4a4b-b819-98e323d0fda2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/40163ddf-6227-4a4b-b819-98e323d0fda2.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/0b7d819c-a4b2-48e4-9d61-d369f2be60c4.html" target="element"> Always Use HTTPS  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/39b3ae66-731d-40b0-a19d-220e4676373c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/39b3ae66-731d-40b0-a19d-220e4676373c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/78af7f8e-38ad-4e98-a73b-371d08938b79.html" target="element"> Use a RESTful Approach  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/9e36c586-b14b-47b3-9048-e1d4088189a9.html" target="element">  </a> </td>
+																		<td> <a href="../elements/9e36c586-b14b-47b3-9048-e1d4088189a9.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/e7ced0a5-fb7c-4453-9dc1-39279a8e01ec.html" target="element">  </a> </td>
+																		<td> <a href="../elements/e7ced0a5-fb7c-4453-9dc1-39279a8e01ec.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/ee3371b6-9e7c-4504-9900-88566bd4e0cc.html" target="element"> USE W3C HTTP Methods  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/9c19fe7c-f611-43ce-933c-a9d405d63563.html" target="element">  </a> </td>
+																		<td> <a href="../elements/9c19fe7c-f611-43ce-933c-a9d405d63563.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/7e4c7215-2219-45f4-bdcd-2dd6ed00b5ba.html" target="element"> Don't overload verbs  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/22acc9df-a81e-4a90-9712-17eae14d41d0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/22acc9df-a81e-4a90-9712-17eae14d41d0.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/d545f8e3-1ee2-4b92-8fc4-55aadbd083d8.html" target="element"> Use JSON  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a0ae93db-d590-46f8-ac4d-a3437eaec93e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a0ae93db-d590-46f8-ac4d-a3437eaec93e.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																		<td> <a href="../elements/46235dfe-8a0e-4d34-b910-acd2a5988cdb.html" target="element"> Follow properties according to RFC 7231 and RFC 5789: </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/8065bc60-39a9-4ee1-add8-09cd842722b4.html" target="element">  </a> </td>
+																				<td> <a href="../elements/8065bc60-39a9-4ee1-add8-09cd842722b4.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+																				<td> <a href="../elements/6b61138f-4bee-46f1-b940-2b406fae1ddd.html" target="element"> Implement stateless interactions  </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/308d172b-dc58-4baa-87c1-ce58bf7d68cd.html" target="element">  </a> </td>
+																				<td> <a href="../elements/308d172b-dc58-4baa-87c1-ce58bf7d68cd.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+																				<td> <a href="../elements/a7843db0-1712-4ea1-9d5d-5103ac634a6c.html" target="element"> Use common information models  </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/0d6a9995-642b-441c-bec0-b96d84db5e15.html" target="element">  </a> </td>
+																				<td> <a href="../elements/0d6a9995-642b-441c-bec0-b96d84db5e15.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+																				<td> <a href="../elements/e0059440-699d-4c4c-90f3-e37d98199561.html" target="element"> Abstract internal technical details </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/b4942972-1767-4a90-8a2b-a21ce734d2b6.html" target="element">  </a> </td>
+																				<td> <a href="../elements/b4942972-1767-4a90-8a2b-a21ce734d2b6.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+																				<td> <a href="../elements/4441ed75-1aba-4fde-a744-1e47d652749f.html" target="element"> Prefer 'Pull' over 'Push' </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/8eb4b170-0f54-4461-ab74-9a255a884689.html" target="element">  </a> </td>
+																				<td> <a href="../elements/8eb4b170-0f54-4461-ab74-9a255a884689.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+																				<td> <a href="../elements/ea165438-f60f-47e1-84b5-e0367c3a8b0f.html" target="element"> Bulk Dataset's via API's </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/9612359b-92aa-426f-b652-baf7605db750.html" target="element">  </a> </td>
+																				<td> <a href="../elements/9612359b-92aa-426f-b652-baf7605db750.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/f0ab10d0-d500-4a0e-8dab-af56e4ee73d3.html" target="element"> Respond with message schemas that are easy to understand and consume  </a> </td>
+																				<td> <a href="../elements/b90768e3-340e-4c55-afda-03d1df4ef35b.html" target="element"> Standardized error codes  </a> </td>
+																			</tr>
+
+													
+											
+																	<tr>
+																		<td> <a href="../elements/d484f275-eb46-4631-bb12-07c1bab197e4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d484f275-eb46-4631-bb12-07c1bab197e4.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																		<td> <a href="../elements/13c4f518-4585-49e3-8914-424a0bedd3d4.html" target="element"> Constraints and Assumptions </a> </td>
+																		<td> <a href="../elements/57f3ff4b-7c5d-4bce-8324-e0c3e2a36ed3.html" target="element"> API Design Patterns </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
