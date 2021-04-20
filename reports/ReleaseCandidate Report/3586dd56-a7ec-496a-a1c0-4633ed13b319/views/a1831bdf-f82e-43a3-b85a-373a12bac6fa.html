@@ -1,0 +1,275 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>API Design Principles</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>API Design Principles</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/a1831bdf-f82e-43a3-b85a-373a12bac6fa.png" alt="API Design Principles" usemap="#a1831bdf-f82e-43a3-b85a-373a12bac6famap"/>
+			   <map name="a1831bdf-f82e-43a3-b85a-373a12bac6famap">
+				  		<area shape="rect" coords="10,178,130,233" href="../elements/1c6e13a5-6ac3-4bb5-a785-045cdb3aa5ed.html"  target="element">
+				  		<area shape="rect" coords="550,154,670,209" href="../elements/3243fba4-8f87-4376-b2e3-030da6d1070b.html"  target="element">
+				  		<area shape="rect" coords="550,94,670,149" href="../elements/aa197730-8a81-4a87-8813-e9292a1ca157.html"  target="element">
+				  		<area shape="rect" coords="298,10,418,65" href="../elements/a8490ff3-6eab-4c29-aae8-1bc1e5c70be9.html"  target="element">
+				  		<area shape="rect" coords="550,238,670,293" href="../elements/ea649f7e-ebef-4c7a-ab0c-c3905e45ede0.html"  target="element">
+				  				<area shape="rect" coords="214,118,334,173" href="../elements/e0d9da2f-d8bc-43ec-8127-5aa4a55da17c.html"  target="element">
+				  				<area shape="rect" coords="358,298,478,353" href="../elements/6d32413c-450a-402b-a6a7-bca5e409611f.html"  target="element">
+				  				<area shape="rect" coords="358,178,478,233" href="../elements/677e1792-715b-4a95-a378-c5f9d624f801.html"  target="element">
+				  				<area shape="rect" coords="214,178,334,233" href="../elements/676468d0-27dc-48e5-b94c-a13cdba1a789.html"  target="element">
+				  				<area shape="rect" coords="358,238,478,293" href="../elements/7d837ca6-2ca7-432e-8fcd-c3806c8da8f8.html"  target="element">
+				  				<area shape="rect" coords="358,118,478,173" href="../elements/306c84c9-3110-43df-82c5-62f1a2435e01.html"  target="element">
+				  				<area shape="rect" coords="214,298,334,353" href="../elements/477e0b5c-9c35-45b8-b01e-899125e141e2.html"  target="element">
+				  				<area shape="rect" coords="214,238,334,293" href="../elements/26d3724f-1cc9-4d78-97e7-633338c91047.html"  target="element">
+
+				  		<area shape="rect" coords="178,82,515,371" href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<textarea id="docsrc" style="display:none"></textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+											    <td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/26d3724f-1cc9-4d78-97e7-633338c91047.html" target="element"> Security by Design  </a> </td>
+													    <td> <a href="../elements/26d3724f-1cc9-4d78-97e7-633338c91047.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/477e0b5c-9c35-45b8-b01e-899125e141e2.html" target="element"> Continuous Improvement  </a> </td>
+													    <td> <a href="../elements/477e0b5c-9c35-45b8-b01e-899125e141e2.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/306c84c9-3110-43df-82c5-62f1a2435e01.html" target="element"> Sustainability  </a> </td>
+													    <td> <a href="../elements/306c84c9-3110-43df-82c5-62f1a2435e01.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/7d837ca6-2ca7-432e-8fcd-c3806c8da8f8.html" target="element"> Well Described  </a> </td>
+													    <td> <a href="../elements/7d837ca6-2ca7-432e-8fcd-c3806c8da8f8.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/676468d0-27dc-48e5-b94c-a13cdba1a789.html" target="element"> Consistency  </a> </td>
+													    <td> <a href="../elements/676468d0-27dc-48e5-b94c-a13cdba1a789.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/677e1792-715b-4a95-a378-c5f9d624f801.html" target="element"> Quality  </a> </td>
+													    <td> <a href="../elements/677e1792-715b-4a95-a378-c5f9d624f801.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/6d32413c-450a-402b-a6a7-bca5e409611f.html" target="element"> Open Standards Based </a> </td>
+													    <td> <a href="../elements/6d32413c-450a-402b-a6a7-bca5e409611f.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/e0d9da2f-d8bc-43ec-8127-5aa4a55da17c.html" target="element"> Simplicity and Reusability  </a> </td>
+													    <td> <a href="../elements/e0d9da2f-d8bc-43ec-8127-5aa4a55da17c.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/ea649f7e-ebef-4c7a-ab0c-c3905e45ede0.html" target="element"> API Design </a> </td>
+											    <td> <a href="../elements/ea649f7e-ebef-4c7a-ab0c-c3905e45ede0.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/a8490ff3-6eab-4c29-aae8-1bc1e5c70be9.html" target="element"> API Architecture Guardrails </a> </td>
+											    <td> <a href="../elements/a8490ff3-6eab-4c29-aae8-1bc1e5c70be9.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/aa197730-8a81-4a87-8813-e9292a1ca157.html" target="element"> Service Architecture Standards </a> </td>
+											    <td> <a href="../elements/aa197730-8a81-4a87-8813-e9292a1ca157.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/3243fba4-8f87-4376-b2e3-030da6d1070b.html" target="element"> Business Intake Management </a> </td>
+											    <td> <a href="../elements/3243fba4-8f87-4376-b2e3-030da6d1070b.html" target="element" class="i18n-elementtype-BusinessFunction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/1c6e13a5-6ac3-4bb5-a785-045cdb3aa5ed.html" target="element"> Principles Catalog </a> </td>
+											    <td> <a href="../elements/1c6e13a5-6ac3-4bb5-a785-045cdb3aa5ed.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/f07f9916-c655-43b3-8205-2cab6707b5dd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/f07f9916-c655-43b3-8205-2cab6707b5dd.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/26d3724f-1cc9-4d78-97e7-633338c91047.html" target="element"> Security by Design  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/addecb5d-a2f1-417b-8cf6-08fab723b53b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/addecb5d-a2f1-417b-8cf6-08fab723b53b.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/3243fba4-8f87-4376-b2e3-030da6d1070b.html" target="element"> Business Intake Management </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/43b0853f-5097-4199-920f-44083c290266.html" target="element">  </a> </td>
+																		<td> <a href="../elements/43b0853f-5097-4199-920f-44083c290266.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/e0d9da2f-d8bc-43ec-8127-5aa4a55da17c.html" target="element"> Simplicity and Reusability  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/80ab7d16-3020-4447-b5de-d70e720fe2ce.html" target="element">  </a> </td>
+																		<td> <a href="../elements/80ab7d16-3020-4447-b5de-d70e720fe2ce.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/7d837ca6-2ca7-432e-8fcd-c3806c8da8f8.html" target="element"> Well Described  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/b73fb149-6793-47ab-9e4d-08b6660770dc.html" target="element">  </a> </td>
+																		<td> <a href="../elements/b73fb149-6793-47ab-9e4d-08b6660770dc.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/676468d0-27dc-48e5-b94c-a13cdba1a789.html" target="element"> Consistency  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/d9598c2d-b604-4187-9587-1b4ac61af717.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d9598c2d-b604-4187-9587-1b4ac61af717.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/aa197730-8a81-4a87-8813-e9292a1ca157.html" target="element"> Service Architecture Standards </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/e79d1b90-ff03-43ce-9168-7dbfb772b4fb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/e79d1b90-ff03-43ce-9168-7dbfb772b4fb.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/306c84c9-3110-43df-82c5-62f1a2435e01.html" target="element"> Sustainability  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/d796c205-c15b-488c-9a19-0a2fdfd0c542.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d796c205-c15b-488c-9a19-0a2fdfd0c542.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/477e0b5c-9c35-45b8-b01e-899125e141e2.html" target="element"> Continuous Improvement  </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/5e5db414-28cf-4351-a5d7-f705bb033df0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/5e5db414-28cf-4351-a5d7-f705bb033df0.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/6d32413c-450a-402b-a6a7-bca5e409611f.html" target="element"> Open Standards Based </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/f16a3109-75e1-40f3-9e83-74f0fd0b709f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/f16a3109-75e1-40f3-9e83-74f0fd0b709f.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																		<td> <a href="../elements/677e1792-715b-4a95-a378-c5f9d624f801.html" target="element"> Quality  </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/6e58cd3e-7523-4621-94a0-36a76bc95c67.html" target="element">  </a> </td>
+																		<td> <a href="../elements/6e58cd3e-7523-4621-94a0-36a76bc95c67.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/ea649f7e-ebef-4c7a-ab0c-c3905e45ede0.html" target="element"> API Design </a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/dc16a37f-071c-4a12-a604-cf4a1f01d5f4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/dc16a37f-071c-4a12-a604-cf4a1f01d5f4.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/a8490ff3-6eab-4c29-aae8-1bc1e5c70be9.html" target="element"> API Architecture Guardrails </a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/15e04138-58fb-4510-baf4-07c3ba3dcf54.html" target="element">  </a> </td>
+																		<td> <a href="../elements/15e04138-58fb-4510-baf4-07c3ba3dcf54.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/1c6e13a5-6ac3-4bb5-a785-045cdb3aa5ed.html" target="element"> Principles Catalog </a> </td>
+																		<td> <a href="../elements/fb8a8b21-1db1-405c-bfa0-a754cc5fa882.html" target="element"> API Design Principles </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
