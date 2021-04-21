@@ -34,21 +34,21 @@
 		    <!-- If this is a digram model (has children and no bounds) show the image -->
 			   <img class="diagram" src="../images/a17f0d68-9f08-4ba2-aaf6-51e88a2cf32f.png" alt="API Design Principles" usemap="#a17f0d68-9f08-4ba2-aaf6-51e88a2cf32fmap"/>
 			   <map name="a17f0d68-9f08-4ba2-aaf6-51e88a2cf32fmap">
-				  		<area shape="rect" coords="10,106,130,161" href="../elements/6155f236-8ace-4b73-80b0-be22c7022c6c.html"  target="element">
-				  		<area shape="rect" coords="550,82,670,137" href="../elements/c0d19d7d-90bf-4fbb-b8d4-4c0a3e902ef8.html"  target="element">
-				  		<area shape="rect" coords="550,22,670,77" href="../elements/f0fcaa17-75d5-41ce-90e9-71ad8bfb59b5.html"  target="element">
-				  		<area shape="rect" coords="550,238,670,293" href="../elements/b473190d-b5e1-4655-8c3f-bf87099ce8be.html"  target="element">
-				  		<area shape="rect" coords="550,166,670,221" href="../elements/c4053797-6965-47e7-b873-581095a458f6.html"  target="element">
-				  				<area shape="rect" coords="358,226,478,281" href="../elements/fb1bbab0-46e7-417d-b897-98aa4cb9ddeb.html"  target="element">
-				  				<area shape="rect" coords="358,106,478,161" href="../elements/2adc8cd2-0a45-4354-9ecf-df2f9a6c5b7a.html"  target="element">
-				  				<area shape="rect" coords="214,106,334,161" href="../elements/4afae1ae-64df-4f08-ac0b-3717956d63cb.html"  target="element">
-				  				<area shape="rect" coords="358,166,478,221" href="../elements/e4ff27e0-b1b6-4aff-9512-5f5ada229a03.html"  target="element">
-				  				<area shape="rect" coords="214,46,334,101" href="../elements/cae2dd1d-3a3a-4853-8310-41289e14b2b5.html"  target="element">
-				  				<area shape="rect" coords="358,46,478,101" href="../elements/3c2f2a22-4345-471e-8a26-060fdb00c2e1.html"  target="element">
-				  				<area shape="rect" coords="214,226,334,281" href="../elements/045c6f5c-b019-4ddc-8a17-0270fb7f938c.html"  target="element">
-				  				<area shape="rect" coords="214,166,334,221" href="../elements/9365fa4e-09ff-483d-9e8f-86a158261c1b.html"  target="element">
+				  		<area shape="rect" coords="10,178,130,233" href="../elements/6155f236-8ace-4b73-80b0-be22c7022c6c.html"  target="element">
+				  		<area shape="rect" coords="550,154,670,209" href="../elements/c0d19d7d-90bf-4fbb-b8d4-4c0a3e902ef8.html"  target="element">
+				  		<area shape="rect" coords="550,94,670,149" href="../elements/f0fcaa17-75d5-41ce-90e9-71ad8bfb59b5.html"  target="element">
+				  		<area shape="rect" coords="298,10,418,65" href="../elements/b473190d-b5e1-4655-8c3f-bf87099ce8be.html"  target="element">
+				  		<area shape="rect" coords="550,238,670,293" href="../elements/c4053797-6965-47e7-b873-581095a458f6.html"  target="element">
+				  				<area shape="rect" coords="214,118,334,173" href="../elements/cae2dd1d-3a3a-4853-8310-41289e14b2b5.html"  target="element">
+				  				<area shape="rect" coords="358,298,478,353" href="../elements/fb1bbab0-46e7-417d-b897-98aa4cb9ddeb.html"  target="element">
+				  				<area shape="rect" coords="358,178,478,233" href="../elements/2adc8cd2-0a45-4354-9ecf-df2f9a6c5b7a.html"  target="element">
+				  				<area shape="rect" coords="214,178,334,233" href="../elements/4afae1ae-64df-4f08-ac0b-3717956d63cb.html"  target="element">
+				  				<area shape="rect" coords="358,238,478,293" href="../elements/e4ff27e0-b1b6-4aff-9512-5f5ada229a03.html"  target="element">
+				  				<area shape="rect" coords="358,118,478,173" href="../elements/3c2f2a22-4345-471e-8a26-060fdb00c2e1.html"  target="element">
+				  				<area shape="rect" coords="214,298,334,353" href="../elements/045c6f5c-b019-4ddc-8a17-0270fb7f938c.html"  target="element">
+				  				<area shape="rect" coords="214,238,334,293" href="../elements/9365fa4e-09ff-483d-9e8f-86a158261c1b.html"  target="element">
 
-				  		<area shape="rect" coords="178,10,515,299" href="../elements/60f63855-a828-4b5b-9268-417df8350d0e.html"  target="element">
+				  		<area shape="rect" coords="178,82,515,371" href="../elements/60f63855-a828-4b5b-9268-417df8350d0e.html"  target="element">
 
 			   </map>
 
@@ -69,7 +69,8 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+						<textarea id="docsrc" style="display:none"></textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -113,11 +114,6 @@
 													</tr>
 
 													<tr>
-													    <td> <a href="../elements/cae2dd1d-3a3a-4853-8310-41289e14b2b5.html" target="element"> Simplicity and Reusability  </a> </td>
-													    <td> <a href="../elements/cae2dd1d-3a3a-4853-8310-41289e14b2b5.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
-													</tr>
-
-													<tr>
 													    <td> <a href="../elements/e4ff27e0-b1b6-4aff-9512-5f5ada229a03.html" target="element"> Well Described  </a> </td>
 													    <td> <a href="../elements/e4ff27e0-b1b6-4aff-9512-5f5ada229a03.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
 													</tr>
@@ -135,6 +131,11 @@
 													<tr>
 													    <td> <a href="../elements/fb1bbab0-46e7-417d-b897-98aa4cb9ddeb.html" target="element"> Open Standards Based </a> </td>
 													    <td> <a href="../elements/fb1bbab0-46e7-417d-b897-98aa4cb9ddeb.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/cae2dd1d-3a3a-4853-8310-41289e14b2b5.html" target="element"> Simplicity and Reusability  </a> </td>
+													    <td> <a href="../elements/cae2dd1d-3a3a-4853-8310-41289e14b2b5.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
 													</tr>
 
 											
@@ -255,8 +256,8 @@
 																	</tr>
 
 																	<tr>
-																		<td> <a href="../elements/e2786408-855c-484a-813c-18580ffdfda4.html" target="element">  </a> </td>
-																		<td> <a href="../elements/e2786408-855c-484a-813c-18580ffdfda4.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/eb662ffd-7268-4fe2-80c0-21ed414aaa18.html" target="element">  </a> </td>
+																		<td> <a href="../elements/eb662ffd-7268-4fe2-80c0-21ed414aaa18.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
 																		<td> <a href="../elements/6155f236-8ace-4b73-80b0-be22c7022c6c.html" target="element"> Principles Catalog </a> </td>
 																		<td> <a href="../elements/60f63855-a828-4b5b-9268-417df8350d0e.html" target="element"> API Design Principles </a> </td>
 																	</tr>
