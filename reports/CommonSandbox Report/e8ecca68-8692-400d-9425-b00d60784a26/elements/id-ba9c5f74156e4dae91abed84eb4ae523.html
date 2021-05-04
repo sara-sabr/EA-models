@@ -46,10 +46,11 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">
+						<textarea id="docsrc" style="display:none">
 use the ISO 8601 Standard for datetime representation in all ESDC APIs. The standard date format is YYYY-MM-DD while timestamp format YYYY&#8212;MM-DD HH24:MI:SS. If other formats are required due to source system limitations, convert it to the standard format within the API 
 
-</div>
+</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
