@@ -1421,6 +1421,7 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessService" name="Business Service" id="be560406-7ae8-471e-9e18-b8c717b7ee04"/>
     <element xsi:type="archimate:BusinessObject" name="Accessibility Guardrails" id="77fa7164-dd1f-41de-a2f9-f9aa9aa1fa42"/>
     <element xsi:type="archimate:BusinessObject" name="Digital Experience Guardrails" id="90fd382e-a575-4c1a-ba52-2a56c60f3772"/>
+    <element xsi:type="archimate:BusinessFunction" name="Product Management" id="f96652e3-2c02-4225-9551-94f91421996f"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -1666,6 +1667,7 @@ Recommendation 41: Enforcement segregates sensitive investigations that follow a
     <element xsi:type="archimate:DataObject" name="IT Asset" id="44d10c3b-422e-4714-8ee1-f157c470e5e0">
       <documentation>GC Definition:  The components of an information system, including business applications, data, hardware, and software.</documentation>
     </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Requirements Management" id="308bc54d-4cb4-4d01-a5f8-d0c1bb777e90"/>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
     <element xsi:type="archimate:SystemSoftware" name="Java" id="22462922-2b4d-498a-ba44-0ab95aa51f53">
@@ -5862,6 +5864,7 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
     <element xsi:type="archimate:RealizationRelationship" id="e202d627-d610-403f-aa60-83b682423c9b" source="1735b795-333f-4652-baeb-3d216f5b0dd3" target="97283225-f9a6-4604-8772-d60298f6017f"/>
     <element xsi:type="archimate:CompositionRelationship" id="54161f35-708d-4e2b-9bfa-8d892c979411" source="80522499-7dd8-4d73-bfce-c003bc3c3649" target="77fa7164-dd1f-41de-a2f9-f9aa9aa1fa42"/>
     <element xsi:type="archimate:CompositionRelationship" id="7cd1748f-12da-4c7b-b318-4fef0df75ab8" source="80522499-7dd8-4d73-bfce-c003bc3c3649" target="90fd382e-a575-4c1a-ba52-2a56c60f3772"/>
+    <element xsi:type="archimate:RealizationRelationship" id="949fbd85-7d74-4955-acfb-b715b11698e1" source="308bc54d-4cb4-4d01-a5f8-d0c1bb777e90" target="095386b0-5f5f-48fa-bab0-cf5a453b87d2"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -7777,7 +7780,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Lifecycle Mesh" id="7849a8f0-f8f1-4127-a9d6-5407a9d3a4a0">
       <child xsi:type="archimate:DiagramObject" id="23421364-435e-4f0a-9137-f57cb0a4943d" targetConnections="dcde5bc1-bf33-46f7-9760-249d675315f2 148eb7f0-e0e5-4473-8826-cb4563f89fa3 d83448be-9dc4-4ce9-b6ec-9ae4c9afa314 99ddae6e-b921-4942-97dd-3801a0552aba 664167c3-689d-4b53-a6ca-47828511732e c8f746b3-abac-4317-b051-4fdb62001985 1231bc01-7514-4f9f-acb8-b89e71c9779d 8f71b6cc-f18b-4d30-8f0f-5b40f30ec9a5 62ae6918-88ac-4a1c-9414-1eacc212d309" archimateElement="52e60851-0df0-409c-b2e9-db5d4ff77298">
-        <bounds x="519" y="228" width="481" height="1092"/>
+        <bounds x="1487" y="228" width="481" height="1092"/>
         <child xsi:type="archimate:DiagramObject" id="629f1ca4-d447-44a9-803c-02000df3e6e0" archimateElement="a30ae8f6-283c-4294-b13e-d81a7e28afe8">
           <bounds x="12" y="384" width="143" height="133"/>
           <sourceConnection xsi:type="archimate:Connection" id="148eb7f0-e0e5-4473-8826-cb4563f89fa3" source="629f1ca4-d447-44a9-803c-02000df3e6e0" target="23421364-435e-4f0a-9137-f57cb0a4943d" archimateRelationship="6b27a6aa-361d-4455-a712-00f3e878b8ab"/>
@@ -7890,7 +7893,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="9a8dece6-69de-47b8-a412-8652497129f8" targetConnections="77934daa-6861-4382-a0ad-bbd206646526 a1fdbb6c-4e9e-4838-a4fe-615386376a40 8c1c312f-51ec-4f11-b636-9568562e9ba1 0cdd57f6-28e4-4f1b-9c7e-0f4cfc8aaf59" archimateElement="339b84fc-54fd-4eba-88fb-b291d77c5960">
-        <bounds x="28" y="228" width="481" height="1092"/>
+        <bounds x="996" y="228" width="481" height="1092"/>
         <child xsi:type="archimate:DiagramObject" id="3918b483-2f6e-401c-ad98-9d84c63dc581" targetConnections="3eca1fd9-43cb-474f-8415-276095aa8883 789d3545-105d-479c-a8dc-3a75cdbca385 e6a3ef48-8f98-4bb7-9f9e-76e9cb472717 ce813a72-8a32-4425-99ba-8a79558a2b2f" archimateElement="2c3a1114-71a0-4666-b3bd-e9c3bbd3e45d">
           <bounds x="12" y="564" width="143" height="505"/>
           <child xsi:type="archimate:DiagramObject" id="b1c7a9a0-ca6b-4d38-809e-760b3f09494e" archimateElement="bb6992bd-8428-4040-9592-04e3954f34cc">
@@ -8018,7 +8021,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="4e8d9492-5d1b-4c13-8ff4-76b9a8d21733" targetConnections="706a9b8a-68a4-4000-a425-757a62284416 4f6b849f-e5cd-433e-981c-594ad5639191" archimateElement="8fe9b77f-d57a-42e1-8453-6955faa90de6">
-        <bounds x="1011" y="225" width="329" height="1084"/>
+        <bounds x="1979" y="225" width="329" height="1084"/>
         <child xsi:type="archimate:DiagramObject" id="0b781bee-0044-4958-a0f7-57e88e564a28" targetConnections="89d4b088-0dcf-430c-bb4a-971a594c2037" archimateElement="8b9b4ddb-817f-43ab-aa19-b622cd8ca2e7">
           <bounds x="12" y="48" width="143" height="421"/>
           <child xsi:type="archimate:DiagramObject" id="e54e7bac-2a9d-4371-ab54-c988d4cc23ea" archimateElement="74d34e81-3168-4a98-acf2-96dd77e1cf6d">
@@ -8065,7 +8068,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="1a78350c-265e-4413-ace6-0a51b171b7c9" targetConnections="f9bcc3ba-bb9b-432a-bcec-8abdc7c64318 6923a590-cc6d-484c-a756-cd38d8fc2139 0e2d97fc-172f-43c9-aabb-21f63fa6a885 866cfbdf-5d9d-439f-8406-b611b293b6a3 bbeced90-f1a9-4b2d-9e6d-bb56a5444405 e9fced91-8b89-4bb7-b750-cc3fa98d7989 89faa958-9ee8-4c3c-9d76-54ffa9ea6772" archimateElement="2809115b-cc8b-4e49-a267-6f8bb1e34a32">
-        <bounds x="1347" y="225" width="480" height="1084"/>
+        <bounds x="2315" y="225" width="480" height="1084"/>
         <child xsi:type="archimate:DiagramObject" id="954546c8-e427-4cb6-a2f8-4ba13b59b87d" targetConnections="c0f9a547-7e39-4699-86a0-d4fa0dd62b0c cc3fc9c1-c011-4da4-b060-c22b4872a564 576c3eb4-a0c7-4682-80c2-35097e61d5dd" archimateElement="a9d5183f-96db-4acd-bdcc-6ec86557eaa5">
           <bounds x="12" y="192" width="143" height="337"/>
           <child xsi:type="archimate:DiagramObject" id="a19fc9b8-a15d-4126-a079-c898e21ff3cc" archimateElement="169564f0-61b2-4a43-9766-35863e0b6e5b">
@@ -8175,7 +8178,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="920dbb3f-e2e7-4ec3-98ce-da371cecd647" archimateElement="d7dedcb9-3e8a-43c5-bec9-fa78fb146533">
-        <bounds x="1839" y="225" width="169" height="1084"/>
+        <bounds x="2807" y="225" width="169" height="1084"/>
         <child xsi:type="archimate:DiagramObject" id="f34cd6e9-1cf1-448b-b647-0fdb5021ce48" archimateElement="c2e061e0-ce36-4b48-a410-52e1a87fe124">
           <bounds x="12" y="390" width="143" height="409"/>
           <child xsi:type="archimate:DiagramObject" id="c0c6b9ec-8964-4a06-83ec-571ddb1b640e" archimateElement="16ed53fe-2617-45b2-8ff8-abe010de3e81">
@@ -8212,7 +8215,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="00db92df-bbb9-4e17-9b6b-a777ac3deb47" archimateElement="53437d97-c1f6-430f-810a-06ce578403cf">
-        <bounds x="2019" y="225" width="329" height="1084"/>
+        <bounds x="2987" y="225" width="329" height="1084"/>
         <child xsi:type="archimate:DiagramObject" id="65e7968e-6ce4-4021-832b-391648f974b2" targetConnections="e0fd9cb2-66b2-4031-b86a-b5f3e0533534" archimateElement="0de5fd19-81ea-499b-bde2-4b489cf5cf33">
           <bounds x="13" y="48" width="144" height="121"/>
           <child xsi:type="archimate:DiagramObject" id="4b5eef2c-5544-473e-a0b7-703dcb7cd5ad" archimateElement="3123c4e0-aa3b-4dab-8472-6f4e7ce32b1a">
@@ -8279,7 +8282,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="a84ea20d-e6f5-4a59-ab72-49552cddb647" targetConnections="9ee95325-2174-4bc4-b2d5-75f567ce00f1" archimateElement="46a583d4-3fae-44a4-828a-b76fc09aa088">
-        <bounds x="2355" y="225" width="169" height="1084"/>
+        <bounds x="3323" y="225" width="169" height="1084"/>
         <child xsi:type="archimate:DiagramObject" id="ee522d32-6e6f-48d8-9e20-da1495831558" targetConnections="9edcc8b2-3af7-4a57-a514-e83b6d06ea92 b3594233-b264-4a66-b941-4afb128b35ef 9441729c-7c2a-4cda-9092-578cc19e0b8b 48ebfd1b-fda7-4c4d-9111-d4fe20587168 84487ff8-b94e-4fac-87f2-cc272e2983e3" archimateElement="a33b189c-0d68-4d29-85b3-685592f217ec">
           <bounds x="12" y="240" width="143" height="517"/>
           <sourceConnection xsi:type="archimate:Connection" id="9ee95325-2174-4bc4-b2d5-75f567ce00f1" source="ee522d32-6e6f-48d8-9e20-da1495831558" target="a84ea20d-e6f5-4a59-ab72-49552cddb647" archimateRelationship="57cf4d4e-5930-442b-8eff-377c5cebe1a8"/>
@@ -8306,7 +8309,7 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="88756edf-106a-4321-94a4-99e9730bc3a9" targetConnections="3da925bd-4da4-46e1-b1bb-f4cee610ea61 2012d1e7-9181-4420-a477-6f209f021760" archimateElement="2fa036c8-4d3d-4c45-bfa3-391300f436cd">
-        <bounds x="40" y="35" width="1787" height="159"/>
+        <bounds x="1008" y="35" width="1787" height="159"/>
         <sourceConnection xsi:type="archimate:Connection" id="f9bcc3ba-bb9b-432a-bcec-8abdc7c64318" source="88756edf-106a-4321-94a4-99e9730bc3a9" target="1a78350c-265e-4413-ace6-0a51b171b7c9" archimateRelationship="35850fba-a0eb-4361-a66f-2bec4ec9ff85"/>
         <sourceConnection xsi:type="archimate:Connection" id="706a9b8a-68a4-4000-a425-757a62284416" source="88756edf-106a-4321-94a4-99e9730bc3a9" target="4e8d9492-5d1b-4c13-8ff4-76b9a8d21733" archimateRelationship="5c936968-d792-4c03-86a4-24c9526b1631"/>
         <sourceConnection xsi:type="archimate:Connection" id="a1fdbb6c-4e9e-4838-a4fe-615386376a40" source="88756edf-106a-4321-94a4-99e9730bc3a9" target="9a8dece6-69de-47b8-a412-8652497129f8" archimateRelationship="5a34811f-b5a7-416e-b742-0da50a7adc87"/>
@@ -8381,7 +8384,26 @@ context, and which may have certain rights, duties, and obligations. An entity c
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="9c4edb3f-2d65-4f25-ac22-de4a92972b33" archimateElement="cd377207-3dc5-4088-8db6-4fb3126a7f53">
-        <bounds x="2368" y="275" width="143" height="181"/>
+        <bounds x="3336" y="275" width="143" height="181"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e2ba2ffa-24ee-4afa-84ab-4dcae161d6a5" archimateElement="16bcd01c-9c30-44e7-8191-65b160d20b1d">
+        <bounds x="132" y="225" width="144" height="1093"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="fa73d92b-89f2-4802-9482-4fc92468aee0" targetConnections="1e060b26-a913-4311-9400-a430d1d13a3d" archimateElement="095386b0-5f5f-48fa-bab0-cf5a453b87d2">
+        <bounds x="312" y="228" width="264" height="1093"/>
+        <child xsi:type="archimate:DiagramObject" id="40e97552-9afc-48a9-9fc7-aa663f079fef" archimateElement="308bc54d-4cb4-4d01-a5f8-d0c1bb777e90">
+          <bounds x="36" y="84" width="204" height="99"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1e060b26-a913-4311-9400-a430d1d13a3d" source="40e97552-9afc-48a9-9fc7-aa663f079fef" target="fa73d92b-89f2-4802-9482-4fc92468aee0" archimateRelationship="949fbd85-7d74-4955-acfb-b715b11698e1"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="5b88e500-36b9-4c0d-b125-fffdd563b207" archimateElement="d45ea692-88eb-4a97-adda-0c2e2ccf97fc">
+        <bounds x="612" y="225" width="120" height="1093"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="04f0a6fc-b92e-4fe4-90f4-853131bac1da" archimateElement="f73ee8c5-cdb4-4d53-af5a-a9acb0fcc5fb">
+        <bounds x="756" y="228" width="216" height="1093"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="8d1191d7-5a27-4dbc-b4f5-ff05849e6307" archimateElement="f96652e3-2c02-4225-9551-94f91421996f">
+        <bounds x="132" y="35" width="864" height="158"/>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="API Gateway Conceptual" id="6cda17b0-b2a1-4a25-b2b3-eed2309c05ce">
