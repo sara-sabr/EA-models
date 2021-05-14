@@ -115,6 +115,20 @@ Foundations investments include among others:&#xD;
     <element xsi:type="archimate:BusinessCollaboration" name="ASC Partners (Collaboration)" id="id-33552fa0a6c1402c8b65aae36ab737b1"/>
     <element xsi:type="archimate:BusinessRole" name="Solution Administrator (Business Role)" id="id-dc3d2d5aa607444fb598c52be97635e8"/>
     <element xsi:type="archimate:BusinessRole" name="Solution User (Business Role)" id="id-b52e0d83ed084aa7ad5b8186f6b88b1d"/>
+    <element xsi:type="archimate:BusinessRole" name="New User (Business Role)" id="id-9690b18530684db7ab09618306b99622">
+      <documentation>The objective of the currently implemented SDIV solution is to a digital real-time identity verification alternative to the Personal Access Code (mail-out) process for new users and credential substitution users of My Service Canada Account (MSCA) through a Service Provider.&#xD;
+&#xD;
+In the case of Canada Student Loan Program and SDIV, for this release, it will provide a credential substitution option for existing users to use the SDIV validation to create a new profile and regain access to the NSLSC portal. As for new users, this feature will be made available in a future release and allow new students to register using the current or the new SDIV method.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Credential Substitution User (Business Role)" id="id-a1a85fb3533b446e941cf97baa5df427">
+      <documentation>The objective of the currently implemented SDIV solution is to a digital real-time identity verification alternative to the Personal Access Code (mail-out) process for new users and credential substitution users of My Service Canada Account (MSCA) through a Service Provider.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Canada Student Loan Program (Business Function)" id="id-e3b0ebaef625455393d35ec5c3c41ea4"/>
+    <element xsi:type="archimate:BusinessService" name="Simplified Digital Identity Validation (SDIV) (Business Service)" id="id-bc6d73d35ee04ec1bcd4b26110af9c0e"/>
+    <element xsi:type="archimate:BusinessRole" name="Existing User (Business Role)" id="id-82aad16d1f884ad5ae64762dea1a4657">
+      <documentation>In the case of Canada Student Loan Program and SDIV, for this release, it will provide a credential substitution option for existing users to use the SDIV validation to create a new profile and regain access to the NSLSC portal. As for new users, this feature will be made available in a future release and allow new students to register using the current or the new SDIV method.</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="Master Student Financial Assistance Agreement (MSFAA) (Contract)" id="id-97babe5bc913484ca20eb9f581f677bc"/>
   </folder>
   <folder name="Application" id="id-4c073bc2342b490eae44200c8635c571" type="application">
     <element xsi:type="archimate:DataObject" name="Drupal-Sourced Data (Data Object)" id="id-a36acbc1b6124a03991eae20826f88c9">
@@ -161,6 +175,19 @@ a.	Accessible with appropriate alt-text</documentation>
     </element>
     <element xsi:type="archimate:ApplicationProcess" name="Stakeholder Database Navigation (Application Process)" id="id-07a39b75179f4a2986609e69235b5e9e"/>
     <element xsi:type="archimate:ApplicationProcess" name="Contact Card Details (Application Process)" id="id-8a3152cbea384297b4dd7a46f70075f6"/>
+    <element xsi:type="archimate:ApplicationService" name="My Service Canada Account (MSCA) (Application Service)" id="id-7f87be3c1de34625861365d385242501">
+      <documentation>The objective of the currently implemented SDIV solution is to a digital real-time identity verification alternative to the Personal Access Code (mail-out) process for new users and credential substitution users of My Service Canada Account (MSCA) through a Service Provider.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationProcess" name="PAC Identity Verification Alternative (Application Process)" id="id-6eadc07afe414fda9c1605d7cfb59467">
+      <documentation>The objective of the currently implemented SDIV solution is to a digital real-time identity verification alternative to the Personal Access Code (mail-out) process for new users and credential substitution users of My Service Canada Account (MSCA) through a Service Provider.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationInterface" name="New Service Provider Identity Verification Process (Application Interface)" id="id-0d908211ef0241899928d80fbd2a7305">
+      <documentation>The objective of the currently implemented SDIV solution is to a digital real-time identity verification alternative to the Personal Access Code (mail-out) process for new users and credential substitution users of My Service Canada Account (MSCA) through a Service Provider.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Canada Student Loan Program (Application Service)" id="id-f66d857e261a4cac97aaa1fa69d00afd">
+      <documentation>In the case of Canada Student Loan Program and SDIV, for this release, it will provide a credential substitution option for existing users to use the SDIV validation to create a new profile and regain access to the NSLSC portal. As for new users, this feature will be made available in a future release and allow new students to register using the current or the new SDIV method.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationInterface" name="National Student Loan Services Centre (NSLSC) Portal (Application Interface)" id="id-3f33de3508704dd3b212a8b198d01d88"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-e073686aface40f7a970252f84a16b34" type="technology">
     <element xsi:type="archimate:Artifact" name="Model" id="id-cde5d10003e84d168bae6540d857644c"/>
@@ -175,6 +202,7 @@ a.	Accessible with appropriate alt-text</documentation>
     <element xsi:type="archimate:SystemSoftware" name="ESDC EA Repository" id="id-5a8707fd415a43d49740cf2d9da18f58"/>
     <element xsi:type="archimate:Artifact" name="ESDC Initiative EA Assessment" id="id-65c67d32161849b095c00bbd63967ae7"/>
     <element xsi:type="archimate:SystemSoftware" name="Newsletter Apps (System Software)" id="id-4581fe60648549698408ddd1847811e5"/>
+    <element xsi:type="archimate:SystemSoftware" name="Microsoft Dynamics 365 (System Software)" id="id-f5790071e9e746818df75887e8b92411"/>
   </folder>
   <folder name="Motivation" id="id-f0d4d184e3724f9581f16c817692f2b0" type="motivation">
     <element xsi:type="archimate:Principle" name="GC EA Principles" id="id-9f1bfe4676814b5b9e0db7e61200311f"/>
@@ -336,6 +364,142 @@ a.	Accessible with appropriate alt-text</documentation>
     <element xsi:type="archimate:Principle" name="Cloud First (SaaS) (Principle)" id="id-7e9bc6126e95467e94c67007bd35aa25"/>
     <element xsi:type="archimate:Constraint" name="Speech-To-Text Integration (Constraint)" id="id-4e8aa4f3584f47ebb51df1f5a60f884b"/>
     <element xsi:type="archimate:Constraint" name="Ability To Zoom (Constraint)" id="id-c778ad217bbc4d6da7f83e265133d609"/>
+    <element xsi:type="archimate:Stakeholder" name="Executive Sponsor (Stakeholder)" id="id-8231cc6f804b4cf98cb119fe7f82aae9">
+      <documentation>•	To ensure the scope of the project, as defined in the project charter, is based on a clear understanding of high-level requirements.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Stakeholder Sponsor (Stakeholder)" id="id-3375dc022b5343809143362220d7f945">
+      <documentation>•	To ensure the scope of the project, as defined in the project charter, is based on a clear understanding of high-level requirements.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Business Lead (Stakeholder)" id="id-a53644b8b3cf429eb63af73aa6c17fad">
+      <documentation>•	To validate that all requirements and concerns, from their perspective, have been identified and accurately defined at a high-level.&#xD;
+•	To validate whether the documented requirements are aligned with the business needs and prioritized according to business value.&#xD;
+•	To verify whether the identified requirements are deemed in or out of scope of the project.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Stakeholder Branch Lead (Stakeholder)" id="id-bfaf7fa66416492d9b434afb388eff92">
+      <documentation>•	To validate that all requirements and concerns, from their perspective, have been identified and accurately defined at a high-level.&#xD;
+•	To validate whether the documented requirements are aligned with the business needs and prioritized according to business value.&#xD;
+•	To verify whether the identified requirements are deemed in or out of scope of the project.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="End User Lead (Stakeholder)" id="id-505c3648509d42e0b1ca727f995fed76">
+      <documentation>•	To validate that all requirements and concerns, from their perspective, have been identified and accurately defined at a high-level.&#xD;
+•	To validate whether the documented requirements are aligned with the business needs and prioritized according to business value.&#xD;
+•	To verify whether the identified requirements are deemed in or out of scope of the project.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Domain Subject Matter Expert (Stakeholder)" id="id-a8cb7cff35aa406d8feebe2866b7713a">
+      <documentation>•	To validate that all requirements and concerns, from their perspective, have been identified and accurately defined at a high-level.&#xD;
+•	To validate whether the documented requirements are aligned with the business needs and prioritized according to business value.&#xD;
+•	To verify whether the identified requirements are deemed in or out of scope of the project.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Implementation Team Lead (Stakeholder)" id="id-f984a7ad4cc04c289f2bafb1bdb54919">
+      <documentation>•	To understand the business needs sufficiently to develop a conceptual design of the solution.&#xD;
+•	To ensure the high-level requirements are testable.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Project Manager (Stakeholder)" id="id-f53d7a8c43a842ed9ecffbce95302b7a">
+      <documentation>•	To clearly understand the high-level scope of work necessary to deliver the project.&#xD;
+•	To establish a baseline for creating the project work breakdown structure (WBS)&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Business Analyst (Stakeholder)" id="id-88f7c46d6698449b8bf5f33ca6303a1a">
+      <documentation>•	To validate that they have accurately defined all in-scope high-level requirements.&#xD;
+•	To set priorities and boundaries for detailed requirements definition, analysis and management.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Key Stakeholder Business Needs (Assessment)" id="id-7d50f7192f1d484e848bebef4737b354">
+      <documentation>1.4.1	Elicitation&#xD;
+The performance of the following tasks helped to elicit and confirm the requirements defined in this document: &#xD;
+•	Preparing and analyzing the list of stakeholders.&#xD;
+•	Conducting meetings with key stakeholders to understand the business needs.&#xD;
+•	Obtaining and capturing business requirements through continual collaboration with key stakeholders.&#xD;
+•	Communicating business requirement presentation to management, implementation, and other relevant key stakeholders to promote visibility and engagement.&#xD;
+•	Documenting and confirming use cases that capture the desired capabilities of the end state solution.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Canada Student Loan Program (Stakeholder)" id="id-d8f9b6f8639c44009172ca9666f69ac5"/>
+    <element xsi:type="archimate:Stakeholder" name="National Student Loans Centre (NSLC) (Stakeholder)" id="id-4ae8a8373bd04cd1b1b5b53dd7ec6a3f"/>
+    <element xsi:type="archimate:Stakeholder" name="Registration and Authentication (R&amp;A) (Stakeholder)" id="id-e54c9ef1d1894f718c241615323b5215"/>
+    <element xsi:type="archimate:Stakeholder" name="Innovation, Information and Technology Branch (IITB) (Stakeholder)" id="id-5a3b73e010d24683925e9348d3a418cd"/>
+    <element xsi:type="archimate:Stakeholder" name="Enterprise Identity Services (EIS) (Stakeholder)" id="id-4d4e1a598a164d80a1a86413885bb2c6"/>
+    <element xsi:type="archimate:Stakeholder" name="Public Affairs and Stakeholder Relations Branch (PASRB) (Stakeholder)" id="id-b221ead568b94ae28405810c8bb1726c"/>
+    <element xsi:type="archimate:Stakeholder" name="Privacy Management Division (PMD) (Stakeholder)" id="id-d666481fe6a840c2a3bd40d38e0c7754"/>
+    <element xsi:type="archimate:Stakeholder" name="Legal Services Unit (LSU) (Stakeholder)" id="id-f5d449d8fa2d4c78b3b5f146f22e0dfa"/>
+    <element xsi:type="archimate:Stakeholder" name="Chief Financial Officer Branch (CFOB) (Stakeholder)" id="id-c03fd2db8e6f4ddf8e8f30bf0fc2a697"/>
+    <element xsi:type="archimate:Stakeholder" name="Shared Services Canada (SSC) (Stakeholder)" id="id-25c6d0bd4b3f429682466581901ff803"/>
+    <element xsi:type="archimate:Requirement" name="Real-Time Identity Validation of Client (Requirement)" id="id-6af7b2eb729e42618468ec58ffabd54e"/>
+    <element xsi:type="archimate:Requirement" name="Reduce Personal Access Code (PAC) Reliance (Requirement)" id="id-75532fa154ed4233b0ddae0f6c4e14aa"/>
+    <element xsi:type="archimate:Constraint" name="Interoperate With Enterprise Cyber Authentication Solution (ECAS) (Constraint)" id="id-70ee69fef5cc4d4097a570b4096734fe"/>
+    <element xsi:type="archimate:Outcome" name="Provide Identity Verification Alternative to Personal Access Code (PAC) Process (Outcome)" id="id-9ac0dc71865c477a8846f759aef53a9e">
+      <documentation>The objective of the currently implemented SDIV solution is to a digital real-time identity verification alternative to the Personal Access Code (mail-out) process for new users and credential substitution users of My Service Canada Account (MSCA) through a Service Provider.&#xD;
+&#xD;
+In the case of Canada Student Loan Program and SDIV, for this release, it will provide a credential substitution option for existing users to use the SDIV validation to create a new profile and regain access to the NSLSC portal. As for new users, this feature will be made available in a future release and allow new students to register using the current or the new SDIV method.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Provide New Credential Substitution Option To Use SDIV (Goal)" id="id-a647dd572cf64a46b3fc9dbf24c01015">
+      <documentation>In the case of Canada Student Loan Program and SDIV, for this release, it will provide a credential substitution option for existing users to use the SDIV validation to create a new profile and regain access to the NSLSC portal. As for new users, this feature will be made available in a future release and allow new students to register using the current or the new SDIV method.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Regain National Student Loan Services Centre (NSLSC) Portal Access (Goal)" id="id-d6a8cd92192a4c1a942d7777099d4b26"/>
+    <element xsi:type="archimate:Goal" name="New Profile Creation (Goal)" id="id-a7035c85372a4e4ab844bb7248d705da"/>
+    <element xsi:type="archimate:Assessment" name="Account Access Issues (Assessment)" id="id-5be76eef68f544bfbefc4e5cecc7b008">
+      <documentation>2.2	Problem/Opportunity&#xD;
+The CSLP has been unable to resolve certain account access issues affecting users of its National Student Loan Services Centre (NSLSC) portal since the program on boarded to the credentials and ECAS in April 2018. There are three main problems facing its clients: &#xD;
+•	At least 30,000 NSLSC accounts are now locked out, and that number increases each day. The causes for this include:&#xD;
+o	GCKey username and password credentials are being forgotten by clients, thus preventing successful NSLSC login and contributing to the increasing tally of account lockouts.&#xD;
+o	NSLSC security questions and answers are being forgotten by clients, thus preventing successful credential substitution, and sustaining the account lockout tally.&#xD;
+•	MSFAA (Master Student Financial Assistance Agreement) for identity verification, as enabled by the Finastra vendor, is constrained to a single-use activation. NSLSC requires consuming one activation upon initial registration of the student. &#xD;
+&#xD;
+Note: Although CSLP has determined this to be the root cause for the business problems defined in this requirements document, it is not feasible to change the Finastra solution; therefore, the corrective action must start with the ECAS product. &#xD;
+•	PAC method (i.e., re-registering the NSLSC account using credential substitution) for identity verification is a capability currently unavailable to NSLSC. &#xD;
+&#xD;
+Note: The program (CSLP) is in the process of evaluating the use of PAC as an alternative identity validation channel. &#xD;
+The consequences of these account access issues include:&#xD;
+•	Negatively affected CSLP reputation (due to limitations of IT-enabled services).&#xD;
+•	Inability of clients (i.e., students) to access student loan status, balance, services, etc.&#xD;
+•	Increased call volume managed by the R&amp;A and CSLP (NSLSC support) to manage these issues.&#xD;
+In response to these challenges, this SDIV-MVP2 CSLP initiative seeks to: &#xD;
+Augment the ECAS component by integrating SDIV with the capability to substitute credentials on NSLSC accounts, which will enable affected students to unlock their accounts. &#xD;
+The integration of SDIV as a service to CSLP in the NSLSC product would provide an alternate identity verification provider to support client credential substitution for the following scenario:&#xD;
+-	NSLSC account login credentials and/or security Q&amp;A’s are forgotten by the client user.&#xD;
+SDIV integrated within NSLSC (SDIV-MVP2 CSLP initiative) is consistent with BDM and ESDC transformational business needs in addition to addressing current operational needs with respect to regaining access to locked client accounts. Additionally, providing a rapid identity verification experience to users seeking to substitute their credentials. The SDIV-MVP2 CSLP solution will support service transformation across ESDC by providing a high-quality service experience which enables clients to access loan information and other services in a more timely and accessible manner.&#xD;
+As a result, ESDC must assess new and adaptive technologies that will allow CLSP to provide a feasible alternative to the identity verification option to all students who wish to re-register and access their NSLSC account.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Increased Account Lock-Outs (Assessment)" id="id-83ff158a93ec4bd097d5a55f9d87dab5">
+      <documentation>•	At least 30,000 NSLSC accounts are now locked out, and that number increases each day. The causes for this include:&#xD;
+o	GCKey username and password credentials are being forgotten by clients, thus preventing successful NSLSC login and contributing to the increasing tally of account lockouts.&#xD;
+o	NSLSC security questions and answers are being forgotten by clients, thus preventing successful credential substitution, and sustaining the account lockout tally.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Master Student Financial Assistance Agreement (MSFAA) Constrained To Single-Use Activation (Assessment)" id="id-bc3879acd3c849d38a7eedf6dd0fcc92">
+      <documentation>•	MSFAA (Master Student Financial Assistance Agreement) for identity verification, as enabled by the Finastra vendor, is constrained to a single-use activation. NSLSC requires consuming one activation upon initial registration of the student. &#xD;
+&#xD;
+Note: Although CSLP has determined this to be the root cause for the business problems defined in this requirements document, it is not feasible to change the Finastra solution; therefore, the corrective action must start with the ECAS product.•	MSFAA (Master Student Financial Assistance Agreement) for identity verification, as enabled by the Finastra vendor, is constrained to a single-use activation. NSLSC requires consuming one activation upon initial registration of the student. &#xD;
+&#xD;
+Note: Although CSLP has determined this to be the root cause for the business problems defined in this requirements document, it is not feasible to change the Finastra solution; therefore, the corrective action must start with the ECAS product.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="PAC Method For Identity Verification Capability Unavailable to NSLSC (Assessment)" id="id-21968fd964c94d279379af81521466b3">
+      <documentation>•	PAC method (i.e., re-registering the NSLSC account using credential substitution) for identity verification is a capability currently unavailable to NSLSC. &#xD;
+&#xD;
+Note: The program (CSLP) is in the process of evaluating the use of PAC as an alternative identity validation channel. &#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Account Access Issues Consequences (Assessment)" id="id-b542f16b0c404f5dba9ca1f8af81cc3e">
+      <documentation>The consequences of these account access issues include:&#xD;
+•	Negatively affected CSLP reputation (due to limitations of IT-enabled services).&#xD;
+•	Inability of clients (i.e., students) to access student loan status, balance, services, etc.&#xD;
+•	Increased call volume managed by the R&amp;A and CSLP (NSLSC support) to manage these issues.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Negatively Affected Reputation (Assessment)" id="id-ee046dfbb1fc4efd80953be0b163a17e">
+      <documentation>•	Negatively affected CSLP reputation (due to limitations of IT-enabled services).</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Client Inability to Access Services (Assessment)" id="id-ec82193d9c7c420984fc29b2bdfa5eb9">
+      <documentation>•	Inability of clients (i.e., students) to access student loan status, balance, services, etc.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Increased Call Volume (Assessment)" id="id-94f772f689ca4860b428663bffd5142b">
+      <documentation>•	Increased call volume managed by the R&amp;A and CSLP (NSLSC support) to manage these issues.</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-861798a5dcc2418eab64cdaefdeeb080" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Unmanaged Data (Gap)" id="id-ed4e79d466fd4551a90d4cbfb6784e74">
@@ -344,6 +508,9 @@ There will be ineffiency while trying to access the data we currently have.</doc
     </element>
     <element xsi:type="archimate:Gap" name="Ineffiicient Work Processes (Gap)" id="id-a6c7f610637b48d682916d3022ee7a0e"/>
     <element xsi:type="archimate:Gap" name="Stakeholder Information Provisioning (Gap)" id="id-4b6186928cee410c907e54dfeae815f3"/>
+    <element xsi:type="archimate:ImplementationEvent" name="Future Release (Implementation Event)" id="id-2c38dace4c8f4bdfa9310ae1d7801968">
+      <documentation>In the case of Canada Student Loan Program and SDIV, for this release, it will provide a credential substitution option for existing users to use the SDIV validation to create a new profile and regain access to the NSLSC portal. As for new users, this feature will be made available in a future release and allow new students to register using the current or the new SDIV method.</documentation>
+    </element>
   </folder>
   <folder name="Other" id="id-3b6502d62be54bf79bb29134a011622f" type="other">
     <element xsi:type="archimate:Junction" name="Junction" id="id-483568e04e5345cc8bc005461b6854a2" type="or"/>
@@ -403,6 +570,25 @@ The Enterprise Architecture Framework provide details on the requirements set ou
 4.1.1.1 of the Directive on Service and Digital. The departmental Chief Information Officer (CIO) is responsible for: Chairing a departmental architecture review board that is mandated to review and approve the architecture of all departmental digital initiatives and ensure their alignment with enterprise architectures.&#xD;
 &#xD;
 The Enterprise Architecture Framework will be published on Canada.ca. Until then here is the EA Framework.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="REQUIREMENTS ELICITATION" id="id-ff779787479e4452b7cb1134dd5b5625"/>
+    <element xsi:type="archimate:Grouping" name="REQUIREMENTS VALIDATION" id="id-c49c80f43cde4398a47fa6e02a3a53f1">
+      <documentation>1.4.2	Validation&#xD;
+The following tasks were performed to verify and validate the requirements defined in this document: &#xD;
+•	Business Requirements vetted through shareholder groups. &#xD;
+•	Business Requirements initially challenged through SSC’s CSPV checklist.&#xD;
+•	Business Requirements were reviewed by the Implementation Lead to ensure that the scope of work is achievable given the current SDIV capability. &#xD;
+The following stakeholder roles were engaged in verification and validation activities:&#xD;
+•	CSLP Program&#xD;
+•	NLSC (National Student Loans Centre)&#xD;
+•	R&amp;A (Registration and Authentication)&#xD;
+•	Innovation, Information and Technology Branch (IITB)&#xD;
+•	EIS (Enterprise Identity Services)&#xD;
+•	PASRB (Public Affairs and Stakeholder Relations Branch)&#xD;
+•	PMD (Privacy Management Division)&#xD;
+•	CFOB (Chief Financial Officer Branch) or IITB&#xD;
+•	LSU (Legal Services Unit)&#xD;
+•	SSC (Shared Services Canada)</documentation>
     </element>
   </folder>
   <folder name="Relations" id="id-2ea02f25b8764d039f4b3e7e236fed25" type="relations">
@@ -540,6 +726,36 @@ The Enterprise Architecture Framework will be published on Canada.ca. Until then
     <element xsi:type="archimate:TriggeringRelationship" id="id-6b4f40a115dc441fbd9785d1fe40c293" source="id-8f469cb184a14e4b818657c3734340e4" target="id-07a39b75179f4a2986609e69235b5e9e"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ab98088c56a64d4baade83f1db8394aa" source="id-0b259207e80640af8355fcdfcc227304" target="id-8a3152cbea384297b4dd7a46f70075f6"/>
     <element xsi:type="archimate:TriggeringRelationship" id="id-6c35883826434fdca72fee3cdb5958b1" source="id-07a39b75179f4a2986609e69235b5e9e" target="id-8a3152cbea384297b4dd7a46f70075f6"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-71111717d24d4596b28b1bced4c480e4" source="id-ff779787479e4452b7cb1134dd5b5625" target="id-7d50f7192f1d484e848bebef4737b354"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-66e8c1ad2cb144e795aaedf93e6c6c26" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-e54c9ef1d1894f718c241615323b5215"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-246cbec01a9d4f5d86b121921b1cf55b" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-b221ead568b94ae28405810c8bb1726c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-72477984ead94d6fb1016e0cc24aeaec" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-c03fd2db8e6f4ddf8e8f30bf0fc2a697"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2365645a128d445bacbaa33b8348b9f0" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-f5d449d8fa2d4c78b3b5f146f22e0dfa"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-07d60cdffc6344869f4b48c03b1b9ccf" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-4ae8a8373bd04cd1b1b5b53dd7ec6a3f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ddc6f9b0654c469e80a6492ea5c65efe" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-5a3b73e010d24683925e9348d3a418cd"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8619e8d76021477182abcfd5ef203e59" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-d666481fe6a840c2a3bd40d38e0c7754"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-eecb176ebc43420f8dd91796ee06f918" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-4d4e1a598a164d80a1a86413885bb2c6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2d297fa5b92d43efb770070d42a2c56a" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-d8f9b6f8639c44009172ca9666f69ac5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-401ae05d89894a9db58a694898c384ba" source="id-c49c80f43cde4398a47fa6e02a3a53f1" target="id-25c6d0bd4b3f429682466581901ff803"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-e3e07ef5cffa4af68ede8a650ffe36d1" source="id-9690b18530684db7ab09618306b99622" target="id-7f87be3c1de34625861365d385242501"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-2857c52a77434ee980dde97409a1629a" source="id-a1a85fb3533b446e941cf97baa5df427" target="id-7f87be3c1de34625861365d385242501"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-2804bd23e3004dae9e9b013188e46b81" source="id-0d908211ef0241899928d80fbd2a7305" target="id-6eadc07afe414fda9c1605d7cfb59467"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-c97a88916eaa413384adda98fe276bd7" source="id-6eadc07afe414fda9c1605d7cfb59467" target="id-7f87be3c1de34625861365d385242501"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-54d2578276234a9e8151cc1e1a8fcb71" source="id-0d908211ef0241899928d80fbd2a7305" target="id-9ac0dc71865c477a8846f759aef53a9e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2c4040b707484ccfa7dcc93d390c0424" source="id-a647dd572cf64a46b3fc9dbf24c01015" target="id-d6a8cd92192a4c1a942d7777099d4b26"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3ad3f50247454d8d9b2fa0e6261638b7" source="id-a647dd572cf64a46b3fc9dbf24c01015" target="id-a7035c85372a4e4ab844bb7248d705da"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-39d49021866d4096bf8aa71c520e1489" source="id-f66d857e261a4cac97aaa1fa69d00afd" target="id-82aad16d1f884ad5ae64762dea1a4657"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-8566486f0a664d2a9e3323a58c84818d" source="id-9690b18530684db7ab09618306b99622" target="id-2c38dace4c8f4bdfa9310ae1d7801968"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-c1a13345b2f043968a7a84940896bc0b" source="id-2c38dace4c8f4bdfa9310ae1d7801968" target="id-f66d857e261a4cac97aaa1fa69d00afd"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-a6a95ac9df854510b39fe24747c3ba7e" source="id-f66d857e261a4cac97aaa1fa69d00afd" target="id-a647dd572cf64a46b3fc9dbf24c01015"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-e79e5c310e4a485d8259a82d4517a143" source="id-f66d857e261a4cac97aaa1fa69d00afd" target="id-9ac0dc71865c477a8846f759aef53a9e"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-f5c6ebc475484959988dd53a6171abbc" source="id-5be76eef68f544bfbefc4e5cecc7b008" target="id-83ff158a93ec4bd097d5a55f9d87dab5"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-9ee3e84b4d4041359d89273554676f44" source="id-5be76eef68f544bfbefc4e5cecc7b008" target="id-bc3879acd3c849d38a7eedf6dd0fcc92"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-769935db375f4ef1ad01278e92f19f67" source="id-5be76eef68f544bfbefc4e5cecc7b008" target="id-21968fd964c94d279379af81521466b3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e81174ba778d47d8b7b8de040c207a56" source="id-b542f16b0c404f5dba9ca1f8af81cc3e" target="id-ee046dfbb1fc4efd80953be0b163a17e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3a458964000343edbac893727071199a" source="id-b542f16b0c404f5dba9ca1f8af81cc3e" target="id-ec82193d9c7c420984fc29b2bdfa5eb9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0e064c9933d748c295ae58e721adcab8" source="id-b542f16b0c404f5dba9ca1f8af81cc3e" target="id-94f772f689ca4860b428663bffd5142b"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-4897b3fff65f4ba483ba5fbfc42ad93d" source="id-5be76eef68f544bfbefc4e5cecc7b008" target="id-b542f16b0c404f5dba9ca1f8af81cc3e" strength="-"/>
   </folder>
   <folder name="Views" id="id-e95b9bd9af9641dd95e8d88989249a9c" type="diagrams">
     <folder name="Lite Projects" id="id-0524b6ac40be4d9cbf85d362d0facaad">
@@ -693,6 +909,9 @@ The Enterprise Architecture Framework will be published on Canada.ca. Until then
             <bounds x="636" y="32" width="120" height="73"/>
           </child>
         </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2ef9ea8ee68f4d38af5752a9255064f2" archimateElement="id-f5790071e9e746818df75887e8b92411">
+          <bounds x="1092" y="628" width="120" height="69"/>
+        </child>
         <documentation>Considered Solutions: &#xD;
 We have looked into a few solutions, MS Access – it is not currently supported by ESDC and would not meet many of the requirements that are needed.&#xD;
 MS Sharepoint -  under the recommendation of our internal standards unit, sharepoint has many accessibility issues, such as with screen readers and not being fully accessible with a keyboard. It also has known issues with speech to text integration and issues with zooming tools.&#xD;
@@ -700,6 +919,196 @@ Salesforce is not currently supported by ESDC and was not recommended by IITB&#x
 &#xD;
 Chosen solution&#xD;
 MS Dynamics – Dynamics was recommended to us by AAATC and IITB as a solution that was cloud based allowing us to use many accessibility features. It could be built in a modular fashion allowing us to add features as needed and allow for training on those features as the system grows. It is supported by ESDC and IITB. Has the ability to add modules such as Marketing, Service, and Project management, when needed which allows us to grow the system without having to recreate the solution.</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Lite-2021-IITB-10 SDIV-MVP2 for CSLP" id="id-0d95f6d9577d4c509c60e8d86d738ead">
+        <child xsi:type="archimate:Note" id="id-b324e2244a884410aae085e2999d53e2" font="1|Segoe UI|16.2|1|WINDOWS|1|-27|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1">
+          <bounds x="12" y="12" width="865" height="49"/>
+          <content>Lite-2021-IITB-10 SDIV-MVP2 for CSLP</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a7715128842a4813bf17fddb89fc4419" archimateElement="id-8231cc6f804b4cf98cb119fe7f82aae9">
+          <bounds x="12" y="78" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b0e4f3cb72034d7d83f0b54a075cc82b" archimateElement="id-3375dc022b5343809143362220d7f945">
+          <bounds x="12" y="132" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d7e9bd538f2149d4a6c3ed4d9ba2d3cd" archimateElement="id-a53644b8b3cf429eb63af73aa6c17fad">
+          <bounds x="155" y="78" width="120" height="41"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7826fc025abd4fa9a9b949b6b657793c" archimateElement="id-bfaf7fa66416492d9b434afb388eff92">
+          <bounds x="155" y="118" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4b07fd1e0f7f47259db63020c949f0ef" archimateElement="id-505c3648509d42e0b1ca727f995fed76">
+          <bounds x="155" y="172" width="120" height="43"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-080f9a4b779941cfb9232c00564c51df" archimateElement="id-a8cb7cff35aa406d8feebe2866b7713a">
+          <bounds x="155" y="214" width="120" height="78"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-fc1ae24c109a42ac987992ef31ae4360" archimateElement="id-f984a7ad4cc04c289f2bafb1bdb54919">
+          <bounds x="12" y="206" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-858a5acc099941668a4ce894cf0e325b" archimateElement="id-f53d7a8c43a842ed9ecffbce95302b7a">
+          <bounds x="12" y="278" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0917a6dd2509487794ec2d62ef9cfad7" archimateElement="id-88f7c46d6698449b8bf5f33ca6303a1a">
+          <bounds x="155" y="310" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-564de1e2f6d84bb49961ac4c2875267c" textAlignment="1" archimateElement="id-ff779787479e4452b7cb1134dd5b5625">
+          <bounds x="288" y="78" width="193" height="97"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6fd8481bb8d5465ca3c86bfa8d594a5b" source="id-564de1e2f6d84bb49961ac4c2875267c" target="id-2e3b83d4f8c44f22960cd4b2c152f204" archimateRelationship="id-71111717d24d4596b28b1bced4c480e4"/>
+          <child xsi:type="archimate:DiagramObject" id="id-2e3b83d4f8c44f22960cd4b2c152f204" targetConnections="id-6fd8481bb8d5465ca3c86bfa8d594a5b" archimateElement="id-7d50f7192f1d484e848bebef4737b354">
+            <bounds x="24" y="36" width="137" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-36fca5dc6b8244339b84ade9cf59ed9d" textAlignment="1" archimateElement="id-c49c80f43cde4398a47fa6e02a3a53f1">
+          <bounds x="288" y="186" width="349" height="405"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-32b035bf9d6f414380ee6b7a46799946" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-de35954241ad41c1a0c72e553bc834c6" archimateRelationship="id-66e8c1ad2cb144e795aaedf93e6c6c26"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-74ffeb775e9b4e1e9b9124f062c11898" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-f6d586936a814974aec100a5d52a699a" archimateRelationship="id-246cbec01a9d4f5d86b121921b1cf55b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-98720157945a4d4ca92c7451cdb67fff" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-f514d739383c40e1ab3b27793096565a" archimateRelationship="id-72477984ead94d6fb1016e0cc24aeaec"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6200b455752b43a1bc603f4e335fa4cb" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-fe273743d4f94021bfc5e00ba385a53e" archimateRelationship="id-2365645a128d445bacbaa33b8348b9f0"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9521dd59fb3742b488c238f3c18add41" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-dbe81449e78649b3903022d4d8f32742" archimateRelationship="id-07d60cdffc6344869f4b48c03b1b9ccf"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5dd6fc2f48034a85b32356518673b5da" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-531f82675a95447fb6528a24c7c46be5" archimateRelationship="id-ddc6f9b0654c469e80a6492ea5c65efe"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f2b3a9355a4a475a92b193787afbba1e" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-32ab37bef87d4f9cbb4213a504d46906" archimateRelationship="id-8619e8d76021477182abcfd5ef203e59"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a271ae53d0094dd19f2f637f2abe03e1" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-4ead92f946c84fa98de4bae40f338929" archimateRelationship="id-eecb176ebc43420f8dd91796ee06f918"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fa66800ea17240fe88d24f8b4864120c" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-f667220147f14a7e92f1b7c93f09db01" archimateRelationship="id-2d297fa5b92d43efb770070d42a2c56a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-eded727d78204c4ba7d0e5f6ca5097cb" source="id-36fca5dc6b8244339b84ade9cf59ed9d" target="id-bafcab41269545d788486c30e3009cd6" archimateRelationship="id-401ae05d89894a9db58a694898c384ba"/>
+          <child xsi:type="archimate:DiagramObject" id="id-de35954241ad41c1a0c72e553bc834c6" targetConnections="id-32b035bf9d6f414380ee6b7a46799946" archimateElement="id-e54c9ef1d1894f718c241615323b5215">
+            <bounds x="17" y="178" width="140" height="72"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f6d586936a814974aec100a5d52a699a" targetConnections="id-74ffeb775e9b4e1e9b9124f062c11898" archimateElement="id-b221ead568b94ae28405810c8bb1726c">
+            <bounds x="16" y="253" width="141" height="87"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f514d739383c40e1ab3b27793096565a" targetConnections="id-98720157945a4d4ca92c7451cdb67fff" archimateElement="id-c03fd2db8e6f4ddf8e8f30bf0fc2a697">
+            <bounds x="167" y="289" width="152" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-fe273743d4f94021bfc5e00ba385a53e" targetConnections="id-6200b455752b43a1bc603f4e335fa4cb" archimateElement="id-f5d449d8fa2d4c78b3b5f146f22e0dfa">
+            <bounds x="168" y="241" width="150" height="47"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-dbe81449e78649b3903022d4d8f32742" targetConnections="id-9521dd59fb3742b488c238f3c18add41" archimateElement="id-4ae8a8373bd04cd1b1b5b53dd7ec6a3f">
+            <bounds x="16" y="94" width="141" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-531f82675a95447fb6528a24c7c46be5" targetConnections="id-5dd6fc2f48034a85b32356518673b5da" archimateElement="id-5a3b73e010d24683925e9348d3a418cd">
+            <bounds x="168" y="36" width="149" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-32ab37bef87d4f9cbb4213a504d46906" targetConnections="id-f2b3a9355a4a475a92b193787afbba1e" archimateElement="id-d666481fe6a840c2a3bd40d38e0c7754">
+            <bounds x="167" y="170" width="152" height="67"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4ead92f946c84fa98de4bae40f338929" targetConnections="id-a271ae53d0094dd19f2f637f2abe03e1" archimateElement="id-4d4e1a598a164d80a1a86413885bb2c6">
+            <bounds x="167" y="113" width="152" height="53"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f667220147f14a7e92f1b7c93f09db01" targetConnections="id-fa66800ea17240fe88d24f8b4864120c" archimateElement="id-d8f9b6f8639c44009172ca9666f69ac5">
+            <bounds x="16" y="36" width="141" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-bafcab41269545d788486c30e3009cd6" targetConnections="id-eded727d78204c4ba7d0e5f6ca5097cb" archimateElement="id-25c6d0bd4b3f429682466581901ff803">
+            <bounds x="17" y="339" width="140" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-45bde6a0fa8f4aaf9f9b36acbc37eb11" archimateElement="id-6af7b2eb729e42618468ec58ffabd54e">
+          <bounds x="72" y="396" width="145" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d6f8bd91a83f4929ad04863bf0685cb1" archimateElement="id-75532fa154ed4233b0ddae0f6c4e14aa">
+          <bounds x="72" y="456" width="145" height="73"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a97c13b8c7bb43df9663eb8bc1bb826d" archimateElement="id-70ee69fef5cc4d4097a570b4096734fe">
+          <bounds x="73" y="552" width="144" height="89"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-61d1337be75a42e39a0b15cc40c64966" archimateElement="id-9690b18530684db7ab09618306b99622">
+          <bounds x="1100" y="60" width="120" height="43"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1130cc3f7c0a448a9fc718acbfebfc28" source="id-61d1337be75a42e39a0b15cc40c64966" target="id-5bd013e47a644fc99d3b4ace3c18b8d1" archimateRelationship="id-e3e07ef5cffa4af68ede8a650ffe36d1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6fd7df7de2f7487690e8e91f67c8871d" source="id-61d1337be75a42e39a0b15cc40c64966" target="id-ea97de1a17de4101b2ba560cb6cb20f5" archimateRelationship="id-8566486f0a664d2a9e3323a58c84818d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4ffcf4a3add54cb4b9c2e2a7ce5908e0" archimateElement="id-a1a85fb3533b446e941cf97baa5df427">
+          <bounds x="1260" y="48" width="120" height="67"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d54cc1ab16c34911872e886a9de15e8a" source="id-4ffcf4a3add54cb4b9c2e2a7ce5908e0" target="id-5bd013e47a644fc99d3b4ace3c18b8d1" archimateRelationship="id-2857c52a77434ee980dde97409a1629a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5bd013e47a644fc99d3b4ace3c18b8d1" targetConnections="id-d54cc1ab16c34911872e886a9de15e8a id-1130cc3f7c0a448a9fc718acbfebfc28 id-b12c2707c3ab468dba1d492ca559f5d2" archimateElement="id-7f87be3c1de34625861365d385242501">
+          <bounds x="1199" y="158" width="145" height="71"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-75607c3272fe488daca1b50d6b209a3f" targetConnections="id-bacb1783ae4a42a39162166e8592ff1f id-206d6bcfdb0249349b416f6dc18aeccd" archimateElement="id-9ac0dc71865c477a8846f759aef53a9e">
+          <bounds x="1178" y="364" width="239" height="77"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-acb7bb37f3ea4ae4b8e07968f0f75620" targetConnections="id-a8110dfcf6e246caaddffec75107e147" archimateElement="id-6eadc07afe414fda9c1605d7cfb59467">
+          <bounds x="1368" y="161" width="162" height="65"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b12c2707c3ab468dba1d492ca559f5d2" source="id-acb7bb37f3ea4ae4b8e07968f0f75620" target="id-5bd013e47a644fc99d3b4ace3c18b8d1" archimateRelationship="id-c97a88916eaa413384adda98fe276bd7"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8ef3eef5b6b34a3590934a163903fe51" archimateElement="id-0d908211ef0241899928d80fbd2a7305">
+          <bounds x="1248" y="252" width="183" height="73"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a8110dfcf6e246caaddffec75107e147" source="id-8ef3eef5b6b34a3590934a163903fe51" target="id-acb7bb37f3ea4ae4b8e07968f0f75620" archimateRelationship="id-2804bd23e3004dae9e9b013188e46b81"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bacb1783ae4a42a39162166e8592ff1f" source="id-8ef3eef5b6b34a3590934a163903fe51" target="id-75607c3272fe488daca1b50d6b209a3f" archimateRelationship="id-54d2578276234a9e8151cc1e1a8fcb71"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7153a17771714d3a873319becaac963e" archimateElement="id-e3b0ebaef625455393d35ec5c3c41ea4">
+          <bounds x="740" y="78" width="137" height="73"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-49048f7a230a480d8af33cff5d321fce" targetConnections="id-093d992ac4f94fe287d1e1f961f3ca9c" archimateElement="id-a647dd572cf64a46b3fc9dbf24c01015">
+          <bounds x="852" y="364" width="289" height="141"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-49642e4118a24c35b5ca4adfb5c2e519" source="id-49048f7a230a480d8af33cff5d321fce" target="id-9d80539ff117486fb4c0313e7c0e58c5" archimateRelationship="id-2c4040b707484ccfa7dcc93d390c0424"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-42e47b8a36204ffdb5b25fab56fe5b22" source="id-49048f7a230a480d8af33cff5d321fce" target="id-4f081d47a9a54e60ac52ca28f5ecdcff" archimateRelationship="id-3ad3f50247454d8d9b2fa0e6261638b7"/>
+          <child xsi:type="archimate:DiagramObject" id="id-9d80539ff117486fb4c0313e7c0e58c5" targetConnections="id-49642e4118a24c35b5ca4adfb5c2e519" archimateElement="id-d6a8cd92192a4c1a942d7777099d4b26">
+            <bounds x="12" y="48" width="133" height="84"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4f081d47a9a54e60ac52ca28f5ecdcff" targetConnections="id-42e47b8a36204ffdb5b25fab56fe5b22" archimateElement="id-a7035c85372a4e4ab844bb7248d705da">
+            <bounds x="156" y="48" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f79df2836ab340d895274828c5fd92fb" archimateElement="id-bc6d73d35ee04ec1bcd4b26110af9c0e">
+          <bounds x="737" y="172" width="144" height="69"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a29ac6b98a8e44b497f35eeaeb31679c" targetConnections="id-81ce158929b5471284e28cc40c7ca64c" archimateElement="id-82aad16d1f884ad5ae64762dea1a4657">
+          <bounds x="937" y="60" width="120" height="43"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ea97de1a17de4101b2ba560cb6cb20f5" targetConnections="id-6fd7df7de2f7487690e8e91f67c8871d" archimateElement="id-2c38dace4c8f4bdfa9310ae1d7801968">
+          <bounds x="1044" y="150" width="135" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c985fdbcdfda4c64ab11c18cb0980647" source="id-ea97de1a17de4101b2ba560cb6cb20f5" target="id-16a2d265b3e54f729113fb1031037824" archimateRelationship="id-c1a13345b2f043968a7a84940896bc0b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-16a2d265b3e54f729113fb1031037824" targetConnections="id-c985fdbcdfda4c64ab11c18cb0980647" archimateElement="id-f66d857e261a4cac97aaa1fa69d00afd">
+          <bounds x="953" y="255" width="245" height="67"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-81ce158929b5471284e28cc40c7ca64c" source="id-16a2d265b3e54f729113fb1031037824" target="id-a29ac6b98a8e44b497f35eeaeb31679c" archimateRelationship="id-39d49021866d4096bf8aa71c520e1489"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-093d992ac4f94fe287d1e1f961f3ca9c" source="id-16a2d265b3e54f729113fb1031037824" target="id-49048f7a230a480d8af33cff5d321fce" archimateRelationship="id-a6a95ac9df854510b39fe24747c3ba7e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-206d6bcfdb0249349b416f6dc18aeccd" source="id-16a2d265b3e54f729113fb1031037824" target="id-75607c3272fe488daca1b50d6b209a3f" archimateRelationship="id-e79e5c310e4a485d8259a82d4517a143"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2248e8c8a5964c1eac1b840908422871" archimateElement="id-3f33de3508704dd3b212a8b198d01d88">
+          <bounds x="703" y="261" width="178" height="72"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b56e1dbf957d48348a7bfdc228ff4e38" archimateElement="id-97babe5bc913484ca20eb9f581f677bc">
+          <bounds x="401" y="626" width="188" height="71"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b10ddaa4c48745429072e21c4dc4eefc" archimateElement="id-5be76eef68f544bfbefc4e5cecc7b008">
+          <bounds x="720" y="540" width="529" height="133"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8424a3f9ee4347c08278e2be8e96c218" source="id-b10ddaa4c48745429072e21c4dc4eefc" target="id-1999552caa0e4e518f0e5ec238943c69" archimateRelationship="id-f5c6ebc475484959988dd53a6171abbc"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2ccddc5fe9e24b0d9a3c8419b6991b78" source="id-b10ddaa4c48745429072e21c4dc4eefc" target="id-9e80b68d2035463680d13df6a4a0221f" archimateRelationship="id-9ee3e84b4d4041359d89273554676f44"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6aeab5019b8a41ebb596d5434c3e8087" source="id-b10ddaa4c48745429072e21c4dc4eefc" target="id-bdbff39633cf4afe96f02a7de82af576" archimateRelationship="id-769935db375f4ef1ad01278e92f19f67"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-eb8cb0a17b9b485c970fb2b211055a0e" source="id-b10ddaa4c48745429072e21c4dc4eefc" target="id-3967772315544da9bda3a7607ee1020c" archimateRelationship="id-4897b3fff65f4ba483ba5fbfc42ad93d"/>
+          <child xsi:type="archimate:DiagramObject" id="id-1999552caa0e4e518f0e5ec238943c69" targetConnections="id-8424a3f9ee4347c08278e2be8e96c218" archimateElement="id-83ff158a93ec4bd097d5a55f9d87dab5">
+            <bounds x="12" y="24" width="133" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-9e80b68d2035463680d13df6a4a0221f" targetConnections="id-2ccddc5fe9e24b0d9a3c8419b6991b78" archimateElement="id-bc3879acd3c849d38a7eedf6dd0fcc92">
+            <bounds x="154" y="26" width="195" height="95"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-bdbff39633cf4afe96f02a7de82af576" targetConnections="id-6aeab5019b8a41ebb596d5434c3e8087" archimateElement="id-21968fd964c94d279379af81521466b3">
+            <bounds x="359" y="27" width="158" height="94"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3967772315544da9bda3a7607ee1020c" targetConnections="id-eb8cb0a17b9b485c970fb2b211055a0e" archimateElement="id-b542f16b0c404f5dba9ca1f8af81cc3e">
+          <bounds x="740" y="720" width="469" height="109"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c9fe7bfb97214605ac4a499460cfbfb7" source="id-3967772315544da9bda3a7607ee1020c" target="id-dcbdd29dfa2348e4984144d6ffc35a1c" archimateRelationship="id-e81174ba778d47d8b7b8de040c207a56"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a7955aad4ca64a33be96315323d6bab4" source="id-3967772315544da9bda3a7607ee1020c" target="id-4d7297de08a14b4a9829901a14b8fe27" archimateRelationship="id-3a458964000343edbac893727071199a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8ece47b13b7e40829e5e0da097859788" source="id-3967772315544da9bda3a7607ee1020c" target="id-f6b9c8c5f65649c6af1b4661964f7027" archimateRelationship="id-0e064c9933d748c295ae58e721adcab8"/>
+          <child xsi:type="archimate:DiagramObject" id="id-dcbdd29dfa2348e4984144d6ffc35a1c" targetConnections="id-c9fe7bfb97214605ac4a499460cfbfb7" archimateElement="id-ee046dfbb1fc4efd80953be0b163a17e">
+            <bounds x="12" y="24" width="151" height="61"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4d7297de08a14b4a9829901a14b8fe27" targetConnections="id-a7955aad4ca64a33be96315323d6bab4" archimateElement="id-ec82193d9c7c420984fc29b2bdfa5eb9">
+            <bounds x="174" y="24" width="145" height="61"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f6b9c8c5f65649c6af1b4661964f7027" targetConnections="id-8ece47b13b7e40829e5e0da097859788" archimateElement="id-94f772f689ca4860b428663bffd5142b">
+            <bounds x="330" y="27" width="121" height="58"/>
+          </child>
+        </child>
+        <documentation>Project description per Lite Proposal: &#xD;
+The solution scope is to augment the ECAS solution by integrating the SDIV functionality to provide digital identity validation capability. This form of validation provides an additional option and improves user experience by complimenting, not replacing, the current validation mechanisms. Existing NSLSC users will have the choice to gain access using the now present security questions and answers capability, or through the new SDIV identity validation functionality. The SDIV validation capability will be available to existing users for substitutions only. Once the substitution is successful and the profile is created, students may resume access to the NSLSC portal for online services.&#xD;
+&#xD;
+OBJECTS SOURCED FROM HL REQUIREMENTS DOCUMENT: &#xD;
+SDIV-MVP2 CSLP_High-Level-Business-Requirements v1.0.3(DRAFT).docx&#xD;
+This high-level business requirements document will server as the scope of the solution and used as an artifact for the Lite Project approval process at PPOC (Project Portfolio Operations Committee).&#xD;
+The intention of this document is to catalogue all business and stakeholder requirements for the SDIV-MVP2 CLSP project and to define the solution requirements at a high-level, to set the scope for definition of detailed solution design requirements by the implementation team. </documentation>
       </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Top-Level Hierarchy of ArchiMate Concepts" id="id-d10f3fb17612466abc4e8fa9563db2a9">
