@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>GC Enterprise Architecture Framework - Business Architecture Guide (Resource)</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>GC Enterprise Architecture Framework - Business Architecture Guide (Resource)</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Resource"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Resource" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Business Architecture
+
+Business architecture is a critical aspect for the successful implementation of the GC Enterprise Ecosystem Target Architecture. The architectural strategy advocates whole&#8209;of&#8209;government approach where IT is aligned to business services and solutions are based on re&#8209;useable components implementing business capabilities in order to deliver a cohesive user experience. As such, it is essential that business services, stakeholder needs, opportunities to improve cohesion and opportunities for reuse across government be clearly understood. In the past these elements have not been a priority. It is expected that the IT culture and practices will have to change to make business architecture, in general, and these elements a primary focus.
+Design services digitally from end&#8209;to&#8209;end to meet the Government of Canada users and other stakeholders&#8217; needs
+Clearly identify internal and external users and other stakeholders and their needs for each policy, program and business service
+In order to ensure that a service will be able to meet the users and stakeholders' needs, it needs to understand what needs it is trying to provide service for, who their users and stakeholders are, both internal and external.
+Once the needs, the users and stakeholders are defined, then a service provider can proceed to create a stakeholder mapping to further understand the relationship between the service and the users &amp; stakeholders, ie. how a change in one component impacts the other.
+From there, the service provider can conduct need analysis of its users and stakeholder to develop a program, a policy or a service that meets their needs (this practice may also be known as stakeholder requirements or value mapping).
+This exercise can also help define the limitation/scope of the program/policy/service to better manage the expectation of their users/stakeholders.
+
+   How to demonstrate that the project fulfils this framework:
+    * summarize the needs and outcome of each key external and internal stakeholders in scope of the architecture
+    * demonstrate how the architecture is focused on the needs and outcomes of internal and external stakeholders
+   Tools:
+    * Business Case
+    * Stakeholder (Actors, Roles, Organizational Units) Mapping &amp; Stakeholder requirements 
+    * Outcomes
+    * Business Process Map
+    * Value Stream and Value Mapping
+
+include policy requirement applying to specific users and other stakeholder groups, such as accessibility, gender-based plus analysis, and official languages in the creation of the service
+To ensure that a service can be used by all its users, it is important to note the specific requirements for specific users and to that extent, it is important to take note and apply the policy that governs the service standards when providing service to the specific user groups.
+This will in turn enable the service to be far-reaching and more inclusive to all its users.
+
+   How to demonstrate that the project fulfils this framework:
+    * Outline what policies constrain the architecture
+    * Outline positive and negative impact the policy has on the architecture to meet the needs of the stakeholder
+    * Outline how architecture supports full spectrum of service design and user experience
+   Tools:
+    * User Interface Design Principles
+
+perform Algorithmic Impact Assessment (AIA) to support risk mitigation activities when deploying an automated decision system as per Directive on Automated Decision-Making
+When a service has an in-system developed automation for decision making, it is essential that the service perform AIA, to ensure that the result of this decision making is impartial and fair, and the impact of that decision would be the same as if the decision is made manually, only faster.
+The use of this type of system must closely follow the Directive on Automated Decision-Making.
+
+   How to demonstrate that the project fulfils this framework:
+    * Provide the impact level based on the completion of the conceptual AIA
+    * Describe how the architecture will address the recommendations coming from the AIA
+    * Describe how the architecture meets the directive's requirements for the impact level
+   Tools:
+    * AIA Results (Conceptual)
+
+Model end-to-end business service delivery to provide quality, maximize effectiveness and optimize efficiencies across all channels (for example, lean process)
+When creating a service, make sure the service delivery is modeled end-to-end to make sure the intended end users can actually reap the benefit of the service being offered.
+Go through the business process map step-by-step to ensure all points/nodes within the process behaves expectedly resulting in an intended outcome.
+Ensure all points/nodes within the process is optimized.
+Create all possible positive and negative scenarios that can possibly occur.
+Then go through different possible scenarios to ensure the service is still being delivered correctly, effectively and efficiently.
+   How to demonstrate that the project fulfils this framework:
+    * Summarize the delivery of value to customer across the architecture&#8217;s  business ecosystem  and the contribution of each stakeholder to the value
+   Tools:
+    * Business Process Map
+    * Business Impact Assessment
+    * Value Stream and Value Mapping
+
+Architect to be outcome&#8209;driven and strategically aligned to the department and to the Government of Canada
+identify which departmental/GC business services, outcomes and strategies will be addressed
+To ensure that the Government of Canada provide the best service to its citizen, the services provided needs to be cohesive, ie. the work conducted by each department needs to complement each other to avoid overlap and to ensure continuance of service from one department to another.
+In order for a service to be meaningful, it needs to be tied into the driver of why the service is required and the outcome expected from a departmental mandate. The service can affect the mandate directly/indirectly, however, one needs to justify the needs of the service in relation to the actual mandate of the department.
+
+   How to demonstrate that the project fulfils this framework:
+    * Outline the GC/Departmental Strategies the architect aligns and/or implements
+    * Describe the architecture's contribution to realizing the appropriate outcomes of the strategy
+   Artifacts:
+    * Drivers
+    * Outcomes (intimidate and ultimate)
+    * Business services (External)
+
+establish metrics for identified business outcomes throughout the life cycle of an investment
+Once we know which outcome that a service is tied into, and whether or not it is directly affecting the outcome expected, we need to be able to justify the effort required to build the service vs. the outcome exerted by the service.
+We need a way to quantify the impact of this service / establish a metrics for this service.
+This is an important step to ensure that we can prioritize the effort correctly to identify and build the right service that is of high priority with the budget assigned.
+   How to demonstrate that the project fulfils this framework:
+    * What are the metrics used to ensure that the outcomes are being realized
+    * What data is required for the metrics and identify how any gaps in the data will be addressed.
+   Tools:
+    * Value Stream (Measure KPI linked to benefits outcomes and objectives)
+
+translate business outcomes and strategy into business capability implications in the GC Business Capability Model to establish a common vocabulary between business, development, and operation
+Once we understood the outcomes and strategy to achieve the outcome, we need to translate it into business capability implications. Historically, the Business Capability Model is a common vocabulary between business, development and operation.
+When the plan conveyed is understood by the development and operation, it would be easier to obtain the system required.
+Having an open communication between the various teams also helps in getting the right solution that closely match the business requirement.
+   How to demonstrate that the project fulfils this framework:
+    * Outline the business capabilities involved in achieving each outcome
+   Tools:
+    * Business Impact Assessment
+    * Departmental BCM
+    * GC BCM (mapping to D BCM)
+    * Value Stream
+Promote horizontal enablement of the enterprise
+identify opportunities to enable business services horizontally across the GC enterprise and to provide cohesive experience to users and other stakeholders
+In creating any service, we always need to go back to think about the users/stakeholders. Put ourselves in the users'/stakeholders' shoes. If we are at the receiving end of the service, what kind of experience do we get when we are trying to get the service. Does the user need to know where to get related services, or can we provide them with a seamless service, a cohesive service ? How do we provide a good experience to the users / stakeholders ?
+We need to start thinking more of an enterprise level, starting at the departmental level first. How can we enable this service across the department ? Is there any opportunity to reuse what we have in other areas of the department ? What do we need to do to leverage this process ?
+We need to plug in to community of practices, network of expertise or other working groups in order to exchange information, understand the various obstacles experienced by others, get lessons learned from others' experiences, share lessons learned, learn from others how they overcome similar obstacles in their work, share your solutions to others.
+   How to demonstrate that the project fulfils this framework:
+    * Summarize the departmental / GC opportunities where the architecture could be reused
+    * Summarize departmental/GC architectures that impact or influence the ability of the user having a cohesive experience
+       (what are the plans to ensure user has a cohesive experience across these architectures and the ecosystem)
+   Tools:
+    * Business Capability
+    * Departmental Value Stream model
+    * Projects to Value Stream Script
+
+reuse common business capabilities, processes and enterprise solutions from across government and private sector
+If there is a business capabilities, processes or enterprise solution that can be utilized in creating the service, eg. perhaps during the exchange of information from working groups, community of practices, workshops or even from working with private sectors, that are proven to work, we should consider using it prior to inventing our own.
+This will optimize the time required to build the approach or the solution. Rather than having to proof the concept or solution actually works, use the ones that have a proven record.
+   How to demonstrate that the project fulfils this framework:
+    * Describe the plan and approach to standardize the realization of the business capability so it can be reused within the department and GC
+   Tools:
+    * Projects to value Stream Script
+    * Business Capability Heat map
+
+publish in the open all reusable common business capabilities, processes and enterprise solutions for others to develop and leverage cohesive horizontal enterprise services
+Going back to the previous point on thinking at an enterprise level, one of the ways to enable a service that we build across the GC is by having it published in the open for other departments to see and re-use. Then and only we can create a cohesive horizontal enterprise services to create a cohesive experience to the users / stakeholders.
+   How to demonstrate that the project fulfils this framework:
+    * Outline the plan to allow other public sector organizations to reuse the common capability
+   Tools:
+    * Business Capability Heat Map
+    * Projects to Value Stream Script</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
