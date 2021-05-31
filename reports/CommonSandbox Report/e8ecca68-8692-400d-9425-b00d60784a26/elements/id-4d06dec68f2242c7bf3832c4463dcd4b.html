@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Integrity-By-Design (Principle)</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Integrity-By-Design (Principle)</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Principle"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Principle" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">7.3.	Integrity-by-Design
+
+Name:	Integrity-by-Design
+Statement:	Provide clients with a high degree of trust that the system and its attendant data and information are correct (i.e., precise, accurate and meaningful), valid (created, modified and deleted only by authorized users) and invariant (i.e., consistent an unmodified).
+
+Rationale:
+&#8226;	Integrity is one of the three central pillars of securing corporate information assets along with confidentiality and availability. Integrity keeps data pure and trustworthy by protecting system and data from intentional or accidental changes. 
+&#8226;	With data being the primary information asset, integrity provides the assurance that the data is accurate and reliable. Without integrity, the cost of collecting and maintaining the data cannot be justified. Therefore, policies and procedures should support ensuring that data can be trusted.
+&#8226;	Mechanisms put in place to ensure the integrity of the system, its data and information should prevent attacks on the storage of that data (contamination) and on its transmission (interference). Data that is altered on the network between the storage and the user's workstation can be as untrustworthy as the attacker altering or deleting the data on the storage media. Protecting data involves both storage and network mechanisms.
+Implications:	&#8226;	Unauthorized users must be prevented from making modifications to data or programs.
+&#8226;	Unauthorized users must be prevented from making improper or unauthorized modifications.
+&#8226;	Internal and external consistency of data and programs must be maintained.
+&#8226;	Applying encryption to information that will be sent over the Internet or stored on digital media.
+&#8226;	Software must be built defensively.
+&#8226;	Users should be prevented from inadvertently storing inaccurate or invalid data by incorrect data entry, an incorrect decision made in running programs, or not following procedures.
+&#8226;	Users should be prevented from affecting integrity through system configuration errors at their workstations or even by using the wrong programs to access the data.
+&#8226;	Users should be taught about devicde and data integrity during their information security awareness training.
+&#8226;	The installation of any new software or devices must be prevented except when done by a limited set of authorized people. 
+&#8226;	Check system integrity against a set of predefined validation policies or standards.
+
+References:
+&#8226;	Security Architecture Team</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
