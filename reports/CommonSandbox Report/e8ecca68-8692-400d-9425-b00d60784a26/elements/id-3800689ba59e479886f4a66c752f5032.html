@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title></title>
+	<title>10. Minimize changes to legacy (Principle)</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -22,10 +22,11 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b class="i18n-elementtype-CompositionRelationship"></b>
+               <b>10. Minimize changes to legacy (Principle)</b>
+
             <!-- If a View with Viewpoint -->
-			   (<span class="i18n-elementtype-CompositionRelationship"></span>)
-			   <a class="glyphicon glyphicon-info-sign" id="hint-CompositionRelationship" target="hint"></a>
+			   (<span class="i18n-elementtype-Principle"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Principle" target="hint"></a>
 		</div>
 
 		<div class="panel-body root-panel-body">
@@ -45,17 +46,16 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-							<br>
-							<b class="i18n-relation-source"></b>
-								<a href="../elements/6155f236-8ace-4b73-80b0-be22c7022c6c.html" target="element">
-									Principles Catalog
-								</a> <br>
-							<b class="i18n-relation-target"></b>
-								<a href="../elements/id-c92bc620331c4fa1ab7a4968dad8a2dc.html" target="element">
-									BDM Architecture Principles
-								</a> <br>
-							<br>
-						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">BDM Architecture Principle 10: 
+Principle:	Minimize changes to legacy. 
+Statement:	Minimize changes and write-back to legacy. 
+Rationale: 	Co-existence model inherently leads to significant complexity. BDM needs to design deployment strategy, transition architecture, services, processes and integration between new solutions and legacy to control complexity and risk. One of the approaches to control complexity is to minimize changes to legacy.
+Implications:	Architecture objectives and planning assumptions (to be validated through prototyping):
+&#8226;	There will be one system of record for each transaction.
+&#8226;	Transactions will be process either in the new or legacy system, not in both.
+&#8226;	Data will be accessed in the other system as needed.
+&#8226;	Certain amount of data will be migrated to the new system.
+</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
