@@ -4669,7 +4669,21 @@ The Enterprise Architecture Framework provide details on the requirements set ou
 The Enterprise Architecture Framework will be published on Canada.ca. Until then here is the EA Framework.</documentation>
     </element>
     <element xsi:type="archimate:Principle" name="ESDC EA Principles" id="id-1c5de8889cd34490a9dedbd94a813930"/>
-    <element xsi:type="archimate:Principle" name="BDM EA Principles" id="id-c92bc620331c4fa1ab7a4968dad8a2dc"/>
+    <element xsi:type="archimate:Principle" name="BDM Architecture Principles" id="id-c92bc620331c4fa1ab7a4968dad8a2dc">
+      <documentation>BDM Architecture Principles &#xD;
+&#xD;
+Proposed to BDM-ARC for endorsement (1-5 out of 10)&#xD;
+1) BDM will implement a new Target Operating Model designed for the future. Transition will be gradual and iterative ensuring service continuity.&#xD;
+2) BDM will consume a GC or ESDC enterprise solution/service where it exists and meets all BDM mandatory and majority of non-mandatory functional and non-functional requirements, as well as, when there is a commitment and plan for long-term investment in sustainment and support.&#xD;
+3) BDM will favour investment in strategic solutions and technologies over investment in interim and tactical ones. &#xD;
+4) Data is at the center of BDM. BDM embraces Data Management-by-design by building services and processes that support and enable appropriate data access, standards and quality for ESDC clients, partners and staff. BDM advocates leveraging data from an authoritative source. &#xD;
+5) Digital First. BDM will design and implement digital interfaces to enable and encourage submission of information in a digital format through the digital channel and third-party systems and end-user applications.&#xD;
+6) Open solutions by default, proprietary by exception. SaaS and COTS that support open standards are considered open solutions. Open source will be considered where appropriate. &#xD;
+7) Balance Service and Security. Balance proactive and personalized Service Experience and Privacy.&#xD;
+8) BDM will embed integrity and quality controls up-front and throughout processes and services. &#xD;
+9) Cloud First. BDM will leverage cloud where appropriate and available.&#xD;
+10) Minimize changes and write-back to legacy.</documentation>
+    </element>
     <element xsi:type="archimate:Assessment" name="ESDC EA Assessment" id="id-51a0c11cd1b04858a2b2d031e4073715"/>
     <element xsi:type="archimate:Principle" name="GC EA Principles" id="id-0649bed11ab44ea08fd08da086b06c55"/>
     <element xsi:type="archimate:Principle" name="ESDC EA Principles" id="id-68d6eb17c95d488a89f4f123cc350111"/>
@@ -5925,6 +5939,193 @@ The EA Principles are intended to simplify, not complicate business decisions. T
 •	Lower the overall life cycle cost of applications;&#xD;
 •	Improve the manageability of the architectural components;&#xD;
 •	Support an active vs. reactive approach to planning service delivery projects.</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="1. New Target Operating Model and service continuity during the transition (Principle)" id="id-8e50bfcb838d40a8bffb573f51acc409">
+      <documentation>BDM Architecture Principle 1: &#xD;
+Principle:	New Target Operating Model and service continuity during the transition &#xD;
+Statement:	BDM will implement a new Target Operating Model designed for the future. Transition will be gradual and iterative ensuring service continuity.&#xD;
+Rationale: 	BDM service modernization and service ambitions cannot be realized with technology modernization only – a new Operating Model is required. BDM will modernize services that deliver over $122B annually to Canadians, many of which are mission critical as they support most vulnerable clients in the time of need. Disruption to the delivery of these services is unacceptable.&#xD;
+Implications:	•	Architectures and solutions proposed as strategic and target state will be evaluated against the new Target Operating Model.&#xD;
+•	To ensure service continuity, co-existence model where new solutions and legacy operate in parallel will be required. &#xD;
+•	Co-existence model inherently leads to a greater complexity than the current or target state. Among different viable architectures that are fit to support the new Target Operating Model and co-existence, less complex ones will be favoured over more complex options.&#xD;
+•	Evaluation of  architectures and proposed solutions in regards to their ability to integrate and operate in a co-existence model will be presented to BDM-ARC.</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="2. BDM will consume GC and ESDC Enterprise Solutions/Services where appropriate and available (Principle)" id="id-5139a74045f94bfcb4474b1692b7c892">
+      <documentation>BDM Architecture Principle 2: &#xD;
+Principle:	BDM will consume GC and ESDC Enterprise Solutions/Services where appropriate and available.&#xD;
+Statement:	BDM will consume a GC or ESDC enterprise solution/service where it exists and meets all BDM mandatory and majority of non-mandatory functional and non-functional requirements, as well as, when there is a commitment and plan for long-term investment in sustainment and support.&#xD;
+Rationale: 	With each decision to leverage an existing solution or service, BDM will inherit risks associated with the architecture, deployment, availability and operations of the solution/service. Solutions and services which may have not been designed for the scale required by BDM or lack appropriate investment commitments, product roadmaps and operational and support models, present a risk to the BDM Programme. &#xD;
+Implications:	•	GC and ESDC Enterprise Solutions/Services will be evaluated against BDM requirements. If gaps are identified, it is expected that an investment and a project plan are put in place to close the gaps. &#xD;
+•	The architecture of the GC and ESDC Enterprise Solutions/Services will be evaluated for alignment and compatibility with the BDM solution architecture. &#xD;
+•	BDM may present opportunities to enhance or modernize certain enterprise solutions and services. Such opportunities will be identified as architecture options and presented to BDM-ARC.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="3. Favour strategic over interim and tactical solutions (Principle)" id="id-b8a9911822e7451a88d3a2608383e801">
+      <documentation>BDM Architecture Principle 3:&#xD;
+Principle:	Favour strategic over interim and tactical solutions.&#xD;
+Statement:	BDM will favour investment in strategic solutions and technologies over investment in interim and tactical ones. &#xD;
+Rationale: 	Strategic solutions and technologies are those that are selected and deployed with a plan to support service delivery over a long term (10+ years). Tactical and interim solutions are both expected to be replaced by Strategic solutions, either in a relatively short time period (tactical) or over longer term (interim). &#xD;
+Implications:	•	Investments in interim and tactical solutions, unless required for legislative, significant business value/savings or service continuity reasons, will be presented as architecture options with generally lower score for EA alignment than strategic solutions.&#xD;
+•	BDM will support investments in interim and tactical solutions that are expected to deliver immediate business outcomes when they do not constitute an obstacle to the BDM implementation or significantly increase BDM technical debt. We advise to establish and monitor metrics for identified business outcomes throughout the lifecycle of the investment.&#xD;
+•	Architecture of the interim or tactical solution may be reviewed if the solution needs to integrate with the BDM solution or support BDM implementation, for instance, by generating data and insights that would inform BDM service design and/or architecture.</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="6. Open Solutions and standards (Principle)" id="id-79797bbebaa04266b828a722e79c4390">
+      <documentation>BDM Architecture Principle 6: &#xD;
+Principle:	Open Solutions and standards. &#xD;
+Statement:	Open solutions by default, proprietary by exception. SaaS and COTS that support open standards are considered open solutions. Open source will be considered where appropriate. &#xD;
+Rationale: 	In an ideal scenario, solutions (or their components) are interoperable and substitutable: each one can be substituted easily and independently. This can be achieved only when solutions support open standards. &#xD;
+Implications:	•	Open standards and industry best practices are and will continue to be embedded in BDM architecture and functional and non-functional requirements.&#xD;
+•	Proprietary solutions that do not support open standards or are not substitutable for any reason must be identified and granted an exception by BDM-ARC and EARB. &#xD;
+&#xD;
+&#xD;
+Note on open standards and open source software (Reference: Open Standards Whitepaper on GitHub):&#xD;
+The following criteria define open standards:&#xD;
+process for the standard's development is open and transparent to all interested parties and cannot be controlled by any single person or entity with any vested interests;&#xD;
+platform independent, vendor neutral and usable for multiple implementations;&#xD;
+specifications and supporting material are freely available with limited restrictions;&#xD;
+supported by the community and demonstrate independence or approved through due process by rough consensus among participants.&#xD;
+Open source software (OSS) is a way of developing and distributing software. The code is often written collaboratively, and it can be downloaded, used and changed by anyone.&#xD;
+Open source software (OSS) and open standards are separate concepts, however there are strong ties between them. OSS tends to use and help define open standards and publicly available specifications. OSS are, by their nature, publicly available specifications, and the availability of their source code promotes open, democratic debate around their specifications, making them both more robust and interoperable. </documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="7. Security and Privacy-by-Design (Principle)" id="id-6702c070efda4c39afe199af8eba7ceb">
+      <documentation>BDM Architecture Principle 7: &#xD;
+Principle:	Security and Privacy-by-Design. &#xD;
+Statement:	Balance Service and Security. &#xD;
+Balance Service and proactive and personalized Service Experience and Privacy.&#xD;
+Rationale: 	Security measure can present constraints for data collection and client interaction. Similarly, proactive and personalized service requires collecting and analyzing client data and proactively initiating interactions with the client which can be viewed as at odds with respecting client’s privacy. &#xD;
+Implications:	•	BDM will seek to balance client and business needs with appropriate security measures. &#xD;
+•	Evaluation of architectures and proposed solutions in regards to applicable and supported security measures will be presented to BDM-ARC.&#xD;
+•	BDM will seek to reduce constraints related to data collection and data access and sharing, while maintaining a focus on privacy (e.g. leveraging a client consent-based model). &#xD;
+•	Privacy considerations are key to legislation, operational policy, service and business rules design. Through architecture and solution design, BDM will ensure that their intent in regards to privacy is maintained in implementation.</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="8. Integrity &amp; Quality-by-Design (Principle)" id="id-ac9c64ab37604ed8b67f12685db13ea9">
+      <documentation>BDM Architecture Principle 8: &#xD;
+&#xD;
+Principle:	Integrity &amp; Quality-by-Design. &#xD;
+Statement:	BDM will embed integrity and quality controls up-front and throughout processes and services. &#xD;
+Rationale: 	Embedded approach to integrity and quality management is required to move away from “pay-and-chase” model and enable continuous service improvement. &#xD;
+Implications:	•	BDM will ease burden of proof on clients, based on risk and complexity profile, while maintaining compliance and integrity checks.  &#xD;
+•	Client risk, priority and complexity profile will result from integrity and quality controls embedded in processes and services.&#xD;
+•	Quality and continuous improvement will be embedded in all processes.&#xD;
+&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="9. Cloud First (Principle)" id="id-58a16058413344f1a00bca4f9d08723c">
+      <documentation>BDM Architecture Principle 9: &#xD;
+Principle:	Cloud First. &#xD;
+Statement:	Cloud First. BDM will leverage cloud where appropriate and available.&#xD;
+Rationale: 	Cloud computing means providing infrastructure services and application services on demand. This is made possible through a high level of virtualization of hardware components by way of infrastructure service software. The result is highly scalable, elastic, available and programmable infrastructure. All these characteristics are of great importance to BDM. &#xD;
+Implications:	•	BDM will leverage cloud where applicable, available and where it meets BDM security requirements. &#xD;
+•	All cloud deployment options (including SaaS) will be explored and evaluated as part of the solution design.&#xD;
+•	BDM will ensure that requirements for performance, availability, and scalability (including peak traffic periods) are met by all BDM solutions and components (new and legacy) and the hosting infrastructure. &#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="4. Data is at the center of BDM (Principle)" id="id-3db3deeeecf3465ba3426e6e4ff61b37">
+      <documentation>BDM Architecture Principle 4: &#xD;
+Principle: 	Data is at the center of BDM.&#xD;
+Statement:	Data is at the center of BDM. BDM embraces Data Management-by-design by building services and processes that support and enable appropriate data access, standards and quality for ESDC clients, partners and staff. BDM advocates leveraging data from an authoritative source.  &#xD;
+Rationale: 	Data has a great potential to support and inform better decisions both in service design and continuous improvement and in adjudicating and processing client applications and requests. To realize such potential, data needs to be relevant, reliable and available.  &#xD;
+Implications:	•	BDM will strive to enable data driven approach to decision making in service design and continuous improvement .&#xD;
+•	BDM will enable data-as-a-service approach by enabling access to authoritative sources of data whenever possible. &#xD;
+•	Data gathered once.&#xD;
+•	Collecting the same data from the client multiple times for the use in different programs will be avoided.&#xD;
+•	Transferring and replicating data will be done judiciously and only when necessary for functional or performance reasons.  &#xD;
+•	Proposed data architectures, models and data flows will be presented to BDM-ARC for review.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="5. Digital First (Principle)" id="id-a24772a205af49edb16ce114185c21f9">
+      <documentation>BDM Architecture Principle 5: &#xD;
+Principle:	Digital First. &#xD;
+Statement:	Digital First. BDM will design and implement digital interfaces to enable and encourage submission of information in a digital format through the digital channel and third-party systems and end-user applications.&#xD;
+Rationale: 	BDM target state characteristics include digitally enabled services and responsive, proactive and inclusive service experience. BDM goals, among others, include:&#xD;
+•	empowering clients to self-serve by providing an attractive, seamless and end-to-end service delivery option through the digital channel;&#xD;
+•	leveraging the support of NGOs, public and private sector partners to optimize and deliver a better, more impactful client outcomes.&#xD;
+Implications:	•	BDM will design and implement new digital channel solutions that will enable seamless and accessible client self-service.&#xD;
+•	Functionality will be exposed as services via APIs where applicable and of business value.&#xD;
+•	BDM will encourage and work with service delivery partners to change their existing systems or develop new end-user applications for their staff and clients to submit data to ESDC in a digital format.&#xD;
+•	Proposed external APIs will be presented to BDM-ARC for review.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="10. Minimize changes to legacy (Principle)" id="id-3800689ba59e479886f4a66c752f5032">
+      <documentation>BDM Architecture Principle 10: &#xD;
+Principle:	Minimize changes to legacy. &#xD;
+Statement:	Minimize changes and write-back to legacy. &#xD;
+Rationale: 	Co-existence model inherently leads to significant complexity. BDM needs to design deployment strategy, transition architecture, services, processes and integration between new solutions and legacy to control complexity and risk. One of the approaches to control complexity is to minimize changes to legacy.&#xD;
+Implications:	Architecture objectives and planning assumptions (to be validated through prototyping):&#xD;
+•	There will be one system of record for each transaction.&#xD;
+•	Transactions will be process either in the new or legacy system, not in both.&#xD;
+•	Data will be accessed in the other system as needed.&#xD;
+•	Certain amount of data will be migrated to the new system.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="11. Architecting for Agility (Principle)" id="id-930e433629624c6f9d8a5741d5caf3c9">
+      <documentation>BDM Architecture Principle 11: &#xD;
+Principle:	Architecting for Agility&#xD;
+Statement:	BDM solutions will be architected for agility, creating modular and flexible architecture and reducing risks of vendor lock-in. &#xD;
+Rationale: 	Architecting for agility is a fundamental shift in delivering IT services, moving away from operational inefficiencies to flexible, decoupled solutions. It will position ESDC to adapt to technology changes and ever-changing client and business needs and expectations.&#xD;
+Our objective is to create a flexible and resilient BDM architecture that enables agility to continuously innovate. An architecture that has greater agility will enable ESDC to have a more fluid and flexible technology landscape, setting us up to be more responsive and adaptable to future changes.&#xD;
+Implications:	•	Platforms and products that consist of individually deployable modules will be preferred over monolithic solutions.&#xD;
+•	Solutions and modules will be decoupled whenever possible without causing performance or latency issues.&#xD;
+•	Architecture decisions will be made just in time to enable procurement and implementation. Making them too early may create undesirable constraints on the scope and technology options.&#xD;
+•	BDM will consider alternatives and keep them &quot;open&quot; as long as they remain viable. It should be recognized that not all technical decisions can be made at the same time: there is benefit to making some decisions later when they can be better informed by business decisions and through additional analysis and prototyping. &#xD;
+•	BDM will be prepared to refactor (change) architecture. Architecture work products will evolve and be further developed throughout the BDM Programme lifecycle. We will iterate and improve architecture periodically and as needed.&#xD;
+•	BDM will identify and analyze architectural dependencies and incorporate them into a responsive model: we will strive to integrate dependencies through loose coupling and have contingency plan when they are yet to be implemented.&#xD;
+•	Caveat: This principle will compete with Principle #3: Favour strategic over interim and tactical solutions. Tactical solutions may be necessary to help us achieve desired level of agility.&#xD;
+&#xD;
+&#xD;
+BDM EA WG: The principle is well received and supported by the architecture community. It communicates that architecture practice is adapting and orienting to help enable business agility.&#xD;
+Recommendation: Accept</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="12. Maximize Use of Core Technology (Principle)" id="id-549c7d1e7a5541369f53e0915c10e549">
+      <documentation>BDM Architecture Principle 12: &#xD;
+Principle:	Maximize Use of Core Technology&#xD;
+Statement:	Consider leveraging capabilities and functionality of the Core Technology (Cùram Social Program Management) before considering other solutions and applications for common benefit processing and service delivery.&#xD;
+Rationale: 	Leveraging investment in the platform and making use of OOTB business logic and processes will greatly improve ESDC agility and ability to implement new benefits and implement changes to existing benefits and processes.&#xD;
+Additionally, this will reduce complexity of implementation and cost of ownership minimizing the need for integration with other dependant applications. &#xD;
+Implications:	•	Business may have to accept that not all requirements will be fully met by the Core Technology solution. &#xD;
+•	Design of some future state business processes may need to be adjusted to leverage OOTB business logic and processes.&#xD;
+•	Evolving business needs may require moving away from specific capabilities of the Core Technology solution in the future. This situation would trigger changes in architecture, transition to either specialized best of breed or enterprise solutions and possibly procurement. Principle #11: Architecting for Agility mitigates this implication.&#xD;
+•	Core Technology solution architecture becomes the architecture for the Common Benefit Delivery Platform.  &#xD;
+•	Enables alignment of the BDM solution evolution and improvements with the Cùram Social Program Management product roadmap and plans for future improvements.&#xD;
+•	Supports an MVP approach.&#xD;
+•	Caveat: Increased risk of vendor lock-in.&#xD;
+&#xD;
+&#xD;
+BDM EA WG: The remaining principles would lead to the same conclusions and outcomes. The principle is redundant.&#xD;
+Curam Capabilities Prototype did surface and supports the principle.&#xD;
+Recommendation: Consult BDM ARC</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="13. Adoption of Event-Driven Architecture (Principle)" id="id-ee2c743d44164b62954cb647ad9ca93e">
+      <documentation>BDM Architecture Principle 13: &#xD;
+Principle:	Adoption of Event-Driven Architecture&#xD;
+Statement:	Preference will be given to event-driven architecture to help build decoupled, responsive, adaptive and resilient solutions.&#xD;
+Rationale: 	Modernization of digital channels and services, as well as planned advances in service delivery and common benefit processing, require ability to access data and process events and transactions in (near) real time. Solutions and services need to be designed to “react to events” and process them in (near) real time where desirable and to the extent possible.&#xD;
+This type of architecture adds a layer that further decouples architecture components, making the overall architecture more adaptive and resilient.&#xD;
+Implications:	•	Key objective is to move from batch to predominantly (near) real-time services and transactions.&#xD;
+•	Every integration should be considered for event driven approach. BDM will implement the most appropriate pattern for each integration with a view to move to event-driven integrations whenever this approach is aligned with the business processes the integration enables. &#xD;
+•	We will assess supporting solutions and dependencies for their ability of being event driven and can participate without added complexity.&#xD;
+•	Best practices and lessons learned from previous successful implementations of these technologies will be consulted prior to making the decision.&#xD;
+•	We do not recommend “Everything is an Event” approach. Complementary integration patterns exist and will be considered for integrations that are not natively event-driven. Data integration technologies are available too!&#xD;
+•	Selection and implementation of an Event Broker and Messaging Platform becomes high priority for Tranche 1.&#xD;
+•	Caveat: Cùram SPM includes OOTB batch processes that need to be implemented as defined by the platform. No previous implementations of Cùram were based on event driven architecture.&#xD;
+•	Caveat: This type of architecture requires highly-available and resilient network and infrastructure. Cost may increase.&#xD;
+•	Caveat: Will require high transaction rate through SCED which raises performance and bandwidth concerns.&#xD;
+&#xD;
+&#xD;
+BDM EA WG: The principle is well received and supported by the architecture community. Despite caveats, this is a good principle to have to communicate desire to move from batch to predominantly real-time client services and transaction processing.&#xD;
+Recommendation: Accept</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="14. Outcome-Driven (Principle)" id="id-1aca6764c9354cd5b501ce9c4cb84e01">
+      <documentation>BDM Architecture Principle 14: &#xD;
+Principle:	Outcome-driven (proposed by business architecture)&#xD;
+Statement:	Architectural decisions will seek to maximize value to clients, partners, staff, ESDC, and the GoC driven by the overall Programme strategy.&#xD;
+Rationale: 	BDM will seek to realize benefits for clients, partners, staff, ESDC, and the GoC.  Decisions regarding the architecture of BDM should be primarily focused on delivering on the outcomes outlined in the strategy.&#xD;
+Implications:	•	Decisions regarding the technical and solution architecture should be weighed against their ability to achieve strategic outcomes and impact on the targeted stakeholders&#xD;
+•	Capabilities delivered as part of the BDM programme, enabled by the technology, will be linked to the outcomes that they support, value they deliver, and benefits realized &#xD;
+&#xD;
+&#xD;
+BDM EA WG: The principle is covered by the new GC Architecture Standards, therefore redundant. Also, the remaining principles would lead to the same conclusions and outcomes.&#xD;
+Recommendation: Reject</documentation>
     </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
@@ -8418,6 +8619,20 @@ Application architecture practices must evolve significantly for the successful 
     <element xsi:type="archimate:CompositionRelationship" id="id-861e7cd4714548b79ee4cfed36f6c3c0" source="id-8a32b6e904bc41f9b4c28c44648d420c" target="id-6f112aa2020f4b6f8743f63163d804f2"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-8912f51618d1470ab51e79d4e424fc53" source="id-8a32b6e904bc41f9b4c28c44648d420c" target="id-31f44f179a8940cf972be1009baed3eb"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-3694601f61914f58ba734841147478a1" source="id-8a32b6e904bc41f9b4c28c44648d420c" target="id-081565be73ee474a9cd4f3dcc3fec792"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-748bdd7c2e4f4888b30fa1138273627f" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-8e50bfcb838d40a8bffb573f51acc409"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ef82f2e2d4f144ebbb45e7db1213bb59" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-5139a74045f94bfcb4474b1692b7c892"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-340004400353408983fd314bbe5127ac" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-b8a9911822e7451a88d3a2608383e801"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-36f2df630e4b4f0186f74b6ad57b57a9" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-79797bbebaa04266b828a722e79c4390"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0df5873101624bb282211b9ea6d2b1c2" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-6702c070efda4c39afe199af8eba7ceb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-56a0d983fc074b1d8d39449c421e5c19" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-ac9c64ab37604ed8b67f12685db13ea9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-affd53a612144b0c955e571279c79aed" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-58a16058413344f1a00bca4f9d08723c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-71756f56535949e78f0ca72deb08ad02" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-3db3deeeecf3465ba3426e6e4ff61b37"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-758aa66890b549e0b387e1460d4fd2af" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-a24772a205af49edb16ce114185c21f9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8dcb8046252f4e3fb9679a71e457a969" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-3800689ba59e479886f4a66c752f5032"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-62ff8fe4194948f2a29b75f9bc1416e6" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-930e433629624c6f9d8a5741d5caf3c9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-5c01c150be984560bd69ae7eefc21d4c" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-549c7d1e7a5541369f53e0915c10e549"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-97ba1f91e4574d22b11ba965434f22df" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-ee2c743d44164b62954cb647ad9ca93e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3e7e2af753ac46bbac5919af6f9c8c8e" source="id-c92bc620331c4fa1ab7a4968dad8a2dc" target="id-1aca6764c9354cd5b501ce9c4cb84e01"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -9465,7 +9680,7 @@ Common Process</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-3da698fd41744631826428fa49eba62e" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" archimateElement="id-d51acd1910834a2ea2be3757db319eca">
-          <bounds x="13" y="261" width="361" height="121"/>
+          <bounds x="13" y="261" width="384" height="121"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-74a65c69186243fc833868ae1a2442b9" source="id-3da698fd41744631826428fa49eba62e" target="id-44977f9adf024b61a975dd3fcb7aee7d" archimateRelationship="id-091c934a03964665b06c25da4419daf9"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-3ee9035ed0f340089f1640269c98bf55" source="id-3da698fd41744631826428fa49eba62e" target="id-dfd1f5e41d2441a8b87bfbe0bd6c5d30" archimateRelationship="id-af67614870c34b43a887ba739f22178e"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-98f84444e98c4b4b88428fffa8aa84ea" source="id-3da698fd41744631826428fa49eba62e" target="id-3053c36132554d61a679009d8e30536e" archimateRelationship="id-70ffa784ca8d458e92091418db582fc4"/>
@@ -9477,7 +9692,7 @@ Common Process</content>
             <bounds x="132" y="36" width="109" height="73"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-dfd1f5e41d2441a8b87bfbe0bd6c5d30" targetConnections="id-3ee9035ed0f340089f1640269c98bf55" archimateElement="id-c92bc620331c4fa1ab7a4968dad8a2dc">
-            <bounds x="252" y="36" width="97" height="73"/>
+            <bounds x="252" y="36" width="121" height="73"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-98e3731f0c5e4b8ea9f8330a43b7f6a5" archimateElement="id-742c4ae292ba4ac8974bf5c76c33cb6a">
@@ -9582,8 +9797,66 @@ For Discussion</content>
     <folder name="ESDC Principles Catalog" id="id-a678b1791fac432f9c0f944e3afd8d03">
       <element xsi:type="archimate:ArchimateDiagramModel" name="BDM Architecture Principles" id="id-77dcc230b19a44728214d1918372d2c3">
         <child xsi:type="archimate:DiagramObject" id="id-88d508516e3b43559c12e55958052410" archimateElement="id-c92bc620331c4fa1ab7a4968dad8a2dc">
-          <bounds x="72" y="36" width="253" height="73"/>
+          <bounds x="24" y="12" width="1057" height="349"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-79f72d92cfe7404db7457c7d00dc7e04" source="id-88d508516e3b43559c12e55958052410" target="id-3932117a7e064c2dae8611391ebef761" archimateRelationship="id-748bdd7c2e4f4888b30fa1138273627f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9d18f53ed85341dd8052466732be8c30" source="id-88d508516e3b43559c12e55958052410" target="id-a4cc133016b8454f9dd9473e6af5c09a" archimateRelationship="id-ef82f2e2d4f144ebbb45e7db1213bb59"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-508302de8f98407d98a7fad0a3708bdc" source="id-88d508516e3b43559c12e55958052410" target="id-f61add91e80c4c9f9293c499e33028c8" archimateRelationship="id-340004400353408983fd314bbe5127ac"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1ecb8013ea1f48638799af67fbbf1553" source="id-88d508516e3b43559c12e55958052410" target="id-d76f5c277b3f49fe8ff53f78d1404638" archimateRelationship="id-36f2df630e4b4f0186f74b6ad57b57a9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3a66b6e12fa246658852ae885ba2a313" source="id-88d508516e3b43559c12e55958052410" target="id-28395afd1c9d41768d120de1234e99b8" archimateRelationship="id-0df5873101624bb282211b9ea6d2b1c2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d081def4895e4288b3a06e37b86fda7f" source="id-88d508516e3b43559c12e55958052410" target="id-2eda25077c324fafb22504fd67dabe83" archimateRelationship="id-56a0d983fc074b1d8d39449c421e5c19"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7bb0caf429a24f049522fc5f3ea17cd8" source="id-88d508516e3b43559c12e55958052410" target="id-dcf70db066e44fb380ff60fba05ff65d" archimateRelationship="id-affd53a612144b0c955e571279c79aed"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-699be2cf90ae46eaadc3e6da05bd198d" source="id-88d508516e3b43559c12e55958052410" target="id-10f29139961d4d8b89cf7e90b212c328" archimateRelationship="id-71756f56535949e78f0ca72deb08ad02"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-019632324b4947d19ce31b79fbca5a5e" source="id-88d508516e3b43559c12e55958052410" target="id-9ed20c00cbca491792744c8e58c847e9" archimateRelationship="id-758aa66890b549e0b387e1460d4fd2af"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1a1063a53e6441d7980eed5f3cf98463" source="id-88d508516e3b43559c12e55958052410" target="id-22ab9ad452c64633a2f837575f0bacbe" archimateRelationship="id-8dcb8046252f4e3fb9679a71e457a969"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c8b028febc234eda86d5eb436dff6e1f" source="id-88d508516e3b43559c12e55958052410" target="id-a081ea4048414cee92ea204b788db333" archimateRelationship="id-62ff8fe4194948f2a29b75f9bc1416e6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9e9d13ff28c349729a0bc209d0b217a4" source="id-88d508516e3b43559c12e55958052410" target="id-2b28b3fc1beb4a07afa4b117377fe22f" archimateRelationship="id-5c01c150be984560bd69ae7eefc21d4c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-23d7b17c1e85445fb2649595db39dc89" source="id-88d508516e3b43559c12e55958052410" target="id-7aa9a93f93014a22bb36f143f1cf0696" archimateRelationship="id-97ba1f91e4574d22b11ba965434f22df"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-92c14304ab06492ba39fe4f8af4b39ec" source="id-88d508516e3b43559c12e55958052410" target="id-e2c715fca9654130a6329779181b4190" archimateRelationship="id-3e7e2af753ac46bbac5919af6f9c8c8e"/>
+          <child xsi:type="archimate:DiagramObject" id="id-3932117a7e064c2dae8611391ebef761" targetConnections="id-79f72d92cfe7404db7457c7d00dc7e04" archimateElement="id-8e50bfcb838d40a8bffb573f51acc409">
+            <bounds x="24" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a4cc133016b8454f9dd9473e6af5c09a" targetConnections="id-9d18f53ed85341dd8052466732be8c30" archimateElement="id-5139a74045f94bfcb4474b1692b7c892">
+            <bounds x="226" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f61add91e80c4c9f9293c499e33028c8" targetConnections="id-508302de8f98407d98a7fad0a3708bdc" archimateElement="id-b8a9911822e7451a88d3a2608383e801">
+            <bounds x="432" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d76f5c277b3f49fe8ff53f78d1404638" targetConnections="id-1ecb8013ea1f48638799af67fbbf1553" archimateElement="id-79797bbebaa04266b828a722e79c4390">
+            <bounds x="24" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-28395afd1c9d41768d120de1234e99b8" targetConnections="id-3a66b6e12fa246658852ae885ba2a313" archimateElement="id-6702c070efda4c39afe199af8eba7ceb">
+            <bounds x="226" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2eda25077c324fafb22504fd67dabe83" targetConnections="id-d081def4895e4288b3a06e37b86fda7f" archimateElement="id-ac9c64ab37604ed8b67f12685db13ea9">
+            <bounds x="432" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-dcf70db066e44fb380ff60fba05ff65d" targetConnections="id-7bb0caf429a24f049522fc5f3ea17cd8" archimateElement="id-58a16058413344f1a00bca4f9d08723c">
+            <bounds x="636" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-10f29139961d4d8b89cf7e90b212c328" targetConnections="id-699be2cf90ae46eaadc3e6da05bd198d" archimateElement="id-3db3deeeecf3465ba3426e6e4ff61b37">
+            <bounds x="636" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-9ed20c00cbca491792744c8e58c847e9" targetConnections="id-019632324b4947d19ce31b79fbca5a5e" archimateElement="id-a24772a205af49edb16ce114185c21f9">
+            <bounds x="840" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-22ab9ad452c64633a2f837575f0bacbe" targetConnections="id-1a1063a53e6441d7980eed5f3cf98463" archimateElement="id-3800689ba59e479886f4a66c752f5032">
+            <bounds x="840" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a081ea4048414cee92ea204b788db333" targetConnections="id-c8b028febc234eda86d5eb436dff6e1f" archimateElement="id-930e433629624c6f9d8a5741d5caf3c9">
+            <bounds x="24" y="240" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2b28b3fc1beb4a07afa4b117377fe22f" targetConnections="id-9e9d13ff28c349729a0bc209d0b217a4" archimateElement="id-549c7d1e7a5541369f53e0915c10e549">
+            <bounds x="226" y="240" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7aa9a93f93014a22bb36f143f1cf0696" targetConnections="id-23d7b17c1e85445fb2649595db39dc89" archimateElement="id-ee2c743d44164b62954cb647ad9ca93e">
+            <bounds x="432" y="240" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e2c715fca9654130a6329779181b4190" targetConnections="id-92c14304ab06492ba39fe4f8af4b39ec" archimateElement="id-1aca6764c9354cd5b501ce9c4cb84e01">
+            <bounds x="636" y="240" width="193" height="85"/>
+          </child>
         </child>
+        <documentation>&#xD;
+</documentation>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="GC EA Framework" id="id-1f4bf50d7ac04f20ad0402726299b61d">
         <child xsi:type="archimate:Note" id="id-06bdf832882b474f88de40766ba199aa" textAlignment="1">
@@ -9973,7 +10246,63 @@ Office of the Chief Information Officer of Canada, Treasury Board of Canada Secr
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-ec7ba0cf7be641f2872308421db58562" targetConnections="id-e6720e1c53d64f3d803825c30f94a33d" archimateElement="id-c92bc620331c4fa1ab7a4968dad8a2dc">
-          <bounds x="1068" y="39" width="113" height="73"/>
+          <bounds x="1358" y="-213" width="1043" height="346"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bfa8016369fd4a25b9cad6f30b58aa49" source="id-ec7ba0cf7be641f2872308421db58562" target="id-313f422095364f64831d19fde375caa8" archimateRelationship="id-97ba1f91e4574d22b11ba965434f22df"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-91096ec5bbaf4df4b36d42a8c261e456" source="id-ec7ba0cf7be641f2872308421db58562" target="id-b2f191dcd0f54d63a8cd03e4c56f35aa" archimateRelationship="id-0df5873101624bb282211b9ea6d2b1c2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b93a96357a9d48b39c64d807e354a6f4" source="id-ec7ba0cf7be641f2872308421db58562" target="id-5b696bb9710b471f84268d715c05bf13" archimateRelationship="id-36f2df630e4b4f0186f74b6ad57b57a9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-906e92732cff4f29be6157531e11d1b1" source="id-ec7ba0cf7be641f2872308421db58562" target="id-231f04a1eb804a059c5254fc409d4599" archimateRelationship="id-5c01c150be984560bd69ae7eefc21d4c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-49e433cbc2a64cc9bb1158ae6f61e369" source="id-ec7ba0cf7be641f2872308421db58562" target="id-94d6ab912c6b4d218ddef155d57ccb57" archimateRelationship="id-56a0d983fc074b1d8d39449c421e5c19"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-62fd133740f142889cbf6f1ab75fbca5" source="id-ec7ba0cf7be641f2872308421db58562" target="id-d3096c468e644f138223b3258f11e050" archimateRelationship="id-affd53a612144b0c955e571279c79aed"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-23a55c51c0c84841aba3f260bf422152" source="id-ec7ba0cf7be641f2872308421db58562" target="id-f0222706574f4d0aba28e1d114555ac6" archimateRelationship="id-758aa66890b549e0b387e1460d4fd2af"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-23fdc4409e784af7901cf6e86a3dc904" source="id-ec7ba0cf7be641f2872308421db58562" target="id-f943b6ddd75e4a46abe57bafb5f67d55" archimateRelationship="id-748bdd7c2e4f4888b30fa1138273627f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e6f6fa77b77f4f7da51acc5d8adfd04b" source="id-ec7ba0cf7be641f2872308421db58562" target="id-3dfd3ba8bbe842cd9068abd5943bb440" archimateRelationship="id-62ff8fe4194948f2a29b75f9bc1416e6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-754fce5ec62e4599903263937e49ade3" source="id-ec7ba0cf7be641f2872308421db58562" target="id-225196e033174d16bede5c7268398fba" archimateRelationship="id-71756f56535949e78f0ca72deb08ad02"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-89cf2820c8f44ca385332a3a61c1bfae" source="id-ec7ba0cf7be641f2872308421db58562" target="id-045a32ccbfe340848ccb9581f73c68dd" archimateRelationship="id-ef82f2e2d4f144ebbb45e7db1213bb59"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-87caea93a3b64989b9e3b7dd7e0990b6" source="id-ec7ba0cf7be641f2872308421db58562" target="id-9f501c0f23de46fcb4e17b1a46045e5c" archimateRelationship="id-340004400353408983fd314bbe5127ac"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6d9eed540a4240c29774138830f70636" source="id-ec7ba0cf7be641f2872308421db58562" target="id-0937cb54ebde42179019950a0d1c3bc5" archimateRelationship="id-8dcb8046252f4e3fb9679a71e457a969"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-367eaa4c3be04e54baff070b43bf2915" source="id-ec7ba0cf7be641f2872308421db58562" target="id-2dbb089dcf99495bb254f4c63e699705" archimateRelationship="id-3e7e2af753ac46bbac5919af6f9c8c8e"/>
+          <child xsi:type="archimate:DiagramObject" id="id-313f422095364f64831d19fde375caa8" targetConnections="id-bfa8016369fd4a25b9cad6f30b58aa49" archimateElement="id-ee2c743d44164b62954cb647ad9ca93e">
+            <bounds x="420" y="240" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b2f191dcd0f54d63a8cd03e4c56f35aa" targetConnections="id-91096ec5bbaf4df4b36d42a8c261e456" archimateElement="id-6702c070efda4c39afe199af8eba7ceb">
+            <bounds x="214" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5b696bb9710b471f84268d715c05bf13" targetConnections="id-b93a96357a9d48b39c64d807e354a6f4" archimateElement="id-79797bbebaa04266b828a722e79c4390">
+            <bounds x="12" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-231f04a1eb804a059c5254fc409d4599" targetConnections="id-906e92732cff4f29be6157531e11d1b1" archimateElement="id-549c7d1e7a5541369f53e0915c10e549">
+            <bounds x="214" y="240" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-94d6ab912c6b4d218ddef155d57ccb57" targetConnections="id-49e433cbc2a64cc9bb1158ae6f61e369" archimateElement="id-ac9c64ab37604ed8b67f12685db13ea9">
+            <bounds x="420" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d3096c468e644f138223b3258f11e050" targetConnections="id-62fd133740f142889cbf6f1ab75fbca5" archimateElement="id-58a16058413344f1a00bca4f9d08723c">
+            <bounds x="624" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f0222706574f4d0aba28e1d114555ac6" targetConnections="id-23a55c51c0c84841aba3f260bf422152" archimateElement="id-a24772a205af49edb16ce114185c21f9">
+            <bounds x="828" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f943b6ddd75e4a46abe57bafb5f67d55" targetConnections="id-23fdc4409e784af7901cf6e86a3dc904" archimateElement="id-8e50bfcb838d40a8bffb573f51acc409">
+            <bounds x="12" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-3dfd3ba8bbe842cd9068abd5943bb440" targetConnections="id-e6f6fa77b77f4f7da51acc5d8adfd04b" archimateElement="id-930e433629624c6f9d8a5741d5caf3c9">
+            <bounds x="12" y="240" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-225196e033174d16bede5c7268398fba" targetConnections="id-754fce5ec62e4599903263937e49ade3" archimateElement="id-3db3deeeecf3465ba3426e6e4ff61b37">
+            <bounds x="624" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-045a32ccbfe340848ccb9581f73c68dd" targetConnections="id-89cf2820c8f44ca385332a3a61c1bfae" archimateElement="id-5139a74045f94bfcb4474b1692b7c892">
+            <bounds x="214" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-9f501c0f23de46fcb4e17b1a46045e5c" targetConnections="id-87caea93a3b64989b9e3b7dd7e0990b6" archimateElement="id-b8a9911822e7451a88d3a2608383e801">
+            <bounds x="420" y="48" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0937cb54ebde42179019950a0d1c3bc5" targetConnections="id-6d9eed540a4240c29774138830f70636" archimateElement="id-3800689ba59e479886f4a66c752f5032">
+            <bounds x="828" y="144" width="193" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2dbb089dcf99495bb254f4c63e699705" targetConnections="id-367eaa4c3be04e54baff070b43bf2915" archimateElement="id-1aca6764c9354cd5b501ce9c4cb84e01">
+            <bounds x="624" y="240" width="193" height="85"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-219763702e314024a828d43f9503ef1d" archimateElement="id-714b1368612b458a8c82533e9467f8c2">
           <bounds x="516" y="48" width="120" height="74"/>
