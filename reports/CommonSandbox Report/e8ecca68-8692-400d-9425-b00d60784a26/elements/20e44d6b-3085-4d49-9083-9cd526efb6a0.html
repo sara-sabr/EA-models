@@ -46,9 +46,10 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">durable API design will include protection against common API attacks such as buffer overflows, SQL injection and cross site scripting. Treat all submitted data as untrusted and validate before processing. Data validation (for both input parameters and inbound data) should be considered in the service tier but should also extend into the data model itself, with such considerations as data staging, mandatory values and referential integrity constraints as appropriate
+						<textarea id="docsrc" style="display:none">durable API design will include protection against common API attacks such as buffer overflows, SQL injection and cross site scripting. Treat all submitted data as untrusted and validate before processing. Data validation (for both input parameters and inbound data) should be considered in the service tier but should also extend into the data model itself, with such considerations as data staging, mandatory values and referential integrity constraints as appropriate
 See here for the OWASP REST Security Cheat Sheet Project: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/REST_Security_Cheat_Sheet.md
-</div>
+</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
