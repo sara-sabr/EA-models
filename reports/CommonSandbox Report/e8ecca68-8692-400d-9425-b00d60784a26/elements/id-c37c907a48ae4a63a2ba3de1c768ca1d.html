@@ -46,7 +46,7 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">5.2.	Technology Independence
+						<textarea id="docsrc" style="display:none">5.2.	Technology Independence
 
 Name: 	Technology Independence 
 Statement:	Applications are independent of specific technology choices and therefore can operate on a variety of technology platforms. 
@@ -58,7 +58,8 @@ Rationale:
 Implications:
 &#8226;	For SaaS and PaaS there may be limited choices given these services are technology and platform-dependent
 &#8226;	Interfaces will need to be developed to enable interoperability with services deployed under the enterprise architecture
-&#8226;	Middleware will be used to decouple services from specific software implementation.</div>
+&#8226;	Middleware will be used to decouple services from specific software implementation.</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
