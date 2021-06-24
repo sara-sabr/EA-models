@@ -3523,7 +3523,15 @@ RabbitMQ is an open-source message-broker software (sometimes called message-ori
     <element xsi:type="archimate:Node" name="QualiWare Cloud (Consolidated)" id="id-304ccda49c984330afbfd81a3003e46e"/>
     <element xsi:type="archimate:SystemSoftware" name="QualiWare 10.4 (System Software) (copy)" id="id-07b2de61e6f74308935e9fe2986c7538"/>
     <element xsi:type="archimate:SystemSoftware" name="QualiWare 10.X+ (System Software)" id="id-34e322e3f7174cd4b71515abe929f656"/>
-    <element xsi:type="archimate:Device" name="SAV-D" id="id-cbabb4cc8c4b433288084781380b5b7a"/>
+    <element xsi:type="archimate:Device" name="SAVE-D" id="id-cbabb4cc8c4b433288084781380b5b7a">
+      <documentation>Secure Access Virtual Environment - Desktop&#xD;
+https://dialogue/proj/ITCD-RMTI/APM-GPA/Site%20Pages%20Library/CSD_SolutionView.aspx?SolutionID=947&#xD;
+Description (Purpose of business)    &#xD;
+ SAVE-D is a cloud-based environment of domain-connected virtual machines for desktop use.  It provides a connectivity option for users who may not have access an ESDC physical platform (laptop/desktop/VPN)</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyInterface" name="QualiWare QLM (Technology Interface)" id="id-469111f5f582479da42c2c918f887967">
+      <documentation>QualiWare Lifecycle Manager</documentation>
+    </element>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -8799,10 +8807,11 @@ Application architecture practices must evolve significantly for the successful 
     <element xsi:type="archimate:ServingRelationship" id="id-cdc2453d00e04b269ecdbe6323288f1f" source="id-41fb19e3a36747edb814fb85ee821e77" target="id-8b6137f6406b42ffabb4a2a4ebf29dc6"/>
     <element xsi:type="archimate:ServingRelationship" id="id-9d9b8fee58404281b794db89980afae5" source="id-0f3041c8b5a94da5b89d9442b76a16c9" target="id-8b6137f6406b42ffabb4a2a4ebf29dc6"/>
     <element xsi:type="archimate:ServingRelationship" id="id-ba183b6d1ade4d14b19d8ea24d7b3042" source="id-8b6137f6406b42ffabb4a2a4ebf29dc6" target="id-d3e17c1d80664ed3949979b32c33abee"/>
-    <element xsi:type="archimate:FlowRelationship" id="id-0030be68f24645c7b0c2f1ace9c6400c" source="id-cbabb4cc8c4b433288084781380b5b7a" target="id-befe57b9964b4a4bb87c8c99209d18d6"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-0030be68f24645c7b0c2f1ace9c6400c" source="id-cbabb4cc8c4b433288084781380b5b7a" target="id-469111f5f582479da42c2c918f887967"/>
     <element xsi:type="archimate:FlowRelationship" id="id-9fa6dffb18bb491899b7b4e447ddaec8" source="id-41fb19e3a36747edb814fb85ee821e77" target="id-cbabb4cc8c4b433288084781380b5b7a"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-745ef9b0b72c4c4fafc62b2adc04ddcf" source="id-4342a646eed241ce920603e82c783e32" target="id-41fb19e3a36747edb814fb85ee821e77"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-36212dd7c739439f838723abb90e3518" source="id-5cd6e57be4d1451e86f22144e882ffe3" target="id-d1d268416d074cefab54c4ef7fd471b9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-cc447c92936a452e89c5f7b0ac7eba09" source="id-befe57b9964b4a4bb87c8c99209d18d6" target="id-469111f5f582479da42c2c918f887967"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -11006,13 +11015,17 @@ Date modified: 2021-05-12</documentation>
           <bounds x="384" y="195" width="313" height="370"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-89550d169ca14161883d590b4632162a" source="id-f1a15e9b0d2d4ff18f26fb1afc524a13" target="id-e6d3d7d71aef4a10ae02054aefabc8e8" archimateRelationship="id-54839e36079f4401a8452d95f3926b00"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-ed155d1098834ad98dcb44d9ff2db383" source="id-f1a15e9b0d2d4ff18f26fb1afc524a13" target="id-afa758eb2f4949d38a326cd2deae1b22" archimateRelationship="id-ea49ad733daf4e9eb28f4eaef3b1496f"/>
-          <child xsi:type="archimate:DiagramObject" id="id-e6d3d7d71aef4a10ae02054aefabc8e8" targetConnections="id-1c763e00d55d4e2a8f15625f5901261d id-89550d169ca14161883d590b4632162a id-dc31886a8d8243239f67f46f0ea2307e" archimateElement="id-befe57b9964b4a4bb87c8c99209d18d6">
+          <child xsi:type="archimate:DiagramObject" id="id-e6d3d7d71aef4a10ae02054aefabc8e8" targetConnections="id-1c763e00d55d4e2a8f15625f5901261d id-89550d169ca14161883d590b4632162a" archimateElement="id-befe57b9964b4a4bb87c8c99209d18d6">
             <bounds x="24" y="36" width="253" height="133"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-22c9ebca90934c42ab014748a44ea61a" source="id-e6d3d7d71aef4a10ae02054aefabc8e8" target="id-fa9dc0216a57471099f0822c505e1159" archimateRelationship="id-706e01c735054e5395d9de8b28abeb48"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-2a011372a1b247b3bf6544bb14815e2b" source="id-e6d3d7d71aef4a10ae02054aefabc8e8" target="id-afa758eb2f4949d38a326cd2deae1b22" archimateRelationship="id-190b98a04926432a83939dd7b11bcc51"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2e2e8c9fc19c474381ecb1769b57f00d" source="id-e6d3d7d71aef4a10ae02054aefabc8e8" target="id-52232e3584e64070a44f2acf23b81ef5" archimateRelationship="id-cc447c92936a452e89c5f7b0ac7eba09"/>
             <child xsi:type="archimate:DiagramObject" id="id-fa9dc0216a57471099f0822c505e1159" targetConnections="id-22c9ebca90934c42ab014748a44ea61a" archimateElement="id-6dab81810283470f9f877480b7ac224c">
-              <bounds x="60" y="48" width="120" height="55"/>
+              <bounds x="120" y="48" width="108" height="55"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-3783072f65c84b29acb8496f0ed95c8e" source="id-fa9dc0216a57471099f0822c505e1159" target="id-09f27ff2820546e585582dd97e9c900e" archimateRelationship="id-0ed4b1ce7e0d47aca822f55ff0513bdc"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-52232e3584e64070a44f2acf23b81ef5" targetConnections="id-2e2e8c9fc19c474381ecb1769b57f00d id-dc31886a8d8243239f67f46f0ea2307e" archimateElement="id-469111f5f582479da42c2c918f887967">
+              <bounds x="7" y="48" width="109" height="55"/>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-afa758eb2f4949d38a326cd2deae1b22" targetConnections="id-2a011372a1b247b3bf6544bb14815e2b id-ed155d1098834ad98dcb44d9ff2db383 id-aa133cb968ed42a8b8535fa39dc74bb9" archimateElement="id-844005f576d0490cae2e75933c5bf34d">
@@ -11106,8 +11119,8 @@ CloseReach anticipates having a Protected B enclosure available in early Septemb
           <sourceConnection xsi:type="archimate:Connection" id="id-e4e4f03aedf64fca86158074978a2a58" source="id-e9ee3a7419444983bd05de5d5c441257" target="id-8846635e7fa44f58b5ebe7f8ceaebd4a" archimateRelationship="id-4c29a99407904ff79c138c52f44383c8"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-0459b9e839b443468f490ea332f1fec7" targetConnections="id-6ed03d5b80934eb59a773b4fd9e6612e" archimateElement="id-cbabb4cc8c4b433288084781380b5b7a">
-          <bounds x="240" y="248" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-dc31886a8d8243239f67f46f0ea2307e" source="id-0459b9e839b443468f490ea332f1fec7" target="id-e6d3d7d71aef4a10ae02054aefabc8e8" archimateRelationship="id-0030be68f24645c7b0c2f1ace9c6400c"/>
+          <bounds x="251" y="274" width="61" height="29"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-dc31886a8d8243239f67f46f0ea2307e" source="id-0459b9e839b443468f490ea332f1fec7" target="id-52232e3584e64070a44f2acf23b81ef5" archimateRelationship="id-0030be68f24645c7b0c2f1ace9c6400c"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-e108ddca3dd64fbdbd254d31bec01e0e" archimateElement="id-9c81ee0be2e84f7ea4785e6da7bfcce9">
           <bounds x="200" y="132" width="120" height="75"/>
