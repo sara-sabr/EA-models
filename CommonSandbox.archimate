@@ -2498,6 +2498,147 @@ Christiane Faucher (christiane.faucher@hrsdc-rhdcc.gc.ca)</documentation>
     <element xsi:type="archimate:Product" name="EA Horizons Strategy Outcomes (Product)" id="id-b2c0b1b595c2499583c1eb26bb8334d5">
       <documentation>The EA Horizons Strategy Outcomes [English only] illustrates the strategic goals of each horizon as well as the goals of each tenet across the horizons.</documentation>
     </element>
+    <element xsi:type="archimate:BusinessObject" name="Structured Data" id="id-7e8524d3b6e34b2fb95caf8ba8a67a2f">
+      <documentation>Data that can be both searched and processed by machine.&#xD;
+&#xD;
+Structured data typically resides in databases, including spreadsheets, and is used for both transaction and analytical processing. The latter normally conforms to an enterprise-wide semantics and syntax that transcends specific business processes and functions and includes the representation of Knowledge (e.g., decision trees and rule bases). This data model or structure is defined prior to the ingestion of associated data.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Text" id="id-ae659b9012ee4eb9a5bc566c4849835c">
+      <documentation>A human-readable sequence of characters&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Spreadsheet" id="id-895ecacc7c164ca9ae2e186564f4f3b3">
+      <documentation>An electronic document in which data is arranged in the rows and columns of a grid and can be manipulated and used in calculations</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Image" id="id-683fd9ecaef54ec98dbe2be4828dd0ae">
+      <documentation>A picture that has been created or copied and stored in electronic form (e.g., JPEG, GIF)</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Video" id="id-458eac04bf3841caae53543067fbd4b5">
+      <documentation>A visual media product featuring moving images</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Voice" id="id-8bc534c8d652482a8aeb466e325e10dd">
+      <documentation>Refers to voice communications that can be transcribed and analyzed to discover customer insights</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Social" id="id-4dc57b75678343fd8b65a99775fe1ec0">
+      <documentation>Information from social networks that show how users share, view or engage with content in addition to data individuals create that is knowingly and voluntarily shared by them </documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Web Data" id="id-9ae04105d5274f39934f3d4120277226">
+      <documentation>Data extracted from websites</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Cloud Licensed" id="id-a5a7459ec08849d3b6c4cc97b41a7cac">
+      <documentation>A resource, such as applications and storage, which is available online through a licensing agreement. </documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Cloud: Public Open" id="id-73a372a374ef4e208f3e1fb74aa744d3">
+      <documentation>A resource, such as applications and storage, which is available online to the general public. </documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Cloud: Other Core Systems" id="id-0be045c0aa314a839cbd7a553cd2edb6">
+      <documentation>ESDC data and information hosted externally (e.g., Canada Student Loan Program)</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Ingest" id="id-c54504047dee478f8530d63dda485adf">
+      <documentation>Enables the access, integration, and preparation of data from source systems and transformation for downstream use</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Data Quality" id="id-7b2fc4db21dc4b5ab76ff75f7737a1a7">
+      <documentation>Data Quality - Profiling, cleansing, enriching, certifying, and correcting of data to improve quality and consistency for fit for a purpose business requirements</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Batch / ETL" id="id-42d41d35dc4b45b693d24550af0f7eb8">
+      <documentation>Extracting, processing, and loading data in bulk, batch data movement includes two styles: extract-load-transform (ELT) and extract-transform-load (ETL). Batch data movement often combines with data cleaning processes, such as reconciling semantic disparity, merging master data entities or correcting erroneous data</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Message" id="id-4fa685ba69bb46528abd4f59f7dd18f0"/>
+    <element xsi:type="archimate:BusinessFunction" name="Syncronization" id="id-18b67f9fedcc4d689058d79a728bd732">
+      <documentation>Typically through change data capture (CDC), this process replicates and synchronizes data among database management systems (DBMSs). Schemas and other data structures in DBMS may be identical or slightly different. This pattern keeps operational data current across multiple systems</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Persist and Access" id="id-20c7f8ac33f540828f17b6a772dea55a">
+      <documentation>Stores the persistent data, metadata, and models that provide the analytical capabilities and orchestrate the operation of the architecture&#xD;
+Stores persistent and transient information, of prepared and accessible business information that are ready for use by respective use cases</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Repository (Certified)" id="id-0f6cab87cc724ba58583b919b9ca07d7"/>
+    <element xsi:type="archimate:BusinessFunction" name="Enterprise Data Warehouse" id="id-b7dfaa105244450283bc94e61afcecd2">
+      <documentation>A data warehouse is a storage architecture designed to hold data extracted from transaction systems, operational data stores and external sources. The warehouse then combines that data in an aggregate, summary form suitable for enterprise-wide data analysis and reporting for predefined business needs</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Repository Data Mart" id="id-5436299f77a048d0be66d52077c48eaf">
+      <documentation>Special-purpose data marts that are standalone are oriented to a specific business line within an organization</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Dependant Data Mart" id="id-4e5fd24f34d74d2bad3eadc5e0ee21b1">
+      <documentation>Dependent data marts are a subset of the data warehouse and are usually oriented to a specific business line</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Conditional Data Mart" id="id-a0208959f1e94eb8ba1f8db598330744">
+      <documentation>Conditional data marts require data feeds from the data warehouse and other source systems to serve a specific business need</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Data Lake ( Non-Certified )" id="id-c71d9d6eadca48d0a2b4869a19292ace">
+      <documentation>A data lake is a collection of storage instances of various data assets. These assets are stored in a near-exact, or even exact, copy of the source format. </documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Virtualization / Federation" id="id-e2ad863fc01e4ef2b92575df77e93285"/>
+    <element xsi:type="archimate:BusinessFunction" name="Integration" id="id-2351a9351c3f43aa813d87db62998479">
+      <documentation>Instead of physically moving the data, data federation/virtualization executes queries against multiple data sources to create virtual integrated views of data on the fly. DV/DF requires adapters to various data sources, a metadata repository and a query engine that can provide results in various ways (for example, as an SQL row set, XML or a Web services interface)</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Delivery" id="id-6117c01c0a1b41d2a6abb909ed6731db">
+      <documentation>Leverages the intelligence of Data Virtualization software to access data sources directly to create an optimal execution path</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="In Memory Database" id="id-1d23f61275ef44bf88aa2a127650a114">
+      <documentation>Refers to in-memory database to create virtual integrated view of data on the fly. This may require physically moving data to an environment (e.g., SAP Hana) before conducting data virtualization</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Delivery" id="id-2ce6f2e34d6d4c839b4756df632a7b59">
+      <documentation>Enables the analysis of data and delivery to the ultimate consumption users</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="Scheduled Report" id="id-f61c78737adc49319b0580d815adf6bc">
+      <documentation>Ability to create highly formatted and print-ready reports on a regular basis</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="Scorecard" id="id-4097e07bb0ef4aaf8e8796635697cafa">
+      <documentation>Scorecards help organizations measure and align the strategic and tactical aspects of their businesses, processes and individuals via goals and targets</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="Real Time Reporting" id="id-d2b0f692b6804690a0f2892f2d909879">
+      <documentation>Ability to report and conduct analysis using real-time dat</documentation>
+    </element>
+    <element xsi:type="archimate:Product" name="Alert" id="id-92989fecf9784cba898f128b29cc92ff">
+      <documentation>Alertsare notifications for data thresholds for (e.g., performance)</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessInterface" name="Dashboard" id="id-fb4a3b6c46734f04b3a546c5e3747b63">
+      <documentation>Dashboards are a style of reporting that graphically depicts operational or strategic information</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Datasets" id="id-b87204012c184324b8dbf9657ea12a0d">
+      <documentation>Ability to deliver flat filesfor downstream analytics</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessInterface" name="Self Service" id="id-2f0726d763e84b90ab1d20b8e8108f90">
+      <documentation>Refers to the capability that allows business users to query data and create personalized reports in a data warehouse or data marts environment</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Visualization" id="id-7e7323adb81348418148f673dc57887e"/>
+    <element xsi:type="archimate:BusinessService" name="Discovery" id="id-338d7c043825418585dd265b5bf3e192"/>
+    <element xsi:type="archimate:BusinessInterface" name="Web API" id="id-f6f03262b65a418aa4c008fb03e75888"/>
+    <element xsi:type="archimate:BusinessService" name="Advanced Analytics" id="id-d9ee28c1a8b74fe88fc94561cbe60af3"/>
+    <element xsi:type="archimate:BusinessRole" name="Decision Model Management" id="id-95c36297458e4d639d60ff85219417a1">
+      <documentation>Decision model management describes the systems used by data scientists and business analysts as they configure analytics models and rules to execute inside the data reservoir. Advanced analytics and data mining is managed from decision model management. These teams need access to samples of the data. This data must be formatted for analysis tools and the environment must have sufficient performance capacity to handle intense, lumpy workloads from the mining and testing processing.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Management" id="id-2126609d22b3489dbecb963a20662e18">
+      <documentation>Consists of policies, rules or standards that govern which data is collected, and how it is stored, arranged, integrated, and put to use in data systems and across the enterprise</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Data Governance" id="id-15be408b7631415eaa344ee0f234e9a0">
+      <documentation>Data governance is a decision-making framework for assigning rights, responsibilities and authorities to ensure that an enterprise, its regulators and its stakeholders receive reliable, authentic, accurate and timely data</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Governance, Risk and Compliance" id="id-7a7640d427aa433096f3d5df80143cf0">
+      <documentation>The information governance, risk, and compliance team use a reporting environment to demonstrate compliance in industry regulations and business policies. Some of these policies apply to the management of information. These policies are defined and managed in the data reservoir’s catalog.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Data Reservoir Operations" id="id-33af757f0dfa4f1cbad1ffe4ea336764">
+      <documentation>The data reservoir operations team maintains the data reservoir behind the scenes</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Data Quality Analyst" id="id-9d2510149ee343cfbbf52126a16dafeb"/>
+    <element xsi:type="archimate:BusinessRole" name="Infrastructure Operator" id="id-4e725aa0b35745a8b1bfe2a1ddecb957"/>
+    <element xsi:type="archimate:BusinessRole" name="Enterprise Architect" id="id-8b3d7dda05ec4cf0aeb08782afc344e1">
+      <documentation>BusinessRole:ArchiMat</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Information Steward" id="id-09ade88da70846038a01df41b20fbed0"/>
+    <element xsi:type="archimate:BusinessRole" name="Integration Developer" id="id-28df1fd71e6f46d281e9ca95a74075e5"/>
+    <element xsi:type="archimate:BusinessFunction" name="Master Data Management" id="id-8fb41176880749dc9577f0cfae350e57">
+      <documentation>A technology-enabled discipline in which business and IT work together to ensure the uniformity, accuracy, stewardship, semantic consistency and accountability of the enterprise's official shared master data assets. Master data is the consistent and uniform set of identifiers and extended attributes that describes the core entities of the enterprise including customers, prospects, citizens, suppliers, sites, hierarchies and chart of accounts.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Meta Data Management" id="id-efd797a69d2f4a02b6aefe6c26c71cd9">
+      <documentation>A technology-enabled discipline in which business and IT work together to ensure the uniformity, accuracy, stewardship, semantic consistency and accountability of the enterprise's official shared metadata. Metadata is a set of data that describes and gives information about other data.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Information Curator" id="id-7cec8bb835604ba4ba8bd7cccbda713d">
+      <documentation>An individual or group of people in the organization that are maintaining the catalog information. This activity includes advertising new sources, enhancing and categorizing existing data descriptions, and helping people locate the data they need.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessEvent" name="Privacy and Security" id="id-0ab9494dae2f4e5c8e0cd7aaae518103">
+      <documentation>Privacy and Security Management involves the following: prioritizing risk-mitigating actions based on the data's sensitivity levels and manner of use, document clearly personal information processing purposes and subsequently used data, and clarifying roles and responsibilities in the various processes involved.</documentation>
+    </element>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -2753,6 +2894,96 @@ Recommendation 41: Enforcement segregates sensitive investigations that follow a
     <element xsi:type="archimate:ApplicationFunction" name="Feature Management" id="ae6ebf01-e6a3-4ce0-b748-1072275c1937"/>
     <element xsi:type="archimate:ApplicationService" name="OneGC Platform (Application Service)" id="id-035d7d82c8e74e30a5331780f8ec799f">
       <documentation>Since the 2018–2022 DOSP, we have introduced important changes to our digital governance, policy suite and management practices to set the foundation for a digital government across all ministries. We are on track to launch the OneGC platform, which will allow individuals and businesses to use a single identity and password to access federal government services through a single window on Canada.ca.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Data Ingestion" id="id-d92d554749e14f25ab709659b20fbdfb">
+      <documentation>As new data is imported into the data reservoir, the data ingestion processes ensure the data is transformed, logged, and copied into the appropriate data repositories.&#xD;
+The ability to easily import data from a multitude of sources is one of the selling points of the data reservoir. You want to be able to capture anything easily, and to allow decisions about how that data can be used later in the process. That being said, information needs to be incorporated into the reservoir in a controlled manner. During the process, metadata must be captured. It is also important to ensure appropriate separation between other systems and the reservoir to ensure an issue in one does not impact both. The Information Ingestion component is responsible for managing this. A staging area will often be used as part of the process to support loose coupling and ensure that delays in processing will not affect the source system.&#xD;
+The information ingestion component will apply appropriate policies to the incoming data, including masking, quality validation, deduplication, and will push appropriate metadata to the reservoir catalog.&#xD;
+Data with a known structure can be stored in a more structured repository such as a relational database, whereas less structured or mixed data can end up in a file system such as HDFS.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Information Broker" id="id-7d6412b420ed49e1abf6d68131c023a7">
+      <documentation>The information broker is a runtime server environment for executing the integration processes (such as the information deployment process). These processes move data in and out of the data reservoir and among the components within the reservoir.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Harvested data" id="id-018bfd3028da47698ecfbdfc7452f5af">
+      <documentation>Harvested data includes data from other systems that has been extracted and is being transformed, consolidated, aggregated, and analyzed to create new insight</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Reporting Data Marts" id="id-ee84ef9eb34d48aeb3b336002c2de325">
+      <documentation>The reporting data marts provide departmental/subject-oriented data marts targeted at supporting frequent line of business reports. The data is often structured as a dimensional model such as star or snowflake, and are easily used by common business reporting packages. Data in marts will be updated incrementally as new data is made available. typically from an information</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Landing Zone" id="id-88e7b7e9cadc45baa448af7d6f6627af">
+      <documentation>Landing pad areas are used to manage movement of data into, out of, and around the Logical Data Warehouse, and to provide appropriate decoupling between systems.  The implementation can include database tables, directories within Hadoop, message queues, or similar structures</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Deposited data" id="id-7d5e7da2cce64dfa8acf30fcceb69d8c">
+      <documentation>Deposited data are information collections that have been stored by the data reservoir information users. These information collections may contain new types of information,  analysis results, or notes.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Historical data" id="id-5ea5df7701224379a32d8ed0f3ccbe59">
+      <documentation>Historical data contains read-only records of historical activity</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Harvested data" id="id-1b83cdf2b9654983a7d8200e6c17be8e">
+      <documentation>Harvested data includes data from other systems that has been extracted and is being transformed, consolidated, aggregated, and analyzed to create new insight</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Reporting" id="id-280b67e2a13446359c683aa1a5e42a61"/>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Simple, Ad Hoc Discovery and Analysis" id="id-c8a89be664184d47b3de60406a241bd4"/>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Real-time Analytics" id="id-72525175d1b040339a074a3b795262eb">
+      <documentation>The data reservoir could process events in real time and produce insight that could be stored in the data reservoir’s repositories, and published externally for other systems to act upon.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Streaming Analytics" id="id-fcc66fce1cbc491e901db77bec0f1ce6">
+      <documentation>Streaming analytics is the component responsible for running the analytics on streaming data in real-time.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Event Correlation" id="id-5493e9e801ef4a2bb0c63ba4da929f0b">
+      <documentation>Event correlation provides for complex event processing based on business events that can occur over an extended period and can correlate these events to develop additional insight. Some of these events can come from insight obtained by the streaming analytics component.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Real Time Interfaces" id="id-f7421453aeff4191b003db6accf2e5d5">
+      <documentation>These systems could also make API calls to the data reservoir to access/update data or insight. These APIs might interact with a single data repository or may federate data from multiple repositories. Service interfaces provide the ability for outside systems to access data in the reservoir repositories, and for systems within the reservoir to query data from both inside and outside. These interfaces can be REST web services, SQL style through JDBC, or various other forms</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Publishing Feeds" id="id-07c494e17ca8491aac39ac2e5835b6c8">
+      <documentation>Publishing feeds are responsible for distributing data from within the data reservoir to other systems external to the reservoir. This can include other analytical systems, other data  reservoirs, and systems of record, but all are outside the governance control of the supplying data reservoir. Lineage for the publishing process is captured, but this might be the furthest point lineage reports are available to. Publishing feeds are responsible for distributing data from within the data reservoir to other systems external to the reservoir. This can include other analytical systems, other data reservoirs, and systems of record, but all are outside the governance control of the supplying data reservoir. Lineage for the publishing process is captured, but this might be the furthest point lineage reports are available to. This data can be triggered by upstream changes, or run on a schedule or on demand from a user request. A subscription table is used to manage the list of sources and the destinations they need to be published to. The destinations can involve populating a table, creating files, or messages to be posted to a queue. During the publishing process, data transformation can occur, for example by resolving code values to alternate representations.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="View Based Interaction" id="id-204e71b777d84262b06e5fd6a8931f82">
+      <documentation>View-based interaction provides access to data in the data reservoir (subject to security permissions) for line-of-business teams that want to perform ad hoc queries, search, simple analytics, and data exploration. The structure of this information has been simplified and it is labeled using business relevant terminology.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Analytic Tools" id="id-2cf321143a924bbb98c45408375da510">
+      <documentation>Data scientists usually have a solid foundation in computer science, mathematics, and statistics, rather than substantial business knowledge. Their role is to explore different kinds of data to look at patterns so that they can understand the meaning of relationships between sets of data. They often have a thirst for new information sources to develop new ideas on how to gain value from combining that data with other sources. The tools used by the data scientists include capabilities for preparing and transforming data for analysis. They typically work with data in its original (raw) format. Data can be accessed through the creation of a sandbox copy of the data for the data scientist to use because the data scientist will subset and transform the data as part of their work. Their activity should not affect the shared version of the data in the data reservoir. The sandbox will be accessible as an area in a file system such as Hadoop Distributed File System (HDFS) or accessible by using common mechanisms such as Java Database Connectivity (JDBC) or Open Database Connectivity (ODBC). As the data scientists explore samples of this data, they will develop analytical models and try them out against test data. Those models can then be deployed to refinery services within the data reservoir or to operational systems outside the data reservoir.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Raw data interaction" id="id-2302f3e9db784a8cb1820b09be791cb0">
+      <documentation>Raw data interaction provides access to most of the data (security permitting) in the data reservoir for advanced analytics. It is responsible for masking sensitive personal information where appropriate.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Analytical Insight Applications" id="id-47f4cfda2cc944bc970ec53c972590e4"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Information Integration and Governance" id="id-9fdf9b3103eb4693b222e2bf39fea053">
+      <documentation>Information integration and governance provide the libraries to support different provisioning, transformation, and governance capabilities that are used in the data reservoir, particularly the data refineries.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Operational Governance Hub" id="id-dee022d3da3540898bbf0533debbfcfc">
+      <documentation>A repository and applications for managing the information flow and information governance within the data reservoir. This information node supports the metadata service.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Operational Governance Component" id="id-2e8441768911438bb72448e5c802b9ea"/>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Workflow" id="id-f969c667c96e42ac8d10718d4490a470">
+      <documentation>Workflow consists of a server running stewardship processes that coordinate the work of the individuals responsible for fixing any problems with the data in the data reservoir. Successful use of a data reservoir depends on various processes involving systems, users, and administrators. For example, provisioning new data into the data reservoir might involve an information curator defining the catalog entry to describe and classify the data. An information owner must approve the classifications, and an integration developer must create the data ingestion process. Workflow coordinates the work of these people.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Monitor" id="id-8206283287f04702b89e1f924f9b12fc">
+      <documentation>The monitor watches over the overall function and responsiveness of the data reservoir to ensure a consistent working environment. The data reservoir has many monitor components deployed that record the activity in the data reservoir along with its availability, functionality, and performance. The management of any alerts that the monitors raise can be resolved using workflow.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Shared Operational Data" id="id-65cb7951ad8643c29b33836b5933a6af">
+      <documentation>Shared operational data contains consolidated operational data that is being shared by multiple systems. The data reservoir may host the master copy of this data, or a reference copy of this data supplied from one or more operational systems.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Catalog Interfaces" id="id-45571b74a2034a0d9cab6c57c0f0ddd0">
+      <documentation>The catalog interfaces provide information about the data in the data reservoir. The catalog includes details of the information collections (both repositories and views), the meaning and types of information stored, and the profile of the information values within each information collection.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationInterface" name="User Interface" id="id-7ec3355418f445c79b75f76e7a338e96">
+      <documentation>ApplicationInterface:ArchiMate</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationInterface" name="API" id="id-1b3ccf25869948a6b6b2be9ff35f1d72"/>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Descriptive Data" id="id-de1c1ece1f5b4920b7b3038bfda75733">
+      <documentation>The descriptive data is sometimes referred to as metadata because it describes the data in the data reservoir. Descriptive data provides the definitions used to create information views and access the data in the data reservoir using the information view. http://www.redbooks.ibm.com/redpapers/pdfs/redp5120.pdf</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Descriptive Data Catalog" id="id-68804171cb7d41fdb29a899e3086cd4c">
+      <documentation>The catalog is a repository and a set of applications used to maintain details about the data in the data reservoir.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Descriptive Data Component" id="id-f47358cbeb5640e6ae181fa5f04321a9"/>
+    <element xsi:type="archimate:DataObject" name="Information Views" id="id-b46e29e1760c4b6aa9ce042c359ebcc2">
+      <documentation>Definitions of simplified subsets of information stored in the data reservoir repositories. These views are created with the information consumer in mind.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Guards" id="id-b426a75626e649b59b747380c9b5981b">
+      <documentation>Guards are controls within the reservoir to enforce restrictions on access to data and related protection mechanisms. These guards can include ensuring the requesting user is authorized, data masking being applied, or certain rows of data being filtered out.</documentation>
     </element>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
@@ -3594,6 +3825,50 @@ Description (Purpose of business)    &#xD;
     <element xsi:type="archimate:TechnologyInterface" name="QualiWare QLM (Technology Interface)" id="id-469111f5f582479da42c2c918f887967">
       <documentation>QualiWare Lifecycle Manager</documentation>
     </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="IIG Code Hub" id="id-f374503d8d73496f9cb74deb0d69d32e">
+      <documentation>The code hub is a repository of common code tables and mappings used for joining information sources to create information views</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Staging Areas" id="id-40764a12981d48eeada09caa7d893039">
+      <documentation>A server supporting the staging areas that are used to move information around the data reservoir.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Information Warehouse Repository" id="id-b81792dd73104c17b09e4a6393235ff5">
+      <documentation>repository optimized for high-speed analytics. This data is structured and contains a correlated and consolidated collection of information.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Operational History Repository" id="id-7d050b2eb67c4c37bc4dfda2059c44a6">
+      <documentation>A repository providing a historical record of the data from an operational application. This data is stored in the same format and with the same level  of quality as is found in the application itself. This approach makes it possible to use this data to investigate activity around a specific application.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Audit Data Repository" id="id-2c34a2fd1330402e8293e64d156bd98e">
+      <documentation>A repository used to keep a record of the activity in the data reservoir. It is used for auditing the use of data and who is accessing it, when, and for what purpose</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Deep Data Repository" id="id-faa6b1207fe849f8b284528388493a30">
+      <documentation>A repository holding a copy of most of the data in the data reservoir. It provides a place where raw data can be located for analysis. The data may be annotated, linked, and consolidated in deep data. Data may be mapped to data structures after it is stored, so effort is spend as needed rather than at the time of storing. This repository is designed for flexibility, supporting both high volumes and variety of data</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Object Cahce" id="id-154c3929bd1f4aa38afcdfece10be408">
+      <documentation>To improve performance and availability to applications, some views of data can be made available through a cache. The object cache is particularly suited for systems of engagement applications because it is document-oriented, typically using the JSON format.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="VBI SandBoxes" id="id-1320346b06d949ad8dd358b0cc6f56f7">
+      <documentation>A sandbox is an area of personal storage where a copy of requested data is placed for the requester to use. These sandboxes are the same as the sandboxes in raw data interaction. They are populated from the simplified information collections designed for business users.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Information Access and Feedback" id="id-6cf4191a293a46649002adb5b5a7b2de">
+      <documentation>Self-service provisioning helps to get information to business users with minimal delay, known characteristics, and without any additional IT involvement. To support this and improve the usefulness of the reservoir, users are able to request access to additional data and feedback on the data within the reservoir through comments, tagging, rating, and other collaboration. This can be done through interfaces such as the catalog as they search for data, or through other collaboration tools and social media. Information views provide simplified subsets of the data reservoir repositories that are labeled with business friendly terms.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Advanced Analytics Sandboxes" id="id-e5817af7df134d128ad43c36bab7afd1">
+      <documentation>A sandbox is used to provide a user with a copy of data from selected repositories that allows for a greater level of isolation from changes to the underlying data and to limit the workload impact on the rest of the reservoir</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Operational Governance Repository" id="id-e57158a6c8054c74a58b22845c1e34c0"/>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Content hub" id="id-1e7fae2247d14aefa6681b342f636eab">
+      <documentation>A repository of documents, media files, and other content that has been managed under a content management repository and is classified with relevant metadata to understand its content and status.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Asset hub" id="id-33670b5e88f94544879690cccad7d7d4">
+      <documentation>A repository for slowly changing operational master data (information assets) such as, customer profiles, product definitions, and contracts. This repository provides authoritative operational master data for the real-time interfaces, real-time analytics and for data validation in data ingestion. If it is a reference repository of the operational master data management (MDM) systems it might also be extended with new attributes that are maintained by the reservoir. When this hub is taking data from more than one operational system, there may also be additional quality and de-duplication processes running that improve the data. These changes are published from the asset hub for distribution both inside and outside the reservoir.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Activity hub" id="id-66d4ca5eff514486980fdfd2fe074006">
+      <documentation>A repository for storing recent activity related to a master entity. This repository is needed to support the real-time interfaces and real-time analytics. It may be loaded through the data ingestion process and through the real-time interfaces. However, many of its values were derived from analytics running inside the data reservoir.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Code Hub" id="id-252f833667de404996731401829f593d">
+      <documentation>A repository of common code tables and mappings that are available through the data reservoir's application programming interfaces (APIs).</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyCollaboration" name="Descriptive Data Repository" id="id-778b0e495e40422f807b32c4d1f7e417"/>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -7321,6 +7596,7 @@ As EA practitioners, we need to remember that we are master change agents, and i
     </element>
     <element xsi:type="archimate:Grouping" name="&quot;Lean&quot; and &quot;Agile&quot; Expected Outcomes (Grouping)" id="id-24cd67810cd34a0eae1a3223045633d6"/>
     <element xsi:type="archimate:Grouping" name="Lean and Agile Architectural Philosophy (Grouping)" id="id-380efd0e43d44293aab2b61fcdf574d4"/>
+    <element xsi:type="archimate:Grouping" name="Sources" id="id-d627f26071434f30a9280ca08bae35f2"/>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e307ac9a-b3a7-4aa5-9133-6cf506203141" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="b29c1bc0-9c06-4484-9748-d797806e08b7"/>
@@ -11814,6 +12090,319 @@ The Enterprise Architecture (EA) Strategy and accompanying Roadmap detail the mu
 The EA Strategy and Roadmap represent a collaborative effort among all the architecture domains, and consultation with key stakeholders, to mature, given the Government of Canada’s Directive on Service and Digital and ESDC’s Transformation Agenda. The evolution of EA and corresponding paradigm shift to Lean and Agile methodologies will happen across three horizons over the next seven years.&#xD;
 &#xD;
 The development and execution of the EA Strategy and Roadmap began at the end of the 2019-2020 fiscal year and continues to date, not withstanding the challenges of COVID-19. In fact, in the spring of 2020, coordinators of the Strategy and Roadmap adjusted them in response to the pandemic. This resulted in a new focus of the first phase of the Roadmap, being those activities central to either enhancing and expanding EA capacities, or innovating and driving EA’s Lean and Agile paradigm shift.</documentation>
+      </element>
+    </folder>
+    <folder name="BI/A Platform" id="id-c48a4fd6c1e44c37a9353aaba19e0b4e">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="BI/A Layered" id="id-195779805d944059a94ab5f8ec20c26b">
+        <child xsi:type="archimate:DiagramObject" id="id-b95a958437824021aa7a85e7fa84001e" textAlignment="1" archimateElement="id-d627f26071434f30a9280ca08bae35f2">
+          <bounds x="19" y="6" width="146" height="696"/>
+          <child xsi:type="archimate:DiagramObject" id="id-ff7998b2804c4bf5ac8478ac7686511c" archimateElement="id-7e8524d3b6e34b2fb95caf8ba8a67a2f">
+            <bounds x="15" y="30" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-501e40ca9b7e435480c436b0d088e5cd" archimateElement="id-ae659b9012ee4eb9a5bc566c4849835c">
+            <bounds x="15" y="90" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-bf50b40cbbfe4e039a8f70a22c03de87" archimateElement="id-895ecacc7c164ca9ae2e186564f4f3b3">
+            <bounds x="15" y="150" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-9a17e45e22ef4b3e963697be28bc3273" archimateElement="id-683fd9ecaef54ec98dbe2be4828dd0ae">
+            <bounds x="15" y="210" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-50bfbf6e28864a3a956f2efdff361baf" archimateElement="id-458eac04bf3841caae53543067fbd4b5">
+            <bounds x="15" y="270" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-6574249ad8a640ae8e4b55cb48f6ff4b" archimateElement="id-8bc534c8d652482a8aeb466e325e10dd">
+            <bounds x="15" y="330" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d0688a210f024f6e998c7aeea5ecd5af" archimateElement="id-4dc57b75678343fd8b65a99775fe1ec0">
+            <bounds x="15" y="390" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-dcd1d8dd3aa34019bf0d3f21dae37cc3" archimateElement="id-9ae04105d5274f39934f3d4120277226">
+            <bounds x="15" y="450" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0da4589ab1e648dd98f21e2baee2831a" archimateElement="id-a5a7459ec08849d3b6c4cc97b41a7cac">
+            <bounds x="15" y="510" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d090c6c9b371417fb4dca248be456839" archimateElement="id-73a372a374ef4e208f3e1fb74aa744d3">
+            <bounds x="15" y="570" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-052c87aa776943bc853c5508d18ff2c1" archimateElement="id-0be045c0aa314a839cbd7a553cd2edb6">
+            <bounds x="15" y="630" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c39b148c0a1d4d87bad174d7a183ba93" archimateElement="id-c54504047dee478f8530d63dda485adf">
+          <bounds x="179" y="6" width="141" height="696"/>
+          <child xsi:type="archimate:DiagramObject" id="id-4312f21767c34c8ebccc7eea75baaf21" archimateElement="id-7b2fc4db21dc4b5ab76ff75f7737a1a7">
+            <bounds x="10" y="30" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d7ef7754d8234dde929abf5d03d72fc4" archimateElement="id-42d41d35dc4b45b693d24550af0f7eb8">
+            <bounds x="10" y="90" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e5b04010da4f4e339f0114a2d34bcd05" archimateElement="id-4fa685ba69bb46528abd4f59f7dd18f0">
+            <bounds x="10" y="150" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-92d3cddd7a2f44fe9f816e1a22205b28" archimateElement="id-18b67f9fedcc4d689058d79a728bd732">
+            <bounds x="10" y="210" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-aa57cb9410a340fe84a388ee5a623342" archimateElement="id-d92d554749e14f25ab709659b20fbdfb">
+            <bounds x="10" y="270" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-6473fd3adc6f43209f707905fb3aa6de" archimateElement="id-7d6412b420ed49e1abf6d68131c023a7">
+            <bounds x="10" y="330" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-15cafe68e3d74045a067c4b7103f85eb" archimateElement="id-f374503d8d73496f9cb74deb0d69d32e">
+            <bounds x="10" y="390" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4602c8120def4752b722fb61534b5c97" archimateElement="id-40764a12981d48eeada09caa7d893039">
+            <bounds x="10" y="450" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7c476fb6094e45bf8adb17ba4621c0dd" archimateElement="id-20c7f8ac33f540828f17b6a772dea55a">
+          <bounds x="329" y="11" width="896" height="691"/>
+          <child xsi:type="archimate:DiagramObject" id="id-64269e36064a46b8adf0f23b4a13fae2" archimateElement="id-0f6cab87cc724ba58583b919b9ca07d7">
+            <bounds x="15" y="25" width="876" height="176"/>
+            <child xsi:type="archimate:DiagramObject" id="id-e07f98cecfad419ba69b7cc51e627646" archimateElement="id-b7dfaa105244450283bc94e61afcecd2">
+              <bounds x="135" y="30" width="121" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-8832fef19596424181874bb7b3a73654" archimateElement="id-5436299f77a048d0be66d52077c48eaf">
+              <bounds x="17" y="114" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-d600c12ed26f4441afd3cf7d5161cb5d" archimateElement="id-4e5fd24f34d74d2bad3eadc5e0ee21b1">
+              <bounds x="152" y="112" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-fc786e438b2f47768e1b5ab412087492" archimateElement="id-a0208959f1e94eb8ba1f8db598330744">
+              <bounds x="289" y="112" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-7a31020a7cc54929800b6e769457d18f" archimateElement="id-018bfd3028da47698ecfbdfc7452f5af">
+              <bounds x="440" y="30" width="236" height="71"/>
+              <child xsi:type="archimate:DiagramObject" id="id-fba3958a205040d2933402ecb90db569" archimateElement="id-b81792dd73104c17b09e4a6393235ff5">
+                <bounds x="25" y="25" width="186" height="39"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-c12800053357401e85f2e080e7debfb5" archimateElement="id-ee84ef9eb34d48aeb3b336002c2de325">
+              <bounds x="440" y="112" width="236" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-12c89b49570d4086aef6c5e79e0f57a4" archimateElement="id-c71d9d6eadca48d0a2b4869a19292ace">
+            <bounds x="15" y="213" width="876" height="143"/>
+            <child xsi:type="archimate:DiagramObject" id="id-36891f1cea6f4804b2d6b20e30493082" archimateElement="id-88e7b7e9cadc45baa448af7d6f6627af">
+              <bounds x="21" y="30" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-5e2d967458bd4a399f8c0cab09700a54" archimateElement="id-7d5e7da2cce64dfa8acf30fcceb69d8c">
+              <bounds x="146" y="30" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-887b04d65c934098ad02b67e16d0781f" archimateElement="id-5ea5df7701224379a32d8ed0f3ccbe59">
+              <bounds x="276" y="30" width="283" height="97"/>
+              <child xsi:type="archimate:DiagramObject" id="id-a1e49f5044e14fe28de0bb33dbd45ee7" archimateElement="id-7d050b2eb67c4c37bc4dfda2059c44a6">
+                <bounds x="10" y="25" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-e54612c9a291495fb436debd46ee3340" archimateElement="id-2c34a2fd1330402e8293e64d156bd98e">
+                <bounds x="149" y="27" width="120" height="55"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-5a38997d1cdc4fdfb0d4532d0ff320a5" archimateElement="id-1b83cdf2b9654983a7d8200e6c17be8e">
+              <bounds x="570" y="30" width="156" height="97"/>
+              <child xsi:type="archimate:DiagramObject" id="id-9802a42f32bc4b74b19c84eb62c28a1f" archimateElement="id-faa6b1207fe849f8b284528388493a30">
+                <bounds x="20" y="30" width="120" height="55"/>
+              </child>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c7c9f0995c764d049d6058615efcbd75" archimateElement="id-e2ad863fc01e4ef2b92575df77e93285">
+            <bounds x="27" y="374" width="854" height="107"/>
+            <child xsi:type="archimate:DiagramObject" id="id-9f22774f86de41048793753e0081e067" archimateElement="id-2351a9351c3f43aa813d87db62998479">
+              <bounds x="20" y="35" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-c8e2215b557a4a3d828424529d69f32b" archimateElement="id-6117c01c0a1b41d2a6abb909ed6731db">
+              <bounds x="145" y="35" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-7c2913c1ca7b4152908a96f536b20c09" archimateElement="id-1d23f61275ef44bf88aa2a127650a114">
+              <bounds x="270" y="35" width="120" height="55"/>
+            </child>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-10801312c58c4a9791b74cf102ca191b" archimateElement="id-2ce6f2e34d6d4c839b4756df632a7b59">
+          <bounds x="1229" y="11" width="441" height="821"/>
+          <child xsi:type="archimate:DiagramObject" id="id-322f6722fc0c43759623c5e750e545b5" archimateElement="id-f61c78737adc49319b0580d815adf6bc">
+            <bounds x="14" y="35" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-eb4465eae1424dad877d68c0774bf76c" archimateElement="id-4097e07bb0ef4aaf8e8796635697cafa">
+            <bounds x="14" y="103" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8545a3e2fa66481695bf7b6fc70d848e" archimateElement="id-d2b0f692b6804690a0f2892f2d909879">
+            <bounds x="14" y="171" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1c52aed6884d48c3bd2f8541b5a78acf" archimateElement="id-92989fecf9784cba898f128b29cc92ff">
+            <bounds x="13" y="235" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-71df76f7b729403787a1ed5c3ea114a8" archimateElement="id-fb4a3b6c46734f04b3a546c5e3747b63">
+            <bounds x="13" y="295" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f7ab11fead5440ba9850bd942898976a" archimateElement="id-b87204012c184324b8dbf9657ea12a0d">
+            <bounds x="13" y="355" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-bcc9131a140c4f22879ed702edbe51ca" archimateElement="id-2f0726d763e84b90ab1d20b8e8108f90">
+            <bounds x="14" y="415" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-140b40daad894939a34c0b773618ccc0" archimateElement="id-7e7323adb81348418148f673dc57887e">
+            <bounds x="14" y="475" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-40f9a987aa754a9d87a46e1f49143bff" archimateElement="id-338d7c043825418585dd265b5bf3e192">
+            <bounds x="14" y="535" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d94cd7cad3414682b1cd748ecd989861" archimateElement="id-f6f03262b65a418aa4c008fb03e75888">
+            <bounds x="14" y="595" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d2258aac8a3a44a98018d77d78fd46e8" archimateElement="id-280b67e2a13446359c683aa1a5e42a61">
+            <bounds x="150" y="35" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c1dc3202f1e747cf918f0d29f30d9b15" archimateElement="id-c8a89be664184d47b3de60406a241bd4">
+            <bounds x="150" y="103" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0d844bcd457f44f6ac2470e42896e5ed" archimateElement="id-72525175d1b040339a074a3b795262eb">
+            <bounds x="149" y="172" width="277" height="118"/>
+            <child xsi:type="archimate:DiagramObject" id="id-d251342bacdf4eb3889f6c3b14303b5a" archimateElement="id-fcc66fce1cbc491e901db77bec0f1ce6">
+              <bounds x="15" y="40" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-ed2823263b9a4dc8bc1eeab98c910d60" archimateElement="id-5493e9e801ef4a2bb0c63ba4da929f0b">
+              <bounds x="145" y="40" width="120" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5bf26d1e703a4ad5a5cc3e87e46dae8e" archimateElement="id-f7421453aeff4191b003db6accf2e5d5">
+            <bounds x="152" y="298" width="272" height="50"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-adb0f24540b147ddb42eab6480a85f99" archimateElement="id-07c494e17ca8491aac39ac2e5835b6c8">
+            <bounds x="150" y="355" width="274" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1bc7feff1a9d45b29665230e6cbcad62" archimateElement="id-204e71b777d84262b06e5fd6a8931f82">
+            <bounds x="151" y="415" width="272" height="175"/>
+            <child xsi:type="archimate:DiagramObject" id="id-b1d85e8dda5f458d8b79b8396233e989" archimateElement="id-154c3929bd1f4aa38afcdfece10be408">
+              <bounds x="20" y="25" width="106" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-852f6949d89446a88c3e88b09c7e450c" archimateElement="id-1320346b06d949ad8dd358b0cc6f56f7">
+              <bounds x="135" y="25" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-1c08dceb1b524fa390b111e58cefcb73" archimateElement="id-6cf4191a293a46649002adb5b5a7b2de">
+              <bounds x="20" y="85" width="106" height="55"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7b23f65be80142c597a1c334c6dc88a4" archimateElement="id-d9ee28c1a8b74fe88fc94561cbe60af3">
+            <bounds x="13" y="655" width="423" height="161"/>
+            <child xsi:type="archimate:DiagramObject" id="id-94643ba8d9c44a30816cb96c32c016a3" archimateElement="id-95c36297458e4d639d60ff85219417a1">
+              <bounds x="10" y="25" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-957508ac1f2a4d00835df8069e3b69ed" archimateElement="id-2cf321143a924bbb98c45408375da510">
+              <bounds x="12" y="89" width="118" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-028d5d4f8d134a958d73324be1b25161" archimateElement="id-2302f3e9db784a8cb1820b09be791cb0">
+              <bounds x="135" y="27" width="146" height="117"/>
+              <child xsi:type="archimate:DiagramObject" id="id-a876321da0af4b94bb0dfaa27978a713" archimateElement="id-e5817af7df134d128ad43c36bab7afd1">
+                <bounds x="15" y="38" width="120" height="55"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-453d133d92574b38b6835384c65a8887" archimateElement="id-47f4cfda2cc944bc970ec53c972590e4">
+              <bounds x="290" y="27" width="120" height="117"/>
+            </child>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-579c3789a6a944e5ad9520a8efe7863e" archimateElement="id-2126609d22b3489dbecb963a20662e18">
+          <bounds x="9" y="836" width="1661" height="501"/>
+          <child xsi:type="archimate:DiagramObject" id="id-e13d586ac9ca4d5e94fbb27bc260d551" archimateElement="id-15be408b7631415eaa344ee0f234e9a0">
+            <bounds x="15" y="20" width="396" height="431"/>
+            <child xsi:type="archimate:DiagramObject" id="id-59ddf5b515344e27a719dc3d56c1c1bf" archimateElement="id-7a7640d427aa433096f3d5df80143cf0">
+              <bounds x="10" y="20" width="136" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-3c91e7f80b76428e8b202f48e3198a94" archimateElement="id-33af757f0dfa4f1cbad1ffe4ea336764">
+              <bounds x="10" y="80" width="136" height="345"/>
+              <child xsi:type="archimate:DiagramObject" id="id-5199074a6bb74e279c37117059e84819" archimateElement="id-9d2510149ee343cfbbf52126a16dafeb">
+                <bounds x="10" y="45" width="116" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-1738c60a321d4b5b8d533b5f3b51a5dd" archimateElement="id-4e725aa0b35745a8b1bfe2a1ddecb957">
+                <bounds x="10" y="105" width="116" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-33ff20bf68e7409a99b7b6573690bc99" archimateElement="id-8b3d7dda05ec4cf0aeb08782afc344e1">
+                <bounds x="9" y="166" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-1fb9d86535fb4a5f80c4b260e77917e9" archimateElement="id-09ade88da70846038a01df41b20fbed0">
+                <bounds x="9" y="225" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-9fc067b3b48740ce9b286673486bbd16" archimateElement="id-28df1fd71e6f46d281e9ca95a74075e5">
+                <bounds x="9" y="285" width="120" height="55"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-2804290a1c9545c589b5e8e5a81c1bf0" archimateElement="id-9fdf9b3103eb4693b222e2bf39fea053">
+              <bounds x="155" y="30" width="228" height="395"/>
+              <child xsi:type="archimate:DiagramObject" id="id-9b51f7ab0dd149098c5ba69170fd80ad" archimateElement="id-dee022d3da3540898bbf0533debbfcfc">
+                <bounds x="15" y="40" width="206" height="176"/>
+                <child xsi:type="archimate:DiagramObject" id="id-5c9259ba75734af7a01ebf8d61f66de0" archimateElement="id-2e8441768911438bb72448e5c802b9ea">
+                  <bounds x="20" y="35" width="151" height="55"/>
+                </child>
+                <child xsi:type="archimate:DiagramObject" id="id-ac89be1352c242919f4113eb8b8e0b08" archimateElement="id-e57158a6c8054c74a58b22845c1e34c0">
+                  <bounds x="27" y="103" width="144" height="55"/>
+                </child>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-a6683899578744099c84f57ec2a7e1ac" archimateElement="id-f969c667c96e42ac8d10718d4490a470">
+                <bounds x="50" y="225" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-2324d4e8a1504e268cd0cad3ae7617fc" archimateElement="id-8206283287f04702b89e1f924f9b12fc">
+                <bounds x="50" y="285" width="120" height="55"/>
+              </child>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8b542b75dd11492ca4bb2995b1ceaebd" archimateElement="id-8fb41176880749dc9577f0cfae350e57">
+            <bounds x="420" y="20" width="566" height="141"/>
+            <child xsi:type="archimate:DiagramObject" id="id-ef88eaa03228437392b7b4c4916f0c4f" archimateElement="id-65cb7951ad8643c29b33836b5933a6af">
+              <bounds x="20" y="30" width="536" height="101"/>
+              <child xsi:type="archimate:DiagramObject" id="id-9da71a33fdda4452a0ce2f7fd02c703f" archimateElement="id-1e7fae2247d14aefa6681b342f636eab">
+                <bounds x="20" y="35" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-f88f91f795314e48a6f71d035570a008" archimateElement="id-33670b5e88f94544879690cccad7d7d4">
+                <bounds x="149" y="36" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-79651517fba443a4872af977dcd3068b" archimateElement="id-66d4ca5eff514486980fdfd2fe074006">
+                <bounds x="275" y="35" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-4babb98587dd47739d9166baf619b77b" archimateElement="id-252f833667de404996731401829f593d">
+                <bounds x="400" y="35" width="120" height="55"/>
+              </child>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2bb250b896984c7288fb5534879fd339" archimateElement="id-efd797a69d2f4a02b6aefe6c26c71cd9">
+            <bounds x="995" y="21" width="441" height="315"/>
+            <child xsi:type="archimate:DiagramObject" id="id-627f10066b764c59ac3083ae9661e9b0" archimateElement="id-7cec8bb835604ba4ba8bd7cccbda713d">
+              <bounds x="5" y="31" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-1ddf58d5e0cf415fb50002524a58886e" archimateElement="id-45571b74a2034a0d9cab6c57c0f0ddd0">
+              <bounds x="130" y="31" width="211" height="95"/>
+              <child xsi:type="archimate:DiagramObject" id="id-a19a3f589deb4ab6b28b3af2e37637cf" archimateElement="id-7ec3355418f445c79b75f76e7a338e96">
+                <bounds x="10" y="30" width="91" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-158d5afdaad44d70b2952d13325a7bbb" archimateElement="id-1b3ccf25869948a6b6b2be9ff35f1d72">
+                <bounds x="108" y="30" width="98" height="55"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-7e167ff906e045beb0620f359bde29cd" archimateElement="id-de1c1ece1f5b4920b7b3038bfda75733">
+              <bounds x="5" y="130" width="426" height="181"/>
+              <child xsi:type="archimate:DiagramObject" id="id-5654e006cc83479f9584af5ae6d383ff" archimateElement="id-68804171cb7d41fdb29a899e3086cd4c">
+                <bounds x="8" y="35" width="278" height="101"/>
+                <child xsi:type="archimate:DiagramObject" id="id-0a366b6251f94b0e86ed9db6cad4db68" archimateElement="id-f47358cbeb5640e6ae181fa5f04321a9">
+                  <bounds x="13" y="27" width="120" height="55"/>
+                </child>
+                <child xsi:type="archimate:DiagramObject" id="id-0bfa50e4a1c34d75a4ed4302c72671c2" archimateElement="id-778b0e495e40422f807b32c4d1f7e417">
+                  <bounds x="140" y="28" width="120" height="55"/>
+                </child>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-a3eaad57e49f450792ebccf2b25e9a97" archimateElement="id-b46e29e1760c4b6aa9ce042c359ebcc2">
+                <bounds x="295" y="35" width="120" height="55"/>
+              </child>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8f3ca727d54d4371ae6d6917e4c36432" archimateElement="id-0ab9494dae2f4e5c8e0cd7aaae518103">
+            <bounds x="1448" y="22" width="208" height="94"/>
+            <child xsi:type="archimate:DiagramObject" id="id-8cfee395327142f7b12a9dd7681bf67c" archimateElement="id-b426a75626e649b59b747380c9b5981b">
+              <bounds x="50" y="30" width="120" height="46"/>
+            </child>
+          </child>
+        </child>
       </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
