@@ -46,10 +46,11 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">track API usage and activity to identify performance bottlenecks, peak usage periods and abnormal access patterns. Use open standards-based logging frameworks such as CEF (Common Event Format) and collect logs in a central repository
+						<textarea id="docsrc" style="display:none">track API usage and activity to identify performance bottlenecks, peak usage periods and abnormal access patterns. Use open standards-based logging frameworks such as CEF (Common Event Format) and collect logs in a central repository
 o	When usage limits are exceeded, by default, a 1-hour timeout (block) will be used
 o	X-RATELIMIT-LIMIT and X-RATELIMIT-REMAINING can be inspected in the HTTP response to view current usage
-</div>
+</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
