@@ -1607,6 +1607,12 @@ The development of architecture principles is typically influenced by the follow
     <element xsi:type="archimate:Capability" name="Cyber Threat Monitoring, Detection &amp; Assessment" id="id-882bebae0fe146bb9828737d64e81156"/>
     <element xsi:type="archimate:Capability" name="Incident Response &amp; Support" id="id-f85ce3c29fed4dcab8550f397c2b7833"/>
     <element xsi:type="archimate:Capability" name="CCCS Dynamic Defence (sensors)" id="id-6caa9f7119d848e3b46057b1fc717b49"/>
+    <element xsi:type="archimate:CourseOfAction" name="Improve Data Integration In The Enterprise (Course of Action)" id="id-a9789219c9de42a29915bdcc0915b0cb">
+      <documentation>It helps Enterprise Architects to achieve Boundaryless Information Flow™ by improving data integration in their enterprises.</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="List Relevant Data Integration Standards (Course of Action)" id="id-6ba2f504910d43d6b5d5c6af5167ea5e">
+      <documentation>By listing relevant standards, this document provides a useful body of reference.</documentation>
+    </element>
   </folder>
   <folder name="Business" id="b450b6a4-519b-4191-a289-4df897ca0a1b" type="business">
     <element xsi:type="archimate:BusinessFunction" name="Test" id="3e3bc277-1fea-40bd-bbc1-35dd96697b2a"/>
@@ -1831,8 +1837,6 @@ https://www.ibm.com/support/knowledgecenter/SSYJCD_1.0.0/com.ibm.help.meigV100.d
     <element xsi:type="archimate:BusinessFunction" name="Build" id="bd2b93dc-d7c6-4b7f-8336-0e98fa5666bf"/>
     <element xsi:type="archimate:BusinessFunction" name="Deploy" id="97aff748-651a-4dbc-bb74-ea43c64a7e5c"/>
     <element xsi:type="archimate:BusinessFunction" name="Run" id="a5d25b96-c282-468c-88ec-da472f33542c"/>
-    <element xsi:type="archimate:BusinessFunction" name="Monitor" id="e10cfd67-1c03-46ba-9863-6b5e49d9fcd2"/>
-    <element xsi:type="archimate:BusinessFunction" name="Manage" id="d22499d0-6fa2-4c7e-b870-06aa045fbb3b"/>
     <element xsi:type="archimate:BusinessFunction" name="Notify" id="ad1f2637-cd4a-4b36-b92d-07101bb04a35"/>
     <element xsi:type="archimate:BusinessFunction" name="CI/CD Pipeline" id="227d28c5-8fed-4e62-aaa6-697c33461c9c"/>
     <element xsi:type="archimate:BusinessFunction" name="Feedback" id="426e30cc-1989-4514-8e2e-81eadcc5900e"/>
@@ -1843,7 +1847,6 @@ According to Gartner, event brokers “are middleware products that are used to 
 “Event-driven architectures (EDA) is inherently intermediated. Therefore, the intermediating role of event brokering is a definitional part of EDA. All implementations of event-driven applications must use some technology in the role of an event broker.”*&#xD;
 https://solace.com/what-is-an-event-broker/</documentation>
     </element>
-    <element xsi:type="archimate:BusinessInteraction" name="Business Interaction" id="37c8c3e3-e1ad-4a29-80f4-67e51d7698b7"/>
     <element xsi:type="archimate:BusinessCollaboration" name="ESDC Interoperability Platform (EIP)" id="2a330583-7585-4eea-8a04-a70a516d0d23"/>
     <element xsi:type="archimate:Product" name="Cloud Native Computing Foundation Landscape" id="a8ea070d-19ae-487d-9b17-3d397c9162f4"/>
     <element xsi:type="archimate:BusinessFunction" name="Plan" id="8c8892c1-27aa-494c-bc05-29c3938a6bc5">
@@ -1908,17 +1911,11 @@ https://solace.com/what-is-an-event-broker/</documentation>
     <element xsi:type="archimate:BusinessFunction" name="API Lifecycle Management" id="1ffed886-217c-444f-9a2d-9b24f25cc898">
       <documentation>API lifecycle management refers to the overseeing of all aspects of managing an API or API program from development to deployment and beyond, providing an organization with the ability to build, scale, analyze and monetize their APIs with ease. (https://apigee.com/about/cp/api-lifecycle-management)</documentation>
     </element>
-    <element xsi:type="archimate:BusinessRole" name="Cloud Service Provider" id="21f455d8-6ee0-4a5d-ad65-4e5a8a2e6fb9"/>
     <element xsi:type="archimate:BusinessRole" name="ESDC User" id="fef0a611-c0ea-489d-9a4b-511d49281f6f"/>
-    <element xsi:type="archimate:BusinessFunction" name="Business Function" id="2ff8f8cc-8b55-4ef7-9d8f-6dcee208c2db"/>
     <element xsi:type="archimate:BusinessRole" name="Developer" id="87af318e-0976-4766-b8d6-9a08865775e8"/>
     <element xsi:type="archimate:BusinessRole" name="Operator" id="1f1bb20b-f848-4113-aa18-d76fba6b53c4"/>
-    <element xsi:type="archimate:BusinessActor" name="Business Actor" id="609ba2fa-804f-44ef-bf84-3d4adbdd5f4d"/>
-    <element xsi:type="archimate:BusinessActor" name="Business Actor" id="c4300264-3ac1-41cd-ba95-9bdec2941738"/>
     <element xsi:type="archimate:BusinessInterface" name="Business Interface" id="f4c7f0e7-c848-4b94-acc3-56dee6cbee35"/>
     <element xsi:type="archimate:Representation" name="Representation" id="7a7e6cde-b01b-4d79-a325-0a87a5b55227"/>
-    <element xsi:type="archimate:BusinessCollaboration" name="User Pillar" id="822d3cf8-1492-4833-9ffb-8d653e42e510"/>
-    <element xsi:type="archimate:BusinessFunction" name="Business Function" id="b4cf8702-0134-4d6b-bf3a-b36aced8b6ba"/>
     <element xsi:type="archimate:BusinessRole" name="User" id="fb7f87c8-43a2-435b-a906-7fc1f687df23"/>
     <element xsi:type="archimate:BusinessFunction" name="Identification and Authentication" id="1f2a6e78-2166-4cf7-946e-da8938bf7b31"/>
     <element xsi:type="archimate:BusinessFunction" name="Access Control" id="1eb30ecd-f888-40c0-8f6c-2486369c2a64"/>
@@ -2184,7 +2181,6 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessService" name="Balanced Relationship" id="5c8ad1f7-271d-49b5-8d23-5729fa3c8513"/>
     <element xsi:type="archimate:BusinessActor" name="Nik" id="053d5d40-9254-423f-bba1-feb536961fa6"/>
     <element xsi:type="archimate:BusinessRole" name="Architect" id="53e974bd-023d-4eb5-9ea8-adf89315feb2"/>
-    <element xsi:type="archimate:BusinessActor" name="Nik" id="088824b6-374d-46f2-8c2a-1ae6f1399fea"/>
     <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity1)" id="ef3fdee0-4878-4487-98ce-dd07451b8ca6"/>
     <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity2) " id="0f065f8d-3704-4272-b284-2ffd2f8ab522"/>
     <element xsi:type="archimate:BusinessActor" name="Person (Atomic Entity3)" id="ffd80fb0-9df2-44d0-86d9-cf94cbf19514"/>
@@ -2207,7 +2203,6 @@ ICST - Information Collection and SYnthesis Team</documentation>
 •	When to use the API Guardrails? – most real time data integration requirements are best satisfied through APIs. In general, data sharing and integration also encourage the use of APIs to promote platform independence and loosely coupled service design.&#xD;
 </documentation>
     </element>
-    <element xsi:type="archimate:BusinessFunction" name="Business Function" id="9af886b9-73a4-468d-ba77-4bb417feed18"/>
     <element xsi:type="archimate:BusinessRole" name="Business Architecture" id="d87f5993-3d0b-4aed-bd7b-f727b2c8ca78"/>
     <element xsi:type="archimate:BusinessRole" name="Application Architecture" id="24bc0346-189f-4fae-95eb-fa91dbfef6e2"/>
     <element xsi:type="archimate:BusinessRole" name="Data Architecture" id="deca7fb6-6ede-48a3-af46-f3b80125a766"/>
@@ -2220,13 +2215,9 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessRole" name="Enterprise Architecture" id="337d586a-8226-4c01-a6cb-58f8ed38f818"/>
     <element xsi:type="archimate:BusinessActor" name="Chief Architect" id="13861b61-226d-4a7e-a33d-8c92b6cfec6d"/>
     <element xsi:type="archimate:BusinessObject" name="UX Architecture Guardrails" id="80522499-7dd8-4d73-bfce-c003bc3c3649"/>
-    <element xsi:type="archimate:BusinessObject" name="Data Exchange Architecture Guardrails" id="6ef8bc4e-4689-4fd6-bc4a-0b0910844ebf"/>
     <element xsi:type="archimate:BusinessObject" name="Data Management Architecture Guardrails" id="ddda3e6f-4795-4d97-8ae9-968147229cf7"/>
     <element xsi:type="archimate:BusinessObject" name="IAM Architecture Guardrails" id="77602c24-1722-41cb-9b4f-f9cf13e0d914"/>
     <element xsi:type="archimate:BusinessObject" name="Data Analytics Architecture Guardrails" id="74680ec8-2528-4bbb-96d9-6cdcddea3a5b"/>
-    <element xsi:type="archimate:BusinessObject" name="MFT Architecture Guardrails" id="faad3315-bbda-4d2a-8414-1551d0e9b3d0"/>
-    <element xsi:type="archimate:BusinessObject" name="SOA Architecture Guardrails" id="265afe5d-2835-4126-b62c-ef4df6f67d1b"/>
-    <element xsi:type="archimate:BusinessObject" name="Master DM Architecture Guardrails" id="947884df-efc0-43f5-a37a-c35792cffa6c"/>
     <element xsi:type="archimate:BusinessObject" name=" Reference DM Architecture Guardrails" id="aff8ab10-9d6c-4b8f-9b0c-0f25fe5c2d5a"/>
     <element xsi:type="archimate:BusinessObject" name="External" id="5dff957a-8be6-4078-91fb-82da8abefbd2"/>
     <element xsi:type="archimate:BusinessObject" name="Internal" id="5d2162f8-f209-4747-b617-38861b9877d8"/>
@@ -2441,7 +2432,6 @@ The audience and key stakeholders of the EA Principles are: &#xD;
 The audience and key stakeholders of the EA Principles are: &#xD;
 •	Enterprise Architects, Domain Architects, Architecture Practitioners and Solution Designers for use in defining standards, architectures, designs, plans and roadmaps.</documentation>
     </element>
-    <element xsi:type="archimate:BusinessObject" name="Data Exchange Architecture Guardrails" id="9ea09e08-0b31-44a8-b066-7201dc966709"/>
     <element xsi:type="archimate:BusinessObject" name="Architecture Guardrails" id="0a804b0e-a2d2-405e-bd57-1e87fd4abefb"/>
     <element xsi:type="archimate:BusinessObject" name="API Architecture Guardrails" id="bae8c832-9ec1-419e-9bf2-634cd37a0380">
       <documentation>The purpose of these Guardrails is to promote consistency and provide guidance around the use of Application Programming Interfaces (APIs) across ESDC, and to enable exchange and integration of data between systems, agencies, businesses and citizens.&#xD;
@@ -2455,7 +2445,6 @@ The audience and key stakeholders of the EA Principles are: &#xD;
     <element xsi:type="archimate:BusinessObject" name="Accessibility Architecture Guardrails" id="7237e56e-f07d-4c23-845a-3fbeda35e4d3"/>
     <element xsi:type="archimate:BusinessObject" name="Digital Experience Architecture Guardrails" id="d1b6e8c4-6fcc-451c-9d71-94ca0dfe97ca"/>
     <element xsi:type="archimate:BusinessObject" name="Data Management Architecture Guardrails" id="5cb33410-77e6-4cd8-9d0e-5bfbd633a115"/>
-    <element xsi:type="archimate:BusinessObject" name="Master DM Architecture Guardrails" id="d23b8b40-1457-4645-9581-8b65723ddfe0"/>
     <element xsi:type="archimate:BusinessObject" name=" Reference DM Architecture Guardrails" id="80b2ffd5-cc60-43f1-807e-ed21dd800dc6"/>
     <element xsi:type="archimate:BusinessObject" name="IAM Architecture Guardrails" id="579ba8a4-25ab-4001-8aa1-2f0b13eb2ed8"/>
     <element xsi:type="archimate:BusinessObject" name="Internal Architecture Guardrails" id="d47dd8af-8c6c-4237-b939-439402293b11"/>
@@ -2464,8 +2453,6 @@ The audience and key stakeholders of the EA Principles are: &#xD;
     <element xsi:type="archimate:BusinessObject" name="Insight Reporting Architecture Guardrails" id="c434523b-0dc5-4976-82b0-fed42c3a61c0"/>
     <element xsi:type="archimate:BusinessObject" name="Advanced Analytics Architecture Guardrails" id="811fdc2f-98b1-43fc-b01c-3d8d1cbaab1d"/>
     <element xsi:type="archimate:BusinessObject" name="Open Data Architecture Guardrails" id="8a4257c6-8b81-409b-bed0-f42c75995176"/>
-    <element xsi:type="archimate:BusinessObject" name="MFT Architecture Guardrails" id="e4913bf9-36a5-4cc2-b1d1-a322f53a4c8e"/>
-    <element xsi:type="archimate:BusinessObject" name="SOA Architecture Guardrails" id="ececdd8f-fbe3-4cb4-a74c-f6b3370f1db3"/>
     <element xsi:type="archimate:BusinessObject" name="Data Exchange Architecture Guardrails" id="f3ffef3a-cc74-4c64-b117-1974f8f842be"/>
     <element xsi:type="archimate:BusinessObject" name="Architecture Guardrails" id="1696d650-d9e7-4218-90b6-b13768332060"/>
     <element xsi:type="archimate:BusinessObject" name="API Architecture Guardrails" id="eded674b-2346-4edd-800f-d855b59cce45">
@@ -2667,7 +2654,7 @@ Stores persistent and transient information, of prepared and accessible business
     </element>
     <element xsi:type="archimate:BusinessRole" name="Data Quality Analyst" id="id-9d2510149ee343cfbbf52126a16dafeb"/>
     <element xsi:type="archimate:BusinessRole" name="Infrastructure Operator" id="id-4e725aa0b35745a8b1bfe2a1ddecb957"/>
-    <element xsi:type="archimate:BusinessRole" name="Enterprise Architect" id="id-8b3d7dda05ec4cf0aeb08782afc344e1">
+    <element xsi:type="archimate:BusinessRole" name="Enterprise Architect (Business Role)" id="id-8b3d7dda05ec4cf0aeb08782afc344e1">
       <documentation>BusinessRole:ArchiMat</documentation>
     </element>
     <element xsi:type="archimate:BusinessRole" name="Information Steward" id="id-09ade88da70846038a01df41b20fbed0"/>
@@ -2684,6 +2671,65 @@ Stores persistent and transient information, of prepared and accessible business
     <element xsi:type="archimate:BusinessEvent" name="Privacy and Security" id="id-0ab9494dae2f4e5c8e0cd7aaae518103">
       <documentation>Privacy and Security Management involves the following: prioritizing risk-mitigating actions based on the data's sensitivity levels and manner of use, document clearly personal information processing purposes and subsequently used data, and clarifying roles and responsibilities in the various processes involved.</documentation>
     </element>
+    <element xsi:type="archimate:BusinessObject" name="Technical Standards for Data Integration (Business Object)" id="id-a16dbdaca02840baa903fcdcf639d565">
+      <documentation>Technical Standards for Data Integration (opengroup.org): https://publications.opengroup.org/white-papers/architecture/w211&#xD;
+Copy available in SP2010: https://dialogue/proj/ITCD-RMTI/SAS-SAS/Documents/Governance/Training/TOGAF%209.2/The%20Open%20Group%20Documents</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="An Information Architecture Vision: Moving from Data Rich to Information Smart (Business Object)" id="id-ecf17f14466e4000ada660966ac9aa52">
+      <documentation>An Information Architecture Vision: From Data Rich to Information Smart, White Paper (W132), published by The Open Group, April 2013; refer to: www.opengroup.org/library/w132</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Data Management Body of Knowledge (Business Object)" id="id-d5e93326cd974e31a5808a483fb8d970">
+      <documentation>Data Management Body of Knowledge (DMBOK®), Version 1.2, 2017, published by DAMA International, Inc.; refer to: https://www.dama.org/cpages/body-of-knowledge</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Encyclopedia of Computer Science (Business Object)" id="id-08ee688d220b44199c4b11e2b438fa43">
+      <documentation>Encyclopedia of Computer Science, January 2003; refer to: https://dl.acm.org/doi/pdf/10.5555/1074100.1074312</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Gartner Identifies Top Ten Data and Analytics Technology Trends for 2021 (Business Object)" id="id-b374232f20b4460fabfdc63762e4f86c">
+      <documentation>Gartner Identifies Top Ten Data and Analytics Technology Trends for 2021, Gartner Newsroom Press Release, March 2021; refer to: https://www.gartner.com/en/newsroom/press-releases/2021-03-16-gartner-identifies-top-10-data-and-analytics-technologies-trends-for-2021</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Information Architecture: Business Intelligence &amp; Analytics and Metadata Management Reference Models (Business Object)" id="id-ef62796cd4f04d6e8005d0586f2387b6">
+      <documentation>Information Architecture: Business Intelligence &amp; Analytics and Metadata Management Reference Models, The Open Group Guide (G201), published by The Open Group, January 2021; refer to: www.opengroup.org/library/g201</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="ISO-IEC 10646.2020 Information Technology - Universal Coded Character Set (UCS) (Business Object)" id="id-f383535055154014827f4d850b0cfb57">
+      <documentation>ISO/IEC 10646:2020: Information Technology – Universal Coded Character Set (UCS); refer to: https://www.iso.org/standard/76835.html</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="ISO-IEC 11179-1.2015 Information Technology - Metadata Registries (MDR) (Business Object)" id="id-266b3666948f46cea22243e5ef4c884f">
+      <documentation>ISO/IEC 11179-1:2015: Information Technology – Metadata Registries (MDR) – Part 1: Framework; refer to: https://www.iso.org/standard/61932.html</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Merriam-Webster Dictionary (Business Object)" id="id-90396b684ba44226947dd1f75d2cf6ce">
+      <documentation>Merriam-Webster Dictionary; refer to: https://www.merriam-webster.com/</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="O-DEF The Open Data Element Framework (Business Object)" id="id-7048f6ffc7e94098b00065daf1ec9496">
+      <documentation>O-DEF™, the Open Data Element Framework, Version 2.0, The Open Group Standard (C202), published by The Open Group, February 2020; refer to: www.opengroup.org/library/c202</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="The Rise of Big Data (Business Object)" id="id-e26437a75b3446f5a52638243f0aefe4">
+      <documentation>The Rise of Big Data, by Kenneth Cukier and Viktor Mayer-Schoenberger, 2013, published by Foreign Affairs; refer to: http://www.foreignaffairs.com/articles/139104/kenneth-neil-cukier-and-viktor-mayer-schoenberger/the-rise-of-big-data</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="Dr. Chris Harding (Business Actor)" id="id-0475fec61c024d6481da77a2b68161b9">
+      <documentation>Chris Harding, Principal, Lacibus Ltd.&#xD;
+&#xD;
+Dr. Chris Harding founded Lacibus to develop, promote, and exploit a new data platform paradigm, the Virtual Data Lake, following many years as a Forum Director of The Open Group. Virtual data lakes enable applications to mix and match data from different sources, applying distributed access control to ensure the right people have the right data. The core virtual data lake implementation is open source, and incorporates ideas developed by Chris during his work at The Open Group.&#xD;
+&#xD;
+Chris started his career as a software engineer, and was then a consultant. He has a long and wide experience of the IT industry, on which he draws in his contributions toward The Open Group work, and in online blogs and articles.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Data Planning (Business Process)" id="id-7e2307c3fac24bc38e383735353a7882">
+      <documentation>Plan: includes representing information holdings and identifying shortfalls, such as a lack of requisite quality</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Data Discover &amp; Extract (Business Process)" id="id-443c60b340bf4973806f6751b60ace0c">
+      <documentation>Discover &amp; Extract: includes analyzing the shortfalls, finding sources and information quality (often through metadata), assessing privacy and legality of extraction, cost-benefit analysis, and getting the information required directly or indirectly (e.g., through data as a service)</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Data Transform &amp; Integrate (Business Process)" id="id-6269942d585f4d3f94af67053983ebd6">
+      <documentation>Transform &amp; Integrate: includes transforming data into a standard enterprise format, assessing information loss and resultant quality, information sub-integration (e.g., multi-sensor), creating metadata for integrated data, and integration with existing information holdings</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Data Verify (Business Process)" id="id-66f1145bea4a4e1d85c982362f754042">
+      <documentation>Verify: includes establishing the legal/privacy/policy framework, determining whether the integration is legal, determining whether the integration is in line with enterprise values and brand, and determining the need to transform (e.g., anonymize) integrated data</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Data Use (Business Process)" id="id-f302496bb2d8473780ebce2a5a9c2975">
+      <documentation>Use: includes operations, decision support, and analytics; for example, Business Intelligence (BI) and Machine Learning (ML)</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Store Data (Business Process)" id="id-a22f35d2793f440abeede1a40a4d45b6"/>
+    <element xsi:type="archimate:BusinessProcess" name="Archive Data (Business Process)" id="id-f79f09f75d6246769f7ff955cd3bd352"/>
+    <element xsi:type="archimate:BusinessProcess" name="Data Disposition (Business Process)" id="id-8937d2ec1a4b46378250269adba3c859"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5306,7 +5352,9 @@ https://dialogue/grp/BU5946064/EA%20Reference%20Material/02%20-%20ESDC%20EA%20Pr
     <element xsi:type="archimate:Constraint" name="Technology Standards" id="id-714b1368612b458a8c82533e9467f8c2"/>
     <element xsi:type="archimate:Constraint" name="Technology Bricks" id="id-3871f2e51d60455f83e5321f42fd72b4"/>
     <element xsi:type="archimate:Principle" name="The Open Group Architecture Framework (TOGAF)" id="id-d487df6159f54f62bfccf02af6ec0533">
-      <documentation>Architect selects principles affecting EA work throughout the ADM cycle..</documentation>
+      <documentation>Architect selects principles affecting EA work throughout the ADM cycle.&#xD;
+&#xD;
+The TOGAF® Standard, Version 9.2, The Open Group Standard (C182), published by The Open Group, April 2018; refer to: www.opengroup.org/library/c182</documentation>
     </element>
     <element xsi:type="archimate:Principle" name="European Interoperability Reference Architecture (EIRA)" id="id-5bca0b88f499476fbf8bef25f3626524">
       <documentation>&lt;European-Specific></documentation>
@@ -6791,6 +6839,60 @@ While change and uncertainty are continuous, organizations still must have some 
     <element xsi:type="archimate:Principle" name="Enterprise Architecture Guidances " id="id-27e9d8fa9a92465788a08f497f6b886f"/>
     <element xsi:type="archimate:Principle" name="IT Security Guidances" id="id-f21cd13d501c487db4dfabdccb2a09d3"/>
     <element xsi:type="archimate:Principle" name="Zero Trust Principle" id="id-0021833105ef4547813f5314bf5192dd"/>
+    <element xsi:type="archimate:Goal" name="Boundaryless Information Flow (Goal)" id="id-5e706bb20ac64a189f37aa75e8c569fd">
+      <documentation>It helps Enterprise Architects to achieve Boundaryless Information Flow™ by improving data integration in their enterprises.</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Provides Basis For Future Data Integration Best Practices (Outcome)" id="id-3e43b3b4b5fc44808a73acba1da32e71">
+      <documentation>By listing relevant standards, this document provides a useful body of reference. It helps Enterprise Architects to achieve Boundaryless Information Flow™ by improving data integration in their enterprises. It also provides a basis for future work from The Open Group to identify and describe data integration best practices.</documentation>
+    </element>
+    <element xsi:type="archimate:Value" name="Provide Useful Body of Reference (Value)" id="id-cd67562c5821489b9bb2820db6b842a2">
+      <documentation>By listing relevant standards, this document provides a useful body of reference.</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Make Efforts To Understand the Data (Constraint)" id="id-4c73716bf7ee489186426704a2ebdd10">
+      <documentation>Understanding the Data&#xD;
+The first challenge of data integration is to understand the data. This is a problem at two levels.&#xD;
+At a higher level, there is the need to understand the business context and the value of the data: to know which parts of it are important, and which combinations of it can contribute to business deliverables.&#xD;
+At the most basic level, the problem is a lack of data models and documentation. The data is often described only by cryptic entity, attribute, and domain field names that meant something to the business subject matter expert, programmer, or database administrator who hurriedly created them to satisfy system constraints or a production deadline, but are incomprehensible to those conducting the data integration or data migration effort.&#xD;
+As discussed in An Information Architecture Vision: Moving from Data Rich to Information Smart (see References), possibly 10% of data holdings are documented, and the cryptic definition of entities, attributes, and domain values is often incomprehensible. In addition, without overarching data models there tends to be major redundancy, leading to poor data quality.&#xD;
+&#xD;
+There are four main issues that are encountered:&#xD;
+• Enterprise-structured data holdings are embedded within individual applications using incoherent tables in separate database files&#xD;
+• In some legacy systems, data may be embedded in the system code or retained using flat or indexed file paradigms that are inaccessible by current standard structured query languages&#xD;
+• When Commercial Off-The-Shelf (COTS) applications or cloud services are used, often the data structures are not provided and there is only limited data download access&#xD;
+• There is often no or limited metadata&#xD;
+&#xD;
+Metadata provides a context for the data, addressing items such as who created the data and when, the security classification, the data quality, and so on. Metadata is key to effective data integration, especially when redundant data must be consolidated, and new metadata generated.</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Manage Complexity In Mapping Between Different Data Models (Constraint)" id="id-ba35720ac4e14c9482296b55b35aada9">
+      <documentation>Mapping Between Different Data Models&#xD;
+&#xD;
+Typically, independently created data sources are based on different data models. This reflects the fact that they have different scopes, though often with some common elements, and represent different views of the world. For the sources to be integrated, there must be mappings between their data models and a third, common data model.&#xD;
+When the number of sources to be integrated is large, the problem of mapping them is extremely complex and difficult. There are, however, technologies that can help the data engineer to perform this task.</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Keep Data Synchronized (Constraint)" id="id-634781f413e4495595dc54a9883cf5ae">
+      <documentation>Synchronizing Data&#xD;
+Often, different systems, or different applications on the same system, use the same data and maintain their own copies. These may be exact copies, or they may include only part of the data, or the data they include may be transformed from the original.&#xD;
+For example, a company may maintain core data as a “single source of truth” and different divisions and departments may transform it in different business-specific ways so that it has relevance and purpose for them.&#xD;
+Keeping these versions synchronized as the data changes can be a major challenge.</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Address Organizational and Cultural Issues (Constraint)" id="id-3555fdebb1ed4a1287000617aa3c46f1">
+      <documentation>Organizational and Cultural Issues&#xD;
+Even with the support of technology, data integration requires skill, and its results may impact different parts of the enterprise. Ensuring that the right people are in place, with the right training, and that the affected departments are prepared for the change, is a major challenge.&#xD;
+There may well be a need to review the enterprise’s data governance regimen. For major data integration projects in areas fundamental to the enterprise, there may be a need to review its culture, especially executive willingness to maintain and share data.</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Avoid Poor Data Quality (Constraint)" id="id-9e60c0510de74b65aba2679879ff1600">
+      <documentation>Data Quality&#xD;
+Poor quality data will sabotage any data integration effort and subsequently harm the business. This is an issue for data integration projects that combine data from sources of variable quality. The quality of the result is crucial to its success. This means keeping track of the lineage of the integrated data, and always paying attention to its quality.</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Contribute To Data Defense (Constraint)" id="id-83999e8f01da4c248ebad8077c2b533e">
+      <documentation>Data Defense&#xD;
+Maintaining data quality is just one of the aspects of good data defense – minimizing the risks to a company that arise from its data. This also includes ensuring compliance with regulations, using analytics to detect and limit fraud, and building systems to ensure the security and integrity of the data. Data integration systems must be robust and secure, and contribute to the overall defense of the data.&#xD;
+Legislative compliance is a particular issue. Integrated data may contravene privacy or other legislation. Consequently, it may need to be further processed (e.g., anonymized) before it can be used, or perhaps even restructured to accommodate potentially costly legal requirements such as data subject access requests.</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="View Data Integration As A Continuous Process (Constraint)" id="id-e77ef9c535f84fb0b21b336e0c39bab3">
+      <documentation>Constant Change&#xD;
+Modern digital enterprises are faced with constant change as they bring new products to market and keep existing products ahead of the competition. This not only affects their business processes and software programs. It affects their data, and it affects the data models that they use to process their data. This means that they must not view data integration as a one-off activity to be performed and then forgotten, but as a continuing process.</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Feature Gap" id="9ff8a02c-23f7-41f7-9ee7-0a1373ad231a"/>
@@ -7386,6 +7488,7 @@ FY23/24 &amp; BEYOND</documentation>
     </element>
     <element xsi:type="archimate:WorkPackage" name="Deliver H2 (Work Package)" id="id-13dc2b2ee96144d8a69423154c5095c7"/>
     <element xsi:type="archimate:WorkPackage" name="Deliver H3 (Work Package)" id="id-021952067a9e48699af49e23084eeee8"/>
+    <element xsi:type="archimate:ImplementationEvent" name="Go Live (Implementation Event)" id="id-feba77095e5c4f3289a61b52b4f46480"/>
   </folder>
   <folder name="Other" id="027d0db1-461f-49c3-90ae-71acc827ae46" type="other">
     <element xsi:type="archimate:Junction" name="Junction" id="b29c1bc0-9c06-4484-9748-d797806e08b7" type="or"/>
@@ -7681,6 +7784,16 @@ As EA practitioners, we need to remember that we are master change agents, and i
     <element xsi:type="archimate:Grouping" name="&quot;Lean&quot; and &quot;Agile&quot; Expected Outcomes (Grouping)" id="id-24cd67810cd34a0eae1a3223045633d6"/>
     <element xsi:type="archimate:Grouping" name="Lean and Agile Architectural Philosophy (Grouping)" id="id-380efd0e43d44293aab2b61fcdf574d4"/>
     <element xsi:type="archimate:Grouping" name="Sources" id="id-d627f26071434f30a9280ca08bae35f2"/>
+    <element xsi:type="archimate:Grouping" name="References (Grouping)" id="id-11980fd5b1fa49809fd34383326f70e6">
+      <documentation>References&#xD;
+(Please note that the links below are good at the time of writing but cannot be guaranteed for the future.)&#xD;
+In addition to the references listed below, Table 1 through Table 17 provide comprehensive links to relevant information.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Data Integration Challenges (Grouping)" id="id-dbf8280c493c4672a88e42961f2a73bb">
+      <documentation>Data Integration Challenges&#xD;
+Data integration projects are often conceived at a high level; for example, “Following the merger with our major rival, we will have a large, combined customer base to which we will market our products”. Such simple high-level statements typically omit to mention some difficult problems that Technical Architects and Data Architects must solve. For example, the major rival may well identify its customers in a different way to the group that it is joining, and collect different information about them.&#xD;
+This section outlines some of the key data integration challenges.</documentation>
+    </element>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e307ac9a-b3a7-4aa5-9133-6cf506203141" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="b29c1bc0-9c06-4484-9748-d797806e08b7"/>
@@ -8146,7 +8259,6 @@ As EA practitioners, we need to remember that we are master change agents, and i
     <element xsi:type="archimate:RealizationRelationship" id="8a53231b-0103-4e2d-bda4-b709ab791e37" source="27a79ef9-892c-407e-907d-9e98117f041f" target="dbb1dc7f-1840-4a3d-bb85-d7e4a349bd48"/>
     <element xsi:type="archimate:RealizationRelationship" id="a9084a90-8981-404d-9bb4-b13fd20e13e1" source="27a79ef9-892c-407e-907d-9e98117f041f" target="1ffed886-217c-444f-9a2d-9b24f25cc898"/>
     <element xsi:type="archimate:AssignmentRelationship" id="a34c7d37-c34b-47de-9e40-577154ae0f00" source="78905f50-703f-4503-9011-deb53f01c775" target="b136dee8-162d-4025-a8e2-037dca66d541"/>
-    <element xsi:type="archimate:AccessRelationship" id="2e778636-c6fc-47c8-8bf8-761c5fb9ce40" source="609ba2fa-804f-44ef-bf84-3d4adbdd5f4d" target="7a7e6cde-b01b-4d79-a325-0a87a5b55227"/>
     <element xsi:type="archimate:AccessRelationship" id="096cdeb4-624d-4f7d-a76d-dda11b061529" source="f4c7f0e7-c848-4b94-acc3-56dee6cbee35" target="7a7e6cde-b01b-4d79-a325-0a87a5b55227"/>
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e4a1052c-aeab-4277-a2aa-6cbde275a2f7" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="75f933f5-2557-4d4d-b5e2-265569ccfdeb"/>
     <element xsi:type="archimate:ServingRelationship" name="Fail" id="d9bb4c14-9dbd-4200-b649-55ca3c73f0a5" source="75f933f5-2557-4d4d-b5e2-265569ccfdeb" target="5e605c46-1cfb-4a61-ba69-9f069110b1e3"/>
@@ -8919,7 +9031,6 @@ As EA practitioners, we need to remember that we are master change agents, and i
     <element xsi:type="archimate:AssignmentRelationship" id="b467649c-83d6-4dbb-a48c-9ec90fdc88d8" source="0f065f8d-3704-4272-b284-2ffd2f8ab522" target="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
     <element xsi:type="archimate:AssignmentRelationship" id="beaaefb9-becb-49de-89dc-a4c19ffed93f" source="ffd80fb0-9df2-44d0-86d9-cf94cbf19514" target="2c92d564-b537-477b-bdba-d78b3ea3c72f"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-84f75371227a433d9e038a4d8b0adf80" source="id-2c8017b667a2483981fa4b624de863e7" target="id-64f01f5ecbdf4e22a039b593ddd2f796"/>
-    <element xsi:type="archimate:SpecializationRelationship" id="420c9db2-2da0-4fc5-91a1-b2f885e4c7ba" source="06c492be-ccd5-4fff-83f4-f98b7fc4f906" target="6ef8bc4e-4689-4fd6-bc4a-0b0910844ebf"/>
     <element xsi:type="archimate:AssociationRelationship" id="171e31d4-19cb-43a7-8c4b-826d6cecaaa0" source="cf3130d5-3924-40c4-bf19-37470c013751" target="06c492be-ccd5-4fff-83f4-f98b7fc4f906"/>
     <element xsi:type="archimate:AssociationRelationship" id="0990adf3-964f-4542-8117-0e7eff412829" source="6155f236-8ace-4b73-80b0-be22c7022c6c" target="dbaff8e4-0157-4265-b766-9acbcc280bc6"/>
     <element xsi:type="archimate:AssociationRelationship" id="aff3c8c7-3dd4-436e-8c45-1a98f60b7289" source="39666973-6833-410b-b283-36811e79573d" target="f3f2bd24-c4fd-45f8-9ed7-95b5c4681792"/>
@@ -9389,7 +9500,6 @@ As EA practitioners, we need to remember that we are master change agents, and i
     <element xsi:type="archimate:CompositionRelationship" id="703083f6-4a3b-41eb-97af-c8a2721d82a7" source="579ba8a4-25ab-4001-8aa1-2f0b13eb2ed8" target="d47dd8af-8c6c-4237-b939-439402293b11"/>
     <element xsi:type="archimate:CompositionRelationship" id="6e83dc3e-48c5-4030-9aeb-1b117cc9a6ff" source="4dd872e1-5613-42ce-b971-7145b4cfea38" target="d1b6e8c4-6fcc-451c-9d71-94ca0dfe97ca"/>
     <element xsi:type="archimate:CompositionRelationship" id="62938bd8-81e4-49db-8dbe-5540d2426ffd" source="579ba8a4-25ab-4001-8aa1-2f0b13eb2ed8" target="c54b9f37-42fe-4588-8090-f38e940cfc25"/>
-    <element xsi:type="archimate:SpecializationRelationship" id="045ef004-d16b-4b96-b4e2-1f8c8a778dd0" source="0a804b0e-a2d2-405e-bd57-1e87fd4abefb" target="9ea09e08-0b31-44a8-b066-7201dc966709"/>
     <element xsi:type="archimate:SpecializationRelationship" id="0a718534-8e48-4979-b86a-c833a4e12143" source="0a804b0e-a2d2-405e-bd57-1e87fd4abefb" target="579ba8a4-25ab-4001-8aa1-2f0b13eb2ed8"/>
     <element xsi:type="archimate:AssociationRelationship" id="5adbce87-9581-436f-b251-a7ceb240a9d7" source="b7e1aaf0-002f-43a7-94d7-6da09e2f227e" target="0a804b0e-a2d2-405e-bd57-1e87fd4abefb"/>
     <element xsi:type="archimate:CompositionRelationship" id="31d8c662-564b-45d3-8746-7d1c34e7d4f3" source="4dd872e1-5613-42ce-b971-7145b4cfea38" target="7237e56e-f07d-4c23-845a-3fbeda35e4d3"/>
@@ -9604,6 +9714,35 @@ As EA practitioners, we need to remember that we are master change agents, and i
     <element xsi:type="archimate:CompositionRelationship" id="id-23bb4a4e44624830b695deac553bce15" source="id-09e820c9b4da4efd947fc2bed49db717" target="id-a7e1108bfa694a8482c157529d47bc21"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-52fb3b1061614cb4ad15aea89c488ad9" source="id-9c33ff509d5c46629149f4a0f5b09156" target="id-74d8041218c84c9f8536224a2b3b8161"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-2b8b6aa3445f4143a775a8ba333bf198" source="id-293b5864dab9440c8a5bb3b53ee1b0b3" target="id-26248e00cc62420db949263ddb3f13b9"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-b57ab6a1636d4a52a6502aee7fafecf1" source="id-a9789219c9de42a29915bdcc0915b0cb" target="id-5e706bb20ac64a189f37aa75e8c569fd"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-84436f7f04a64503bb3e6a76ebfb368c" source="id-6ba2f504910d43d6b5d5c6af5167ea5e" target="id-cd67562c5821489b9bb2820db6b842a2" strength="+"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-48ebd8a441e44fabb56b0c43cd3a3ab4" source="id-5e706bb20ac64a189f37aa75e8c569fd" target="id-8b3d7dda05ec4cf0aeb08782afc344e1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-d9f37318e3a5403ba52c24e3e596220d" source="id-a16dbdaca02840baa903fcdcf639d565" target="id-a9789219c9de42a29915bdcc0915b0cb"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-aef38c6f66f84396927e07e5d47b8477" source="id-a16dbdaca02840baa903fcdcf639d565" target="id-6ba2f504910d43d6b5d5c6af5167ea5e"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-3d436c5ad33b46f89f5b8051db7d736d" source="id-a16dbdaca02840baa903fcdcf639d565" target="id-3e43b3b4b5fc44808a73acba1da32e71"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-56142acd94684d2cb074fda1d3c2cf7f" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-ecf17f14466e4000ada660966ac9aa52"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-255b6119990c4793a501f339c0524b1f" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-d5e93326cd974e31a5808a483fb8d970"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-21187d5cc85042e98de9db0c8e8f2f9a" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-08ee688d220b44199c4b11e2b438fa43"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-60a2a7eb11204c4f83495f7a26b58a0d" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-b374232f20b4460fabfdc63762e4f86c"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-e429fa4002694724b708664adcfeb9a4" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-ef62796cd4f04d6e8005d0586f2387b6"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-32e304e3e1054fffbea5b77d80e09c51" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-f383535055154014827f4d850b0cfb57"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-dda39b387b2549b49c93499b2e84b66d" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-266b3666948f46cea22243e5ef4c884f"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-2c786b3e485d40d9ba68494961350076" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-90396b684ba44226947dd1f75d2cf6ce"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-175eced7fa8b46faaf50e1dc06001244" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-7048f6ffc7e94098b00065daf1ec9496"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-60ad02daa5e94dc091f939396673e6da" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-e26437a75b3446f5a52638243f0aefe4"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-0718334ed91e43fea6b027ef3327a596" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-d487df6159f54f62bfccf02af6ec0533"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-d8d0a357feeb466fab1b1edccc5b69b2" source="id-0475fec61c024d6481da77a2b68161b9" target="id-a16dbdaca02840baa903fcdcf639d565"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1ba59e964e634e02aa61d7ec70cbc411" source="id-dbf8280c493c4672a88e42961f2a73bb" target="id-9e60c0510de74b65aba2679879ff1600"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2614e8391bde4b33bbba832652692684" source="id-dbf8280c493c4672a88e42961f2a73bb" target="id-634781f413e4495595dc54a9883cf5ae"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2cfc87827d79484fbbad2d21626fdf14" source="id-dbf8280c493c4672a88e42961f2a73bb" target="id-ba35720ac4e14c9482296b55b35aada9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ac4d42a7d9184368aac79dc4788943fd" source="id-dbf8280c493c4672a88e42961f2a73bb" target="id-4c73716bf7ee489186426704a2ebdd10"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-42439fe922394161a1ad8dbe2b6c01b3" source="id-dbf8280c493c4672a88e42961f2a73bb" target="id-3555fdebb1ed4a1287000617aa3c46f1"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a27e6bb9a6f2424fae9805e6e5875256" source="id-dbf8280c493c4672a88e42961f2a73bb" target="id-83999e8f01da4c248ebad8077c2b533e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-eb257fbc8b9041e19092f099385fb738" source="id-dbf8280c493c4672a88e42961f2a73bb" target="id-e77ef9c535f84fb0b21b336e0c39bab3"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-7728cfb49ac745928982fe2e6c4a0544" source="id-7e2307c3fac24bc38e383735353a7882" target="id-443c60b340bf4973806f6751b60ace0c"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-d86d33177da1410b8802bdc639e2079a" source="id-443c60b340bf4973806f6751b60ace0c" target="id-6269942d585f4d3f94af67053983ebd6"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-86fd17d069b347ac9238660bbd900e90" source="id-6269942d585f4d3f94af67053983ebd6" target="id-66f1145bea4a4e1d85c982362f754042"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-91ca6a98ef944ce98564cce1988c3335" source="id-66f1145bea4a4e1d85c982362f754042" target="id-f302496bb2d8473780ebce2a5a9c2975"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -12552,6 +12691,180 @@ The development and execution of the EA Strategy and Roadmap began at the end of
             </child>
           </child>
         </child>
+      </element>
+    </folder>
+    <folder name="The Open Group" id="id-55bfa8b681704927bc5cd73d88c29d32">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Data Integration - Technical Standards" id="id-d9909dd12f554de389156fd3fa022044">
+        <child xsi:type="archimate:DiagramObject" id="id-80dbe612c3b64c8b8639c33faf1ff78f" targetConnections="id-2e61d91001274c8c8ea1fa5e9a6578e8" archimateElement="id-5e706bb20ac64a189f37aa75e8c569fd">
+          <bounds x="432" y="207" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d1625fbc4ce74b89b8b7cf096fca4748" source="id-80dbe612c3b64c8b8639c33faf1ff78f" target="id-4b4c08295a00476bb1c9930ded7f0b46" archimateRelationship="id-48ebd8a441e44fabb56b0c43cd3a3ab4"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8e8ac90068df41aa9a5e78325e90d821" targetConnections="id-e15d54fee99e4511afed12730f80fee7" archimateElement="id-a9789219c9de42a29915bdcc0915b0cb">
+          <bounds x="228" y="198" width="147" height="73"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2e61d91001274c8c8ea1fa5e9a6578e8" source="id-8e8ac90068df41aa9a5e78325e90d821" target="id-80dbe612c3b64c8b8639c33faf1ff78f" archimateRelationship="id-b57ab6a1636d4a52a6502aee7fafecf1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6c0f00d720b14bca86eee927fd6aaea7" targetConnections="id-28efc9769e4a4a84b02cda0cf611757f" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" archimateElement="id-a16dbdaca02840baa903fcdcf639d565">
+          <bounds x="24" y="207" width="169" height="130"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e15d54fee99e4511afed12730f80fee7" source="id-6c0f00d720b14bca86eee927fd6aaea7" target="id-8e8ac90068df41aa9a5e78325e90d821" archimateRelationship="id-d9f37318e3a5403ba52c24e3e596220d"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5a431854eb1a4d84a510edc8dbae972a" source="id-6c0f00d720b14bca86eee927fd6aaea7" target="id-f90a334b331441ce8926e723f0fcfbcc" archimateRelationship="id-aef38c6f66f84396927e07e5d47b8477"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7966423d9c9d479bb56729cc346905d1" source="id-6c0f00d720b14bca86eee927fd6aaea7" target="id-b0a064d4e17145e89e2f57352eb1669c" archimateRelationship="id-3d436c5ad33b46f89f5b8051db7d736d"/>
+        </child>
+        <child xsi:type="archimate:Note" id="id-ae82cf5b269546a7ac247b60add9d2bb" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#fcffc6">
+          <bounds x="12" y="12" width="697" height="61"/>
+          <content>Technical Standards for Data Integration (opengroup.org): &#xD;
+https://publications.opengroup.org/white-papers/architecture/w211&#xD;
+</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-1ea2763a0d27407ba3f57ded2644bd72" textPosition="1">
+          <bounds x="616" y="36" width="93" height="37"/>
+          <content>w211&#xD;
+v.2021-06-24</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b0a064d4e17145e89e2f57352eb1669c" targetConnections="id-7966423d9c9d479bb56729cc346905d1" archimateElement="id-3e43b3b4b5fc44808a73acba1da32e71">
+          <bounds x="221" y="384" width="162" height="72"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f90a334b331441ce8926e723f0fcfbcc" targetConnections="id-5a431854eb1a4d84a510edc8dbae972a" archimateElement="id-6ba2f504910d43d6b5d5c6af5167ea5e">
+          <bounds x="229" y="284" width="146" height="77"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-be50d01abcae4e2ca2062ffa7af161d5" source="id-f90a334b331441ce8926e723f0fcfbcc" target="id-c9f2a499a52f4d8493e9a09ea651ece1" archimateRelationship="id-84436f7f04a64503bb3e6a76ebfb368c"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c9f2a499a52f4d8493e9a09ea651ece1" targetConnections="id-be50d01abcae4e2ca2062ffa7af161d5" textPosition="1" archimateElement="id-cd67562c5821489b9bb2820db6b842a2">
+          <bounds x="432" y="295" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4b4c08295a00476bb1c9930ded7f0b46" targetConnections="id-d1625fbc4ce74b89b8b7cf096fca4748" archimateElement="id-8b3d7dda05ec4cf0aeb08782afc344e1">
+          <bounds x="432" y="120" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c43d21cd995d42929e8a62da01907d11" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-11980fd5b1fa49809fd34383326f70e6">
+          <bounds x="12" y="485" width="385" height="445"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a38d7e79ca3741d9a0102f17cb269bd2" source="id-c43d21cd995d42929e8a62da01907d11" target="id-17ea63639ec64dba872751e1edfa4a13" archimateRelationship="id-56142acd94684d2cb074fda1d3c2cf7f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e2c823e4bdc843dda8d3f246e50a6e95" source="id-c43d21cd995d42929e8a62da01907d11" target="id-34a07154d2214001a5736209263da7ba" archimateRelationship="id-255b6119990c4793a501f339c0524b1f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7e6c21459f7f4ce49c0d393339b57e80" source="id-c43d21cd995d42929e8a62da01907d11" target="id-1f3d339eeaf54e8e84fe5b1b8067cddf" archimateRelationship="id-21187d5cc85042e98de9db0c8e8f2f9a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-48e0583504444cffa71afd0152185d7b" source="id-c43d21cd995d42929e8a62da01907d11" target="id-fe4b897d3819400fb2ec40785ff4fcb7" archimateRelationship="id-60a2a7eb11204c4f83495f7a26b58a0d"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9129167f7a484cd0bcd6d818f6e89dd1" source="id-c43d21cd995d42929e8a62da01907d11" target="id-28fb547fcefb471795a904c0707cae6c" archimateRelationship="id-e429fa4002694724b708664adcfeb9a4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bcde2d5a353848709b5e5414964fc837" source="id-c43d21cd995d42929e8a62da01907d11" target="id-b57048d8ae3d43a29c09674853b6cc7b" archimateRelationship="id-32e304e3e1054fffbea5b77d80e09c51"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d27553d36d5845b4b4625743e62f6cea" source="id-c43d21cd995d42929e8a62da01907d11" target="id-f40932454888487999d159a76813bb59" archimateRelationship="id-dda39b387b2549b49c93499b2e84b66d"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fa302269297345f6a91b6368b6c16a25" source="id-c43d21cd995d42929e8a62da01907d11" target="id-8ce1accd89cb483199bbd5f68a3d9768" archimateRelationship="id-2c786b3e485d40d9ba68494961350076"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7dc9b9a6d31d4fd4b325c602e3a76542" source="id-c43d21cd995d42929e8a62da01907d11" target="id-608ded178379439f80e2c50bb8f9fb3f" archimateRelationship="id-175eced7fa8b46faaf50e1dc06001244"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8018ebbbc13f443aa2af3710f46d345e" source="id-c43d21cd995d42929e8a62da01907d11" target="id-669cd9b96d5c42958f90d1e3f666384c" archimateRelationship="id-60ad02daa5e94dc091f939396673e6da"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0f2c9cd7cbbb42aab428b391c52f97e1" source="id-c43d21cd995d42929e8a62da01907d11" target="id-df3eacd408994ace85eb8ff65b79a9f4" archimateRelationship="id-0718334ed91e43fea6b027ef3327a596"/>
+          <child xsi:type="archimate:DiagramObject" id="id-17ea63639ec64dba872751e1edfa4a13" targetConnections="id-a38d7e79ca3741d9a0102f17cb269bd2" archimateElement="id-ecf17f14466e4000ada660966ac9aa52">
+            <bounds x="12" y="24" width="166" height="76"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-34a07154d2214001a5736209263da7ba" targetConnections="id-e2c823e4bdc843dda8d3f246e50a6e95" archimateElement="id-d5e93326cd974e31a5808a483fb8d970">
+            <bounds x="12" y="108" width="166" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1f3d339eeaf54e8e84fe5b1b8067cddf" targetConnections="id-7e6c21459f7f4ce49c0d393339b57e80" archimateElement="id-08ee688d220b44199c4b11e2b438fa43">
+            <bounds x="12" y="168" width="166" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-fe4b897d3819400fb2ec40785ff4fcb7" targetConnections="id-48e0583504444cffa71afd0152185d7b" archimateElement="id-b374232f20b4460fabfdc63762e4f86c">
+            <bounds x="12" y="228" width="166" height="85"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-28fb547fcefb471795a904c0707cae6c" targetConnections="id-9129167f7a484cd0bcd6d818f6e89dd1" archimateElement="id-ef62796cd4f04d6e8005d0586f2387b6">
+            <bounds x="12" y="324" width="166" height="97"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b57048d8ae3d43a29c09674853b6cc7b" targetConnections="id-bcde2d5a353848709b5e5414964fc837" archimateElement="id-f383535055154014827f4d850b0cfb57">
+            <bounds x="192" y="24" width="166" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f40932454888487999d159a76813bb59" targetConnections="id-d27553d36d5845b4b4625743e62f6cea" archimateElement="id-266b3666948f46cea22243e5ef4c884f">
+            <bounds x="192" y="108" width="166" height="76"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8ce1accd89cb483199bbd5f68a3d9768" targetConnections="id-fa302269297345f6a91b6368b6c16a25" archimateElement="id-90396b684ba44226947dd1f75d2cf6ce">
+            <bounds x="192" y="192" width="166" height="49"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-608ded178379439f80e2c50bb8f9fb3f" targetConnections="id-7dc9b9a6d31d4fd4b325c602e3a76542" archimateElement="id-7048f6ffc7e94098b00065daf1ec9496">
+            <bounds x="192" y="252" width="166" height="61"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-669cd9b96d5c42958f90d1e3f666384c" targetConnections="id-8018ebbbc13f443aa2af3710f46d345e" archimateElement="id-e26437a75b3446f5a52638243f0aefe4">
+            <bounds x="192" y="324" width="166" height="49"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-df3eacd408994ace85eb8ff65b79a9f4" targetConnections="id-0f2c9cd7cbbb42aab428b391c52f97e1" archimateElement="id-d487df6159f54f62bfccf02af6ec0533">
+            <bounds x="192" y="384" width="166" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-648d8aae9ec54096bc23a7aba83f859f" archimateElement="id-0475fec61c024d6481da77a2b68161b9">
+          <bounds x="24" y="392" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-28efc9769e4a4a84b02cda0cf611757f" source="id-648d8aae9ec54096bc23a7aba83f859f" target="id-6c0f00d720b14bca86eee927fd6aaea7" archimateRelationship="id-d8d0a357feeb466fab1b1edccc5b69b2"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bb3d739f28a14ce08fed9eedb4b7ece4" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-dbf8280c493c4672a88e42961f2a73bb">
+          <bounds x="708" y="141" width="336" height="280"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c8ca0cb96a52465f9169d0105e31bab0" source="id-bb3d739f28a14ce08fed9eedb4b7ece4" target="id-99402932430d42b0b032a0c0a3b37ed2" archimateRelationship="id-1ba59e964e634e02aa61d7ec70cbc411"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-251fe780629940afbc98c9ffd67b4ec0" source="id-bb3d739f28a14ce08fed9eedb4b7ece4" target="id-bed181ef3d4a4feebae56923d085512b" archimateRelationship="id-2614e8391bde4b33bbba832652692684"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-12219a5c35c644c78b9188099de96c85" source="id-bb3d739f28a14ce08fed9eedb4b7ece4" target="id-582378fc66584ddbb848fbacd460b002" archimateRelationship="id-2cfc87827d79484fbbad2d21626fdf14"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-77a0c69821804c7fbb4931beb3de4c26" source="id-bb3d739f28a14ce08fed9eedb4b7ece4" target="id-79dfbd65df36491da51da08c0f3997ca" archimateRelationship="id-ac4d42a7d9184368aac79dc4788943fd"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1847ae9770424540ad9e473bacb8417f" source="id-bb3d739f28a14ce08fed9eedb4b7ece4" target="id-740ab04c966743559a7cf796884ac22d" archimateRelationship="id-42439fe922394161a1ad8dbe2b6c01b3"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-542abed3490547278c7e99262f955438" source="id-bb3d739f28a14ce08fed9eedb4b7ece4" target="id-bb19c89eaf3f45faa799f97393811128" archimateRelationship="id-a27e6bb9a6f2424fae9805e6e5875256"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-cf7da7ae1d9144e09ca211cca96b57c2" source="id-bb3d739f28a14ce08fed9eedb4b7ece4" target="id-5e64ae71a59d42b783c1cef80253cc1a" archimateRelationship="id-eb257fbc8b9041e19092f099385fb738"/>
+          <child xsi:type="archimate:DiagramObject" id="id-99402932430d42b0b032a0c0a3b37ed2" targetConnections="id-c8ca0cb96a52465f9169d0105e31bab0" archimateElement="id-9e60c0510de74b65aba2679879ff1600">
+            <bounds x="16" y="228" width="150" height="40"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-bed181ef3d4a4feebae56923d085512b" targetConnections="id-251fe780629940afbc98c9ffd67b4ec0" archimateElement="id-634781f413e4495595dc54a9883cf5ae">
+            <bounds x="15" y="168" width="151" height="54"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-79dfbd65df36491da51da08c0f3997ca" targetConnections="id-77a0c69821804c7fbb4931beb3de4c26" archimateElement="id-4c73716bf7ee489186426704a2ebdd10">
+            <bounds x="12" y="24" width="153" height="60"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-740ab04c966743559a7cf796884ac22d" targetConnections="id-1847ae9770424540ad9e473bacb8417f" archimateElement="id-3555fdebb1ed4a1287000617aa3c46f1">
+            <bounds x="14" y="90" width="150" height="69"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-bb19c89eaf3f45faa799f97393811128" targetConnections="id-542abed3490547278c7e99262f955438" archimateElement="id-83999e8f01da4c248ebad8077c2b533e">
+            <bounds x="172" y="114" width="152" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5e64ae71a59d42b783c1cef80253cc1a" targetConnections="id-cf7da7ae1d9144e09ca211cca96b57c2" archimateElement="id-e77ef9c535f84fb0b21b336e0c39bab3">
+            <bounds x="172" y="175" width="151" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-582378fc66584ddbb848fbacd460b002" targetConnections="id-12219a5c35c644c78b9188099de96c85" archimateElement="id-ba35720ac4e14c9482296b55b35aada9">
+            <bounds x="171" y="24" width="153" height="85"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d45407a57b824ec2b27e416dde36ed16" archimateElement="id-7e2307c3fac24bc38e383735353a7882">
+          <bounds x="484" y="667" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1a5619eb375446ed8a5d689da5d6bb6a" source="id-d45407a57b824ec2b27e416dde36ed16" target="id-9c11f10b19c34847b2102ff0259adccc" archimateRelationship="id-7728cfb49ac745928982fe2e6c4a0544"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9c11f10b19c34847b2102ff0259adccc" targetConnections="id-1a5619eb375446ed8a5d689da5d6bb6a" archimateElement="id-443c60b340bf4973806f6751b60ace0c">
+          <bounds x="636" y="658" width="120" height="73"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a3e8413b30754c39b9d5fa7a938ff5a7" source="id-9c11f10b19c34847b2102ff0259adccc" target="id-6522e356465e4a5f8e4e045a1b88fbdf" archimateRelationship="id-d86d33177da1410b8802bdc639e2079a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6522e356465e4a5f8e4e045a1b88fbdf" targetConnections="id-a3e8413b30754c39b9d5fa7a938ff5a7" archimateElement="id-6269942d585f4d3f94af67053983ebd6">
+          <bounds x="792" y="648" width="120" height="93"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bd96b411b9e34e20a75095d5f92b74c8" source="id-6522e356465e4a5f8e4e045a1b88fbdf" target="id-73ccb43546f14cbebae614d6192842e3" archimateRelationship="id-86fd17d069b347ac9238660bbd900e90"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-73ccb43546f14cbebae614d6192842e3" targetConnections="id-bd96b411b9e34e20a75095d5f92b74c8" archimateElement="id-66f1145bea4a4e1d85c982362f754042">
+          <bounds x="960" y="667" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-02543af906ba401fbd3afa345e0b92c2" source="id-73ccb43546f14cbebae614d6192842e3" target="id-13801fec8ee94f459166c21bbef8a901" archimateRelationship="id-91ca6a98ef944ce98564cce1988c3335"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-13801fec8ee94f459166c21bbef8a901" targetConnections="id-02543af906ba401fbd3afa345e0b92c2" archimateElement="id-f302496bb2d8473780ebce2a5a9c2975">
+          <bounds x="499" y="843" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3fda9faea39a42b2af5f9229a3e4bd9f" archimateElement="id-a22f35d2793f440abeede1a40a4d45b6">
+          <bounds x="660" y="843" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c9f326bd65ea4cf4912415d24a93916b" archimateElement="id-f79f09f75d6246769f7ff955cd3bd352">
+          <bounds x="806" y="843" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-346a309732cb45928cf164bb7f5081a9" archimateElement="id-8937d2ec1a4b46378250269adba3c859">
+          <bounds x="963" y="843" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a2b74821b7b546d49714cf5feedbf122" archimateElement="id-feba77095e5c4f3289a61b52b4f46480">
+          <bounds x="732" y="763" width="145" height="55"/>
+        </child>
+        <documentation>Technical Standards for Data Integration (opengroup.org): https://publications.opengroup.org/white-papers/architecture/w211&#xD;
+Copy available in SP2010: https://dialogue/proj/ITCD-RMTI/SAS-SAS/Documents/Governance/Training/TOGAF%209.2/The%20Open%20Group%20Documents&#xD;
+&#xD;
+DETAILS&#xD;
+This document identifies and briefly describes the technical standards relevant to structured data integration, and discusses some wider non-technical considerations. It covers de facto best practice standards, standards from industry consortia, and standards from formal standards bodies. It is intended for Technical Architects and Data Architects.&#xD;
+&#xD;
+By listing relevant standards, this document provides a useful body of reference. It helps Enterprise Architects to achieve Boundaryless Information Flow™ by improving data integration in their enterprises. It also provides a basis for future work from The Open Group to identify and describe data integration best practices.&#xD;
+&#xD;
+Author(s)	Chris Harding, Principal, Lacibus Ltd. and The Data Integration Work Group of the Architecture Forum&#xD;
+Published	24 Jun 2021&#xD;
+Pages	45&#xD;
+Type	White Papers&#xD;
+Subject	Enterprise Architecture&#xD;
+&#xD;
+Document No.: W211&#xD;
+Published by The Open Group, June 2021.&#xD;
+Any comments relating to the material contained in this document may be submitted to:&#xD;
+The Open Group, Apex Plaza, Forbury Road, Reading, Berkshire, RG1 1AX, United Kingdom&#xD;
+or by email to: ogpubs@opengroup.org</documentation>
       </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
