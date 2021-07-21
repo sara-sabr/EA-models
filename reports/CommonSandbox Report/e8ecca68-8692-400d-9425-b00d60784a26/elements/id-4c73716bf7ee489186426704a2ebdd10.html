@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Enterprise Architect (Business Role)</title>
+	<title>Make Efforts To Understand the Data (Constraint)</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -22,11 +22,11 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b>Enterprise Architect (Business Role)</b>
+               <b>Make Efforts To Understand the Data (Constraint)</b>
 
             <!-- If a View with Viewpoint -->
-			   (<span class="i18n-elementtype-BusinessRole"></span>)
-			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessRole" target="hint"></a>
+			   (<span class="i18n-elementtype-Constraint"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Constraint" target="hint"></a>
 		</div>
 
 		<div class="panel-body root-panel-body">
@@ -46,7 +46,19 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">BusinessRole:ArchiMat</div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Understanding the Data
+The first challenge of data integration is to understand the data. This is a problem at two levels.
+At a higher level, there is the need to understand the business context and the value of the data: to know which parts of it are important, and which combinations of it can contribute to business deliverables.
+At the most basic level, the problem is a lack of data models and documentation. The data is often described only by cryptic entity, attribute, and domain field names that meant something to the business subject matter expert, programmer, or database administrator who hurriedly created them to satisfy system constraints or a production deadline, but are incomprehensible to those conducting the data integration or data migration effort.
+As discussed in An Information Architecture Vision: Moving from Data Rich to Information Smart (see References), possibly 10% of data holdings are documented, and the cryptic definition of entities, attributes, and domain values is often incomprehensible. In addition, without overarching data models there tends to be major redundancy, leading to poor data quality.
+
+There are four main issues that are encountered:
+&#8226; Enterprise-structured data holdings are embedded within individual applications using incoherent tables in separate database files
+&#8226; In some legacy systems, data may be embedded in the system code or retained using flat or indexed file paradigms that are inaccessible by current standard structured query languages
+&#8226; When Commercial Off-The-Shelf (COTS) applications or cloud services are used, often the data structures are not provided and there is only limited data download access
+&#8226; There is often no or limited metadata
+
+Metadata provides a context for the data, addressing items such as who created the data and when, the security classification, the data quality, and so on. Metadata is key to effective data integration, especially when redundant data must be consolidated, and new metadata generated.</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
