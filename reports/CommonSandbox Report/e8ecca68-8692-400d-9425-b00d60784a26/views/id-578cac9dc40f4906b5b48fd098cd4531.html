@@ -1,0 +1,703 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>SharePoint Role Based Access</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>SharePoint Role Based Access</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-578cac9dc40f4906b5b48fd098cd4531.png" alt="SharePoint Role Based Access" usemap="#id-578cac9dc40f4906b5b48fd098cd4531map"/>
+			   <map name="id-578cac9dc40f4906b5b48fd098cd4531map">
+				  		<area shape="rect" coords="1078,188,1224,257" href="../elements/id-853e7bc1ede8440d8c933f45445dd837.html"  target="element">
+				  		<area shape="rect" coords="779,10,899,65" href="../elements/fef0a611-c0ea-489d-9a4b-511d49281f6f.html"  target="element">
+				  		<area shape="rect" coords="1079,81,1224,173" href="../elements/id-8c504d6786f643a1ac53d3815ffc47f7.html"  target="element">
+				  				<area shape="rect" coords="970,668,1114,745" href="../elements/id-8b4f5beeafbd4f579fd29822bce2a0d4.html"  target="element">
+				  				<area shape="rect" coords="790,668,934,745" href="../elements/id-1706309b8fec434fb860a5e715fc12bd.html"  target="element">
+				  				<area shape="rect" coords="608,668,752,745" href="../elements/id-d58fd97a0fbf4f3e9e4d5661b710b607.html"  target="element">
+				  				<area shape="rect" coords="1054,556,1198,633" href="../elements/id-29b769d13be84daeaae6d2be5edb6855.html"  target="element">
+				  				<area shape="rect" coords="874,556,1018,633" href="../elements/id-dea4e21a1ca64f778284e2531ac17b56.html"  target="element">
+				  				<area shape="rect" coords="695,556,839,633" href="../elements/id-d68361eb4a744236a2ac6faf2be5ed42.html"  target="element">
+				  				<area shape="rect" coords="515,556,659,633" href="../elements/id-7f915b826fb2467597c2006076b80dfd.html"  target="element">
+
+				  		<area shape="rect" coords="491,520,1224,773" href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html"  target="element">
+				  		<area shape="rect" coords="10,558,130,645" href="../elements/id-4dec3c9e31674c94b083ca831b509427.html"  target="element">
+				  		<area shape="rect" coords="335,558,455,613" href="../elements/id-cc251abefd1b42d582b74d57dd8ae84c.html"  target="element">
+				  		<area shape="rect" coords="335,498,455,553" href="../elements/id-0c90e2a4727844499c4270f60a8c691b.html"  target="element">
+				  		<area shape="rect" coords="335,618,455,673" href="../elements/id-a31e9319f9b54c9ca95aee03fea41242.html"  target="element">
+				  				<area shape="rect" coords="453,445,573,500" href="../elements/id-d92f68c51c094944a99f117eaa5aeca1.html"  target="element">
+
+				  		<area shape="rect" coords="335,438,455,493" href="../elements/id-7ef0d39879f74e7dad85469331764317.html"  target="element">
+				  		<area shape="rect" coords="335,378,455,433" href="../elements/id-1dfc5b23bece492f85b940e7847770bb.html"  target="element">
+				  		<area shape="rect" coords="10,378,130,433" href="../elements/id-fa574cefe696402a8234308e96055c48.html"  target="element">
+				  		<area shape="rect" coords="11,460,131,515" href="../elements/id-7b2ffd21fd5640239d1d6a8d412f2b72.html"  target="element">
+				  		<area shape="rect" coords="179,378,299,673" href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html"  target="element">
+				  		<area shape="rect" coords="11,268,156,341" href="../elements/id-1c9c0ba3b8504cd582f536b31df9c8d4.html"  target="element">
+				  		<area shape="rect" coords="11,208,156,263" href="../elements/id-350c4cf3a19c48cca46bdfdaaeb8ab83.html"  target="element">
+				  		<area shape="rect" coords="899,436,1061,491" href="../elements/id-84efec203834482c8cf6533f34ac29c0.html"  target="element">
+				  		<area shape="rect" coords="899,364,1061,419" href="../elements/id-208d8e09d9bc40ebaf365e2bbed85270.html"  target="element">
+				  		<area shape="rect" coords="707,436,869,491" href="../elements/id-b42f668910224b728c7bc9afbf50d50d.html"  target="element">
+				  		<area shape="rect" coords="707,364,869,419" href="../elements/id-3ed72c97c46d4f75b13697305048ff6d.html"  target="element">
+				  		<area shape="rect" coords="515,436,677,491" href="../elements/id-8a51ad2d48454b79b05c5c899bd7fb29.html"  target="element">
+				  		<area shape="rect" coords="515,364,677,419" href="../elements/id-d25237161d154eada5994743781dc72b.html"  target="element">
+				  		<area shape="rect" coords="167,100,307,173" href="../elements/id-69f6da890c0a4929bed1503791636e03.html"  target="element">
+				  		<area shape="rect" coords="11,100,131,185" href="../elements/id-bd071c7eb0034143ae3b66389221186a.html"  target="element">
+				  				<area shape="rect" coords="371,150,511,223" href="../elements/id-9f14bcb9833a45c4a90a1101f64900ff.html"  target="element">
+				  				<area shape="rect" coords="371,232,511,317" href="../elements/id-67ae37a16424455199f428a022934021.html"  target="element">
+				  				<area shape="rect" coords="527,88,667,143" href="../elements/id-a8e442c9384e4e98bde34f88893abc08.html"  target="element">
+				  				<area shape="rect" coords="527,232,667,305" href="../elements/id-5ccc3b971ffa44a384bb2f71a7c62385.html"  target="element">
+				  				<area shape="rect" coords="371,88,511,143" href="../elements/id-fd8b6baa573b44f4b4a43f40c8840dbe.html"  target="element">
+				  				<area shape="rect" coords="527,152,667,221" href="../elements/id-255fa5b310064731940e9a5023ab2183.html"  target="element">
+
+				  		<area shape="rect" coords="359,64,696,329" href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html"  target="element">
+				  				<area shape="rect" coords="923,249,1043,304" href="../elements/id-6850065d5a4d47b5bce114f365d67880.html"  target="element">
+				  				<area shape="rect" coords="922,187,1042,242" href="../elements/id-d57344311c5345bf95e03e387e1c1528.html"  target="element">
+				  				<area shape="rect" coords="923,129,1043,184" href="../elements/id-6398cf4d87f24f85a09fb6951238d607.html"  target="element">
+				  				<area shape="rect" coords="791,249,911,304" href="../elements/id-2f66af4eb0294e7a8840edb9b6dd94f7.html"  target="element">
+				  				<area shape="rect" coords="791,189,911,244" href="../elements/id-6bbbac69dd9847ab88fb1a34972089fc.html"  target="element">
+				  				<area shape="rect" coords="791,129,911,184" href="../elements/id-8b3d7dda05ec4cf0aeb08782afc344e1.html"  target="element">
+
+				  		<area shape="rect" coords="779,81,1056,312" href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html"  target="element">
+				          <area shape="rect" coords="11,16,288,65" href="../objects/id-78503c493f424355b15f152d8663e765.html" target="element" >
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">SharePoint Permission Levels
+The first step to managing permissions in SharePoint is to understand what actions the various permission levels authorize a person to perform. As a DesignerPlus, you will be granting the Read, Contribute and Design permission levels to people using your SharePoint site &#8211; the rest of the permission levels are described for your information only. 
+
+SharePoint Permission Level - Description
+ - Read - Read-only access to the site. Users with this permission level can view items, web pages and documents, but they cannot delete content or make any changes.
+ - Contribute - Read-Write access to the site. Users with this permission level can view, upload, delete and make changes to items, web pages and documents.
+ - Design - Designers can do everything that Contributors can do, plus they have the ability to create lists, libraries, views and metadata columns. 
+ - DesignerPlus - A DesignerPlus can do everything a Designer can do, plus they have the ability to manage and customize permissions to control content access.
+ - Full Control - DO NOT GRANT Full Control permissions. This permission level is only used by departmental SharePoint site administration and support.
+ - Limited Access - You can effectively IGNORE Limited Access permissions. Limited Access simply indicates that the person or group has a different level of access assigned somewhere else in the site using customized permissions (see Section 4).
+ - View Web Analytics Data - This permission level grants people the ability to see the Site Collection Web Analytics Reports found in the &#8216;Site Settings&#8217; menu. It does not grant access to specific content such as items, web pages or documents.
+
+SHAREPOINT MIGRATION RESOURCE CENTRE
+https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/Your-Role.aspx
+
+Your Role
+&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;Each of us has a role to play in ensuring your site's successful migration!
+
+
+
+With Microsoft ending support to SharePoint 2010, ESDC will manage and protect the content (including metadata) in our existing sites through their transition to the stable and supported environment offered in SharePoint Online.
+Here's how we'll work together to make that happen.&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
+&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;SharePoint Migration Project Team
+IM Lead
+Site Owner
+Site Designer
+Business Analyst
+Technical Consultant
+
+Are you ready to work in SharePoint Online? 
+
+Visit the Learning Essentials page on iService, to learn the basics in managing your lists, libraries and permissions in SharePoint Online. 
+SharePoint Migration Project Team
+Creates new URL for site in SharePoint Online
+Provides comprehensive information/guidance to IM Leads, Site Owners and Designers, aligned to key milestones in site remediation, migration readiness, post-migration rebuilding and site validation
+Consults with Branch/Regional IM Leads to schedule sites in migration waves
+Migrates site to new SharePoint Online environment
+Point of contact to Site Owners/Designers through the migration process
+May assign additional resources to support Site Owners/Designers of more complex sites
+IM Lead
+Reviews sites and proposed migration dates with the Project Team
+May update name(s) &#8220;Site Owner&#8221; role for migration, in the site metadata
+Identifies any essential Branch/Region blackout period (e.g. during peak client service periods)
+Is familiar with the Project communications, guidance and learning resources provided to Site Owners/Designers
+Completes the &#8220;Learning Essentials&#8221; &#8211; SharePoint Online basics you need to know to get up-to-speed quickly after migration
+Point of contact to Site Owners/Designers through the migration process
+Site Owner
+Attends the Owner Orientation Session for more detail on migration process milestones, requirements, roles and responsibilities
+Receives and acts on Project Team information and guidance to ensure completion of Site Remediation before/after migration - shares the information with the Site Designer and others as needed
+Completes the &#8220;Learning Essentials&#8221; &#8211; SharePoint Online basics you need to know to get up-to-speed quickly after migration
+Confirms completion of final steps in SharePoint Online, with the Project Team
+Site Designer
+May be appointed in the &#8220;Site Owner&#8221; role for the purpose of the migration
+May attend the Orientation Session with the Site Owner
+Rebuilds site customization after migration in SP Online&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;&#8203;
+The requirement for these next two roles will depend on the level of site complexity. The Project Team will consider this with the IM Lead for the Branch/Region, in scheduling the site for migration, and will provide further guidance to the Business Analyst and/or Technical Consultant in assessing, remediating and/or rebuilding the site in SharePoint Online.
+
+Business Analyst 
+Supports Owner/Designer by evaluating SP 2010 site and assessing customization and the level of effort to rebuild it in SharePoint Online
+Technical Consultant
+May be assigned by the Project Team as an expert resource to support the Site Designer and Business Analyst roles in rebuilding customization in SharePoint Online site
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+									        <tr>
+									           <td> <a href="../objects/id-78503c493f424355b15f152d8663e765.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-78503c493f424355b15f152d8663e765.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+											    <td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element" class="i18n-elementtype-BusinessCollaboration"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8b3d7dda05ec4cf0aeb08782afc344e1.html" target="element"> Enterprise Architect (Business Role) </a> </td>
+													    <td> <a href="../elements/id-8b3d7dda05ec4cf0aeb08782afc344e1.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6bbbac69dd9847ab88fb1a34972089fc.html" target="element"> Business Architect (Business Role) </a> </td>
+													    <td> <a href="../elements/id-6bbbac69dd9847ab88fb1a34972089fc.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-2f66af4eb0294e7a8840edb9b6dd94f7.html" target="element"> Information Architect (Business Role) </a> </td>
+													    <td> <a href="../elements/id-2f66af4eb0294e7a8840edb9b6dd94f7.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6398cf4d87f24f85a09fb6951238d607.html" target="element"> Application Architect (Business Role) </a> </td>
+													    <td> <a href="../elements/id-6398cf4d87f24f85a09fb6951238d607.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d57344311c5345bf95e03e387e1c1528.html" target="element"> Technology Architect (Business Role) </a> </td>
+													    <td> <a href="../elements/id-d57344311c5345bf95e03e387e1c1528.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-6850065d5a4d47b5bce114f365d67880.html" target="element"> Security Architect (Business Role) </a> </td>
+													    <td> <a href="../elements/id-6850065d5a4d47b5bce114f365d67880.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+											    <td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-255fa5b310064731940e9a5023ab2183.html" target="element"> Contribute (SharePoint Permission) (Capability) </a> </td>
+													    <td> <a href="../elements/id-255fa5b310064731940e9a5023ab2183.html" target="element" class="i18n-elementtype-Capability"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-fd8b6baa573b44f4b4a43f40c8840dbe.html" target="element"> Design (SharePoint Permission) (Capability) </a> </td>
+													    <td> <a href="../elements/id-fd8b6baa573b44f4b4a43f40c8840dbe.html" target="element" class="i18n-elementtype-Capability"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5ccc3b971ffa44a384bb2f71a7c62385.html" target="element"> DesignerPlus (SharePoint Permission) (Capability) </a> </td>
+													    <td> <a href="../elements/id-5ccc3b971ffa44a384bb2f71a7c62385.html" target="element" class="i18n-elementtype-Capability"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a8e442c9384e4e98bde34f88893abc08.html" target="element"> Read (SharePoint Permission) (Capability) </a> </td>
+													    <td> <a href="../elements/id-a8e442c9384e4e98bde34f88893abc08.html" target="element" class="i18n-elementtype-Capability"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-67ae37a16424455199f428a022934021.html" target="element"> View Web Analytics Data (SharePoint Permission) (Capability) </a> </td>
+													    <td> <a href="../elements/id-67ae37a16424455199f428a022934021.html" target="element" class="i18n-elementtype-Capability"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-9f14bcb9833a45c4a90a1101f64900ff.html" target="element"> Limited Access (SharePoint Permission) (Capability) </a> </td>
+													    <td> <a href="../elements/id-9f14bcb9833a45c4a90a1101f64900ff.html" target="element" class="i18n-elementtype-Capability"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-bd071c7eb0034143ae3b66389221186a.html" target="element"> Departmental SharePoint Site Administration and Support (Business Role) </a> </td>
+											    <td> <a href="../elements/id-bd071c7eb0034143ae3b66389221186a.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-69f6da890c0a4929bed1503791636e03.html" target="element"> Full Control (SharePoint Permission) (Capability) </a> </td>
+											    <td> <a href="../elements/id-69f6da890c0a4929bed1503791636e03.html" target="element" class="i18n-elementtype-Capability"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-d25237161d154eada5994743781dc72b.html" target="element"> SharePoint Migration Project Team (SharePoint Role) (Business Role) </a> </td>
+											    <td> <a href="../elements/id-d25237161d154eada5994743781dc72b.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-8a51ad2d48454b79b05c5c899bd7fb29.html" target="element"> Site Designer (SharePoint Role) (Business Role) </a> </td>
+											    <td> <a href="../elements/id-8a51ad2d48454b79b05c5c899bd7fb29.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-3ed72c97c46d4f75b13697305048ff6d.html" target="element"> IM Lead (SharePoint Role) (Business Role) </a> </td>
+											    <td> <a href="../elements/id-3ed72c97c46d4f75b13697305048ff6d.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-b42f668910224b728c7bc9afbf50d50d.html" target="element"> Business Analyst (SharePoint Role) (Business Role) </a> </td>
+											    <td> <a href="../elements/id-b42f668910224b728c7bc9afbf50d50d.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-208d8e09d9bc40ebaf365e2bbed85270.html" target="element"> Site Owner (SharePoint Role) (Business Role) </a> </td>
+											    <td> <a href="../elements/id-208d8e09d9bc40ebaf365e2bbed85270.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-84efec203834482c8cf6533f34ac29c0.html" target="element"> Technical Consultant (SharePoint Role) (Business Role) </a> </td>
+											    <td> <a href="../elements/id-84efec203834482c8cf6533f34ac29c0.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-350c4cf3a19c48cca46bdfdaaeb8ab83.html" target="element"> SharePoint Online Learning Essentials (Resource) </a> </td>
+											    <td> <a href="../elements/id-350c4cf3a19c48cca46bdfdaaeb8ab83.html" target="element" class="i18n-elementtype-Resource"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-1c9c0ba3b8504cd582f536b31df9c8d4.html" target="element"> Resource Centre Frequently Asked Questions (FAQs) (Resource) </a> </td>
+											    <td> <a href="../elements/id-1c9c0ba3b8504cd582f536b31df9c8d4.html" target="element" class="i18n-elementtype-Resource"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+											    <td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-7b2ffd21fd5640239d1d6a8d412f2b72.html" target="element"> IITB IM Director (Business Role) </a> </td>
+											    <td> <a href="../elements/id-7b2ffd21fd5640239d1d6a8d412f2b72.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-fa574cefe696402a8234308e96055c48.html" target="element"> Joanne Mayhew (Business Actor) </a> </td>
+											    <td> <a href="../elements/id-fa574cefe696402a8234308e96055c48.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-1dfc5b23bece492f85b940e7847770bb.html" target="element"> Kristin Robertson (Business Actor) </a> </td>
+											    <td> <a href="../elements/id-1dfc5b23bece492f85b940e7847770bb.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-7ef0d39879f74e7dad85469331764317.html" target="element"> Marie-Claire Simard (Business Actor) </a> </td>
+											    <td> <a href="../elements/id-7ef0d39879f74e7dad85469331764317.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d92f68c51c094944a99f117eaa5aeca1.html" target="element"> Business Actor </a> </td>
+													    <td> <a href="../elements/id-d92f68c51c094944a99f117eaa5aeca1.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-a31e9319f9b54c9ca95aee03fea41242.html" target="element"> Meredith McNaughton (Business Actor) </a> </td>
+											    <td> <a href="../elements/id-a31e9319f9b54c9ca95aee03fea41242.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-0c90e2a4727844499c4270f60a8c691b.html" target="element"> Melissa Cyr (Business Actor) </a> </td>
+											    <td> <a href="../elements/id-0c90e2a4727844499c4270f60a8c691b.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-cc251abefd1b42d582b74d57dd8ae84c.html" target="element"> Stephen Bisang (Business Actor) </a> </td>
+											    <td> <a href="../elements/id-cc251abefd1b42d582b74d57dd8ae84c.html" target="element" class="i18n-elementtype-BusinessActor"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4dec3c9e31674c94b083ca831b509427.html" target="element"> Information Management Office Portal (Application Service) </a> </td>
+											    <td> <a href="../elements/id-4dec3c9e31674c94b083ca831b509427.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+											    <td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-7f915b826fb2467597c2006076b80dfd.html" target="element"> IM Planning (Business Process) </a> </td>
+													    <td> <a href="../elements/id-7f915b826fb2467597c2006076b80dfd.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d68361eb4a744236a2ac6faf2be5ed42.html" target="element"> Collection, Creation, Receipt and Capture (Business Process) </a> </td>
+													    <td> <a href="../elements/id-d68361eb4a744236a2ac6faf2be5ed42.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-dea4e21a1ca64f778284e2531ac17b56.html" target="element"> Organization (Business Process) </a> </td>
+													    <td> <a href="../elements/id-dea4e21a1ca64f778284e2531ac17b56.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-29b769d13be84daeaae6d2be5edb6855.html" target="element"> Use and Dissemination (Business Process) </a> </td>
+													    <td> <a href="../elements/id-29b769d13be84daeaae6d2be5edb6855.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d58fd97a0fbf4f3e9e4d5661b710b607.html" target="element"> Maintenance, Protection and Preservation (Business Process) </a> </td>
+													    <td> <a href="../elements/id-d58fd97a0fbf4f3e9e4d5661b710b607.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-1706309b8fec434fb860a5e715fc12bd.html" target="element"> Disposition (Business Process) </a> </td>
+													    <td> <a href="../elements/id-1706309b8fec434fb860a5e715fc12bd.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-8b4f5beeafbd4f579fd29822bce2a0d4.html" target="element"> Evalutation (Business Process) </a> </td>
+													    <td> <a href="../elements/id-8b4f5beeafbd4f579fd29822bce2a0d4.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-8c504d6786f643a1ac53d3815ffc47f7.html" target="element"> Keep SharePoint Access and Permissions Up-To-Date (Course of Action) </a> </td>
+											    <td> <a href="../elements/id-8c504d6786f643a1ac53d3815ffc47f7.html" target="element" class="i18n-elementtype-CourseOfAction"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/fef0a611-c0ea-489d-9a4b-511d49281f6f.html" target="element"> ESDC User </a> </td>
+											    <td> <a href="../elements/fef0a611-c0ea-489d-9a4b-511d49281f6f.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-853e7bc1ede8440d8c933f45445dd837.html" target="element"> SAS SharePoint 2010 Migration Report (Assessment) </a> </td>
+											    <td> <a href="../elements/id-853e7bc1ede8440d8c933f45445dd837.html" target="element" class="i18n-elementtype-Assessment"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+																	<tr>
+																		<td> <a href="../elements/id-66ba9b042d714916b31d28f49d0e1441.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-66ba9b042d714916b31d28f49d0e1441.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+																		<td> <a href="../elements/id-8b3d7dda05ec4cf0aeb08782afc344e1.html" target="element"> Enterprise Architect (Business Role) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-bcca1421fa1a431aa8eaf567c0e6ec94.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-bcca1421fa1a431aa8eaf567c0e6ec94.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+																		<td> <a href="../elements/id-6bbbac69dd9847ab88fb1a34972089fc.html" target="element"> Business Architect (Business Role) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-a59df29fe4234795a6b326d308cedf62.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a59df29fe4234795a6b326d308cedf62.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+																		<td> <a href="../elements/id-2f66af4eb0294e7a8840edb9b6dd94f7.html" target="element"> Information Architect (Business Role) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7922996a43914b1e9810cef59d782177.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7922996a43914b1e9810cef59d782177.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+																		<td> <a href="../elements/id-6398cf4d87f24f85a09fb6951238d607.html" target="element"> Application Architect (Business Role) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-325e6ab0f5444ffbbae569a984e73a0c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-325e6ab0f5444ffbbae569a984e73a0c.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+																		<td> <a href="../elements/id-d57344311c5345bf95e03e387e1c1528.html" target="element"> Technology Architect (Business Role) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-9537d2d39357435abce2736532801d87.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9537d2d39357435abce2736532801d87.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+																		<td> <a href="../elements/id-6850065d5a4d47b5bce114f365d67880.html" target="element"> Security Architect (Business Role) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-96fc04a47307478a8a728ae5096016a8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-96fc04a47307478a8a728ae5096016a8.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5d0c4bdc62f84628b97932e25541c8b5.html" target="element"> Enterprise Architecture Practitioners (Business Collaboration) </a> </td>
+																		<td> <a href="../elements/id-255fa5b310064731940e9a5023ab2183.html" target="element"> Contribute (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-7c09286a77ee4713bbc585c5315c5b05.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-7c09286a77ee4713bbc585c5315c5b05.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																				<td> <a href="../elements/id-8b3d7dda05ec4cf0aeb08782afc344e1.html" target="element"> Enterprise Architect (Business Role) </a> </td>
+																				<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-d3051d6963ba48fd8d5101b3fbf77f21.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d3051d6963ba48fd8d5101b3fbf77f21.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																		<td> <a href="../elements/id-255fa5b310064731940e9a5023ab2183.html" target="element"> Contribute (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-1b9974e091a84b069e21e7d250837bcb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-1b9974e091a84b069e21e7d250837bcb.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																		<td> <a href="../elements/id-67ae37a16424455199f428a022934021.html" target="element"> View Web Analytics Data (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-70bdd2f6ea8e4459a4c262c71e673303.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-70bdd2f6ea8e4459a4c262c71e673303.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																		<td> <a href="../elements/id-fd8b6baa573b44f4b4a43f40c8840dbe.html" target="element"> Design (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-067bc134c4a34300a35e68caa89670f4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-067bc134c4a34300a35e68caa89670f4.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																		<td> <a href="../elements/id-5ccc3b971ffa44a384bb2f71a7c62385.html" target="element"> DesignerPlus (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-7ac5ca7c341b4d559cd1e68fdbee9655.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7ac5ca7c341b4d559cd1e68fdbee9655.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																		<td> <a href="../elements/id-69f6da890c0a4929bed1503791636e03.html" target="element"> Full Control (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6375632964e8493a87454708a3839b49.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6375632964e8493a87454708a3839b49.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																		<td> <a href="../elements/id-9f14bcb9833a45c4a90a1101f64900ff.html" target="element"> Limited Access (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-91b3bdccace04d9481164d87f054a992.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-91b3bdccace04d9481164d87f054a992.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-72a12ce2bf8743d0a9eccf0112a1b584.html" target="element"> SharePoint 2010 Permission Levels (Grouping) </a> </td>
+																		<td> <a href="../elements/id-a8e442c9384e4e98bde34f88893abc08.html" target="element"> Read (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-5dd07a4aceed4962ab8fccf486991789.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-5dd07a4aceed4962ab8fccf486991789.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-bd071c7eb0034143ae3b66389221186a.html" target="element"> Departmental SharePoint Site Administration and Support (Business Role) </a> </td>
+																		<td> <a href="../elements/id-69f6da890c0a4929bed1503791636e03.html" target="element"> Full Control (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-1cbadc148bc74cadbe52ff1344a081e8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-1cbadc148bc74cadbe52ff1344a081e8.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+																		<td> <a href="../elements/id-7b2ffd21fd5640239d1d6a8d412f2b72.html" target="element"> IITB IM Director (Business Role) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-619ddde39bdd4e93b34d570093b536a2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-619ddde39bdd4e93b34d570093b536a2.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-fa574cefe696402a8234308e96055c48.html" target="element"> Joanne Mayhew (Business Actor) </a> </td>
+																		<td> <a href="../elements/id-7b2ffd21fd5640239d1d6a8d412f2b72.html" target="element"> IITB IM Director (Business Role) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-094b06932c214a59af56be38f98fb3e4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-094b06932c214a59af56be38f98fb3e4.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-1dfc5b23bece492f85b940e7847770bb.html" target="element"> Kristin Robertson (Business Actor) </a> </td>
+																		<td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-6ad608f8028f457686f7e377395cacb5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6ad608f8028f457686f7e377395cacb5.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-7ef0d39879f74e7dad85469331764317.html" target="element"> Marie-Claire Simard (Business Actor) </a> </td>
+																		<td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-31d055fb3c3f4517b416dae1492ad633.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-31d055fb3c3f4517b416dae1492ad633.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-a31e9319f9b54c9ca95aee03fea41242.html" target="element"> Meredith McNaughton (Business Actor) </a> </td>
+																		<td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-419561b0e5b3434bac8f8d0af28a9b3e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-419561b0e5b3434bac8f8d0af28a9b3e.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-0c90e2a4727844499c4270f60a8c691b.html" target="element"> Melissa Cyr (Business Actor) </a> </td>
+																		<td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-8b4cc2e3b53f4d6da5e20ece41cfe8ca.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8b4cc2e3b53f4d6da5e20ece41cfe8ca.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/id-cc251abefd1b42d582b74d57dd8ae84c.html" target="element"> Stephen Bisang (Business Actor) </a> </td>
+																		<td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-644e2964ff334009b8604a693cbdbee8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-644e2964ff334009b8604a693cbdbee8.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-4dec3c9e31674c94b083ca831b509427.html" target="element"> Information Management Office Portal (Application Service) </a> </td>
+																		<td> <a href="../elements/id-4aed1d37fa8a42429bdda41cd46f004a.html" target="element"> IITB IM Lead (Business Role) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-99de679ed87a4bc1b8d7128583881013.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-99de679ed87a4bc1b8d7128583881013.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+																		<td> <a href="../elements/id-7f915b826fb2467597c2006076b80dfd.html" target="element"> IM Planning (Business Process) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-b6f2245d31ab48bca4f7fd9741b4c164.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-b6f2245d31ab48bca4f7fd9741b4c164.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+																		<td> <a href="../elements/id-d68361eb4a744236a2ac6faf2be5ed42.html" target="element"> Collection, Creation, Receipt and Capture (Business Process) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-09cf974590314db58e50eac7a8cdf468.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-09cf974590314db58e50eac7a8cdf468.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+																		<td> <a href="../elements/id-dea4e21a1ca64f778284e2531ac17b56.html" target="element"> Organization (Business Process) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-92c306aa887b41e4bdc349ead073ac2d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-92c306aa887b41e4bdc349ead073ac2d.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+																		<td> <a href="../elements/id-29b769d13be84daeaae6d2be5edb6855.html" target="element"> Use and Dissemination (Business Process) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-79b610fb1884406294ce068635a5855a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-79b610fb1884406294ce068635a5855a.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+																		<td> <a href="../elements/id-d58fd97a0fbf4f3e9e4d5661b710b607.html" target="element"> Maintenance, Protection and Preservation (Business Process) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-13acedc382764e4898e52948e5a5b90e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-13acedc382764e4898e52948e5a5b90e.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+																		<td> <a href="../elements/id-1706309b8fec434fb860a5e715fc12bd.html" target="element"> Disposition (Business Process) </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-40fbbc314da64090b053f38a60638a14.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-40fbbc314da64090b053f38a60638a14.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f1bfe8662cc141c292be32dd0cfd3546.html" target="element"> Information Management Lifecycle (Grouping) </a> </td>
+																		<td> <a href="../elements/id-8b4f5beeafbd4f579fd29822bce2a0d4.html" target="element"> Evalutation (Business Process) </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-53ab58cc749245eb913fa4e368517655.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-53ab58cc749245eb913fa4e368517655.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-7f915b826fb2467597c2006076b80dfd.html" target="element"> IM Planning (Business Process) </a> </td>
+																				<td> <a href="../elements/id-d68361eb4a744236a2ac6faf2be5ed42.html" target="element"> Collection, Creation, Receipt and Capture (Business Process) </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-82814d316b68429c98e730e086a903ac.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-82814d316b68429c98e730e086a903ac.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-d68361eb4a744236a2ac6faf2be5ed42.html" target="element"> Collection, Creation, Receipt and Capture (Business Process) </a> </td>
+																				<td> <a href="../elements/id-dea4e21a1ca64f778284e2531ac17b56.html" target="element"> Organization (Business Process) </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-460ff90151b643ad987d2f7e92a0bec5.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-460ff90151b643ad987d2f7e92a0bec5.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-dea4e21a1ca64f778284e2531ac17b56.html" target="element"> Organization (Business Process) </a> </td>
+																				<td> <a href="../elements/id-29b769d13be84daeaae6d2be5edb6855.html" target="element"> Use and Dissemination (Business Process) </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-8d8949ed1ebd49a6ad6c417866e6a07a.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-8d8949ed1ebd49a6ad6c417866e6a07a.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-29b769d13be84daeaae6d2be5edb6855.html" target="element"> Use and Dissemination (Business Process) </a> </td>
+																				<td> <a href="../elements/id-d58fd97a0fbf4f3e9e4d5661b710b607.html" target="element"> Maintenance, Protection and Preservation (Business Process) </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-8e5712ade4c140599b8e0a8fc3c6b231.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-8e5712ade4c140599b8e0a8fc3c6b231.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-d58fd97a0fbf4f3e9e4d5661b710b607.html" target="element"> Maintenance, Protection and Preservation (Business Process) </a> </td>
+																				<td> <a href="../elements/id-1706309b8fec434fb860a5e715fc12bd.html" target="element"> Disposition (Business Process) </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-a8b2ff5b8b914bedb87fcce2343dde6e.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-a8b2ff5b8b914bedb87fcce2343dde6e.html" target="element" class="i18n-elementtype-FlowRelationship"></a> </td>
+																				<td> <a href="../elements/id-1706309b8fec434fb860a5e715fc12bd.html" target="element"> Disposition (Business Process) </a> </td>
+																				<td> <a href="../elements/id-8b4f5beeafbd4f579fd29822bce2a0d4.html" target="element"> Evalutation (Business Process) </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-7ca147017ec9491a94ab31d4abb3ee4a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-7ca147017ec9491a94ab31d4abb3ee4a.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/fef0a611-c0ea-489d-9a4b-511d49281f6f.html" target="element"> ESDC User </a> </td>
+																		<td> <a href="../elements/id-a8e442c9384e4e98bde34f88893abc08.html" target="element"> Read (SharePoint Permission) (Capability) </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
