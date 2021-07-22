@@ -46,14 +46,15 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">ensure only privileged or authorized users can invoke your API once they are properly authenticated using either an API key or OAUTH token
+						<textarea id="docsrc" style="display:none">ensure only privileged or authorized users can invoke your API once they are properly authenticated using either an API key or OAUTH token
 o	Ensure that the API key/secret is adequately secured
 o	Use API keys with all data API's to track and meter usage
 o	For each API key, rate limits are applied across all API requests
 o	For system-to-system integrations consider key/secret revocation and reissue capabilities
 o	See here for TBS directives on identity management: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16577
 o	See here for TBS directives on general IT security: https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=16578
-</div>
+</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">

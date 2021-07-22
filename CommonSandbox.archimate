@@ -2592,14 +2592,14 @@ The audience and key stakeholders of the EA Principles are: &#xD;
     <element xsi:type="archimate:BusinessObject" name="Data Management Architecture Guardrails" id="a4b910e4-e894-4237-b202-db431f9727c4"/>
     <element xsi:type="archimate:BusinessObject" name="Master DM Architecture Guardrails" id="b2134456-5924-429d-b8ac-c20c329ab3ed"/>
     <element xsi:type="archimate:BusinessObject" name=" Reference DM Architecture Guardrails" id="5cfeb726-6509-41f2-994b-f2dd66b9e1af"/>
-    <element xsi:type="archimate:BusinessObject" name="IAM Architecture Guardrails" id="71efe8d8-63a4-4ae3-9f94-71e85c9128a3"/>
-    <element xsi:type="archimate:BusinessObject" name="Internal Architecture Guardrails" id="6751ca8a-33cb-4cf4-b919-54f43a9dd1c7"/>
-    <element xsi:type="archimate:BusinessObject" name="External Architecture Guardrails" id="992719c7-0e95-40b7-96a4-8dda8c4536c5"/>
+    <element xsi:type="archimate:BusinessObject" name="Access Architecture Guardrails" id="71efe8d8-63a4-4ae3-9f94-71e85c9128a3"/>
+    <element xsi:type="archimate:BusinessObject" name="Internal IAM Architecture Guardrails" id="6751ca8a-33cb-4cf4-b919-54f43a9dd1c7"/>
+    <element xsi:type="archimate:BusinessObject" name="External IAM Architecture Guardrails" id="992719c7-0e95-40b7-96a4-8dda8c4536c5"/>
     <element xsi:type="archimate:BusinessObject" name="Data Analytics Architecture Guardrails" id="2af1a90a-0c86-466e-86e7-028ca6fd7a18"/>
     <element xsi:type="archimate:BusinessObject" name="Insight Reporting Architecture Guardrails" id="3351617b-96e2-430b-af66-ed839b2439b7"/>
     <element xsi:type="archimate:BusinessObject" name="Advanced Analytics Architecture Guardrails" id="36c72806-1e90-42e5-930a-fe86e4fa0921"/>
     <element xsi:type="archimate:BusinessObject" name="Open Data Architecture Guardrails" id="9bd7f7f9-b93f-41f4-88b5-aaa53f88e116"/>
-    <element xsi:type="archimate:BusinessObject" name="MFT Architecture Guardrails" id="f150e6f5-3bf1-4969-bda6-ea06cbcc09ba"/>
+    <element xsi:type="archimate:BusinessObject" name="Bulk Data Architecture Guardrails" id="f150e6f5-3bf1-4969-bda6-ea06cbcc09ba"/>
     <element xsi:type="archimate:BusinessObject" name="SOA Architecture Guardrails" id="5aa08ebf-7ac7-4e0c-b89c-c37b82776e1c"/>
     <element xsi:type="archimate:BusinessRole" name="QualiWare Cloud Provider (Business Role)" id="id-01a72cd230f04afb8c344eb38b28698b"/>
     <element xsi:type="archimate:BusinessRole" name="ESDC QualiWare Application Management (Business Role)" id="id-c1fdc79e3c1a43c9b91514356803fb94"/>
@@ -2854,6 +2854,7 @@ Chris started his career as a software engineer, and was then a consultant. He h
     <element xsi:type="archimate:BusinessProcess" name="Archive Data (Business Process)" id="id-f79f09f75d6246769f7ff955cd3bd352"/>
     <element xsi:type="archimate:BusinessProcess" name="Data Disposition (Business Process)" id="id-8937d2ec1a4b46378250269adba3c859"/>
     <element xsi:type="archimate:BusinessRole" name="Information Technology Strategy Team (Business Role)" id="id-c64df19770bc4678b9b4b92d5f508bcd"/>
+    <element xsi:type="archimate:BusinessObject" name="Zero TrustT Architecture Guardrails" id="4a10053a-87fa-4a3e-8302-575adb3bdd55"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -9897,6 +9898,7 @@ There are many articles and research exploring this topic so here are a few link
     <element xsi:type="archimate:CompositionRelationship" id="id-22364efaf4214ddca1e7aacea35c60c3" source="id-ceec9f698f84487791261ba5eb8ffc22" target="id-8cf909a92143414c9527cf58261d2a80"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-1977f40ec02744de8642060044c6d08b" source="id-ceec9f698f84487791261ba5eb8ffc22" target="id-d176635b60b1438898ec401171cebb84"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-455397b38cfe421c8e1382dec66e20dc" source="id-ceec9f698f84487791261ba5eb8ffc22" target="id-3c877b83245649f890945a99fafe1ff5"/>
+    <element xsi:type="archimate:AggregationRelationship" id="1f148b80-fa1d-40e9-b88e-aa693eade898" source="71efe8d8-63a4-4ae3-9f94-71e85c9128a3" target="4a10053a-87fa-4a3e-8302-575adb3bdd55"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -19345,14 +19347,18 @@ The threat agent was potentially able to:&#xD;
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="f8436dad-6c05-4e73-b624-6bd57b128386" targetConnections="c05c8a06-a0d1-4e21-97d3-d98cffeae76e" archimateElement="71efe8d8-63a4-4ae3-9f94-71e85c9128a3">
-        <bounds x="405" y="126" width="409" height="85"/>
+        <bounds x="405" y="126" width="532" height="85"/>
         <sourceConnection xsi:type="archimate:Connection" id="3d4dc2c4-8d14-4161-8d5b-b47c4baff49e" source="f8436dad-6c05-4e73-b624-6bd57b128386" target="ba301de9-f18b-48b3-b32d-30130f973840" archimateRelationship="72bd213f-c970-49aa-9ec8-3d4c026a3555"/>
         <sourceConnection xsi:type="archimate:Connection" id="effb366c-610d-45ca-a7d3-43fe0a277e55" source="f8436dad-6c05-4e73-b624-6bd57b128386" target="7053f02c-0b86-4fb4-83b5-fcc226ca3eaa" archimateRelationship="7a7eb73b-3d11-4e25-81d4-06c56bb4d714"/>
+        <sourceConnection xsi:type="archimate:Connection" id="053921f3-f015-4aca-bb51-6e9561d3c6cd" source="f8436dad-6c05-4e73-b624-6bd57b128386" target="6abc8ff6-b3f2-4990-a1e4-f234abd0bcb1" archimateRelationship="1f148b80-fa1d-40e9-b88e-aa693eade898"/>
         <child xsi:type="archimate:DiagramObject" id="ba301de9-f18b-48b3-b32d-30130f973840" targetConnections="3d4dc2c4-8d14-4161-8d5b-b47c4baff49e" archimateElement="6751ca8a-33cb-4cf4-b919-54f43a9dd1c7">
-          <bounds x="204" y="36" width="120" height="43"/>
+          <bounds x="180" y="36" width="157" height="43"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="7053f02c-0b86-4fb4-83b5-fcc226ca3eaa" targetConnections="effb366c-610d-45ca-a7d3-43fe0a277e55" archimateElement="992719c7-0e95-40b7-96a4-8dda8c4536c5">
-          <bounds x="72" y="36" width="120" height="43"/>
+          <bounds x="12" y="36" width="157" height="43"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="6abc8ff6-b3f2-4990-a1e4-f234abd0bcb1" targetConnections="053921f3-f015-4aca-bb51-6e9561d3c6cd" archimateElement="4a10053a-87fa-4a3e-8302-575adb3bdd55">
+          <bounds x="348" y="36" width="169" height="43"/>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="47846165-c3c3-41cb-87c2-95d75a667424" targetConnections="e65935b6-eccc-4f2c-afdd-19f6ed1aab2c" archimateElement="2af1a90a-0c86-466e-86e7-028ca6fd7a18">
