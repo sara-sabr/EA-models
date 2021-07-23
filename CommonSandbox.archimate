@@ -7482,9 +7482,6 @@ As Figure 5 shows, in this digitized world, remote work is part of the norm. The
       <documentation>Technology&#xD;
 8. Asset-Centric Security – Security must be as close to the assets as possible (i.e., data-centric and application-centric approaches instead of network-centric strategies) to provide a tailored approach that minimizes productivity disruption.</documentation>
     </element>
-    <element xsi:type="archimate:Meaning" name="Able To Grant Others Same Permission (Meaning)" id="id-589db1755b7e4811a3481d573ffe43aa">
-      <documentation>DesignerPlus members can add people others in the same group</documentation>
-    </element>
     <element xsi:type="archimate:Principle" name="No User Should Have Full Control Permissions (Principle)" id="id-edda5632a7294f319ff297faeb00f379">
       <documentation>This is for System Administration, only.&#xD;
 Any non-SysAdmin's previously granted this permission will have their permission downgraded.&#xD;
@@ -10694,7 +10691,6 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-904103ac61674f7db21ce64c29555289" source="id-ae47d9057355434b86d21e65b5ace7d0" target="id-d25237161d154eada5994743781dc72b"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-44cd16929945475aab1816d3d30ab906" source="id-ae47d9057355434b86d21e65b5ace7d0" target="id-b42f668910224b728c7bc9afbf50d50d"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-c9158469705747818b3f40c4579a8eea" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-72a12ce2bf8743d0a9eccf0112a1b584"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-9794706895dd46afbdc771d77ceb858b" source="id-589db1755b7e4811a3481d573ffe43aa" target="id-5ccc3b971ffa44a384bb2f71a7c62385"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-754c165c18494394a040b5aabeb2505a" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-3927a29fba8248d3ad1ba99bc635c17e"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-e09fad3e86fa4826b651ec2ba2d28e30" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-cc6d6e27351942cb937467560b646684"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-20214a29479a413cb056be44b3108394" source="id-edda5632a7294f319ff297faeb00f379" target="id-69f6da890c0a4929bed1503791636e03"/>
@@ -13919,7 +13915,7 @@ Working in the Open: Part 2&#xD;
             <child xsi:type="archimate:DiagramObject" id="id-a61b7ef80f374fd0b5a3bbe4c244b934" targetConnections="id-42eecb93db994c1688c9df3ac90a0af9" archimateElement="id-fd8b6baa573b44f4b4a43f40c8840dbe">
               <bounds x="12" y="24" width="140" height="55"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-f6c1a73aac7a4776b86ba4c62ed5fd68" targetConnections="id-4a2d13b3772e41f9b008ad66195e494a id-112bd2922f464a3fbb2b195e850ecdcc id-2c780e5cfd914cb0875e13eeb9e9b0ca" archimateElement="id-5ccc3b971ffa44a384bb2f71a7c62385">
+            <child xsi:type="archimate:DiagramObject" id="id-f6c1a73aac7a4776b86ba4c62ed5fd68" targetConnections="id-4a2d13b3772e41f9b008ad66195e494a id-2c780e5cfd914cb0875e13eeb9e9b0ca" archimateElement="id-5ccc3b971ffa44a384bb2f71a7c62385">
               <bounds x="168" y="168" width="140" height="73"/>
             </child>
             <child xsi:type="archimate:DiagramObject" id="id-6f1e7fe9aa5a43d19e03543a3918382f" targetConnections="id-78c60198ed6e493aae63add9e921981c id-66f43e8bdbf04e2aaa051c1e838e4cf0" archimateElement="id-a8e442c9384e4e98bde34f88893abc08">
@@ -13938,10 +13934,6 @@ Working in the Open: Part 2&#xD;
           <child xsi:type="archimate:DiagramObject" id="id-9da81d1d83244d5c9e6cdd95b61862b8" targetConnections="id-4ab936276c264f449e95a5ba95db0470" archimateElement="id-cc6d6e27351942cb937467560b646684">
             <bounds x="192" y="312" width="140" height="72"/>
           </child>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-825cc741a7d041468dd0e2c89bdae970" textPosition="1" archimateElement="id-589db1755b7e4811a3481d573ffe43aa">
-          <bounds x="768" y="228" width="120" height="67"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-112bd2922f464a3fbb2b195e850ecdcc" source="id-825cc741a7d041468dd0e2c89bdae970" target="id-f6c1a73aac7a4776b86ba4c62ed5fd68" archimateRelationship="id-9794706895dd46afbdc771d77ceb858b"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-65d6465a021540d8aed633e8a260c750" archimateElement="id-edda5632a7294f319ff297faeb00f379">
           <bounds x="192" y="227" width="140" height="70"/>
@@ -13965,6 +13957,10 @@ Working in the Open: Part 2&#xD;
         <child xsi:type="archimate:Note" id="id-1c5ade52199646bc9e17e225612dcf7b" textAlignment="1">
           <bounds x="222" y="60" width="91" height="30"/>
           <content>v0.1.20210723</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-0718e7ba8fda449f8211946da1e02094" textAlignment="1">
+          <bounds x="472" y="423" width="181" height="73"/>
+          <content>NOTE: Users with DesignPlus permission are able to add others to the same permission group (&quot;SAS_Design&quot;).</content>
         </child>
         <documentation>SharePoint Permission Levels&#xD;
 The first step to managing permissions in SharePoint is to understand what actions the various permission levels authorize a person to perform. As a DesignerPlus, you will be granting the Read, Contribute and Design permission levels to people using your SharePoint site – the rest of the permission levels are described for your information only. &#xD;

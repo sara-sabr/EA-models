@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Data Integration Context (Grouping)</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Data Integration Context (Grouping)</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Grouping"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Grouping" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Data Integration Context
+A data integration may be architected as part of a Solution or Capability Architecture development or as part of an Enterprise Architecture development. The TOGAF&#174; Standard (see References) defines an Architecture Development Method (ADM), and its Enterprise Continuum provides an overall context for architectures and solutions, and classifies assets that apply across the entire scope of the enterprise.
+One of the key aspects of Enterprise Architecture implementation is data migration from the existing to the target environment. The target environment is generally rationalized and streamlined, entailing a major data integration effort to migrate the data.
+Most data integration architectures are in the organization-specific part of that continuum, guiding and supporting organization-specific data integration solutions. Portals, integrated information environments (An Information Architecture Vision: Moving from Data Rich to Information Smart; see References), information sharing environments, and emerging data fabric/data mesh concepts are common systems architecture concepts, and they guide and support the use of vendor and open source data platforms that are common systems solutions.
+A data integration is typically preceded by planning, discovery, and extraction, and followed by verification before the integrated data &#8220;goes live&#8221;. From that point, it is subject to lifecycle management, which determines its storage, use, and eventual disposal. These activities are all carried out in accordance with information governance, as illustrated in Figure 1:
+&#8226; Plan: includes representing information holdings and identifying shortfalls, such as a lack of requisite quality
+&#8226; Discover &amp; Extract: includes analyzing the shortfalls, finding sources and information quality (often through metadata), assessing privacy and legality of extraction, cost-benefit analysis, and getting the information required directly or indirectly (e.g., through data as a service)
+&#8226; Transform &amp; Integrate: includes transforming data into a standard enterprise format, assessing information loss and resultant quality, information sub-integration (e.g., multi-sensor), creating metadata for integrated data, and integration with existing information holdings
+&#8226; Verify: includes establishing the legal/privacy/policy framework, determining whether the integration is legal, determining whether the integration is in line with enterprise values and brand, and determining the need to transform (e.g., anonymize) integrated data
+&#8226; Use: includes operations, decision support, and analytics; for example, Business Intelligence (BI) and Machine Learning (ML)
+
+&lt;Figure 1: Data Integration Context&gt;
+
+In a complex case &#8211; for example, following a merger &#8211; there may be many data integrations carried out in parallel, and the integration may not be a &#8220;one-off&#8221; event, but a continuous process operating on data that is continually changing. This process may be partly or entirely automated. Establishing such processes can be a significant part of a Solution or Enterprise Architecture.
+The Technology Architecture phase of a TOGAF architecture development includes the identification of appropriate technical standards. The standards described in this document are candidates for inclusion in the Technology Architecture of an architecture development that covers data integration.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
