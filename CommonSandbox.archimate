@@ -1821,6 +1821,23 @@ https://dialogue/proj/ITCD-RMTI/SAS-SAS/_layouts/settings.aspx&#xD;
 3. Share with Public (use caution here).&#xD;
 There should be a strong Use Case here, with permissions set only at the lowest-level folder, to ensure permissions are not inherited by mistake.</documentation>
     </element>
+    <element xsi:type="archimate:CourseOfAction" name="Develop WLM-and-CE Roadmap (Course of Action)" id="id-34ba84092bcb4b61bfb9c8f2e6688a58">
+      <documentation>ESDC will develop a roadmap based on this assessment to address risks and known technical debt, in concert with the transformation agenda currently underway at ESDC.&#xD;
+This involves migrating departmental applications from existing SSC legacy data centres into new hosting environments. ESDC will work with Treasury Board Secretariat (TBS) and SSC to identify target hosting environments, including Cloud based hosting services operated by the Government of Canada and private industry and at new, state-of-the-art data centres operated by SSC.</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="B10.6.2 IT Technical Management (Capability)" id="id-8223ee10e23e49848c139481919978f9">
+      <documentation>10.6.2 IT Technical Management&#xD;
+The ability to ensure current and appropriate IT is in use.  For example, Application Management, IT Infrastructure Management</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="B10.6.4 Channel Infrastructure Management (Capability)" id="id-071477b06e844b7a9b64338517fa9995">
+      <documentation>10.6.4 Channel Infrastructure Management&#xD;
+The ability to provide the technological needs to support the operational real-time management of delivery of the channels</documentation>
+    </element>
+    <element xsi:type="archimate:Capability" name="Capability" id="id-c99310608f3749fa813b0273073c2be0"/>
+    <element xsi:type="archimate:Capability" name="B10.6.3 IT Service Management &amp; Operations (Capability)" id="id-e445ae4b0b5547308d4c3037052f3c6a">
+      <documentation>10.6.3 IT Service Management &amp; Operations&#xD;
+The ability to respond to interruptions to IT services to restore service levels.  For example: National Service Desk (NSD)</documentation>
+    </element>
   </folder>
   <folder name="Business" id="b450b6a4-519b-4191-a289-4df897ca0a1b" type="business">
     <element xsi:type="archimate:BusinessFunction" name="Test" id="3e3bc277-1fea-40bd-bbc1-35dd96697b2a"/>
@@ -2337,7 +2354,9 @@ ICST - Information Collection and SYnthesis Team</documentation>
     <element xsi:type="archimate:BusinessRole" name="PM PDO" id="id-00529e741033454189067af03cae4627"/>
     <element xsi:type="archimate:BusinessCollaboration" name="Regional Executives" id="id-7512ddb014b44e659b2443e1fb94163a"/>
     <element xsi:type="archimate:BusinessCollaboration" name="Regional Managers" id="id-444427c715d74fedb5aaf6efa43c9a96"/>
-    <element xsi:type="archimate:BusinessRole" name="Executive Sponsor" id="id-2f2ec75f35ed4aaa82c4b61ca8c26743"/>
+    <element xsi:type="archimate:BusinessRole" name="Executive Sponsor" id="id-2f2ec75f35ed4aaa82c4b61ca8c26743">
+      <documentation>Justifies expenditure of funds for project planning.</documentation>
+    </element>
     <element xsi:type="archimate:BusinessActor" name="Elise Boisjoly" id="id-66a7dd913f3746d0a823285bfddb5050"/>
     <element xsi:type="archimate:BusinessRole" name="Integrity Operations" id="id-7edd06e108eb4610a81f0267c1f8512c"/>
     <element xsi:type="archimate:BusinessActor" name="Kathleen Walford" id="id-1bbae6b0f230455b8aeee3d732fbbf90"/>
@@ -3079,6 +3098,19 @@ Data primarily intended for human consumption but conforming, or partly conformi
     </element>
     <element xsi:type="archimate:BusinessObject" name="Business Object" id="id-296248707d9d4c598fdc52e040158b19"/>
     <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-986852358abd4baaa5129d59216f99d0"/>
+    <element xsi:type="archimate:BusinessActor" name="Susan Donavan Brown (Business Actor)" id="id-d2b79e25adaa4b52ba607086cbfb79e4"/>
+    <element xsi:type="archimate:BusinessRole" name="Governance Authority (Business Role)" id="id-ae93c26492f8428482757d01c14860ce">
+      <documentation>Governance authority&#xD;
+Identifies and evaluates feasibility and value of an opportunity.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Information Technology Services (Business Service)" id="id-7e8ce4104b62451e9e54b473baaf58a3">
+      <documentation>2.2.4 Program Alignment Architecture:&#xD;
+5.1.7 Information Technology Services&#xD;
+The migration of ESDC’s solutions to the EDCs and to cloud, going through an evaluation and adaptation of the solutions, will ensure proper IT service continuation and improve ESDC security Posture.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="ESDC Employees (Business Role)" id="id-31d023c3f24b48459871ead5390338fc"/>
+    <element xsi:type="archimate:BusinessRole" name="ESDC Clients (Business Role)" id="id-d91d9486915549ec80450d53451ca755"/>
+    <element xsi:type="archimate:BusinessRole" name="Canadian Citizens (Business Role)" id="id-ab23b2d9ede84e27b096a312ff349dc2"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -4361,6 +4393,8 @@ Figure 3 shows how data platforms enable applications to access data. They may c
 Figure 3: Data Platforms</documentation>
     </element>
     <element xsi:type="archimate:Node" name="Node" id="id-dab04576107d4e2092b38f22ea42d626"/>
+    <element xsi:type="archimate:Facility" name="Montreal Data Centre (Facility)" id="id-a51e108a0d4d47648b0a10398ef0b180"/>
+    <element xsi:type="archimate:Facility" name="Moncton Data Centre (Facility)" id="id-d6ea559073f84d81b89fe59ed944c077"/>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -7598,6 +7632,230 @@ XPath XML Path Language&#xD;
 XQuery XML Query&#xD;
 XSD XML</documentation>
     </element>
+    <element xsi:type="archimate:Assessment" name="T.I.M.E. Application Disposition (Assessment)" id="id-5554091ce3664339a25b3f3780000e42">
+      <documentation>This assessment will identify the appropriate disposition of each application as per the GC guidelines (i.e. Tolerate (maintain), Invest, Move, or Eliminate) and based on ESDC medium and longer term business requirements.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Increased Risk Due To Continued Legacy Data Centre Use (Assessment)" id="id-4e6854fec01141f08d4ff1bab15b2b6e">
+      <documentation>2.1.2 Consequence of Inaction&#xD;
+ - Continued use of the legacy Data Centres would increase risks to security and service delivery. The aging datacentres are expensive to maintain and present an increasing risk to its data protection, disaster recovery capacity, and service delivery</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Enable Effective and Timely Availability of Information (Goal)" id="id-8914b0220f7340be897582977028b5d2">
+      <documentation>Develop and implement modern IT infrastructure and platforms that enables the effective and timely availability of information across ESDC.&#xD;
+The workload migration to the new EDC and to cloud, going through an evaluation and adaptation of the solutions, is in line with the IT Infrastructure&#xD;
+Refresh project to provide a modernized and secured environment to the department.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="WLM-and-CE Business Context (Assessment)" id="id-3eb54fa860a54ed2a7d688cef86abc42">
+      <documentation>In Budget 2018, $110 million was earmarked over six years to support SSC’s Workload Migration program, with the objective to modernize and enhance the government’s digital services. These funds are to be accessed by SSC’s partner departments to help them to modernize and to migrate their applications from older data centres to cloud solutions or to more modern data centres.&#xD;
+Through the Benefits Delivery Modernization (BDM) program and the Technical Debt Remediation (TDR) initiatives, ESDC will be addressing many of the legacy systems and applications currently residing in legacy data centre. However, it will not address all of it; some applications will remain in the legacy data centres and will continue to present risks related to infrastructure, architecture as well as technology used. The WLM program plans on dealing with these remaining applications.&#xD;
+The preliminary assessment shows that out of 333 applications in the Montréal and Moncton Data Centres, 22 require immediate attention due to aging IT, and 162 require a high level of attention in the coming years. The application life cycle indicates that 272 of them will need to be replatformed/replaced/rebuilt/revised/retired in a near future in order to adapt to the ongoing and growing demands in IT.&#xD;
+Applications need to be hosted in a secured and stable environment, which they will not have if we leave them in the legacy data centres.</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Applications Need To Be Hosted In A Secured and Stable Environment (Principle)" id="id-4308ff622746457fb4e0964973587188">
+      <documentation>2.3 Business Context&#xD;
+Applications need to be hosted in a secured and stable environment, which they will not have if we leave them in the legacy data centres.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="1. Align With Digital Transformation (Goal)" id="id-8e559209a3734e528e5ba8cfbe13bb64"/>
+    <element xsi:type="archimate:Goal" name="2. Improve ESDC Security Posture and IT Service Delivery (Goal)" id="id-b314a82b42874b3f92b21fa8b62aac21"/>
+    <element xsi:type="archimate:Goal" name="3. Reduce Technical Debt and Modernize Applications (Goal)" id="id-ef9f4c770f1a4ba5a9b0b73cdacc9857">
+      <documentation>Reduction of Technical Debt&#xD;
+The ESDC technical debt of the applications in scope will be reduced by updating the technological architecture and infrastructure of the solutions moved to cloud or EDC.</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Work Closely With Partners To Align On Scope and Interdependencies (Requirement)" id="id-aa72d4ba36db463f9ffe923a58e48289">
+      <documentation>WLM-and-CE's Ecosystem&#xD;
+Due to the scale of operations tha will be carired out within WLM, WLM is working closely with its partners to align on scope and interdependencies.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Align With TBS Cloud Adoption Policy and GC Modernization Plan (Driver)" id="id-bbe64eb9a77b40c0adcb70323143a372">
+      <documentation>Once the WLM project is complete it will help ESDC align with the Treasury Board Secretariat Cloud Adoption Policy and the Government of Canada Modernization Plan.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Innovation, Information and Technology Branch (IITB) (Stakeholder)" id="id-836768fa8e3547e0bd0dff4f592ac3da">
+      <documentation>WLM-and-CE Project 202000009&#xD;
+IITB is co-leading the project initiative with SSC. This project will focus on modernization of the solutions and infrastructure to support ESDC's business into the future (i.e. cloud, data strategy, AI, channel convergence, mobile service offerings, etc.). In addition to the IITB WLM project team, services from other parts of IITB including, Architecture, IT Security, Development teams, Cloud Center of Expertise (CCOE), Application Portfolio Management (APM), Enterprise Operations, Strategic Partnership Management, Data and Analytics Services, Business Relationship Management, Branch PMO, and Testing Services.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="ESDC Business Lines (Stakeholder)" id="id-8ed7b04e34af44f6ba2cc83a7241892c">
+      <documentation>WLM-and-CE Project 202000009&#xD;
+A key initial step is consultation with Business leaders in ESDC to ensure the project aligns and supports their future policy and strategic directions as well as the Service Delivery Vision. Ensures all impacts from ESDC are captured and will be considered.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="ESDC CFOB-Legal-and-HR (Stakeholder)" id="id-ac7e215710d742938688491a9e234f44">
+      <documentation>WLM-and-CE Project 202000009&#xD;
+Central agencies as well as departmental enabling services and oversight services (such as project management COE, EPMO, FMAs, MPIB) are all critical to the successful delivery of this&#xD;
+project. PSDC, CFOB Contracting, CFOB Procurement, Legal and HR will also be consulted (if/when required).</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Shared Services Canada (SSC) (Stakeholder)" id="id-82cbc9777dda4f349f0d9381c6ac1b9a">
+      <documentation>WLM-and-CE Project 202000009&#xD;
+SSC is the GC infrastructure provider. They are a leading partner on this project. The Data Centres (VM/Servers) will be upgraded by SSC. It will require the support of their Network Development and Architecture, Security, Project Management, Application Management, Cloud Center of Expertise, and Data Centres teams.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="Treasury Board of Canada Secretariat (Stakeholder)" id="id-b0de3ab877ba4987a0f973db3a1e0171">
+      <documentation>WLM-and-CE Project 202000009&#xD;
+The Treasury Board of Canada Secretariat will be a key stakeholder ensuring the broader government perspective alignment and assisting with insights and learning in exercising&#xD;
+their oversight role.</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Reduction of Technical Debt (Outcome)" id="id-6d68c40a48904a2a91d0f800f3bed4aa"/>
+    <element xsi:type="archimate:Outcome" name="Alignment to Cloud First GC Priority (Outcome)" id="id-0bec372b9778456b9c04174b2326a1fc">
+      <documentation>WLM-and-CE Project 202000009&#xD;
+Alignment to Cloud First GC priority&#xD;
+Not all applications can be moved to the cloud. Tools, mechanism and resources are in place to support the decision process for each application.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="WLM-and-CE Metric - Number of Applications Migrated (Assessment)" id="id-570f5985976145519073436dc2fda22d">
+      <documentation>Description&#xD;
+Number of applications moved out of the legacy data centres (Decommissioned, Cloud, EDC)&#xD;
+Assumptions&#xD;
+Technology and architecture in the destination centre is more up to date than the one in in the current legacy data centres.&#xD;
+All applications in scope will go through an update of its architecture to properly function in the destination.&#xD;
+The current WLM scope is 125 applications</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="WLM-and-CE Metric - Cloud Usage (Assessment)" id="id-987a0bdc7b7d47618bb308521dc115c7">
+      <documentation>Description&#xD;
+Number of application moved to cloud&#xD;
+Assumptions&#xD;
+GoC will continue to promote the cloud first priority&#xD;
+Procurement vehicle in place for cloud service provider will align with the requirements of the selected applications.&#xD;
+55 applications (or more) will be moved to a cloud environment through the WLM project.&#xD;
+Metric Name: Cloud Usage&#xD;
+Metric Formula: Cloud app count&#xD;
+Baseline: 0&#xD;
+Target: 55&#xD;
+Metric Type: Non-Monetary&#xD;
+Benefit: Alignment with digital transformation</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Improve IT Security Posture and Compliance (Outcome)" id="id-5924f0f302b44194ad359d508cd72b90">
+      <documentation>WLM-and-CE Project 202000009&#xD;
+Improve IT Security Posture and Compliance&#xD;
+All clouds and EDC applications will require a revision of their authorization to operate (ATO)&#xD;
+The cloud and EDC environments support the new ITSG33 standard&#xD;
+The network and firewalls configuration will support the ITSG33 for up to PBMM.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="WLM-and-CE Metric - Increase Security Compliance (Assessment)" id="id-b093158b12e84ae8b8203cfee2786b9b">
+      <documentation>Description&#xD;
+Reduction of the number of IT security mitigations in the application's authorization to operate (ATO).&#xD;
+Assumptions&#xD;
+Each applications moved to EDC or Cloud will require a refresh of their ATO&#xD;
+The destination architecture will support a more compliant architecture&#xD;
+&#xD;
+Metric Name: Increase security compliance&#xD;
+Metric Formula: level of compliance in the ATO&#xD;
+Baseline: No ATO or multiple mitigations&#xD;
+Target: To be better defined ***</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Improve Agility &amp; Scalability (Goal)" id="id-b171e243a56949af82b6dc7b20504ccd"/>
+    <element xsi:type="archimate:Outcome" name="Improved Agile Development Capability (Outcome)" id="id-88ac1979e7164c5aa85a59ecd40a9d4d">
+      <documentation>Improved agile development capability&#xD;
+Outcome Description&#xD;
+IITB will have control over its Virtual Machines and Environments in the cloud&#xD;
+Cloud environments will support a faster turnaround time when requirements ask for a change in configuration or infrastructure (memory, hard drive space, environments).</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="WLM-and-CE Metric - Time to Provision Environments (Assessment)" id="id-c2c85b96e7ab4b109c16d8dc2004c6ba">
+      <documentation>Time to provision environments&#xD;
+Description&#xD;
+Time required to complete the release of an application, from its release request to its full implementation.&#xD;
+Assumptions&#xD;
+SSC will not require to be involved in each Cloud releases&#xD;
+The cloud release process, approved by Release Management Services (RMS), will be the one used by WLM&#xD;
+Cloud environments can be generated by IITB with no delay required.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Interdependencies With Partners (Assessment)" id="id-e2cef6ed630b46cdb394604f0e3a1ace">
+      <documentation>Risk Description:&#xD;
+Due to the collaborative nature of the work that is to be done within the scope of the WLM project, there is a risk that the partner processes outside of IITB may impact the progress of the work being done. These partners currently include SSC. A delay in the process of any of these partners could potentially affect the WLM Project timelines and cause delays and unexpected financial costs.&#xD;
+Impact Description:&#xD;
+There is a risk that the timeline is affected, also impacting the project costs. The scope might also need to be revised if partners cannot proceed with the required activities.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Interoperability (Assessment)" id="id-360aa6a700b44dbeac90f68f5c6c17fa">
+      <documentation>Risk Description: &#xD;
+Due to the nature of the current environment and how it has some differences with the new environments, there is a risk that there will be a lack of interoperability between the old and new systems.&#xD;
+Impact Description: &#xD;
+The solution might require significant adaptation in order to perform in the new environment. There is a risk that the timeline is affected, also impacting the project costs. The level of change might affect the project benefits realisation</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - High Complexity Leading To Delays (Assessment)" id="id-10f758185b6149ab9588734ff4a14974">
+      <documentation>Risk Description:&#xD;
+Due to the high volume of applications that are very complex, the change in architecture for both EDC and cloud destination, there is a risk that the schedule will not be maintained as some applications may require more time than others or that ESDC might not have the required expertise. This would lead to delays in the project timelines and unexpected financial costs, in addition to delays to the benefits realization.&#xD;
+Impact Description:&#xD;
+There is a risk that the timeline is affected, also impacting the project costs. Additional modification to the architecture at the application and infrastructure level might be required.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Insufficient Funding (Assessment)" id="id-7f30e5376aa14f758fecc021228ad479">
+      <documentation>Risk Description:&#xD;
+Due to the long-term nature of the project and the possibility of changing priorities, there is a risk that the project funding might need to be adjusted throughout the project lifecycle or not sufficient for the full completion of the project and benefit realisation.&#xD;
+Impact Description:&#xD;
+If funding is not sufficient, the scope will need to be adjusted, affecting the level of benefits and project timelines</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Change In Schedule (Assessment)" id="id-4754fddc16a14b029fa3ae44ecaa9032">
+      <documentation>Risk Description:&#xD;
+Due to the many factors that could cause delays to the project, there is a risk that the project schedule will need to be changed and adjusted throughout the project lifecycle.&#xD;
+Impact Description:&#xD;
+There is a risk that the timeline is increased, also impacting the project costs.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Interdependencies With Other Projects (Assessment)" id="id-83cb23097f334b1ba6cbee3507e5a2f5">
+      <documentation>Risk Description:&#xD;
+Due to the collaborative nature of the work that is to be done within the scope of the WLM project, there is a risk that the partner processes within IITB may impact the progress of the work being done. These partners currently include the following teams: Application Portfolio Management, IT Security, IT Accessibility, Enterprise Architecture, BRM, CCOE, and Testing Services. A delay in the process of any of these partners could potentially affect the WLM Project timelines and cause delays and unexpected financial costs.&#xD;
+Impact Description:&#xD;
+There is a risk that the timeline is affected, also impacting the project costs.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Insufficient IITB Support (Assessment)" id="id-648c205c239b40eba235f10cf3c93d6e">
+      <documentation>Risk Description:&#xD;
+Due to the dependency of the project on the support of teams such as Application Portfolio Management and the Cloud Centre of Expertise, there is a risk that a disturbance in their environments may result in delays to the operation and progression of the WLM Project.&#xD;
+Impact Description:&#xD;
+There is a risk that the timeline is affected, also impacting the project costs.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - High Network Complexity and Performance (Assessment)" id="id-29038e7916c0456786c853be3ce11111">
+      <documentation>Risk Description:&#xD;
+Due to current problems related to the ESDC network performance and complexity, there is a risk that the level of difficulty may increase with workload migration activities and/or limit the ability of EDC to migrate the applications away from legacy datacentres and to EDCs or Cloud.&#xD;
+Impact Description:&#xD;
+There is a risk that the timeline is affected, either caused by delays on delivery or added work required, also impacting the project costs.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Delays In IT Security Policies and Procedures (Assessment)" id="id-a34a0732ae94423d9fc96b37a09b9e69">
+      <documentation>Risk Description:&#xD;
+Due to the migration to cloud and to new environments, there is a risk that IT Security policies and procedures may need to be taken into consideration, thus potentially altering the project operations and timelines. Additional work might be required to respect security standards. The timeline and project costs might be affected.&#xD;
+Impact Description:&#xD;
+Additional work might be required to respect security standards. The timeline and project costs might be affected. The security implications might affect the level of benefits realised.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Unclear Scope (Assessment)" id="id-b95f6907f25141938f6e51842418de78">
+      <documentation>Risk Description:&#xD;
+Due to the scale of operations that will be carried out within the WLM project scope, there is a risk that Tech Debt &amp; BDM may overlap the WLM scope when working on their respective mandates. This could result in the same application being picked up by multiple groups if there is a lack of clear communication and planning.&#xD;
+Impact Description:&#xD;
+There is a risk that the scope and timeline are affected, also impacting the project costs.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Availability Of Capability and Capacity (Assessment)" id="id-3b95047110ca48bb94973843b9eebaa3">
+      <documentation>Risk Description:&#xD;
+Due to the large amount of applications that are included in the WLM scope, there is a risk that the knowledge &amp; expertise required to effectively execute the work required may not be readily available. This could affect the project timeline, costing, and level of benefits realization.&#xD;
+Impact Description:&#xD;
+Lack of knowledge might affect the timeline, also impacting the project costs.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Risk - Application Decommissioning (Assessment)" id="id-a26ae49499be4cd1adf985dbade00e63">
+      <documentation>Risk Description:&#xD;
+There is a risk that the decommissioning of application do not respect the established processes regarding information management or that the server remains active due to improper respect of procedures.&#xD;
+Impact Description:&#xD;
+Unused, yet active servers, will result in a reduction of benefit realisation. Added/delayed work will have an impact on schedule and project costs.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Ability To Implement WLM-and-CE is HIGH (Assessment)" id="id-7daae99cbfff475681a2877997a2d8ec">
+      <documentation>6.2.2. - Implementation and Capacity Considerations&#xD;
+Stakeholder Impacts:&#xD;
+1. IITB is currently working to modernize its service delivery and addressing its technical debt. This option would enable IITB to support the technical debt efforts by moving out of the legacy datacenters.&#xD;
+2. There is no planned changes to any interfaces or data manipulation. Clients should not perceive any changes, other than potential increase in network efficiency or application response time.&#xD;
+3. SSC has initiated the WLM program and requested ESDC to participate. SSC has provided a benefit map, reflecting the multiple possible gains from leaving the legacy datacentres. Due to the difference in infrastructure and architecture, this option would enable only part of the SSC benefits.&#xD;
+&#xD;
+Project Management Capacity&#xD;
+1. IITB has appointed a project management to supervise and manage the project.&#xD;
+2. IITB solution managers will act as subject matter expert for their respective solutions, providing plan, costs, risks and regular updates to the management team.&#xD;
+3. IITB project management is working in collaboration with SSC to plan and coordinate the project.&#xD;
+&#xD;
+Based on the Implementation and Capacity listed considerations above, the ability to implement this option is rated as: HIGH</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="WLM-and-CE In Scope Functional Requirements (Requirement)" id="id-a70f3fc4c4be47c18c86bb0a83639ae2">
+      <documentation>1. Migration of data up to and including Protected B.&#xD;
+2. Connectivity to remain same or better&#xD;
+3. The discovery and analysis of the application configuration, interdependencies and data centre infrastructure environment as well as application readiness for migration.&#xD;
+4. Assessment of Cloud and enterprise data centre environments to develop a migration strategy&#xD;
+5. Decommission of application services&#xD;
+6. The design and build of the end state environment&#xD;
+7. The final operational transition and cutover of workloads including system monitoring, incident management, change management, and help desk processes and procedures that are affected by the migration in order to preserve equivalent service levels&#xD;
+8. Completion of the Authority to Operate and Security Assessment as required&#xD;
+9. Provision of all infrastructure by SSC to meet the existing service levels as a minimum</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="WLM-and-CE Out Of Scope Functional Requirements (Requirement)" id="id-037206963b0e46979e66a65ae46eabef">
+      <documentation>1. Any application projects included in plans for Technical Debt, BDM, or included in business and/or IT operational plans&#xD;
+2. Upgrade and enhancements to business application functionality, upgrade to application products or versions of technologies from current “N” levels&#xD;
+3. Upgrade of infrastructure outside of end state environment standards required for WLM&#xD;
+4. Interactions with external third party services associated with business functionality&#xD;
+5. Migration of secret level data and workloads</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Feature Gap" id="9ff8a02c-23f7-41f7-9ee7-0a1373ad231a"/>
@@ -8193,7 +8451,22 @@ FY23/24 &amp; BEYOND</documentation>
     </element>
     <element xsi:type="archimate:WorkPackage" name="Deliver H2 (Work Package)" id="id-13dc2b2ee96144d8a69423154c5095c7"/>
     <element xsi:type="archimate:WorkPackage" name="Deliver H3 (Work Package)" id="id-021952067a9e48699af49e23084eeee8"/>
-    <element xsi:type="archimate:ImplementationEvent" name="Go Live (Implementation Event)" id="id-feba77095e5c4f3289a61b52b4f46480"/>
+    <element xsi:type="archimate:Gap" name="ESDC Technical Debt (Gap)" id="id-16a5a718f984413c9bc342959c4b262a">
+      <documentation>2.1.2 Consequence of Inaction&#xD;
+Not proceeding with this project will further increase ESDC’s technical debt.</documentation>
+    </element>
+    <element xsi:type="archimate:Gap" name="ESDC Unable To Meet Digital Transformation Targets (Gap)" id="id-8be0b9dbd584499eace4f96bae08ec9d">
+      <documentation>2.1.2 Consequence of Inaction&#xD;
+Inaction will result in increasing ESDC’s inability to meet targets for digital transformation&#xD;
+ - To keep up with the technical requirements of the future, in digital service delivery;&#xD;
+ - To move to a cloud first model, and thus achieving the associated financial and operational advantages.</documentation>
+    </element>
+    <element xsi:type="archimate:Gap" name="Not Leveraging New Technology (Gap)" id="id-edf80f04d03e477a984314291ed477d6">
+      <documentation>2.1.2 Consequence of Inaction&#xD;
+Inaction by ESDC would prevent SSC to achieve its objective to modernise its infrastructures and close the legacy datacentres&#xD;
+We would not leverage the new end state datacentre technology, cloud nor migrate to the four newly created data centers</documentation>
+    </element>
+    <element xsi:type="archimate:WorkPackage" name="Workload Migration and Cloud Enablement (Work Package)" id="id-dacbdd50e444450eb2bcd18ff6ab6338"/>
   </folder>
   <folder name="Other" id="027d0db1-461f-49c3-90ae-71acc827ae46" type="other">
     <element xsi:type="archimate:Junction" name="Junction" id="b29c1bc0-9c06-4484-9748-d797806e08b7" type="or"/>
@@ -8646,6 +8919,13 @@ Data transformation23 is the process of converting data from one format or struc
 “Datafication” is a technological trend turning many aspects of our life into data (Cukier; see References). This often includes the transformation of unstructured and semi-structured data into structured data. Examples include natural language processing, computer vision, and signal (e.g., satellite imagery) processing.&#xD;
 There are standards that apply to data analysis and transformation professionals and processes, and there are standards for software data analysis and transformation programs.</documentation>
     </element>
+    <element xsi:type="archimate:Grouping" name="WLM-and-CE Objectives (Grouping)" id="id-a53da1addf054cf191924fd180b30149">
+      <documentation>The business context diagram below represents the project drivers and scope. WLM will focus on the Montréal and Moncton Data Centres, and exclude the applications in scope of BDM and Tech Debt. Canadians and internal ESDC users will benefit from the workload migration.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="WLM-and-CE Stakeholders (Grouping)" id="id-792be87509c049bf863f68543eecc9d7"/>
+    <element xsi:type="archimate:Grouping" name="WLM-and-CE Required Capabilities (Grouping)" id="id-96c997dd3b044d59a9e44a9e86adc830"/>
+    <element xsi:type="archimate:Grouping" name="WLM-and-CE Preliminary Risk Identification (Grouping)" id="id-5f44f7cd480f42e79770cb89c7c00380"/>
+    <element xsi:type="archimate:Grouping" name="WLM-and-CE Solution Scope (Grouping)" id="id-cf35add8108c468f93b8a6f7144153e5"/>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e307ac9a-b3a7-4aa5-9133-6cf506203141" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="b29c1bc0-9c06-4484-9748-d797806e08b7"/>
@@ -10594,7 +10874,7 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:TriggeringRelationship" id="id-7728cfb49ac745928982fe2e6c4a0544" source="id-7e2307c3fac24bc38e383735353a7882" target="id-443c60b340bf4973806f6751b60ace0c"/>
     <element xsi:type="archimate:TriggeringRelationship" id="id-d86d33177da1410b8802bdc639e2079a" source="id-443c60b340bf4973806f6751b60ace0c" target="id-6269942d585f4d3f94af67053983ebd6"/>
     <element xsi:type="archimate:TriggeringRelationship" id="id-86fd17d069b347ac9238660bbd900e90" source="id-6269942d585f4d3f94af67053983ebd6" target="id-66f1145bea4a4e1d85c982362f754042"/>
-    <element xsi:type="archimate:TriggeringRelationship" id="id-91ca6a98ef944ce98564cce1988c3335" source="id-66f1145bea4a4e1d85c982362f754042" target="id-a549838ddd15473692cb61ea4bfc4caa"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Go Live" id="id-91ca6a98ef944ce98564cce1988c3335" source="id-66f1145bea4a4e1d85c982362f754042" target="id-a549838ddd15473692cb61ea4bfc4caa"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-e312f077d82e47bb94ed2be16dae9295" source="id-02d4a63a897743b89718cbc5e843ca3b" target="id-2ac78d3b7e0647658dbbb42dd0e249d6"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-8fbe01c1c09343069f9c1551f788b1d1" source="337d586a-8226-4c01-a6cb-58f8ed38f818" target="id-7ec3619e915942bf9751c40293973ef5"/>
     <element xsi:type="archimate:ServingRelationship" id="id-fb39411d641d41b7a7f3929bb6eb7c51" source="id-7ec3619e915942bf9751c40293973ef5" target="id-43aabd9889274f6db0752f197c3d29ec"/>
@@ -10706,12 +10986,10 @@ There are standards that apply to data analysis and transformation professionals
  - Curators&#xD;
  - Folder Maintenance Workers</documentation>
     </element>
-    <element xsi:type="archimate:AssociationRelationship" id="id-6b6721040963454bbd8e779611f1bb4b" source="id-feba77095e5c4f3289a61b52b4f46480" target="id-91ca6a98ef944ce98564cce1988c3335"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-01a596f74a4c477f99f5880c8df3afec" source="id-a549838ddd15473692cb61ea4bfc4caa" target="id-8937d2ec1a4b46378250269adba3c859"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-f1bd07dd84fb4c029506a8350a0c1ee0" source="id-a549838ddd15473692cb61ea4bfc4caa" target="id-f79f09f75d6246769f7ff955cd3bd352"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-725a04fe10db40e3b760a7ec257acd6a" source="id-a549838ddd15473692cb61ea4bfc4caa" target="id-a22f35d2793f440abeede1a40a4d45b6"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-8c87fe4ac81f463899e45df3b5f36e26" source="id-a549838ddd15473692cb61ea4bfc4caa" target="id-f302496bb2d8473780ebce2a5a9c2975"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-538356db7a5c4217b440eff9290fd47d" source="id-18c7fce0b8f04b16ab560a9a0973e1a1" target="id-feba77095e5c4f3289a61b52b4f46480"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-b848aa92ee1a41ada9a63f702cc3dc1f" source="id-18c7fce0b8f04b16ab560a9a0973e1a1" target="id-443c60b340bf4973806f6751b60ace0c"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-21637fde447e46db9a5e52caf9d9cf3d" source="id-18c7fce0b8f04b16ab560a9a0973e1a1" target="id-6269942d585f4d3f94af67053983ebd6"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-e67f2bd5cbe24466a0fa18d1fe368260" source="id-18c7fce0b8f04b16ab560a9a0973e1a1" target="id-7e2307c3fac24bc38e383735353a7882"/>
@@ -10737,6 +11015,49 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-7861f16020c149adb50da184b3095d8e" source="id-db957d2205b14914b30135c6980cb234" target="id-143e6e4104ed4bde8c7d01cd6ffa5fd2"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-4e8198097fc34dbca574507eafbf1df6" source="id-db957d2205b14914b30135c6980cb234" target="id-9f8980279b344ea093c40f94976d317a"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-6cead86975c64474a59fcda866ac9b58" source="id-9bf048e207e84792a1bc73573b293f60" target="id-a16dbdaca02840baa903fcdcf639d565"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-349c2e11df5742daa886d2982b81cc38" source="id-91fd61134dae41caad4616d998bae167" target="id-7c9b49073a094837bda82f46ced73956"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-6bd090998d5e49aaa66180e3f19fe0ef" source="id-d2b79e25adaa4b52ba607086cbfb79e4" target="id-1559135c624541b681f088ea437f7f99"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-d6c8e70296e54fd38898489e831dc147" source="id-7c9b49073a094837bda82f46ced73956" target="id-2f2ec75f35ed4aaa82c4b61ca8c26743"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e043b58217f1461083726bfe3d38e4ee" source="id-a53da1addf054cf191924fd180b30149" target="id-8e559209a3734e528e5ba8cfbe13bb64"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f2a537ef11f04087924cfc078e1e8c3c" source="id-a53da1addf054cf191924fd180b30149" target="id-b314a82b42874b3f92b21fa8b62aac21"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e4d81077e98f4cfe970ed8d853e8ebc4" source="id-a53da1addf054cf191924fd180b30149" target="id-ef9f4c770f1a4ba5a9b0b73cdacc9857"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-5a71ac368e5846278fe9734e0c66c5dd" source="id-dacbdd50e444450eb2bcd18ff6ab6338" target="id-31d023c3f24b48459871ead5390338fc"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-16dc0ac8a531425ab95e51be235b71e8" source="id-dacbdd50e444450eb2bcd18ff6ab6338" target="id-d91d9486915549ec80450d53451ca755"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-366a138562f44931a602fb9bf8705ef0" source="id-dacbdd50e444450eb2bcd18ff6ab6338" target="id-ab23b2d9ede84e27b096a312ff349dc2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ade3c0db0097410785e65fa57b851985" source="id-792be87509c049bf863f68543eecc9d7" target="id-836768fa8e3547e0bd0dff4f592ac3da"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f84e207a6b9249e281b17b8ac4550b60" source="id-792be87509c049bf863f68543eecc9d7" target="id-b0de3ab877ba4987a0f973db3a1e0171"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e2429914abf14539a797cd78ec80c732" source="id-792be87509c049bf863f68543eecc9d7" target="id-82cbc9777dda4f349f0d9381c6ac1b9a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-091c17cd7ad84c55922a618fc7ebacc9" source="id-792be87509c049bf863f68543eecc9d7" target="id-8ed7b04e34af44f6ba2cc83a7241892c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e164e16e54c84fdd8db8d4f964cda912" source="id-792be87509c049bf863f68543eecc9d7" target="id-ac7e215710d742938688491a9e234f44"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-1436b0748455410c9e231dc35e6edbc8" source="id-6d68c40a48904a2a91d0f800f3bed4aa" target="id-ef9f4c770f1a4ba5a9b0b73cdacc9857"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-68d0802f879c4278b850000d992d268a" source="id-836768fa8e3547e0bd0dff4f592ac3da" target="id-6d68c40a48904a2a91d0f800f3bed4aa"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-9f7adf7311064309a4b3221394b89a39" source="id-0bec372b9778456b9c04174b2326a1fc" target="id-8e559209a3734e528e5ba8cfbe13bb64"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-46632c5b8fd44f77860a5bd38ac7068a" source="id-836768fa8e3547e0bd0dff4f592ac3da" target="id-0bec372b9778456b9c04174b2326a1fc"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-cfb8cafaabb2468685a765bda08ae05a" source="id-987a0bdc7b7d47618bb308521dc115c7" target="id-8e559209a3734e528e5ba8cfbe13bb64"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-010a14d9286446d9acb6af95104b149d" source="id-570f5985976145519073436dc2fda22d" target="id-8e559209a3734e528e5ba8cfbe13bb64"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-f3eea4caf898437294f4ebec50128574" source="id-5924f0f302b44194ad359d508cd72b90" target="id-b314a82b42874b3f92b21fa8b62aac21"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5731a1d3139948ee89e12df7c80eaf57" source="id-836768fa8e3547e0bd0dff4f592ac3da" target="id-5924f0f302b44194ad359d508cd72b90"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-1f351cbb261941cdb352462652112322" source="id-b093158b12e84ae8b8203cfee2786b9b" target="id-5924f0f302b44194ad359d508cd72b90"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-00d59ef0b4734e239f87b9dfab7abf83" source="id-c2c85b96e7ab4b109c16d8dc2004c6ba" target="id-88ac1979e7164c5aa85a59ecd40a9d4d"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-cce890916ff44463baa5021a3b285e23" source="id-836768fa8e3547e0bd0dff4f592ac3da" target="id-88ac1979e7164c5aa85a59ecd40a9d4d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-838f8fe836ff4b2598e9573ce66ea06c" source="id-96c997dd3b044d59a9e44a9e86adc830" target="id-8223ee10e23e49848c139481919978f9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f69824c15a634939aa2474beafc347ba" source="id-96c997dd3b044d59a9e44a9e86adc830" target="id-e445ae4b0b5547308d4c3037052f3c6a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b4cda60067bd4ddfa9d1cd4e45398fd1" source="id-96c997dd3b044d59a9e44a9e86adc830" target="id-071477b06e844b7a9b64338517fa9995"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-98b106f175b0479585c585dc46df28ca" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-e2cef6ed630b46cdb394604f0e3a1ace"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-962fa01a32584bbfb389625b5b57783a" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-360aa6a700b44dbeac90f68f5c6c17fa"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7feff23247f5430aa1e93e2e1e7dc196" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-3b95047110ca48bb94973843b9eebaa3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-655a43598a9b4f75a250a575265fca15" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-83cb23097f334b1ba6cbee3507e5a2f5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f978e413a4b140d38e2eb788484ab299" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-7f30e5376aa14f758fecc021228ad479"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8a24927d5c0849c7b023ec007f726915" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-b95f6907f25141938f6e51842418de78"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-12aa452befe642b1a5ad32800b824cb1" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-a34a0732ae94423d9fc96b37a09b9e69"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0f5a7a641f7243d181719f76c02bb472" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-10f758185b6149ab9588734ff4a14974"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-440cdfb76d90410c9977a545514db658" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-648c205c239b40eba235f10cf3c93d6e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-91ce57e57764435bab0340dddfff23a3" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-4754fddc16a14b029fa3ae44ecaa9032"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2ff754de376e433c9e623cdd5a0c6680" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-29038e7916c0456786c853be3ce11111"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7b355029f255468b9558584bd93d7459" source="id-5f44f7cd480f42e79770cb89c7c00380" target="id-a26ae49499be4cd1adf985dbade00e63"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-c0b87a3bcfd94cf58ba4d52becd60086" source="id-7daae99cbfff475681a2877997a2d8ec" target="id-dacbdd50e444450eb2bcd18ff6ab6338"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ba80b1009d6a48eb8dba3d7c01494301" source="id-cf35add8108c468f93b8a6f7144153e5" target="id-a70f3fc4c4be47c18c86bb0a83639ae2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0b59c8e859464cab9b029613b942a65d" source="id-cf35add8108c468f93b8a6f7144153e5" target="id-037206963b0e46979e66a65ae46eabef"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -14465,17 +14786,12 @@ v.2021-06-24</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-77cf21a88935419b9b7238f80aa51645" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-18c7fce0b8f04b16ab560a9a0973e1a1">
-          <bounds x="456" y="396" width="661" height="301"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-5dd766019082429f94d88832d43b4b01" source="id-77cf21a88935419b9b7238f80aa51645" target="id-a2b74821b7b546d49714cf5feedbf122" archimateRelationship="id-538356db7a5c4217b440eff9290fd47d"/>
+          <bounds x="456" y="396" width="637" height="241"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-e3327331425e4fb39d3767efed1c9d14" source="id-77cf21a88935419b9b7238f80aa51645" target="id-9c11f10b19c34847b2102ff0259adccc" archimateRelationship="id-b848aa92ee1a41ada9a63f702cc3dc1f"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-9ec542cc7d04429fa7190bd499082b5e" source="id-77cf21a88935419b9b7238f80aa51645" target="id-6522e356465e4a5f8e4e045a1b88fbdf" archimateRelationship="id-21637fde447e46db9a5e52caf9d9cf3d"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-2c099bb73dcf4b91833a3dc554032a74" source="id-77cf21a88935419b9b7238f80aa51645" target="id-d45407a57b824ec2b27e416dde36ed16" archimateRelationship="id-e67f2bd5cbe24466a0fa18d1fe368260"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-08750c5b060447c698bcad6560966fc0" source="id-77cf21a88935419b9b7238f80aa51645" target="id-73ccb43546f14cbebae614d6192842e3" archimateRelationship="id-3a583b03d3f64ce88bbdeb445ac86846"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-4035dfd30fce420fbb9d034d3088290b" source="id-77cf21a88935419b9b7238f80aa51645" target="id-c7166f977b0b41eeae19011896731c6d" archimateRelationship="id-bec02767939943d5b15cb2de051c5620"/>
-          <child xsi:type="archimate:DiagramObject" id="id-a2b74821b7b546d49714cf5feedbf122" targetConnections="id-5dd766019082429f94d88832d43b4b01" archimateElement="id-feba77095e5c4f3289a61b52b4f46480">
-            <bounds x="307" y="131" width="169" height="49"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-cbaf47aebfd84da49e847106515c3eb1" source="id-a2b74821b7b546d49714cf5feedbf122" target="id-02543af906ba401fbd3afa345e0b92c2" archimateRelationship="id-6b6721040963454bbd8e779611f1bb4b"/>
-          </child>
           <child xsi:type="archimate:DiagramObject" id="id-9c11f10b19c34847b2102ff0259adccc" targetConnections="id-1a5619eb375446ed8a5d689da5d6bb6a id-e3327331425e4fb39d3767efed1c9d14" archimateElement="id-443c60b340bf4973806f6751b60ace0c">
             <bounds x="188" y="39" width="120" height="73"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-a3e8413b30754c39b9d5fa7a938ff5a7" source="id-9c11f10b19c34847b2102ff0259adccc" target="id-6522e356465e4a5f8e4e045a1b88fbdf" archimateRelationship="id-d86d33177da1410b8802bdc639e2079a"/>
@@ -14485,15 +14801,15 @@ v.2021-06-24</content>
             <sourceConnection xsi:type="archimate:Connection" id="id-bd96b411b9e34e20a75095d5f92b74c8" source="id-6522e356465e4a5f8e4e045a1b88fbdf" target="id-73ccb43546f14cbebae614d6192842e3" archimateRelationship="id-86fd17d069b347ac9238660bbd900e90"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-d45407a57b824ec2b27e416dde36ed16" targetConnections="id-2c099bb73dcf4b91833a3dc554032a74" archimateElement="id-7e2307c3fac24bc38e383735353a7882">
-            <bounds x="36" y="48" width="120" height="55"/>
+            <bounds x="24" y="48" width="120" height="55"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-1a5619eb375446ed8a5d689da5d6bb6a" source="id-d45407a57b824ec2b27e416dde36ed16" target="id-9c11f10b19c34847b2102ff0259adccc" archimateRelationship="id-7728cfb49ac745928982fe2e6c4a0544"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-73ccb43546f14cbebae614d6192842e3" targetConnections="id-bd96b411b9e34e20a75095d5f92b74c8 id-08750c5b060447c698bcad6560966fc0" archimateElement="id-66f1145bea4a4e1d85c982362f754042">
-            <bounds x="512" y="48" width="120" height="55"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-02543af906ba401fbd3afa345e0b92c2" targetConnections="id-cbaf47aebfd84da49e847106515c3eb1" source="id-73ccb43546f14cbebae614d6192842e3" target="id-c7166f977b0b41eeae19011896731c6d" archimateRelationship="id-91ca6a98ef944ce98564cce1988c3335"/>
+            <bounds x="504" y="48" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-02543af906ba401fbd3afa345e0b92c2" source="id-73ccb43546f14cbebae614d6192842e3" target="id-c7166f977b0b41eeae19011896731c6d" archimateRelationship="id-91ca6a98ef944ce98564cce1988c3335"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-c7166f977b0b41eeae19011896731c6d" targetConnections="id-02543af906ba401fbd3afa345e0b92c2 id-4035dfd30fce420fbb9d034d3088290b" archimateElement="id-a549838ddd15473692cb61ea4bfc4caa">
-            <bounds x="20" y="197" width="625" height="89"/>
+            <bounds x="7" y="144" width="625" height="89"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-e414c9ac7a2146aeb91ae4333c9a34ee" source="id-c7166f977b0b41eeae19011896731c6d" target="id-346a309732cb45928cf164bb7f5081a9" archimateRelationship="id-01a596f74a4c477f99f5880c8df3afec"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-e3a3b7995c484a2db3e5575b4214fb33" source="id-c7166f977b0b41eeae19011896731c6d" target="id-c9f326bd65ea4cf4912415d24a93916b" archimateRelationship="id-f1bd07dd84fb4c029506a8350a0c1ee0"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-8d8a9868557f47348147bb2ede30d251" source="id-c7166f977b0b41eeae19011896731c6d" target="id-3fda9faea39a42b2af5f9229a3e4bd9f" archimateRelationship="id-725a04fe10db40e3b760a7ec257acd6a"/>
@@ -14630,6 +14946,271 @@ Published by The Open Group, June 2021.&#xD;
 Any comments relating to the material contained in this document may be submitted to:&#xD;
 The Open Group, Apex Plaza, Forbury Road, Reading, Berkshire, RG1 1AX, United Kingdom&#xD;
 or by email to: ogpubs@opengroup.org</documentation>
+      </element>
+    </folder>
+    <folder name="WLM and CE" id="id-bb896b75d6be43cdb224c0640155f06a">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="WLM and CE - Business Case" id="id-9ab70973c09342559ce8cf15117e358e">
+        <child xsi:type="archimate:Note" id="id-7ef15b4b3f57419180cd551b74443aa7" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#fcffc6">
+          <bounds x="24" y="24" width="577" height="97"/>
+          <content>Workload Migration and Cloud Enablement / WLM / &#xD;
+Migration des charges de travail et accessibilité à l'infonuagique&#xD;
+Project Number (Proposal ID) 202000009</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-bd31c231756a4702a2fb210f320b2593" font="1|Segoe UI|18.0|1|WINDOWS|1|-30|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#a6ebf2">
+          <bounds x="600" y="24" width="193" height="97"/>
+          <content>BUSINESS CASE</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-e4d39a90aff648d4b76213fc322fec0d" textAlignment="1">
+          <bounds x="708" y="72" width="85" height="48"/>
+          <content>v0.8 (FINAL)&#xD;
+2021-07-16</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-efc8509f8be64e11ab96c54e2800f0d4" targetConnections="id-63bb461c92d448f2b850b6ce184594ac id-65047b2db0f544cc9552f1dc6b49d105" archimateElement="id-2f2ec75f35ed4aaa82c4b61ca8c26743">
+          <bounds x="24" y="156" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b6caf4b5012f495a8dbdde7c89bf05c5" targetConnections="id-0e1ef5386c2349ae9f086f23bf6bf057" archimateElement="id-1559135c624541b681f088ea437f7f99">
+          <bounds x="180" y="156" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-63bb461c92d448f2b850b6ce184594ac" source="id-b6caf4b5012f495a8dbdde7c89bf05c5" target="id-efc8509f8be64e11ab96c54e2800f0d4" archimateRelationship="id-a83acdabcd654a00b02435e1a65549a3"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b0711f3cd490400d9012a220cac28407" archimateElement="id-91fd61134dae41caad4616d998bae167">
+          <bounds x="24" y="312" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-215ec47e27614d189d510ecdf052e081" source="id-b0711f3cd490400d9012a220cac28407" target="id-bf734b56ca7348d893e32ef4472705ea" archimateRelationship="id-349c2e11df5742daa886d2982b81cc38"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a184fefd0fc140c5ba8627d80a051d5a" archimateElement="id-d2b79e25adaa4b52ba607086cbfb79e4">
+          <bounds x="180" y="312" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0e1ef5386c2349ae9f086f23bf6bf057" source="id-a184fefd0fc140c5ba8627d80a051d5a" target="id-b6caf4b5012f495a8dbdde7c89bf05c5" archimateRelationship="id-6bd090998d5e49aaa66180e3f19fe0ef"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-13dc63a010174732aa8187c295bf7ac9" archimateElement="id-ae93c26492f8428482757d01c14860ce">
+          <bounds x="312" y="156" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-20fa33e709a24b22bb75e8069f13d7e1" archimateElement="id-5554091ce3664339a25b3f3780000e42">
+          <bounds x="1077" y="164" width="136" height="80"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-01f6c78a631a45eab1a79a07d6d69237" archimateElement="id-34ba84092bcb4b61bfb9c8f2e6688a58">
+          <bounds x="1237" y="168" width="144" height="68"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c1ad0771f2a6423bb14c76392a0829bd" archimateElement="id-16a5a718f984413c9bc342959c4b262a">
+          <bounds x="24" y="547" width="146" height="58"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9e5011ff9e88446b9a92226824d575fc" archimateElement="id-8be0b9dbd584499eace4f96bae08ec9d">
+          <bounds x="24" y="604" width="146" height="86"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-627f9d209e57424294979ce568bdf33e" archimateElement="id-4e6854fec01141f08d4ff1bab15b2b6e">
+          <bounds x="1077" y="255" width="136" height="109"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-69f347c0f74f43e592cff0c7f65bbb1a" archimateElement="id-edf80f04d03e477a984314291ed477d6">
+          <bounds x="24" y="689" width="146" height="72"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c905795c29e94c918f3c4fc3278e5e28" archimateElement="id-8914b0220f7340be897582977028b5d2">
+          <bounds x="1404" y="168" width="136" height="91"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bf734b56ca7348d893e32ef4472705ea" targetConnections="id-215ec47e27614d189d510ecdf052e081" archimateElement="id-7c9b49073a094837bda82f46ced73956">
+          <bounds x="24" y="232" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-65047b2db0f544cc9552f1dc6b49d105" source="id-bf734b56ca7348d893e32ef4472705ea" target="id-efc8509f8be64e11ab96c54e2800f0d4" archimateRelationship="id-d6c8e70296e54fd38898489e831dc147"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-78bbe515c6cc421dbfbbbf419392111b" archimateElement="id-7e8ce4104b62451e9e54b473baaf58a3">
+          <bounds x="24" y="396" width="120" height="89"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f6e37564f6354c97bf5a38b3c8d453a8" archimateElement="id-3eb54fa860a54ed2a7d688cef86abc42">
+          <bounds x="1077" y="369" width="136" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-83be2b7573e744a682d3b2b3f626a78b" archimateElement="id-4308ff622746457fb4e0964973587188">
+          <bounds x="1573" y="168" width="174" height="77"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-89f4028d463b4b53a351a8088be73681" textAlignment="1" archimateElement="id-a53da1addf054cf191924fd180b30149">
+          <bounds x="420" y="504" width="481" height="112"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4b98495dfe224b46873276b30a7f2f5d" source="id-89f4028d463b4b53a351a8088be73681" target="id-0d8d6ec19304494d9e8809665e50810e" archimateRelationship="id-e043b58217f1461083726bfe3d38e4ee"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bec211bf018d49229f197ad3af582c30" source="id-89f4028d463b4b53a351a8088be73681" target="id-7f3f2c955c004fb086bff3f1ba8313cc" archimateRelationship="id-f2a537ef11f04087924cfc078e1e8c3c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e0c9dd2509494daf8f7d1c1423bed99a" source="id-89f4028d463b4b53a351a8088be73681" target="id-75fbad9e4d06447fa6e76f9593db56cc" archimateRelationship="id-e4d81077e98f4cfe970ed8d853e8ebc4"/>
+          <child xsi:type="archimate:DiagramObject" id="id-0d8d6ec19304494d9e8809665e50810e" targetConnections="id-4b98495dfe224b46873276b30a7f2f5d id-1f3698fdc4e043a5bde117a8fe5bee42 id-3bca71c4db8a4c39be827d56da7c26a9 id-b825c4587462426f8a018bfe6af22fe2" archimateElement="id-8e559209a3734e528e5ba8cfbe13bb64">
+            <bounds x="12" y="27" width="149" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7f3f2c955c004fb086bff3f1ba8313cc" targetConnections="id-bec211bf018d49229f197ad3af582c30 id-1a3dbd52b4934b7f8f4d5454bfb6f9e3" archimateElement="id-b314a82b42874b3f92b21fa8b62aac21">
+            <bounds x="168" y="27" width="149" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-75fbad9e4d06447fa6e76f9593db56cc" targetConnections="id-e0c9dd2509494daf8f7d1c1423bed99a id-70ed31e3d48c4b68939c1c0d40773f81" archimateElement="id-ef9f4c770f1a4ba5a9b0b73cdacc9857">
+            <bounds x="324" y="27" width="149" height="73"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-be67d4ce609441f2bf5407c313ab1397" archimateElement="id-aa72d4ba36db463f9ffe923a58e48289">
+          <bounds x="960" y="864" width="166" height="87"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1cef241c098c401aa46841553e1de20c" archimateElement="id-bbe64eb9a77b40c0adcb70323143a372">
+          <bounds x="180" y="411" width="142" height="82"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f288a032dd68421a920c3e03b7b58bbf" targetConnections="id-f5d8a2c414a043edabad13d238b4e83f" archimateElement="id-31d023c3f24b48459871ead5390338fc">
+          <bounds x="459" y="280" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8eca7920873a4b4e9bf64b25d1c60f0a" targetConnections="id-b214b4f5b2214fc9a8481fd27cd186e3" archimateElement="id-d91d9486915549ec80450d53451ca755">
+          <bounds x="591" y="280" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c94b0b0633b9433e840f5f2cca70bd5b" targetConnections="id-5156bcadc229402a9fd6b5050c21b4b5" archimateElement="id-ab23b2d9ede84e27b096a312ff349dc2">
+          <bounds x="723" y="280" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6b18603e33ab4a748ccce8fbec91c5f6" targetConnections="id-a8af818fa7024840a9e8320cfc0aae3f" archimateElement="id-dacbdd50e444450eb2bcd18ff6ab6338">
+          <bounds x="553" y="384" width="196" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f5d8a2c414a043edabad13d238b4e83f" source="id-6b18603e33ab4a748ccce8fbec91c5f6" target="id-f288a032dd68421a920c3e03b7b58bbf" archimateRelationship="id-5a71ac368e5846278fe9734e0c66c5dd"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b214b4f5b2214fc9a8481fd27cd186e3" source="id-6b18603e33ab4a748ccce8fbec91c5f6" target="id-8eca7920873a4b4e9bf64b25d1c60f0a" archimateRelationship="id-16dc0ac8a531425ab95e51be235b71e8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5156bcadc229402a9fd6b5050c21b4b5" source="id-6b18603e33ab4a748ccce8fbec91c5f6" target="id-c94b0b0633b9433e840f5f2cca70bd5b" archimateRelationship="id-366a138562f44931a602fb9bf8705ef0"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9a6a91f573af452a8af8adf0a503eb30" textAlignment="1" archimateElement="id-792be87509c049bf863f68543eecc9d7">
+          <bounds x="459" y="744" width="409" height="198"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d61841fd5d0d4235afc3599b48c170ca" source="id-9a6a91f573af452a8af8adf0a503eb30" target="id-18fd70b7626d4695a02f6de9e05cf395" archimateRelationship="id-ade3c0db0097410785e65fa57b851985"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2eda64fd1ba54c5994036966c705655f" source="id-9a6a91f573af452a8af8adf0a503eb30" target="id-7f9a920cd5ad4a01aba57e2f92880f2e" archimateRelationship="id-f84e207a6b9249e281b17b8ac4550b60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d3790d99800d46cba5c973fba99eb373" source="id-9a6a91f573af452a8af8adf0a503eb30" target="id-79a6ee59ab354edf818f7e9fc73027d6" archimateRelationship="id-e2429914abf14539a797cd78ec80c732"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-84f3fbbf09ab426ebd133bef95c89830" source="id-9a6a91f573af452a8af8adf0a503eb30" target="id-42263008b7b8458187b376a90fe37c70" archimateRelationship="id-091c17cd7ad84c55922a618fc7ebacc9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6b9202644495471cb902ddc424de2cb8" source="id-9a6a91f573af452a8af8adf0a503eb30" target="id-c645a71e439342ce9cdc65497e6b9d18" archimateRelationship="id-e164e16e54c84fdd8db8d4f964cda912"/>
+          <child xsi:type="archimate:DiagramObject" id="id-18fd70b7626d4695a02f6de9e05cf395" targetConnections="id-d61841fd5d0d4235afc3599b48c170ca" archimateElement="id-836768fa8e3547e0bd0dff4f592ac3da">
+            <bounds x="12" y="31" width="120" height="102"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-484087077cda414a9a54f5d2bfd11fd4" source="id-18fd70b7626d4695a02f6de9e05cf395" target="id-12012e7ce0eb41b8bad1db0eb35b7a6e" archimateRelationship="id-68d0802f879c4278b850000d992d268a"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2c3df25268f7479d8200de055707ac04" source="id-18fd70b7626d4695a02f6de9e05cf395" target="id-4591a051829e44ce9842c884b5a82c6e" archimateRelationship="id-46632c5b8fd44f77860a5bd38ac7068a"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2cd3f588d3e1481f808f0047627fc0a2" source="id-18fd70b7626d4695a02f6de9e05cf395" target="id-9da3feb9c1ae40b381c1625cceb2f563" archimateRelationship="id-5731a1d3139948ee89e12df7c80eaf57"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c4630e6565094303b48d120226a09811" source="id-18fd70b7626d4695a02f6de9e05cf395" target="id-a1988b7bc0e344309f6ce9bad9f99f3f" archimateRelationship="id-cce890916ff44463baa5021a3b285e23"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-79a6ee59ab354edf818f7e9fc73027d6" targetConnections="id-d3790d99800d46cba5c973fba99eb373" archimateElement="id-82cbc9777dda4f349f0d9381c6ac1b9a">
+            <bounds x="145" y="118" width="120" height="69"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-42263008b7b8458187b376a90fe37c70" targetConnections="id-84f3fbbf09ab426ebd133bef95c89830" archimateElement="id-8ed7b04e34af44f6ba2cc83a7241892c">
+            <bounds x="145" y="30" width="120" height="74"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c645a71e439342ce9cdc65497e6b9d18" targetConnections="id-6b9202644495471cb902ddc424de2cb8" archimateElement="id-ac7e215710d742938688491a9e234f44">
+            <bounds x="276" y="28" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7f9a920cd5ad4a01aba57e2f92880f2e" targetConnections="id-2eda64fd1ba54c5994036966c705655f" archimateElement="id-b0de3ab877ba4987a0f973db3a1e0171">
+            <bounds x="276" y="103" width="120" height="84"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-12012e7ce0eb41b8bad1db0eb35b7a6e" targetConnections="id-484087077cda414a9a54f5d2bfd11fd4" archimateElement="id-6d68c40a48904a2a91d0f800f3bed4aa">
+          <bounds x="756" y="648" width="136" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-70ed31e3d48c4b68939c1c0d40773f81" source="id-12012e7ce0eb41b8bad1db0eb35b7a6e" target="id-75fbad9e4d06447fa6e76f9593db56cc" archimateRelationship="id-1436b0748455410c9e231dc35e6edbc8"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4591a051829e44ce9842c884b5a82c6e" targetConnections="id-2c3df25268f7479d8200de055707ac04" archimateElement="id-0bec372b9778456b9c04174b2326a1fc">
+          <bounds x="443" y="640" width="136" height="72"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1f3698fdc4e043a5bde117a8fe5bee42" source="id-4591a051829e44ce9842c884b5a82c6e" target="id-0d8d6ec19304494d9e8809665e50810e" archimateRelationship="id-9f7adf7311064309a4b3221394b89a39"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e3c050c1959a457eb08f472389989d8a" archimateElement="id-570f5985976145519073436dc2fda22d">
+          <bounds x="209" y="648" width="139" height="89"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b825c4587462426f8a018bfe6af22fe2" source="id-e3c050c1959a457eb08f472389989d8a" target="id-0d8d6ec19304494d9e8809665e50810e" archimateRelationship="id-010a14d9286446d9acb6af95104b149d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-162aee739fd64809b7ae979e70e79f21" archimateElement="id-987a0bdc7b7d47618bb308521dc115c7">
+          <bounds x="209" y="564" width="139" height="72"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3bca71c4db8a4c39be827d56da7c26a9" source="id-162aee739fd64809b7ae979e70e79f21" target="id-0d8d6ec19304494d9e8809665e50810e" archimateRelationship="id-cfb8cafaabb2468685a765bda08ae05a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9da3feb9c1ae40b381c1625cceb2f563" targetConnections="id-2cd3f588d3e1481f808f0047627fc0a2 id-013a8e31e1104e488bb103e13325d1e8" archimateElement="id-5924f0f302b44194ad359d508cd72b90">
+          <bounds x="596" y="635" width="136" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1a3dbd52b4934b7f8f4d5454bfb6f9e3" source="id-9da3feb9c1ae40b381c1625cceb2f563" target="id-7f3f2c955c004fb086bff3f1ba8313cc" archimateRelationship="id-f3eea4caf898437294f4ebec50128574"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3caaeb2115a345b58286c4887ddd43da" archimateElement="id-b093158b12e84ae8b8203cfee2786b9b">
+          <bounds x="209" y="744" width="139" height="83"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-013a8e31e1104e488bb103e13325d1e8" source="id-3caaeb2115a345b58286c4887ddd43da" target="id-9da3feb9c1ae40b381c1625cceb2f563" archimateRelationship="id-1f351cbb261941cdb352462652112322"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-90fb19a8fd064713b97e1430c896fc57" archimateElement="id-b171e243a56949af82b6dc7b20504ccd">
+          <bounds x="936" y="532" width="149" height="73"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a1988b7bc0e344309f6ce9bad9f99f3f" targetConnections="id-ae5c86099ddf440e97c185b5ecc85a84 id-c4630e6565094303b48d120226a09811" archimateElement="id-88ac1979e7164c5aa85a59ecd40a9d4d">
+          <bounds x="936" y="640" width="148" height="72"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b968c3b7091e47ca96720c9a0c9c0fec" archimateElement="id-c2c85b96e7ab4b109c16d8dc2004c6ba">
+          <bounds x="1128" y="634" width="139" height="83"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ae5c86099ddf440e97c185b5ecc85a84" source="id-b968c3b7091e47ca96720c9a0c9c0fec" target="id-a1988b7bc0e344309f6ce9bad9f99f3f" archimateRelationship="id-00d59ef0b4734e239f87b9dfab7abf83"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7ed6c661275643588fd10d9394718332" textAlignment="1" archimateElement="id-96c997dd3b044d59a9e44a9e86adc830">
+          <bounds x="13" y="780" width="168" height="300"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-29aa8734cb204c6b822b35604ef11239" source="id-7ed6c661275643588fd10d9394718332" target="id-9d622282d1af4e19acd0ea090e6b5fa0" archimateRelationship="id-838f8fe836ff4b2598e9573ce66ea06c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-858eb4b5d7c3469a9d5522b30dcf76f0" source="id-7ed6c661275643588fd10d9394718332" target="id-68c5dc51f9624a30ade143d8f109e593" archimateRelationship="id-f69824c15a634939aa2474beafc347ba"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3d574d92ac2446f7bbbed73bb3db547e" source="id-7ed6c661275643588fd10d9394718332" target="id-aec643fae99642c8ac224622b484c44c" archimateRelationship="id-b4cda60067bd4ddfa9d1cd4e45398fd1"/>
+          <child xsi:type="archimate:DiagramObject" id="id-9d622282d1af4e19acd0ea090e6b5fa0" targetConnections="id-29aa8734cb204c6b822b35604ef11239" archimateElement="id-8223ee10e23e49848c139481919978f9">
+            <bounds x="12" y="46" width="140" height="72"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-aec643fae99642c8ac224622b484c44c" targetConnections="id-3d574d92ac2446f7bbbed73bb3db547e" archimateElement="id-071477b06e844b7a9b64338517fa9995">
+            <bounds x="12" y="216" width="140" height="72"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-68c5dc51f9624a30ade143d8f109e593" targetConnections="id-858eb4b5d7c3469a9d5522b30dcf76f0" archimateElement="id-e445ae4b0b5547308d4c3037052f3c6a">
+            <bounds x="12" y="132" width="140" height="72"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-40b4cc04f93c46fe87549409700c3d97" textAlignment="1" archimateElement="id-5f44f7cd480f42e79770cb89c7c00380">
+          <bounds x="1266" y="723" width="481" height="357"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fc7270565b7e4c96b497ccc632b91862" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-ca4985c58fa34f12947a9f13781463d8" archimateRelationship="id-98b106f175b0479585c585dc46df28ca"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5e2d98859e014a7dab7f2b7fe70f2ee0" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-7d14782727cb4140b6ce79cca32e10dc" archimateRelationship="id-962fa01a32584bbfb389625b5b57783a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3dd0f4cc2e754e089bd2be04ee63a769" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-c661a3f36f3741e999b17eed6cf28c4d" archimateRelationship="id-7feff23247f5430aa1e93e2e1e7dc196"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-da8b52367768465da15ba6283b99dc07" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-92068e5ac5594ae48cadbfb4e2614537" archimateRelationship="id-655a43598a9b4f75a250a575265fca15"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7879ab848a43414191e906e75fa9df17" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-3dd5a31f62594b7ba7a1787a6f6e8c9f" archimateRelationship="id-f978e413a4b140d38e2eb788484ab299"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-dce0f96831b14898ac241435869e4611" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-e6c54c622ebc46039a275b74d5ff6c38" archimateRelationship="id-8a24927d5c0849c7b023ec007f726915"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-65806288af834b1fa02eb57e3ae0dac0" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-74f1e3bd85c84e61b0df1916b250c84c" archimateRelationship="id-12aa452befe642b1a5ad32800b824cb1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c5b188d618d64191acf6341e7d88b816" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-94fc019ffa704b7d94df0454700de0b4" archimateRelationship="id-0f5a7a641f7243d181719f76c02bb472"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7b90b848aec94c5bb541f31b7e037839" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-e0f297a8ede641439662097e1e2200d7" archimateRelationship="id-440cdfb76d90410c9977a545514db658"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-84c219a014a74395ae0220bfcfeb7204" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-d9144540f5664eebb4f6cf64b6494f0b" archimateRelationship="id-91ce57e57764435bab0340dddfff23a3"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a04564fa7d20470eae50e40c6ccfa5b9" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-7a5aae0511e247ccba1915490428a654" archimateRelationship="id-2ff754de376e433c9e623cdd5a0c6680"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a18f0a1cc86b4550a1e1a7ff84f114de" source="id-40b4cc04f93c46fe87549409700c3d97" target="id-640f4509c25642d7984e7121551b510e" archimateRelationship="id-7b355029f255468b9558584bd93d7459"/>
+          <child xsi:type="archimate:DiagramObject" id="id-ca4985c58fa34f12947a9f13781463d8" targetConnections="id-fc7270565b7e4c96b497ccc632b91862" archimateElement="id-e2cef6ed630b46cdb394604f0e3a1ace">
+            <bounds x="12" y="24" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7d14782727cb4140b6ce79cca32e10dc" targetConnections="id-5e2d98859e014a7dab7f2b7fe70f2ee0" archimateElement="id-360aa6a700b44dbeac90f68f5c6c17fa">
+            <bounds x="168" y="24" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-92068e5ac5594ae48cadbfb4e2614537" targetConnections="id-da8b52367768465da15ba6283b99dc07" archimateElement="id-83cb23097f334b1ba6cbee3507e5a2f5">
+            <bounds x="324" y="24" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-3dd5a31f62594b7ba7a1787a6f6e8c9f" targetConnections="id-7879ab848a43414191e906e75fa9df17" archimateElement="id-7f30e5376aa14f758fecc021228ad479">
+            <bounds x="12" y="192" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e6c54c622ebc46039a275b74d5ff6c38" targetConnections="id-dce0f96831b14898ac241435869e4611" archimateElement="id-b95f6907f25141938f6e51842418de78">
+            <bounds x="168" y="108" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-74f1e3bd85c84e61b0df1916b250c84c" targetConnections="id-65806288af834b1fa02eb57e3ae0dac0" archimateElement="id-a34a0732ae94423d9fc96b37a09b9e69">
+            <bounds x="168" y="276" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e0f297a8ede641439662097e1e2200d7" targetConnections="id-7b90b848aec94c5bb541f31b7e037839" archimateElement="id-648c205c239b40eba235f10cf3c93d6e">
+            <bounds x="12" y="108" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d9144540f5664eebb4f6cf64b6494f0b" targetConnections="id-84c219a014a74395ae0220bfcfeb7204" archimateElement="id-4754fddc16a14b029fa3ae44ecaa9032">
+            <bounds x="168" y="192" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7a5aae0511e247ccba1915490428a654" targetConnections="id-a04564fa7d20470eae50e40c6ccfa5b9" archimateElement="id-29038e7916c0456786c853be3ce11111">
+            <bounds x="12" y="276" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-94fc019ffa704b7d94df0454700de0b4" targetConnections="id-c5b188d618d64191acf6341e7d88b816" archimateElement="id-10f758185b6149ab9588734ff4a14974">
+            <bounds x="324" y="108" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c661a3f36f3741e999b17eed6cf28c4d" targetConnections="id-3dd0f4cc2e754e089bd2be04ee63a769" archimateElement="id-3b95047110ca48bb94973843b9eebaa3">
+            <bounds x="324" y="192" width="145" height="73"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-640f4509c25642d7984e7121551b510e" targetConnections="id-a18f0a1cc86b4550a1e1a7ff84f114de" archimateElement="id-a26ae49499be4cd1adf985dbade00e63">
+            <bounds x="324" y="276" width="145" height="73"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a8d5bfcf54c44484b67c6ef85e059e78" archimateElement="id-7daae99cbfff475681a2877997a2d8ec">
+          <bounds x="804" y="375" width="145" height="73"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a8af818fa7024840a9e8320cfc0aae3f" source="id-a8d5bfcf54c44484b67c6ef85e059e78" target="id-6b18603e33ab4a748ccce8fbec91c5f6" archimateRelationship="id-c0b87a3bcfd94cf58ba4d52becd60086"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5f1709377b82460ba4beb7fcde770595" archimateElement="id-a51e108a0d4d47648b0a10398ef0b180">
+          <bounds x="552" y="161" width="120" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-70989ee99acc43cca07ddb2585902c05" archimateElement="id-d6ea559073f84d81b89fe59ed944c077">
+          <bounds x="685" y="161" width="120" height="70"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f0788893aef94cb5b835d2505a5e628c" textAlignment="1" archimateElement="id-cf35add8108c468f93b8a6f7144153e5">
+          <bounds x="912" y="960" width="276" height="120"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5f66b22b456b4fe49accda642040ed21" source="id-f0788893aef94cb5b835d2505a5e628c" target="id-76e09cea5cf9487983d04ad4edf8aab3" archimateRelationship="id-ba80b1009d6a48eb8dba3d7c01494301"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-cc7d45b21e5b4bd9be2b4aa00160385d" source="id-f0788893aef94cb5b835d2505a5e628c" target="id-70dec0d52c20401c9771248c0e1eb46d" archimateRelationship="id-0b59c8e859464cab9b029613b942a65d"/>
+          <child xsi:type="archimate:DiagramObject" id="id-76e09cea5cf9487983d04ad4edf8aab3" targetConnections="id-5f66b22b456b4fe49accda642040ed21" archimateElement="id-a70f3fc4c4be47c18c86bb0a83639ae2">
+            <bounds x="12" y="24" width="120" height="88"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-70dec0d52c20401c9771248c0e1eb46d" targetConnections="id-cc7d45b21e5b4bd9be2b4aa00160385d" archimateElement="id-037206963b0e46979e66a65ae46eabef">
+            <bounds x="144" y="24" width="120" height="88"/>
+          </child>
+        </child>
+        <documentation>The Workload Migration (WLM) and Cloud Enablement project is seeking to address the migration of the majority of ESDCs applications that are currently hosted in legacy Shared Services Canada (SSC) data centres to Enterprise Data Centres or to Cloud, per the Government of Canada’s strategy to consolidate data centres across the Government of Canada (GC).&#xD;
+The existing legacy data centres no longer meet SSC standards that are now in place in Enterprise Data Centres, creating a risk to several aspects of these applications such as their infrastructure, operational risks, IT security, and network related risks. Applications hosted in legacy data centres may also be limited in implementing future business needs.&#xD;
+The applications currently hosted in legacy data centres will undergo thorough assessment while following the GC guidelines of Cloud First and TIME (tolerate, invest, move, eliminate) to determine their end-state hosting environments (Enterprise Data Centres or Cloud). The WLM project has several goals, the first of which is to serve as a risk response to the risks that have been identified should the movement of these applications not occur. Another goal of the WLM project is to improve the ESDC Security Posture and IT Service Delivery by moving applications to hosting environments that maintain a higher standard of security and compliance than in existing legacy data centres.&#xD;
+Lastly, the WLM project seeks to help in the reduction of technical debt and in the modernization of applications, consistent with the departmental transformation agenda.&#xD;
+This document seeks to recommend the adoption of the implementation of TIME assessment recommendations, at an approximate cost of $M over XX years. The realization of benefits that will occur as a result of this option include the improvement of IT security posture and compliance, the improvement of productivity, the reduction of risk exposure and versatility in application development. The options analysis described in this document has concluded that remaining with the status quo is not a feasible option, and that the option of a lift and shift will provide only part of the benefits, yet increase the departmental technical debt in coming years.&#xD;
+The WLM Project has many risks listed throughout this business case. The number of applications in scope, their complexity and interdependencies are key considerations. ESDC’s expertise in Cloud technology and the differences between the targeted architectures (Cloud and Enterprise Data Centres) and current legacy data centres, as well as the Network complexity, are other important considerations.&#xD;
+SSC and ESDC have identified mitigation measures that will be implemented. These measures, paired with a strong governance and continuous risk monitoring, will bring the risks described below to an acceptable level.&#xD;
+&#xD;
+2.1 Problem/Opportunity&#xD;
+The majority of ESDC systems are currently hosted in legacy Shared Services Canada (SSC) data centre facilities with aging infrastructure. These centres have not been designated as Enterprise Data Centres (thereby limiting further investment). The data centres are not designed to support 24/7 operations with 99.99% uptime and therefore are subject to outages and rely on older technologies to operate. This introduces infrastructure, operational, IT security, and network risks while greatly limiting the type of solutions that can be housed in these data centres to meet new business requirements. As part of the Government of Canada(GC) strategy to consolidate GC data centres and implement Cloud First, ESDC is initiating an assessment of 385 applications hosted within the Moncton and Montréal legacy data centres. This assessment will identify the appropriate disposition of each application as per the GC guidelines (i.e. Tolerate (maintain), Invest, Move, or Eliminate) and based on ESDC medium and longerterm business requirements. ESDC will develop a roadmap based on this assessment to address risks and known technical debt, in concert with the transformation agenda currently underway at ESDC. This involves migrating departmental applications from existing SSC legacy data centres into new hosting environments. ESDC will work with Treasury Board Secretariat (TBS) and SSC to identify target hosting environments, including Cloud based hosting services operated by the Government of Canada and private industry and at new, state-of-the-art data centres operated by SSC.</documentation>
       </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="DevOps Business Functions" id="9347d3c0-1a55-4925-8de1-99a1491bd760">
