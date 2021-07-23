@@ -3077,6 +3077,8 @@ ISO/IEC 29500-1:2016: Information Technology – Document Description and Proces
       <documentation>Hybrid Data&#xD;
 Data primarily intended for human consumption but conforming, or partly conforming, to a data structure standard is hybrid data. Email is a prime example: it is intended to be read by people but includes headers (“From”, “To”, etc.) that enable machine processing. In most cases, the structured data is metadata (see Structure Standards) describing the content that is for human consumption.</documentation>
     </element>
+    <element xsi:type="archimate:BusinessObject" name="Business Object" id="id-296248707d9d4c598fdc52e040158b19"/>
+    <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-986852358abd4baaa5129d59216f99d0"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -4358,6 +4360,7 @@ Data platforms are architecture components that connect to multiple sources and 
 Figure 3 shows how data platforms enable applications to access data. They may communicate with each other or use common metadata to make the access uniform.&#xD;
 Figure 3: Data Platforms</documentation>
     </element>
+    <element xsi:type="archimate:Node" name="Node" id="id-dab04576107d4e2092b38f22ea42d626"/>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -22000,6 +22003,17 @@ Published by The Open Group&#xD;
       <documentation>Zero Trust Core Principles&#xD;
 Document No.: W210&#xD;
 Published by The Open Group, April 2021</documentation>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Test" id="id-9644e13963e344e2961eb1f0db9ab729">
+      <child xsi:type="archimate:DiagramObject" id="id-2a87418a837b4881aaa0a57427e8ec26" archimateElement="id-296248707d9d4c598fdc52e040158b19">
+        <bounds x="260" y="251" width="533" height="158"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e3ea97bfc98f447aaa8e5bb9ffe2ad1c" archimateElement="id-986852358abd4baaa5129d59216f99d0">
+        <bounds x="832" y="337" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-79ae0b3a937b4b4fba6240549f002a20" archimateElement="id-dab04576107d4e2092b38f22ea42d626">
+        <bounds x="987" y="231" width="120" height="55"/>
+      </child>
     </element>
   </folder>
 </archimate:model>
