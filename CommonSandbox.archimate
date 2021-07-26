@@ -3022,22 +3022,9 @@ https://dialogue/grp/IMSCS-SGISC/Lists/CGIIML/AllItems.aspx&#xD;
     <element xsi:type="archimate:BusinessRole" name="MEMBER (High Level SharePoint Role) (Business Role)" id="id-8fadd169ac464075b23361ea72c91101"/>
     <element xsi:type="archimate:BusinessRole" name="VISITOR (High Level SharePoint Role) (Business Role)" id="id-716dcbdaff56417d9d9f937b0ea47961"/>
     <element xsi:type="archimate:BusinessFunction" name="Lifecycle Management (Business Function)" id="id-a549838ddd15473692cb61ea4bfc4caa"/>
-    <element xsi:type="archimate:Representation" name="Data Encoding (Representation)" id="id-fd596987abff489b8a579da1231970fb">
-      <documentation>Data Encoding&#xD;
-Digital computer data consists of sequences of zeros and ones. A data encoding standard states how data values such as numbers, text strings, and images should be represented as sequences of zeros and ones, and how such a sequence should be parsed to create data values; for example, ISO®/IEC® 10646:2020: Information Technology – Universal Coded Character Set (UCS) (see References) states how text characters are represented as sequences of zeros and ones in various formats, including UTF-8.&#xD;
-A list of media types (formerly known as Multipurpose Internet Mail Extensions (MIME) types) that includes the data decoding standards in common use is maintained by the Internet Assigned Numbers Authority (IANA).1 These standards are not listed here. The reader should consult the IANA media type registries.&#xD;
-Some data encoding standards also define content display or data structure. The media type standards listed by IANA include content display standards and data structure standards as well as data encoding standards.</documentation>
-    </element>
     <element xsi:type="archimate:Representation" name="Standard Generalized Markup Language (SGML) (Representation)" id="id-a8a7cc80028641ad9d111be1a75a57f6">
       <documentation>Standard Generalized Markup Language (SGML)&#xD;
 Defined in ISO 8879:1986: Information Processing – Text and Office Systems – Standard Generalized Markup Language (SGML); refer to: https://www.iso.org/standard/16387.html.</documentation>
-    </element>
-    <element xsi:type="archimate:Representation" name="Content Display (Representation)" id="id-143e6e4104ed4bde8c7d01cd6ffa5fd2">
-      <documentation>Content Display&#xD;
-A content display standard states how human-readable content should be represented by data values (and therefore, in conjunction with a data encoding standard, as binary zeros and ones).&#xD;
-The most common content display conventions are not formally standardized; for example, conventional English text consists of words, sentences, and paragraphs delimited by spaces and punctuation marks.&#xD;
-Table 1 contains examples of formal standards that extend these conventions.&#xD;
-Table 1: Content Display Standards</documentation>
     </element>
     <element xsi:type="archimate:Representation" name="HyperText Markup Language (HTML) (Representation)" id="id-4bed2b03a6454c18873c9c07e569b387">
       <documentation>HyperText Markup Language (HTML™)&#xD;
@@ -3050,10 +3037,6 @@ Published as ISO/IEC 26300-1:2015: Information Technology – Open Document Form
     <element xsi:type="archimate:Representation" name="Microsoft Office Word (Representation)" id="id-e3e31e319db545eda6f5ccc194b79a19">
       <documentation>Microsoft® Office Word&#xD;
 ISO/IEC 29500-1:2016: Information Technology – Document Description and Processing Languages – Open Office XML File Formats – Part 1: Fundamentals and Markup Language Reference; refer to: https://www.iso.org/standard/71691.html.</documentation>
-    </element>
-    <element xsi:type="archimate:Representation" name="Hybrid Data (Representation)" id="id-9f8980279b344ea093c40f94976d317a">
-      <documentation>Hybrid Data&#xD;
-Data primarily intended for human consumption but conforming, or partly conforming, to a data structure standard is hybrid data. Email is a prime example: it is intended to be read by people but includes headers (“From”, “To”, etc.) that enable machine processing. In most cases, the structured data is metadata (see Structure Standards) describing the content that is for human consumption.</documentation>
     </element>
     <element xsi:type="archimate:BusinessObject" name="Business Object" id="id-296248707d9d4c598fdc52e040158b19"/>
     <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-986852358abd4baaa5129d59216f99d0"/>
@@ -3107,6 +3090,222 @@ There should be a strong Use Case here, with permissions set only at the lowest-
       <documentation>Contribute: Read-Write access to the site. Users with this permission level can view, upload, delete and make changes to items, web pages and documents.</documentation>
     </element>
     <element xsi:type="archimate:BusinessRole" name="DesignerPlus (SharePoint Permission) (Business Role)" id="id-ad9d8564c0a145d4844249e62f07f245"/>
+    <element xsi:type="archimate:BusinessObject" name="TOGAF Standard v9.2 (Business Object)" id="id-3f22085ae96045898b889f8bcad7b1be">
+      <documentation>Architect selects principles affecting EA work throughout the ADM cycle.&#xD;
+&#xD;
+The TOGAF® Standard, Version 9.2, The Open Group Standard (C182), published by The Open Group, April 2018; refer to: www.opengroup.org/library/c182</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Data Encoding Standards (Business Object)" id="id-368152f67a0d4414985c9b7c50169324">
+      <documentation>Data Encoding&#xD;
+Digital computer data consists of sequences of zeros and ones. A data encoding standard states how data values such as numbers, text strings, and images should be represented as sequences of zeros and ones, and how such a sequence should be parsed to create data values; for example, ISO®/IEC® 10646:2020: Information Technology – Universal Coded Character Set (UCS) (see References) states how text characters are represented as sequences of zeros and ones in various formats, including UTF-8.&#xD;
+A list of media types (formerly known as Multipurpose Internet Mail Extensions (MIME) types) that includes the data decoding standards in common use is maintained by the Internet Assigned Numbers Authority (IANA).1 These standards are not listed here. The reader should consult the IANA media type registries.&#xD;
+Some data encoding standards also define content display or data structure. The media type standards listed by IANA include content display standards and data structure standards as well as data encoding standards.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Content Display Standards (Business Object)" id="id-5e11b66089cf4ef29f5d1cc07899c784">
+      <documentation>Content Display&#xD;
+A content display standard states how human-readable content should be represented by data values (and therefore, in conjunction with a data encoding standard, as binary zeros and ones).&#xD;
+The most common content display conventions are not formally standardized; for example, conventional English text consists of words, sentences, and paragraphs delimited by spaces and punctuation marks.&#xD;
+Table 1 contains examples of formal standards that extend these conventions.&#xD;
+Table 1: Content Display Standards</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="HyperText Markup Language (HTML) (Business Object)" id="id-ac847263bd7b49829bfaabcdf9cd4305">
+      <documentation>HyperText Markup Language (HTML™)&#xD;
+Recommended by the World-Wide Web Consortium (W3C®); refer to: https://www.w3.org/TR/html52/, and also https://html.spec.whatwg.org/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Standard Generalized Markup Language (SGML) (Business Object)" id="id-8b432a2bef254c87a6c57e290eb68ebd">
+      <documentation>Standard Generalized Markup Language (SGML)&#xD;
+Defined in ISO 8879:1986: Information Processing – Text and Office Systems – Standard Generalized Markup Language (SGML); refer to: https://www.iso.org/standard/16387.html.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Open Document Format (ODF) (Business Object)" id="id-dee55e3b0ee847c2a9ebffda67698b40">
+      <documentation>Open Document Format (ODF)&#xD;
+Published as ISO/IEC 26300-1:2015: Information Technology – Open Document Format for Office Applications (Open Document) v1.2 – Part 1: Open Document Schema; refer to: https://www.iso.org/standard/66363.html.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Microsoft Office Word (Business Object)" id="id-45fd8258f40c4720bbbdcf1ed11e23e3">
+      <documentation>Microsoft® Office Word&#xD;
+ISO/IEC 29500-1:2016: Information Technology – Document Description and Processing Languages – Open Office XML File Formats – Part 1: Fundamentals and Markup Language Reference; refer to: https://www.iso.org/standard/71691.html.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Hybrid Data (Business Object)" id="id-6a6e38f81fb54960942bb85500fb3cd0">
+      <documentation>Hybrid Data&#xD;
+Data primarily intended for human consumption but conforming, or partly conforming, to a data structure standard is hybrid data. Email is a prime example: it is intended to be read by people but includes headers (“From”, “To”, etc.) that enable machine processing. In most cases, the structured data is metadata (see Structure Standards) describing the content that is for human consumption.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Generic Data Structure Standards (Business Object)" id="id-35be1284d89545709defb123cbbc0c37">
+      <documentation>Generic Data Structure Standards&#xD;
+Relational databases are the most common way of storing data, and there is universal agreement that data in relational databases is structured data. Other important forms of structured data, at least according to some practitioners, are spreadsheets and Comma-Separated Value (CSV) files, Resource Description Framework (RDF) triple stores, JavaScript™ Object Notation (JSON) and YAML (a recursive acronym for “YAML Ain’t Markup Language”) files, Extensible Markup Language (XML) files, and text files in Backus-Naur Form (BNF).</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Relational Data Standards (Business Object)" id="id-b724a90e92884d8bac9782ae09f908ef">
+      <documentation>Relational Data&#xD;
+A relational database contains tables. A table is a tuple (finite sequence) of named columns, each containing data of a particular type. Each row of the table is a sequence of data values, one for each column.&#xD;
+Table 2: Key Standards for Relational Data</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Structured Query Language (SQL) (Business Object)" id="id-8b48692938d84e74928aab61c7f3553f">
+      <documentation>Name: Structured Query Language (SQL)&#xD;
+Description: Defines the structure of relational databases, obtaining data from them, and creating or modifying data in them.&#xD;
+Source/URL: ISO/IEC 9075-1:2016: Information Technology – Database Languages – SQL – Part 1: Framework (SQL/Framework); refer to: https://www.iso.org/standard/63555.html.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="SQL or Call-Level Interface (CLI) (Business Object)" id="id-a8bb036f888443f4b4a8e29a3af5f1ce">
+      <documentation>Name: SQL/CLI, or Call-Level Interface (CLI)&#xD;
+Description: An extension to the SQL standard that defines common interfacing components that can be used to execute SQL statements from applications written in other programming languages.&#xD;
+Source/URL: Refer to: https://www.iso.org/standard/63475.html.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Open Database Connectivity (ODBC) (Business Object)" id="id-22a8664240754ee7b9b20e88f5950088">
+      <documentation>Name: Open Database Connectivity (ODBC)&#xD;
+Description: A programming language-independent programming interface to databases originally derived from CLI. It has much in common with it, and is more widely used. ODBC can also provide connectivity to some data sets that do not support SQL, including spreadsheets.&#xD;
+Source/URL: Refer to: https://docs.microsoft.com/en-us/sql/odbc/reference/odbc-programmer-s-reference.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Spreadsheets (Business Object)" id="id-89826c0f09a141b9860fe721812df093">
+      <documentation>Under Structure Standards:&#xD;
+Spreadsheets&#xD;
+A spreadsheet file similarly contains data in rows and columns: columns need not be named, and a column can contain data of several different types and have empty cells. One common format for keeping data with these characteristics is the CSV file.&#xD;
+&#xD;
+Under Relational Data:&#xD;
+Spreadsheets&#xD;
+A convention is sometimes used in spreadsheets and CSV files that one row (the header row) contains the names of the columns, and the cells beneath it contain the values. When a spreadsheet or CSV file has consistently-typed columns (so that it is like a relational database table) the ISO/IEC 11179 standard could apply to its semantics.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="RDF Triple Stores Standards (Business Object)" id="id-2736f6894de143a99a2c4ef10a384fa7">
+      <documentation>RDF Triple Stores&#xD;
+Table 3: Key RDF Standards&#xD;
+&#xD;
+Note: RDF is not a language. RDF descriptions are often written in XML, but other languages such as Terse RDF Triple Language (Turtle) can be used.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Resource Description Framework (RDF) (Business Object)" id="id-73994dfee245461a99d0ead8cf634b86">
+      <documentation>Name: Resource Description Framework (RDF)&#xD;
+Description: Strictly speaking, a semantic standard, rather than a data structure standard, but RDF implies a data structure that is a collection of triples, each of which has a subject data value, a verb data value, and an object data value.&#xD;
+Source/URL: Refer to: https://www.w3.org/RDF.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="SPARQL Protocol and RDF Query Language (SPARQL) (Business Object)" id="id-c47698702f8446939e22df7c904bc706">
+      <documentation>Name: SPARQL Protocol and RDF Query Language (SPARQL)&#xD;
+Description: RDF triples are stored in triple stores. Just as SQL is a standard for obtaining data from a relational database, SPARQL specifies how data can be obtained from RDF triple stores.&#xD;
+Source/URL: Refer to: https://www.w3.org/TR/rdf-sparql-query.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="RDF Mapping (Business Object)" id="id-8d60790b3dcc4812ae04310914533e7d">
+      <documentation>Name: RDF Mapping&#xD;
+Description: A W3C recommendation that defines a direct mapping of relational data to RDF.&#xD;
+Source/URL: Refer to: https://www.w3.org/TR/rdb-direct-mapping.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="JSON and YAML Standards (Business Object)" id="id-7f7384e0b8804f4ca57698abbac59e2b">
+      <documentation>JSON and YAML&#xD;
+Table 4: JSON and YAML&#xD;
+&#xD;
+Note: JSON does not have a schema standard, though the Internet Engineering Task Force (IETF) is working to develop one (see https://json-schema.org/). Work is also taking place to extend the draft JSON Schema standard to cover YAML.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="JavaScript Notation Object (JSON) (Business Object)" id="id-bfdc171afe884c5c9b3802061412acbd">
+      <documentation>Name: JavaScript Notation Object (JSON)&#xD;
+Description: Functionally equivalent to a subset of Javascript (but with a slightly different syntax). Data is described in JSON as collections of name-value pairs, where a value can be null, a text string, a number, a boolean, a collection of name-value pairs, or an array of values. The data thus has a recursively nested structure.&#xD;
+Source/URL: Refer to: https://www.json.org/json-en.html.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="YAML (YAML Ain’t Markup Language) (Business Object)" id="id-8340af8e6bb146479feb2cae673a65c0">
+      <documentation>Name: YAML (a recursive acronym for “YAML Ain’t Markup Language”)&#xD;
+Description: Functionally a superset of JSON that is intended to serve similar applications to XML, but with a more human-friendly syntax. Its syntax also differs from that of JSON. It is commonly used for configuration files and in applications where data is being stored or transmitted.&#xD;
+Source/URL: Refer to: https://yaml.org.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="XML Standards (Business Object)" id="id-28c4569d88424ebcb05067d0ea1fdc80">
+      <documentation>XML&#xD;
+Table 5: Key XML Standards</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Extensible Markup Language (XML) (Business Object)" id="id-619d4f3b45dc44a1aa662c34c0f65a10">
+      <documentation>Name: Extensible Markup Language (XML)&#xD;
+Description: Data described in XML is structured as a tree of elements with content and attribute data values. The content of an element includes child elements and content data values.&#xD;
+Refer to: https://www.w3.org/XML.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Document Type Definition (DTD) (Business Object)" id="id-2ef1ba9ac86e426daa2e84b56586a0fa">
+      <documentation>Name: Document Type Definition (DTD)&#xD;
+Description: An XML document can have either a DTD or an XSD, each of which defines its structure and its legal elements and attributes.&#xD;
+Refer to: https://www.w3.org/XML.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="XML Schema Definition (XSD) Language (Business Object)" id="id-9fcc5ea2782e4ca4a3394e8fd2d1e356">
+      <documentation>Name: XML Schema Definition (XSD) Language&#xD;
+Description: An XML document can have either a DTD or an XSD, each of which defines its structure and its legal elements and attributes.&#xD;
+Refer to: https://www.w3.org/TR/xmlschema/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="XML Query (XQuery) (Business Object)" id="id-2d8e5fb8647e4438b6df40d65495ad36">
+      <documentation>Name: XML Query (XQuery)&#xD;
+Description: A language for finding and extracting elements and attributes from XML documents. It is to XML what SQL is to relational databases.&#xD;
+Refer to: https://www.w3.org/XML/Query/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="XML Path Language (XPath) (Business Object)" id="id-91638a47bad445e5a11eb5f9b3ccbe4d">
+      <documentation>Name: XML Path Language (XPath)&#xD;
+Description: A query language for selecting nodes from an XML document.&#xD;
+Refer to: https://www.w3.org/TR/1999/REC-xpath-19991116/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="XPath Data Model (XDM) (Business Object)" id="id-985dc6585ac24c838a5785790d8c4e9e">
+      <documentation>Name: XPath Data Model (XDM)&#xD;
+Description: The data model of XPath and some other W3C standards.&#xD;
+Refer to: https://www.w3.org/TR/xpath-datamodel-31/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Domain-Specific Standards (Business Object)" id="id-6e7a5d4ef1b149daa41bc40562637e47">
+      <documentation>Domain-Specific Standards&#xD;
+Domain-specific data structure standards define data structures appropriate to specific application domains. They are generally based on generic data structure standards, and add requirements for identified constructs that contain application-specific data. This implies particular semantics for that data. Examples are shown in Table 7.&#xD;
+Table 7: Examples of Domain-Specific Standards</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Fast Healthcare Interoperability Resources (FHIR) (Business Object)" id="id-60f9a8a2ce944f2785e4948bd83e95a0">
+      <documentation>Name: Fast Healthcare Interoperability Resources (FHIR®)&#xD;
+Description: A standard for healthcare data exchange, published by Health Level Seven® International (HL7®). It has equivalent representations of data using XML, JSON, and RDF.&#xD;
+Source/URL: Refer to: https://www.hl7.org/fhir/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Open Financial Exchange (OFX) (Business Object)" id="id-091d44d9959e4a6ba011f32bfb25ae4b">
+      <documentation>Name: Open Financial Exchange (OFX)&#xD;
+Description: A standard for exchanging financial information. It is based on XML.&#xD;
+Source/URL: Refer to: https://www.ofx.net/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Open Banking Standard (Business Object)" id="id-58c0cf1d000849dc8c1b973e1f4aa108">
+      <documentation>Name: Open Banking Standard&#xD;
+Description: Has JSON and YAML data representations and is documented using Swagger, now the OpenAPI Specification (OAS).3&#xD;
+Source/URL: Refer to: https://standards.openbanking.org.uk/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="UN Electronic Data Interchange for Administration, Commerce and Transport (UN-EDIFACT) (Business Object)" id="id-aaf5a8f3239c465b8c7ba5217b9da628">
+      <documentation>Name: United Nations/Electronic Data Interchange for Administration, Commerce and Transport (UN/EDIFACT)&#xD;
+Description: Based on XML, with documented data models.&#xD;
+Source/URL: Refer to: https://unece.org/introducing-unedifact.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Dictionaries (Business Object)" id="id-3ed336dc29cb46839f772041cb3076cf">
+      <documentation>Dictionaries&#xD;
+There are a number of dictionaries that provide precise definitions for terms that may be used in textual descriptions of data. They may be required to be used for specific purposes by industry associations and corporations. Table 11 provides examples.&#xD;
+Table 11: Dictionaries</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="ISO 22745 (Business Object)" id="id-f48e4e6c30af4e33916b562ce211978c">
+      <documentation>Name: ISO 22745&#xD;
+Description: Defines open technical dictionaries and their application to master data for industrial automation systems and integration.&#xD;
+Source/URL: ISO 22745-1:2010: Industrial Automation Systems and Integration – Open Technical Dictionaries and their Application to Master Data – Part 1: Overview and fundamental principles; refer to: https://www.iso.org/standard/53995.html.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="ECCMA Open Technical Dictionary (EOTD) (Business Object)" id="id-55b63ceb83054aee8f1be0aea113b68a">
+      <documentation>Name: ECCMA® Open Technical Dictionary (EOTD)&#xD;
+Description: A technical dictionary that complies with ISO 22745.&#xD;
+Source/URL: Refer to: https://eccma.org/resources/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Relational Data Standards (Business Object)" id="id-18217641038c44fcb856b43515c33a30"/>
+    <element xsi:type="archimate:BusinessObject" name="Metadata Registries (Business Object)" id="id-c865af551ac64d409082cc53c718bacd">
+      <documentation>Metadata Registries&#xD;
+International Standard ISO/IEC 11179-1: 2015: Information Technology – Metadata Registries (MDR) – Part 1: Framework (see References) defines a framework for data semantics that is in practice used in connection with relational databases, but in theory could be applied more widely.&#xD;
+In this framework, data encodes information about real-world objects and their properties. A data element is a unit of data that is considered in context to be indivisible. It is a logical specification to which a data value can conform, and that states what a conforming data value means. The meaning of a data element value is a combination of an object class and a property, such as person and name. A data element also has a value domain – its set of permissible values.&#xD;
+When ISO/IEC 11179 is applied to a relational database, each table represents an object class, each column represents a data element, and each row represents an object and contains the values of the column data elements for that object.&#xD;
+Usually, the table names and column names suggest the meaning of the data in a relational database. Formal documentation can describe the meaning more rigorously. Such documentation is a kind of metadata. ISO/IEC 11179 documents the standardization and registration of metadata to make data understandable and shareable.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="O-DEF Standard (Business Object)" id="id-91c31604ed634239bdf34c4fe85bc68e">
+      <documentation>O-DEF™ Standard&#xD;
+The Open Data Element Framework (O-DEF) (see References) is a standard of The Open Group based on ISO/IEC 11179 that defines a framework for describing common data element concepts, with an initial index (to be extended over time) of object classes, properties, and roles. (A data element concept is a generic data element, with an object class and property, but no defined value domain.)&#xD;
+The O-DEF Standard aids interoperability by enabling basic units of data to be classified, using specific object class and property codes, so that equivalences and similarities between the data can be easily determined.&#xD;
+The O-DEF Standard also incorporates codes from existing international standards that can become plug-ins; for example, the product codes in the O-DEF Standard are drawn from the UNSPSC.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="ERA Models (Business Object)" id="id-ff84d472b0e9472d94aefea806871ed5">
+      <documentation>ERA Models&#xD;
+Entity-Relationship-Attribute (ERA) models are often used to describe relational database structures. ERA modeling is a well-established practice. There is no formal standard for it, although ISO/IEC 11179 defines some modeling terms.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Standard Data Models (Business Object)" id="id-1e6cb7c434c3444bb34a604a5a42cf45">
+      <documentation>Standard Data Models&#xD;
+A standard data model13 or Industry Standard Data Model (ISDM) is a data model that is widely applied in some industry, and shared amongst competitors to some degree. There are a number of standard data models, defined by industry bodies, vendors, and others. Many use ERA modeling notations to describe relational structures. Others take the form of hierarchical vocabularies. A particularly extensive standard data model is the US National Information Exchange Model™ (NIEM™).14 The NIEM model includes core elements and elements specific to particular communities.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="RDF Triple Stores (Business Object)" id="id-7ca456bf7b824252a37940a3c364a5fb">
+      <documentation>RDF Triple Stores&#xD;
+In the RDF, the subject of a triple represents a real-world object, the triple’s verb represents a property, and the triple’s object represents the value of the property for the subject. This value can be a real-world object or a data value such as a number, a text string, or an image.&#xD;
+Real-world objects and properties that are triple subjects, verbs, and objects are identified by Internationalized Resource Identifiers (IRI).15 An IRI can be a Uniform Resource Identifier (URI) that gives the location of a web page, so that the value representing the object or property points to a web page that describes it.16&#xD;
+The RDF Schema (RDFS)17 standard defines the meaning of object class and property for the RDF. Fundamentally, this is not very different to what is meant in ISO/IEC 11179. The Web Ontology Language (OWL)18 is a standard language, based on RDF, for defining ontologies. An ontology describes object classes and properties, and relationships between them. An OWL ontology can be a powerful collection of metadata.&#xD;
+RDF, RDFS, and OWL can be used to define standard vocabularies, including the examples given in Table 12.&#xD;
+Table 12: Example Standard Vocabularies</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Dublin Core Vocabulary (Business Object)" id="id-d29c6e5bc6a146c6a2ca0422488fb181"/>
+    <element xsi:type="archimate:BusinessObject" name="Friend Of A Friend (FOAF) Vocabulary Specification (Business Object)" id="id-1a7117f30f9e4fb09015606909007966"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -3475,6 +3674,49 @@ A data integration operation may take several forms, including:&#xD;
 • Discrete operation – all the source data and contextual metadata is read, and the source data is analyzed and transformed, to produce the integrated data in a single step&#xD;
 • Continual synchronization – the integrated data is initially created as in a discrete operation, and subsequent changes to the source data trigger corresponding changes to the integrated data&#xD;
 • Dynamic query – specific queries of the integrated data trigger queries of the source data, for which responses are transformed and returned</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Structure-Independent Metadata (Data Object)" id="id-63787827ce0f49ba88311a9bef7edf5a">
+      <documentation>Structure-Independent Metadata</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Identification Codes (Data Object)" id="id-685e3975ae864f92986a54cafb8d1bb7">
+      <documentation>Identification Codes&#xD;
+There are a number of standards defining codes that identify particular classes of things. Some examples are shown in Table 10.&#xD;
+Table 10: Identification Codes&#xD;
+&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Data Warehouse Metadata (Data Object)" id="id-42aea72e0554497c960bc6efaaee80ed">
+      <documentation>Data Warehouse&#xD;
+The Common Warehouse Metamodel (CWM™)11 is a standard of the Object Management Group® (OMG®)12 that defines a specification for modeling metadata for relational, non-relational, multi-dimensional, and most other objects found in a data warehousing environment. It enables interchange of metadata, including lineage metadata, between data warehouse tools and repositories.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="ISO 3166 Country Codes (Data Object)" id="id-d085208a57064c90925f24f5eed9d99e">
+      <documentation>Name: ISO 3166 Country Codes&#xD;
+Description: Widely used to identify countries.&#xD;
+Source/URL: Refer to: https://www.iso.org/iso-3166-country-codes.html.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Global Trade Item Numbers (GTIN) (Data Object)" id="id-2b142bb1bb514159b55ab22cdad0b46f">
+      <documentation>Name: Global Trade Item Numbers (GTIN)&#xD;
+Description: Used by companies to identify their trade items – particularly in barcodes.&#xD;
+Source/URL: Refer to: https://www.gs1.org/standards/id-keys/gtin.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Harmonized System (HS) Codes (Data Object)" id="id-3ce946a3c8d94d0daaf2f4783fc1fd25">
+      <documentation>Name: Harmonized System (HS) Codes&#xD;
+Description: A standardized numerical method of classifying traded products used by customs authorities around the world to identify products when assessing duties and taxes and for gathering statistics.&#xD;
+Source/URL: Refer to: http://www.wcoomd.org/en/topics/nomenclature/overview/what-is-the-harmonized-system.aspx.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Standard Industrial Classification (SIC) Codes (Data Object)" id="id-bb80af9322ce406586cea6fe6cda07db">
+      <documentation>Name: Standard Industrial Classification (SIC) Codes&#xD;
+Description: Used to indicate a company's type of business.&#xD;
+Source/URL: Refer to: https://www.sec.gov/info/edgar/siccodes.htm.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="United Nations Standard Products and Services Code (UNSPSC) (Data Object)" id="id-3dd8ccfe97424d1ea4cbd27b979721ed">
+      <documentation>Name: United Nations Standard Products and Services Code® (UNSPSC®)&#xD;
+Description: Identifies products and services.&#xD;
+Source/URL: Refer to: https://www.unspsc.org/.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Common Warehouse Metamodel (CWM) (Data Object)" id="id-7fb43989e02746d9bc65a01e3656a5ed">
+      <documentation>The Common Warehouse Metamodel (CWM™) is a standard of the Object Management Group® (OMG®)12 that defines a specification for modeling metadata for relational, non-relational, multi-dimensional, and most other objects found in a data warehousing environment. It enables interchange of metadata, including lineage metadata, between data warehouse tools and repositories.&#xD;
+Refer to: https://www.omg.org/spec/CWM/1.1/PDF.</documentation>
     </element>
   </folder>
   <folder name="Technology &amp; Physical" id="83288a0a-e9be-40e7-a1c1-658dbe0a4196" type="technology">
@@ -4391,6 +4633,18 @@ Figure 3: Data Platforms</documentation>
     <element xsi:type="archimate:Node" name="Node" id="id-dab04576107d4e2092b38f22ea42d626"/>
     <element xsi:type="archimate:Facility" name="Montreal Data Centre (Facility)" id="id-a51e108a0d4d47648b0a10398ef0b180"/>
     <element xsi:type="archimate:Facility" name="Moncton Data Centre (Facility)" id="id-d6ea559073f84d81b89fe59ed944c077"/>
+    <element xsi:type="archimate:Node" name="UNIX File Store (Node)" id="id-8471dfd8e09941c7bb277257dc6a0c45">
+      <documentation>Name: UNIX® File Store&#xD;
+Source/URL: Refer to: http://www.unix.org/.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Apache Hadoop Distributed File System (HDFS) (Node)" id="id-b0db8f7d737b405c962bc8569621dc1a">
+      <documentation>Name: Apache™ Hadoop® Distributed File System (HDFS™)&#xD;
+Source/URL: Refer to: https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html.</documentation>
+    </element>
+    <element xsi:type="archimate:DistributionNetwork" name="Blockchain System (Distribution Network)" id="id-9114d934c31547078afaaacd5e5132d9">
+      <documentation>Name: A Blockchain System&#xD;
+Source/URL: For more information, refer to: https://en.wikipedia.org/wiki/Blockchain.</documentation>
+    </element>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -8922,6 +9176,7 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:Grouping" name="WLM-and-CE Required Capabilities (Grouping)" id="id-96c997dd3b044d59a9e44a9e86adc830"/>
     <element xsi:type="archimate:Grouping" name="WLM-and-CE Preliminary Risk Identification (Grouping)" id="id-5f44f7cd480f42e79770cb89c7c00380"/>
     <element xsi:type="archimate:Grouping" name="WLM-and-CE Solution Scope (Grouping)" id="id-cf35add8108c468f93b8a6f7144153e5"/>
+    <element xsi:type="archimate:Grouping" name="Data Storage Systems (Grouping)" id="id-268f84f8bd7842f5b6b645b0c12a5eb3"/>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e307ac9a-b3a7-4aa5-9133-6cf506203141" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="b29c1bc0-9c06-4484-9748-d797806e08b7"/>
@@ -10995,13 +11250,6 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-7801405c62ef4a9396c994d9cf9620b4" source="id-265c637c6f3c41e59a98c36b749292db" target="id-78a51d7d3e45419995ff97f713b56a38"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-2435853e04df4122a220a2a155f93c06" source="id-265c637c6f3c41e59a98c36b749292db" target="id-7d4a71ab1e154a91b1b54e49bf851871"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-86fe1a5e4a1b41b99f44b3ff916cf281" source="id-265c637c6f3c41e59a98c36b749292db" target="id-0fa20dbdbbdc4921b005912e20203357"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-0e5c557eb6e34375a3fcdfa6e59d165b" source="id-143e6e4104ed4bde8c7d01cd6ffa5fd2" target="id-4bed2b03a6454c18873c9c07e569b387"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-7616486de1b84c87af334cf53fc9d010" source="id-143e6e4104ed4bde8c7d01cd6ffa5fd2" target="id-a8a7cc80028641ad9d111be1a75a57f6"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-b5a7ff98cb9e478391f3149548494e8c" source="id-143e6e4104ed4bde8c7d01cd6ffa5fd2" target="id-145b9f0c0d50406dbca108629ed9e828"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-e382c6250d9f4190a0b8f81a05baca18" source="id-143e6e4104ed4bde8c7d01cd6ffa5fd2" target="id-e3e31e319db545eda6f5ccc194b79a19"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-c08e024041f6459d9fa5aba02573973a" source="id-db957d2205b14914b30135c6980cb234" target="id-fd596987abff489b8a579da1231970fb"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-7861f16020c149adb50da184b3095d8e" source="id-db957d2205b14914b30135c6980cb234" target="id-143e6e4104ed4bde8c7d01cd6ffa5fd2"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-4e8198097fc34dbca574507eafbf1df6" source="id-db957d2205b14914b30135c6980cb234" target="id-9f8980279b344ea093c40f94976d317a"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-6cead86975c64474a59fcda866ac9b58" source="id-9bf048e207e84792a1bc73573b293f60" target="id-a16dbdaca02840baa903fcdcf639d565"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-349c2e11df5742daa886d2982b81cc38" source="id-91fd61134dae41caad4616d998bae167" target="id-7c9b49073a094837bda82f46ced73956"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-6bd090998d5e49aaa66180e3f19fe0ef" source="id-d2b79e25adaa4b52ba607086cbfb79e4" target="id-1559135c624541b681f088ea437f7f99"/>
@@ -11056,6 +11304,64 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-fdebfe93c5ea4977bf0b01c412bdbce8" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-ad9d8564c0a145d4844249e62f07f245"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-6e5fa76386b147e788786d6d1283ecef" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-7585b67b15a649948872abc0ab483974"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-022f1a982fc142699f06b3c418843eca" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-055ed8d42eb649e381c8a92a18c78335"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-5c85700be52447cf9472ff8d36227e1a" source="id-11980fd5b1fa49809fd34383326f70e6" target="id-3f22085ae96045898b889f8bcad7b1be"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-68b4087dc6ad4e6bb6f9b0cec0d14026" source="id-db957d2205b14914b30135c6980cb234" target="id-368152f67a0d4414985c9b7c50169324"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-330a7be1cc9c47c8b69d64762a9f49e8" source="id-5e11b66089cf4ef29f5d1cc07899c784" target="id-ac847263bd7b49829bfaabcdf9cd4305"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-6aebda1652b447558c53371b2c20d4eb" source="id-5e11b66089cf4ef29f5d1cc07899c784" target="id-8b432a2bef254c87a6c57e290eb68ebd"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-c2596f9868334334bbc52e7ab4a94c33" source="id-5e11b66089cf4ef29f5d1cc07899c784" target="id-dee55e3b0ee847c2a9ebffda67698b40"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-15abb69304bc4887aa5445770a96ee8a" source="id-5e11b66089cf4ef29f5d1cc07899c784" target="id-45fd8258f40c4720bbbdcf1ed11e23e3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-4febd5287744435c90c0b8951a05818c" source="id-db957d2205b14914b30135c6980cb234" target="id-5e11b66089cf4ef29f5d1cc07899c784"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-934aa34a255b4001acc86444a29e81c1" source="id-db957d2205b14914b30135c6980cb234" target="id-6a6e38f81fb54960942bb85500fb3cd0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1a1c7c6c4f6549ba8334498040d0c321" source="id-b724a90e92884d8bac9782ae09f908ef" target="id-8b48692938d84e74928aab61c7f3553f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-9ef017a639534dccb5e923c112d67101" source="id-b724a90e92884d8bac9782ae09f908ef" target="id-a8bb036f888443f4b4a8e29a3af5f1ce"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a813ee590e8c4808b29806ae49f9b3ee" source="id-b724a90e92884d8bac9782ae09f908ef" target="id-22a8664240754ee7b9b20e88f5950088"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a604719ea8724b14b45c57aeb1d94db6" source="id-35be1284d89545709defb123cbbc0c37" target="id-b724a90e92884d8bac9782ae09f908ef"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3fdb9ce54d574b7e8895776a29109524" source="id-35be1284d89545709defb123cbbc0c37" target="id-89826c0f09a141b9860fe721812df093"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ef73df5c1a4c46379b84fa888c5fba2e" source="id-2736f6894de143a99a2c4ef10a384fa7" target="id-73994dfee245461a99d0ead8cf634b86"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a8ecdbb7a4944fe89550e9d0a9dd2a07" source="id-2736f6894de143a99a2c4ef10a384fa7" target="id-c47698702f8446939e22df7c904bc706"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8ce32a4d4fb64aebbca0f2fe7977370b" source="id-2736f6894de143a99a2c4ef10a384fa7" target="id-8d60790b3dcc4812ae04310914533e7d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1d1585e31fc447e4b029928594b2b778" source="id-35be1284d89545709defb123cbbc0c37" target="id-2736f6894de143a99a2c4ef10a384fa7"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-bcf3758c17e744a1bae39f2ae1e833bf" source="id-7f7384e0b8804f4ca57698abbac59e2b" target="id-bfdc171afe884c5c9b3802061412acbd"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-195922f8b45c4a63b896b57487ff067e" source="id-7f7384e0b8804f4ca57698abbac59e2b" target="id-8340af8e6bb146479feb2cae673a65c0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-157bc5fe1b5744c783722781a7bce6a2" source="id-28c4569d88424ebcb05067d0ea1fdc80" target="id-91638a47bad445e5a11eb5f9b3ccbe4d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-6f4a0eb7823949c1b86379bca1bec064" source="id-28c4569d88424ebcb05067d0ea1fdc80" target="id-2ef1ba9ac86e426daa2e84b56586a0fa"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1499ebcd4c33437ea6aec938eda25464" source="id-28c4569d88424ebcb05067d0ea1fdc80" target="id-619d4f3b45dc44a1aa662c34c0f65a10"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d739fcc6231f4c83bf685e699fd0cea7" source="id-28c4569d88424ebcb05067d0ea1fdc80" target="id-2d8e5fb8647e4438b6df40d65495ad36"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0737e696a6d3464d95ca22b0dc092e21" source="id-28c4569d88424ebcb05067d0ea1fdc80" target="id-985dc6585ac24c838a5785790d8c4e9e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ad9f3d74fce146678451118036142996" source="id-28c4569d88424ebcb05067d0ea1fdc80" target="id-9fcc5ea2782e4ca4a3394e8fd2d1e356"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-21b0dc35127841ecb1e4237c1f737586" source="id-35be1284d89545709defb123cbbc0c37" target="id-7f7384e0b8804f4ca57698abbac59e2b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b9c9d3ad4651480d9150f7b18dbd003f" source="id-35be1284d89545709defb123cbbc0c37" target="id-28c4569d88424ebcb05067d0ea1fdc80"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-333293a2adc44c3fb65a88bebdb860ae" source="id-6e7a5d4ef1b149daa41bc40562637e47" target="id-aaf5a8f3239c465b8c7ba5217b9da628"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3aa335e9818646edb0d797f95fa8a9e4" source="id-6e7a5d4ef1b149daa41bc40562637e47" target="id-58c0cf1d000849dc8c1b973e1f4aa108"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-6fdeb7c37d104b5a915279ee5eb8b7ff" source="id-6e7a5d4ef1b149daa41bc40562637e47" target="id-091d44d9959e4a6ba011f32bfb25ae4b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d2f8961947e645809cdd92eef84fd7b4" source="id-6e7a5d4ef1b149daa41bc40562637e47" target="id-60f9a8a2ce944f2785e4948bd83e95a0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ebd26f284fe5459dac42ea2a5bc00577" source="id-d9aa9ad423e84e22b701a9f7c3680cde" target="id-35be1284d89545709defb123cbbc0c37"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-6e28310e73a4477f960475008fc4966b" source="id-d9aa9ad423e84e22b701a9f7c3680cde" target="id-6e7a5d4ef1b149daa41bc40562637e47"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-a9e321fce9c745d48b07ad1562635868" source="id-268f84f8bd7842f5b6b645b0c12a5eb3" target="id-8471dfd8e09941c7bb277257dc6a0c45"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7572b309bdde452cb0740927b3233b0f" source="id-268f84f8bd7842f5b6b645b0c12a5eb3" target="id-b0db8f7d737b405c962bc8569621dc1a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-6184581df7b144f8ad3db8aeeb9a4f91" source="id-268f84f8bd7842f5b6b645b0c12a5eb3" target="id-9114d934c31547078afaaacd5e5132d9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3aeba94f897c4e5d9891b47a95511776" source="id-685e3975ae864f92986a54cafb8d1bb7" target="id-3dd8ccfe97424d1ea4cbd27b979721ed"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-bd2ce90584e54c119d4cb429b08e31b0" source="id-685e3975ae864f92986a54cafb8d1bb7" target="id-bb80af9322ce406586cea6fe6cda07db"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f037c7150106444ba404ed3dc74aa628" source="id-685e3975ae864f92986a54cafb8d1bb7" target="id-2b142bb1bb514159b55ab22cdad0b46f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-57b77cd29cc84254b0179de51bb293ac" source="id-685e3975ae864f92986a54cafb8d1bb7" target="id-3ce946a3c8d94d0daaf2f4783fc1fd25"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-5819c69afacf4a6b926c4e2285136b69" source="id-685e3975ae864f92986a54cafb8d1bb7" target="id-d085208a57064c90925f24f5eed9d99e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f4f72ee509034744b674389b2ca8bda5" source="id-3ed336dc29cb46839f772041cb3076cf" target="id-f48e4e6c30af4e33916b562ce211978c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-4359a9e8b9d44e17b7f1441fa75c4986" source="id-3ed336dc29cb46839f772041cb3076cf" target="id-55b63ceb83054aee8f1be0aea113b68a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-66f2623f139f4b0195ebaaf53abcfef6" source="id-42aea72e0554497c960bc6efaaee80ed" target="id-7fb43989e02746d9bc65a01e3656a5ed"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-12e07e1d78ee4612a031bb8a342f2104" source="id-63787827ce0f49ba88311a9bef7edf5a" target="id-42aea72e0554497c960bc6efaaee80ed"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-574d222cb4e643bc8dbfcb3a66a8ed57" source="id-63787827ce0f49ba88311a9bef7edf5a" target="id-685e3975ae864f92986a54cafb8d1bb7"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-73c202c596004e3c8621a20325944f40" source="id-63787827ce0f49ba88311a9bef7edf5a" target="id-3ed336dc29cb46839f772041cb3076cf"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1378128e911a46cea70ad8464bc87ba6" source="id-89826c0f09a141b9860fe721812df093" target="id-18217641038c44fcb856b43515c33a30"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e9552c8687b84419becb8ceea7477f5a" source="id-18217641038c44fcb856b43515c33a30" target="id-c865af551ac64d409082cc53c718bacd"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-bb023f64e09e43f781f2cc3857bbeeee" source="id-18217641038c44fcb856b43515c33a30" target="id-91c31604ed634239bdf34c4fe85bc68e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-86f4b1924d3741398f53290eef27202a" source="id-18217641038c44fcb856b43515c33a30" target="id-ff84d472b0e9472d94aefea806871ed5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-c76ff86348f14797a335e5816a113210" source="id-18217641038c44fcb856b43515c33a30" target="id-1e6cb7c434c3444bb34a604a5a42cf45"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ba5e3486a8804663a27b40d560057954" source="id-27934dc746714d3d90a8d77946323476" target="id-63787827ce0f49ba88311a9bef7edf5a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ed7ddfa6448e4f55ba287f05ac92377e" source="id-27934dc746714d3d90a8d77946323476" target="id-268f84f8bd7842f5b6b645b0c12a5eb3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-29c4071b7dfe4e41b5f92844314e7979" source="id-27934dc746714d3d90a8d77946323476" target="id-18217641038c44fcb856b43515c33a30"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e653eab12b8a44298e6f98e578d902c2" source="id-27934dc746714d3d90a8d77946323476" target="id-7ca456bf7b824252a37940a3c364a5fb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-61705ba8146747f38d16b03ca900bd93" source="id-7ca456bf7b824252a37940a3c364a5fb" target="id-d29c6e5bc6a146c6a2ca0422488fb181"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3181c503e9fc4d238c9a9238ba991e8d" source="id-7ca456bf7b824252a37940a3c364a5fb" target="id-1a7117f30f9e4fb09015606909007966"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -14721,7 +15027,7 @@ v.2021-06-24</content>
           <sourceConnection xsi:type="archimate:Connection" id="id-fa302269297345f6a91b6368b6c16a25" source="id-c43d21cd995d42929e8a62da01907d11" target="id-8ce1accd89cb483199bbd5f68a3d9768" archimateRelationship="id-2c786b3e485d40d9ba68494961350076"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7dc9b9a6d31d4fd4b325c602e3a76542" source="id-c43d21cd995d42929e8a62da01907d11" target="id-608ded178379439f80e2c50bb8f9fb3f" archimateRelationship="id-175eced7fa8b46faaf50e1dc06001244"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-8018ebbbc13f443aa2af3710f46d345e" source="id-c43d21cd995d42929e8a62da01907d11" target="id-669cd9b96d5c42958f90d1e3f666384c" archimateRelationship="id-60ad02daa5e94dc091f939396673e6da"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-0f2c9cd7cbbb42aab428b391c52f97e1" source="id-c43d21cd995d42929e8a62da01907d11" target="id-df3eacd408994ace85eb8ff65b79a9f4" archimateRelationship="id-0718334ed91e43fea6b027ef3327a596"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0a0971922e674045b55833e681827d90" source="id-c43d21cd995d42929e8a62da01907d11" target="id-870f51b5f0034a74aaec63def03f1f7d" archimateRelationship="id-5c85700be52447cf9472ff8d36227e1a"/>
           <child xsi:type="archimate:DiagramObject" id="id-17ea63639ec64dba872751e1edfa4a13" targetConnections="id-a38d7e79ca3741d9a0102f17cb269bd2" archimateElement="id-ecf17f14466e4000ada660966ac9aa52">
             <bounds x="12" y="24" width="166" height="76"/>
           </child>
@@ -14752,8 +15058,8 @@ v.2021-06-24</content>
           <child xsi:type="archimate:DiagramObject" id="id-669cd9b96d5c42958f90d1e3f666384c" targetConnections="id-8018ebbbc13f443aa2af3710f46d345e" archimateElement="id-e26437a75b3446f5a52638243f0aefe4">
             <bounds x="192" y="324" width="166" height="49"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-df3eacd408994ace85eb8ff65b79a9f4" targetConnections="id-0f2c9cd7cbbb42aab428b391c52f97e1" archimateElement="id-d487df6159f54f62bfccf02af6ec0533">
-            <bounds x="192" y="384" width="166" height="55"/>
+          <child xsi:type="archimate:DiagramObject" id="id-870f51b5f0034a74aaec63def03f1f7d" targetConnections="id-0a0971922e674045b55833e681827d90" archimateElement="id-3f22085ae96045898b889f8bcad7b1be">
+            <bounds x="192" y="384" width="166" height="51"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-648d8aae9ec54096bc23a7aba83f859f" archimateElement="id-0475fec61c024d6481da77a2b68161b9">
@@ -14880,50 +15186,241 @@ v.2021-06-24</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-358107728245443abf5c4fcf8653f54c" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-db957d2205b14914b30135c6980cb234">
-          <bounds x="301" y="1020" width="816" height="180"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-f81375590a214e89a35a9d0ac63c58c9" source="id-358107728245443abf5c4fcf8653f54c" target="id-041e76326b33451fb7b2b9490147303a" archimateRelationship="id-c08e024041f6459d9fa5aba02573973a"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-ae740c961ebc4993ab5a926f1f4b7393" source="id-358107728245443abf5c4fcf8653f54c" target="id-0c8dd6951faf47b6ba3a2d18aa297a8e" archimateRelationship="id-7861f16020c149adb50da184b3095d8e"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-c7de4cec8ca64382a45460b8e176a99c" source="id-358107728245443abf5c4fcf8653f54c" target="id-8aef790fbb414349a3ea915fa7c0ec09" archimateRelationship="id-4e8198097fc34dbca574507eafbf1df6"/>
-          <child xsi:type="archimate:DiagramObject" id="id-041e76326b33451fb7b2b9490147303a" targetConnections="id-f81375590a214e89a35a9d0ac63c58c9" archimateElement="id-fd596987abff489b8a579da1231970fb">
-            <bounds x="12" y="36" width="120" height="84"/>
+          <bounds x="301" y="1020" width="828" height="167"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-69ab0fe4ec6e402f97abe6c48960e588" source="id-358107728245443abf5c4fcf8653f54c" target="id-fd468b47071b467c92a5e1b75cad8a89" archimateRelationship="id-68b4087dc6ad4e6bb6f9b0cec0d14026"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-dfeb684013e944a3ac9eb9665a7997e2" source="id-358107728245443abf5c4fcf8653f54c" target="id-f5c974ae2dd4414f8c0ee4b9b0801b6d" archimateRelationship="id-4febd5287744435c90c0b8951a05818c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9ef2cda617954fde8203f0ee02a93bab" source="id-358107728245443abf5c4fcf8653f54c" target="id-c787d2064c964068a77f75e2ced5ab27" archimateRelationship="id-934aa34a255b4001acc86444a29e81c1"/>
+          <child xsi:type="archimate:DiagramObject" id="id-fd468b47071b467c92a5e1b75cad8a89" targetConnections="id-69ab0fe4ec6e402f97abe6c48960e588" archimateElement="id-368152f67a0d4414985c9b7c50169324">
+            <bounds x="12" y="36" width="120" height="69"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-0c8dd6951faf47b6ba3a2d18aa297a8e" targetConnections="id-ae740c961ebc4993ab5a926f1f4b7393" archimateElement="id-143e6e4104ed4bde8c7d01cd6ffa5fd2">
-            <bounds x="144" y="36" width="535" height="132"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-24f8d94469a54bd790a5fbe26d01987d" source="id-0c8dd6951faf47b6ba3a2d18aa297a8e" target="id-ff8cf97b9d034ffa9fb3a28f8bbc0c7d" archimateRelationship="id-0e5c557eb6e34375a3fcdfa6e59d165b"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-a2ce6e6433c342e6b580297e3b2e6499" source="id-0c8dd6951faf47b6ba3a2d18aa297a8e" target="id-5b105887517f4c10802f7ece4af78b15" archimateRelationship="id-7616486de1b84c87af334cf53fc9d010"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-f785256da4b349c29904d8a743bf325f" source="id-0c8dd6951faf47b6ba3a2d18aa297a8e" target="id-34f45256965c4f1ca9dbdca017e2abf1" archimateRelationship="id-b5a7ff98cb9e478391f3149548494e8c"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-c9a333167b9f4895af3e0e3039c8d900" source="id-0c8dd6951faf47b6ba3a2d18aa297a8e" target="id-51a08120af3541519dd7138327456be9" archimateRelationship="id-e382c6250d9f4190a0b8f81a05baca18"/>
-            <child xsi:type="archimate:DiagramObject" id="id-ff8cf97b9d034ffa9fb3a28f8bbc0c7d" targetConnections="id-24f8d94469a54bd790a5fbe26d01987d" archimateElement="id-4bed2b03a6454c18873c9c07e569b387">
-              <bounds x="12" y="36" width="120" height="72"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f5c974ae2dd4414f8c0ee4b9b0801b6d" targetConnections="id-dfeb684013e944a3ac9eb9665a7997e2" archimateElement="id-5e11b66089cf4ef29f5d1cc07899c784">
+            <bounds x="144" y="36" width="541" height="126"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-e4fbc98ae8234da7b9c3103d2079df15" source="id-f5c974ae2dd4414f8c0ee4b9b0801b6d" target="id-b2af9e6a5ff2492aa7b26690859c7e4e" archimateRelationship="id-330a7be1cc9c47c8b69d64762a9f49e8"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-9f7d5412420e437eb20dcc02dd33bdb7" source="id-f5c974ae2dd4414f8c0ee4b9b0801b6d" target="id-14ea67131f4a439c82b3392ad320e461" archimateRelationship="id-6aebda1652b447558c53371b2c20d4eb"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-b3c710b04c5e44a9a86398d68193cc4f" source="id-f5c974ae2dd4414f8c0ee4b9b0801b6d" target="id-f466b8a5923248f7a1fb9a2dc25f6c7c" archimateRelationship="id-c2596f9868334334bbc52e7ab4a94c33"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-80d9015cfe7b46668648924280c69cf6" source="id-f5c974ae2dd4414f8c0ee4b9b0801b6d" target="id-0c8c4a30ce4d4b7da3112af86616d0a4" archimateRelationship="id-15abb69304bc4887aa5445770a96ee8a"/>
+            <child xsi:type="archimate:DiagramObject" id="id-b2af9e6a5ff2492aa7b26690859c7e4e" targetConnections="id-e4fbc98ae8234da7b9c3103d2079df15" archimateElement="id-ac847263bd7b49829bfaabcdf9cd4305">
+              <bounds x="12" y="36" width="120" height="62"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-5b105887517f4c10802f7ece4af78b15" targetConnections="id-a2ce6e6433c342e6b580297e3b2e6499" archimateElement="id-a8a7cc80028641ad9d111be1a75a57f6">
-              <bounds x="144" y="36" width="120" height="84"/>
+            <child xsi:type="archimate:DiagramObject" id="id-14ea67131f4a439c82b3392ad320e461" targetConnections="id-9f7d5412420e437eb20dcc02dd33bdb7" archimateElement="id-8b432a2bef254c87a6c57e290eb68ebd">
+              <bounds x="144" y="36" width="120" height="83"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-34f45256965c4f1ca9dbdca017e2abf1" targetConnections="id-f785256da4b349c29904d8a743bf325f" archimateElement="id-145b9f0c0d50406dbca108629ed9e828">
-              <bounds x="276" y="36" width="120" height="72"/>
+            <child xsi:type="archimate:DiagramObject" id="id-f466b8a5923248f7a1fb9a2dc25f6c7c" targetConnections="id-b3c710b04c5e44a9a86398d68193cc4f" archimateElement="id-dee55e3b0ee847c2a9ebffda67698b40">
+              <bounds x="276" y="36" width="120" height="68"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-51a08120af3541519dd7138327456be9" targetConnections="id-c9a333167b9f4895af3e0e3039c8d900" archimateElement="id-e3e31e319db545eda6f5ccc194b79a19">
-              <bounds x="408" y="36" width="120" height="72"/>
+            <child xsi:type="archimate:DiagramObject" id="id-0c8c4a30ce4d4b7da3112af86616d0a4" targetConnections="id-80d9015cfe7b46668648924280c69cf6" archimateElement="id-45fd8258f40c4720bbbdcf1ed11e23e3">
+              <bounds x="408" y="36" width="120" height="66"/>
             </child>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-8aef790fbb414349a3ea915fa7c0ec09" targetConnections="id-c7de4cec8ca64382a45460b8e176a99c" archimateElement="id-9f8980279b344ea093c40f94976d317a">
-            <bounds x="684" y="36" width="120" height="84"/>
+          <child xsi:type="archimate:DiagramObject" id="id-c787d2064c964068a77f75e2ced5ab27" targetConnections="id-9ef2cda617954fde8203f0ee02a93bab" archimateElement="id-6a6e38f81fb54960942bb85500fb3cd0">
+            <bounds x="696" y="36" width="120" height="55"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-58c6237f96c540c99ce7e8c45d8b9f94" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-d9aa9ad423e84e22b701a9f7c3680cde">
-          <bounds x="1164" y="95" width="814" height="140"/>
+          <bounds x="1140" y="102" width="1174" height="384"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b830f9166eff4dfe999e1962b10e3a5a" source="id-58c6237f96c540c99ce7e8c45d8b9f94" target="id-321a9af50fb9421fb71b9adffef258db" archimateRelationship="id-ebd26f284fe5459dac42ea2a5bc00577"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-73d3c2fa9e5c437392212fc530131a6d" source="id-58c6237f96c540c99ce7e8c45d8b9f94" target="id-d3be2a714a514ad594772a20dbb01ca1" archimateRelationship="id-6e28310e73a4477f960475008fc4966b"/>
+          <child xsi:type="archimate:DiagramObject" id="id-321a9af50fb9421fb71b9adffef258db" targetConnections="id-b830f9166eff4dfe999e1962b10e3a5a" archimateElement="id-35be1284d89545709defb123cbbc0c37">
+            <bounds x="12" y="24" width="841" height="350"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-b32b5db7ad2d419295a7a62ade1b1340" source="id-321a9af50fb9421fb71b9adffef258db" target="id-c4fcf31286ab43a59495e665b9391615" archimateRelationship="id-a604719ea8724b14b45c57aeb1d94db6"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-98d2d3bd57df48fb9d31c7c6cbf7de3c" source="id-321a9af50fb9421fb71b9adffef258db" target="id-55a1fe5e07014d9d99d3000841d4b92f" archimateRelationship="id-3fdb9ce54d574b7e8895776a29109524"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-86d197ce502743b6aee1eaa6b2d86416" source="id-321a9af50fb9421fb71b9adffef258db" target="id-c91c5b6e97e74570acdb843602555f89" archimateRelationship="id-1d1585e31fc447e4b029928594b2b778"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-ca8c1844a8d34415a842fdc13c039602" source="id-321a9af50fb9421fb71b9adffef258db" target="id-1d801d9a7bad4415803cf8541aa3c1f2" archimateRelationship="id-21b0dc35127841ecb1e4237c1f737586"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7fd7a18b619140b9be78f20ff2028715" source="id-321a9af50fb9421fb71b9adffef258db" target="id-f173f93fc22546d4a1ca147830fa6274" archimateRelationship="id-b9c9d3ad4651480d9150f7b18dbd003f"/>
+            <child xsi:type="archimate:DiagramObject" id="id-c4fcf31286ab43a59495e665b9391615" targetConnections="id-b32b5db7ad2d419295a7a62ade1b1340" archimateElement="id-b724a90e92884d8bac9782ae09f908ef">
+              <bounds x="12" y="36" width="409" height="110"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-0ebfd1d679ea4230a7e81f89c00993eb" source="id-c4fcf31286ab43a59495e665b9391615" target="id-a2f1b88233104888a5ba780a91e095a1" archimateRelationship="id-1a1c7c6c4f6549ba8334498040d0c321"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-9ef1ac950aaa4c1ab0b02a20b3080b71" source="id-c4fcf31286ab43a59495e665b9391615" target="id-8b7cd55a13c74858afaf574239e65909" archimateRelationship="id-9ef017a639534dccb5e923c112d67101"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-0b89b73c2d2f499f97e5e1fc1439beb0" source="id-c4fcf31286ab43a59495e665b9391615" target="id-cb22a9c07a324c57971d05115e0dfabc" archimateRelationship="id-a813ee590e8c4808b29806ae49f9b3ee"/>
+              <child xsi:type="archimate:DiagramObject" id="id-a2f1b88233104888a5ba780a91e095a1" targetConnections="id-0ebfd1d679ea4230a7e81f89c00993eb" archimateElement="id-8b48692938d84e74928aab61c7f3553f">
+                <bounds x="12" y="36" width="120" height="65"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-8b7cd55a13c74858afaf574239e65909" targetConnections="id-9ef1ac950aaa4c1ab0b02a20b3080b71" archimateElement="id-a8bb036f888443f4b4a8e29a3af5f1ce">
+                <bounds x="144" y="36" width="120" height="65"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-cb22a9c07a324c57971d05115e0dfabc" targetConnections="id-0b89b73c2d2f499f97e5e1fc1439beb0" archimateElement="id-22a8664240754ee7b9b20e88f5950088">
+                <bounds x="276" y="36" width="120" height="65"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-55a1fe5e07014d9d99d3000841d4b92f" targetConnections="id-98d2d3bd57df48fb9d31c7c6cbf7de3c" archimateElement="id-89826c0f09a141b9860fe721812df093">
+              <bounds x="157" y="288" width="120" height="55"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-6c92949aaefb419896b62ae92ac7ac52" source="id-55a1fe5e07014d9d99d3000841d4b92f" target="id-ff256cbb17ee4a6c9441882d924a20af" archimateRelationship="id-1378128e911a46cea70ad8464bc87ba6"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-c91c5b6e97e74570acdb843602555f89" targetConnections="id-86d197ce502743b6aee1eaa6b2d86416" archimateElement="id-2736f6894de143a99a2c4ef10a384fa7">
+              <bounds x="12" y="156" width="409" height="121"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-0b1ae12c9ff943548a614af45a61bd7f" source="id-c91c5b6e97e74570acdb843602555f89" target="id-5dfcbb93e4f3458cafc40fdb2292d0e3" archimateRelationship="id-ef73df5c1a4c46379b84fa888c5fba2e"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-b43a13682dde4434b2bc0e902f246662" source="id-c91c5b6e97e74570acdb843602555f89" target="id-200c8d8d815f450abb76412f24b99e38" archimateRelationship="id-a8ecdbb7a4944fe89550e9d0a9dd2a07"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-852a0c9009a24301bde3f288d4ae307a" source="id-c91c5b6e97e74570acdb843602555f89" target="id-d1e18fc33ce5491e87d4e78143f81d11" archimateRelationship="id-8ce32a4d4fb64aebbca0f2fe7977370b"/>
+              <child xsi:type="archimate:DiagramObject" id="id-5dfcbb93e4f3458cafc40fdb2292d0e3" targetConnections="id-0b1ae12c9ff943548a614af45a61bd7f" archimateElement="id-73994dfee245461a99d0ead8cf634b86">
+                <bounds x="12" y="36" width="120" height="77"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-200c8d8d815f450abb76412f24b99e38" targetConnections="id-b43a13682dde4434b2bc0e902f246662" archimateElement="id-c47698702f8446939e22df7c904bc706">
+                <bounds x="144" y="36" width="120" height="77"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-d1e18fc33ce5491e87d4e78143f81d11" targetConnections="id-852a0c9009a24301bde3f288d4ae307a" archimateElement="id-8d60790b3dcc4812ae04310914533e7d">
+                <bounds x="276" y="36" width="120" height="77"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-1d801d9a7bad4415803cf8541aa3c1f2" targetConnections="id-ca8c1844a8d34415a842fdc13c039602" archimateElement="id-7f7384e0b8804f4ca57698abbac59e2b">
+              <bounds x="432" y="228" width="277" height="110"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-f4f05509b85044809799786892ccc298" source="id-1d801d9a7bad4415803cf8541aa3c1f2" target="id-4b756885ebb3486db8f2d12d6b017efe" archimateRelationship="id-bcf3758c17e744a1bae39f2ae1e833bf"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-40b5f2c8acf54c1eb9511bc34edcad0a" source="id-1d801d9a7bad4415803cf8541aa3c1f2" target="id-777e7b87d4a046b398ca68f4a8fd7a57" archimateRelationship="id-195922f8b45c4a63b896b57487ff067e"/>
+              <child xsi:type="archimate:DiagramObject" id="id-4b756885ebb3486db8f2d12d6b017efe" targetConnections="id-f4f05509b85044809799786892ccc298" archimateElement="id-bfdc171afe884c5c9b3802061412acbd">
+                <bounds x="12" y="36" width="120" height="67"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-777e7b87d4a046b398ca68f4a8fd7a57" targetConnections="id-40b5f2c8acf54c1eb9511bc34edcad0a" archimateElement="id-8340af8e6bb146479feb2cae673a65c0">
+                <bounds x="144" y="36" width="120" height="67"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-f173f93fc22546d4a1ca147830fa6274" targetConnections="id-7fd7a18b619140b9be78f20ff2028715" archimateElement="id-28c4569d88424ebcb05067d0ea1fdc80">
+              <bounds x="432" y="36" width="401" height="181"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-89fde17b31784fc78028b0b257678a19" source="id-f173f93fc22546d4a1ca147830fa6274" target="id-753acced8e80494e96a2f47abc5e5bd0" archimateRelationship="id-157bc5fe1b5744c783722781a7bce6a2"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-0065c6265c30496b9bde92e6478b40bf" source="id-f173f93fc22546d4a1ca147830fa6274" target="id-0256744f8ad348ee8445e2edab665d24" archimateRelationship="id-6f4a0eb7823949c1b86379bca1bec064"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-522a51dbe1914e09addb3125d0ced6e1" source="id-f173f93fc22546d4a1ca147830fa6274" target="id-8bc1928cbc02465fb2c3d419e1c6452c" archimateRelationship="id-1499ebcd4c33437ea6aec938eda25464"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-5312ca272ba34ae7a4ba56fba4a360b2" source="id-f173f93fc22546d4a1ca147830fa6274" target="id-96e8f34c8fc04229865a6880a905ce92" archimateRelationship="id-d739fcc6231f4c83bf685e699fd0cea7"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-5acd2bcf520c434a8ad553cc7c0f4d26" source="id-f173f93fc22546d4a1ca147830fa6274" target="id-99850905ae0e466b930163c4d2cd9c03" archimateRelationship="id-0737e696a6d3464d95ca22b0dc092e21"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-7851eec681c442df85a03022a10ef56e" source="id-f173f93fc22546d4a1ca147830fa6274" target="id-2c43d9ca47e44890aa5ea81e6364fe4c" archimateRelationship="id-ad9f3d74fce146678451118036142996"/>
+              <child xsi:type="archimate:DiagramObject" id="id-753acced8e80494e96a2f47abc5e5bd0" targetConnections="id-89fde17b31784fc78028b0b257678a19" archimateElement="id-91638a47bad445e5a11eb5f9b3ccbe4d">
+                <bounds x="12" y="109" width="120" height="65"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-0256744f8ad348ee8445e2edab665d24" targetConnections="id-0065c6265c30496b9bde92e6478b40bf" archimateElement="id-2ef1ba9ac86e426daa2e84b56586a0fa">
+                <bounds x="140" y="36" width="120" height="65"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-8bc1928cbc02465fb2c3d419e1c6452c" targetConnections="id-522a51dbe1914e09addb3125d0ced6e1" archimateElement="id-619d4f3b45dc44a1aa662c34c0f65a10">
+                <bounds x="12" y="36" width="120" height="65"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-96e8f34c8fc04229865a6880a905ce92" targetConnections="id-5312ca272ba34ae7a4ba56fba4a360b2" archimateElement="id-2d8e5fb8647e4438b6df40d65495ad36">
+                <bounds x="273" y="119" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-99850905ae0e466b930163c4d2cd9c03" targetConnections="id-5acd2bcf520c434a8ad553cc7c0f4d26" archimateElement="id-985dc6585ac24c838a5785790d8c4e9e">
+                <bounds x="140" y="109" width="120" height="65"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-2c43d9ca47e44890aa5ea81e6364fe4c" targetConnections="id-7851eec681c442df85a03022a10ef56e" archimateElement="id-9fcc5ea2782e4ca4a3394e8fd2d1e356">
+                <bounds x="272" y="36" width="120" height="74"/>
+              </child>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d3be2a714a514ad594772a20dbb01ca1" targetConnections="id-73d3c2fa9e5c437392212fc530131a6d" archimateElement="id-6e7a5d4ef1b149daa41bc40562637e47">
+            <bounds x="864" y="24" width="301" height="251"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-e03798a7d13a454e85d4bb06fa015b54" source="id-d3be2a714a514ad594772a20dbb01ca1" target="id-e3044cfc3233464d83fd31db2bc7abcd" archimateRelationship="id-333293a2adc44c3fb65a88bebdb860ae"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-fc2f9b36bb6b4819a4e28f18a7f0c1b7" source="id-d3be2a714a514ad594772a20dbb01ca1" target="id-d0191fc173de40c9b818fb5bcf420374" archimateRelationship="id-3aa335e9818646edb0d797f95fa8a9e4"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-37da17ddaa8a4feeb9550c5e565cee53" source="id-d3be2a714a514ad594772a20dbb01ca1" target="id-04e0803cc30d4a16bbfae881bd1b2630" archimateRelationship="id-6fdeb7c37d104b5a915279ee5eb8b7ff"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-ca4304d2d26b4e5187ca2baebb44ffe8" source="id-d3be2a714a514ad594772a20dbb01ca1" target="id-3983048037d0494aa4784754eb3bb970" archimateRelationship="id-d2f8961947e645809cdd92eef84fd7b4"/>
+            <child xsi:type="archimate:DiagramObject" id="id-e3044cfc3233464d83fd31db2bc7abcd" targetConnections="id-e03798a7d13a454e85d4bb06fa015b54" archimateElement="id-aaf5a8f3239c465b8c7ba5217b9da628">
+              <bounds x="168" y="36" width="120" height="125"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-d0191fc173de40c9b818fb5bcf420374" targetConnections="id-fc2f9b36bb6b4819a4e28f18a7f0c1b7" archimateElement="id-58c0cf1d000849dc8c1b973e1f4aa108">
+              <bounds x="12" y="120" width="141" height="47"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-04e0803cc30d4a16bbfae881bd1b2630" targetConnections="id-37da17ddaa8a4feeb9550c5e565cee53" archimateElement="id-091d44d9959e4a6ba011f32bfb25ae4b">
+              <bounds x="12" y="174" width="141" height="65"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-3983048037d0494aa4784754eb3bb970" targetConnections="id-ca4304d2d26b4e5187ca2baebb44ffe8" archimateElement="id-60f9a8a2ce944f2785e4948bd83e95a0">
+              <bounds x="12" y="36" width="141" height="74"/>
+            </child>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-a92c1369e9154a02b7a74425b2b9d077" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-fd863d3eb83d4eacbe7493b603d5f4d3">
-          <bounds x="1164" y="255" width="814" height="140"/>
+          <bounds x="1212" y="859" width="814" height="77"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-1bbba7d3a0f14d8cb47497966245ef9a" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-373a88b3ed694c549d77e073ac49def8">
-          <bounds x="1164" y="727" width="814" height="140"/>
+          <bounds x="1212" y="1034" width="814" height="82"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-974404dd3de44849a6ddcc22393c075c" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-27934dc746714d3d90a8d77946323476">
-          <bounds x="1164" y="417" width="813" height="140"/>
+          <bounds x="1140" y="504" width="1174" height="332"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d0c85eed903344968fad2dc565d8b3c6" source="id-974404dd3de44849a6ddcc22393c075c" target="id-3e9a530daee44209912a22b7933bbd00" archimateRelationship="id-ba5e3486a8804663a27b40d560057954"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d59d2f0bfa1f485988d14773498ebad1" source="id-974404dd3de44849a6ddcc22393c075c" target="id-2754f217463540cc8e724457fe91b7e4" archimateRelationship="id-ed7ddfa6448e4f55ba287f05ac92377e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-655019ec83074a23b41a18319d0ed26f" source="id-974404dd3de44849a6ddcc22393c075c" target="id-ff256cbb17ee4a6c9441882d924a20af" archimateRelationship="id-29c4071b7dfe4e41b5f92844314e7979"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ff528fdabdda471192079e84c958484e" source="id-974404dd3de44849a6ddcc22393c075c" target="id-adcc051834334ad682d2d670127dd7b7" archimateRelationship="id-e653eab12b8a44298e6f98e578d902c2"/>
+          <child xsi:type="archimate:DiagramObject" id="id-3e9a530daee44209912a22b7933bbd00" targetConnections="id-d0c85eed903344968fad2dc565d8b3c6" archimateElement="id-63787827ce0f49ba88311a9bef7edf5a">
+            <bounds x="168" y="24" width="613" height="300"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-9a16e269d9314f38a50c29d964882570" source="id-3e9a530daee44209912a22b7933bbd00" target="id-6a27d0c171ef4f0b8554388742ef5aa2" archimateRelationship="id-12e07e1d78ee4612a031bb8a342f2104"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-9c6409b2b6ca4380bc84ff66f4287560" source="id-3e9a530daee44209912a22b7933bbd00" target="id-a5fb2964f32c4af5b511342d1eeff533" archimateRelationship="id-574d222cb4e643bc8dbfcb3a66a8ed57"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-eb8b6e266eae497383830d4ea35181f2" source="id-3e9a530daee44209912a22b7933bbd00" target="id-c28ec9d734dd418dbefbde8b0ab9ea66" archimateRelationship="id-73c202c596004e3c8621a20325944f40"/>
+            <child xsi:type="archimate:DiagramObject" id="id-6a27d0c171ef4f0b8554388742ef5aa2" targetConnections="id-9a16e269d9314f38a50c29d964882570" archimateElement="id-42aea72e0554497c960bc6efaaee80ed">
+              <bounds x="456" y="48" width="145" height="145"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-b65f700c106d4b90ab069a2061f3dfb4" source="id-6a27d0c171ef4f0b8554388742ef5aa2" target="id-849266ecf4824076a2ac3d1c87f1fe90" archimateRelationship="id-66f2623f139f4b0195ebaaf53abcfef6"/>
+              <child xsi:type="archimate:DiagramObject" id="id-849266ecf4824076a2ac3d1c87f1fe90" targetConnections="id-b65f700c106d4b90ab069a2061f3dfb4" archimateElement="id-7fb43989e02746d9bc65a01e3656a5ed">
+                <bounds x="12" y="48" width="120" height="78"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-a5fb2964f32c4af5b511342d1eeff533" targetConnections="id-9c6409b2b6ca4380bc84ff66f4287560" archimateElement="id-685e3975ae864f92986a54cafb8d1bb7">
+              <bounds x="12" y="48" width="277" height="229"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-b369b65fbafd4b829dbd8835f9425fbf" source="id-a5fb2964f32c4af5b511342d1eeff533" target="id-a28e79ec75be4ead91a46167b1cb8439" archimateRelationship="id-3aeba94f897c4e5d9891b47a95511776"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-8f6e19cc99d641cfb97ca38b371e1fb4" source="id-a5fb2964f32c4af5b511342d1eeff533" target="id-b9213f59ed3448d8b3776effc6303a05" archimateRelationship="id-bd2ce90584e54c119d4cb429b08e31b0"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-2a90489e4d69439c92a932334ab87a3b" source="id-a5fb2964f32c4af5b511342d1eeff533" target="id-38748eb3e2ed4e0a8ec63bb64e4a867c" archimateRelationship="id-f037c7150106444ba404ed3dc74aa628"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-390c8e1ac2cd4698a9caebc59a29d154" source="id-a5fb2964f32c4af5b511342d1eeff533" target="id-de1861e1aef640b9837d139579eb0795" archimateRelationship="id-57b77cd29cc84254b0179de51bb293ac"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-80e4ecebde9140c19ba841bc205c88d1" source="id-a5fb2964f32c4af5b511342d1eeff533" target="id-55a60955765d4502962adead0d2331ba" archimateRelationship="id-5819c69afacf4a6b926c4e2285136b69"/>
+              <child xsi:type="archimate:DiagramObject" id="id-a28e79ec75be4ead91a46167b1cb8439" targetConnections="id-b369b65fbafd4b829dbd8835f9425fbf" archimateElement="id-3dd8ccfe97424d1ea4cbd27b979721ed">
+                <bounds x="145" y="108" width="120" height="94"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-b9213f59ed3448d8b3776effc6303a05" targetConnections="id-8f6e19cc99d641cfb97ca38b371e1fb4" archimateElement="id-bb80af9322ce406586cea6fe6cda07db">
+                <bounds x="145" y="36" width="120" height="64"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-38748eb3e2ed4e0a8ec63bb64e4a867c" targetConnections="id-2a90489e4d69439c92a932334ab87a3b" archimateElement="id-2b142bb1bb514159b55ab22cdad0b46f">
+                <bounds x="13" y="156" width="120" height="66"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-de1861e1aef640b9837d139579eb0795" targetConnections="id-390c8e1ac2cd4698a9caebc59a29d154" archimateElement="id-3ce946a3c8d94d0daaf2f4783fc1fd25">
+                <bounds x="13" y="89" width="120" height="62"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-55a60955765d4502962adead0d2331ba" targetConnections="id-80e4ecebde9140c19ba841bc205c88d1" archimateElement="id-d085208a57064c90925f24f5eed9d99e">
+                <bounds x="12" y="36" width="120" height="49"/>
+              </child>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-c28ec9d734dd418dbefbde8b0ab9ea66" targetConnections="id-eb8b6e266eae497383830d4ea35181f2" archimateElement="id-3ed336dc29cb46839f772041cb3076cf">
+              <bounds x="300" y="48" width="145" height="229"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-e1b1ef5f440c4009997b5f8314f025ed" source="id-c28ec9d734dd418dbefbde8b0ab9ea66" target="id-5ea38759791f446d8c0a6fa5f557f0a4" archimateRelationship="id-f4f72ee509034744b674389b2ca8bda5"/>
+              <sourceConnection xsi:type="archimate:Connection" id="id-c2beb3154cc64f99bf76386e2385d043" source="id-c28ec9d734dd418dbefbde8b0ab9ea66" target="id-7e48475f793f4965ae3cba6cdbc72f3b" archimateRelationship="id-4359a9e8b9d44e17b7f1441fa75c4986"/>
+              <child xsi:type="archimate:DiagramObject" id="id-5ea38759791f446d8c0a6fa5f557f0a4" targetConnections="id-e1b1ef5f440c4009997b5f8314f025ed" archimateElement="id-f48e4e6c30af4e33916b562ce211978c">
+                <bounds x="12" y="59" width="120" height="55"/>
+              </child>
+              <child xsi:type="archimate:DiagramObject" id="id-7e48475f793f4965ae3cba6cdbc72f3b" targetConnections="id-c2beb3154cc64f99bf76386e2385d043" archimateElement="id-55b63ceb83054aee8f1be0aea113b68a">
+                <bounds x="12" y="120" width="120" height="80"/>
+              </child>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2754f217463540cc8e724457fe91b7e4" targetConnections="id-d59d2f0bfa1f485988d14773498ebad1" textAlignment="1" archimateElement="id-268f84f8bd7842f5b6b645b0c12a5eb3">
+            <bounds x="12" y="36" width="145" height="272"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-8f4da06872e441db9aae8300749ea538" source="id-2754f217463540cc8e724457fe91b7e4" target="id-60f167e39629463884ddc6dbf8f133c8" archimateRelationship="id-a9e321fce9c745d48b07ad1562635868"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5c3e9915411e41fd8e5382f062980cca" source="id-2754f217463540cc8e724457fe91b7e4" target="id-bf5a4679d44043068ecb0fa29e83ab6c" archimateRelationship="id-7572b309bdde452cb0740927b3233b0f"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-f1e47ffacdbb4263af12a3dc700292f8" source="id-2754f217463540cc8e724457fe91b7e4" target="id-cfbc0c9d751f4bad9bf9d893899b7dc3" archimateRelationship="id-6184581df7b144f8ad3db8aeeb9a4f91"/>
+            <child xsi:type="archimate:DiagramObject" id="id-60f167e39629463884ddc6dbf8f133c8" targetConnections="id-8f4da06872e441db9aae8300749ea538" archimateElement="id-8471dfd8e09941c7bb277257dc6a0c45">
+              <bounds x="12" y="35" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-bf5a4679d44043068ecb0fa29e83ab6c" targetConnections="id-5c3e9915411e41fd8e5382f062980cca" archimateElement="id-b0db8f7d737b405c962bc8569621dc1a">
+              <bounds x="12" y="99" width="120" height="80"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-cfbc0c9d751f4bad9bf9d893899b7dc3" targetConnections="id-f1e47ffacdbb4263af12a3dc700292f8" archimateElement="id-9114d934c31547078afaaacd5e5132d9">
+              <bounds x="12" y="192" width="120" height="72"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-ff256cbb17ee4a6c9441882d924a20af" targetConnections="id-6c92949aaefb419896b62ae92ac7ac52 id-655019ec83074a23b41a18319d0ed26f" archimateElement="id-18217641038c44fcb856b43515c33a30">
+            <bounds x="792" y="24" width="145" height="300"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-4b53fdf82cac4330a1f39e20ed849c4a" source="id-ff256cbb17ee4a6c9441882d924a20af" target="id-591ebc92b813457eb609e403efa5a40f" archimateRelationship="id-e9552c8687b84419becb8ceea7477f5a"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-bf58dc787c3d4f1fa0bd3e10cc202493" source="id-ff256cbb17ee4a6c9441882d924a20af" target="id-5627b548dee4455ea72c19c92702d8c8" archimateRelationship="id-bb023f64e09e43f781f2cc3857bbeeee"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-117545d5561e48fa9f1b8bc07a79b5d9" source="id-ff256cbb17ee4a6c9441882d924a20af" target="id-dc81d9c7a4e144e5af36f1ad0c83ca34" archimateRelationship="id-86f4b1924d3741398f53290eef27202a"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-eab35c04ef5a47d8801fb8921e0c402a" source="id-ff256cbb17ee4a6c9441882d924a20af" target="id-abad9daf9efe458ab77eed784dc05d4d" archimateRelationship="id-c76ff86348f14797a335e5816a113210"/>
+            <child xsi:type="archimate:DiagramObject" id="id-591ebc92b813457eb609e403efa5a40f" targetConnections="id-4b53fdf82cac4330a1f39e20ed849c4a" archimateElement="id-c865af551ac64d409082cc53c718bacd">
+              <bounds x="12" y="48" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-5627b548dee4455ea72c19c92702d8c8" targetConnections="id-bf58dc787c3d4f1fa0bd3e10cc202493" archimateElement="id-91c31604ed634239bdf34c4fe85bc68e">
+              <bounds x="12" y="108" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-dc81d9c7a4e144e5af36f1ad0c83ca34" targetConnections="id-117545d5561e48fa9f1b8bc07a79b5d9" archimateElement="id-ff84d472b0e9472d94aefea806871ed5">
+              <bounds x="12" y="168" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-abad9daf9efe458ab77eed784dc05d4d" targetConnections="id-eab35c04ef5a47d8801fb8921e0c402a" archimateElement="id-1e6cb7c434c3444bb34a604a5a42cf45">
+              <bounds x="12" y="228" width="120" height="60"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-adcc051834334ad682d2d670127dd7b7" targetConnections="id-ff528fdabdda471192079e84c958484e" archimateElement="id-7ca456bf7b824252a37940a3c364a5fb">
+            <bounds x="948" y="24" width="145" height="300"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-ff70f951d63447b6b58b989bdead11a3" source="id-adcc051834334ad682d2d670127dd7b7" target="id-bb5c1653b420479a9a8836233f713feb" archimateRelationship="id-61705ba8146747f38d16b03ca900bd93"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c3eef97bc14d4c93a3beefcf725d51d9" source="id-adcc051834334ad682d2d670127dd7b7" target="id-33ec49143a7948cd98668e418384a949" archimateRelationship="id-3181c503e9fc4d238c9a9238ba991e8d"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-0d86ca44daa74924899c9d8b9a09df23" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-79d7cb736a2b437490e6d3a1903ce66d">
-          <bounds x="1164" y="573" width="814" height="140"/>
+          <bounds x="1212" y="948" width="814" height="72"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-46416978ab0a45fa9105ecfc1229a1f7" textPosition="1" archimateElement="id-9bf048e207e84792a1bc73573b293f60">
           <bounds x="278" y="95" width="134" height="60"/>
@@ -14931,7 +15428,13 @@ v.2021-06-24</content>
         </child>
         <child xsi:type="archimate:Note" id="id-e507a50d002a4613baf56a5937cb9034" fillColor="#d0feff" textPosition="1">
           <bounds x="623" y="48" width="109" height="25"/>
-          <content>v0.1.2021-07-23</content>
+          <content>v0.1.2021-07-26</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bb5c1653b420479a9a8836233f713feb" targetConnections="id-ff70f951d63447b6b58b989bdead11a3" archimateElement="id-d29c6e5bc6a146c6a2ca0422488fb181">
+          <bounds x="2100" y="859" width="120" height="63"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-33ec49143a7948cd98668e418384a949" targetConnections="id-c3eef97bc14d4c93a3beefcf725d51d9" archimateElement="id-1a7117f30f9e4fb09015606909007966">
+          <bounds x="2100" y="926" width="120" height="80"/>
         </child>
         <documentation>Technical Standards for Data Integration (opengroup.org): https://publications.opengroup.org/white-papers/architecture/w211&#xD;
 Copy available in SP2010: https://dialogue/proj/ITCD-RMTI/SAS-SAS/Documents/Governance/Training/TOGAF%209.2/The%20Open%20Group%20Documents&#xD;
