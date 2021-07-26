@@ -1736,37 +1736,6 @@ https://policyoptions.irpp.org/fr/magazines/february-2019/lessons-estonia-digita
       <documentation>1988 National Bureau of Standards’ Management Guide to Software Reuse (PDF 2.2 MB)&#xD;
 https://www.govinfo.gov/content/pkg/GOVPUB-C13-dca04f7b7fc21321e39de88b35b2f1d3/pdf/GOVPUB-C13-dca04f7b7fc21321e39de88b35b2f1d3.pdf</documentation>
     </element>
-    <element xsi:type="archimate:Capability" name="Read (SharePoint Permission) (Capability)" id="id-a8e442c9384e4e98bde34f88893abc08">
-      <documentation>Read-only access to the site. Users with this permission level can view items, web pages and documents, but they cannot delete content or make any changes.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Contribute (SharePoint Permission) (Capability)" id="id-255fa5b310064731940e9a5023ab2183">
-      <documentation>Contribute: Read-Write access to the site. Users with this permission level can view, upload, delete and make changes to items, web pages and documents.</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Design (SharePoint Permission) (Capability)" id="id-fd8b6baa573b44f4b4a43f40c8840dbe">
-      <documentation>Design - Designers can do everything that Contributors can do, plus they have the ability to create lists, libraries, views and metadata columns. </documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="DesignerPlus (SharePoint Permission) (Capability)" id="id-5ccc3b971ffa44a384bb2f71a7c62385">
-      <documentation>DesignerPlus - A DesignerPlus can do everything a Designer can do, plus they have the ability to manage and customize permissions to control content access.&#xD;
-One also has the ability to add others to the same Permissions group (&quot;SAS_Designer&quot;).</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Full Control (SharePoint Permission) (Capability)" id="id-69f6da890c0a4929bed1503791636e03">
-      <documentation>Full Control - DO NOT GRANT Full Control permissions. This permission level is only used by departmental SharePoint site administration and support.&#xD;
-Users have the ability to run code, delete the entire SharePoint instance, etc. (&quot;SAS_Owner&quot;).</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Limited Access (SharePoint Permission) (Capability)" id="id-9f14bcb9833a45c4a90a1101f64900ff">
-      <documentation>Limited Access - You can effectively IGNORE Limited Access permissions. Limited Access simply indicates that the person or group has a different level of access assigned somewhere else in the site using customized permissions (see Section 4).</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="View Web Analytics Data (SharePoint Permission) (Capability)" id="id-67ae37a16424455199f428a022934021">
-      <documentation>View Web Analytics Data - This permission level grants people the ability to see the Site Collection Web Analytics Reports found in the ‘Site Settings’ menu. It does not grant access to specific content such as items, web pages or documents.</documentation>
-    </element>
-    <element xsi:type="archimate:Resource" name="SharePoint Online Learning Essentials (Resource)" id="id-350c4cf3a19c48cca46bdfdaaeb8ab83">
-      <documentation>SharePoint Online Learning Essentials&#xD;
-http://iservice.prv/eng/imit/catalogue/software_application/office365/sharepoint/learning-essentials.shtml</documentation>
-    </element>
-    <element xsi:type="archimate:Resource" name="Resource Centre Frequently Asked Questions (FAQs) (Resource)" id="id-1c9c0ba3b8504cd582f536b31df9c8d4">
-      <documentation>Explore the Resource Centre and be sure to see the Frequently Asked Questions. &#xD;
-https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/FAQ.aspx</documentation>
-    </element>
     <element xsi:type="archimate:CourseOfAction" name="Keep SharePoint Access and Permissions Up-To-Date (Course of Action)" id="id-8c504d6786f643a1ac53d3815ffc47f7">
       <documentation>https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/FAQ.aspx&#xD;
 13. Will the site’s security groups migrate? &#xD;
@@ -1810,16 +1779,6 @@ https://dialogue/proj/ITCD-RMTI/SAS-SAS/_layouts/settings.aspx&#xD;
     <element xsi:type="archimate:Capability" name="Policy-Driven Access Control (Capability)" id="id-b5d2a36d03714369a1bb1ea48b208503">
       <documentation>• Policy-Driven Access Control:&#xD;
 — Support for adaptive identity, evolving and agile access to resources (e.g., applications, APIs), and unpredictable relationships between consumers and producers</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="Everyone EXCEPT External Users (SharePoint Group) (Capability)" id="id-3927a29fba8248d3ad1ba99bc635c17e">
-      <documentation>Everyone Except External Users</documentation>
-    </element>
-    <element xsi:type="archimate:Capability" name="ALL Users (includes PUBLIC) (SharePoint Group) (Capability)" id="id-cc6d6e27351942cb937467560b646684">
-      <documentation>This Permission might be used to:&#xD;
-1. Share with other GC Departments, Partners, etc.&#xD;
-2. Share with System Integrators who may not have an ESDC Network Account&#xD;
-3. Share with Public (use caution here).&#xD;
-There should be a strong Use Case here, with permissions set only at the lowest-level folder, to ensure permissions are not inherited by mistake.</documentation>
     </element>
   </folder>
   <folder name="Business" id="b450b6a4-519b-4191-a289-4df897ca0a1b" type="business">
@@ -3076,6 +3035,43 @@ ISO/IEC 29500-1:2016: Information Technology – Document Description and Proces
     <element xsi:type="archimate:Representation" name="Hybrid Data (Representation)" id="id-9f8980279b344ea093c40f94976d317a">
       <documentation>Hybrid Data&#xD;
 Data primarily intended for human consumption but conforming, or partly conforming, to a data structure standard is hybrid data. Email is a prime example: it is intended to be read by people but includes headers (“From”, “To”, etc.) that enable machine processing. In most cases, the structured data is metadata (see Structure Standards) describing the content that is for human consumption.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="SharePoint Online Learning Essentials (Business Object)" id="id-2df51045646348cf8bfff8c92395406e">
+      <documentation>SharePoint Online Learning Essentials&#xD;
+http://iservice.prv/eng/imit/catalogue/software_application/office365/sharepoint/learning-essentials.shtml</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Resource Centre Frequently Asked Questions (FAQs) (Business Object)" id="id-a6513f65042d49b5af54f59dfe078073">
+      <documentation>Explore the Resource Centre and be sure to see the Frequently Asked Questions. &#xD;
+https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/FAQ.aspx</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Full Control (SharePoint Permission) (Business Role)" id="id-b72031ffa1654d0d8161adc4d3573f6c">
+      <documentation>Full Control - DO NOT GRANT Full Control permissions. This permission level is only used by departmental SharePoint site administration and support.&#xD;
+Users have the ability to run code, delete the entire SharePoint instance, etc. (&quot;SAS_Owner&quot;).</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Design (SharePoint Permission) (Business Role)" id="id-e43309180ed44295890bf18713002e11"/>
+    <element xsi:type="archimate:BusinessRole" name="Contribute (SharePoint Permission) (Business Role)" id="id-47008bf77f914f1485c110c0163b84a5">
+      <documentation>Contribute: Read-Write access to the site. Users with this permission level can view, upload, delete and make changes to items, web pages and documents.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Read (SharePoint Permission) (Business Role)" id="id-a076010cc7f14dd29c69308ff3a1d810">
+      <documentation>Read-only access to the site. Users with this permission level can view items, web pages and documents, but they cannot delete content or make any changes.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="ALL Users (includes PUBLIC) (SharePoint Group) (Business Role)" id="id-87f5de750f29493ba1338443208e52f4">
+      <documentation>This Permission might be used to:&#xD;
+1. Share with other GC Departments, Partners, etc.&#xD;
+2. Share with System Integrators who may not have an ESDC Network Account&#xD;
+3. Share with Public (use caution here).&#xD;
+There should be a strong Use Case here, with permissions set only at the lowest-level folder, to ensure permissions are not inherited by mistake.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="DesignerPlus (SharePoint Permission) (Business Role)" id="id-7a01eb0501c14b8fbe834ea51a0b7e72"/>
+    <element xsi:type="archimate:BusinessRole" name="View Web Analytics Data (SharePoint Permission) (Business Role)" id="id-99146663fe654b5cb23a51fb59191bee">
+      <documentation>View Web Analytics Data - This permission level grants people the ability to see the Site Collection Web Analytics Reports found in the ‘Site Settings’ menu. It does not grant access to specific content such as items, web pages or documents.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Limited Access (SharePoint Permission) (Business Role)" id="id-be90a1be2ec147c0bfcd5d9bcb997237">
+      <documentation>Limited Access - You can effectively IGNORE Limited Access permissions. Limited Access simply indicates that the person or group has a different level of access assigned somewhere else in the site using customized permissions (see Section 4).</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Everyone EXCEPT External Users (SharePoint Group) (Business Role)" id="id-c0f39d4ac51f416291d20bc06aeee10e">
+      <documentation>Everyone Except External Users</documentation>
     </element>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
@@ -10617,15 +10613,9 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:AggregationRelationship" id="id-7922996a43914b1e9810cef59d782177" source="id-5d0c4bdc62f84628b97932e25541c8b5" target="id-6398cf4d87f24f85a09fb6951238d607"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-325e6ab0f5444ffbbae569a984e73a0c" source="id-5d0c4bdc62f84628b97932e25541c8b5" target="id-d57344311c5345bf95e03e387e1c1528"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-9537d2d39357435abce2736532801d87" source="id-5d0c4bdc62f84628b97932e25541c8b5" target="id-6850065d5a4d47b5bce114f365d67880"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-d3051d6963ba48fd8d5101b3fbf77f21" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-255fa5b310064731940e9a5023ab2183"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-1b9974e091a84b069e21e7d250837bcb" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-67ae37a16424455199f428a022934021"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-70bdd2f6ea8e4459a4c262c71e673303" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-fd8b6baa573b44f4b4a43f40c8840dbe"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-067bc134c4a34300a35e68caa89670f4" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-5ccc3b971ffa44a384bb2f71a7c62385"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-7ac5ca7c341b4d559cd1e68fdbee9655" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-69f6da890c0a4929bed1503791636e03"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-6375632964e8493a87454708a3839b49" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-9f14bcb9833a45c4a90a1101f64900ff"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-91b3bdccace04d9481164d87f054a992" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-a8e442c9384e4e98bde34f88893abc08"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-5dd07a4aceed4962ab8fccf486991789" source="id-bd071c7eb0034143ae3b66389221186a" target="id-69f6da890c0a4929bed1503791636e03"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-96fc04a47307478a8a728ae5096016a8" source="id-5d0c4bdc62f84628b97932e25541c8b5" target="id-255fa5b310064731940e9a5023ab2183"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7ac5ca7c341b4d559cd1e68fdbee9655" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-b72031ffa1654d0d8161adc4d3573f6c"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-5dd07a4aceed4962ab8fccf486991789" source="id-bd071c7eb0034143ae3b66389221186a" target="id-b72031ffa1654d0d8161adc4d3573f6c"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-96fc04a47307478a8a728ae5096016a8" source="id-5d0c4bdc62f84628b97932e25541c8b5" target="id-47008bf77f914f1485c110c0163b84a5"/>
     <element xsi:type="archimate:ServingRelationship" id="id-1cbadc148bc74cadbe52ff1344a081e8" source="id-4aed1d37fa8a42429bdda41cd46f004a" target="id-7b2ffd21fd5640239d1d6a8d412f2b72"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-619ddde39bdd4e93b34d570093b536a2" source="id-fa574cefe696402a8234308e96055c48" target="id-7b2ffd21fd5640239d1d6a8d412f2b72"/>
     <element xsi:type="archimate:AssignmentRelationship" id="id-094b06932c214a59af56be38f98fb3e4" source="id-1dfc5b23bece492f85b940e7847770bb" target="id-4aed1d37fa8a42429bdda41cd46f004a"/>
@@ -10647,7 +10637,7 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-79b610fb1884406294ce068635a5855a" source="id-f1bfe8662cc141c292be32dd0cfd3546" target="id-d58fd97a0fbf4f3e9e4d5661b710b607"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-13acedc382764e4898e52948e5a5b90e" source="id-f1bfe8662cc141c292be32dd0cfd3546" target="id-1706309b8fec434fb860a5e715fc12bd"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-40fbbc314da64090b053f38a60638a14" source="id-f1bfe8662cc141c292be32dd0cfd3546" target="id-8b4f5beeafbd4f579fd29822bce2a0d4"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-7ca147017ec9491a94ab31d4abb3ee4a" source="fef0a611-c0ea-489d-9a4b-511d49281f6f" target="id-a8e442c9384e4e98bde34f88893abc08"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-7ca147017ec9491a94ab31d4abb3ee4a" source="fef0a611-c0ea-489d-9a4b-511d49281f6f" target="id-a076010cc7f14dd29c69308ff3a1d810"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-785a75314b38447d90a06a49574db8aa" source="id-5d629fcc76ea467881318ca2af5ca8df" target="id-ec9be3624bb143ceb300dde714ddc09f"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-7e144e62265f407bb7a397faedb6e5fe" source="id-5d629fcc76ea467881318ca2af5ca8df" target="id-a087caeb7780483fa5ea78f974a4227e"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-20d1dd63da5247d8b587cad668566ffd" source="id-5d629fcc76ea467881318ca2af5ca8df" target="id-8ee7baeb30174bc69cf958f49e9b6d38"/>
@@ -10691,13 +10681,11 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-904103ac61674f7db21ce64c29555289" source="id-ae47d9057355434b86d21e65b5ace7d0" target="id-d25237161d154eada5994743781dc72b"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-44cd16929945475aab1816d3d30ab906" source="id-ae47d9057355434b86d21e65b5ace7d0" target="id-b42f668910224b728c7bc9afbf50d50d"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-c9158469705747818b3f40c4579a8eea" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-72a12ce2bf8743d0a9eccf0112a1b584"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-754c165c18494394a040b5aabeb2505a" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-3927a29fba8248d3ad1ba99bc635c17e"/>
-    <element xsi:type="archimate:CompositionRelationship" id="id-e09fad3e86fa4826b651ec2ba2d28e30" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-cc6d6e27351942cb937467560b646684"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-20214a29479a413cb056be44b3108394" source="id-edda5632a7294f319ff297faeb00f379" target="id-69f6da890c0a4929bed1503791636e03"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-20214a29479a413cb056be44b3108394" source="id-edda5632a7294f319ff297faeb00f379" target="id-b72031ffa1654d0d8161adc4d3573f6c"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-a487636ed17d44c4b6aadf283f38b4b2" source="id-d5f4c23cc91d442992ad584bb6088ca0" target="id-5fb7f084b4f54201b5f18aedfe9cd915"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-4f95979750eb49a7ae0c96a76a39b105" source="id-d5f4c23cc91d442992ad584bb6088ca0" target="id-8fadd169ac464075b23361ea72c91101"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-e21c29e01eb64f4aa44f11970cffbe43" source="id-d5f4c23cc91d442992ad584bb6088ca0" target="id-716dcbdaff56417d9d9f937b0ea47961"/>
-    <element xsi:type="archimate:AssociationRelationship" name="Some EA's" id="id-382af65f79974cfdb542a0bb19375ab0" source="id-8b3d7dda05ec4cf0aeb08782afc344e1" target="id-5ccc3b971ffa44a384bb2f71a7c62385">
+    <element xsi:type="archimate:AssociationRelationship" name="Some EA's" id="id-382af65f79974cfdb542a0bb19375ab0" source="id-8b3d7dda05ec4cf0aeb08782afc344e1" target="id-7a01eb0501c14b8fbe834ea51a0b7e72">
       <documentation>Key individuals:&#xD;
  - Stewards&#xD;
  - Curators&#xD;
@@ -10734,6 +10722,16 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-7861f16020c149adb50da184b3095d8e" source="id-db957d2205b14914b30135c6980cb234" target="id-143e6e4104ed4bde8c7d01cd6ffa5fd2"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-4e8198097fc34dbca574507eafbf1df6" source="id-db957d2205b14914b30135c6980cb234" target="id-9f8980279b344ea093c40f94976d317a"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-6cead86975c64474a59fcda866ac9b58" source="id-9bf048e207e84792a1bc73573b293f60" target="id-a16dbdaca02840baa903fcdcf639d565"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-25e4dd6560ac40528d29677d034a14b5" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-e43309180ed44295890bf18713002e11"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-62289aeab0684489afeb34b54f86ca5c" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-be90a1be2ec147c0bfcd5d9bcb997237"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ab2671937d5d48738d23b8c9b37aa440" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-99146663fe654b5cb23a51fb59191bee"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-22fd655723414cb49f454bc95111f3b1" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-c0f39d4ac51f416291d20bc06aeee10e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2e91b2405b324419b6175bfd21215fa2" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-a076010cc7f14dd29c69308ff3a1d810"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-61b319d749224c9480c231fd9966f0c0" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-47008bf77f914f1485c110c0163b84a5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-eb61b51b838c4e8ca5a2a7a5d1b80d9d" source="id-72a12ce2bf8743d0a9eccf0112a1b584" target="id-7a01eb0501c14b8fbe834ea51a0b7e72"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-baa418b3821c445b9bca4ac87604a938" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-87f5de750f29493ba1338443208e52f4"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-199e1778c795454babfd6dce4ec664ef" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-7585b67b15a649948872abc0ab483974"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-de571f2b71e34e2f928f038998ee2a16" source="id-4fe395aeaeeb4509ab43e2fdf2db828b" target="id-055ed8d42eb649e381c8a92a18c78335"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -13749,10 +13747,10 @@ Working in the Open: Part 2&#xD;
           <sourceConnection xsi:type="archimate:Connection" id="id-cf6679ca7f7f4a0f94b7c8a6ec548a38" source="id-e3f39468b6ce485597218f7c3ba2976a" target="id-94842c351825469cb0dca1fa71d5ef69" archimateRelationship="id-7922996a43914b1e9810cef59d782177"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-e663c1d3e75c42fcb68e54978182814f" source="id-e3f39468b6ce485597218f7c3ba2976a" target="id-114df83c37bb4aea9b3755b7708c3430" archimateRelationship="id-325e6ab0f5444ffbbae569a984e73a0c"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d1f799fdf9b4457aab99604f865f2f69" source="id-e3f39468b6ce485597218f7c3ba2976a" target="id-3eb3928bd2bd44549a9185b84128bdf9" archimateRelationship="id-9537d2d39357435abce2736532801d87"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-8544b476d6ea494a9e0aaa71804ea717" source="id-e3f39468b6ce485597218f7c3ba2976a" target="id-4414df6b254748b4945aa3d352494a42" archimateRelationship="id-96fc04a47307478a8a728ae5096016a8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8544b476d6ea494a9e0aaa71804ea717" source="id-e3f39468b6ce485597218f7c3ba2976a" target="id-84a06225666745189451ca9b4323052f" archimateRelationship="id-96fc04a47307478a8a728ae5096016a8"/>
           <child xsi:type="archimate:DiagramObject" id="id-8aa59944a293484ba413d99cfb04e566" targetConnections="id-9aedea4b949645cb849fca8e789239f8" archimateElement="id-8b3d7dda05ec4cf0aeb08782afc344e1">
             <bounds x="12" y="48" width="120" height="55"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-2c780e5cfd914cb0875e13eeb9e9b0ca" source="id-8aa59944a293484ba413d99cfb04e566" target="id-f6c1a73aac7a4776b86ba4c62ed5fd68" archimateRelationship="id-382af65f79974cfdb542a0bb19375ab0"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2c780e5cfd914cb0875e13eeb9e9b0ca" source="id-8aa59944a293484ba413d99cfb04e566" target="id-4da7bac645f7472e96bef02083744a4b" archimateRelationship="id-382af65f79974cfdb542a0bb19375ab0"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-92e42ec245864b6eb76fe82f5622e6c8" targetConnections="id-19fbe0da11324f7f82f17c4d783fb90a" archimateElement="id-6bbbac69dd9847ab88fb1a34972089fc">
             <bounds x="12" y="108" width="120" height="55"/>
@@ -13772,16 +13770,7 @@ Working in the Open: Part 2&#xD;
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-b89675c23850499bab075e20b9e4a597" archimateElement="id-bd071c7eb0034143ae3b66389221186a">
           <bounds x="36" y="108" width="120" height="85"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-544d2d9971e44562b48aed81f64cd143" source="id-b89675c23850499bab075e20b9e4a597" target="id-66468d1fc45c48589b1b765b950501b6" archimateRelationship="id-5dd07a4aceed4962ab8fccf486991789"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-66468d1fc45c48589b1b765b950501b6" targetConnections="id-70de178bd64f4dd9a2123479c306ad09 id-544d2d9971e44562b48aed81f64cd143 id-ce8e2c43a967429896f64f3ada3a3bca" archimateElement="id-69f6da890c0a4929bed1503791636e03">
-          <bounds x="192" y="108" width="140" height="73"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-eeae7aefc1144c8a8fa4c323b829b80d" archimateElement="id-350c4cf3a19c48cca46bdfdaaeb8ab83">
-          <bounds x="36" y="216" width="145" height="55"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-7a2daad31f434540976458936c2b220b" archimateElement="id-1c9c0ba3b8504cd582f536b31df9c8d4">
-          <bounds x="36" y="276" width="145" height="73"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-544d2d9971e44562b48aed81f64cd143" source="id-b89675c23850499bab075e20b9e4a597" target="id-56dcbe0b6e2f4b30b2dd5c28c5af0dea" archimateRelationship="id-5dd07a4aceed4962ab8fccf486991789"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-459006775cb949fc825358f273aa6b84" targetConnections="id-a2e985c81e874b6cbb1cf6944f423dd8 id-c16976ad227a421385525b7f45f053b3 id-5467363091d3450bbdbd3c02e50e39b8 id-a8e8567aeeec40afbf85f9b4b16270d7 id-825a22a09c0a4302a30f47f5bcc3b36f id-b527d11922fc461284710a9e35afaa8d" archimateElement="id-4aed1d37fa8a42429bdda41cd46f004a">
           <bounds x="202" y="552" width="120" height="295"/>
@@ -13863,7 +13852,7 @@ Working in the Open: Part 2&#xD;
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-79703151c65b45afa2af9d66dd47ac01" archimateElement="fef0a611-c0ea-489d-9a4b-511d49281f6f">
           <bounds x="900" y="18" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-66f43e8bdbf04e2aaa051c1e838e4cf0" source="id-79703151c65b45afa2af9d66dd47ac01" target="id-6f1e7fe9aa5a43d19e03543a3918382f" archimateRelationship="id-7ca147017ec9491a94ab31d4abb3ee4a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-66f43e8bdbf04e2aaa051c1e838e4cf0" source="id-79703151c65b45afa2af9d66dd47ac01" target="id-01fc844af38c4fe58feb7c3ab4d5810e" archimateRelationship="id-7ca147017ec9491a94ab31d4abb3ee4a"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-ea6dad76b513411fb86e53504a948f8c" archimateElement="id-853e7bc1ede8440d8c933f45445dd837">
           <bounds x="1199" y="196" width="146" height="69"/>
@@ -13898,46 +13887,48 @@ Working in the Open: Part 2&#xD;
         <child xsi:type="archimate:DiagramObject" id="id-3aafe0d813cd4412b2a7c8155959fea9" textAlignment="1" archimateElement="id-4fe395aeaeeb4509ab43e2fdf2db828b">
           <bounds x="372" y="24" width="384" height="397"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-661d7e6a247e4cb48e2a197e22dad20b" source="id-3aafe0d813cd4412b2a7c8155959fea9" target="id-883ab9444f634fb7af8b660efd3fba64" archimateRelationship="id-c9158469705747818b3f40c4579a8eea"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-4b4c7aa5cb2a430598c52da318c3e16f" source="id-3aafe0d813cd4412b2a7c8155959fea9" target="id-41e39ee8cf7749ddb889c0d460319adc" archimateRelationship="id-754c165c18494394a040b5aabeb2505a"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-4ab936276c264f449e95a5ba95db0470" source="id-3aafe0d813cd4412b2a7c8155959fea9" target="id-9da81d1d83244d5c9e6cdd95b61862b8" archimateRelationship="id-e09fad3e86fa4826b651ec2ba2d28e30"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-529f235b9cfa41cdae83663a905d32de" source="id-3aafe0d813cd4412b2a7c8155959fea9" target="id-04a9f4751d5e43759bab500eeed76f73" archimateRelationship="id-22fd655723414cb49f454bc95111f3b1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-89c75b0e3d1a40e6890f18da4d1b25c1" source="id-3aafe0d813cd4412b2a7c8155959fea9" target="id-811c878091374f5bb74cae03b0bca9b1" archimateRelationship="id-baa418b3821c445b9bca4ac87604a938"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-403d126e3c014c1b99f55ab2c0bd31db" source="id-3aafe0d813cd4412b2a7c8155959fea9" target="id-4241095ac6484985847c3c4a356662f1" archimateRelationship="id-199e1778c795454babfd6dce4ec664ef"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ebcb6bbd0e09428c86ec69cb37c79ded" source="id-3aafe0d813cd4412b2a7c8155959fea9" target="id-c599ae8eb6cf4268a4252a8e7af2ad87" archimateRelationship="id-de571f2b71e34e2f928f038998ee2a16"/>
           <child xsi:type="archimate:DiagramObject" id="id-883ab9444f634fb7af8b660efd3fba64" targetConnections="id-661d7e6a247e4cb48e2a197e22dad20b" textAlignment="1" archimateElement="id-72a12ce2bf8743d0a9eccf0112a1b584">
             <bounds x="24" y="36" width="337" height="265"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-3f2c2203e6344b9cb8ffd820c34d5b2e" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-4414df6b254748b4945aa3d352494a42" archimateRelationship="id-d3051d6963ba48fd8d5101b3fbf77f21"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-98ddc038e2eb43599f642c3b1262004b" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-ede88b25a1ba4f7f90afc3ebf4183ebf" archimateRelationship="id-1b9974e091a84b069e21e7d250837bcb"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-42eecb93db994c1688c9df3ac90a0af9" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-a61b7ef80f374fd0b5a3bbe4c244b934" archimateRelationship="id-70bdd2f6ea8e4459a4c262c71e673303"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-4a2d13b3772e41f9b008ad66195e494a" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-f6c1a73aac7a4776b86ba4c62ed5fd68" archimateRelationship="id-067bc134c4a34300a35e68caa89670f4"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-70de178bd64f4dd9a2123479c306ad09" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-66468d1fc45c48589b1b765b950501b6" archimateRelationship="id-7ac5ca7c341b4d559cd1e68fdbee9655"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-3b86b3dbf3bb4247993619a224a727f7" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-ded9e60753fc4eb1b87c85af563e35be" archimateRelationship="id-6375632964e8493a87454708a3839b49"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-78c60198ed6e493aae63add9e921981c" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-6f1e7fe9aa5a43d19e03543a3918382f" archimateRelationship="id-91b3bdccace04d9481164d87f054a992"/>
-            <child xsi:type="archimate:DiagramObject" id="id-4414df6b254748b4945aa3d352494a42" targetConnections="id-3f2c2203e6344b9cb8ffd820c34d5b2e id-8544b476d6ea494a9e0aaa71804ea717" archimateElement="id-255fa5b310064731940e9a5023ab2183">
-              <bounds x="168" y="88" width="140" height="69"/>
-            </child>
-            <child xsi:type="archimate:DiagramObject" id="id-a61b7ef80f374fd0b5a3bbe4c244b934" targetConnections="id-42eecb93db994c1688c9df3ac90a0af9" archimateElement="id-fd8b6baa573b44f4b4a43f40c8840dbe">
+            <sourceConnection xsi:type="archimate:Connection" id="id-70de178bd64f4dd9a2123479c306ad09" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-56dcbe0b6e2f4b30b2dd5c28c5af0dea" archimateRelationship="id-7ac5ca7c341b4d559cd1e68fdbee9655"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-03114eaa159448608177e45cd8dc0b6c" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-e0358c581c6743f2bad6468cb044e3b5" archimateRelationship="id-25e4dd6560ac40528d29677d034a14b5"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-d1500820bc0948a19bf4352cab1fdc89" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-9bce967c0736422faecbc57bf7044e76" archimateRelationship="id-62289aeab0684489afeb34b54f86ca5c"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-34a5da4f32bb4387b6048a47925969b8" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-86a31dc362e34ba5bc36b27952394471" archimateRelationship="id-ab2671937d5d48738d23b8c9b37aa440"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-b63fb9d7a8c342d3b90f32332ce9a7c4" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-01fc844af38c4fe58feb7c3ab4d5810e" archimateRelationship="id-2e91b2405b324419b6175bfd21215fa2"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-caf066a87003404b83d67f023d5cb0ca" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-84a06225666745189451ca9b4323052f" archimateRelationship="id-61b319d749224c9480c231fd9966f0c0"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-6b9711ab25d64b12aeb2b20d57d78f4b" source="id-883ab9444f634fb7af8b660efd3fba64" target="id-4da7bac645f7472e96bef02083744a4b" archimateRelationship="id-eb61b51b838c4e8ca5a2a7a5d1b80d9d"/>
+            <child xsi:type="archimate:DiagramObject" id="id-e0358c581c6743f2bad6468cb044e3b5" targetConnections="id-03114eaa159448608177e45cd8dc0b6c" archimateElement="id-e43309180ed44295890bf18713002e11">
               <bounds x="12" y="24" width="140" height="55"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-f6c1a73aac7a4776b86ba4c62ed5fd68" targetConnections="id-4a2d13b3772e41f9b008ad66195e494a id-2c780e5cfd914cb0875e13eeb9e9b0ca" archimateElement="id-5ccc3b971ffa44a384bb2f71a7c62385">
-              <bounds x="168" y="168" width="140" height="73"/>
+            <child xsi:type="archimate:DiagramObject" id="id-9bce967c0736422faecbc57bf7044e76" targetConnections="id-d1500820bc0948a19bf4352cab1fdc89" archimateElement="id-be90a1be2ec147c0bfcd5d9bcb997237">
+              <bounds x="12" y="83" width="140" height="73"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-6f1e7fe9aa5a43d19e03543a3918382f" targetConnections="id-78c60198ed6e493aae63add9e921981c id-66f43e8bdbf04e2aaa051c1e838e4cf0" archimateElement="id-a8e442c9384e4e98bde34f88893abc08">
-              <bounds x="168" y="24" width="140" height="55"/>
+            <child xsi:type="archimate:DiagramObject" id="id-86a31dc362e34ba5bc36b27952394471" targetConnections="id-34a5da4f32bb4387b6048a47925969b8" archimateElement="id-99146663fe654b5cb23a51fb59191bee">
+              <bounds x="12" y="162" width="140" height="85"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-ede88b25a1ba4f7f90afc3ebf4183ebf" targetConnections="id-98ddc038e2eb43599f642c3b1262004b" archimateElement="id-67ae37a16424455199f428a022934021">
-              <bounds x="12" y="168" width="140" height="85"/>
+            <child xsi:type="archimate:DiagramObject" id="id-01fc844af38c4fe58feb7c3ab4d5810e" targetConnections="id-66f43e8bdbf04e2aaa051c1e838e4cf0 id-b63fb9d7a8c342d3b90f32332ce9a7c4" archimateElement="id-a076010cc7f14dd29c69308ff3a1d810">
+              <bounds x="166" y="24" width="140" height="55"/>
             </child>
-            <child xsi:type="archimate:DiagramObject" id="id-ded9e60753fc4eb1b87c85af563e35be" targetConnections="id-3b86b3dbf3bb4247993619a224a727f7" archimateElement="id-9f14bcb9833a45c4a90a1101f64900ff">
-              <bounds x="12" y="86" width="140" height="73"/>
+            <child xsi:type="archimate:DiagramObject" id="id-84a06225666745189451ca9b4323052f" targetConnections="id-8544b476d6ea494a9e0aaa71804ea717 id-caf066a87003404b83d67f023d5cb0ca" archimateElement="id-47008bf77f914f1485c110c0163b84a5">
+              <bounds x="166" y="94" width="140" height="69"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-4da7bac645f7472e96bef02083744a4b" targetConnections="id-2c780e5cfd914cb0875e13eeb9e9b0ca id-6b9711ab25d64b12aeb2b20d57d78f4b" archimateElement="id-7a01eb0501c14b8fbe834ea51a0b7e72">
+              <bounds x="166" y="174" width="140" height="73"/>
             </child>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-41e39ee8cf7749ddb889c0d460319adc" targetConnections="id-4b4c7aa5cb2a430598c52da318c3e16f" archimateElement="id-3927a29fba8248d3ad1ba99bc635c17e">
+          <child xsi:type="archimate:DiagramObject" id="id-04a9f4751d5e43759bab500eeed76f73" targetConnections="id-529f235b9cfa41cdae83663a905d32de" archimateElement="id-c0f39d4ac51f416291d20bc06aeee10e">
             <bounds x="36" y="312" width="140" height="72"/>
           </child>
-          <child xsi:type="archimate:DiagramObject" id="id-9da81d1d83244d5c9e6cdd95b61862b8" targetConnections="id-4ab936276c264f449e95a5ba95db0470" archimateElement="id-cc6d6e27351942cb937467560b646684">
+          <child xsi:type="archimate:DiagramObject" id="id-811c878091374f5bb74cae03b0bca9b1" targetConnections="id-89c75b0e3d1a40e6890f18da4d1b25c1" archimateElement="id-87f5de750f29493ba1338443208e52f4">
             <bounds x="192" y="312" width="140" height="72"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-65d6465a021540d8aed633e8a260c750" archimateElement="id-edda5632a7294f319ff297faeb00f379">
           <bounds x="192" y="227" width="140" height="70"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-ce8e2c43a967429896f64f3ada3a3bca" source="id-65d6465a021540d8aed633e8a260c750" target="id-66468d1fc45c48589b1b765b950501b6" archimateRelationship="id-20214a29479a413cb056be44b3108394"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ce8e2c43a967429896f64f3ada3a3bca" source="id-65d6465a021540d8aed633e8a260c750" target="id-56dcbe0b6e2f4b30b2dd5c28c5af0dea" archimateRelationship="id-20214a29479a413cb056be44b3108394"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-bc389b37caf640c6806a62904826b438" textAlignment="1" archimateElement="id-d5f4c23cc91d442992ad584bb6088ca0">
           <bounds x="780" y="516" width="576" height="91"/>
@@ -13956,11 +13947,26 @@ Working in the Open: Part 2&#xD;
         </child>
         <child xsi:type="archimate:Note" id="id-1c5ade52199646bc9e17e225612dcf7b" textAlignment="1">
           <bounds x="222" y="60" width="91" height="30"/>
-          <content>v0.1.20210723</content>
+          <content>v0.1.20210726</content>
         </child>
         <child xsi:type="archimate:Note" id="id-0718e7ba8fda449f8211946da1e02094" textAlignment="1">
           <bounds x="472" y="423" width="181" height="73"/>
           <content>NOTE: Users with DesignPlus permission are able to add others to the same permission group (&quot;SAS_Design&quot;).</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8f4ba6c0790b4e41b402a58f63c735bc" archimateElement="id-2df51045646348cf8bfff8c92395406e">
+          <bounds x="33" y="227" width="145" height="64"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7c95b9f26c524d28a429a0bdfbc0cfd1" archimateElement="id-a6513f65042d49b5af54f59dfe078073">
+          <bounds x="33" y="296" width="145" height="83"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-56dcbe0b6e2f4b30b2dd5c28c5af0dea" targetConnections="id-544d2d9971e44562b48aed81f64cd143 id-ce8e2c43a967429896f64f3ada3a3bca id-70de178bd64f4dd9a2123479c306ad09" archimateElement="id-b72031ffa1654d0d8161adc4d3573f6c">
+          <bounds x="192" y="114" width="140" height="73"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4241095ac6484985847c3c4a356662f1" targetConnections="id-403d126e3c014c1b99f55ab2c0bd31db" archimateElement="id-7585b67b15a649948872abc0ab483974">
+          <bounds x="32" y="396" width="147" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c599ae8eb6cf4268a4252a8e7af2ad87" targetConnections="id-ebcb6bbd0e09428c86ec69cb37c79ded" archimateElement="id-055ed8d42eb649e381c8a92a18c78335">
+          <bounds x="32" y="466" width="147" height="60"/>
         </child>
         <documentation>SharePoint Permission Levels&#xD;
 The first step to managing permissions in SharePoint is to understand what actions the various permission levels authorize a person to perform. As a DesignerPlus, you will be granting the Read, Contribute and Design permission levels to people using your SharePoint site – the rest of the permission levels are described for your information only. &#xD;
