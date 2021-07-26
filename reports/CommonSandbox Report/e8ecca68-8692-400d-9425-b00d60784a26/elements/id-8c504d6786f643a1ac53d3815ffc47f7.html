@@ -46,14 +46,15 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/FAQ.aspx
+						<textarea id="docsrc" style="display:none">https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/FAQ.aspx
 13. Will the site&#8217;s security groups migrate? 
 No. Active Directory lists that are on premise will not be migrated; however the Project Team will recreate them as Azure Active Directory groups with settings activated to enable Owners and Designers to manage their membership after they migrate.
 
 Please keep your access and permissions up-to-date. You should not wait until your site is scheduled for migration to perform this update.  
 
 https://dialogue/proj/ITCD-RMTI/SAS-SAS/_layouts/settings.aspx
-</div>
+</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">

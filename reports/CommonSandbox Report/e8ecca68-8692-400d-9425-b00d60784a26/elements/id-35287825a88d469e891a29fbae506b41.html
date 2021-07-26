@@ -46,7 +46,7 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Application architecture
+						<textarea id="docsrc" style="display:none">Application architecture
 Application architecture practices must evolve significantly for the successful implementation of the GC Enterprise Ecosystem Target Architecture. Transitioning from legacy systems based on monolithic architectures to architectures that oriented around business services and based on re&#8209;useable components implementing business capabilities, is a major shift. Interoperability becomes a key element, and the number of stakeholders that must be considered increases.
 
 Use open source solutions hosted in public cloud
@@ -130,7 +130,8 @@ make all services available through a well-defined interface, such as an applica
 all APIs with potential for cross-departmental, inter-jurisdictional, or public consumption must be published to the GC API Store
    How to achieve:
     * 
-use the Canadian Digital Exchange Platform (CDXP) for data exchange where suitable (e.g., GC Event Broker for asynchronous messaging)</div>
+use the Canadian Digital Exchange Platform (CDXP) for data exchange where suitable (e.g., GC Event Broker for asynchronous messaging)</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
