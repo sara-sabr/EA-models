@@ -3304,8 +3304,133 @@ The RDF Schema (RDFS)17 standard defines the meaning of object class and propert
 RDF, RDFS, and OWL can be used to define standard vocabularies, including the examples given in Table 12.&#xD;
 Table 12: Example Standard Vocabularies</documentation>
     </element>
-    <element xsi:type="archimate:BusinessObject" name="Dublin Core Vocabulary (Business Object)" id="id-d29c6e5bc6a146c6a2ca0422488fb181"/>
-    <element xsi:type="archimate:BusinessObject" name="Friend Of A Friend (FOAF) Vocabulary Specification (Business Object)" id="id-1a7117f30f9e4fb09015606909007966"/>
+    <element xsi:type="archimate:BusinessObject" name="Dublin Core Vocabulary (Business Object)" id="id-d29c6e5bc6a146c6a2ca0422488fb181">
+      <documentation>Name: Dublin Core™ Vocabulary&#xD;
+Description: The most notable, and possibly the most widely-used metadata standard, which defines a core set of common terms.&#xD;
+Source/URL: The Dublin Core Metadata Initiative (DCMI); refer to: https://dublincore.org/.&#xD;
+&#xD;
+Dublin Core is a trademark of the Dublin Core Metadata Initiative.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Friend Of A Friend (FOAF) Vocabulary Specification (Business Object)" id="id-1a7117f30f9e4fb09015606909007966">
+      <documentation>Name: Friend Of A Friend (FOAF) Vocabulary Specification&#xD;
+Description: A standard vocabulary with a wide take-up that is defined using RDF.&#xD;
+Source/URL: Refer to: http://xmlns.com/foaf/spec/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="JSON and YAML (Business Object)" id="id-9c1982a2aae64aef81a9dfab14becb48">
+      <documentation>JSON and YAML&#xD;
+Data described using JSON corresponds to a collection of objects, each of which has attributes, each of which is a data value, an object, or an array of objects.&#xD;
+There are no formal semantic standards for JSON or YAML, but data described by these languages includes the names of the objects and properties and so, to some extent, is semantically “self-documenting”.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="XML Standard (Business Object)" id="id-cae44e4b77b943e69a1087092514ca9b">
+      <documentation>XML&#xD;
+Each XML element represents an object, and its attributes are typed data entities that are the values of properties. The content of an element includes child elements that can be regarded as objects that are the values of other properties. As with the names of tables and columns in a relational database schema, the names of elements and attributes in a DTD or XML Schema Definition (XSD) imply some correspondence with the real world.&#xD;
+An approach to XML semantics was proposed in the W3C in 2001,19 but this appears not to have resulted in a formal standard.&#xD;
+&#xD;
+19 XML with Relational Semantics: Bridging the Gap to RDF and the Semantic Web; refer to: https://www.w3.org/2001/05/xmlrs/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="BNF Standard (Business Object)" id="id-12d12cb2c25b478a9663ae749e908aed">
+      <documentation>BNF&#xD;
+The meaning of BNF-structured data is generally described in textual documents; for example, IETF RFC 822, the original Internet email standard, describes the meanings of the fields of an email message.&#xD;
+&#xD;
+Refer to: https://tools.ietf.org/html/rfc822.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Domain-Specific Structures (Business Object)" id="id-a2620f34da924506a1e342258c1c5f30">
+      <documentation>Domain-Specific Structures&#xD;
+Domain-specific structure standards, including FHIR, HL7, OFX, the Open Banking Standard, and UN/EDIFACT generally define metadata for their respective domains.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Hybrid Data (Business Object)" id="id-cc40e5d1d8d843339a8d7ca939d51234">
+      <documentation>Hybrid Data&#xD;
+The structured component of hybrid data sets is often there to provide metadata.&#xD;
+Word processor files often include metadata, such as the name of the author. The HTML standard defines the &lt;meta> tag to include metadata in web pages, and also allows linked data, which is structured data that is incorporated in web pages so that they become more useful through semantic queries. JavaScript Object Notation for Linked Data (JSON-LD)21 is a standard method of encoding linked data using JSON.&#xD;
+Refer to: https://www.w3.org/TR/json-ld11/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="DMBOK (Business Object)" id="id-8550db0e65da485b984fb3db0a8e7994">
+      <documentation>DMBOK&#xD;
+Data Management (DM) is an overarching term that describes the processes used to plan, specify, enable, create, acquire, maintain, use, archive, retrieve, control, and purge data. Data analysis and transformation are data management activities. Data Management Association (DAMA) International24 is a not-for-profit association dedicated to advancing the concepts and practices of information and data management that has produced the DMBOK.25 This includes, in its Data Integration and Interoperability knowledge area, guidance related to the transformation of data.&#xD;
+&#xD;
+24 Refer to: https://www.dama.org/.&#xD;
+25 Refer to: https://www.dama.org/cpages/body-of-knowledge, or see References.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Data Science (Business Object)" id="id-0ef1dd29a1ed4766a92f8374df89d6ac">
+      <documentation>Data Science&#xD;
+Data analysis and transformation are related to data science,26 which is an inter-disciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from collections of structured and unstructured data.&#xD;
+The Data Science Association27 has formed a committee to define formal standards for data science.&#xD;
+The Open Group has defined the Open Certified Data Scientist (Open CDS) certification program,28 to provide certification of the competence of data science professionals.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Structured Data Query Languages (Business Object)" id="id-385a28e8d5d24f1da1df25cc44bcc538">
+      <documentation>Structured Data Query Languages&#xD;
+Data structure query standards can be used to parse data, or to define the structure of the source and target of a transformation. So, for example, a program can be written in SQL, SPARQL,29 or XML Query (XQuery)30 in order to read data from a source and write it to a destination after transformation.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Transformation Utilities (Business Object)" id="id-6beb383d5ab341279eaecc779c08640c">
+      <documentation>Transformation Utilities&#xD;
+Table 13: Transformation Utilities</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Description Source-URL (Business Object)" id="id-d1a06fc0a8254a64954413f178a10e8c">
+      <documentation>Name Description Source/URL&#xD;
+Name: UNIX Utilities&#xD;
+Description: The UNIX Standard defines some text transformation utilities and associated transformation specifications, including sed and awk. Linux® contains similar utilities.&#xD;
+Source/URL: Refer to: http://www.unix.org/ and https://en.wikipedia.org/wiki/Linux.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Perl (Business Object)" id="id-9c3797862cac4fa8a090f336b6db874a">
+      <documentation>Name: Perl™&#xD;
+Description: A family of two high-level, general-purpose, interpreted, dynamic programming languages. It was originally partly based on UNIX utilities and the C programming language, but also incorporated ideas from other sources. It came to prominence as a means of creating Command Gateway Interface (CGI) scripts in the early days of the World-Wide Web, and is now used in a variety of system administration, network programming, and other applications. It can be used as a flexible and powerful language for transforming data represented using text.&#xD;
+Refer to: https://www.perl.org/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Turing eXtender Language (TXL) (Business Object)" id="id-e5c2238b816d4af6be053c823430727d">
+      <documentation>Name: Turing eXtender Language (TXL)&#xD;
+Description: A programming language designed to support computer software analysis and source transformation tasks. A TXL program specifies the structure of the input to be transformed using an extended form of BNF, and gives rules for rewriting the input to produce output. It enables structural analysis and transformation of formal notations, and has been used in a wide range of applications, including database schema translation.&#xD;
+Source/URL: Refer to: https://www.txl.ca/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="eXtensible Stylesheet Language (XSL) (Business Object)" id="id-b2c896a853074eb0856bb64cbef590e1">
+      <documentation>Name: eXtensible Stylesheet Language (XSL)&#xD;
+Description: A family of W3C recommendations for defining XML document transformation and presentation. It includes XSL Transformations (XSLT), which is a language for transforming an XML document into another XML document, or another type of document, such as HTML or Extensible HyperText Markup Language (XHTML™) that is recognized by a browser. A transformation is defined in a transformation template, which contains rules to apply when an XML node is matched in the input. XSLT is a powerful language, capable of arbitrary computations. It is widely supported by web browsers.&#xD;
+Source/URL: For XSL, refer to: https://www.w3.org/Style/XSL/.&#xD;
+For XSLT, refer to: https://www.w3.org/TR/xslt-30/.&#xD;
+For XHTML, refer to: https://www.w3.org/TR/xhtml1/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Template Languages (Business Object)" id="id-323dc473d4b848428c658db1218ebc03">
+      <documentation>Template Languages&#xD;
+A template processor31 (also known as a template engine or template parser) is software designed to combine templates with a data model to produce result documents. The language in which the templates are written is known as a template language or templating language. Examples are shown in Table 14.&#xD;
+&#xD;
+31 Refer to: https://en.wikipedia.org/wiki/Template_processor.&#xD;
+Table 14: Examples of Template Languages&#xD;
+&#xD;
+&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Django Template Processor (Business Object)" id="id-d2cc276c7ca74ed29160364b7aab749e">
+      <documentation>Name Source/URL&#xD;
+Django® Template Processor&#xD;
+Refer to: https://www.djangoproject.com/start/overview/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="The Apache FreeMarker (Business Object)" id="id-31ab758b78154925b84d1070fda14516">
+      <documentation>Name Source/URL&#xD;
+The Apache FreeMarker™&#xD;
+Refer to: https://freemarker.apache.org/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Hugo Templating (Business Object)" id="id-540725f271a043179c45f30aa636ac91">
+      <documentation>Name Source/URL&#xD;
+Hugo Templating&#xD;
+Refer to: https://gohugo.io/templates/introduction/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Liquid Template Language (Business Object)" id="id-97dff8660a404f079953a5f2d9f3fa59">
+      <documentation>Name Source/URL&#xD;
+Liquid Template Language&#xD;
+Refer to: https://shopify.github.io/liquid/.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Machine Learning (Business Object)" id="id-8cc0f30d061b430bba284b594b9e9952">
+      <documentation>Machine Learning&#xD;
+With programs such as UNIX sed and implementations of XSLT, the analysis or transformation is defined by a fixed specification, such as a sed script or transformation template, which is interpreted by an application-agnostic program. In an ML system, the definition of the analysis or transformation is modified in the light of results; the system learns what it has to do. ML is a branch of Artificial Intelligence (AI) that can be used for data analysis and transformation.&#xD;
+A particular form of data analysis that is relevant to data integration is the analysis of human-readable content. This is a branch of Natural Language Processing (NLP). It includes Sentiment Analysis, which assesses whether a piece of human-readable content is positively or negatively disposed towards a product or proposition.&#xD;
+ISO/IEC JTC 1/SC 4232 is the sub-committee of the joint technical committee of International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC) responsible for standardization in the area of AI. Its work program includes:&#xD;
+• AI framework, concepts, terminology, and computational approaches&#xD;
+• Quality model for AI-based systems&#xD;
+• Robustness of neural networks&#xD;
+• Analytics using AI and big data&#xD;
+• Functional safety, risk management, ethical and societal concerns, bias, and governance&#xD;
+• Use-cases</documentation>
+    </element>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -11363,6 +11488,25 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-e653eab12b8a44298e6f98e578d902c2" source="id-27934dc746714d3d90a8d77946323476" target="id-7ca456bf7b824252a37940a3c364a5fb"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-61705ba8146747f38d16b03ca900bd93" source="id-7ca456bf7b824252a37940a3c364a5fb" target="id-d29c6e5bc6a146c6a2ca0422488fb181"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-3181c503e9fc4d238c9a9238ba991e8d" source="id-7ca456bf7b824252a37940a3c364a5fb" target="id-1a7117f30f9e4fb09015606909007966"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-311b895edafd472cbece42d1927873c6" source="id-27934dc746714d3d90a8d77946323476" target="id-cae44e4b77b943e69a1087092514ca9b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-abbe4bf4744b410b99bf25890d625ae3" source="id-27934dc746714d3d90a8d77946323476" target="id-9c1982a2aae64aef81a9dfab14becb48"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8ef684de0705498084d3ebf23dcfe607" source="id-27934dc746714d3d90a8d77946323476" target="id-cc40e5d1d8d843339a8d7ca939d51234"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3b6d145196b74c6292b9f0b860bf4485" source="id-27934dc746714d3d90a8d77946323476" target="id-12d12cb2c25b478a9663ae749e908aed"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-efbd48da00d841958d8a44c46c1c93b3" source="id-27934dc746714d3d90a8d77946323476" target="id-a2620f34da924506a1e342258c1c5f30"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-aeb9871348c840f8b477a778b7488ab0" source="id-6beb383d5ab341279eaecc779c08640c" target="id-d1a06fc0a8254a64954413f178a10e8c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8dde21bc4c914495a54da377d9f0a784" source="id-6beb383d5ab341279eaecc779c08640c" target="id-9c3797862cac4fa8a090f336b6db874a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b322e3dc688e4e89ad8cbf8bf5da0cf5" source="id-6beb383d5ab341279eaecc779c08640c" target="id-b2c896a853074eb0856bb64cbef590e1"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-24b2e0834ef340ddaca3e84612c8d8af" source="id-6beb383d5ab341279eaecc779c08640c" target="id-e5c2238b816d4af6be053c823430727d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d170a193651a4e939e88f128ccdb2fd8" source="id-323dc473d4b848428c658db1218ebc03" target="id-d2cc276c7ca74ed29160364b7aab749e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f011383e00f4475fb863ef6142643fcb" source="id-323dc473d4b848428c658db1218ebc03" target="id-31ab758b78154925b84d1070fda14516"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f18931ddd2e646acb3bb7463e754ae6b" source="id-323dc473d4b848428c658db1218ebc03" target="id-540725f271a043179c45f30aa636ac91"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-613fc38d70a240128917867fbdb080ca" source="id-323dc473d4b848428c658db1218ebc03" target="id-97dff8660a404f079953a5f2d9f3fa59"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0c81e33ed2b2418abf30e1930d9f9ab8" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-8550db0e65da485b984fb3db0a8e7994"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-57c431386b9f4ef1ac8e6f5f76481c7b" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-323dc473d4b848428c658db1218ebc03"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0e4875b84077470caef3d99f273c6d4b" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-6beb383d5ab341279eaecc779c08640c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-81fae59036194d53aa088c256048f122" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-0ef1dd29a1ed4766a92f8374df89d6ac"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-17f89d981a544da3a29e281f41246b03" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-385a28e8d5d24f1da1df25cc44bcc538"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d1575d2a5f2b4ad2834fe80136b977fe" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-8cc0f30d061b430bba284b594b9e9952"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -15187,7 +15331,7 @@ v.2021-06-24</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-358107728245443abf5c4fcf8653f54c" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-db957d2205b14914b30135c6980cb234">
-          <bounds x="301" y="1020" width="828" height="167"/>
+          <bounds x="120" y="1044" width="828" height="167"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-69ab0fe4ec6e402f97abe6c48960e588" source="id-358107728245443abf5c4fcf8653f54c" target="id-fd468b47071b467c92a5e1b75cad8a89" archimateRelationship="id-68b4087dc6ad4e6bb6f9b0cec0d14026"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-dfeb684013e944a3ac9eb9665a7997e2" source="id-358107728245443abf5c4fcf8653f54c" target="id-f5c974ae2dd4414f8c0ee4b9b0801b6d" archimateRelationship="id-4febd5287744435c90c0b8951a05818c"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-9ef2cda617954fde8203f0ee02a93bab" source="id-358107728245443abf5c4fcf8653f54c" target="id-c787d2064c964068a77f75e2ced5ab27" archimateRelationship="id-934aa34a255b4001acc86444a29e81c1"/>
@@ -15322,17 +15466,22 @@ v.2021-06-24</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-a92c1369e9154a02b7a74425b2b9d077" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-fd863d3eb83d4eacbe7493b603d5f4d3">
-          <bounds x="1212" y="859" width="814" height="77"/>
+          <bounds x="1140" y="1089" width="846" height="77"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-1bbba7d3a0f14d8cb47497966245ef9a" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-373a88b3ed694c549d77e073ac49def8">
-          <bounds x="1212" y="1034" width="814" height="82"/>
+          <bounds x="1140" y="1169" width="846" height="82"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-974404dd3de44849a6ddcc22393c075c" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-27934dc746714d3d90a8d77946323476">
-          <bounds x="1140" y="504" width="1174" height="332"/>
+          <bounds x="1140" y="504" width="1237" height="332"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d0c85eed903344968fad2dc565d8b3c6" source="id-974404dd3de44849a6ddcc22393c075c" target="id-3e9a530daee44209912a22b7933bbd00" archimateRelationship="id-ba5e3486a8804663a27b40d560057954"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d59d2f0bfa1f485988d14773498ebad1" source="id-974404dd3de44849a6ddcc22393c075c" target="id-2754f217463540cc8e724457fe91b7e4" archimateRelationship="id-ed7ddfa6448e4f55ba287f05ac92377e"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-655019ec83074a23b41a18319d0ed26f" source="id-974404dd3de44849a6ddcc22393c075c" target="id-ff256cbb17ee4a6c9441882d924a20af" archimateRelationship="id-29c4071b7dfe4e41b5f92844314e7979"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-ff528fdabdda471192079e84c958484e" source="id-974404dd3de44849a6ddcc22393c075c" target="id-adcc051834334ad682d2d670127dd7b7" archimateRelationship="id-e653eab12b8a44298e6f98e578d902c2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4d5084ac326b444fb899c13a1484fe5a" source="id-974404dd3de44849a6ddcc22393c075c" target="id-aefc86ee1d2e46eebff0f08b4cde37c1" archimateRelationship="id-311b895edafd472cbece42d1927873c6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c33e758cd84146ca824429d7505462f9" source="id-974404dd3de44849a6ddcc22393c075c" target="id-63ac6a966e254f43844ef2031c3c75b4" archimateRelationship="id-abbe4bf4744b410b99bf25890d625ae3"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9e785f87576b469892e3f3591eadf056" source="id-974404dd3de44849a6ddcc22393c075c" target="id-263cc9b126104c459b7dae2c0d322890" archimateRelationship="id-8ef684de0705498084d3ebf23dcfe607"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-dc812d42cf504cd284d397fcd1e4aa08" source="id-974404dd3de44849a6ddcc22393c075c" target="id-7148b05364f641bc88eeba4a0fddef15" archimateRelationship="id-3b6d145196b74c6292b9f0b860bf4485"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-15c28078bfc945448e3cee14aa56ca24" source="id-974404dd3de44849a6ddcc22393c075c" target="id-12fc1b4991804dc785f2f847ff7bb0cf" archimateRelationship="id-efbd48da00d841958d8a44c46c1c93b3"/>
           <child xsi:type="archimate:DiagramObject" id="id-3e9a530daee44209912a22b7933bbd00" targetConnections="id-d0c85eed903344968fad2dc565d8b3c6" archimateElement="id-63787827ce0f49ba88311a9bef7edf5a">
             <bounds x="168" y="24" width="613" height="300"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-9a16e269d9314f38a50c29d964882570" source="id-3e9a530daee44209912a22b7933bbd00" target="id-6a27d0c171ef4f0b8554388742ef5aa2" archimateRelationship="id-12e07e1d78ee4612a031bb8a342f2104"/>
@@ -15415,13 +15564,90 @@ v.2021-06-24</content>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-adcc051834334ad682d2d670127dd7b7" targetConnections="id-ff528fdabdda471192079e84c958484e" archimateElement="id-7ca456bf7b824252a37940a3c364a5fb">
-            <bounds x="948" y="24" width="145" height="300"/>
+            <bounds x="948" y="24" width="145" height="205"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-ff70f951d63447b6b58b989bdead11a3" source="id-adcc051834334ad682d2d670127dd7b7" target="id-bb5c1653b420479a9a8836233f713feb" archimateRelationship="id-61705ba8146747f38d16b03ca900bd93"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-c3eef97bc14d4c93a3beefcf725d51d9" source="id-adcc051834334ad682d2d670127dd7b7" target="id-33ec49143a7948cd98668e418384a949" archimateRelationship="id-3181c503e9fc4d238c9a9238ba991e8d"/>
+            <child xsi:type="archimate:DiagramObject" id="id-bb5c1653b420479a9a8836233f713feb" targetConnections="id-ff70f951d63447b6b58b989bdead11a3" archimateElement="id-d29c6e5bc6a146c6a2ca0422488fb181">
+              <bounds x="12" y="48" width="120" height="63"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-33ec49143a7948cd98668e418384a949" targetConnections="id-c3eef97bc14d4c93a3beefcf725d51d9" archimateElement="id-1a7117f30f9e4fb09015606909007966">
+              <bounds x="12" y="115" width="120" height="80"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-aefc86ee1d2e46eebff0f08b4cde37c1" targetConnections="id-4d5084ac326b444fb899c13a1484fe5a" archimateElement="id-cae44e4b77b943e69a1087092514ca9b">
+            <bounds x="1104" y="48" width="120" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-63ac6a966e254f43844ef2031c3c75b4" targetConnections="id-c33e758cd84146ca824429d7505462f9" archimateElement="id-9c1982a2aae64aef81a9dfab14becb48">
+            <bounds x="961" y="249" width="120" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-263cc9b126104c459b7dae2c0d322890" targetConnections="id-9e785f87576b469892e3f3591eadf056" archimateElement="id-cc40e5d1d8d843339a8d7ca939d51234">
+            <bounds x="1104" y="269" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7148b05364f641bc88eeba4a0fddef15" targetConnections="id-dc812d42cf504cd284d397fcd1e4aa08" archimateElement="id-12d12cb2c25b478a9663ae749e908aed">
+            <bounds x="1104" y="120" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-12fc1b4991804dc785f2f847ff7bb0cf" targetConnections="id-15c28078bfc945448e3cee14aa56ca24" archimateElement="id-a2620f34da924506a1e342258c1c5f30">
+            <bounds x="1104" y="188" width="120" height="62"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-0d86ca44daa74924899c9d8b9a09df23" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-79d7cb736a2b437490e6d3a1903ce66d">
-          <bounds x="1212" y="948" width="814" height="72"/>
+          <bounds x="1140" y="852" width="846" height="223"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a19171b56d02482fb03581c350ac9e63" source="id-0d86ca44daa74924899c9d8b9a09df23" target="id-be20130efde7427396c52c10ec9f5412" archimateRelationship="id-0c81e33ed2b2418abf30e1930d9f9ab8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-18b5c93f17784d678f654b0d3ac6045d" source="id-0d86ca44daa74924899c9d8b9a09df23" target="id-5e5be4f4230742db8603b0e4e02d4330" archimateRelationship="id-57c431386b9f4ef1ac8e6f5f76481c7b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2eae73ad3e16414f8ae87ba42d4632bd" source="id-0d86ca44daa74924899c9d8b9a09df23" target="id-61201836a81545948699ee432355b023" archimateRelationship="id-0e4875b84077470caef3d99f273c6d4b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d978436003e84e0b8c046918282ba9ff" source="id-0d86ca44daa74924899c9d8b9a09df23" target="id-53e3c3d5e43e4f0c9b0a9a9772cfccf0" archimateRelationship="id-81fae59036194d53aa088c256048f122"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-68888a5479d34e4aa99882067a63940a" source="id-0d86ca44daa74924899c9d8b9a09df23" target="id-c8c095776e00451aa92e39ab49d30f69" archimateRelationship="id-17f89d981a544da3a29e281f41246b03"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-76b09eb881d94124b719945bd29f0cfa" source="id-0d86ca44daa74924899c9d8b9a09df23" target="id-0a7fb7fef6c5474ea92a24ed5311fcf7" archimateRelationship="id-d1575d2a5f2b4ad2834fe80136b977fe"/>
+          <child xsi:type="archimate:DiagramObject" id="id-be20130efde7427396c52c10ec9f5412" targetConnections="id-a19171b56d02482fb03581c350ac9e63" archimateElement="id-8550db0e65da485b984fb3db0a8e7994">
+            <bounds x="13" y="29" width="120" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5e5be4f4230742db8603b0e4e02d4330" targetConnections="id-18b5c93f17784d678f654b0d3ac6045d" archimateElement="id-323dc473d4b848428c658db1218ebc03">
+            <bounds x="426" y="29" width="277" height="181"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2a32e18fa2254ae8b97558d95fb16e82" source="id-5e5be4f4230742db8603b0e4e02d4330" target="id-236cd11e5cdc4509a4b1ae3fc3b14039" archimateRelationship="id-d170a193651a4e939e88f128ccdb2fd8"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-677a8b0c11e340899ade743a8290ef92" source="id-5e5be4f4230742db8603b0e4e02d4330" target="id-cf7fd77add71424583ac0aa67944afbb" archimateRelationship="id-f011383e00f4475fb863ef6142643fcb"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-4deb906a3d534795b0d0088d6566e455" source="id-5e5be4f4230742db8603b0e4e02d4330" target="id-1f81b3ad47b44faeacc0f4e8ffd750d9" archimateRelationship="id-f18931ddd2e646acb3bb7463e754ae6b"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-badc27d52b1f4a5bb91f52e2def328a4" source="id-5e5be4f4230742db8603b0e4e02d4330" target="id-f6fa8b63ba6749859fb630fa5e2583c4" archimateRelationship="id-613fc38d70a240128917867fbdb080ca"/>
+            <child xsi:type="archimate:DiagramObject" id="id-236cd11e5cdc4509a4b1ae3fc3b14039" targetConnections="id-2a32e18fa2254ae8b97558d95fb16e82" archimateElement="id-d2cc276c7ca74ed29160364b7aab749e">
+              <bounds x="12" y="36" width="120" height="63"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-cf7fd77add71424583ac0aa67944afbb" targetConnections="id-677a8b0c11e340899ade743a8290ef92" archimateElement="id-31ab758b78154925b84d1070fda14516">
+              <bounds x="12" y="108" width="120" height="67"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-1f81b3ad47b44faeacc0f4e8ffd750d9" targetConnections="id-4deb906a3d534795b0d0088d6566e455" archimateElement="id-540725f271a043179c45f30aa636ac91">
+              <bounds x="144" y="36" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-f6fa8b63ba6749859fb630fa5e2583c4" targetConnections="id-badc27d52b1f4a5bb91f52e2def328a4" archimateElement="id-97dff8660a404f079953a5f2d9f3fa59">
+              <bounds x="144" y="108" width="120" height="67"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-61201836a81545948699ee432355b023" targetConnections="id-2eae73ad3e16414f8ae87ba42d4632bd" archimateElement="id-6beb383d5ab341279eaecc779c08640c">
+            <bounds x="143" y="29" width="277" height="181"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-ff8362c412e845df8034afd5ed50471a" source="id-61201836a81545948699ee432355b023" target="id-17a3b95753d34393b786da9c4042aa73" archimateRelationship="id-aeb9871348c840f8b477a778b7488ab0"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-f09bd4a602e94a21bb6c1985f1d3570f" source="id-61201836a81545948699ee432355b023" target="id-beef17010c434a35afe8655ec837ce62" archimateRelationship="id-8dde21bc4c914495a54da377d9f0a784"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7f3408139bb247a89177858e8ae236dc" source="id-61201836a81545948699ee432355b023" target="id-cfec3876a7d8495f9b8b0e7e910e23f0" archimateRelationship="id-b322e3dc688e4e89ad8cbf8bf5da0cf5"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7b78c458bdd64d17ae0652203c8525d9" source="id-61201836a81545948699ee432355b023" target="id-0ba3631013e248038bf1b26a32381c5a" archimateRelationship="id-24b2e0834ef340ddaca3e84612c8d8af"/>
+            <child xsi:type="archimate:DiagramObject" id="id-17a3b95753d34393b786da9c4042aa73" targetConnections="id-ff8362c412e845df8034afd5ed50471a" archimateElement="id-d1a06fc0a8254a64954413f178a10e8c">
+              <bounds x="12" y="36" width="120" height="65"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-beef17010c434a35afe8655ec837ce62" targetConnections="id-f09bd4a602e94a21bb6c1985f1d3570f" archimateElement="id-9c3797862cac4fa8a090f336b6db874a">
+              <bounds x="147" y="36" width="120" height="55"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-cfec3876a7d8495f9b8b0e7e910e23f0" targetConnections="id-7f3408139bb247a89177858e8ae236dc" archimateElement="id-b2c896a853074eb0856bb64cbef590e1">
+              <bounds x="147" y="112" width="120" height="63"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-0ba3631013e248038bf1b26a32381c5a" targetConnections="id-7b78c458bdd64d17ae0652203c8525d9" archimateElement="id-e5c2238b816d4af6be053c823430727d">
+              <bounds x="12" y="111" width="120" height="65"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-53e3c3d5e43e4f0c9b0a9a9772cfccf0" targetConnections="id-d978436003e84e0b8c046918282ba9ff" archimateElement="id-0ef1dd29a1ed4766a92f8374df89d6ac">
+            <bounds x="13" y="84" width="120" height="49"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c8c095776e00451aa92e39ab49d30f69" targetConnections="id-68888a5479d34e4aa99882067a63940a" archimateElement="id-385a28e8d5d24f1da1df25cc44bcc538">
+            <bounds x="13" y="145" width="120" height="65"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0a7fb7fef6c5474ea92a24ed5311fcf7" targetConnections="id-76b09eb881d94124b719945bd29f0cfa" archimateElement="id-8cc0f30d061b430bba284b594b9e9952">
+            <bounds x="714" y="29" width="120" height="55"/>
+          </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-46416978ab0a45fa9105ecfc1229a1f7" textPosition="1" archimateElement="id-9bf048e207e84792a1bc73573b293f60">
           <bounds x="278" y="95" width="134" height="60"/>
@@ -15429,13 +15655,7 @@ v.2021-06-24</content>
         </child>
         <child xsi:type="archimate:Note" id="id-e507a50d002a4613baf56a5937cb9034" fillColor="#d0feff" textPosition="1">
           <bounds x="623" y="48" width="109" height="25"/>
-          <content>v0.1.2021-07-26</content>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-bb5c1653b420479a9a8836233f713feb" targetConnections="id-ff70f951d63447b6b58b989bdead11a3" archimateElement="id-d29c6e5bc6a146c6a2ca0422488fb181">
-          <bounds x="2100" y="859" width="120" height="63"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-33ec49143a7948cd98668e418384a949" targetConnections="id-c3eef97bc14d4c93a3beefcf725d51d9" archimateElement="id-1a7117f30f9e4fb09015606909007966">
-          <bounds x="2100" y="926" width="120" height="80"/>
+          <content>v0.1.2021-07-27</content>
         </child>
         <documentation>Technical Standards for Data Integration (opengroup.org): https://publications.opengroup.org/white-papers/architecture/w211&#xD;
 Copy available in SP2010: https://dialogue/proj/ITCD-RMTI/SAS-SAS/Documents/Governance/Training/TOGAF%209.2/The%20Open%20Group%20Documents&#xD;
