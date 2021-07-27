@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title></title>
+	<title>RDF Triple Stores (Business Object)</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -22,10 +22,11 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b class="i18n-elementtype-DiagramModelNote"></b>
+               <b>RDF Triple Stores (Business Object)</b>
+
             <!-- If a View with Viewpoint -->
-			   (<span class="i18n-elementtype-DiagramModelNote"></span>)
-			   <a class="glyphicon glyphicon-info-sign" id="hint-DiagramModelNote" target="hint"></a>
+			   (<span class="i18n-elementtype-BusinessObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessObject" target="hint"></a>
 		</div>
 
 		<div class="panel-body root-panel-body">
@@ -35,7 +36,7 @@
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
                     <!-- Purpose / Documentation / Content -->
-                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-content"></a></li>
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
 
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
@@ -45,7 +46,12 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">v0.1.2021-07-26</div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">RDF Triple Stores
+In the RDF, the subject of a triple represents a real-world object, the triple&#8217;s verb represents a property, and the triple&#8217;s object represents the value of the property for the subject. This value can be a real-world object or a data value such as a number, a text string, or an image.
+Real-world objects and properties that are triple subjects, verbs, and objects are identified by Internationalized Resource Identifiers (IRI).15 An IRI can be a Uniform Resource Identifier (URI) that gives the location of a web page, so that the value representing the object or property points to a web page that describes it.16
+The RDF Schema (RDFS)17 standard defines the meaning of object class and property for the RDF. Fundamentally, this is not very different to what is meant in ISO/IEC 11179. The Web Ontology Language (OWL)18 is a standard language, based on RDF, for defining ontologies. An ontology describes object classes and properties, and relationships between them. An OWL ontology can be a powerful collection of metadata.
+RDF, RDFS, and OWL can be used to define standard vocabularies, including the examples given in Table 12.
+Table 12: Example Standard Vocabularies</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
