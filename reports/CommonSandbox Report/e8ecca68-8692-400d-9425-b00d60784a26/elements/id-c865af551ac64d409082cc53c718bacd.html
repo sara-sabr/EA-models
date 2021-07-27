@@ -2,7 +2,7 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title></title>
+	<title>Metadata Registries (Business Object)</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
@@ -22,10 +22,11 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b class="i18n-elementtype-DiagramModelNote"></b>
+               <b>Metadata Registries (Business Object)</b>
+
             <!-- If a View with Viewpoint -->
-			   (<span class="i18n-elementtype-DiagramModelNote"></span>)
-			   <a class="glyphicon glyphicon-info-sign" id="hint-DiagramModelNote" target="hint"></a>
+			   (<span class="i18n-elementtype-BusinessObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessObject" target="hint"></a>
 		</div>
 
 		<div class="panel-body root-panel-body">
@@ -35,7 +36,7 @@
 				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" role="tablist">
                     <!-- Purpose / Documentation / Content -->
-                       <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-content"></a></li>
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
 
                     <!-- Properties -->
                     <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
@@ -45,7 +46,11 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">v0.1.2021-07-26</div>
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Metadata Registries
+International Standard ISO/IEC 11179-1: 2015: Information Technology &#8211; Metadata Registries (MDR) &#8211; Part 1: Framework (see References) defines a framework for data semantics that is in practice used in connection with relational databases, but in theory could be applied more widely.
+In this framework, data encodes information about real-world objects and their properties. A data element is a unit of data that is considered in context to be indivisible. It is a logical specification to which a data value can conform, and that states what a conforming data value means. The meaning of a data element value is a combination of an object class and a property, such as person and name. A data element also has a value domain &#8211; its set of permissible values.
+When ISO/IEC 11179 is applied to a relational database, each table represents an object class, each column represents a data element, and each row represents an object and contains the values of the column data elements for that object.
+Usually, the table names and column names suggest the meaning of the data in a relational database. Formal documentation can describe the meaning more rigorously. Such documentation is a kind of metadata. ISO/IEC 11179 documents the standardization and registration of metadata to make data understandable and shareable.</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
