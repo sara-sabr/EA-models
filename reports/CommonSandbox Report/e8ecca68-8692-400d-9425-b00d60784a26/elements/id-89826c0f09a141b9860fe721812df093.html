@@ -46,13 +46,14 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Under Structure Standards:
+						<textarea id="docsrc" style="display:none">Under Structure Standards:
 Spreadsheets
 A spreadsheet file similarly contains data in rows and columns: columns need not be named, and a column can contain data of several different types and have empty cells. One common format for keeping data with these characteristics is the CSV file.
 
 Under Relational Data:
 Spreadsheets
-A convention is sometimes used in spreadsheets and CSV files that one row (the header row) contains the names of the columns, and the cells beneath it contain the values. When a spreadsheet or CSV file has consistently-typed columns (so that it is like a relational database table) the ISO/IEC 11179 standard could apply to its semantics.</div>
+A convention is sometimes used in spreadsheets and CSV files that one row (the header row) contains the names of the columns, and the cells beneath it contain the values. When a spreadsheet or CSV file has consistently-typed columns (so that it is like a relational database table) the ISO/IEC 11179 standard could apply to its semantics.</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
