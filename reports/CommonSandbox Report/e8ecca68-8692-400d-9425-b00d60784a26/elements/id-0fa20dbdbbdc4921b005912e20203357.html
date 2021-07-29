@@ -46,10 +46,11 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Data Platforms
+						<textarea id="docsrc" style="display:none">Data Platforms
 Data platforms are architecture components that connect to multiple sources and provide access to their data. They are key components of data fabrics and data meshes. They may import data from the sources but more usually, and more effectively, they use data virtualization. In either case, they transform the source data to fit a target schema, or expose the source schema to applications.
 Figure 3 shows how data platforms enable applications to access data. They may communicate with each other or use common metadata to make the access uniform.
-Figure 3: Data Platforms</div>
+Figure 3: Data Platforms</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
