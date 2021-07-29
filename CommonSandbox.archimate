@@ -2386,7 +2386,11 @@ ICST - Information Collection and SYnthesis Team</documentation>
       <documentation>A documentary proof of the credential </documentation>
     </element>
     <element xsi:type="archimate:BusinessObject" name="Architecture Guardrails" id="06c492be-ccd5-4fff-83f4-f98b7fc4f906">
-      <documentation>https://www.scaledagileframework.com/guardrails/</documentation>
+      <documentation>“Another mechanism that organizations use to bake evolvability into their system architectures is the concept of architectural guardrails. As with their real-world roadside equivalents, software guardrails are designed to keep people from straying into dangerous territory.&#xD;
+In real terms, guardrails represent a lightweight governance structure. They document how an organization typically “does” things – and how, by implication, development teams are expected to “do” similar things. For example, a guardrail may document not just the specific availability requirements for a new service, but also how the organization goes about meeting such requirements. Typically, guardrails are used in combination with an external oversight team – be this an architecture board, guild, or program office. Typically, the message from such oversight teams is simple: if you stick to the guardrails, you do not need to justify your architectural choices – we will just approve them. However, in those situations where you could not abide by a guardrail, then we need to discuss it. If your reasoning is sound, then we may well agree with you and modify our guardrails, but we reserve the right to tell you to change your approach if there was no good reason not to abide by the guardrails.&#xD;
+The key to their power is that they are not mandates. They do not impose absolute bans on teams taking different approaches; rather they encourage creativity and collaboration, and encourage the evolution of the governance structure itself.”&#xD;
+From &lt;https://pubs.opengroup.org/architecture/o-aa-standard/Continuous-Architectural-Refactoring.html#KLP-CAR-guardrails> &#xD;
+</documentation>
     </element>
     <element xsi:type="archimate:BusinessObject" name="API Architecture Guardrails" id="b473190d-b5e1-4655-8c3f-bf87099ce8be">
       <documentation>The purpose of these Guardrails is to promote consistency and provide guidance around the use of Application Programming Interfaces (APIs) across ESDC, and to enable exchange and integration of data between systems, agencies, businesses and citizens.&#xD;
@@ -8237,6 +8241,15 @@ Based on the Implementation and Capacity listed considerations above, the abilit
 3. Upgrade of infrastructure outside of end state environment standards required for WLM&#xD;
 4. Interactions with external third party services associated with business functionality&#xD;
 5. Migration of secret level data and workloads</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Portfolio Backlog" id="ef139296-e535-4bc3-9df0-1539f0f94e7b">
+      <documentation>https://www.scaledagileframework.com/portfolio-backlog/</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Product and Solution Backlog" id="e2b24879-819f-42f9-8667-b62afbab8368">
+      <documentation>https://www.scaledagileframework.com/program-and-solution-backlogs/</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Team Backlog" id="dfae411d-61d7-41b0-a481-94f57a6895f7">
+      <documentation>https://www.scaledagileframework.com/team-backlog/</documentation>
     </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
@@ -16915,7 +16928,7 @@ The majority of ESDC systems are currently hosted in legacy Shared Services Cana
         <bounds x="603" y="558" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="85df09cf-f8af-4e55-9e65-f5516c71d5bc" archimateElement="d949f4c3-a4b4-4b14-9f47-3a1f7bba1382">
-        <bounds x="735" y="625" width="120" height="55"/>
+        <bounds x="735" y="558" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="81d94ff9-f8d4-46ec-96cc-7659dde3a7fc" archimateElement="207319d9-514d-4655-a27e-7bd92e4b1d49">
         <bounds x="1191" y="157" width="145" height="355"/>
@@ -16968,7 +16981,7 @@ The majority of ESDC systems are currently hosted in legacy Shared Services Cana
         <bounds x="1371" y="337" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="bdf7d80a-79b7-40d8-a114-c6553800ed09" archimateElement="e16ebebf-2bd2-4471-8bbd-be5605c52811">
-        <bounds x="590" y="336" width="120" height="55"/>
+        <bounds x="600" y="336" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="00beba1b-42eb-4880-a382-91d38db629a7" archimateElement="d4455d7d-e827-436a-ad15-5b98791c9f64">
         <bounds x="962" y="558" width="120" height="55"/>
@@ -16977,7 +16990,7 @@ The majority of ESDC systems are currently hosted in legacy Shared Services Cana
         <bounds x="1047" y="337" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="33851ee1-62d0-449f-993b-4d5c53ee00f1" archimateElement="4cc0e3ce-5a5e-44b2-9b34-aa9e43bbd6b9">
-        <bounds x="326" y="337" width="120" height="55"/>
+        <bounds x="207" y="336" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="46fd58df-499c-47a5-86be-790f0355ae66" archimateElement="2dbffbd6-d8aa-483a-a1bc-5dce5b28f0ef">
         <bounds x="1587" y="637" width="120" height="55"/>
@@ -16989,13 +17002,13 @@ The majority of ESDC systems are currently hosted in legacy Shared Services Cana
         <bounds x="1572" y="228" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="cf7e7a15-99dc-4302-8f4d-67646762c7d1" archimateElement="ab0c85e4-4b97-4ffd-88fd-9398c7f17fc9">
-        <bounds x="735" y="558" width="120" height="55"/>
+        <bounds x="735" y="625" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="92633d83-6b9d-45a2-865f-36fea7e27c1f" archimateElement="c9506914-3f57-41d5-8d76-6f5e98cb2754">
         <bounds x="963" y="697" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="5c1169d9-0b1c-4adf-9181-94d3313fc5fd" archimateElement="052f92c1-4a30-41ac-9aee-521b1c23222f">
-        <bounds x="459" y="337" width="120" height="55"/>
+        <bounds x="340" y="337" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="5c465ddd-4f28-4da5-9971-4e830bdaf656" archimateElement="58e5fad6-6b5b-4bcf-84ad-51c5325c2347">
         <bounds x="963" y="625" width="120" height="55"/>
@@ -17010,7 +17023,7 @@ The majority of ESDC systems are currently hosted in legacy Shared Services Cana
         <bounds x="459" y="625" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="fa735e02-5554-4f2f-a4d0-e53ed7aff214" archimateElement="e2fc8054-5143-4324-a320-92d0bf4a5b0c">
-        <bounds x="590" y="228" width="120" height="55"/>
+        <bounds x="600" y="228" width="120" height="55"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="8f1142c5-7dad-4717-bf77-fb72574a3f4e" archimateElement="e3713a79-7322-467a-84b8-f9db0adb85fa">
         <bounds x="1191" y="558" width="145" height="68"/>
@@ -17020,6 +17033,15 @@ The majority of ESDC systems are currently hosted in legacy Shared Services Cana
       </child>
       <child xsi:type="archimate:DiagramObject" id="e875e2bf-1ed2-43d4-b107-7383287a9b96" archimateElement="c0d19d7d-90bf-4fbb-b8d4-4c0a3e902ef8">
         <bounds x="459" y="691" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="7e2c81de-1ade-4856-a802-6e6850523d58" archimateElement="ef139296-e535-4bc3-9df0-1539f0f94e7b">
+        <bounds x="468" y="336" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="f0d665f8-b3a9-460b-a51d-3329f2fc46a9" archimateElement="e2b24879-819f-42f9-8667-b62afbab8368">
+        <bounds x="900" y="337" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="e99a122e-04ab-4dc3-8e13-6889de214456" archimateElement="dfae411d-61d7-41b0-a481-94f57a6895f7">
+        <bounds x="1512" y="336" width="120" height="55"/>
       </child>
     </element>
     <element xsi:type="archimate:ArchimateDiagramModel" name="SDLC High Level  Flow" id="3074ce92-3c22-4203-bcca-58ad72537954">
