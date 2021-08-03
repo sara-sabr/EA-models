@@ -2666,8 +2666,8 @@ The audience and key stakeholders of the EA Principles are: &#xD;
     <element xsi:type="archimate:BusinessObject" name="Master DM Architecture Guardrails" id="b2134456-5924-429d-b8ac-c20c329ab3ed"/>
     <element xsi:type="archimate:BusinessObject" name=" Reference DM Architecture Guardrails" id="5cfeb726-6509-41f2-994b-f2dd66b9e1af"/>
     <element xsi:type="archimate:BusinessObject" name="IAM Architecture Guardrails" id="71efe8d8-63a4-4ae3-9f94-71e85c9128a3"/>
-    <element xsi:type="archimate:BusinessObject" name="Internal Architecture Guardrails" id="6751ca8a-33cb-4cf4-b919-54f43a9dd1c7"/>
-    <element xsi:type="archimate:BusinessObject" name="External Architecture Guardrails" id="992719c7-0e95-40b7-96a4-8dda8c4536c5"/>
+    <element xsi:type="archimate:BusinessObject" name="Internal User Architecture Guardrails" id="6751ca8a-33cb-4cf4-b919-54f43a9dd1c7"/>
+    <element xsi:type="archimate:BusinessObject" name="External User Architecture Guardrails" id="992719c7-0e95-40b7-96a4-8dda8c4536c5"/>
     <element xsi:type="archimate:BusinessObject" name="Data Analytics Architecture Guardrails" id="2af1a90a-0c86-466e-86e7-028ca6fd7a18"/>
     <element xsi:type="archimate:BusinessObject" name="Insight Reporting Architecture Guardrails" id="3351617b-96e2-430b-af66-ed839b2439b7"/>
     <element xsi:type="archimate:BusinessObject" name="Advanced Analytics Architecture Guardrails" id="36c72806-1e90-42e5-930a-fe86e4fa0921"/>
@@ -3441,6 +3441,7 @@ ISO/IEC JTC 1/SC 4232 is the sub-committee of the joint technical committee of I
 • Functional safety, risk management, ethical and societal concerns, bias, and governance&#xD;
 • Use-cases</documentation>
     </element>
+    <element xsi:type="archimate:BusinessObject" name="Zero Trust Architecture Guardrails" id="ea2088fa-4554-4533-9160-8fb22c4db45c"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -11532,6 +11533,7 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-81fae59036194d53aa088c256048f122" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-0ef1dd29a1ed4766a92f8374df89d6ac"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-17f89d981a544da3a29e281f41246b03" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-385a28e8d5d24f1da1df25cc44bcc538"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-d1575d2a5f2b4ad2834fe80136b977fe" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-8cc0f30d061b430bba284b594b9e9952"/>
+    <element xsi:type="archimate:CompositionRelationship" id="84f95aaa-ba05-4c50-a9e6-f7507548d5e3" source="71efe8d8-63a4-4ae3-9f94-71e85c9128a3" target="ea2088fa-4554-4533-9160-8fb22c4db45c"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -16912,7 +16914,7 @@ The majority of ESDC systems are currently hosted in legacy Shared Services Cana
         </child>
       </child>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="Plan" id="e02c223f-879f-443a-b1cd-a75484cb0ee4">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="High Level Architecture Guardrails Plan" id="e02c223f-879f-443a-b1cd-a75484cb0ee4">
       <child xsi:type="archimate:DiagramObject" id="b5e8aac6-02f3-46f1-ab8b-2fcf5ac3ab7e" targetConnections="bb16ff7a-5791-46cd-ad59-ee8c8c8a7127" archimateElement="8c8892c1-27aa-494c-bc05-29c3938a6bc5">
         <bounds x="843" y="493" width="120" height="55"/>
         <sourceConnection xsi:type="archimate:Connection" id="35a08f08-421c-4558-95f0-f006270d7ecd" source="b5e8aac6-02f3-46f1-ab8b-2fcf5ac3ab7e" target="c1895a28-7c53-4882-af94-1ae394e17ba5" archimateRelationship="c1782885-1197-4e80-9fce-df45120a1b3a"/>
@@ -21957,14 +21959,18 @@ The threat agent was potentially able to:&#xD;
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="f8436dad-6c05-4e73-b624-6bd57b128386" targetConnections="c05c8a06-a0d1-4e21-97d3-d98cffeae76e" archimateElement="71efe8d8-63a4-4ae3-9f94-71e85c9128a3">
-        <bounds x="405" y="126" width="409" height="85"/>
+        <bounds x="405" y="126" width="460" height="85"/>
         <sourceConnection xsi:type="archimate:Connection" id="3d4dc2c4-8d14-4161-8d5b-b47c4baff49e" source="f8436dad-6c05-4e73-b624-6bd57b128386" target="ba301de9-f18b-48b3-b32d-30130f973840" archimateRelationship="72bd213f-c970-49aa-9ec8-3d4c026a3555"/>
         <sourceConnection xsi:type="archimate:Connection" id="effb366c-610d-45ca-a7d3-43fe0a277e55" source="f8436dad-6c05-4e73-b624-6bd57b128386" target="7053f02c-0b86-4fb4-83b5-fcc226ca3eaa" archimateRelationship="7a7eb73b-3d11-4e25-81d4-06c56bb4d714"/>
+        <sourceConnection xsi:type="archimate:Connection" id="37e2bbc0-05ce-4d3f-8cf4-c02f1001d46e" source="f8436dad-6c05-4e73-b624-6bd57b128386" target="feb90311-73b6-4e84-babe-f3f683f692cb" archimateRelationship="84f95aaa-ba05-4c50-a9e6-f7507548d5e3"/>
         <child xsi:type="archimate:DiagramObject" id="ba301de9-f18b-48b3-b32d-30130f973840" targetConnections="3d4dc2c4-8d14-4161-8d5b-b47c4baff49e" archimateElement="6751ca8a-33cb-4cf4-b919-54f43a9dd1c7">
-          <bounds x="204" y="36" width="120" height="43"/>
+          <bounds x="156" y="36" width="133" height="43"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="7053f02c-0b86-4fb4-83b5-fcc226ca3eaa" targetConnections="effb366c-610d-45ca-a7d3-43fe0a277e55" archimateElement="992719c7-0e95-40b7-96a4-8dda8c4536c5">
-          <bounds x="72" y="36" width="120" height="43"/>
+          <bounds x="12" y="36" width="133" height="43"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="feb90311-73b6-4e84-babe-f3f683f692cb" targetConnections="37e2bbc0-05ce-4d3f-8cf4-c02f1001d46e" archimateElement="ea2088fa-4554-4533-9160-8fb22c4db45c">
+          <bounds x="300" y="36" width="145" height="43"/>
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="47846165-c3c3-41cb-87c2-95d75a667424" targetConnections="e65935b6-eccc-4f2c-afdd-19f6ed1aab2c" archimateElement="2af1a90a-0c86-466e-86e7-028ca6fd7a18">
