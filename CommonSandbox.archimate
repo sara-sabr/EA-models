@@ -1797,6 +1797,47 @@ The ability to provide the technological needs to support the operational real-t
       <documentation>10.6.3 IT Service Management &amp; Operations&#xD;
 The ability to respond to interruptions to IT services to restore service levels.  For example: National Service Desk (NSD)</documentation>
     </element>
+    <element xsi:type="archimate:CourseOfAction" name="Present ESDC's WLM Journey (Course of Action)" id="id-01043803cfdd4b05b236ad443583199f">
+      <documentation>From: Peterson, Sophia &lt;Sophia.Peterson@tbs-sct.gc.ca> &#xD;
+Sent: July 28, 2021 2:13 PM&#xD;
+Subject: RE: ESDC - APM Data Assessment - discuss the 7 Technical Assessment questions &#xD;
+&#xD;
+- The current diagram shared should be dropped, as it just speaks to the SCED architecture, rather than the department’s WLM journey. It could always be kept for an annex to show basic cloud footprint&#xD;
+- We understand that there are 2 DCs that are implicated. Given that ESDC is so large, I’d suggest a Current State for each of the 2 DCs as a separate diagram. There doesn’t need to be 400+ boxes on each, but logical applications blocks. EX: we looked at something that had 6 rows of Cognos, that might just be a single “Enterprise Data Warehouse” box on that diagram&#xD;
+- 2 Target state diagrams showing where the applications from each data center will be living. EX: Cloud, EDC, SaaS&#xD;
+- Maybe that details list of apps in the annexes as a reference&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Consider 2 Current State Diagrams, 1 For Each DC (Course of Action)" id="id-45783cb281664e1e8732ed3aafcbd77a">
+      <documentation>From: Peterson, Sophia &lt;Sophia.Peterson@tbs-sct.gc.ca> &#xD;
+Sent: July 28, 2021 2:13 PM&#xD;
+Subject: RE: ESDC - APM Data Assessment - discuss the 7 Technical Assessment questions &#xD;
+&#xD;
+- The current diagram shared should be dropped, as it just speaks to the SCED architecture, rather than the department’s WLM journey. It could always be kept for an annex to show basic cloud footprint&#xD;
+- We understand that there are 2 DCs that are implicated. Given that ESDC is so large, I’d suggest a Current State for each of the 2 DCs as a separate diagram. There doesn’t need to be 400+ boxes on each, but logical applications blocks. EX: we looked at something that had 6 rows of Cognos, that might just be a single “Enterprise Data Warehouse” box on that diagram&#xD;
+- 2 Target state diagrams showing where the applications from each data center will be living. EX: Cloud, EDC, SaaS&#xD;
+- Maybe that details list of apps in the annexes as a reference</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Consider 2 Target State Diagrams, 1 For Each DC (Course of Action)" id="id-5a144e79070e48f0aff288245fd236bb">
+      <documentation>From: Peterson, Sophia &lt;Sophia.Peterson@tbs-sct.gc.ca> &#xD;
+Sent: July 28, 2021 2:13 PM&#xD;
+Subject: RE: ESDC - APM Data Assessment - discuss the 7 Technical Assessment questions &#xD;
+&#xD;
+- The current diagram shared should be dropped, as it just speaks to the SCED architecture, rather than the department’s WLM journey. It could always be kept for an annex to show basic cloud footprint&#xD;
+- We understand that there are 2 DCs that are implicated. Given that ESDC is so large, I’d suggest a Current State for each of the 2 DCs as a separate diagram. There doesn’t need to be 400+ boxes on each, but logical applications blocks. EX: we looked at something that had 6 rows of Cognos, that might just be a single “Enterprise Data Warehouse” box on that diagram&#xD;
+- 2 Target state diagrams showing where the applications from each data center will be living. EX: Cloud, EDC, SaaS&#xD;
+- Maybe that details list of apps in the annexes as a reference</documentation>
+    </element>
+    <element xsi:type="archimate:CourseOfAction" name="Include Detailed List of All Applications In Annex (Course of Action)" id="id-5cc2ec7785fa435d82b3df7bdd8c1f75">
+      <documentation>From: Peterson, Sophia &lt;Sophia.Peterson@tbs-sct.gc.ca> &#xD;
+Sent: July 28, 2021 2:13 PM&#xD;
+Subject: RE: ESDC - APM Data Assessment - discuss the 7 Technical Assessment questions &#xD;
+&#xD;
+- The current diagram shared should be dropped, as it just speaks to the SCED architecture, rather than the department’s WLM journey. It could always be kept for an annex to show basic cloud footprint&#xD;
+- We understand that there are 2 DCs that are implicated. Given that ESDC is so large, I’d suggest a Current State for each of the 2 DCs as a separate diagram. There doesn’t need to be 400+ boxes on each, but logical applications blocks. EX: we looked at something that had 6 rows of Cognos, that might just be a single “Enterprise Data Warehouse” box on that diagram&#xD;
+- 2 Target state diagrams showing where the applications from each data center will be living. EX: Cloud, EDC, SaaS&#xD;
+- Maybe that details list of apps in the annexes as a reference</documentation>
+    </element>
   </folder>
   <folder name="Business" id="b450b6a4-519b-4191-a289-4df897ca0a1b" type="business">
     <element xsi:type="archimate:BusinessFunction" name="Test" id="3e3bc277-1fea-40bd-bbc1-35dd96697b2a"/>
@@ -4781,7 +4822,8 @@ Source/URL: Refer to: https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html.</d
       <documentation>Name: A Blockchain System&#xD;
 Source/URL: For more information, refer to: https://en.wikipedia.org/wiki/Blockchain.</documentation>
     </element>
-    <element xsi:type="archimate:Facility" name="High Performance Computing (HPC) Data Centre (Facility)" id="id-758dcace32af475580175f2febf76cd5"/>
+    <element xsi:type="archimate:Facility" name="High Performance EDC (Dorval) (Facility)" id="id-758dcace32af475580175f2febf76cd5"/>
+    <element xsi:type="archimate:Facility" name="Borden EDC (Facility)" id="id-badee85dcd044c7caf8579611197fbae"/>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -9329,6 +9371,13 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:Grouping" name="WLM-and-CE Preliminary Risk Identification (Grouping)" id="id-5f44f7cd480f42e79770cb89c7c00380"/>
     <element xsi:type="archimate:Grouping" name="WLM-and-CE Solution Scope (Grouping)" id="id-cf35add8108c468f93b8a6f7144153e5"/>
     <element xsi:type="archimate:Grouping" name="Data Storage Systems (Grouping)" id="id-268f84f8bd7842f5b6b645b0c12a5eb3"/>
+    <element xsi:type="archimate:Grouping" name="EA CoP Presentation 2021-09-09 (Grouping)" id="id-6ad3a811fb0443288c6aa59c4d1f98f7">
+      <documentation>Content within this Grouping relates to work in preparation to present at the (GC) Enterprise Community of Practice, on 2021-09-09, as requested by the GC Chief Architect.&#xD;
+Includes:&#xD;
+ - Guidance from TBS (email).</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="EDC (Grouping)" id="id-83dea0a5024f4f039524dc9c485dda33"/>
+    <element xsi:type="archimate:Grouping" name="Legacy Data Centres (Grouping)" id="id-437f6c1fddb24c1c97ac642f45de1d75"/>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e307ac9a-b3a7-4aa5-9133-6cf506203141" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="b29c1bc0-9c06-4484-9748-d797806e08b7"/>
@@ -11534,6 +11583,14 @@ There are standards that apply to data analysis and transformation professionals
     <element xsi:type="archimate:CompositionRelationship" id="id-17f89d981a544da3a29e281f41246b03" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-385a28e8d5d24f1da1df25cc44bcc538"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-d1575d2a5f2b4ad2834fe80136b977fe" source="id-79d7cb736a2b437490e6d3a1903ce66d" target="id-8cc0f30d061b430bba284b594b9e9952"/>
     <element xsi:type="archimate:CompositionRelationship" id="84f95aaa-ba05-4c50-a9e6-f7507548d5e3" source="71efe8d8-63a4-4ae3-9f94-71e85c9128a3" target="ea2088fa-4554-4533-9160-8fb22c4db45c"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-83db6760044a4668a4db475587fd4c49" source="id-6ad3a811fb0443288c6aa59c4d1f98f7" target="id-01043803cfdd4b05b236ad443583199f"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-f3a39ef92da74abebdbec09dc568d302" source="id-6ad3a811fb0443288c6aa59c4d1f98f7" target="id-45783cb281664e1e8732ed3aafcbd77a"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-14717585ad504db2a5988a65dbab8a5b" source="id-6ad3a811fb0443288c6aa59c4d1f98f7" target="id-5a144e79070e48f0aff288245fd236bb"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-a44dae5e6c7e499db81fecef96bf271c" source="id-6ad3a811fb0443288c6aa59c4d1f98f7" target="id-5cc2ec7785fa435d82b3df7bdd8c1f75"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b4b950e801064b93a9a028e615ca15c6" source="id-83dea0a5024f4f039524dc9c485dda33" target="id-758dcace32af475580175f2febf76cd5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-626626c07c2c439f95158ac8edce44db" source="id-83dea0a5024f4f039524dc9c485dda33" target="id-badee85dcd044c7caf8579611197fbae"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3ee37f0262284963a5b7fddf951640fa" source="id-437f6c1fddb24c1c97ac642f45de1d75" target="id-a51e108a0d4d47648b0a10398ef0b180"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-9fdaac063c874eee9b77422067286c43" source="id-437f6c1fddb24c1c97ac642f45de1d75" target="id-d6ea559073f84d81b89fe59ed944c077"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -15682,7 +15739,16 @@ v.2021-06-24</content>
         </child>
         <child xsi:type="archimate:Note" id="id-e507a50d002a4613baf56a5937cb9034" fillColor="#d0feff" textPosition="1">
           <bounds x="623" y="48" width="109" height="25"/>
-          <content>v0.1.2021-07-27</content>
+          <content>v0.1.2021-08-04</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-a2be1dac39734f8294a4b6d79721fdcd" textAlignment="1">
+          <bounds x="744" y="9" width="216" height="54"/>
+          <content>Diagram Audience: All.&#xD;
+Diagram Purpose: A visual depiction of The Open Group's document (w211).</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-68fb9c2c52e34a7e9c140a1a9941dd47" font="1|Segoe UI|18.0|1|WINDOWS|1|-30|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#ff0000" textPosition="1">
+          <bounds x="972" y="16" width="109" height="40"/>
+          <content>DRAFT</content>
         </child>
         <documentation>Technical Standards for Data Integration (opengroup.org): https://publications.opengroup.org/white-papers/architecture/w211&#xD;
 Copy available in SP2010: https://dialogue/proj/ITCD-RMTI/SAS-SAS/Documents/Governance/Training/TOGAF%209.2/The%20Open%20Group%20Documents&#xD;
@@ -15741,10 +15807,10 @@ Project Number (Proposal ID) 202000009</content>
           <bounds x="312" y="156" width="120" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-20fa33e709a24b22bb75e8069f13d7e1" archimateElement="id-5554091ce3664339a25b3f3780000e42">
-          <bounds x="1077" y="164" width="136" height="80"/>
+          <bounds x="1232" y="164" width="136" height="80"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-01f6c78a631a45eab1a79a07d6d69237" archimateElement="id-34ba84092bcb4b61bfb9c8f2e6688a58">
-          <bounds x="1237" y="168" width="144" height="68"/>
+          <bounds x="1392" y="168" width="144" height="68"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-c1ad0771f2a6423bb14c76392a0829bd" archimateElement="id-16a5a718f984413c9bc342959c4b262a">
           <bounds x="24" y="547" width="146" height="58"/>
@@ -15753,13 +15819,13 @@ Project Number (Proposal ID) 202000009</content>
           <bounds x="24" y="604" width="146" height="86"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-627f9d209e57424294979ce568bdf33e" archimateElement="id-4e6854fec01141f08d4ff1bab15b2b6e">
-          <bounds x="1077" y="255" width="136" height="109"/>
+          <bounds x="1232" y="255" width="136" height="109"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-69f347c0f74f43e592cff0c7f65bbb1a" archimateElement="id-edf80f04d03e477a984314291ed477d6">
           <bounds x="24" y="689" width="146" height="72"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-c905795c29e94c918f3c4fc3278e5e28" archimateElement="id-8914b0220f7340be897582977028b5d2">
-          <bounds x="1404" y="168" width="136" height="91"/>
+          <bounds x="1559" y="168" width="136" height="91"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-bf734b56ca7348d893e32ef4472705ea" targetConnections="id-215ec47e27614d189d510ecdf052e081" archimateElement="id-7c9b49073a094837bda82f46ced73956">
           <bounds x="24" y="232" width="120" height="55"/>
@@ -15769,10 +15835,10 @@ Project Number (Proposal ID) 202000009</content>
           <bounds x="24" y="396" width="120" height="89"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-f6e37564f6354c97bf5a38b3c8d453a8" archimateElement="id-3eb54fa860a54ed2a7d688cef86abc42">
-          <bounds x="1077" y="369" width="136" height="55"/>
+          <bounds x="1232" y="369" width="136" height="55"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-83be2b7573e744a682d3b2b3f626a78b" archimateElement="id-4308ff622746457fb4e0964973587188">
-          <bounds x="1573" y="168" width="174" height="77"/>
+          <bounds x="1728" y="168" width="174" height="77"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-89f4028d463b4b53a351a8088be73681" textAlignment="1" archimateElement="id-a53da1addf054cf191924fd180b30149">
           <bounds x="420" y="504" width="481" height="112"/>
@@ -15941,12 +16007,6 @@ Project Number (Proposal ID) 202000009</content>
           <bounds x="804" y="375" width="145" height="73"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-a8af818fa7024840a9e8320cfc0aae3f" source="id-a8d5bfcf54c44484b67c6ef85e059e78" target="id-6b18603e33ab4a748ccce8fbec91c5f6" archimateRelationship="id-c0b87a3bcfd94cf58ba4d52becd60086"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-5f1709377b82460ba4beb7fcde770595" archimateElement="id-a51e108a0d4d47648b0a10398ef0b180">
-          <bounds x="552" y="161" width="120" height="70"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-70989ee99acc43cca07ddb2585902c05" archimateElement="id-d6ea559073f84d81b89fe59ed944c077">
-          <bounds x="685" y="161" width="120" height="70"/>
-        </child>
         <child xsi:type="archimate:DiagramObject" id="id-f0788893aef94cb5b835d2505a5e628c" textAlignment="1" archimateElement="id-cf35add8108c468f93b8a6f7144153e5">
           <bounds x="912" y="960" width="276" height="120"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-5f66b22b456b4fe49accda642040ed21" source="id-f0788893aef94cb5b835d2505a5e628c" target="id-76e09cea5cf9487983d04ad4edf8aab3" archimateRelationship="id-ba80b1009d6a48eb8dba3d7c01494301"/>
@@ -15957,9 +16017,6 @@ Project Number (Proposal ID) 202000009</content>
           <child xsi:type="archimate:DiagramObject" id="id-70dec0d52c20401c9771248c0e1eb46d" targetConnections="id-cc7d45b21e5b4bd9be2b4aa00160385d" archimateElement="id-037206963b0e46979e66a65ae46eabef">
             <bounds x="144" y="24" width="120" height="88"/>
           </child>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-d7a7b1f8843149638cd6c9328a829200" archimateElement="id-758dcace32af475580175f2febf76cd5">
-          <bounds x="824" y="162" width="161" height="83"/>
         </child>
         <child xsi:type="archimate:Note" id="id-3544f7dc15f34fa1bc197616ae6c040d" font="1|Segoe UI|18.0|1|WINDOWS|1|-30|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#ff0000" textPosition="1">
           <bounds x="812" y="36" width="149" height="73"/>
@@ -15973,6 +16030,47 @@ Diagram Purpose: For discussion purposes only (e.g. does the diagram depict the 
         <child xsi:type="archimate:Note" id="id-c8260a0ed049478c9e05fd1d3f8b60a0" textPosition="1">
           <bounds x="1181" y="94" width="86" height="27"/>
           <content>v0.1.20210727</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5dc5af5ca2e4462da4ca49e4f9258d7b" textAlignment="1" archimateElement="id-6ad3a811fb0443288c6aa59c4d1f98f7">
+          <bounds x="1396" y="299" width="277" height="265"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-84459d025b9d48a582b08282a59b6eff" source="id-5dc5af5ca2e4462da4ca49e4f9258d7b" target="id-942ccd61c60844438276133a28079c67" archimateRelationship="id-83db6760044a4668a4db475587fd4c49"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c6ab5d21b69d42299ebbc30b16501b6a" source="id-5dc5af5ca2e4462da4ca49e4f9258d7b" target="id-5053819ff89f4f22a014fbd75c20b460" archimateRelationship="id-f3a39ef92da74abebdbec09dc568d302"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3fea893033284be483fb6009961a78dc" source="id-5dc5af5ca2e4462da4ca49e4f9258d7b" target="id-0475c6dfba304a65a97cc2e0cb3c6c05" archimateRelationship="id-14717585ad504db2a5988a65dbab8a5b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-32bb57505db2491aadc3c94677fe2c10" source="id-5dc5af5ca2e4462da4ca49e4f9258d7b" target="id-1238a3109b494c25b2491326cb380bda" archimateRelationship="id-a44dae5e6c7e499db81fecef96bf271c"/>
+          <child xsi:type="archimate:DiagramObject" id="id-942ccd61c60844438276133a28079c67" targetConnections="id-84459d025b9d48a582b08282a59b6eff" archimateElement="id-01043803cfdd4b05b236ad443583199f">
+            <bounds x="144" y="32" width="120" height="89"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5053819ff89f4f22a014fbd75c20b460" targetConnections="id-c6ab5d21b69d42299ebbc30b16501b6a" archimateElement="id-45783cb281664e1e8732ed3aafcbd77a">
+            <bounds x="12" y="32" width="120" height="113"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0475c6dfba304a65a97cc2e0cb3c6c05" targetConnections="id-3fea893033284be483fb6009961a78dc" archimateElement="id-5a144e79070e48f0aff288245fd236bb">
+            <bounds x="12" y="156" width="120" height="97"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1238a3109b494c25b2491326cb380bda" targetConnections="id-32bb57505db2491aadc3c94677fe2c10" archimateElement="id-5cc2ec7785fa435d82b3df7bdd8c1f75">
+            <bounds x="144" y="132" width="120" height="121"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8f46508c04e94327bcd94e9f916ed5a8" textAlignment="1" archimateElement="id-83dea0a5024f4f039524dc9c485dda33">
+          <bounds x="756" y="135" width="300" height="109"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3e9223e948904ff8b8a4251916055c76" source="id-8f46508c04e94327bcd94e9f916ed5a8" target="id-d7a7b1f8843149638cd6c9328a829200" archimateRelationship="id-b4b950e801064b93a9a028e615ca15c6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8a4bfc62b4bb4dcb8f4e3fa0066bcb93" source="id-8f46508c04e94327bcd94e9f916ed5a8" target="id-df23b386b6d140a4a621eeb8f6ffc872" archimateRelationship="id-626626c07c2c439f95158ac8edce44db"/>
+          <child xsi:type="archimate:DiagramObject" id="id-d7a7b1f8843149638cd6c9328a829200" targetConnections="id-3e9223e948904ff8b8a4251916055c76" archimateElement="id-758dcace32af475580175f2febf76cd5">
+            <bounds x="12" y="26" width="149" height="71"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-df23b386b6d140a4a621eeb8f6ffc872" targetConnections="id-8a4bfc62b4bb4dcb8f4e3fa0066bcb93" archimateElement="id-badee85dcd044c7caf8579611197fbae">
+            <bounds x="168" y="27" width="120" height="70"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4b63fdb6f49c441cb22bdc3723826443" textAlignment="1" archimateElement="id-437f6c1fddb24c1c97ac642f45de1d75">
+          <bounds x="459" y="135" width="280" height="101"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-87e27e132408406188459768a3d3075a" source="id-4b63fdb6f49c441cb22bdc3723826443" target="id-5f1709377b82460ba4beb7fcde770595" archimateRelationship="id-3ee37f0262284963a5b7fddf951640fa"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3e5a18d818b34c6cb6f6923747805b56" source="id-4b63fdb6f49c441cb22bdc3723826443" target="id-70989ee99acc43cca07ddb2585902c05" archimateRelationship="id-9fdaac063c874eee9b77422067286c43"/>
+          <child xsi:type="archimate:DiagramObject" id="id-5f1709377b82460ba4beb7fcde770595" targetConnections="id-87e27e132408406188459768a3d3075a" archimateElement="id-a51e108a0d4d47648b0a10398ef0b180">
+            <bounds x="12" y="24" width="120" height="70"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-70989ee99acc43cca07ddb2585902c05" targetConnections="id-3e5a18d818b34c6cb6f6923747805b56" archimateElement="id-d6ea559073f84d81b89fe59ed944c077">
+            <bounds x="145" y="24" width="120" height="70"/>
+          </child>
         </child>
         <documentation>The Workload Migration (WLM) and Cloud Enablement project is seeking to address the migration of the majority of ESDCs applications that are currently hosted in legacy Shared Services Canada (SSC) data centres to Enterprise Data Centres or to Cloud, per the Government of Canada’s strategy to consolidate data centres across the Government of Canada (GC).&#xD;
 The existing legacy data centres no longer meet SSC standards that are now in place in Enterprise Data Centres, creating a risk to several aspects of these applications such as their infrastructure, operational risks, IT security, and network related risks. Applications hosted in legacy data centres may also be limited in implementing future business needs.&#xD;
