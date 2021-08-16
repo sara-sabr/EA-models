@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Workflow</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Workflow</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/327fcc7c-395b-474e-a7ac-d3f329db7960.png" alt="Workflow" usemap="#327fcc7c-395b-474e-a7ac-d3f329db7960map"/>
+			   <map name="327fcc7c-395b-474e-a7ac-d3f329db7960map">
+				  		<area shape="rect" coords="412,253,521,290" href="../elements/97c32fc8-565b-45c0-844b-f0be07ecb28c.html"  target="element">
+				  		<area shape="rect" coords="815,580,935,635" href="../elements/682f9f4b-4782-44c7-a0f7-47cc954cbf3a.html"  target="element">
+				  		<area shape="rect" coords="815,10,935,65" href="../elements/5b78c920-1ba7-486a-84b0-ece482388941.html"  target="element">
+				  		<area shape="rect" coords="419,358,539,413" href="../elements/a174a4b1-fd65-4108-a789-fa51c74a4ea7.html"  target="element">
+				  		<area shape="rect" coords="227,478,347,533" href="../elements/561fd4ee-d9fc-45ed-b225-67aa1a3f04b2.html"  target="element">
+				  		<area shape="rect" coords="227,358,347,413" href="../elements/713c57f1-22c9-468a-aad7-7a710c3d96ba.html"  target="element">
+				  		<area shape="rect" coords="227,244,347,299" href="../elements/d1eb3656-30df-4161-991d-fe855b26fa02.html"  target="element">
+				  		<area shape="rect" coords="227,118,347,173" href="../elements/f27bbafc-33e6-4097-a6b2-c8acb483b593.html"  target="element">
+				  		<area shape="rect" coords="419,172,539,227" href="../elements/302b536f-cd0f-445d-897d-96f04f6753f3.html"  target="element">
+				  		<area shape="rect" coords="11,580,131,635" href="../elements/1b5ef833-f9ac-4f1f-ae8e-65113aefa460.html"  target="element">
+				  		<area shape="rect" coords="10,466,130,521" href="../elements/f067a140-9a0c-4086-b85c-4c8db0c28033.html"  target="element">
+				  		<area shape="rect" coords="10,244,130,299" href="../elements/d20c711c-1db5-4741-85d6-c50c77353a5d.html"  target="element">
+				  		<area shape="rect" coords="11,358,131,413" href="../elements/b9aa09b0-2c31-4bf0-929e-19edda6e7f0e.html"  target="element">
+				  		<area shape="rect" coords="11,118,131,173" href="../elements/a639840c-7430-43ae-869c-f92a5a47f0db.html"  target="element">
+				  		<area shape="rect" coords="635,10,755,65" href="../elements/218e1dfb-a9ef-4c7c-b101-9fbbbeaa1089.html"  target="element">
+				  		<area shape="rect" coords="407,14,527,69" href="../elements/38a4a52e-ecb0-441a-9d6a-6e7126122e94.html"  target="element">
+				  		<area shape="rect" coords="215,14,335,69" href="../elements/9b6f577c-b1b9-41c9-b9d1-a4560c9dd8e5.html"  target="element">
+				  		<area shape="rect" coords="11,14,131,69" href="../elements/bf0b433d-fef5-4f58-8117-177ca0dac16e.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/bf0b433d-fef5-4f58-8117-177ca0dac16e.html" target="element"> Author </a> </td>
+											    <td> <a href="../elements/bf0b433d-fef5-4f58-8117-177ca0dac16e.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/9b6f577c-b1b9-41c9-b9d1-a4560c9dd8e5.html" target="element"> Team Lead </a> </td>
+											    <td> <a href="../elements/9b6f577c-b1b9-41c9-b9d1-a4560c9dd8e5.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/38a4a52e-ecb0-441a-9d6a-6e7126122e94.html" target="element"> Reviewers </a> </td>
+											    <td> <a href="../elements/38a4a52e-ecb0-441a-9d6a-6e7126122e94.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/218e1dfb-a9ef-4c7c-b101-9fbbbeaa1089.html" target="element"> Member </a> </td>
+											    <td> <a href="../elements/218e1dfb-a9ef-4c7c-b101-9fbbbeaa1089.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/a639840c-7430-43ae-869c-f92a5a47f0db.html" target="element"> Phase I - Initial Outline </a> </td>
+											    <td> <a href="../elements/a639840c-7430-43ae-869c-f92a5a47f0db.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/b9aa09b0-2c31-4bf0-929e-19edda6e7f0e.html" target="element"> Phase III - Inititial assembly </a> </td>
+											    <td> <a href="../elements/b9aa09b0-2c31-4bf0-929e-19edda6e7f0e.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/d20c711c-1db5-4741-85d6-c50c77353a5d.html" target="element"> Phase II - In-depth Research,  </a> </td>
+											    <td> <a href="../elements/d20c711c-1db5-4741-85d6-c50c77353a5d.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/f067a140-9a0c-4086-b85c-4c8db0c28033.html" target="element"> Phase III - Final assembly </a> </td>
+											    <td> <a href="../elements/f067a140-9a0c-4086-b85c-4c8db0c28033.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/1b5ef833-f9ac-4f1f-ae8e-65113aefa460.html" target="element"> Submit to publishing </a> </td>
+											    <td> <a href="../elements/1b5ef833-f9ac-4f1f-ae8e-65113aefa460.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/302b536f-cd0f-445d-897d-96f04f6753f3.html" target="element"> Internal interview (review) </a> </td>
+											    <td> <a href="../elements/302b536f-cd0f-445d-897d-96f04f6753f3.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/f27bbafc-33e6-4097-a6b2-c8acb483b593.html" target="element"> QR1/2 </a> </td>
+											    <td> <a href="../elements/f27bbafc-33e6-4097-a6b2-c8acb483b593.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/d1eb3656-30df-4161-991d-fe855b26fa02.html" target="element"> QR3/4 </a> </td>
+											    <td> <a href="../elements/d1eb3656-30df-4161-991d-fe855b26fa02.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/713c57f1-22c9-468a-aad7-7a710c3d96ba.html" target="element"> QR5 </a> </td>
+											    <td> <a href="../elements/713c57f1-22c9-468a-aad7-7a710c3d96ba.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/561fd4ee-d9fc-45ed-b225-67aa1a3f04b2.html" target="element"> QR6 </a> </td>
+											    <td> <a href="../elements/561fd4ee-d9fc-45ed-b225-67aa1a3f04b2.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/a174a4b1-fd65-4108-a789-fa51c74a4ea7.html" target="element"> review draft blueprint </a> </td>
+											    <td> <a href="../elements/a174a4b1-fd65-4108-a789-fa51c74a4ea7.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/5b78c920-1ba7-486a-84b0-ece482388941.html" target="element"> Workshop Team </a> </td>
+											    <td> <a href="../elements/5b78c920-1ba7-486a-84b0-ece482388941.html" target="element" class="i18n-elementtype-BusinessRole"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/682f9f4b-4782-44c7-a0f7-47cc954cbf3a.html" target="element"> Workshop=inize </a> </td>
+											    <td> <a href="../elements/682f9f4b-4782-44c7-a0f7-47cc954cbf3a.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/97c32fc8-565b-45c0-844b-f0be07ecb28c.html" target="element"> External Interviews </a> </td>
+											    <td> <a href="../elements/97c32fc8-565b-45c0-844b-f0be07ecb28c.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/e7a2f801-2dc7-44e5-a532-51eaf41c63b6.html" target="element">  </a> </td>
+																		<td> <a href="../elements/e7a2f801-2dc7-44e5-a532-51eaf41c63b6.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/a639840c-7430-43ae-869c-f92a5a47f0db.html" target="element"> Phase I - Initial Outline </a> </td>
+																		<td> <a href="../elements/f27bbafc-33e6-4097-a6b2-c8acb483b593.html" target="element"> QR1/2 </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/a4294893-f21d-44ab-9051-c7154c309129.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a4294893-f21d-44ab-9051-c7154c309129.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/b9aa09b0-2c31-4bf0-929e-19edda6e7f0e.html" target="element"> Phase III - Inititial assembly </a> </td>
+																		<td> <a href="../elements/713c57f1-22c9-468a-aad7-7a710c3d96ba.html" target="element"> QR5 </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/75ef6451-8691-45b8-91f8-a7c01d04ec89.html" target="element">  </a> </td>
+																		<td> <a href="../elements/75ef6451-8691-45b8-91f8-a7c01d04ec89.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/d20c711c-1db5-4741-85d6-c50c77353a5d.html" target="element"> Phase II - In-depth Research,  </a> </td>
+																		<td> <a href="../elements/d1eb3656-30df-4161-991d-fe855b26fa02.html" target="element"> QR3/4 </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/fa5920d8-8029-4d62-88db-18f194fcb468.html" target="element">  </a> </td>
+																		<td> <a href="../elements/fa5920d8-8029-4d62-88db-18f194fcb468.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/d20c711c-1db5-4741-85d6-c50c77353a5d.html" target="element"> Phase II - In-depth Research,  </a> </td>
+																		<td> <a href="../elements/97c32fc8-565b-45c0-844b-f0be07ecb28c.html" target="element"> External Interviews </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/cde0d8eb-77b8-4d0f-92f4-0d74c97b2e74.html" target="element">  </a> </td>
+																		<td> <a href="../elements/cde0d8eb-77b8-4d0f-92f4-0d74c97b2e74.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/f067a140-9a0c-4086-b85c-4c8db0c28033.html" target="element"> Phase III - Final assembly </a> </td>
+																		<td> <a href="../elements/561fd4ee-d9fc-45ed-b225-67aa1a3f04b2.html" target="element"> QR6 </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/2e603536-e185-4a71-8ce3-14be629bb7ab.html" target="element">  </a> </td>
+																		<td> <a href="../elements/2e603536-e185-4a71-8ce3-14be629bb7ab.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/1b5ef833-f9ac-4f1f-ae8e-65113aefa460.html" target="element"> Submit to publishing </a> </td>
+																		<td> <a href="../elements/682f9f4b-4782-44c7-a0f7-47cc954cbf3a.html" target="element"> Workshop=inize </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/57ed2b69-6894-41b6-ab09-9c0107376cda.html" target="element">  </a> </td>
+																		<td> <a href="../elements/57ed2b69-6894-41b6-ab09-9c0107376cda.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/302b536f-cd0f-445d-897d-96f04f6753f3.html" target="element"> Internal interview (review) </a> </td>
+																		<td> <a href="../elements/d20c711c-1db5-4741-85d6-c50c77353a5d.html" target="element"> Phase II - In-depth Research,  </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/40dc0060-65a0-4038-b9ca-ca227dd1128d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/40dc0060-65a0-4038-b9ca-ca227dd1128d.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/f27bbafc-33e6-4097-a6b2-c8acb483b593.html" target="element"> QR1/2 </a> </td>
+																		<td> <a href="../elements/302b536f-cd0f-445d-897d-96f04f6753f3.html" target="element"> Internal interview (review) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/6ab06d62-1d9a-4679-ba8c-e5c90ba11c9b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/6ab06d62-1d9a-4679-ba8c-e5c90ba11c9b.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/d1eb3656-30df-4161-991d-fe855b26fa02.html" target="element"> QR3/4 </a> </td>
+																		<td> <a href="../elements/b9aa09b0-2c31-4bf0-929e-19edda6e7f0e.html" target="element"> Phase III - Inititial assembly </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/40116917-e875-406c-a3c1-35bb019aeed1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/40116917-e875-406c-a3c1-35bb019aeed1.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/713c57f1-22c9-468a-aad7-7a710c3d96ba.html" target="element"> QR5 </a> </td>
+																		<td> <a href="../elements/a174a4b1-fd65-4108-a789-fa51c74a4ea7.html" target="element"> review draft blueprint </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/0a0135c3-6c0a-4782-8761-dfd375689753.html" target="element">  </a> </td>
+																		<td> <a href="../elements/0a0135c3-6c0a-4782-8761-dfd375689753.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/561fd4ee-d9fc-45ed-b225-67aa1a3f04b2.html" target="element"> QR6 </a> </td>
+																		<td> <a href="../elements/1b5ef833-f9ac-4f1f-ae8e-65113aefa460.html" target="element"> Submit to publishing </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/66bfddc7-27c9-4ef2-8180-212d0af08cfd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/66bfddc7-27c9-4ef2-8180-212d0af08cfd.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/a174a4b1-fd65-4108-a789-fa51c74a4ea7.html" target="element"> review draft blueprint </a> </td>
+																		<td> <a href="../elements/f067a140-9a0c-4086-b85c-4c8db0c28033.html" target="element"> Phase III - Final assembly </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/7668d91c-6279-4755-9c58-5d8cf2ee247f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/7668d91c-6279-4755-9c58-5d8cf2ee247f.html" target="element" class="i18n-elementtype-AssignmentRelationship"></a> </td>
+																		<td> <a href="../elements/5b78c920-1ba7-486a-84b0-ece482388941.html" target="element"> Workshop Team </a> </td>
+																		<td> <a href="../elements/682f9f4b-4782-44c7-a0f7-47cc954cbf3a.html" target="element"> Workshop=inize </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

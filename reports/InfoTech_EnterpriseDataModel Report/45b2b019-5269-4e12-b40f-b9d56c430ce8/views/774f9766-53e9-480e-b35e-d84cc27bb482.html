@@ -1,0 +1,458 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>1. Data Model Framework - with interfaces</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>1. Data Model Framework - with interfaces</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/774f9766-53e9-480e-b35e-d84cc27bb482.png" alt="1. Data Model Framework - with interfaces" usemap="#774f9766-53e9-480e-b35e-d84cc27bb482map"/>
+			   <map name="774f9766-53e9-480e-b35e-d84cc27bb482map">
+				  				<area shape="rect" coords="118,394,238,449" href="../elements/409b0d38-5fec-4818-8791-08cf5b7b858d.html"  target="element">
+				  				<area shape="rect" coords="274,394,394,449" href="../elements/f3c5e5a7-6c3d-4bd9-a578-0d44664d802c.html"  target="element">
+
+				  		<area shape="rect" coords="10,358,923,467" href="../elements/91ce56da-b1f7-4b0f-8ed9-fff01a58dfe4.html"  target="element">
+				  				<area shape="rect" coords="270,610,390,665" href="../elements/40896ee8-dab1-45d5-9d8f-c32a05b1ab35.html"  target="element">
+				  				<area shape="rect" coords="270,502,390,557" href="../elements/a856d41f-577c-472b-840a-1ceb83967955.html"  target="element">
+				  				<area shape="rect" coords="778,610,898,665" href="../elements/b1aa8b11-1a9e-4908-a237-6d37ee84c6c5.html"  target="element">
+				  				<area shape="rect" coords="634,610,754,665" href="../elements/579d3c5a-347c-4e3c-aa26-634a30fddb4d.html"  target="element">
+				  				<area shape="rect" coords="634,502,754,557" href="../elements/825dcf36-b215-44b7-a252-0acd4c0f2ba3.html"  target="element">
+				  				<area shape="rect" coords="418,502,538,557" href="../elements/73a1ae06-57b2-41e7-bae5-965c6813da45.html"  target="element">
+				  				<area shape="rect" coords="118,610,238,665" href="../elements/10967c43-c498-4535-bab9-6688b2cb1430.html"  target="element">
+				  				<area shape="rect" coords="118,502,238,557" href="../elements/b34099d4-0697-407a-a5f4-edf760b7fb40.html"  target="element">
+				  				<area shape="rect" coords="418,610,538,665" href="../elements/115dad62-c57e-430c-b90d-e9d574f4571e.html"  target="element">
+
+				  		<area shape="rect" coords="10,478,923,683" href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html"  target="element">
+				  				<area shape="rect" coords="502,46,622,101" href="../elements/7a478269-d4e8-4b21-b176-a2facb1f7699.html"  target="element">
+				  				<area shape="rect" coords="244,46,364,101" href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html"  target="element">
+
+				  		<area shape="rect" coords="10,10,923,119" href="../elements/05e8f194-112d-4eff-9384-441cbc364d2a.html"  target="element">
+				  				<area shape="rect" coords="622,274,742,329" href="../elements/1ccfd13b-01fa-4253-afff-7c1bff5246db.html"  target="element">
+				  				<area shape="rect" coords="622,178,742,233" href="../elements/bff056e4-e164-4472-91a8-012a7281bf22.html"  target="element">
+				  				<area shape="rect" coords="418,262,538,317" href="../elements/db859601-74d7-400d-8454-5039bfed9cc7.html"  target="element">
+				  				<area shape="rect" coords="418,178,538,233" href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html"  target="element">
+				  				<area shape="rect" coords="106,178,226,233" href="../elements/c5eee613-953b-4e5b-b502-b6c6fbe9aa36.html"  target="element">
+
+				  		<area shape="rect" coords="10,142,923,347" href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html" target="element"> Enteprise Layer </a> </td>
+											    <td> <a href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/c5eee613-953b-4e5b-b502-b6c6fbe9aa36.html" target="element"> Message Model </a> </td>
+													    <td> <a href="../elements/c5eee613-953b-4e5b-b502-b6c6fbe9aa36.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html" target="element"> Enterprise Logical Model </a> </td>
+													    <td> <a href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/db859601-74d7-400d-8454-5039bfed9cc7.html" target="element"> Enterprise Physical Model </a> </td>
+													    <td> <a href="../elements/db859601-74d7-400d-8454-5039bfed9cc7.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/bff056e4-e164-4472-91a8-012a7281bf22.html" target="element"> Analytical Logical Model </a> </td>
+													    <td> <a href="../elements/bff056e4-e164-4472-91a8-012a7281bf22.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/1ccfd13b-01fa-4253-afff-7c1bff5246db.html" target="element"> Analytical Physical Model </a> </td>
+													    <td> <a href="../elements/1ccfd13b-01fa-4253-afff-7c1bff5246db.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/05e8f194-112d-4eff-9384-441cbc364d2a.html" target="element"> Business Layer </a> </td>
+											    <td> <a href="../elements/05e8f194-112d-4eff-9384-441cbc364d2a.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html" target="element"> Conceptual Model </a> </td>
+													    <td> <a href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/7a478269-d4e8-4b21-b176-a2facb1f7699.html" target="element"> Business Data Glossary </a> </td>
+													    <td> <a href="../elements/7a478269-d4e8-4b21-b176-a2facb1f7699.html" target="element" class="i18n-elementtype-BusinessObject"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+											    <td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/115dad62-c57e-430c-b90d-e9d574f4571e.html" target="element"> DBMS DDL </a> </td>
+													    <td> <a href="../elements/115dad62-c57e-430c-b90d-e9d574f4571e.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/b34099d4-0697-407a-a5f4-edf760b7fb40.html" target="element"> Message Schema Model </a> </td>
+													    <td> <a href="../elements/b34099d4-0697-407a-a5f4-edf760b7fb40.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/10967c43-c498-4535-bab9-6688b2cb1430.html" target="element"> Payload Schema </a> </td>
+													    <td> <a href="../elements/10967c43-c498-4535-bab9-6688b2cb1430.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/73a1ae06-57b2-41e7-bae5-965c6813da45.html" target="element"> DBMS Specific Enterprise Physical Model </a> </td>
+													    <td> <a href="../elements/73a1ae06-57b2-41e7-bae5-965c6813da45.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/825dcf36-b215-44b7-a252-0acd4c0f2ba3.html" target="element"> Datamart Physical Model </a> </td>
+													    <td> <a href="../elements/825dcf36-b215-44b7-a252-0acd4c0f2ba3.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/579d3c5a-347c-4e3c-aa26-634a30fddb4d.html" target="element"> Datamart DDL </a> </td>
+													    <td> <a href="../elements/579d3c5a-347c-4e3c-aa26-634a30fddb4d.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/b1aa8b11-1a9e-4908-a237-6d37ee84c6c5.html" target="element"> Datamart load script </a> </td>
+													    <td> <a href="../elements/b1aa8b11-1a9e-4908-a237-6d37ee84c6c5.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/a856d41f-577c-472b-840a-1ceb83967955.html" target="element"> Application Physical Model </a> </td>
+													    <td> <a href="../elements/a856d41f-577c-472b-840a-1ceb83967955.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/40896ee8-dab1-45d5-9d8f-c32a05b1ab35.html" target="element"> DBMS DDL </a> </td>
+													    <td> <a href="../elements/40896ee8-dab1-45d5-9d8f-c32a05b1ab35.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/91ce56da-b1f7-4b0f-8ed9-fff01a58dfe4.html" target="element"> Application,Layer </a> </td>
+											    <td> <a href="../elements/91ce56da-b1f7-4b0f-8ed9-fff01a58dfe4.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/f3c5e5a7-6c3d-4bd9-a578-0d44664d802c.html" target="element"> Application Logical Model </a> </td>
+													    <td> <a href="../elements/f3c5e5a7-6c3d-4bd9-a578-0d44664d802c.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/409b0d38-5fec-4818-8791-08cf5b7b858d.html" target="element">  Interface Model </a> </td>
+													    <td> <a href="../elements/409b0d38-5fec-4818-8791-08cf5b7b858d.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/f413797b-5782-4dd7-a691-9aeacd6cb4a0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/f413797b-5782-4dd7-a691-9aeacd6cb4a0.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html" target="element"> Enteprise Layer </a> </td>
+																		<td> <a href="../elements/c5eee613-953b-4e5b-b502-b6c6fbe9aa36.html" target="element"> Message Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/ac8aaa2c-4617-4f7e-ae47-4e6f31ffa5ca.html" target="element">  </a> </td>
+																		<td> <a href="../elements/ac8aaa2c-4617-4f7e-ae47-4e6f31ffa5ca.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html" target="element"> Enteprise Layer </a> </td>
+																		<td> <a href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html" target="element"> Enterprise Logical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/1425a181-7da1-45ed-aa91-66f22f6e40f7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/1425a181-7da1-45ed-aa91-66f22f6e40f7.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html" target="element"> Enteprise Layer </a> </td>
+																		<td> <a href="../elements/db859601-74d7-400d-8454-5039bfed9cc7.html" target="element"> Enterprise Physical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/08a9863a-3edb-4b3f-8a0f-cc6d4645e955.html" target="element">  </a> </td>
+																		<td> <a href="../elements/08a9863a-3edb-4b3f-8a0f-cc6d4645e955.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html" target="element"> Enteprise Layer </a> </td>
+																		<td> <a href="../elements/bff056e4-e164-4472-91a8-012a7281bf22.html" target="element"> Analytical Logical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/591d4424-6146-4045-bb20-4cd1b4493167.html" target="element">  </a> </td>
+																		<td> <a href="../elements/591d4424-6146-4045-bb20-4cd1b4493167.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/292fdd90-052d-4308-81b1-1ec58cbdce98.html" target="element"> Enteprise Layer </a> </td>
+																		<td> <a href="../elements/1ccfd13b-01fa-4253-afff-7c1bff5246db.html" target="element"> Analytical Physical Model </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/293231ab-e47f-4781-9c6a-7c3cde3da3c1.html" target="element"> Transformed from </a> </td>
+																				<td> <a href="../elements/293231ab-e47f-4781-9c6a-7c3cde3da3c1.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/c5eee613-953b-4e5b-b502-b6c6fbe9aa36.html" target="element"> Message Model </a> </td>
+																				<td> <a href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html" target="element"> Conceptual Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/bc53841d-3545-43d5-bd73-579146112082.html" target="element"> Transformed from </a> </td>
+																				<td> <a href="../elements/bc53841d-3545-43d5-bd73-579146112082.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html" target="element"> Enterprise Logical Model </a> </td>
+																				<td> <a href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html" target="element"> Conceptual Model </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/996d01e7-1263-4edd-97d4-9e802d7a5900.html" target="element"> Transformed into </a> </td>
+																				<td> <a href="../elements/996d01e7-1263-4edd-97d4-9e802d7a5900.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																				<td> <a href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html" target="element"> Enterprise Logical Model </a> </td>
+																				<td> <a href="../elements/db859601-74d7-400d-8454-5039bfed9cc7.html" target="element"> Enterprise Physical Model </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/e9074a0a-4464-4852-8fd3-cdca21923f17.html" target="element">  </a> </td>
+																				<td> <a href="../elements/e9074a0a-4464-4852-8fd3-cdca21923f17.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																				<td> <a href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html" target="element"> Enterprise Logical Model </a> </td>
+																				<td> <a href="../elements/f3c5e5a7-6c3d-4bd9-a578-0d44664d802c.html" target="element"> Application Logical Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/aa30d3f7-09dd-452e-98b7-f264d36d47ab.html" target="element"> Derived from </a> </td>
+																				<td> <a href="../elements/aa30d3f7-09dd-452e-98b7-f264d36d47ab.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																				<td> <a href="../elements/bff056e4-e164-4472-91a8-012a7281bf22.html" target="element"> Analytical Logical Model </a> </td>
+																				<td> <a href="../elements/291c3951-f203-4889-a922-1ae0d872e748.html" target="element"> Enterprise Logical Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/69556083-a914-4bc8-ab65-f7ff0d3478dd.html" target="element"> Transformed into </a> </td>
+																				<td> <a href="../elements/69556083-a914-4bc8-ab65-f7ff0d3478dd.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																				<td> <a href="../elements/1ccfd13b-01fa-4253-afff-7c1bff5246db.html" target="element"> Analytical Physical Model </a> </td>
+																				<td> <a href="../elements/bff056e4-e164-4472-91a8-012a7281bf22.html" target="element"> Analytical Logical Model </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/87dbb683-afbd-4f5a-b665-6e6e8eb11f30.html" target="element">  </a> </td>
+																		<td> <a href="../elements/87dbb683-afbd-4f5a-b665-6e6e8eb11f30.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/05e8f194-112d-4eff-9384-441cbc364d2a.html" target="element"> Business Layer </a> </td>
+																		<td> <a href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html" target="element"> Conceptual Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a3b4c199-d057-4802-8b64-6c4eec0e3295.html" target="element">  </a> </td>
+																		<td> <a href="../elements/a3b4c199-d057-4802-8b64-6c4eec0e3295.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/05e8f194-112d-4eff-9384-441cbc364d2a.html" target="element"> Business Layer </a> </td>
+																		<td> <a href="../elements/7a478269-d4e8-4b21-b176-a2facb1f7699.html" target="element"> Business Data Glossary </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/7eae57f9-cb71-4f15-bb32-794c43d8d26a.html" target="element"> based on </a> </td>
+																				<td> <a href="../elements/7eae57f9-cb71-4f15-bb32-794c43d8d26a.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																				<td> <a href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html" target="element"> Conceptual Model </a> </td>
+																				<td> <a href="../elements/7a478269-d4e8-4b21-b176-a2facb1f7699.html" target="element"> Business Data Glossary </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/6ebb3353-e944-43ab-ad42-b38985568028.html" target="element">  </a> </td>
+																		<td> <a href="../elements/6ebb3353-e944-43ab-ad42-b38985568028.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/115dad62-c57e-430c-b90d-e9d574f4571e.html" target="element"> DBMS DDL </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/f6bb28fa-b6a8-44fd-84fb-0fa6de4f10b9.html" target="element">  </a> </td>
+																		<td> <a href="../elements/f6bb28fa-b6a8-44fd-84fb-0fa6de4f10b9.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/b34099d4-0697-407a-a5f4-edf760b7fb40.html" target="element"> Message Schema Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/7e5ea093-3605-4acd-90fe-033851a7f5af.html" target="element">  </a> </td>
+																		<td> <a href="../elements/7e5ea093-3605-4acd-90fe-033851a7f5af.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/10967c43-c498-4535-bab9-6688b2cb1430.html" target="element"> Payload Schema </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/d5e46e7d-e6d9-4488-8fae-141e11e49634.html" target="element">  </a> </td>
+																		<td> <a href="../elements/d5e46e7d-e6d9-4488-8fae-141e11e49634.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/73a1ae06-57b2-41e7-bae5-965c6813da45.html" target="element"> DBMS Specific Enterprise Physical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/7ccf69d8-f9a2-4690-99c0-321216c5b85c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/7ccf69d8-f9a2-4690-99c0-321216c5b85c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/825dcf36-b215-44b7-a252-0acd4c0f2ba3.html" target="element"> Datamart Physical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/ca7e8eff-24bc-4786-a55e-b76e7090230d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/ca7e8eff-24bc-4786-a55e-b76e7090230d.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/579d3c5a-347c-4e3c-aa26-634a30fddb4d.html" target="element"> Datamart DDL </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/157232eb-f165-4eb8-b4a1-86b13aad585c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/157232eb-f165-4eb8-b4a1-86b13aad585c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/a856d41f-577c-472b-840a-1ceb83967955.html" target="element"> Application Physical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/ef84471d-9db4-460c-bb78-a18dbe52998e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/ef84471d-9db4-460c-bb78-a18dbe52998e.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/26bbcdd8-7915-4b75-a23c-a51df3d2e849.html" target="element"> Implementation Layer </a> </td>
+																		<td> <a href="../elements/40896ee8-dab1-45d5-9d8f-c32a05b1ab35.html" target="element"> DBMS DDL </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/b04ff69e-b040-4384-876d-5982c9a3f9c8.html" target="element"> Generated from </a> </td>
+																				<td> <a href="../elements/b04ff69e-b040-4384-876d-5982c9a3f9c8.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/115dad62-c57e-430c-b90d-e9d574f4571e.html" target="element"> DBMS DDL </a> </td>
+																				<td> <a href="../elements/73a1ae06-57b2-41e7-bae5-965c6813da45.html" target="element"> DBMS Specific Enterprise Physical Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/58326c81-341b-4c45-975c-325f89e478d8.html" target="element"> Generated from </a> </td>
+																				<td> <a href="../elements/58326c81-341b-4c45-975c-325f89e478d8.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/10967c43-c498-4535-bab9-6688b2cb1430.html" target="element"> Payload Schema </a> </td>
+																				<td> <a href="../elements/b34099d4-0697-407a-a5f4-edf760b7fb40.html" target="element"> Message Schema Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/5c1eca56-882b-45fb-9ed5-71573eb709fe.html" target="element"> subset of </a> </td>
+																				<td> <a href="../elements/5c1eca56-882b-45fb-9ed5-71573eb709fe.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																				<td> <a href="../elements/73a1ae06-57b2-41e7-bae5-965c6813da45.html" target="element"> DBMS Specific Enterprise Physical Model </a> </td>
+																				<td> <a href="../elements/db859601-74d7-400d-8454-5039bfed9cc7.html" target="element"> Enterprise Physical Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/849a569b-141b-4904-8270-2564df611168.html" target="element"> subset of </a> </td>
+																				<td> <a href="../elements/849a569b-141b-4904-8270-2564df611168.html" target="element" class="i18n-elementtype-SpecializationRelationship"></a> </td>
+																				<td> <a href="../elements/825dcf36-b215-44b7-a252-0acd4c0f2ba3.html" target="element"> Datamart Physical Model </a> </td>
+																				<td> <a href="../elements/1ccfd13b-01fa-4253-afff-7c1bff5246db.html" target="element"> Analytical Physical Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/cc85bf70-007a-43e7-8d43-9713f3861a72.html" target="element"> Generated from </a> </td>
+																				<td> <a href="../elements/cc85bf70-007a-43e7-8d43-9713f3861a72.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/579d3c5a-347c-4e3c-aa26-634a30fddb4d.html" target="element"> Datamart DDL </a> </td>
+																				<td> <a href="../elements/825dcf36-b215-44b7-a252-0acd4c0f2ba3.html" target="element"> Datamart Physical Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/6489d472-ef4e-4730-ab0a-d7a18ec6ca3f.html" target="element"> Generated from </a> </td>
+																				<td> <a href="../elements/6489d472-ef4e-4730-ab0a-d7a18ec6ca3f.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/b1aa8b11-1a9e-4908-a237-6d37ee84c6c5.html" target="element"> Datamart load script </a> </td>
+																				<td> <a href="../elements/1ccfd13b-01fa-4253-afff-7c1bff5246db.html" target="element"> Analytical Physical Model </a> </td>
+																			</tr>
+
+																			<tr>
+																				<td> <a href="../elements/b0b4c77a-8ee5-46c3-afc1-44444ea71a41.html" target="element"> Generated from </a> </td>
+																				<td> <a href="../elements/b0b4c77a-8ee5-46c3-afc1-44444ea71a41.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/40896ee8-dab1-45d5-9d8f-c32a05b1ab35.html" target="element"> DBMS DDL </a> </td>
+																				<td> <a href="../elements/a856d41f-577c-472b-840a-1ceb83967955.html" target="element"> Application Physical Model </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/819c3823-0f26-4ebb-99c1-7f000d0193ce.html" target="element">  </a> </td>
+																		<td> <a href="../elements/819c3823-0f26-4ebb-99c1-7f000d0193ce.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/91ce56da-b1f7-4b0f-8ed9-fff01a58dfe4.html" target="element"> Application,Layer </a> </td>
+																		<td> <a href="../elements/f3c5e5a7-6c3d-4bd9-a578-0d44664d802c.html" target="element"> Application Logical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/01e75c26-0b80-47c0-afbe-c9020d839258.html" target="element">  </a> </td>
+																		<td> <a href="../elements/01e75c26-0b80-47c0-afbe-c9020d839258.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/91ce56da-b1f7-4b0f-8ed9-fff01a58dfe4.html" target="element"> Application,Layer </a> </td>
+																		<td> <a href="../elements/409b0d38-5fec-4818-8791-08cf5b7b858d.html" target="element">  Interface Model </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/b65760c4-bfa1-4516-922d-1692f98ac4ef.html" target="element"> derive </a> </td>
+																				<td> <a href="../elements/b65760c4-bfa1-4516-922d-1692f98ac4ef.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																				<td> <a href="../elements/f3c5e5a7-6c3d-4bd9-a578-0d44664d802c.html" target="element"> Application Logical Model </a> </td>
+																				<td> <a href="../elements/eff6bebe-0a4b-4dfc-98fb-456491344c38.html" target="element"> Conceptual Model </a> </td>
+																			</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
