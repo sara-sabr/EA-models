@@ -1,0 +1,263 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Domain Modelling</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Domain Modelling</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/3aacd45d-ab35-4dc7-8f38-8c6b8c0ff4a9.png" alt="Domain Modelling" usemap="#3aacd45d-ab35-4dc7-8f38-8c6b8c0ff4a9map"/>
+			   <map name="3aacd45d-ab35-4dc7-8f38-8c6b8c0ff4a9map">
+				          <area shape="rect" coords="470,341,828,462" href="../objects/5000344f-c244-4f33-b9f8-06b3b778e8c2.html" target="element" >
+				          <area shape="rect" coords="286,10,471,90" href="../objects/b78ce79b-5a3f-4e1c-9752-a0b5f15c4c9c.html" target="element" >
+				  		<area shape="rect" coords="10,341,94,378" href="../elements/5812b3cc-dc3d-497a-9d2f-cd9a2f34faa6.html"  target="element">
+				  		<area shape="rect" coords="339,395,418,426" href="../elements/4e0aa186-a95f-4415-af15-312ce9288ec8.html"  target="element">
+				  		<area shape="rect" coords="370,149,449,184" href="../elements/3aa85df7-a970-40f6-bc8f-29a9b88ca926.html"  target="element">
+				  		<area shape="rect" coords="318,317,439,366" href="../elements/c8b452ce-1a44-465e-a02b-2195cac3ae7a.html"  target="element">
+				  		<area shape="rect" coords="82,281,203,330" href="../elements/eb8651af-e9b6-4403-97ee-4b4ab3fb27bf.html"  target="element">
+				  		<area shape="rect" coords="318,210,439,258" href="../elements/37dec66a-59e5-4386-913b-803c595fb0e1.html"  target="element">
+				  				<area shape="rect" coords="538,161,647,198" href="../elements/55483854-726b-4544-8cd3-fb3da7ddfadf.html"  target="element">
+
+				  		<area shape="rect" coords="502,113,695,210" href="../elements/513b5171-69a5-4912-9823-3666d3fcd3cf.html"  target="element">
+				  		<area shape="rect" coords="22,437,215,534" href="../elements/5f2436fd-8b41-4ebc-a81b-679d7f639508.html"  target="element">
+				  				<area shape="rect" coords="70,161,179,198" href="../elements/955b31f9-d918-4aaf-9d1b-01b65ba7e2fe.html"  target="element">
+
+				  		<area shape="rect" coords="22,113,215,210" href="../elements/e546a8c2-8d13-4359-a52d-aa7a91a50a40.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/e546a8c2-8d13-4359-a52d-aa7a91a50a40.html" target="element"> Sales Domain </a> </td>
+											    <td> <a href="../elements/e546a8c2-8d13-4359-a52d-aa7a91a50a40.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/955b31f9-d918-4aaf-9d1b-01b65ba7e2fe.html" target="element"> Customer </a> </td>
+													    <td> <a href="../elements/955b31f9-d918-4aaf-9d1b-01b65ba7e2fe.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/5f2436fd-8b41-4ebc-a81b-679d7f639508.html" target="element"> Fulfillment Domain </a> </td>
+											    <td> <a href="../elements/5f2436fd-8b41-4ebc-a81b-679d7f639508.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/513b5171-69a5-4912-9823-3666d3fcd3cf.html" target="element"> Manufacturing Domain </a> </td>
+											    <td> <a href="../elements/513b5171-69a5-4912-9823-3666d3fcd3cf.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/55483854-726b-4544-8cd3-fb3da7ddfadf.html" target="element"> Customer </a> </td>
+													    <td> <a href="../elements/55483854-726b-4544-8cd3-fb3da7ddfadf.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/37dec66a-59e5-4386-913b-803c595fb0e1.html" target="element"> Mfg-Sales Interface </a> </td>
+											    <td> <a href="../elements/37dec66a-59e5-4386-913b-803c595fb0e1.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/eb8651af-e9b6-4403-97ee-4b4ab3fb27bf.html" target="element"> Sales Interface </a> </td>
+											    <td> <a href="../elements/eb8651af-e9b6-4403-97ee-4b4ab3fb27bf.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/c8b452ce-1a44-465e-a02b-2195cac3ae7a.html" target="element"> Mfg Interface </a> </td>
+											    <td> <a href="../elements/c8b452ce-1a44-465e-a02b-2195cac3ae7a.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/3aa85df7-a970-40f6-bc8f-29a9b88ca926.html" target="element"> ??? cust </a> </td>
+											    <td> <a href="../elements/3aa85df7-a970-40f6-bc8f-29a9b88ca926.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/4e0aa186-a95f-4415-af15-312ce9288ec8.html" target="element"> mfg cust </a> </td>
+											    <td> <a href="../elements/4e0aa186-a95f-4415-af15-312ce9288ec8.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/5812b3cc-dc3d-497a-9d2f-cd9a2f34faa6.html" target="element"> sales cust </a> </td>
+											    <td> <a href="../elements/5812b3cc-dc3d-497a-9d2f-cd9a2f34faa6.html" target="element" class="i18n-elementtype-Artifact"> </a> </td>
+											</tr>
+
+									        <tr>
+									           <td> <a href="../objects/b78ce79b-5a3f-4e1c-9752-a0b5f15c4c9c.html" target="element">  </a> </td>
+									           <td> <a href="../objects/b78ce79b-5a3f-4e1c-9752-a0b5f15c4c9c.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/5000344f-c244-4f33-b9f8-06b3b778e8c2.html" target="element">  </a> </td>
+									           <td> <a href="../objects/5000344f-c244-4f33-b9f8-06b3b778e8c2.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/8ef0ff16-1055-46e0-b657-1f05bc7f7d86.html" target="element">  </a> </td>
+																		<td> <a href="../elements/8ef0ff16-1055-46e0-b657-1f05bc7f7d86.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/e546a8c2-8d13-4359-a52d-aa7a91a50a40.html" target="element"> Sales Domain </a> </td>
+																		<td> <a href="../elements/955b31f9-d918-4aaf-9d1b-01b65ba7e2fe.html" target="element"> Customer </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/a978bb4e-900c-45c7-bc16-76799afc63d8.html" target="element"> serves </a> </td>
+																		<td> <a href="../elements/a978bb4e-900c-45c7-bc16-76799afc63d8.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/e546a8c2-8d13-4359-a52d-aa7a91a50a40.html" target="element"> Sales Domain </a> </td>
+																		<td> <a href="../elements/eb8651af-e9b6-4403-97ee-4b4ab3fb27bf.html" target="element"> Sales Interface </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/f26e64a8-38b0-4d36-9d9c-5975b3e84430.html" target="element"> request </a> </td>
+																		<td> <a href="../elements/f26e64a8-38b0-4d36-9d9c-5975b3e84430.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/e546a8c2-8d13-4359-a52d-aa7a91a50a40.html" target="element"> Sales Domain </a> </td>
+																		<td> <a href="../elements/37dec66a-59e5-4386-913b-803c595fb0e1.html" target="element"> Mfg-Sales Interface </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/7a68775d-808b-4444-9518-ddf0ea3a1b8a.html" target="element"> request </a> </td>
+																		<td> <a href="../elements/7a68775d-808b-4444-9518-ddf0ea3a1b8a.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/5f2436fd-8b41-4ebc-a81b-679d7f639508.html" target="element"> Fulfillment Domain </a> </td>
+																		<td> <a href="../elements/eb8651af-e9b6-4403-97ee-4b4ab3fb27bf.html" target="element"> Sales Interface </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/7a808fb9-d7af-4490-b09a-d0dccf55272c.html" target="element"> request </a> </td>
+																		<td> <a href="../elements/7a808fb9-d7af-4490-b09a-d0dccf55272c.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/5f2436fd-8b41-4ebc-a81b-679d7f639508.html" target="element"> Fulfillment Domain </a> </td>
+																		<td> <a href="../elements/c8b452ce-1a44-465e-a02b-2195cac3ae7a.html" target="element"> Mfg Interface </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/f60da70f-4105-467b-9bf2-193f21f701a7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/f60da70f-4105-467b-9bf2-193f21f701a7.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/513b5171-69a5-4912-9823-3666d3fcd3cf.html" target="element"> Manufacturing Domain </a> </td>
+																		<td> <a href="../elements/55483854-726b-4544-8cd3-fb3da7ddfadf.html" target="element"> Customer </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/8354c40f-9025-4c3d-a124-5f2575687732.html" target="element"> serves </a> </td>
+																		<td> <a href="../elements/8354c40f-9025-4c3d-a124-5f2575687732.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/513b5171-69a5-4912-9823-3666d3fcd3cf.html" target="element"> Manufacturing Domain </a> </td>
+																		<td> <a href="../elements/37dec66a-59e5-4386-913b-803c595fb0e1.html" target="element"> Mfg-Sales Interface </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/8e0810fa-88c6-4c22-8dd0-e79baa3634ed.html" target="element"> serves </a> </td>
+																		<td> <a href="../elements/8e0810fa-88c6-4c22-8dd0-e79baa3634ed.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/513b5171-69a5-4912-9823-3666d3fcd3cf.html" target="element"> Manufacturing Domain </a> </td>
+																		<td> <a href="../elements/c8b452ce-1a44-465e-a02b-2195cac3ae7a.html" target="element"> Mfg Interface </a> </td>
+																	</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/e0182e98-411c-49ec-ac79-7bee4705fbd1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/e0182e98-411c-49ec-ac79-7bee4705fbd1.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/3aa85df7-a970-40f6-bc8f-29a9b88ca926.html" target="element"> ??? cust </a> </td>
+																		<td> <a href="../elements/37dec66a-59e5-4386-913b-803c595fb0e1.html" target="element"> Mfg-Sales Interface </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/4990f50e-cfec-4e0e-be56-080bef4e6e12.html" target="element">  </a> </td>
+																		<td> <a href="../elements/4990f50e-cfec-4e0e-be56-080bef4e6e12.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/4e0aa186-a95f-4415-af15-312ce9288ec8.html" target="element"> mfg cust </a> </td>
+																		<td> <a href="../elements/c8b452ce-1a44-465e-a02b-2195cac3ae7a.html" target="element"> Mfg Interface </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/5105d74a-07f0-48c9-a5a6-8a64e63c9f5a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/5105d74a-07f0-48c9-a5a6-8a64e63c9f5a.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/5812b3cc-dc3d-497a-9d2f-cd9a2f34faa6.html" target="element"> sales cust </a> </td>
+																		<td> <a href="../elements/eb8651af-e9b6-4403-97ee-4b4ab3fb27bf.html" target="element"> Sales Interface </a> </td>
+																	</tr>
+
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

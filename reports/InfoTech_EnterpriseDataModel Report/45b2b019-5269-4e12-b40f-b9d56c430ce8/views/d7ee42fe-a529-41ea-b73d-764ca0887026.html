@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>3. Model Design Workflow - Thought Model</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>3. Model Design Workflow - Thought Model</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/d7ee42fe-a529-41ea-b73d-764ca0887026.png" alt="3. Model Design Workflow - Thought Model" usemap="#d7ee42fe-a529-41ea-b73d-764ca0887026map"/>
+			   <map name="d7ee42fe-a529-41ea-b73d-764ca0887026map">
+				  				<area shape="rect" coords="1678,130,1798,185" href="../elements/f3a5b54a-578a-4dfa-be6b-5f69d3b4b858.html"  target="element">
+				  				<area shape="rect" coords="1462,130,1582,185" href="../elements/f157a1cc-1864-4235-8ddd-2a98f252c98a.html"  target="element">
+
+				  		<area shape="rect" coords="1438,10,1849,286" href="../elements/51699638-17d2-4ea2-b080-c80081c6349d.html"  target="element">
+				  				<area shape="rect" coords="1174,130,1294,185" href="../elements/0fcac9e3-e2d2-4dc5-a9a8-c7be6f907e36.html"  target="element">
+				  				<area shape="rect" coords="1006,130,1126,185" href="../elements/298c0bdb-4d51-4214-b4df-9c83ec88ef69.html"  target="element">
+
+				  		<area shape="rect" coords="982,10,1393,286" href="../elements/a409c7b2-4f94-4e1d-b313-8e1b7f7d2e36.html"  target="element">
+				  				<area shape="rect" coords="574,118,707,191" href="../elements/d01b5e5c-faee-4ac9-a926-170e76e1d2c4.html"  target="element">
+				  				<area shape="rect" coords="754,123,898,186" href="../elements/7e0b0594-d477-40d7-bf03-a4d2ccbbae12.html"  target="element">
+
+				  		<area shape="rect" coords="538,10,949,286" href="../elements/4fcac57e-8e0e-400d-95aa-92b6fee53435.html"  target="element">
+				  				<area shape="rect" coords="346,136,466,191" href="../elements/73cb75bf-e095-46b7-ac43-74c2ceaa1b4e.html"  target="element">
+				  				<area shape="rect" coords="22,136,142,191" href="../elements/1e0e3e26-d75d-4cd9-b408-07b8ee410fc4.html"  target="element">
+				  				<area shape="rect" coords="178,170,298,225" href="../elements/20b1bc1f-d020-4b42-8890-5eed0f69446c.html"  target="element">
+				  				<area shape="rect" coords="178,94,298,149" href="../elements/5563521d-5fd1-4052-9e46-e4860367492d.html"  target="element">
+
+				  		<area shape="rect" coords="10,22,503,298" href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html" target="element"> Create/Extend Conceptual model </a> </td>
+											    <td> <a href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/5563521d-5fd1-4052-9e46-e4860367492d.html" target="element"> Harvest reference models </a> </td>
+													    <td> <a href="../elements/5563521d-5fd1-4052-9e46-e4860367492d.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/20b1bc1f-d020-4b42-8890-5eed0f69446c.html" target="element"> Harvest existing models &amp; DBMS </a> </td>
+													    <td> <a href="../elements/20b1bc1f-d020-4b42-8890-5eed0f69446c.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/1e0e3e26-d75d-4cd9-b408-07b8ee410fc4.html" target="element"> Identify business domains </a> </td>
+													    <td> <a href="../elements/1e0e3e26-d75d-4cd9-b408-07b8ee410fc4.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/73cb75bf-e095-46b7-ac43-74c2ceaa1b4e.html" target="element"> Create/Extend Conceptual Model </a> </td>
+													    <td> <a href="../elements/73cb75bf-e095-46b7-ac43-74c2ceaa1b4e.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/4fcac57e-8e0e-400d-95aa-92b6fee53435.html" target="element"> Create/Extend Enterprise Logical Model </a> </td>
+											    <td> <a href="../elements/4fcac57e-8e0e-400d-95aa-92b6fee53435.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/7e0b0594-d477-40d7-bf03-a4d2ccbbae12.html" target="element"> Create/extend logical model </a> </td>
+													    <td> <a href="../elements/7e0b0594-d477-40d7-bf03-a4d2ccbbae12.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/d01b5e5c-faee-4ac9-a926-170e76e1d2c4.html" target="element"> Conceptual -&gt;Logical transformation </a> </td>
+													    <td> <a href="../elements/d01b5e5c-faee-4ac9-a926-170e76e1d2c4.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/a409c7b2-4f94-4e1d-b313-8e1b7f7d2e36.html" target="element"> Create/Extend Enterprise Physical Model </a> </td>
+											    <td> <a href="../elements/a409c7b2-4f94-4e1d-b313-8e1b7f7d2e36.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/298c0bdb-4d51-4214-b4df-9c83ec88ef69.html" target="element"> Logical-&gt;Physical Transformation </a> </td>
+													    <td> <a href="../elements/298c0bdb-4d51-4214-b4df-9c83ec88ef69.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/0fcac9e3-e2d2-4dc5-a9a8-c7be6f907e36.html" target="element"> Refine Physical model </a> </td>
+													    <td> <a href="../elements/0fcac9e3-e2d2-4dc5-a9a8-c7be6f907e36.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/51699638-17d2-4ea2-b080-c80081c6349d.html" target="element"> Create/Maintain Vendor enterprise Physical Model </a> </td>
+											    <td> <a href="../elements/51699638-17d2-4ea2-b080-c80081c6349d.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/f157a1cc-1864-4235-8ddd-2a98f252c98a.html" target="element"> Transform to Vendor Physical Model </a> </td>
+													    <td> <a href="../elements/f157a1cc-1864-4235-8ddd-2a98f252c98a.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/f3a5b54a-578a-4dfa-be6b-5f69d3b4b858.html" target="element"> Sync model with Vendor Catalog </a> </td>
+													    <td> <a href="../elements/f3a5b54a-578a-4dfa-be6b-5f69d3b4b858.html" target="element" class="i18n-elementtype-BusinessProcess"> </a> </td>
+													</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/5c44b4b7-6876-4a7c-989b-771ad5075e2b.html" target="element">  </a> </td>
+																		<td> <a href="../elements/5c44b4b7-6876-4a7c-989b-771ad5075e2b.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html" target="element"> Create/Extend Conceptual model </a> </td>
+																		<td> <a href="../elements/5563521d-5fd1-4052-9e46-e4860367492d.html" target="element"> Harvest reference models </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/0c4b9abb-2792-4b3d-963c-5cca523679b3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/0c4b9abb-2792-4b3d-963c-5cca523679b3.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html" target="element"> Create/Extend Conceptual model </a> </td>
+																		<td> <a href="../elements/20b1bc1f-d020-4b42-8890-5eed0f69446c.html" target="element"> Harvest existing models &amp; DBMS </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/58b03656-bf42-4b9b-be41-4ff5efa477f5.html" target="element">  </a> </td>
+																		<td> <a href="../elements/58b03656-bf42-4b9b-be41-4ff5efa477f5.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html" target="element"> Create/Extend Conceptual model </a> </td>
+																		<td> <a href="../elements/1e0e3e26-d75d-4cd9-b408-07b8ee410fc4.html" target="element"> Identify business domains </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/ae473522-ecb2-4661-a018-2105e9a252ea.html" target="element">  </a> </td>
+																		<td> <a href="../elements/ae473522-ecb2-4661-a018-2105e9a252ea.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html" target="element"> Create/Extend Conceptual model </a> </td>
+																		<td> <a href="../elements/73cb75bf-e095-46b7-ac43-74c2ceaa1b4e.html" target="element"> Create/Extend Conceptual Model </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/347ffa73-f5a5-4dbf-856f-00c8eb8bb18f.html" target="element">  </a> </td>
+																				<td> <a href="../elements/347ffa73-f5a5-4dbf-856f-00c8eb8bb18f.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																				<td> <a href="../elements/1e0e3e26-d75d-4cd9-b408-07b8ee410fc4.html" target="element"> Identify business domains </a> </td>
+																				<td> <a href="../elements/5563521d-5fd1-4052-9e46-e4860367492d.html" target="element"> Harvest reference models </a> </td>
+																			</tr>
+																			<tr>
+																				<td> <a href="../elements/89de955b-c33e-494f-897d-80eef264bf74.html" target="element">  </a> </td>
+																				<td> <a href="../elements/89de955b-c33e-494f-897d-80eef264bf74.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																				<td> <a href="../elements/1e0e3e26-d75d-4cd9-b408-07b8ee410fc4.html" target="element"> Identify business domains </a> </td>
+																				<td> <a href="../elements/dd0b44dc-8279-44d6-967c-f5615f7a3060.html" target="element"> Create/Extend Conceptual model </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/8574807f-98c2-4220-be17-accacdd7a68f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/8574807f-98c2-4220-be17-accacdd7a68f.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/4fcac57e-8e0e-400d-95aa-92b6fee53435.html" target="element"> Create/Extend Enterprise Logical Model </a> </td>
+																		<td> <a href="../elements/7e0b0594-d477-40d7-bf03-a4d2ccbbae12.html" target="element"> Create/extend logical model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/2b44b58a-07da-429a-a22f-5b32015f74ab.html" target="element">  </a> </td>
+																		<td> <a href="../elements/2b44b58a-07da-429a-a22f-5b32015f74ab.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/4fcac57e-8e0e-400d-95aa-92b6fee53435.html" target="element"> Create/Extend Enterprise Logical Model </a> </td>
+																		<td> <a href="../elements/d01b5e5c-faee-4ac9-a926-170e76e1d2c4.html" target="element"> Conceptual -&gt;Logical transformation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/6ae0d0d3-c1a0-4109-820c-2dd7040680b8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/6ae0d0d3-c1a0-4109-820c-2dd7040680b8.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/4fcac57e-8e0e-400d-95aa-92b6fee53435.html" target="element"> Create/Extend Enterprise Logical Model </a> </td>
+																		<td> <a href="../elements/a409c7b2-4f94-4e1d-b313-8e1b7f7d2e36.html" target="element"> Create/Extend Enterprise Physical Model </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/70d63a6d-9034-4321-b24e-37ebc70840bf.html" target="element">  </a> </td>
+																				<td> <a href="../elements/70d63a6d-9034-4321-b24e-37ebc70840bf.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																				<td> <a href="../elements/d01b5e5c-faee-4ac9-a926-170e76e1d2c4.html" target="element"> Conceptual -&gt;Logical transformation </a> </td>
+																				<td> <a href="../elements/7e0b0594-d477-40d7-bf03-a4d2ccbbae12.html" target="element"> Create/extend logical model </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/97c1e2cd-5abf-4a58-a884-b48f739a2c7c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/97c1e2cd-5abf-4a58-a884-b48f739a2c7c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/a409c7b2-4f94-4e1d-b313-8e1b7f7d2e36.html" target="element"> Create/Extend Enterprise Physical Model </a> </td>
+																		<td> <a href="../elements/298c0bdb-4d51-4214-b4df-9c83ec88ef69.html" target="element"> Logical-&gt;Physical Transformation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/2b8e5552-e2d5-4d89-bf65-c7dbaa5a8d43.html" target="element">  </a> </td>
+																		<td> <a href="../elements/2b8e5552-e2d5-4d89-bf65-c7dbaa5a8d43.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/a409c7b2-4f94-4e1d-b313-8e1b7f7d2e36.html" target="element"> Create/Extend Enterprise Physical Model </a> </td>
+																		<td> <a href="../elements/0fcac9e3-e2d2-4dc5-a9a8-c7be6f907e36.html" target="element"> Refine Physical model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/15ce7d0a-5540-4c66-9cc9-7322c5df4621.html" target="element">  </a> </td>
+																		<td> <a href="../elements/15ce7d0a-5540-4c66-9cc9-7322c5df4621.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																		<td> <a href="../elements/a409c7b2-4f94-4e1d-b313-8e1b7f7d2e36.html" target="element"> Create/Extend Enterprise Physical Model </a> </td>
+																		<td> <a href="../elements/51699638-17d2-4ea2-b080-c80081c6349d.html" target="element"> Create/Maintain Vendor enterprise Physical Model </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/b33c1f7f-2b97-403e-abee-18ed8baba156.html" target="element">  </a> </td>
+																				<td> <a href="../elements/b33c1f7f-2b97-403e-abee-18ed8baba156.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																				<td> <a href="../elements/298c0bdb-4d51-4214-b4df-9c83ec88ef69.html" target="element"> Logical-&gt;Physical Transformation </a> </td>
+																				<td> <a href="../elements/0fcac9e3-e2d2-4dc5-a9a8-c7be6f907e36.html" target="element"> Refine Physical model </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/77a7d3f4-ac78-46a8-b656-39ceef2e8121.html" target="element">  </a> </td>
+																		<td> <a href="../elements/77a7d3f4-ac78-46a8-b656-39ceef2e8121.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/51699638-17d2-4ea2-b080-c80081c6349d.html" target="element"> Create/Maintain Vendor enterprise Physical Model </a> </td>
+																		<td> <a href="../elements/f157a1cc-1864-4235-8ddd-2a98f252c98a.html" target="element"> Transform to Vendor Physical Model </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/fcf519c6-540e-4ea9-9be8-238e7607945e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/fcf519c6-540e-4ea9-9be8-238e7607945e.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/51699638-17d2-4ea2-b080-c80081c6349d.html" target="element"> Create/Maintain Vendor enterprise Physical Model </a> </td>
+																		<td> <a href="../elements/f3a5b54a-578a-4dfa-be6b-5f69d3b4b858.html" target="element"> Sync model with Vendor Catalog </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/889faef2-70be-433a-8592-171d16315319.html" target="element">  </a> </td>
+																				<td> <a href="../elements/889faef2-70be-433a-8592-171d16315319.html" target="element" class="i18n-elementtype-TriggeringRelationship"></a> </td>
+																				<td> <a href="../elements/f157a1cc-1864-4235-8ddd-2a98f252c98a.html" target="element"> Transform to Vendor Physical Model </a> </td>
+																				<td> <a href="../elements/f3a5b54a-578a-4dfa-be6b-5f69d3b4b858.html" target="element"> Sync model with Vendor Catalog </a> </td>
+																			</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
