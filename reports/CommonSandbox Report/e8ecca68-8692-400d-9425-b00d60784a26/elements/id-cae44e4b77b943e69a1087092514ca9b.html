@@ -46,11 +46,12 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">XML
+						<textarea id="docsrc" style="display:none">XML
 Each XML element represents an object, and its attributes are typed data entities that are the values of properties. The content of an element includes child elements that can be regarded as objects that are the values of other properties. As with the names of tables and columns in a relational database schema, the names of elements and attributes in a DTD or XML Schema Definition (XSD) imply some correspondence with the real world.
 An approach to XML semantics was proposed in the W3C in 2001,19 but this appears not to have resulted in a formal standard.
 
-19 XML with Relational Semantics: Bridging the Gap to RDF and the Semantic Web; refer to: https://www.w3.org/2001/05/xmlrs/.</div>
+19 XML with Relational Semantics: Bridging the Gap to RDF and the Semantic Web; refer to: https://www.w3.org/2001/05/xmlrs/.</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">

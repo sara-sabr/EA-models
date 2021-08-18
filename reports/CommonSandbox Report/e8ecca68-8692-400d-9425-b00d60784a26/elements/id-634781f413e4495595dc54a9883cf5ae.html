@@ -46,10 +46,11 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Synchronizing Data
+						<textarea id="docsrc" style="display:none">Synchronizing Data
 Often, different systems, or different applications on the same system, use the same data and maintain their own copies. These may be exact copies, or they may include only part of the data, or the data they include may be transformed from the original.
 For example, a company may maintain core data as a &#8220;single source of truth&#8221; and different divisions and departments may transform it in different business-specific ways so that it has relevance and purpose for them.
-Keeping these versions synchronized as the data changes can be a major challenge.</div>
+Keeping these versions synchronized as the data changes can be a major challenge.</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">

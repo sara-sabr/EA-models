@@ -46,14 +46,15 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">From: Peterson, Sophia &lt;Sophia.Peterson@tbs-sct.gc.ca&gt; 
+						<textarea id="docsrc" style="display:none">From: Peterson, Sophia &lt;Sophia.Peterson@tbs-sct.gc.ca&gt; 
 Sent: July 28, 2021 2:13 PM
 Subject: RE: ESDC - APM Data Assessment - discuss the 7 Technical Assessment questions 
 
 - The current diagram shared should be dropped, as it just speaks to the SCED architecture, rather than the department&#8217;s WLM journey. It could always be kept for an annex to show basic cloud footprint
 - We understand that there are 2 DCs that are implicated. Given that ESDC is so large, I&#8217;d suggest a Current State for each of the 2 DCs as a separate diagram. There doesn&#8217;t need to be 400+ boxes on each, but logical applications blocks. EX: we looked at something that had 6 rows of Cognos, that might just be a single &#8220;Enterprise Data Warehouse&#8221; box on that diagram
 - 2 Target state diagrams showing where the applications from each data center will be living. EX: Cloud, EDC, SaaS
-- Maybe that details list of apps in the annexes as a reference</div>
+- Maybe that details list of apps in the annexes as a reference</textarea>
+						<div id="doctgt" style="white-space:pre-wrap"></div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
