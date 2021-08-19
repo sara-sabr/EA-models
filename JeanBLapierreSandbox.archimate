@@ -476,12 +476,11 @@ https://csps-efpc.gc.ca/diversity-inclusion-eng.aspx</documentation>
 • Contacts  </documentation>
     </element>
     <element xsi:type="archimate:BusinessObject" name="Executive HR Programs &amp; Services iService Page (Business Object)" id="id-a9e3d42eac4b46529aa5f65cc1849135">
-      <documentation>•Performance Management (PM) &#xD;
-•Talent Management (TM) &#xD;
-•ESDC Essential Training for Executives &#xD;
-•Diversity and Inclusion &#xD;
-•Leadership Development Programs &#xD;
-</documentation>
+      <documentation>• Performance Management (PM) &#xD;
+• Talent Management (TM) &#xD;
+• ESDC Essential Training for Executives &#xD;
+• Diversity and Inclusion &#xD;
+• Leadership Development Programs </documentation>
     </element>
     <element xsi:type="archimate:BusinessObject" name="Networking Info (Business Object)" id="id-cb56484870aa46519c43041dc4babeb0">
       <documentation>• Communities of Practice and Networks within ESDC&#xD;
@@ -634,6 +633,7 @@ https://www.canada.ca/en/government/system.html</documentation>
     <element xsi:type="archimate:BusinessRole" name="Executive Taskforce Lead Team (ETLT) (Business Role)" id="id-8c06413dd7e64945b31bf03a99472e4e"/>
     <element xsi:type="archimate:BusinessRole" name="HRSB, Director General (DG) (Business Role)" id="id-ee3df5a1e3264f41bef6e92ca6b7f493"/>
     <element xsi:type="archimate:BusinessRole" name="HR EX Content Creator (Business Role)" id="id-4e82154de43d4a15bec488d14eb90c58"/>
+    <element xsi:type="archimate:BusinessRole" name="New Employee (Business Role)" id="id-c9fe1d42736547d9aef5dae2b3ea01a7"/>
   </folder>
   <folder name="Application" id="id-4c073bc2342b490eae44200c8635c571" type="application">
     <element xsi:type="archimate:DataObject" name="Drupal-Sourced Data (Data Object)" id="id-a36acbc1b6124a03991eae20826f88c9">
@@ -1797,6 +1797,8 @@ Update additional letter of offer template(s) (e.g., non-EX template).</document
     <element xsi:type="archimate:CompositionRelationship" id="id-b6ac74047181480ab257ca2a838da797" source="id-2a42a90dd8f24af3b545de43e3dd570b" target="id-372e386dd6cb4bba8506df08097b31de"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-0a40465f8aa247a990ab53b5f5c9812c" source="id-2a42a90dd8f24af3b545de43e3dd570b" target="id-4b45127fcf9e4f0fab688918297b3453"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-aac49bf07382407aa67d5b34ac90656a" source="id-2a42a90dd8f24af3b545de43e3dd570b" target="id-7668a7c95615486b9d44e8b44b19be3f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b3cf4442ff1d4a7aacbe90910ac33bef" source="id-c9fe1d42736547d9aef5dae2b3ea01a7" target="id-4d9cf9abb617412984c3bc154c37f6af"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b09445f4291d47c9ad08deecf7ea8a79" source="id-c9fe1d42736547d9aef5dae2b3ea01a7" target="id-252b622fa5f54896804968524ed3a28a"/>
   </folder>
   <folder name="Views" id="id-e95b9bd9af9641dd95e8d88989249a9c" type="diagrams">
     <folder name="Lite Projects" id="id-0524b6ac40be4d9cbf85d362d0facaad">
@@ -2478,7 +2480,7 @@ rweisman@uottawa.ca </documentation>
       </element>
     </folder>
     <folder name="HRSB" id="id-dcdbd7e147e5496cbd37173450ccecda">
-      <element xsi:type="archimate:ArchimateDiagramModel" name="HRSB EX On Boarding" id="id-8058d01f89874514b07ee08886a7d573">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="HRSB EX On Boarding - WHAT,WHY,WHO" id="id-8058d01f89874514b07ee08886a7d573">
         <child xsi:type="archimate:Note" id="id-53bfc574587d4268ae3fed9f59d95f79" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#fcffc6">
           <bounds x="36" y="24" width="517" height="61"/>
           <content>HRSB EX On Boarding - Hosting Platform Options&#xD;
@@ -2689,12 +2691,12 @@ High Level Requirements, Processes</content>
           <sourceConnection xsi:type="archimate:Connection" id="id-28149ddeff6e4e44b9de9ab6bc074e56" source="id-25c51af5325c4c1d8b1e695b97ab6848" target="id-d66a78b7ca5f42fb98c22411469eaef0" archimateRelationship="id-5ae9b2c90ddc4404a9767e2b1d265bcb"/>
         </child>
         <child xsi:type="archimate:Note" id="id-75d89834c28343e5b3d7046e01584da5" textAlignment="1">
-          <bounds x="564" y="24" width="216" height="54"/>
+          <bounds x="565" y="14" width="336" height="80"/>
           <content>Diagram Audience: HRSB WG&#xD;
-Diagram Purpose: A visual depiction of EX On Boarding Requirements.</content>
+Diagram Purpose: An architectural, visual depiction to represent EX On Boarding Hosting Platform Requirements (e.g. Content, Users, Stakeholders, Operations, etc.)</content>
         </child>
         <child xsi:type="archimate:Note" id="id-61bdcce1d9f74aabbf23ee23330efc4a" font="1|Segoe UI|18.0|1|WINDOWS|1|-30|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#ff0000" textPosition="1">
-          <bounds x="792" y="31" width="109" height="40"/>
+          <bounds x="905" y="34" width="109" height="40"/>
           <content>DRAFT</content>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-3fb244b5391f4ce396fc6e1f3d2aa935" font="1|Segoe UI|12.0|0|WINDOWS|1|-20|0|0|0|400|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1" archimateElement="id-12c082db876742a3b91c6582ef258f7e">
@@ -2885,11 +2887,11 @@ Diagram Purpose: A visual depiction of EX On Boarding Requirements.</content>
             <bounds x="112" y="24" width="180" height="40"/>
           </child>
         </child>
-        <child xsi:type="archimate:Note" id="id-1c5aa031c08f4a9b8b333c1ea4eff1c3" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#ff8000" textAlignment="1" fillColor="#affcb7" textPosition="1">
+        <child xsi:type="archimate:Note" id="id-1c5aa031c08f4a9b8b333c1ea4eff1c3" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#ff8000" fillColor="#affcb7" textPosition="1">
           <bounds x="875" y="432" width="169" height="57"/>
           <content>Classification of External Content?</content>
         </child>
-        <child xsi:type="archimate:Note" id="id-8a46e6e583c24c1dab27b49865270176" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#ff8000" textAlignment="1" fillColor="#affcb7" textPosition="1">
+        <child xsi:type="archimate:Note" id="id-8a46e6e583c24c1dab27b49865270176" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#ff8000" fillColor="#affcb7" textPosition="1">
           <bounds x="1236" y="432" width="169" height="57"/>
           <content>Classification of Internal Content?</content>
         </child>
@@ -2963,6 +2965,20 @@ Diagram Purpose: A visual depiction of EX On Boarding Requirements.</content>
             <bounds x="12" y="178" width="156" height="84"/>
           </child>
         </child>
+        <child xsi:type="archimate:Note" id="id-371f5d227ce74c8abee21d2270dfe51a" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#ff8000" fillColor="#affcb7" textPosition="1">
+          <bounds x="1476" y="432" width="109" height="57"/>
+          <content>Funding?&#xD;
+$$$</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-5cd4f5437d634a67b46eac64aad7e5ce" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#ff8000" fillColor="#affcb7" textPosition="1">
+          <bounds x="1476" y="491" width="109" height="57"/>
+          <content>DevOps&#xD;
+CI/CD</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-e11a01d665fb4fcbb1702c819e738876" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" fontColor="#ff8000" fillColor="#affcb7" textPosition="1">
+          <bounds x="1476" y="557" width="109" height="57"/>
+          <content>IITB Resources</content>
+        </child>
       </element>
       <element xsi:type="archimate:ArchimateDiagramModel" name="SharePoint Role-Based Access" id="id-8f605139e02a42bca306d0eaaef4546c">
         <child xsi:type="archimate:Note" id="id-666170c68f9c4bf5a10f8a7405f23123" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#fcffc6">
@@ -2971,7 +2987,7 @@ Diagram Purpose: A visual depiction of EX On Boarding Requirements.</content>
 HRSB EX Onboarding</content>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-b442c547ba684ff19e743337b59ae939" archimateElement="id-c51a0145689e4381ba241879725f66cd">
-          <bounds x="927" y="215" width="277" height="92"/>
+          <bounds x="900" y="204" width="277" height="92"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-d4bd81b6136f4d908d6da27d78d0b076" source="id-b442c547ba684ff19e743337b59ae939" target="id-1b4f904db46842be87db7bcb8ee52403" archimateRelationship="id-ed160265b6814335a11ef604a32270c9"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-7e568840d6d54645af193b7d3170b597" source="id-b442c547ba684ff19e743337b59ae939" target="id-74d1c27b506847da8911e4abd10df681" archimateRelationship="id-0ae335b441de4cb4860c3c6f02f3da44"/>
           <child xsi:type="archimate:DiagramObject" id="id-74d1c27b506847da8911e4abd10df681" targetConnections="id-7e568840d6d54645af193b7d3170b597" archimateElement="id-d67153d3e93044848729a867da526a86">
@@ -3032,10 +3048,10 @@ HRSB EX Onboarding</content>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-11dd854b84b443c1a3c4f830630a5f07" archimateElement="id-1374066ddc254290810ae7c686a94a50">
-          <bounds x="993" y="66" width="145" height="92"/>
+          <bounds x="1059" y="-51" width="145" height="92"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-018c24c83ae740e0ab423d8610c98a1f" archimateElement="id-26e57e53d49b4528bfb055c0a22e7cd3">
-          <bounds x="816" y="23" width="120" height="55"/>
+          <bounds x="756" y="-14" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-ac678d02e6aa473ca5f84aac65994daa" source="id-018c24c83ae740e0ab423d8610c98a1f" target="id-ac3d06a0a5544cd9a18cba9548d0ab74" archimateRelationship="id-cf5080921cc34346a410c515706c7c90"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-9548a67d7a514569920cd79b3db2dcca" textAlignment="1" archimateElement="id-b330bbaf3d5d45b788ff48f515fd321e">
@@ -3171,22 +3187,27 @@ HRSB EX Onboarding</content>
         <child xsi:type="archimate:DiagramObject" id="id-5e49145d7c7a426ea750668a2c538270" archimateElement="id-cce0551aaf2b46999b2c02afa8c1f4e3">
           <bounds x="1203" y="157" width="136" height="55"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-9366fcc9f0a94ceda92dcb2275575a60" archimateElement="id-4d9cf9abb617412984c3bc154c37f6af">
-          <bounds x="816" y="144" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-d2ba1818018349bfb1eeeba69460481d" source="id-9366fcc9f0a94ceda92dcb2275575a60" target="id-2e8d9c8f2d044282b4ab3aea0e3f2408" archimateRelationship="id-df7fea9c32f24cbeb71f5923bb1bc3d0"/>
-        </child>
-        <child xsi:type="archimate:DiagramObject" id="id-dacd82e23e7440fa8afdcb402b201a6f" archimateElement="id-252b622fa5f54896804968524ed3a28a">
-          <bounds x="816" y="84" width="120" height="55"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-7d1112564a9e4eada84979630a07fcdc" source="id-dacd82e23e7440fa8afdcb402b201a6f" target="id-10e052e68f6446109d6ea99cb1bde3bd" archimateRelationship="id-eea256116d2f45eaaae4acfc016d8139"/>
-        </child>
         <child xsi:type="archimate:Note" id="id-5b49b0ff81ea48a989282d1da8817df1" textAlignment="1">
-          <bounds x="313" y="-67" width="216" height="54"/>
+          <bounds x="313" y="-67" width="288" height="54"/>
           <content>Diagram Audience: HRSB WG&#xD;
-Diagram Purpose: A visual depiction of SP Permissions.</content>
+Diagram Purpose: A visual depiction of SharePoint Permissions.</content>
         </child>
         <child xsi:type="archimate:Note" id="id-1a5f2c253c3e48489cd63ae382b0cf3d" font="1|Segoe UI|18.0|1|WINDOWS|1|-30|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#ff0000" textPosition="1">
-          <bounds x="540" y="-67" width="109" height="40"/>
+          <bounds x="612" y="-67" width="109" height="40"/>
           <content>DRAFT</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f5f6b2c7fafa4310aa02d15331078b2f" archimateElement="id-c9fe1d42736547d9aef5dae2b3ea01a7">
+          <bounds x="900" y="-2" width="144" height="179"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-619a174c21cb409f9be7c16936858f18" source="id-f5f6b2c7fafa4310aa02d15331078b2f" target="id-9366fcc9f0a94ceda92dcb2275575a60" archimateRelationship="id-b3cf4442ff1d4a7aacbe90910ac33bef"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-df49714cee1d414c8510e4bfcb0004d0" source="id-f5f6b2c7fafa4310aa02d15331078b2f" target="id-dacd82e23e7440fa8afdcb402b201a6f" archimateRelationship="id-b09445f4291d47c9ad08deecf7ea8a79"/>
+          <child xsi:type="archimate:DiagramObject" id="id-9366fcc9f0a94ceda92dcb2275575a60" targetConnections="id-619a174c21cb409f9be7c16936858f18" archimateElement="id-4d9cf9abb617412984c3bc154c37f6af">
+            <bounds x="12" y="108" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-d2ba1818018349bfb1eeeba69460481d" source="id-9366fcc9f0a94ceda92dcb2275575a60" target="id-2e8d9c8f2d044282b4ab3aea0e3f2408" archimateRelationship="id-df7fea9c32f24cbeb71f5923bb1bc3d0"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-dacd82e23e7440fa8afdcb402b201a6f" targetConnections="id-df49714cee1d414c8510e4bfcb0004d0" archimateElement="id-252b622fa5f54896804968524ed3a28a">
+            <bounds x="12" y="48" width="120" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7d1112564a9e4eada84979630a07fcdc" source="id-dacd82e23e7440fa8afdcb402b201a6f" target="id-10e052e68f6446109d6ea99cb1bde3bd" archimateRelationship="id-eea256116d2f45eaaae4acfc016d8139"/>
+          </child>
         </child>
       </element>
     </folder>
