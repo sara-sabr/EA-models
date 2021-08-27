@@ -1146,6 +1146,7 @@ Stores persistent and transient information, of prepared and accessible business
     <element xsi:type="archimate:BusinessEvent" name="Privacy and Security" id="id-ae634c02945c49028e4af0305ae6c1a9">
       <documentation>Privacy and Security Management involves the following: prioritizing risk-mitigating actions based on the data's sensitivity levels and manner of use, document clearly personal information processing purposes and subsequently used data, and clarifying roles and responsibilities in the various processes involved.</documentation>
     </element>
+    <element xsi:type="archimate:BusinessProcess" name="Business Process" id="id-fc95a15b5e37475095047012b8e660df"/>
   </folder>
   <folder name="Application" id="8157a20a-a4a1-4881-aa90-52589da9c759" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="API Gateway" id="69c9dba7-e85b-451e-9d60-727c9a51dd47"/>
@@ -1381,6 +1382,7 @@ Data with a known structure can be stored in a more structured repository such a
     <element xsi:type="archimate:ApplicationCollaboration" name="Guards" id="id-7ce290a4d73d4cf19eb8e2309e137807">
       <documentation>Guards are controls within the reservoir to enforce restrictions on access to data and related protection mechanisms. These guards can include ensuring the requesting user is authorized, data masking being applied, or certain rows of data being filtered out.</documentation>
     </element>
+    <element xsi:type="archimate:ApplicationCollaboration" name="Application Collaboration" id="id-209939266285452381a662e2ea7f9eaf"/>
   </folder>
   <folder name="Technology &amp; Physical" id="1b7b30fc-7495-4b0b-a6e5-e8e4815900be" type="technology">
     <element xsi:type="archimate:Node" name="API Gateway Agent " id="3b3e345e-c349-4dd8-a717-a706026f4f1b">
@@ -5185,6 +5187,14 @@ By only relying on a single authentication factor, not doing any risk base authe
             <bounds x="50" y="30" width="120" height="46"/>
           </child>
         </child>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="test" id="id-8e08a40064534980b6cba7d35497d716">
+      <child xsi:type="archimate:DiagramObject" id="id-615e7ec6ccc54a1b9dbf5f4b3922064a" archimateElement="id-fc95a15b5e37475095047012b8e660df">
+        <bounds x="9" y="5" width="184" height="103"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-bd485ff503fc4913b036f01ec1330bf6" archimateElement="id-209939266285452381a662e2ea7f9eaf">
+        <bounds x="281" y="51" width="120" height="55"/>
       </child>
     </element>
   </folder>
