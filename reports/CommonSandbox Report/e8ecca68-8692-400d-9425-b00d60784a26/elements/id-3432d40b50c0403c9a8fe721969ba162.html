@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>ATAG 2.0 Glossary (Business Object)</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>ATAG 2.0 Glossary (Business Object)</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessObject" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Appendix A: Glossary
+This section is normative.
+
+This appendix contains definitions for all of the significant/important/unfamiliar terms used in the normative parts of this standard, including terms used in the Conformance section. Please consult http://www.w3.org/TR/qaframe-spec/ for more information on the role of definitions in standards quality.
+
+accessibility problems
+ATAG 2.0 recognizes two types of accessibility problems:
+authoring tool user interface accessibility problems: Aspects of an authoring tool user interface that does not meet a success criterion in Part A of ATAG 2.0.
+web content accessibility problems (WCAG): Aspects of web content that does not meet a WCAG 2.0 success criterion (Level A, AA or AAA).
+accessibility information (WCAG)
+Information that web content must contain in order to meet a WCAG 2.0 success criterion (Level A, AA or AAA). Examples include: programmatically associated alternative content (e.g. text alternatives for images), role, and state information for widgets, relationships within complex tables).
+Note: For the purposes of ATAG 2.0, only programmatically determinable accessibility information qualifies. For additional examples, see Appendix A of the Implementing ATAG 2.0 document.
+accessible content support features
+Any features of an authoring tool that directly support authors in increasing the accessibility of the web content being edited. These are features that must be present to meet the success criteria in Part B of ATAG 2.0.
+alternative content
+Web content that is used in place of other content that some people are not able to access. Alternative content fulfills essentially the same function or purpose as the original content. WCAG 2.0 recognizes several general types of alternative content:
+text alternatives for non-text content: Text that is programmatically associated with non-text content or referred to from text that is programmatically associated with non-text content. For example, an image of a chart might have two text alternatives: a description in the paragraph after the chart and a short text alternative for the chart indicating in words that a description follows.
+alternatives for time-based media: Web content that serves the same function or purpose as one or more tracks in a time-based media presentation. This includes: captions, audio descriptions, extended audio descriptions, sign language interpretation as well as correctly sequenced text descriptions of time-based visual and auditory information that also is capable of achieving the outcomes of any interactivity in the time-based presentation.
+media alternative for text: Media that presents no more information than is already presented in text (directly or via text alternatives). A media alternative for text is provided for people who benefit from alternate representations of text. Media alternatives for text may be audio-only, video-only (including sign-language video), or audio-video.
+Importantly, from the perspective of authoring tools, alternative content may or may not be:
+programmatically associated alternative content: Alternative content whose location and purpose can be programmatically determined from the original content for which it is serving as an alternative. For example, a paragraph might serve as a text alternative for an image, but it is only programmatically associated if this relationship is properly encoded (e.g. by "aria-labeledby").
+Note: ATAG 2.0 typically refers to programmatically associated alternative content.
+assistive technology
+Software (or hardware), separate from the authoring tool, that provides functionality to meet the requirements of people with disabilities (authors and end users). Some authoring tools may also provide direct accessibility features. Examples include:
+screen magnifiers, and other visual reading assistants, which are used by people with visual, perceptual, and physical print disabilities to change text font, size, spacing, color, synchronization with speech, etc. in order improve the visual readability of rendered text and images;
+screen readers, which are used by people who are blind to read textual information through synthesized speech or Braille;
+text-to-speech software, which is used by some people with cognitive, language, and learning disabilities to convert text into synthetic speech;
+speech recognition software, which are used by some people who have some physical disabilities;
+alternative keyboards, which are used by some people with physical disabilities to simulate the keyboard (including alternate keyboards that use head pointers, single switches, sip/puff, and other special input devices);
+alternative pointing devices, which are used by some people with physical disabilities to simulate mouse pointing and button activations.
+audio
+The technology of sound reproduction. Audio can be created synthetically (including speech synthesis), recorded from real-world sounds, or both.
+author actions preventing generation of accessible web content
+When the actions of authors prevent authoring tools from generating accessible web content (WCAG). Examples include: turning off accessible content support features, ignoring prompts for accessibility information (WCAG), providing faulty accessibility information (WCAG) at prompts, modifying the authoring tool (e.g. via scripting, macros), and installing plug-ins.
+authors
+People who use authoring tools to create or modify web content. The term may cover roles such as content authors, designers, programmers, publishers, testers, etc. (see Part B Conformance Applicability Note 6: Multiple authoring roles). Some authoring tools control who may be an author by managing author permissions.
+author permission
+Authorization that allows modification of given web content.
+authoring action
+Any action that authors can take using the authoring tool user interface that results in editing web content (e.g. typing text, deleting, inserting an element, applying a template). In contrast, most authoring tool user interfaces also enable actions that do not edit content (e.g. saving, publishing, setting preferences, viewing documentation).
+reversible authoring action: An authoring action that can be immediately and completely undone by the authoring tool upon a cancel request by an author. Examples of cancel requests include: "cancel", "undo", "redo" (when it used to reverse "undo"), "revert", and "roll-back"
+Note: It is acceptable for an authoring tool to collect a series of text entry actions (e.g. typed words, a series of backspaces) into a single reversible authoring action.
+authoring outcome
+The content or content modifications that result from authoring actions. Authoring outcomes are cumulative (e.g. text is entered, then styled, then made into a link, then given a title).
+authoring practice
+An approach that authors follow to achieve a given authoring outcome (e.g. controlling presentation with style sheets). Depending on the design of an authoring tool, authoring practices may be chosen by authors or by the authoring tool. Authoring practices may or may not be:
+accessible authoring practices (WCAG): An authoring practice in which the authoring outcome conforms to WCAG 2.0 at Level A, AA, or AAA. Some accessible authoring practices require accessibility information (WCAG).
+authoring session
+A state of the authoring tool in which web content can be edited by an author.
+end of an authoring session: The point at which the author has no further opportunity to make authoring actions without starting another session. The end of an authoring session may be determined by authors (e.g. closing a document, publishing) or by the authoring tool (e.g. when the authoring tool transfers editing permission to another author on a collaborative system).
+Note: The end of the authoring session is distinct from publishing. Automatic content generation may continue after the end of both the authoring session and initial publishing (e.g. content management system updates).
+authoring tool
+Any web-based or non-web-based application(s) that can be used by authors (alone or collaboratively) to create or modify web content for use by other people (other authors or end users).
+Note 1: "application(s)": ATAG 2.0 may be conformed to by stand-alone applications or by collections of applications. If a conformance claim is made, then the claim must provide identifying information for each application and also for any required extensions, plug-ins, etc.
+Note 2: "alone or collaboratively": Multiple authors may contribute to the creation of web content and, depending on the authoring tool, each author may work with different views of the content and different author permissions.
+Note 3: "to create or modify web content": This clause rules out software that collects data from a person for other purposes (e.g. online grocery order form) and then creates web content from that data (e.g. a web-based warehouse order) without informing the person (however, WCAG 2.0 would still apply). This clause also rules out software used to create content exclusively in non-web content technologies.
+Note 4: "for use by other people": This clause rules out the many web applications that allow people to modify web content that only they themselves experience (e.g. web-based email display settings) or that only provide input to automated processes (e.g. library catalog search page).
+Examples of software that are generally considered authoring tools under ATAG 2.0:
+web page authoring tools (e.g. WYSIWYG HTML editors)
+software for directly editing source code
+software for converting to web content technologies (e.g. "Save as HTML" features in office document applications)
+integrated development environments (e.g. for web application development)
+software that generates web content on the basis of templates, scripts, command-line input or "wizard"-type processes
+software for rapidly updating portions of web pages (e.g. blogging, wikis, online forums)
+software for generating/managing entire websites (e.g. content management systems, courseware tools, content aggregators)
+email clients that send messages using web content technologies
+multimedia authoring tools
+software for creating mobile web applications
+Examples of software that are not considered authoring tools under ATAG 2.0 (in all cases, WCAG 2.0 still applies if the software is web-based):
+customizable personal portals: ATAG 2.0 does not apply because the web content being edited is only available to the owner of the portal
+e-commerce order forms: ATAG 2.0 does not apply because the purpose of an e-commerce order form is to order a product, not communicate with other people via web content, even if the data collected by the form actually does result in web content (e.g. online tracking pages)
+stand-alone accessibility checkers: ATAG 2.0 does not apply because a stand-alone accessibility checker with no automated or semi-automated repair functionality does not actually modify web content. An accessibility checker with repair functionality or that is considered as part of a larger authoring process would be considered an authoring tool.
+authoring tool user interface
+The display and control mechanism that authors use to operate the authoring tool software. User interfaces may be non-web-based or web-based or a combination (e.g. a non-web-based authoring tool might have web-based help pages):
+authoring tool user interface (non-web-based): Any parts of an authoring tool user interface that are not implemented as web content and instead run directly on a platform that is not a user agent (e.g. Windows, Mac OS, Java Virtual Machine, iOS, Android).
+authoring tool user interface (web-based): Any parts of an authoring tool user interface that are implemented using web content technologies and are accessed by authors via a user agent.
+Authoring tool user interfaces may or may not be:
+accessible authoring tool user interfaces: Authoring tool user interfaces that meet the success criteria of a level in Part A of ATAG 2.0.
+checking, accessibility
+The process by which web content is evaluated for web content accessibility problems (WCAG). ATAG 2.0 recognizes three types of checking, based on increasing levels of automation of the tests:
+manual checking: Checking in which the tests are carried out by authors. This includes the case where authors are aided by instructions or guidance provided by the authoring tool, but where authors must carry out the actual test procedure.
+semi-automated checking: Checking in which the tests are partially carried out by the authoring tool, but where authors' input or judgment is still required to decide or help decide the outcome of the tests.
+automated checking: Checking in which the tests are carried out automatically by the authoring tool without any intervention by authors.
+An authoring tool may support any combination of checking types.
+content (web content)
+Information and sensory experience to be communicated to the end user by means of a user agent, including code or markup that defines the content's structure, presentation, and interactions. In ATAG 2.0, the term is primarily used to refer to the output that is produced by the authoring tool. Content produced by authoring tools may include web applications, including those that act as web-based authoring tools. Content may or may not be:
+accessible content (WCAG): Content that would conform to WCAG 2.0, at either Level A, AA, or AAA, assuming that any web content technologies relied upon to satisfy the WCAG 2.0 success criteria are accessibility supported.
+Note 1: If accessibility support for the relied upon technologies is lacking, then the content will not conform to WCAG 2.0 and one or more groups of end users with disabilities will likely experience difficulty accessing the content.
+Note 2: Conformance to WCAG 2.0, even at the highest level (i.e. Level AAA), still may not make content "accessible to individuals with all types, degrees, or combinations of disability".
+content being edited: The web content that an author can modify during an authoring session. The content being edited may be a complete piece of content (e.g. image, style sheet) or only part of a larger piece of content (e.g. a status update). The content being edited only includes content in web content technologies that the authoring tool supports (e.g. a WYSIWYG HTML editor allows editing of the HTML content of a web page editable, but not the images).
+content properties
+The individual pieces of information that make up the web content (e.g. the attributes and contents of elements, style sheet information).
+content (structured)
+Web content that includes machine-readable internal structure (e.g. markup elements), as opposed to unstructured content, such as raster image formats or plain human language text.
+content generation (content authoring, content editing)
+The act of specifying the actual web content that will be rendered, played or executed by the end user's user agent. While the precise details of how content is created in any given system may vary widely, responsibility for the generation of content can be any combination of the following:
+author generated content: Web content for which authors are fully responsible. The author may only be responsible down to a particular level (e.g. when asked to type a text label, the author is responsible for the text, but not for how the label is marked up; when typing markup in a source editing-view, the author is not responsible for the fact that UNICODE is used to encode the text ).
+automatically-generated content: Web content for which developer-programmed functionality is fully responsible (e.g. what markup to output when an author requests to start a new document, automatically correcting markup errors).
+third-party content generation: Web content for which a third-party author is responsible (e.g. community shared templates).
+content rendering
+User interface functionality that authoring tools present if they render, play or execute the web content being edited. ATAG 2.0 recognizes several types of content renderings:
+conventional renderings (or "WYSIWYG"): When content is rendered in a way that is similar to the default rendering a user agent would create from the same content. While "WYSIWYG", standing for "What-you-see-is-what-you-get" is the common term, differences between user agents and end user settings mean that in reality there is no single typical end user experience; or
+unconventional renderings: When content is rendered differently than it would be in a typical user agent (e.g. rendering an audio file as a graphical waveform); or
+partial renderings: When some aspects of the content are rendered, played, or executed, but not others (e.g. a frame-by-frame video editor renders the graphical, but not the timing aspects, of a video).
+content transformations
+Processes that take content in one web content technology or non-web content technology (e.g. a word processing format) as input and produce content that has been optimized, restructured or recoded:
+Optimizing Content Transformations: Transformations in which the content technology is not changed and the structural features of the content technology that are employed also stay the same. Changes would not be expected to result in information loss (e.g. removing whitespace, replacing in-line styles with an external style sheet).
+Restructuring Content Transformations: Transformations in which the content technology stays the same, but the structural features of the technology used to markup the content are changed (e.g. linearizing tables, splitting a document into pages.
+Recoding Content Transformations: Transformations in which the content technology used to encode the content is changed (e.g. HTML to XHTML, a word processing format to HTML).
+Note: Clipboard operations, in which content is copied to or pasted from the platform clipboard, are not considered content transformations.
+control settings
+Settings that relate to how authors operate the authoring tool, for example using the keyboard or mouse.
+developer
+Any entities or individuals responsible for programming the authoring tool. This includes the programmers of any additional software components included by the Claimant in the conformance claim. In some cases, development of the authoring tool is complete before authors can use it to publish web content. However, in other cases (e.g. some web-based authoring tools), the developer may continue to modify the authoring tool even after content has been published, such that the content experienced by the end user is modified.
+direct accessibility features
+Features of an authoring tool that provide functionality to meet the requirements of authors with disabilities (e.g. keyboard navigation, zoom features, text-to-speech). Additional or specialized functionality may still be provided by external assistive technology.
+display settings
+Settings that relate to how authors perceive the authoring tool. These include:
+audio display settings: the characteristics of audio output of music, sounds, and speech. Examples include volume, speech voices, voice speed, and voice emphasis.
+visual display settings: the characteristics of the on-screen rendering of text and graphics. Examples include fonts, sizes, colors, spacing, positioning, and contrast.
+tactile display settings: the characteristics of haptic output. Examples include the magnitude of the haptic forces and the types of vibration.
+documentation
+Any information that supports the use of an authoring tool. This information may be provided electronically or otherwise and includes help, manuals, installation instructions, sample work flows, tutorials, etc.
+document object
+The internal representation of data in the source by a non-web based authoring tool or user agent. The document object may form part of a platform accessibility service that enables communication with assistive technologies. Web-based authoring tools are considered to make use of the document object that is maintained by the user agent.
+element
+A pair of markup tags and its content, or an "empty tag" (one that requires no closing tag or content).
+end user
+A person who interacts with web content once it has been authored. This includes people using assistive technologies.
+human language
+Language that is spoken, written or signed (through visual or tactile means) to communicate with humans.
+informative
+For information purposes and not required for conformance.
+keyboard interface
+Keyboard interfaces are programmatic services provided by many platforms that allow operation in a device independent manner. A keyboard interface can allow keystroke input even if particular devices do not contain a hardware keyboard (e.g. a touchscreen-controlled device can have a keyboard interface built into its operating system to support onscreen keyboards as well as external keyboards that may be connected).
+Note: Keyboard-operated mouse emulators, such as MouseKeys, do not qualify as operation through a keyboard interface because these emulators use pointing device interfaces, not keyboard interfaces.
+keyboard trap
+A user interface situation in which a keyboard interface may be used to move focus to, but not from, a user interface component or group of components.
+label
+Text or other component with a text alternative that is presented to users to identify a component. A label is presented to all users whereas the name may be hidden and only exposed by assistive technology. In many (but not all) cases the name and the label are the same.
+live
+Information captured from a real-world event that is published with no more than a broadcast delay.
+Note: A broadcast delay is a short (usually automated) delay, for example used in order to give the broadcaster time to queue or censor the audio (or video) feed, but not sufficient to allow significant editing.
+markup language
+A system of text annotations (e.g. elements in HTML) and processing rules that may be used to specify the structure, presentation or semantics of content. Examples of markup languages include HTML and SVG.
+markup of some content is the set of annotations that appear in the content.
+name
+Text by which software can identify a user interface component to the author or end user. The name may be hidden and only exposed by assistive technology, whereas a label is presented to all users. In many (but not all) cases, the label and the name are the same.
+non-text content
+Any content that is not a sequence of characters that can be programmatically determined or where the sequence is not expressing something in human language. This includes ASCII Art (which is a pattern of characters), emoticons, and images representing text.
+normative
+Required for conformance. One may conform in a variety of well-defined ways to ATAG 2.0. Content identified as "informative" or "non-normative" is never required for conformance.
+option
+When an author is presented with choices.
+default option: A setting or value for an option that is assigned automatically by the authoring tool and remains in effect unless canceled or changed by the author.
+platform
+The software environment within which the authoring tool operates. Platforms provide a consistent operational environment on top of lower level software platforms or hardware. For web-based authoring user interfaces, the most relevant platform will be a user agent (e.g. browser). For non-web-based user interfaces, the range of platforms includes, but may not be limited to, desktop operating systems (e.g. GNOME desktop on Linux, Mac OS, Windows), mobile operating systems (e.g. Android, BlackBerry, iOS, Windows Phone), or cross-OS environments (e.g. Java), etc.
+Note 1: Many platforms mediate communication between applications operating on the platform and assistive technology via a platform accessibility service.
+Note 2: Accessibility guidelines for developers exist for many platforms.
+platform accessibility service
+A programmatic interface that is specifically engineered to provide communication between applications and assistive technologies (e.g. MSAA, IAccessible2 and UI Automation for Windows applications, AXAPI for Mac OS X applications, GNOME Accessibility Toolkit API for GNOME applications, Java Access for Java applications). On some platforms, it may be conventional to enhance communication further by implementing a document object.
+plug-in
+A program that runs as part of the authoring tool (e.g. a third-party checking and repair tool) and that is not part of web content being edited. Authors generally choose to include or exclude plug-ins from their authoring tool.
+pre-authored content
+Pieces of web content, created prior to an authoring session, that the authoring tool developer makes available to authors to use in the content being edited. Examples include clip art, sample videos, user interface widgets.
+Note 1: For templates, an incomplete form of pre-authored content, see Guideline B.2.4.
+Note 2: If the authoring tool uses pre-authored content automatically, see Guideline B.1.1.
+accessible pre-authored content (WCAG): Pre-authored content that is either already accessible web content (WCAG) or would be accessible, if it was appropriately inserted into an empty document.
+Note: If extensive author input is required to make use of pre-authored content, then the content may in fact be a template.
+pre-authored content selection mechanism
+A function beyond standard file selection that allows authors to select pre-authored content to use in an authoring session (e.g. clip art gallery, widget palette).
+presentation
+Rendering of the content in a form to be perceived by authors or end users.
+programmatically determined (programmatically determinable)
+Information that is encoded in a way that allows different software, including assistive technologies, to extract and present the information in different modalities. ATAG 2.0 uses this term in two contexts:
+Processing content: Whether the authoring tool is able to extract information from the web content (e.g. to extract the language of content from the markup).
+Communication between the authoring tool and assistive technology: For non-web-based user interfaces, this means making use of platform accessibility services, APIs, and, in some cases, document object models. For web-based user interfaces, this means ensuring that the user agent can pass on the information (e.g. through the use of WAI-ARIA).
+prominence
+A heuristic measure of how likely authors are to notice a user interface component in a user interface that they are operating. Prominence is affected by numerous factors, including: the number of navigation steps required, the reading order position, visual properties (e.g. size, spacing, color), and even the modality of use (e.g. mouse vs. keyboard use).
+at least as prominent: For ATAG 2.0, a user interface component A is considered to be "at least as prominent" as another component B when, from a default state, component A becomes displayed (and enabled) with the same number or less "opening" actions than are required for component B to become displayed (and enabled).
+Note 1: When a container is open, all of the enabled components in the container (e.g. items in a list, items in a menu, buttons in a toolbar, all components in a dialog box) are considered to be displayed (and therefore are at least as prominent as each other), even if the container must be scrolled for them to become visible. This takes into account that different screen sizes and author settings will affect which components are visible at a given time.
+Note 2: "Opening actions" are actions made by authors on components within the user interface that result in new components becoming displayed or enabled. For example: (a) keyboard shortcut to a top-level menu item to display a sub-menu, (b) keyboard selection on a button to display a dialog box, (c) mouse click on a checkbox to enable previously disabled sub-items, etc. Actions that do not cause new components to become actionable (e.g. moving focus, scrolling a list), are not counted as "opening actions".
+Note 3: Keyboard shortcuts to components in closed containers are not counted as "opening actions" because the components have no prominence when they are not displayed. The same is true when authors must use "search" to reveal components in closed containers.
+Note 4: The "default state" is the state of the authoring tool at the beginning of an authoring session as set by the developer. The default state of many document authoring tools is an editing-view.
+prompt
+Any authoring tool initiated request for a decision or piece of information from authors. The term covers both requests that must be responded to immediately (e.g. modal dialog boxes) as well as less urgent requests (e.g. underlining a misspelled word).
+publishing
+Any point at which the authors or authoring tool make web content available to end users (e.g. uploading a web page, committing a change in a wiki, live streaming).
+range
+More than one item within a multi-item set.
+Informative Note: ATAG 2.0 uses the term "range" where absolute measurements may not be practical (e.g. the set of all help documentation examples, the set of all templates). While the strict testable requirement is the definition "More than one item within a multi-item set", implementers are strongly encouraged to implement the success criteria more broadly.
+relationships
+Meaningful associations between distinct pieces of content.
+repair (accessibility)
+The process by which web content accessibility problems that have been identified within web content are resolved. ATAG 2.0 recognizes three types of repair, based on increasing levels of automation:
+manual repair: Where the repairs are carried out by authors. This includes the case where authors are aided by instructions or guidance provided by the authoring tool, but where authors carry out the actual repair procedure;
+semi-automated repair: Where the repairs are partially carried out by the authoring tool, but where authors' input or judgment is still required to complete the repair; and
+automated repair: Where the repairs are carried out automatically by the authoring tool without any intervention by authors.
+restrictions, restricted web content authoring
+When the web content that authors can specify with an authoring tool either must include or must not include certain content (e.g. elements, attributes, widgets). Many authoring tools restrict authoring in some way, which can either benefit accessibility (e.g. if text alternatives for non-text content are required) or detract from accessibility (e.g. if attributes for defining text alternatives are not available). In contrast, authoring tools that allow unrestricted web content authoring do not require any particular content to be included or not included (e.g. many source editing-views).
+role
+Text or a number by which software can identify the function of a component within web content (e.g. a string that indicates whether an image functions as a hyperlink, command button, or check box).
+sequential keyboard access
+Using a keyboard interface to navigate the focus one-by-one through all of the items in an ordered set (e.g. menu items, form fields) until the desired item is reached and activated. This is in contrast to direct keyboard access methods such as keyboard shortcuts and the use of bypass links.
+technology (web content)
+A mechanism for encoding instructions to be rendered, played or executed by user agents. Web content technologies may include markup languages, data formats, or programming languages that authors may use alone or in combination to create end user experiences that range from static web pages to multimedia presentations to dynamic web applications. Some common examples of web content technologies include HTML, CSS, SVG, PNG, PDF, Flash, Silverlight, Flex, and JavaScript.
+template
+Content patterns that are filled in by authors or the authoring tool to produce web content for end users (e.g. document templates, content management templates, presentation themes). Often templates will pre-specify at least some authoring decisions.
+accessible templates (WCAG): Templates that can be filled in to create web content that meets the WCAG 2.0 success criteria (Level A, AA or AAA), when both of the following are true:
+The author correctly follows any instructions provided (e.g. correctly responding to prompts, correctly replacing highlighted placeholders); and
+No further authoring occurs
+Note: Under these conditions, some templates will result in completely empty documents, which are considered accessible by default.
+template selection mechanism
+A function beyond standard file selection that allows authors to select templates to use as the basis for new content or to apply to existing content.
+time limit
+The amount of time that an authoring tool provides to authors to perform a task (e.g. read a message, select an item, save a change). Examples include: authoring session timeouts, time-based presentations (e.g. tutorial video).
+tutorial
+A type of documentation that provides step-by-step instructions for performing multi-part tasks.
+user agent
+Any software that retrieves, renders and facilitates end user interaction with web content (e.g. web browsers, browser plug-ins, media players)
+In-Market User Agent: A user agent that can be procured by members of the public (free or otherwise). Usually, an in-market user agent will be a separate software from the authoring tool; however, sometimes a software may combine user agent and authoring tool functionality. These cases include:
+Preview-Only: If the user agent can only render web content that it receives from the associated authoring functionality, then the software is an authoring tool with a preview feature. Such preview-only features are not considered in-market user agents.
+User Agent with Authoring Tool Mode: If the user agent functionality must retrieve and open web content before it can be sent to the authoring tool functionality, then the software is a user agent with an authoring tool mode. If the user agent is used to preview content produced by the authoring tool mode, then it is to be considered an in-market user agent.
+Combined User Agent/Authoring Tool: A user agent in which the default mode of user interaction enables editing the web content. These tools do not need previews because the author is already experiencing the content in the same way as end users.
+user interface component
+A part of the user interface or content display (including content renderings) that is perceived by authors as a single control for a distinct function.
+video
+The technology of moving pictures or images. Video can be made up of animated or photographic images, or both.
+view
+A user interface function that authors use to interact with the web content being edited. ATAG 2.0 categorizes views according to whether they support editing:
+editing-views: Views in which some or all of the content is editable; or
+previews: Views in which no authoring actions are provided (i.e. the view is not editable). Previews are provided to present the web content being edited by the authoring tool as it would appear to end users of user agents. Previews may be implemented using actual in-market user agents, but this is not necessary.
+ATAG 2.0 also recognizes several approaches to presenting the content in a view:
+source views: The content is presented in unrendered form (e.g. plain text editors); or
+rendered views: Content renderings (conventional, unconventional or partial) are presented; or
+property views: Only properties of the content are presented. The authoring tool then uses these properties to automatically generate the content to be published (e.g. CMS calendar widget that generates a calendar from the numeric month and year).
+workflow
+A customary sequence of steps or tasks that authors follow to produce a content deliverable. If an authoring tool is composed of a collection of applications (e.g. markup editor, image editor, and validation tool), then its workflows may include use of one or more of the applications.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
