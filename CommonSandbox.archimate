@@ -3574,6 +3574,246 @@ OT: Emergency is always Priority 1.</documentation>
     </element>
     <element xsi:type="archimate:BusinessRole" name="ESDC Chief Architect (Business Role)" id="id-5320908da63d44599cc3195d2bedb002"/>
     <element xsi:type="archimate:BusinessRole" name="SAS SharePoint Content Curator (Business Role)" id="id-d8710cbc44a34a40b548c2166694537c"/>
+    <element xsi:type="archimate:BusinessObject" name="ATAG 2.0 Glossary (Business Object)" id="id-3432d40b50c0403c9a8fe721969ba162">
+      <documentation>Appendix A: Glossary&#xD;
+This section is normative.&#xD;
+&#xD;
+This appendix contains definitions for all of the significant/important/unfamiliar terms used in the normative parts of this standard, including terms used in the Conformance section. Please consult http://www.w3.org/TR/qaframe-spec/ for more information on the role of definitions in standards quality.&#xD;
+&#xD;
+accessibility problems&#xD;
+ATAG 2.0 recognizes two types of accessibility problems:&#xD;
+authoring tool user interface accessibility problems: Aspects of an authoring tool user interface that does not meet a success criterion in Part A of ATAG 2.0.&#xD;
+web content accessibility problems (WCAG): Aspects of web content that does not meet a WCAG 2.0 success criterion (Level A, AA or AAA).&#xD;
+accessibility information (WCAG)&#xD;
+Information that web content must contain in order to meet a WCAG 2.0 success criterion (Level A, AA or AAA). Examples include: programmatically associated alternative content (e.g. text alternatives for images), role, and state information for widgets, relationships within complex tables).&#xD;
+Note: For the purposes of ATAG 2.0, only programmatically determinable accessibility information qualifies. For additional examples, see Appendix A of the Implementing ATAG 2.0 document.&#xD;
+accessible content support features&#xD;
+Any features of an authoring tool that directly support authors in increasing the accessibility of the web content being edited. These are features that must be present to meet the success criteria in Part B of ATAG 2.0.&#xD;
+alternative content&#xD;
+Web content that is used in place of other content that some people are not able to access. Alternative content fulfills essentially the same function or purpose as the original content. WCAG 2.0 recognizes several general types of alternative content:&#xD;
+text alternatives for non-text content: Text that is programmatically associated with non-text content or referred to from text that is programmatically associated with non-text content. For example, an image of a chart might have two text alternatives: a description in the paragraph after the chart and a short text alternative for the chart indicating in words that a description follows.&#xD;
+alternatives for time-based media: Web content that serves the same function or purpose as one or more tracks in a time-based media presentation. This includes: captions, audio descriptions, extended audio descriptions, sign language interpretation as well as correctly sequenced text descriptions of time-based visual and auditory information that also is capable of achieving the outcomes of any interactivity in the time-based presentation.&#xD;
+media alternative for text: Media that presents no more information than is already presented in text (directly or via text alternatives). A media alternative for text is provided for people who benefit from alternate representations of text. Media alternatives for text may be audio-only, video-only (including sign-language video), or audio-video.&#xD;
+Importantly, from the perspective of authoring tools, alternative content may or may not be:&#xD;
+programmatically associated alternative content: Alternative content whose location and purpose can be programmatically determined from the original content for which it is serving as an alternative. For example, a paragraph might serve as a text alternative for an image, but it is only programmatically associated if this relationship is properly encoded (e.g. by &quot;aria-labeledby&quot;).&#xD;
+Note: ATAG 2.0 typically refers to programmatically associated alternative content.&#xD;
+assistive technology&#xD;
+Software (or hardware), separate from the authoring tool, that provides functionality to meet the requirements of people with disabilities (authors and end users). Some authoring tools may also provide direct accessibility features. Examples include:&#xD;
+screen magnifiers, and other visual reading assistants, which are used by people with visual, perceptual, and physical print disabilities to change text font, size, spacing, color, synchronization with speech, etc. in order improve the visual readability of rendered text and images;&#xD;
+screen readers, which are used by people who are blind to read textual information through synthesized speech or Braille;&#xD;
+text-to-speech software, which is used by some people with cognitive, language, and learning disabilities to convert text into synthetic speech;&#xD;
+speech recognition software, which are used by some people who have some physical disabilities;&#xD;
+alternative keyboards, which are used by some people with physical disabilities to simulate the keyboard (including alternate keyboards that use head pointers, single switches, sip/puff, and other special input devices);&#xD;
+alternative pointing devices, which are used by some people with physical disabilities to simulate mouse pointing and button activations.&#xD;
+audio&#xD;
+The technology of sound reproduction. Audio can be created synthetically (including speech synthesis), recorded from real-world sounds, or both.&#xD;
+author actions preventing generation of accessible web content&#xD;
+When the actions of authors prevent authoring tools from generating accessible web content (WCAG). Examples include: turning off accessible content support features, ignoring prompts for accessibility information (WCAG), providing faulty accessibility information (WCAG) at prompts, modifying the authoring tool (e.g. via scripting, macros), and installing plug-ins.&#xD;
+authors&#xD;
+People who use authoring tools to create or modify web content. The term may cover roles such as content authors, designers, programmers, publishers, testers, etc. (see Part B Conformance Applicability Note 6: Multiple authoring roles). Some authoring tools control who may be an author by managing author permissions.&#xD;
+author permission&#xD;
+Authorization that allows modification of given web content.&#xD;
+authoring action&#xD;
+Any action that authors can take using the authoring tool user interface that results in editing web content (e.g. typing text, deleting, inserting an element, applying a template). In contrast, most authoring tool user interfaces also enable actions that do not edit content (e.g. saving, publishing, setting preferences, viewing documentation).&#xD;
+reversible authoring action: An authoring action that can be immediately and completely undone by the authoring tool upon a cancel request by an author. Examples of cancel requests include: &quot;cancel&quot;, &quot;undo&quot;, &quot;redo&quot; (when it used to reverse &quot;undo&quot;), &quot;revert&quot;, and &quot;roll-back&quot;&#xD;
+Note: It is acceptable for an authoring tool to collect a series of text entry actions (e.g. typed words, a series of backspaces) into a single reversible authoring action.&#xD;
+authoring outcome&#xD;
+The content or content modifications that result from authoring actions. Authoring outcomes are cumulative (e.g. text is entered, then styled, then made into a link, then given a title).&#xD;
+authoring practice&#xD;
+An approach that authors follow to achieve a given authoring outcome (e.g. controlling presentation with style sheets). Depending on the design of an authoring tool, authoring practices may be chosen by authors or by the authoring tool. Authoring practices may or may not be:&#xD;
+accessible authoring practices (WCAG): An authoring practice in which the authoring outcome conforms to WCAG 2.0 at Level A, AA, or AAA. Some accessible authoring practices require accessibility information (WCAG).&#xD;
+authoring session&#xD;
+A state of the authoring tool in which web content can be edited by an author.&#xD;
+end of an authoring session: The point at which the author has no further opportunity to make authoring actions without starting another session. The end of an authoring session may be determined by authors (e.g. closing a document, publishing) or by the authoring tool (e.g. when the authoring tool transfers editing permission to another author on a collaborative system).&#xD;
+Note: The end of the authoring session is distinct from publishing. Automatic content generation may continue after the end of both the authoring session and initial publishing (e.g. content management system updates).&#xD;
+authoring tool&#xD;
+Any web-based or non-web-based application(s) that can be used by authors (alone or collaboratively) to create or modify web content for use by other people (other authors or end users).&#xD;
+Note 1: &quot;application(s)&quot;: ATAG 2.0 may be conformed to by stand-alone applications or by collections of applications. If a conformance claim is made, then the claim must provide identifying information for each application and also for any required extensions, plug-ins, etc.&#xD;
+Note 2: &quot;alone or collaboratively&quot;: Multiple authors may contribute to the creation of web content and, depending on the authoring tool, each author may work with different views of the content and different author permissions.&#xD;
+Note 3: &quot;to create or modify web content&quot;: This clause rules out software that collects data from a person for other purposes (e.g. online grocery order form) and then creates web content from that data (e.g. a web-based warehouse order) without informing the person (however, WCAG 2.0 would still apply). This clause also rules out software used to create content exclusively in non-web content technologies.&#xD;
+Note 4: &quot;for use by other people&quot;: This clause rules out the many web applications that allow people to modify web content that only they themselves experience (e.g. web-based email display settings) or that only provide input to automated processes (e.g. library catalog search page).&#xD;
+Examples of software that are generally considered authoring tools under ATAG 2.0:&#xD;
+web page authoring tools (e.g. WYSIWYG HTML editors)&#xD;
+software for directly editing source code&#xD;
+software for converting to web content technologies (e.g. &quot;Save as HTML&quot; features in office document applications)&#xD;
+integrated development environments (e.g. for web application development)&#xD;
+software that generates web content on the basis of templates, scripts, command-line input or &quot;wizard&quot;-type processes&#xD;
+software for rapidly updating portions of web pages (e.g. blogging, wikis, online forums)&#xD;
+software for generating/managing entire websites (e.g. content management systems, courseware tools, content aggregators)&#xD;
+email clients that send messages using web content technologies&#xD;
+multimedia authoring tools&#xD;
+software for creating mobile web applications&#xD;
+Examples of software that are not considered authoring tools under ATAG 2.0 (in all cases, WCAG 2.0 still applies if the software is web-based):&#xD;
+customizable personal portals: ATAG 2.0 does not apply because the web content being edited is only available to the owner of the portal&#xD;
+e-commerce order forms: ATAG 2.0 does not apply because the purpose of an e-commerce order form is to order a product, not communicate with other people via web content, even if the data collected by the form actually does result in web content (e.g. online tracking pages)&#xD;
+stand-alone accessibility checkers: ATAG 2.0 does not apply because a stand-alone accessibility checker with no automated or semi-automated repair functionality does not actually modify web content. An accessibility checker with repair functionality or that is considered as part of a larger authoring process would be considered an authoring tool.&#xD;
+authoring tool user interface&#xD;
+The display and control mechanism that authors use to operate the authoring tool software. User interfaces may be non-web-based or web-based or a combination (e.g. a non-web-based authoring tool might have web-based help pages):&#xD;
+authoring tool user interface (non-web-based): Any parts of an authoring tool user interface that are not implemented as web content and instead run directly on a platform that is not a user agent (e.g. Windows, Mac OS, Java Virtual Machine, iOS, Android).&#xD;
+authoring tool user interface (web-based): Any parts of an authoring tool user interface that are implemented using web content technologies and are accessed by authors via a user agent.&#xD;
+Authoring tool user interfaces may or may not be:&#xD;
+accessible authoring tool user interfaces: Authoring tool user interfaces that meet the success criteria of a level in Part A of ATAG 2.0.&#xD;
+checking, accessibility&#xD;
+The process by which web content is evaluated for web content accessibility problems (WCAG). ATAG 2.0 recognizes three types of checking, based on increasing levels of automation of the tests:&#xD;
+manual checking: Checking in which the tests are carried out by authors. This includes the case where authors are aided by instructions or guidance provided by the authoring tool, but where authors must carry out the actual test procedure.&#xD;
+semi-automated checking: Checking in which the tests are partially carried out by the authoring tool, but where authors' input or judgment is still required to decide or help decide the outcome of the tests.&#xD;
+automated checking: Checking in which the tests are carried out automatically by the authoring tool without any intervention by authors.&#xD;
+An authoring tool may support any combination of checking types.&#xD;
+content (web content)&#xD;
+Information and sensory experience to be communicated to the end user by means of a user agent, including code or markup that defines the content's structure, presentation, and interactions. In ATAG 2.0, the term is primarily used to refer to the output that is produced by the authoring tool. Content produced by authoring tools may include web applications, including those that act as web-based authoring tools. Content may or may not be:&#xD;
+accessible content (WCAG): Content that would conform to WCAG 2.0, at either Level A, AA, or AAA, assuming that any web content technologies relied upon to satisfy the WCAG 2.0 success criteria are accessibility supported.&#xD;
+Note 1: If accessibility support for the relied upon technologies is lacking, then the content will not conform to WCAG 2.0 and one or more groups of end users with disabilities will likely experience difficulty accessing the content.&#xD;
+Note 2: Conformance to WCAG 2.0, even at the highest level (i.e. Level AAA), still may not make content &quot;accessible to individuals with all types, degrees, or combinations of disability&quot;.&#xD;
+content being edited: The web content that an author can modify during an authoring session. The content being edited may be a complete piece of content (e.g. image, style sheet) or only part of a larger piece of content (e.g. a status update). The content being edited only includes content in web content technologies that the authoring tool supports (e.g. a WYSIWYG HTML editor allows editing of the HTML content of a web page editable, but not the images).&#xD;
+content properties&#xD;
+The individual pieces of information that make up the web content (e.g. the attributes and contents of elements, style sheet information).&#xD;
+content (structured)&#xD;
+Web content that includes machine-readable internal structure (e.g. markup elements), as opposed to unstructured content, such as raster image formats or plain human language text.&#xD;
+content generation (content authoring, content editing)&#xD;
+The act of specifying the actual web content that will be rendered, played or executed by the end user's user agent. While the precise details of how content is created in any given system may vary widely, responsibility for the generation of content can be any combination of the following:&#xD;
+author generated content: Web content for which authors are fully responsible. The author may only be responsible down to a particular level (e.g. when asked to type a text label, the author is responsible for the text, but not for how the label is marked up; when typing markup in a source editing-view, the author is not responsible for the fact that UNICODE is used to encode the text ).&#xD;
+automatically-generated content: Web content for which developer-programmed functionality is fully responsible (e.g. what markup to output when an author requests to start a new document, automatically correcting markup errors).&#xD;
+third-party content generation: Web content for which a third-party author is responsible (e.g. community shared templates).&#xD;
+content rendering&#xD;
+User interface functionality that authoring tools present if they render, play or execute the web content being edited. ATAG 2.0 recognizes several types of content renderings:&#xD;
+conventional renderings (or &quot;WYSIWYG&quot;): When content is rendered in a way that is similar to the default rendering a user agent would create from the same content. While &quot;WYSIWYG&quot;, standing for &quot;What-you-see-is-what-you-get&quot; is the common term, differences between user agents and end user settings mean that in reality there is no single typical end user experience; or&#xD;
+unconventional renderings: When content is rendered differently than it would be in a typical user agent (e.g. rendering an audio file as a graphical waveform); or&#xD;
+partial renderings: When some aspects of the content are rendered, played, or executed, but not others (e.g. a frame-by-frame video editor renders the graphical, but not the timing aspects, of a video).&#xD;
+content transformations&#xD;
+Processes that take content in one web content technology or non-web content technology (e.g. a word processing format) as input and produce content that has been optimized, restructured or recoded:&#xD;
+Optimizing Content Transformations: Transformations in which the content technology is not changed and the structural features of the content technology that are employed also stay the same. Changes would not be expected to result in information loss (e.g. removing whitespace, replacing in-line styles with an external style sheet).&#xD;
+Restructuring Content Transformations: Transformations in which the content technology stays the same, but the structural features of the technology used to markup the content are changed (e.g. linearizing tables, splitting a document into pages.&#xD;
+Recoding Content Transformations: Transformations in which the content technology used to encode the content is changed (e.g. HTML to XHTML, a word processing format to HTML).&#xD;
+Note: Clipboard operations, in which content is copied to or pasted from the platform clipboard, are not considered content transformations.&#xD;
+control settings&#xD;
+Settings that relate to how authors operate the authoring tool, for example using the keyboard or mouse.&#xD;
+developer&#xD;
+Any entities or individuals responsible for programming the authoring tool. This includes the programmers of any additional software components included by the Claimant in the conformance claim. In some cases, development of the authoring tool is complete before authors can use it to publish web content. However, in other cases (e.g. some web-based authoring tools), the developer may continue to modify the authoring tool even after content has been published, such that the content experienced by the end user is modified.&#xD;
+direct accessibility features&#xD;
+Features of an authoring tool that provide functionality to meet the requirements of authors with disabilities (e.g. keyboard navigation, zoom features, text-to-speech). Additional or specialized functionality may still be provided by external assistive technology.&#xD;
+display settings&#xD;
+Settings that relate to how authors perceive the authoring tool. These include:&#xD;
+audio display settings: the characteristics of audio output of music, sounds, and speech. Examples include volume, speech voices, voice speed, and voice emphasis.&#xD;
+visual display settings: the characteristics of the on-screen rendering of text and graphics. Examples include fonts, sizes, colors, spacing, positioning, and contrast.&#xD;
+tactile display settings: the characteristics of haptic output. Examples include the magnitude of the haptic forces and the types of vibration.&#xD;
+documentation&#xD;
+Any information that supports the use of an authoring tool. This information may be provided electronically or otherwise and includes help, manuals, installation instructions, sample work flows, tutorials, etc.&#xD;
+document object&#xD;
+The internal representation of data in the source by a non-web based authoring tool or user agent. The document object may form part of a platform accessibility service that enables communication with assistive technologies. Web-based authoring tools are considered to make use of the document object that is maintained by the user agent.&#xD;
+element&#xD;
+A pair of markup tags and its content, or an &quot;empty tag&quot; (one that requires no closing tag or content).&#xD;
+end user&#xD;
+A person who interacts with web content once it has been authored. This includes people using assistive technologies.&#xD;
+human language&#xD;
+Language that is spoken, written or signed (through visual or tactile means) to communicate with humans.&#xD;
+informative&#xD;
+For information purposes and not required for conformance.&#xD;
+keyboard interface&#xD;
+Keyboard interfaces are programmatic services provided by many platforms that allow operation in a device independent manner. A keyboard interface can allow keystroke input even if particular devices do not contain a hardware keyboard (e.g. a touchscreen-controlled device can have a keyboard interface built into its operating system to support onscreen keyboards as well as external keyboards that may be connected).&#xD;
+Note: Keyboard-operated mouse emulators, such as MouseKeys, do not qualify as operation through a keyboard interface because these emulators use pointing device interfaces, not keyboard interfaces.&#xD;
+keyboard trap&#xD;
+A user interface situation in which a keyboard interface may be used to move focus to, but not from, a user interface component or group of components.&#xD;
+label&#xD;
+Text or other component with a text alternative that is presented to users to identify a component. A label is presented to all users whereas the name may be hidden and only exposed by assistive technology. In many (but not all) cases the name and the label are the same.&#xD;
+live&#xD;
+Information captured from a real-world event that is published with no more than a broadcast delay.&#xD;
+Note: A broadcast delay is a short (usually automated) delay, for example used in order to give the broadcaster time to queue or censor the audio (or video) feed, but not sufficient to allow significant editing.&#xD;
+markup language&#xD;
+A system of text annotations (e.g. elements in HTML) and processing rules that may be used to specify the structure, presentation or semantics of content. Examples of markup languages include HTML and SVG.&#xD;
+markup of some content is the set of annotations that appear in the content.&#xD;
+name&#xD;
+Text by which software can identify a user interface component to the author or end user. The name may be hidden and only exposed by assistive technology, whereas a label is presented to all users. In many (but not all) cases, the label and the name are the same.&#xD;
+non-text content&#xD;
+Any content that is not a sequence of characters that can be programmatically determined or where the sequence is not expressing something in human language. This includes ASCII Art (which is a pattern of characters), emoticons, and images representing text.&#xD;
+normative&#xD;
+Required for conformance. One may conform in a variety of well-defined ways to ATAG 2.0. Content identified as &quot;informative&quot; or &quot;non-normative&quot; is never required for conformance.&#xD;
+option&#xD;
+When an author is presented with choices.&#xD;
+default option: A setting or value for an option that is assigned automatically by the authoring tool and remains in effect unless canceled or changed by the author.&#xD;
+platform&#xD;
+The software environment within which the authoring tool operates. Platforms provide a consistent operational environment on top of lower level software platforms or hardware. For web-based authoring user interfaces, the most relevant platform will be a user agent (e.g. browser). For non-web-based user interfaces, the range of platforms includes, but may not be limited to, desktop operating systems (e.g. GNOME desktop on Linux, Mac OS, Windows), mobile operating systems (e.g. Android, BlackBerry, iOS, Windows Phone), or cross-OS environments (e.g. Java), etc.&#xD;
+Note 1: Many platforms mediate communication between applications operating on the platform and assistive technology via a platform accessibility service.&#xD;
+Note 2: Accessibility guidelines for developers exist for many platforms.&#xD;
+platform accessibility service&#xD;
+A programmatic interface that is specifically engineered to provide communication between applications and assistive technologies (e.g. MSAA, IAccessible2 and UI Automation for Windows applications, AXAPI for Mac OS X applications, GNOME Accessibility Toolkit API for GNOME applications, Java Access for Java applications). On some platforms, it may be conventional to enhance communication further by implementing a document object.&#xD;
+plug-in&#xD;
+A program that runs as part of the authoring tool (e.g. a third-party checking and repair tool) and that is not part of web content being edited. Authors generally choose to include or exclude plug-ins from their authoring tool.&#xD;
+pre-authored content&#xD;
+Pieces of web content, created prior to an authoring session, that the authoring tool developer makes available to authors to use in the content being edited. Examples include clip art, sample videos, user interface widgets.&#xD;
+Note 1: For templates, an incomplete form of pre-authored content, see Guideline B.2.4.&#xD;
+Note 2: If the authoring tool uses pre-authored content automatically, see Guideline B.1.1.&#xD;
+accessible pre-authored content (WCAG): Pre-authored content that is either already accessible web content (WCAG) or would be accessible, if it was appropriately inserted into an empty document.&#xD;
+Note: If extensive author input is required to make use of pre-authored content, then the content may in fact be a template.&#xD;
+pre-authored content selection mechanism&#xD;
+A function beyond standard file selection that allows authors to select pre-authored content to use in an authoring session (e.g. clip art gallery, widget palette).&#xD;
+presentation&#xD;
+Rendering of the content in a form to be perceived by authors or end users.&#xD;
+programmatically determined (programmatically determinable)&#xD;
+Information that is encoded in a way that allows different software, including assistive technologies, to extract and present the information in different modalities. ATAG 2.0 uses this term in two contexts:&#xD;
+Processing content: Whether the authoring tool is able to extract information from the web content (e.g. to extract the language of content from the markup).&#xD;
+Communication between the authoring tool and assistive technology: For non-web-based user interfaces, this means making use of platform accessibility services, APIs, and, in some cases, document object models. For web-based user interfaces, this means ensuring that the user agent can pass on the information (e.g. through the use of WAI-ARIA).&#xD;
+prominence&#xD;
+A heuristic measure of how likely authors are to notice a user interface component in a user interface that they are operating. Prominence is affected by numerous factors, including: the number of navigation steps required, the reading order position, visual properties (e.g. size, spacing, color), and even the modality of use (e.g. mouse vs. keyboard use).&#xD;
+at least as prominent: For ATAG 2.0, a user interface component A is considered to be &quot;at least as prominent&quot; as another component B when, from a default state, component A becomes displayed (and enabled) with the same number or less &quot;opening&quot; actions than are required for component B to become displayed (and enabled).&#xD;
+Note 1: When a container is open, all of the enabled components in the container (e.g. items in a list, items in a menu, buttons in a toolbar, all components in a dialog box) are considered to be displayed (and therefore are at least as prominent as each other), even if the container must be scrolled for them to become visible. This takes into account that different screen sizes and author settings will affect which components are visible at a given time.&#xD;
+Note 2: &quot;Opening actions&quot; are actions made by authors on components within the user interface that result in new components becoming displayed or enabled. For example: (a) keyboard shortcut to a top-level menu item to display a sub-menu, (b) keyboard selection on a button to display a dialog box, (c) mouse click on a checkbox to enable previously disabled sub-items, etc. Actions that do not cause new components to become actionable (e.g. moving focus, scrolling a list), are not counted as &quot;opening actions&quot;.&#xD;
+Note 3: Keyboard shortcuts to components in closed containers are not counted as &quot;opening actions&quot; because the components have no prominence when they are not displayed. The same is true when authors must use &quot;search&quot; to reveal components in closed containers.&#xD;
+Note 4: The &quot;default state&quot; is the state of the authoring tool at the beginning of an authoring session as set by the developer. The default state of many document authoring tools is an editing-view.&#xD;
+prompt&#xD;
+Any authoring tool initiated request for a decision or piece of information from authors. The term covers both requests that must be responded to immediately (e.g. modal dialog boxes) as well as less urgent requests (e.g. underlining a misspelled word).&#xD;
+publishing&#xD;
+Any point at which the authors or authoring tool make web content available to end users (e.g. uploading a web page, committing a change in a wiki, live streaming).&#xD;
+range&#xD;
+More than one item within a multi-item set.&#xD;
+Informative Note: ATAG 2.0 uses the term &quot;range&quot; where absolute measurements may not be practical (e.g. the set of all help documentation examples, the set of all templates). While the strict testable requirement is the definition &quot;More than one item within a multi-item set&quot;, implementers are strongly encouraged to implement the success criteria more broadly.&#xD;
+relationships&#xD;
+Meaningful associations between distinct pieces of content.&#xD;
+repair (accessibility)&#xD;
+The process by which web content accessibility problems that have been identified within web content are resolved. ATAG 2.0 recognizes three types of repair, based on increasing levels of automation:&#xD;
+manual repair: Where the repairs are carried out by authors. This includes the case where authors are aided by instructions or guidance provided by the authoring tool, but where authors carry out the actual repair procedure;&#xD;
+semi-automated repair: Where the repairs are partially carried out by the authoring tool, but where authors' input or judgment is still required to complete the repair; and&#xD;
+automated repair: Where the repairs are carried out automatically by the authoring tool without any intervention by authors.&#xD;
+restrictions, restricted web content authoring&#xD;
+When the web content that authors can specify with an authoring tool either must include or must not include certain content (e.g. elements, attributes, widgets). Many authoring tools restrict authoring in some way, which can either benefit accessibility (e.g. if text alternatives for non-text content are required) or detract from accessibility (e.g. if attributes for defining text alternatives are not available). In contrast, authoring tools that allow unrestricted web content authoring do not require any particular content to be included or not included (e.g. many source editing-views).&#xD;
+role&#xD;
+Text or a number by which software can identify the function of a component within web content (e.g. a string that indicates whether an image functions as a hyperlink, command button, or check box).&#xD;
+sequential keyboard access&#xD;
+Using a keyboard interface to navigate the focus one-by-one through all of the items in an ordered set (e.g. menu items, form fields) until the desired item is reached and activated. This is in contrast to direct keyboard access methods such as keyboard shortcuts and the use of bypass links.&#xD;
+technology (web content)&#xD;
+A mechanism for encoding instructions to be rendered, played or executed by user agents. Web content technologies may include markup languages, data formats, or programming languages that authors may use alone or in combination to create end user experiences that range from static web pages to multimedia presentations to dynamic web applications. Some common examples of web content technologies include HTML, CSS, SVG, PNG, PDF, Flash, Silverlight, Flex, and JavaScript.&#xD;
+template&#xD;
+Content patterns that are filled in by authors or the authoring tool to produce web content for end users (e.g. document templates, content management templates, presentation themes). Often templates will pre-specify at least some authoring decisions.&#xD;
+accessible templates (WCAG): Templates that can be filled in to create web content that meets the WCAG 2.0 success criteria (Level A, AA or AAA), when both of the following are true:&#xD;
+The author correctly follows any instructions provided (e.g. correctly responding to prompts, correctly replacing highlighted placeholders); and&#xD;
+No further authoring occurs&#xD;
+Note: Under these conditions, some templates will result in completely empty documents, which are considered accessible by default.&#xD;
+template selection mechanism&#xD;
+A function beyond standard file selection that allows authors to select templates to use as the basis for new content or to apply to existing content.&#xD;
+time limit&#xD;
+The amount of time that an authoring tool provides to authors to perform a task (e.g. read a message, select an item, save a change). Examples include: authoring session timeouts, time-based presentations (e.g. tutorial video).&#xD;
+tutorial&#xD;
+A type of documentation that provides step-by-step instructions for performing multi-part tasks.&#xD;
+user agent&#xD;
+Any software that retrieves, renders and facilitates end user interaction with web content (e.g. web browsers, browser plug-ins, media players)&#xD;
+In-Market User Agent: A user agent that can be procured by members of the public (free or otherwise). Usually, an in-market user agent will be a separate software from the authoring tool; however, sometimes a software may combine user agent and authoring tool functionality. These cases include:&#xD;
+Preview-Only: If the user agent can only render web content that it receives from the associated authoring functionality, then the software is an authoring tool with a preview feature. Such preview-only features are not considered in-market user agents.&#xD;
+User Agent with Authoring Tool Mode: If the user agent functionality must retrieve and open web content before it can be sent to the authoring tool functionality, then the software is a user agent with an authoring tool mode. If the user agent is used to preview content produced by the authoring tool mode, then it is to be considered an in-market user agent.&#xD;
+Combined User Agent/Authoring Tool: A user agent in which the default mode of user interaction enables editing the web content. These tools do not need previews because the author is already experiencing the content in the same way as end users.&#xD;
+user interface component&#xD;
+A part of the user interface or content display (including content renderings) that is perceived by authors as a single control for a distinct function.&#xD;
+video&#xD;
+The technology of moving pictures or images. Video can be made up of animated or photographic images, or both.&#xD;
+view&#xD;
+A user interface function that authors use to interact with the web content being edited. ATAG 2.0 categorizes views according to whether they support editing:&#xD;
+editing-views: Views in which some or all of the content is editable; or&#xD;
+previews: Views in which no authoring actions are provided (i.e. the view is not editable). Previews are provided to present the web content being edited by the authoring tool as it would appear to end users of user agents. Previews may be implemented using actual in-market user agents, but this is not necessary.&#xD;
+ATAG 2.0 also recognizes several approaches to presenting the content in a view:&#xD;
+source views: The content is presented in unrendered form (e.g. plain text editors); or&#xD;
+rendered views: Content renderings (conventional, unconventional or partial) are presented; or&#xD;
+property views: Only properties of the content are presented. The authoring tool then uses these properties to automatically generate the content to be published (e.g. CMS calendar widget that generates a calendar from the numeric month and year).&#xD;
+workflow&#xD;
+A customary sequence of steps or tasks that authors follow to produce a content deliverable. If an authoring tool is composed of a collection of applications (e.g. markup editor, image editor, and validation tool), then its workflows may include use of one or more of the applications.</documentation>
+    </element>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -8718,6 +8958,356 @@ Misaligned Behaviours&#xD;
       <documentation>Avoid items of less than 1 hour, especially ones of low value / criticality.</documentation>
     </element>
     <element xsi:type="archimate:Value" name="Knowing WHO is Doing WHAT (Value)" id="id-8083b0ab04a245ccbb46dfe23d2c4158"/>
+    <element xsi:type="archimate:Principle" name="A.1: Authoring tool user interfaces follow applicable accessibility guidelines (Principle)" id="id-e58f48a2718c4be09ae3e91f4897f889"/>
+    <element xsi:type="archimate:Principle" name="Guideline A.1.1: (For the authoring tool user interface) Ensure that web-based functionality is accessible (Principle)" id="id-12f0146a16644ff6be4dd8aaa41a194d">
+      <documentation>Guideline A.1.1: (For the authoring tool user interface) Ensure that web-based functionality is accessible. &#xD;
+[Implementing A.1.1] http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a11&#xD;
+Rationale: When authoring tools (or parts of authoring tools) are web-based, conforming to WCAG 2.0 (https://www.w3.org/TR/ATAG20/#conf-rel-wcag) will facilitate access by all authors, including those using assistive technologies.&#xD;
+&#xD;
+A.1.1.1 Web-Based Accessible (WCAG): If the authoring tool contains web-based user interfaces, then those web-based user interfaces meet the WCAG 2.0 success criteria. (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Implementing A.1.1.1 http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a111</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.1.2: (For the authoring tool user interface) Ensure that non-web-based functionality is accessible (Principle)" id="id-d8402d383c874d5bb985fed8751d8631">
+      <documentation>Guideline A.1.2: (For the authoring tool user interface) Ensure that non-web-based functionality is accessible. &#xD;
+[Implementing A.1.2] http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a12&#xD;
+Rationale: When authoring tools (or parts of authoring tools) are non-web-based, following existing platform accessibility guidelines and implementing communication with platform accessibility services facilitates access by all authors, including those using assistive technologies.&#xD;
+&#xD;
+A.1.2.1 Accessibility Guidelines: If the authoring tool contains non-web-based user interfaces, then those non-web-based user interfaces follow user interface accessibility guidelines for the platform. (Level A)&#xD;
+Note: The (optional) explanation of conformance claim results (https://www.w3.org/TR/ATAG20/#conf-explanation-results) should record the user interface accessibility guidelines that were followed.&#xD;
+Implementing A.1.2.1 &#xD;
+A.1.2.2 Platform Accessibility Services: If the authoring tool contains non-web-based user interfaces, then those non-web-based user interfaces expose accessibility information through platform accessibility services. (Level A)&#xD;
+Note: The (optional) explanation of conformance claim results (https://www.w3.org/TR/ATAG20/#conf-explanation-results) should record the platform accessibility service(s) that were implemented.&#xD;
+Implementing A.1.2.2 http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a122</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="A.2: Editing-views are perceivable (Principle)" id="id-b42535c56a014aa2b0be24081f43c5a3"/>
+    <element xsi:type="archimate:Principle" name="Guideline A.2.1: (For the authoring tool user interface) Make alternative content available to authors (Principle)" id="id-b2ead326039d434eb757b23f0ff73fac">
+      <documentation>Guideline A.2.1: (For the authoring tool user interface) Make alternative content available to authors. &#xD;
+[Implementing A.2.1] http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a21&#xD;
+Rationale: Some authors require access to alternative content in order to interact with the web content that they are editing.&#xD;
+&#xD;
+A.2.1.1 Text Alternatives for Rendered Non-Text Content: If an editing-view renders non-text content, then any programmatically associated text alternatives for the non-text content can be programmatically determined. (Level A)&#xD;
+Implementing A.2.1.1 http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a211&#xD;
+A.2.1.2 Alternatives for Rendered Time-Based Media: If an editing-view renders time-based media, then at least one of the following is true: (Level A)&#xD;
+(a) Option to Render: The authoring tool provides the option to render alternatives for the time-based media; or&#xD;
+(b) User Agent Option: Authors have the option to preview the time-based media in a user agent that is able to render the alternatives.&#xD;
+Implementing A.2.1.2 http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a212</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.2.2: (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined (Principle)" id="id-263df804fc8b450d98d451568c75638b">
+      <documentation>Guideline A.2.2: (For the authoring tool user interface) Ensure that editing-view presentation can be programmatically determined. &#xD;
+[Implementing A.2.2] http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a22&#xD;
+Rationale: Some authors need access to details about the editing-view presentation, via their assistive technology, when that presentation is used to convey status messages (e.g. underlining misspelled words) or provide information about how the end user will experience the web content being edited.&#xD;
+&#xD;
+A.2.2.1 Editing-View Status Indicators: If an editing-view adds status indicators to the content being edited, then the information being conveyed by the status indicators can be programmatically determined. (Level A)&#xD;
+Note: Status indicators may indicate errors (e.g. spelling errors), tracked changes, hidden elements, or other information.&#xD;
+Implementing A.2.2.1 http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a221&#xD;
+A.2.2.2 Access to Rendered Text Properties: If an editing-view renders any text formatting properties that authors can also edit using the editing-view, then the properties can be programmatically determined. (Level AA)&#xD;
+Implementing A.2.2.2 http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#sc_a222</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="A.3: Editing-views are operable (Principle)" id="id-db7f13c3cf744417b5b006f203fd9d6e"/>
+    <element xsi:type="archimate:Principle" name="Guideline A.3.1: (For the authoring tool user interface) Provide keyboard access to authoring features (Principle)" id="id-c0f8ecece9bc435fb23183495c5f5938">
+      <documentation>Guideline A.3.1: (For the authoring tool user interface) Provide keyboard access to authoring features. [Implementing A.3.1]&#xD;
+Rationale: Some authors with limited mobility or visual disabilities do not use a mouse and instead require keyboard interface access to all of the functionality of the authoring tool.&#xD;
+&#xD;
+A.3.1.1 Keyboard Access (Minimum): All functionality of the authoring tool is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. (Level A)&#xD;
+Note 1: Keyboard interfaces are programmatic services provided by many platforms that allow operation in a device independent manner. This success criterion does not imply the presence of a hardware keyboard.&#xD;
+Note 2: The path exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input, but the underlying function (text input) does not. The path exception encompasses other input variables that are continuously sampled from pointing devices, including pressure, speed, and angle.&#xD;
+Note 3: This success criterion does not forbid and should not discourage other input methods (e.g. mouse, touch) in addition to keyboard operation.&#xD;
+Implementing A.3.1.1&#xD;
+A.3.1.2 No Keyboard Traps: If keyboard focus can be moved to a component using a keyboard interface, then focus can be moved away from that component using only a keyboard interface. If it requires more than unmodified arrow or tab keys or other standard exit methods, authors are advised of the method for moving focus away. (Level A)&#xD;
+Implementing A.3.1.2&#xD;
+A.3.1.3 Efficient Keyboard Access: The authoring tool user interface includes mechanisms to make keyboard access more efficient than sequential keyboard access. (Level AA)&#xD;
+Implementing A.3.1.3&#xD;
+A.3.1.4 Keyboard Access (Enhanced): All functionality of the authoring tool is operable through a keyboard interface without requiring specific timings for individual keystrokes. (Level AAA)&#xD;
+Implementing A.3.1.4&#xD;
+A.3.1.5 Customize Keyboard Access: If the authoring tool includes keyboard commands, then those keyboard commands can be customized. (Level AAA)&#xD;
+Implementing A.3.1.5&#xD;
+A.3.1.6 Present Keyboard Commands: If the authoring tool includes keyboard commands, then the authoring tool provides a way for authors to determine the keyboard commands associated with authoring tool user interface components. (Level AAA)&#xD;
+Implementing A.3.1.6</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.3.2: (For the authoring tool user interface) Provide authors with enough time (Principle)" id="id-8cbfe89e16434124b633d73680669c01">
+      <documentation>Guideline A.3.2: (For the authoring tool user interface) Provide authors with enough time. &#xD;
+[Implementing A.3.2] http://www.w3.org/TR/2015/NOTE-IMPLEMENTING-ATAG20-20150924/#gl_a32&#xD;
+Rationale: Some authors who have difficulty typing, operating the mouse, or processing information can be prevented from using systems with short time limits or that require fast reaction speeds, such as clicking on a moving target.&#xD;
+&#xD;
+A.3.2.1 Auto-Save (Minimum): The authoring tool does not include session time limits or the authoring tool can automatically save edits made before the session time limits are reached. (Level A)&#xD;
+Implementing A.3.2.1&#xD;
+A.3.2.2 Timing Adjustable: The authoring tool does not include time limits or at least one of the following is true: (Level A)&#xD;
+(a) Turn Off: Authors are allowed to turn off the time limit before encountering it; or&#xD;
+(b) Adjust: Authors are allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or&#xD;
+(c) Extend: Authors are warned before time expires and given at least 20 seconds to extend the time limit with a simple action (e.g. &quot;press the space bar&quot;), and authors are allowed to extend the time limit at least ten times; or&#xD;
+(d) Real-time Exception: The time limit is a required part of a real-time event (e.g. a collaborative authoring system), and no alternative to the time limit is possible; or&#xD;
+(e) Essential Exception: The time limit is essential and extending it would invalidate the activity; or&#xD;
+(f) 20 Hour Exception: The time limit is longer than 20 hours.&#xD;
+Implementing A.3.2.2&#xD;
+A.3.2.3 Static Input Components: The authoring tool does not include moving user interface components that accept input where the movement of these components cannot be paused by authors. (Level A)&#xD;
+Implementing A.3.2.3&#xD;
+A.3.2.4 Content Edits Saved (Extended): The authoring tool can be set to automatically save web content edits made using the authoring tool. (Level AAA)&#xD;
+Implementing A.3.2.4</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.3.3: (For the authoring tool user interface) Help authors avoid flashing that could cause seizures (Principle)" id="id-d152c696c6cf438c93f30577d92c2788">
+      <documentation>Guideline A.3.3: (For the authoring tool user interface) Help authors avoid flashing that could cause seizures. [Implementing A.3.3]&#xD;
+Rationale: Flashing can cause seizures in authors with photosensitive seizure disorder.&#xD;
+&#xD;
+A.3.3.1 Static View Option: If an editing-view can play visual time-based content, then playing is not necessarily automatic upon loading the content and playing can be paused. (Level A)&#xD;
+Implementing A.3.3.1</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.3.4: (For the authoring tool user interface) Enhance navigation and editing via content structure (Principle)" id="id-50ea8cc096874827ad596c2d128d6d9a">
+      <documentation>Guideline A.3.4: (For the authoring tool user interface) Enhance navigation and editing via content structure. [Implementing A.3.4]&#xD;
+Rationale: Some authors who have difficulty typing or operating the mouse benefit when authoring tools make use of the structure present in web content to simplify navigating and editing the content.&#xD;
+&#xD;
+A.3.4.1 Navigate By Structure: If editing-views expose the markup elements in the web content being edited, then the markup elements (e.g. source code, content renderings) are selectable and navigation mechanisms are provided to move the selection focus between elements. (Level AA)&#xD;
+Implementing A.3.4.1&#xD;
+A.3.4.2 Navigate by Programmatic Relationships: If editing-views allow editing of programmatic relationships within web content, then mechanisms are provided that support navigation between the related content. (Level AAA)&#xD;
+Note: Depending on the web content technology and the nature of the authoring tool, relationships may include, but are not limited to, element nesting, headings, labeling, programmatic definitions, and ID relationships.&#xD;
+Implementing A.3.4.2</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.3.7: (For the authoring tool user interface) Ensure that previews are at least as accessible as in-market user agents (Principle)" id="id-a8c28c635a8742218ec37bde586bedc7">
+      <documentation>Guideline A.3.7: (For the authoring tool user interface) Ensure that previews are at least as accessible as in-market user agents. [Implementing A.3.7]&#xD;
+Rationale: Preview features are provided by many authoring tools because the workflow of authors often includes periodically checking how user agents will display the web content to end users. Authors with disabilities need the same opportunity to check their work.&#xD;
+&#xD;
+A.3.7.1 Preview (Minimum): If a preview is provided, then at least one of the following is true: (Level A)&#xD;
+(a) In-Market User Agent: The preview renders content using a user agent that is in-market; or&#xD;
+(b) UAAG (Level A): The preview conforms to the User Agent Accessibility Guidelines 1.0 Level A [UAAG10].&#xD;
+Implementing A.3.7.1&#xD;
+A.3.7.2 Preview (Enhanced): If a preview is provided, then authors can specify which user agent performs the preview. (Level AAA)&#xD;
+Implementing A.3.7.2</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="A.4: Editing-views are understandable (Principle)" id="id-f92cdd54f88246aa971c8484bccee47c"/>
+    <element xsi:type="archimate:Principle" name="Part A: Make the authoring tool user interface accessible (Principle)" id="id-d0c03047616043ca81c9cd9ad5b8f658">
+      <documentation>Part A Conformance Applicability Notes:&#xD;
+Scope of &quot;authoring tool user interface&quot;: The Part A success criteria apply to all aspects of the authoring tool user interface that are concerned with producing the &quot;included&quot; web content technologies. This includes views of the web content being edited and features that are independent of the content being edited (e.g. menus, button bars, status bars, user preferences, documentation).&#xD;
+Reflected content accessibility problems: The authoring tool is responsible for ensuring that editing-views display the web content being edited in a way that is more accessible to authors with disabilities (e.g. ensuring that text alternatives in the content can be programmatically determined). However, where an authoring tool user interface accessibility problem is caused directly by the content being edited (e.g. if an image in the content lacks a text alternative), then this would not be considered a deficiency in the accessibility of the authoring tool user interface.&#xD;
+Developer control: The Part A success criteria only apply to the authoring tool user interface as it is provided by the developer. They do not apply to any subsequent modifications by parties other than the authoring tool developer (e.g. user modifications of default settings, third-party plug-ins).&#xD;
+User agent features: Web-based authoring tools may rely on user agent features (e.g. keyboard navigation, find functions, display preferences, undo features) to satisfy success criteria. Conformance claims are optional, but any claim that is made must record the user agent(s).&#xD;
+Accessibility of features provided to meet Part A: The Part A success criteria apply to the entire authoring tool user interface, including any features added to meet the success criteria in Part A (e.g. documentation, search functions). The only exemption is for preview features, as long as they meet the relevant success criteria in Guideline A.3.7. Previews are treated differently than editing-views because all authors, including those with disabilities, benefit when preview features accurately reflect the functionality of user agents that are actually in use by end users.&#xD;
+Unrecognizable content: When success criteria require authoring tools to treat web content according to semantic criteria, the success criteria only apply when these semantics are encoded programmatically (e.g. text describing an image can only be considered a text alternatives for non-text content when this role is encoded within markup).</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.3.5: (For the authoring tool user interface) Provide text search of the content (Principle)" id="id-80d675e04c694f2fb94d4533da4111cc">
+      <documentation>Guideline A.3.5: (For the authoring tool user interface) Provide text search of the content. [Implementing A.3.5]&#xD;
+Rationale: Some authors who have difficulty typing or operating the mouse benefit from the ability to use text search to navigate to arbitrary points within the web content being edited.&#xD;
+&#xD;
+A.3.5.1 Text Search: If the authoring tool provides an editing-view of text-based content, then the editing-view enables text search, such that all of the following are true: (Level AA)&#xD;
+(a) All Editable Text: Any text content that is editable by the editing-view is searchable (including alternative content); and&#xD;
+(b) Match: Matching results can be presented to authors and given focus; and&#xD;
+(c) No Match: Authors are informed when no results are found; and&#xD;
+(d) Two-way: The search can be made forwards or backwards.&#xD;
+Implementing A.3.5.1</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.3.6: (For the authoring tool user interface) Manage preference settings (Principle)" id="id-8fec64ddd6e14ae08be2f069bc2816a8">
+      <documentation>Guideline A.3.6: (For the authoring tool user interface) Manage preference settings. [Implementing A.3.6]&#xD;
+Rationale: Some authors need to set their own display settings in a way that differs from the presentation that they want to define for the published web content. Providing the ability to save and reload sets of keyboard and display preference settings benefits authors who have needs that differ over time (e.g. due to fatigue).&#xD;
+&#xD;
+A.3.6.1 Independence of Display: If the authoring tool includes display settings for editing-views, then the authoring tool allows authors to adjust these settings without modifying the web content being edited. (Level A)&#xD;
+Implementing A.3.6.1&#xD;
+A.3.6.2 Save Settings: If the authoring tool includes display and/or control settings, then these settings can be saved between authoring sessions. (Level AA)&#xD;
+Implementing A.3.6.2&#xD;
+A.3.6.3 Apply Platform Settings: The authoring tool respects changes in platform display and control settings, unless authors select more specific display and control settings using the authoring tool. (Level AA)&#xD;
+Implementing A.3.6.3</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.4.1: (For the authoring tool user interface) Help authors avoid and correct mistakes (Principle)" id="id-f6127a667a1747f484075d8602420b10">
+      <documentation>Guideline A.4.1: (For the authoring tool user interface) Help authors avoid and correct mistakes. [Implementing A.4.1]&#xD;
+Rationale: Some authors with disabilities may be more susceptible to input errors due to factors such as difficulty making fine movements and speech recognition system errors.&#xD;
+&#xD;
+A.4.1.1 Content Changes Reversible (Minimum): All authoring actions are either reversible or the authoring tool requires author confirmation to proceed. (Level A)&#xD;
+Implementing A.4.1.1&#xD;
+A.4.1.2 Settings Change Confirmation: If the authoring tool provides mechanisms for changing authoring tool user interface settings, then those mechanisms can reverse the setting changes, or the authoring tool requires author confirmation to proceed. (Level A)&#xD;
+Implementing A.4.1.2&#xD;
+A.4.1.3 Content Changes Reversible (Enhanced): Authors can sequentially reverse a series of reversible authoring actions. (Level AAA)&#xD;
+Note: It is acceptable to clear the authoring action history at the end of authoring sessions.&#xD;
+Implementing A.4.1.3</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline A.4.2: (For the authoring tool user interface) Document the user interface, including all accessibility features (Principle)" id="id-229864ef944b4772a89339d1916f1b26">
+      <documentation>Guideline A.4.2: (For the authoring tool user interface) Document the user interface, including all accessibility features. [Implementing A.4.2]&#xD;
+Rationale: Some authors may not be able to understand or operate the authoring tool user interface without documentation.&#xD;
+&#xD;
+A.4.2.1 Describe Accessibility Features: For each authoring tool feature that is used to meet Part A of ATAG 2.0, at least one of the following is true: (Level A)&#xD;
+(a) Described in the Documentation: Use of the feature is explained in the authoring tool's documentation; or&#xD;
+(b) Described in the Interface: Use of the feature is explained in the authoring tool user interface; or&#xD;
+(c) Platform Service: The feature is a service provided by an underlying platform; or&#xD;
+(d) Not Used by Authors: The feature is not used directly by authors (e.g. passing information to a platform accessibility service).&#xD;
+Note: The accessibility of the documentation is covered by Guideline A.1.1 and Guideline A.1.2.&#xD;
+Implementing A.4.2.1&#xD;
+A.4.2.2 Document All Features: For each authoring tool feature, at least one of the following is true: (Level AA)&#xD;
+(a) Described in the Documentation: Use of the feature is explained in the authoring tool's documentation; or&#xD;
+(b) Described in the Interface: Use of the feature is explained in the authoring tool user interface; or&#xD;
+(c) Platform Service: The feature is a service provided by an underlying platform; or&#xD;
+(d) Not Used by Authors: The feature is not used directly by authors (e.g. passing information to a platform accessibility service).&#xD;
+Note: The accessibility of the documentation is covered by Guideline A.1.1 and Guideline A.1.2.&#xD;
+Implementing A.4.2.2</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Part B: Support the production of accessible content (Principle)" id="id-3634342fb1bf4d1eb16d56fddfb44dc1">
+      <documentation>Part B: Support the production of accessible content&#xD;
+Part B Conformance Applicability Notes:&#xD;
+Author availability: Any Part B success criteria that refer to authors only apply during authoring sessions.&#xD;
+Developer control: The Part B success criteria only apply to the authoring tool as it is provided by the developer. This does not include subsequent modifications by parties other than the authoring tool developer (e.g. third-party plug-ins, user-defined templates, user modifications of default settings).&#xD;
+Applicability after the end of an authoring session: Authoring tools are responsible for the web content accessibility (WCAG) of web content that they automatically generate after the end of an author's authoring session (see Success Criterion B.1.1.1). For example, if the developer changes the site-wide templates of a content management system, these would be required to meet the accessibility requirements for automatically-generated content. Authoring tools are not responsible for changes to the accessibility of content that the author causes, whether it is author-generated or automatically-generated by another system that the author has specified (e.g. a third-party feed).&#xD;
+Authoring systems: As per the ATAG 2.0 definition of authoring tool, several software tools (identified in any conformance claim) can be used in conjunction to meet the requirements of Part B (e.g. an authoring tool could make use of a third-party software accessibility checking tool).&#xD;
+Accessibility of features provided to meet Part B: The Part A success criteria apply to the entire authoring tool user interface, including any features that must be present to meet the success criteria in Part B (e.g. checking tools, repair tools, tutorials, documentation).&#xD;
+Multiple authoring roles: Some authoring tools include multiple author roles, each with different views and content editing permissions (e.g. a content management system may separate the roles of designers, content authors, and quality assurers). In these cases, the Part B success criteria apply to the authoring tool as a whole, not to the view provided to any particular authoring role. Accessible content support features should be made available to any authoring role where it would be useful.&#xD;
+Unrecognizable content: When success criteria require authoring tools to treat web content according to semantic criteria, the success criteria only apply when these semantics are encoded programmatically (e.g. text describing an image can only be considered a text alternatives for non-text content when this role is encoded within markup).</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.1.1: Ensure that automatically-specified content is accessible (Principle)" id="id-3537a668c8c042d7b96fa2d22c90763d">
+      <documentation>Guideline B.1.1: Ensure that automatically-specified content is accessible. [Implementing B.1.1]&#xD;
+Rationale: If authoring tools automatically produce web content that includes accessibility problems (WCAG), then this will impose additional repair tasks on authors.&#xD;
+&#xD;
+B.1.1.1 Content Auto-Generation After Authoring Sessions (WCAG): The authoring tool does not automatically generate web content after the end of an authoring session, or, authors can specify that the content be accessible web content (WCAG). (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Note: This success criterion applies only to automatic processes specified by the authoring tool developer. It does not apply when author actions prevent generation of accessible web content (WCAG).&#xD;
+Implementing B.1.1.1&#xD;
+B.1.1.2 Content Auto-Generation During Authoring Sessions (WCAG): If the authoring tool provides the functionality for automatically generating web content during an authoring session, then at least one of the following is true: (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+(a) Accessible: The content is accessible web content (WCAG) without author input; or&#xD;
+(b) Prompting: During the automatic generation process, authors are prompted for any required accessibility information (WCAG); or&#xD;
+(c) Automatic Checking: After the automatic generation process, accessibility checking is automatically performed; or&#xD;
+(d) Checking Suggested: After the automatic generation process, the authoring tool prompts authors to perform accessibility checking.&#xD;
+Note 1: Automatic generation includes automatically selecting templates for authors.&#xD;
+Note 2: This success criterion applies only to automatic processes specified by the authoring tool developer. It does not apply when author actions prevent generation of accessible web content (WCAG).&#xD;
+Implementing B.1.1.2</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.1.2: Ensure that accessibility information is preserved (Principle)" id="id-5ea7633306e6417bb5ceecf2426d6702">
+      <documentation>Guideline B.1.2: Ensure that accessibility information is preserved. [Implementing B.1.2]&#xD;
+Rationale: Accessibility information (WCAG) is critical to maintaining comparable levels of web content accessibility (WCAG) between the input and output of web content transformations.&#xD;
+&#xD;
+B.1.2.1 Restructuring and Recoding Transformations (WCAG): If the authoring tool provides restructuring transformations or re-coding transformations, and if equivalent mechanisms exist in the web content technology of the output, then at least one of the following is true: (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+(a) Preserve: Accessibility information (WCAG) is preserved in the output; or&#xD;
+(b) Warning: Authors have the default option to be warned that accessibility information (WCAG) may be lost (e.g. when saving a vector graphic into a raster image format); or&#xD;
+(c) Automatic Checking: After the transformation, accessibility checking is automatically performed; or&#xD;
+(d) Checking Suggested: After the transformation, the authoring tool prompts authors to perform accessibility checking.&#xD;
+Note 1: For text alternatives for non-text content, see Success Criterion B.1.2.4.&#xD;
+Note 2: This success criteria only applies when the output technology is &quot;included&quot; for conformance.&#xD;
+Implementing B.1.2.1&#xD;
+B.1.2.2 Copy-Paste Inside Authoring Tool (WCAG): If the authoring tool supports copy and paste of structured content, then any accessibility information (WCAG) in the copied content is preserved when the authoring tool is both the source and destination of the copy-paste and the source and destination use the same web content technology. (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Implementing B.1.2.2&#xD;
+B.1.2.3 Optimizations Preserve Accessibility: If the authoring tool provides optimizing web content transformations, then any accessibility information (WCAG) in the input is preserved in the output. (Level A).&#xD;
+Implementing B.1.2.3&#xD;
+B.1.2.4 Text Alternatives for Non-Text Content are Preserved: If the authoring tool provides web content transformations that preserve non-text content in the output, then any text alternatives for that non-text content are also preserved, if equivalent mechanisms exist in the web content technology of the output. (Level A).&#xD;
+Note: This success criterion only applies when the output technology is &quot;included&quot; for conformance.&#xD;
+Implementing B.1.2.4</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.2.1: Ensure that accessible content production is possible (Principle)" id="id-4b9a9e48162f447fbc2f8548891b6bb2">
+      <documentation>Guideline B.2.1: Ensure that accessible content production is possible. [Implementing B.2.1]&#xD;
+Rationale: To support accessible web content (WCAG) production, at minimum, it is possible to produce web content that conforms with WCAG 2.0 using the authoring tool.&#xD;
+&#xD;
+B.2.1.1 Accessible Content Possible (WCAG): The authoring tool does not place restrictions on the web content that authors can specify or those restrictions do not prevent WCAG 2.0 success criteria from being met. (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Implementing B.2.1.1</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="B.1: Fully automatic processes produce accessible content (Principle)" id="id-da903d6b2c7b4b9a889bbfa0bc350a5e">
+      <documentation>Principle B.1: Fully automatic processes produce accessible content</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="B.2: Authors are supported in producing accessible content (Principle)" id="id-fe2ba15bdd8a43d685f6af968aea8259">
+      <documentation>Principle B.2: Authors are supported in producing accessible content</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="B.3: Authors are supported in improving the accessibility of existing content (Principle)" id="id-bb5a674da5a44b28b1dd1306f03958a9"/>
+    <element xsi:type="archimate:Principle" name="Guideline B.2.3: Assist authors with managing alternative content for non-text content (Principle)" id="id-c6e84229f1da49c191feebb380bd17aa">
+      <documentation>Guideline B.2.3: Assist authors with managing alternative content for non-text content. [Implementing B.2.3]&#xD;
+Rationale: Improperly generated alternative content can create web content accessibility problems (WCAG) and interfere with accessibility checking.&#xD;
+Note: This guideline only applies when non-text content is specified by authors (e.g. inserting an image). When non-text content is automatically added by the authoring tool, see Guideline B.1.1.&#xD;
+&#xD;
+B.2.3.1 Alternative Content is Editable (WCAG): If the authoring tool provides functionality for adding non-text content, then authors are able to modify programmatically associated text alternatives for non-text content. (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Note: An exception can be made when the non-text content is known to be decoration, formatting, invisible or a CAPTCHA.&#xD;
+Implementing B.2.3.1&#xD;
+B.2.3.2 Automating Repair of Text Alternatives: The authoring tool does not attempt to repair text alternatives for non-text content or the following are all true: (Level A)&#xD;
+(a) No Generic or Irrelevant Strings: Generic strings (e.g. &quot;image&quot;) and irrelevant strings (e.g. the file name, file format) are not used as text alternatives; and&#xD;
+(b) In-Session Repairs: If the repair attempt occurs during an authoring session, authors have the opportunity to accept, modify, or reject the repair attempt prior to insertion of the text alternative into the content; and&#xD;
+(c) Out-of-Session Repairs: If the repair attempt occurs after an authoring session has ended, the repaired text alternatives are indicated during subsequent authoring sessions (if any) and authors have the opportunity to accept, modify, or reject the repair strings prior to insertion in the content.&#xD;
+Implementing B.2.3.2&#xD;
+B.2.3.3 Save for Reuse: If the authoring tool provides the functionality for adding non-text content, when authors enter programmatically associated text alternatives for non-text content, then both of the following are true: (Level AAA)&#xD;
+(a) Save and Suggest: The text alternatives are automatically saved and suggested by the authoring tool, if the same non-text content is reused; and&#xD;
+(b) Edit Option: The author has the option to edit or delete the saved text alternatives.&#xD;
+Implementing B.2.3.3</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.2.4: Assist authors with accessible templates (Principle)" id="id-fefdf45e8eb94149a14aef960062a742">
+      <documentation>Guideline B.2.4: Assist authors with accessible templates. [Implementing B.2.4]&#xD;
+Rationale: Providing accessible templates (WCAG) can have several benefits, including: immediately improving the accessibility of the web content (WCAG) of being edited, reducing the effort required of authors, and demonstrating the importance of accessible web content (WCAG).&#xD;
+&#xD;
+B.2.4.1 Accessible Template Options (WCAG): If the authoring tool provides templates, then there are accessible template (WCAG) options for a range of template uses. (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Implementing B.2.4.1&#xD;
+B.2.4.2 Identify Template Accessibility: If the authoring tool includes a template selection mechanism and provides any non-accessible template (WCAG) options, then the template selection mechanism can display distinctions between the accessible and non-accessible options. (Level AA)&#xD;
+Note: The distinction can involve providing information for the accessible templates, the non-accessible templates or both.&#xD;
+Implementing B.2.4.2&#xD;
+B.2.4.3 Author-Created Templates: If the authoring tool includes a template selection mechanism and allows authors to create new non-accessible templates (WCAG), then authors can enable the template selection mechanism to display distinctions between accessible and non-accessible templates that they create. (Level AA)&#xD;
+Note: The distinction can involve providing information for the accessible templates (WCAG), the non-accessible templates or both.&#xD;
+Implementing B.2.4.3&#xD;
+B.2.4.4 Accessible Template Options (Enhanced): If the authoring tool provides templates, then all of the templates are accessible template (to WCAG Level AA). (Level AAA)&#xD;
+Implementing B.2.4.4</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.2.5: Assist authors with accessible pre-authored content (Principle)" id="id-a375259942a0447cae60a38531692de7">
+      <documentation>Guideline B.2.5: Assist authors with accessible pre-authored content. [Implementing B.2.5]&#xD;
+Rationale: Providing accessible pre-authored content (WCAG) (e.g. clip art, synchronized media, widgets) can have several benefits, including: immediately improving the accessibility of web content (WCAG) being edited, reducing the effort required of authors, and demonstrating the importance of accessibility.&#xD;
+&#xD;
+B.2.5.1 Accessible Pre-Authored Content Options: If the authoring tool provides pre-authored content, then a range of accessible pre-authored content (to WCAG Level AA) options are provided. (Level AA)&#xD;
+Implementing B.2.5.1&#xD;
+B.2.5.2 Identify Pre-Authored Content Accessibility: If the authoring tool includes a pre-authored content selection mechanism and provides any non-accessible pre-authored content (WCAG Level AA) options, then the selection mechanism can display distinctions between the accessible and non-accessible options. (Level AA)&#xD;
+Note: The distinction can involve providing information for the accessible pre-authored content, the non-accessible pre-authored content or both.&#xD;
+Implementing B.2.5.2</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.2.2: Guide authors to produce accessible content (Principle)" id="id-297e9a91431541d9a2e118cf5f3815f6">
+      <documentation>Guideline B.2.2: Guide authors to produce accessible content. [Implementing B.2.2]&#xD;
+Rationale: By guiding authors from the outset toward the creation and maintenance of accessible web content (WCAG), web content accessibility problems (WCAG) are mitigated and less repair effort is required.&#xD;
+&#xD;
+B.2.2.1 Accessible Option Prominence (WCAG): If authors are provided with a choice of authoring actions for achieving the same authoring outcome (e.g. styling text), then options that will result in accessible web content (WCAG) are at least as prominent as options that will not. (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Implementing B.2.2.1&#xD;
+B.2.2.2 Setting Accessibility Properties (WCAG): If the authoring tool provides mechanisms to set web content properties (e.g. attribute values), then mechanisms are also provided to set web content properties related to accessibility information (WCAG). (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Note: For the prominence of the mechanisms, see Success Criterion B.4.1.4.&#xD;
+Implementing B.2.2.2</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.3.1: Assist authors in checking for accessibility problems (Principle)" id="id-f889b7e22af04bfa81c1fb69298a3ea7">
+      <documentation>Guideline B.3.1: Assist authors in checking for accessibility problems. [Implementing B.3.1]&#xD;
+Rationale: When accessibility checking is an integrated function of the authoring tool, it helps make authors aware of web content accessibility problems (WCAG) during the authoring process, so they can be immediately addressed.&#xD;
+&#xD;
+B.3.1.1 Checking Assistance (WCAG): If the authoring tool provides authors with the ability to add or modify web content in such a way that a WCAG 2.0 success criterion can be violated, then accessibility checking for that success criterion is provided (e.g. an HTML authoring tool that inserts images should check for alternative text; a video authoring tool with the ability to edit text tracks should check for captions). (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Note: Automated and semi-automated checking is possible (and encouraged) for many types of web content accessibility problems (WCAG). However, manual checking is the minimum requirement to meet this success criterion. In manual checking, the authoring tool provides authors with instructions for detecting problems, which authors carry out by themselves. For more information on checking, see Implementing ATAG 2.0 - Appendix B: Levels of Checking Automation.&#xD;
+Implementing B.3.1.1&#xD;
+B.3.1.2 Help Authors Decide: If the authoring tool provides accessibility checking that relies on authors to decide whether potential web content accessibility problems (WCAG) are correctly identified (i.e. manual checking and semi-automated checking), then the accessibility checking process provides instructions that describe how to decide. (Level A)&#xD;
+Implementing B.3.1.2&#xD;
+B.3.1.3 Help Authors Locate: If the authoring tool provides checks that require authors to decide whether a potential web content accessibility problem (WCAG) is correctly identified (i.e. manual checking and semi-automated checking), then the relevant content is identified to the authors. (Level A)&#xD;
+Note: Depending on the nature of the editing-view and the scope of the potential web content accessibility problem (WCAG), identification might involve highlighting elements or renderings of elements, displaying line numbers, or providing instructions.&#xD;
+Implementing B.3.1.3&#xD;
+B.3.1.4 Status Report: If the authoring tool provides checks, then authors can receive an accessibility status report based on the results of the accessibility checks. (Level AA)&#xD;
+Note: The format of the accessibility status report is not specified and they might include a listing of problems detected or a WCAG 2.0 conformance level, etc.&#xD;
+Implementing B.3.1.4&#xD;
+B.3.1.5 Programmatic Association of Results: If the authoring tool provides checks, then the authoring tool can programmatically associate accessibility checking results with the web content that was checked. (Level AA)&#xD;
+Implementing B.3.1.5</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.3.2: Assist authors in repairing accessibility problems (Principle)" id="id-8c76c6e3d6a04287bc9c526a3ba0510c">
+      <documentation>Guideline B.3.2: Assist authors in repairing accessibility problems. [Implementing B.2.3]&#xD;
+Rationale: When repair is an integral part of the authoring process, it greatly enhances the utility of checking and increases the likelihood that web content accessibility problems (WCAG) will be properly addressed.&#xD;
+&#xD;
+B.3.2.1 Repair Assistance (WCAG): If checking (see Success Criterion B.3.1.1) can detect that a WCAG 2.0 success criterion is not met, then repair suggestion(s) are provided: (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Note: Automated and semi-automated repair is possible (and encouraged) for many types of web content accessibility problems (WCAG). However, manual repair is the minimum requirement to meet this success criterion. In manual repair, the authoring tool provides authors with instructions for repairing problems, which authors carry out by themselves. For more information on repair, see Implementing ATAG 2.0 - Appendix C: Levels of Repair Automation.&#xD;
+Implementing B.3.2.1</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="B.4: Authoring tools promote and integrate their accessibility features (Principle)" id="id-1d5f61da1e49424cbdbd2ef850bbd055">
+      <documentation>Principle B.4: Authoring tools promote and integrate their accessibility features</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.4.1: Ensure the availability of features that support the production of accessible content (Principle)" id="id-20c9ed40937b4ed78c643d10ff5e0ec2">
+      <documentation>Guideline B.4.1: Ensure the availability of features that support the production of accessible content. [Implementing B.4.1]&#xD;
+Rationale: The accessible content support features will be more likely to be used, if they are turned on and are afforded reasonable prominence within the authoring tool user interface.&#xD;
+&#xD;
+B.4.1.1 Features Active by Default: All accessible content support features are turned on by default. (Level A)&#xD;
+Implementing B.4.1.1&#xD;
+B.4.1.2 Option to Reactivate Features: The authoring tool does not include the option to turn off its accessible content support features or features which have been turned off can be turned back on. (Level A)&#xD;
+Implementing B.4.1.2&#xD;
+B.4.1.3 Feature Deactivation Warning: The authoring tool does not include the option to turn off its accessible content support features or, if these features can be turned off, authors are informed that this may increase the risk of content accessibility problems (WCAG). (Level AA)&#xD;
+Implementing B.4.1.3&#xD;
+B.4.1.4 Feature Prominence: All accessible content support features are at least as prominent as features related to either invalid markup, syntax errors, spelling errors or grammar errors. (Level AA)&#xD;
+Implementing B.4.1.4</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Guideline B.4.2: Ensure that documentation promotes the production of accessible content (Principle)" id="id-1137d455942f4ba983b4a614a7859adb">
+      <documentation>Guideline B.4.2: Ensure that documentation promotes the production of accessible content. [Implementing B.4.2]&#xD;
+Rationale: Some authors need support in determining how to use accessible content production features (e.g. how to respond to prompts for text alternatives, how to use accessibility checking tools). Demonstrating accessible authoring as routine practice, or at least not demonstrating inaccessible practices, will help to encourage acceptance of accessibility by some authors.&#xD;
+&#xD;
+B.4.2.1 Model Practice (WCAG): A range of examples in the documentation (e.g. markup, screen shots of WYSIWYG editing-views) demonstrate accessible authoring practices (WCAG). (Level A to meet WCAG 2.0 Level A success criteria; Level AA to meet WCAG 2.0 Level A and AA success criteria; Level AAA to meet all WCAG 2.0 success criteria)&#xD;
+Implementing B.4.2.1&#xD;
+B.4.2.2 Feature Instructions: Instructions for using any accessible content support features appear in the documentation. (Level A)&#xD;
+Implementing B.4.2.2&#xD;
+B.4.2.3 Tutorial: The authoring tool provides a tutorial for an accessible authoring process that is specific to that authoring tool. (Level AAA)&#xD;
+Implementing B.4.2.3&#xD;
+B.4.2.4 Instruction Index: The authoring tool documentation contains an index to the instructions for using any accessible content support features. (Level AAA)&#xD;
+Implementing B.4.2.4</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Add W3C ATAG 2.0 Into Selection Criteria When Purchasing New Web Authoring Tools (Constraint)" id="id-8b277f1d34354026808434300f3e5a72">
+      <documentation>In implementing the Standard on Web Accessibility, have you:&#xD;
+- Added the World Wide Web Consortium's draft Authoring Tool Accessibility Guidelines (ATAG) 2.0 into selection criteria when purchasing new Web authoring tools?</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Feature Gap" id="9ff8a02c-23f7-41f7-9ee7-0a1373ad231a"/>
@@ -12134,6 +12724,38 @@ Includes:&#xD;
     <element xsi:type="archimate:AccessRelationship" id="id-f3c4159f718f485b88e0a33dd6fb9a12" source="id-c7c05dfcd84d42a0bdeba68ea67067f4" target="id-26ce87daece24c51a530fdee5c589eeb"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-7312e00bb56d4355a5a6ae3e536f661f" source="id-1db29f0ce12248af8606a1c583ca053c" target="id-d8710cbc44a34a40b548c2166694537c"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-cd6b963e84bd4320917dedf279ac2e17" source="id-b97a1393d643481d8dff35fec1313e31" target="id-d8710cbc44a34a40b548c2166694537c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e8d27a2bf30c4faa92f17d02f5519fa0" source="id-e58f48a2718c4be09ae3e91f4897f889" target="id-12f0146a16644ff6be4dd8aaa41a194d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-c18bb9e9a91c45c4aefcc61131fe9674" source="id-e58f48a2718c4be09ae3e91f4897f889" target="id-d8402d383c874d5bb985fed8751d8631"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0cccb9c18a1049e2be853ba1c919d57c" source="id-b42535c56a014aa2b0be24081f43c5a3" target="id-b2ead326039d434eb757b23f0ff73fac"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2f6b37da97f742daa0553c00ecc5ff03" source="id-b42535c56a014aa2b0be24081f43c5a3" target="id-263df804fc8b450d98d451568c75638b"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7539d011c2654255ab4d1f6f9efb50e1" source="id-db7f13c3cf744417b5b006f203fd9d6e" target="id-c0f8ecece9bc435fb23183495c5f5938"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-6ea8c87fc7d34e50aa5e256edafb6da6" source="id-db7f13c3cf744417b5b006f203fd9d6e" target="id-8cbfe89e16434124b633d73680669c01"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-60f6f18572c547ad8974b8cf694ceee7" source="id-db7f13c3cf744417b5b006f203fd9d6e" target="id-d152c696c6cf438c93f30577d92c2788"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-15fa33f5a7614f4b9d873b169c80bad8" source="id-db7f13c3cf744417b5b006f203fd9d6e" target="id-50ea8cc096874827ad596c2d128d6d9a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-5d8644d73b0e49f89d702d085454f586" source="id-db7f13c3cf744417b5b006f203fd9d6e" target="id-80d675e04c694f2fb94d4533da4111cc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-9ff25f98a0924602b8c80897b08291f6" source="id-db7f13c3cf744417b5b006f203fd9d6e" target="id-8fec64ddd6e14ae08be2f069bc2816a8"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d23915df64ff4a309991fd7f2f322fa2" source="id-db7f13c3cf744417b5b006f203fd9d6e" target="id-a8c28c635a8742218ec37bde586bedc7"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-cc0f40f7620f44418541717e9596fe2c" source="id-f92cdd54f88246aa971c8484bccee47c" target="id-f6127a667a1747f484075d8602420b10"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-25f74d750ef84474b89f57bb963dac7a" source="id-f92cdd54f88246aa971c8484bccee47c" target="id-229864ef944b4772a89339d1916f1b26"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1b66f5bc2aae46d98af317ab9c619027" source="id-d0c03047616043ca81c9cd9ad5b8f658" target="id-e58f48a2718c4be09ae3e91f4897f889"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3d75ea8adec643238e0bd024be7904bc" source="id-d0c03047616043ca81c9cd9ad5b8f658" target="id-f92cdd54f88246aa971c8484bccee47c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-61422ee57e824d9a9a87615c29d720c5" source="id-d0c03047616043ca81c9cd9ad5b8f658" target="id-db7f13c3cf744417b5b006f203fd9d6e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-4eb2290d61e24aaeb94d5ca96879195c" source="id-d0c03047616043ca81c9cd9ad5b8f658" target="id-b42535c56a014aa2b0be24081f43c5a3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d4b3a30bbdd2473abd32ae93686ce0d4" source="id-3634342fb1bf4d1eb16d56fddfb44dc1" target="id-bb5a674da5a44b28b1dd1306f03958a9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-b32622ad694942aca779fdaa82051d77" source="id-3634342fb1bf4d1eb16d56fddfb44dc1" target="id-da903d6b2c7b4b9a889bbfa0bc350a5e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0e34378425674266aecb471e96469de9" source="id-3634342fb1bf4d1eb16d56fddfb44dc1" target="id-fe2ba15bdd8a43d685f6af968aea8259"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-3556de39c8d44698a86c1084d6409b6b" source="id-da903d6b2c7b4b9a889bbfa0bc350a5e" target="id-3537a668c8c042d7b96fa2d22c90763d"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-47581618893d494caad14356bb83fd8e" source="id-da903d6b2c7b4b9a889bbfa0bc350a5e" target="id-5ea7633306e6417bb5ceecf2426d6702"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-64e64cce49d843d2a7ec5afe96c2b37d" source="id-fe2ba15bdd8a43d685f6af968aea8259" target="id-4b9a9e48162f447fbc2f8548891b6bb2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-721eb71e5e194e55851fd719c355a9c2" source="id-fe2ba15bdd8a43d685f6af968aea8259" target="id-297e9a91431541d9a2e118cf5f3815f6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-be2ce3ed692240d5844bc2e51048dd7d" source="id-fe2ba15bdd8a43d685f6af968aea8259" target="id-c6e84229f1da49c191feebb380bd17aa"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-01c0ed2b855e487c8e27f6bb9b7b16e8" source="id-fe2ba15bdd8a43d685f6af968aea8259" target="id-fefdf45e8eb94149a14aef960062a742"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ca4c2e5642a64132947c866b7f5f5ff2" source="id-fe2ba15bdd8a43d685f6af968aea8259" target="id-a375259942a0447cae60a38531692de7"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-54f7397b1be04bb19bf7979968a166b3" source="id-bb5a674da5a44b28b1dd1306f03958a9" target="id-f889b7e22af04bfa81c1fb69298a3ea7"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-aff640b0bb1a44509cc731b8b74a0629" source="id-bb5a674da5a44b28b1dd1306f03958a9" target="id-8c76c6e3d6a04287bc9c526a3ba0510c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-97adc65a61b14049b44c4c6f38b30f37" source="id-3634342fb1bf4d1eb16d56fddfb44dc1" target="id-1d5f61da1e49424cbdbd2ef850bbd055"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-4a3a858135304f62b0dfe49510de1b94" source="id-1d5f61da1e49424cbdbd2ef850bbd055" target="id-20c9ed40937b4ed78c643d10ff5e0ec2"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ee2d81929dcc4f4cb9d31772ac8f3638" source="id-1d5f61da1e49424cbdbd2ef850bbd055" target="id-1137d455942f4ba983b4a614a7859adb"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -14210,6 +14832,180 @@ https://dialogue/grp/BU5946064/EA%20Reference%20Material/02%20-%20ESDC%20EA%20Pr
         </child>
         <documentation>https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html&#xD;
 Date modified: 2021-05-12</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Authoring Tool Accessibility Guidelines (ATAG)" id="id-64fad1f275974957a76bce0af6a20926">
+        <child xsi:type="archimate:Note" id="id-ab7088bf77bd4e5db86d38d564f8d59c" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#fcffc6">
+          <bounds x="12" y="12" width="517" height="97"/>
+          <content>W3C Authoring Tool Accessibility Guidelines (ATAG) 2.0&#xD;
+https://www.w3.org/TR/ATAG20/</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-cb2c75eaf21b4eb284f62486b81e4657" font="1|Segoe UI|12.0|2|WINDOWS|1|-20|0|0|0|400|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#a6ebf2">
+          <bounds x="540" y="11" width="505" height="97"/>
+          <content>Mentioned under &quot;Checklist for Chief Information Officers (CIOs)&quot; in GC Guidance on Implementing the Standard on Web Accessibility&#xD;
+https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/guidance-implementing-standard-web-accessibility.html</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-07eb01d3074b485dbeb26de7d5a46d8a" textAlignment="1">
+          <bounds x="1056" y="13" width="143" height="41"/>
+          <content>Diagram Audience: &#xD;
+Diagram Purpose:</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-e5ce49ce98e3497493d1c7675172934b" textPosition="1">
+          <bounds x="432" y="82" width="97" height="27"/>
+          <content>v0.1.20210830</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6c4b8dd11fa64d52bb619ec407e9bde8" archimateElement="id-d0c03047616043ca81c9cd9ad5b8f658">
+          <bounds x="60" y="144" width="1381" height="373"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-39662156865d491bbd2983f00c1640f7" source="id-6c4b8dd11fa64d52bb619ec407e9bde8" target="id-315033615d7448fdb28834ce40a690cd" archimateRelationship="id-1b66f5bc2aae46d98af317ab9c619027"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d63b2ea08e61407c96aabe1bcc33e553" source="id-6c4b8dd11fa64d52bb619ec407e9bde8" target="id-28ce19bc409549a680cc68324b342c03" archimateRelationship="id-3d75ea8adec643238e0bd024be7904bc"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1477c47bc13b45d8937bf8074a1463e4" source="id-6c4b8dd11fa64d52bb619ec407e9bde8" target="id-44b47c52bc4448ae970e6211ee84917d" archimateRelationship="id-61422ee57e824d9a9a87615c29d720c5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4cffb2ec594d4ff1ba0e4e6ab2762768" source="id-6c4b8dd11fa64d52bb619ec407e9bde8" target="id-2576da7861f54807a15a4700afc07f46" archimateRelationship="id-4eb2290d61e24aaeb94d5ca96879195c"/>
+          <child xsi:type="archimate:DiagramObject" id="id-315033615d7448fdb28834ce40a690cd" targetConnections="id-39662156865d491bbd2983f00c1640f7" archimateElement="id-e58f48a2718c4be09ae3e91f4897f889">
+            <bounds x="19" y="48" width="234" height="259"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5cc0f5c32fad4bd19d3777825bf440e4" source="id-315033615d7448fdb28834ce40a690cd" target="id-4fd0ceef4fe24fc895e34aac109ddcfc" archimateRelationship="id-e8d27a2bf30c4faa92f17d02f5519fa0"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-167ae44066e74a8bb816be7feee39768" source="id-315033615d7448fdb28834ce40a690cd" target="id-dfc014aece744feb94be1a7277603ca9" archimateRelationship="id-c18bb9e9a91c45c4aefcc61131fe9674"/>
+            <child xsi:type="archimate:DiagramObject" id="id-4fd0ceef4fe24fc895e34aac109ddcfc" targetConnections="id-5cc0f5c32fad4bd19d3777825bf440e4" archimateElement="id-12f0146a16644ff6be4dd8aaa41a194d">
+              <bounds x="12" y="60" width="205" height="85"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-dfc014aece744feb94be1a7277603ca9" targetConnections="id-167ae44066e74a8bb816be7feee39768" archimateElement="id-d8402d383c874d5bb985fed8751d8631">
+              <bounds x="12" y="156" width="205" height="85"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-28ce19bc409549a680cc68324b342c03" targetConnections="id-d63b2ea08e61407c96aabe1bcc33e553" archimateElement="id-f92cdd54f88246aa971c8484bccee47c">
+            <bounds x="1116" y="48" width="234" height="259"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-a8f2a84ac91c4b06a70df997496026fe" source="id-28ce19bc409549a680cc68324b342c03" target="id-c637a39ff3904a0d8febd7c2d6fcda61" archimateRelationship="id-cc0f40f7620f44418541717e9596fe2c"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-4ac2346f99c94c5b98e1e9c127482d42" source="id-28ce19bc409549a680cc68324b342c03" target="id-fef3f8d7965a4ac2afc67e3cb81bbaba" archimateRelationship="id-25f74d750ef84474b89f57bb963dac7a"/>
+            <child xsi:type="archimate:DiagramObject" id="id-c637a39ff3904a0d8febd7c2d6fcda61" targetConnections="id-a8f2a84ac91c4b06a70df997496026fe" archimateElement="id-f6127a667a1747f484075d8602420b10">
+              <bounds x="12" y="48" width="205" height="73"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-fef3f8d7965a4ac2afc67e3cb81bbaba" targetConnections="id-4ac2346f99c94c5b98e1e9c127482d42" archimateElement="id-229864ef944b4772a89339d1916f1b26">
+              <bounds x="12" y="132" width="205" height="97"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-44b47c52bc4448ae970e6211ee84917d" targetConnections="id-1477c47bc13b45d8937bf8074a1463e4" archimateElement="id-db7f13c3cf744417b5b006f203fd9d6e">
+            <bounds x="516" y="48" width="588" height="305"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-a6de61c4d5214a01bbcc7f15afcb7ea1" source="id-44b47c52bc4448ae970e6211ee84917d" target="id-1c18cdcc45284ab9982cd59ce9345fad" archimateRelationship="id-7539d011c2654255ab4d1f6f9efb50e1"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c6beb8df9a8d4be38bdc6b08524a60ff" source="id-44b47c52bc4448ae970e6211ee84917d" target="id-cef9c8441fd14689bd102653d216792d" archimateRelationship="id-6ea8c87fc7d34e50aa5e256edafb6da6"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-bf07a9f561a042b2b663a7c1225d6824" source="id-44b47c52bc4448ae970e6211ee84917d" target="id-70d9c9ee0c784fd087acbd745c595111" archimateRelationship="id-60f6f18572c547ad8974b8cf694ceee7"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-a69d87a3cdfe4c92a1e5eea4ec33a75f" source="id-44b47c52bc4448ae970e6211ee84917d" target="id-c6bdc515dda54cb58427b812dd23e399" archimateRelationship="id-15fa33f5a7614f4b9d873b169c80bad8"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2323050c26f64dc3b95c87cc24ec9476" source="id-44b47c52bc4448ae970e6211ee84917d" target="id-0f0196c30f87414394d95b65736e575c" archimateRelationship="id-5d8644d73b0e49f89d702d085454f586"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-2699baded2e84931aaf5a65c6c2d0d64" source="id-44b47c52bc4448ae970e6211ee84917d" target="id-6a65ac573c4643a180fd7cce26d62b88" archimateRelationship="id-9ff25f98a0924602b8c80897b08291f6"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-93382194cc684128b4e5817466d22771" source="id-44b47c52bc4448ae970e6211ee84917d" target="id-3477fdf221fe4845a907ff9235fde45f" archimateRelationship="id-d23915df64ff4a309991fd7f2f322fa2"/>
+            <child xsi:type="archimate:DiagramObject" id="id-1c18cdcc45284ab9982cd59ce9345fad" targetConnections="id-a6de61c4d5214a01bbcc7f15afcb7ea1" archimateElement="id-c0f8ecece9bc435fb23183495c5f5938">
+              <bounds x="12" y="48" width="205" height="73"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-cef9c8441fd14689bd102653d216792d" targetConnections="id-c6beb8df9a8d4be38bdc6b08524a60ff" archimateElement="id-8cbfe89e16434124b633d73680669c01">
+              <bounds x="12" y="132" width="205" height="76"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-70d9c9ee0c784fd087acbd745c595111" targetConnections="id-bf07a9f561a042b2b663a7c1225d6824" archimateElement="id-d152c696c6cf438c93f30577d92c2788">
+              <bounds x="12" y="216" width="205" height="85"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-c6bdc515dda54cb58427b812dd23e399" targetConnections="id-a69d87a3cdfe4c92a1e5eea4ec33a75f" archimateElement="id-50ea8cc096874827ad596c2d128d6d9a">
+              <bounds x="228" y="48" width="205" height="85"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-0f0196c30f87414394d95b65736e575c" targetConnections="id-2323050c26f64dc3b95c87cc24ec9476" archimateElement="id-80d675e04c694f2fb94d4533da4111cc">
+              <bounds x="228" y="137" width="205" height="71"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-6a65ac573c4643a180fd7cce26d62b88" targetConnections="id-2699baded2e84931aaf5a65c6c2d0d64" archimateElement="id-8fec64ddd6e14ae08be2f069bc2816a8">
+              <bounds x="228" y="216" width="205" height="73"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-3477fdf221fe4845a907ff9235fde45f" targetConnections="id-93382194cc684128b4e5817466d22771" archimateElement="id-a8c28c635a8742218ec37bde586bedc7">
+              <bounds x="444" y="48" width="133" height="180"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2576da7861f54807a15a4700afc07f46" targetConnections="id-4cffb2ec594d4ff1ba0e4e6ab2762768" archimateElement="id-b42535c56a014aa2b0be24081f43c5a3">
+            <bounds x="265" y="48" width="234" height="259"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-fc6aec8f99914f8e8ead1ffdf4308187" source="id-2576da7861f54807a15a4700afc07f46" target="id-d69c68c0e45b470ca8deffa1611d56c7" archimateRelationship="id-0cccb9c18a1049e2be853ba1c919d57c"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7931a4988a3442029bbf8c7462b47f03" source="id-2576da7861f54807a15a4700afc07f46" target="id-a09a3a9bdabd41a086c1b9836c72c780" archimateRelationship="id-2f6b37da97f742daa0553c00ecc5ff03"/>
+            <child xsi:type="archimate:DiagramObject" id="id-d69c68c0e45b470ca8deffa1611d56c7" targetConnections="id-fc6aec8f99914f8e8ead1ffdf4308187" archimateElement="id-b2ead326039d434eb757b23f0ff73fac">
+              <bounds x="12" y="48" width="205" height="85"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-a09a3a9bdabd41a086c1b9836c72c780" targetConnections="id-7931a4988a3442029bbf8c7462b47f03" archimateElement="id-263df804fc8b450d98d451568c75638b">
+              <bounds x="12" y="144" width="205" height="101"/>
+            </child>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1c39069c7f8c460eb8456a6df9b0154e" archimateElement="id-3634342fb1bf4d1eb16d56fddfb44dc1">
+          <bounds x="60" y="528" width="1381" height="301"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-986c5d4cc7fb41cb8b66866fff385214" source="id-1c39069c7f8c460eb8456a6df9b0154e" target="id-9c20cfb0f9a141a3816538320a2200df" archimateRelationship="id-d4b3a30bbdd2473abd32ae93686ce0d4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-42a11ac5aecd43eb880e97fb84b9a388" source="id-1c39069c7f8c460eb8456a6df9b0154e" target="id-a1f38e6ffeca43cfa3fd7ce30611b05b" archimateRelationship="id-b32622ad694942aca779fdaa82051d77"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2328fc0c295d49759258d78e31be8521" source="id-1c39069c7f8c460eb8456a6df9b0154e" target="id-a1cd1438cdb84334b21e4c787392b9f4" archimateRelationship="id-0e34378425674266aecb471e96469de9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6b11b7e0595c4806b85666a1cb2d190d" source="id-1c39069c7f8c460eb8456a6df9b0154e" target="id-c945dd048bb045a492df4653e1c946cb" archimateRelationship="id-97adc65a61b14049b44c4c6f38b30f37"/>
+          <child xsi:type="archimate:DiagramObject" id="id-9c20cfb0f9a141a3816538320a2200df" targetConnections="id-986c5d4cc7fb41cb8b66866fff385214" archimateElement="id-bb5a674da5a44b28b1dd1306f03958a9">
+            <bounds x="720" y="36" width="234" height="259"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-3745f2f7c6a34c4d9330fee4d5320ab2" source="id-9c20cfb0f9a141a3816538320a2200df" target="id-3cd8404f03a246e69000347ad0490e61" archimateRelationship="id-54f7397b1be04bb19bf7979968a166b3"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c301a910aa64474ab0fad7fb3f7b569b" source="id-9c20cfb0f9a141a3816538320a2200df" target="id-29350cb30ae44a54b5b4fb473fb04a67" archimateRelationship="id-aff640b0bb1a44509cc731b8b74a0629"/>
+            <child xsi:type="archimate:DiagramObject" id="id-3cd8404f03a246e69000347ad0490e61" targetConnections="id-3745f2f7c6a34c4d9330fee4d5320ab2" archimateElement="id-f889b7e22af04bfa81c1fb69298a3ea7">
+              <bounds x="12" y="60" width="205" height="63"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-29350cb30ae44a54b5b4fb473fb04a67" targetConnections="id-c301a910aa64474ab0fad7fb3f7b569b" archimateElement="id-8c76c6e3d6a04287bc9c526a3ba0510c">
+              <bounds x="12" y="132" width="205" height="69"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a1f38e6ffeca43cfa3fd7ce30611b05b" targetConnections="id-42a11ac5aecd43eb880e97fb84b9a388" archimateElement="id-da903d6b2c7b4b9a889bbfa0bc350a5e">
+            <bounds x="22" y="36" width="234" height="259"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-d0caf7f91f774ac6a42041e6388b56ee" source="id-a1f38e6ffeca43cfa3fd7ce30611b05b" target="id-75f3a667c65141829038be32a6571193" archimateRelationship="id-3556de39c8d44698a86c1084d6409b6b"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-53b16bc0d2d04861a4dd0d6e599dd7af" source="id-a1f38e6ffeca43cfa3fd7ce30611b05b" target="id-ead8cc40da1b4936942a3c1379aed034" archimateRelationship="id-47581618893d494caad14356bb83fd8e"/>
+            <child xsi:type="archimate:DiagramObject" id="id-75f3a667c65141829038be32a6571193" targetConnections="id-d0caf7f91f774ac6a42041e6388b56ee" archimateElement="id-3537a668c8c042d7b96fa2d22c90763d">
+              <bounds x="12" y="60" width="205" height="85"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-ead8cc40da1b4936942a3c1379aed034" targetConnections="id-53b16bc0d2d04861a4dd0d6e599dd7af" archimateElement="id-5ea7633306e6417bb5ceecf2426d6702">
+              <bounds x="12" y="156" width="205" height="85"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a1cd1438cdb84334b21e4c787392b9f4" targetConnections="id-2328fc0c295d49759258d78e31be8521" archimateElement="id-fe2ba15bdd8a43d685f6af968aea8259">
+            <bounds x="264" y="36" width="444" height="259"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-3967013c7c284d42a3bb96665dd7caad" source="id-a1cd1438cdb84334b21e4c787392b9f4" target="id-a798204893a8480fb9319e0fa60d8c09" archimateRelationship="id-64e64cce49d843d2a7ec5afe96c2b37d"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-0aca63ac490a49c0be75778f8231f46a" source="id-a1cd1438cdb84334b21e4c787392b9f4" target="id-eaf1fbfadd83494990a816edc43a3821" archimateRelationship="id-721eb71e5e194e55851fd719c355a9c2"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-35151faca95441f0b8b7853f73f9c4e6" source="id-a1cd1438cdb84334b21e4c787392b9f4" target="id-062bdd3386354d419b4d38198a58420f" archimateRelationship="id-be2ce3ed692240d5844bc2e51048dd7d"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-85bbedf4eb78484ca7691c996bf50f44" source="id-a1cd1438cdb84334b21e4c787392b9f4" target="id-12d003ea508a478cb62930490097df0b" archimateRelationship="id-01c0ed2b855e487c8e27f6bb9b7b16e8"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-882ca21393924551b5ae893d195421c0" source="id-a1cd1438cdb84334b21e4c787392b9f4" target="id-0e80f1779db9455bbe877060d0fe6eb5" archimateRelationship="id-ca4c2e5642a64132947c866b7f5f5ff2"/>
+            <child xsi:type="archimate:DiagramObject" id="id-a798204893a8480fb9319e0fa60d8c09" targetConnections="id-3967013c7c284d42a3bb96665dd7caad" archimateElement="id-4b9a9e48162f447fbc2f8548891b6bb2">
+              <bounds x="12" y="60" width="205" height="59"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-eaf1fbfadd83494990a816edc43a3821" targetConnections="id-0aca63ac490a49c0be75778f8231f46a" archimateElement="id-297e9a91431541d9a2e118cf5f3815f6">
+              <bounds x="12" y="120" width="205" height="61"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-062bdd3386354d419b4d38198a58420f" targetConnections="id-35151faca95441f0b8b7853f73f9c4e6" archimateElement="id-c6e84229f1da49c191feebb380bd17aa">
+              <bounds x="12" y="180" width="205" height="73"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-12d003ea508a478cb62930490097df0b" targetConnections="id-85bbedf4eb78484ca7691c996bf50f44" archimateElement="id-fefdf45e8eb94149a14aef960062a742">
+              <bounds x="228" y="59" width="205" height="61"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-0e80f1779db9455bbe877060d0fe6eb5" targetConnections="id-882ca21393924551b5ae893d195421c0" archimateElement="id-a375259942a0447cae60a38531692de7">
+              <bounds x="228" y="131" width="205" height="61"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c945dd048bb045a492df4653e1c946cb" targetConnections="id-6b11b7e0595c4806b85666a1cb2d190d" archimateElement="id-1d5f61da1e49424cbdbd2ef850bbd055">
+            <bounds x="960" y="36" width="234" height="259"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-489d195028e1486f9734be5796070469" source="id-c945dd048bb045a492df4653e1c946cb" target="id-4a052e2d7f93463b8d3a2bd13c9abe8d" archimateRelationship="id-4a3a858135304f62b0dfe49510de1b94"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-c2db582de8b741f08ce45baf8b52169c" source="id-c945dd048bb045a492df4653e1c946cb" target="id-66baec8a4b0c4cc199daeb70ec3fd053" archimateRelationship="id-ee2d81929dcc4f4cb9d31772ac8f3638"/>
+            <child xsi:type="archimate:DiagramObject" id="id-4a052e2d7f93463b8d3a2bd13c9abe8d" targetConnections="id-489d195028e1486f9734be5796070469" archimateElement="id-20c9ed40937b4ed78c643d10ff5e0ec2">
+              <bounds x="12" y="60" width="205" height="79"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-66baec8a4b0c4cc199daeb70ec3fd053" targetConnections="id-c2db582de8b741f08ce45baf8b52169c" archimateElement="id-1137d455942f4ba983b4a614a7859adb">
+              <bounds x="12" y="144" width="205" height="85"/>
+            </child>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a23892f512634c0b93657c904644e0ce" archimateElement="id-3432d40b50c0403c9a8fe721969ba162">
+          <bounds x="1056" y="68" width="144" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-24f4f2e0f2a44226a4a6c958e0412e38" archimateElement="id-8b277f1d34354026808434300f3e5a72">
+          <bounds x="1261" y="12" width="180" height="84"/>
+        </child>
+        <documentation>https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/guidance-implementing-standard-web-accessibility.html&#xD;
+&#xD;
+Checklist for Chief Information Officers (CIOs)&#xD;
+In implementing the Standard on Web Accessibility, have you:&#xD;
+- Integrated Web accessibility considerations into the development of IM/IT plans?&#xD;
+- Ensured that the department's software and systems provide the functionality necessary to meet the requirements of the Standard on Web Accessibility?&#xD;
+- Incorporated Web accessibility into the business requirements when developing new or updating existing websites and Web applications?&#xD;
+- Incorporated the use of Web metrics and identified how they will be used during the implementation of the Standard on Web Accessibility?&#xD;
+- Ensured ongoing content review and management of redundant, outdated and trivial (ROT) content?&#xD;
+- Ensured that Web pages are archived, where possible, online or offline in accordance with the definition of &quot;archived&quot; in this document and with the Secretariat's policies on information management?&#xD;
+- Ensured that websites and Web applications under the responsibility of the CIO conform to the Standard on Web Accessibility?&#xD;
+- ***** Added the World Wide Web Consortium's draft Authoring Tool Accessibility Guidelines (ATAG) 2.0 into selection criteria when purchasing new Web authoring tools?&#xD;
+- Supported the SDO by ensuring that your staff have the knowledge and expertise necessary to comply with the Standard on Web Accessibility?</documentation>
       </element>
     </folder>
     <folder name="ESDC-EA How We Work" id="id-eaa46d20de994117b8c93b831d121c3a">
