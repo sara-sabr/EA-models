@@ -1840,6 +1840,25 @@ Subject: RE: ESDC - APM Data Assessment - discuss the 7 Technical Assessment que
     </element>
     <element xsi:type="archimate:CourseOfAction" name="Consider Use of Tags (for Reporting) (Course of Action)" id="id-74fbdd5dc9854ff9aff5715511757e01"/>
     <element xsi:type="archimate:CourseOfAction" name="Assign Epics To Managers, Features To Leads (Course of Action)" id="id-6544441a4ed24367b475570a1009a01b"/>
+    <element xsi:type="archimate:CourseOfAction" name="Obtain Help From The SharePoint Migration Team (Course of Action)" id="id-aa10320e41b645df8365eb8593833b62">
+      <documentation>As soon as your site is scheduled, here’s how The Migration Team will help SAS get started: &#xD;
+&#xD;
+Owner Welcome Message from the Project Team&#xD;
+Confirms your migration date and new URL, and introduces you to your role and the information and training that will guide your success. &#xD;
+&#xD;
+Invitation to Owner Orientation Session 	&#xD;
+Live session provides an end-to-end view of the process - before, during and after migration:&#xD;
+ - Critical steps and Your Role &#xD;
+ - Before/After View of the Technology &#xD;
+ - Top Learning Tips &#xD;
+ - Questions &amp; Answers with the Project Team &#xD;
+&#xD;
+Online Resource Centre &#xD;
+Handy information and guidance all in one place, to help you prepare your SP 2010 site for migration and get up-to-speed quickly in SP Online. &#xD;
+&#xD;
+Learning Essentials&#xD;
+A checklist of recommended learning that will help you continue your work in your new SharePoint Online environment.</documentation>
+    </element>
   </folder>
   <folder name="Business" id="b450b6a4-519b-4191-a289-4df897ca0a1b" type="business">
     <element xsi:type="archimate:BusinessFunction" name="Test" id="3e3bc277-1fea-40bd-bbc1-35dd96697b2a"/>
@@ -3814,6 +3833,7 @@ property views: Only properties of the content are presented. The authoring tool
 workflow&#xD;
 A customary sequence of steps or tasks that authors follow to produce a content deliverable. If an authoring tool is composed of a collection of applications (e.g. markup editor, image editor, and validation tool), then its workflows may include use of one or more of the applications.</documentation>
     </element>
+    <element xsi:type="archimate:BusinessRole" name="SAS ADO Content Curator (Business Role)" id="id-31dc8f4450a448ac885474d68d3c59b0"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5216,7 +5236,9 @@ Source/URL: For more information, refer to: https://en.wikipedia.org/wiki/Blockc
     <element xsi:type="archimate:Artifact" name="Microsoft Teams Channel: BBB (Artifact)" id="id-745c2c30af104507903b141966aee6e3"/>
     <element xsi:type="archimate:SystemSoftware" name="Microsoft 365 Stream (System Software)" id="id-f8d8b8d6a5e84eaebc4d6bcd7a017748"/>
     <element xsi:type="archimate:SystemSoftware" name="Microsoft 365 OneNote (System Software)" id="id-a663c96b2c9548eca5b91a6e461d1cc5"/>
-    <element xsi:type="archimate:SystemSoftware" name="Microsoft 365 Lists (System Software)" id="id-87fcce9327a943f3ada4f71ddfe0212f"/>
+    <element xsi:type="archimate:SystemSoftware" name="Microsoft 365 Lists (System Software)" id="id-87fcce9327a943f3ada4f71ddfe0212f">
+      <documentation>This is actually SharePoint, with a different interface.</documentation>
+    </element>
     <element xsi:type="archimate:SystemSoftware" name="Microsoft 365 OneDrive (System Software)" id="id-0164c5328c114b1ba852c1b92ed529f2"/>
     <element xsi:type="archimate:SystemSoftware" name="Microsoft 365 Forms (System Software)" id="id-003472d2888747d7877d91f141cbd78f"/>
     <element xsi:type="archimate:SystemSoftware" name="Microsoft 365 Azure DevOps (System Software)" id="id-ef040f76e8384859aa9b7ca39bf0eeb6"/>
@@ -9308,6 +9330,9 @@ Implementing B.4.2.4</documentation>
       <documentation>In implementing the Standard on Web Accessibility, have you:&#xD;
 - Added the World Wide Web Consortium's draft Authoring Tool Accessibility Guidelines (ATAG) 2.0 into selection criteria when purchasing new Web authoring tools?</documentation>
     </element>
+    <element xsi:type="archimate:Meaning" name="&quot;Simple Site&quot; (Meaning)" id="id-9e91694dadf34aa1aeb721186e36452e">
+      <documentation>&quot;Simple Sites&quot; in SharePoint 2010 that contain only Lists and/or Libraries. Owners of Simple Sites will be notified at least four weeks before their migration date and, in most cases, will have a handful of items to address in their site before and after migration to SharePoint Online.</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Feature Gap" id="9ff8a02c-23f7-41f7-9ee7-0a1373ad231a"/>
@@ -9941,7 +9966,31 @@ We would not leverage the new end state datacentre technology, cloud nor migrate
     <element xsi:type="archimate:WorkPackage" name="SAS Team Prep Work (Work Package)" id="id-696c7159ce7f4480ad2e6055e311ba43"/>
     <element xsi:type="archimate:WorkPackage" name="Wave 3 IM Migration (Work Package)" id="id-3bab33a63d4244a988d061f5e5a2ba4b">
       <documentation>Migration performed as part of the IM Migration effort underway, from SharePoint 2010 to SharePoint Online (M365).&#xD;
-Wave 3 is due to happen on the weekend of September 2nd to September 6th, 2021.</documentation>
+Wave 3 is due to happen on the weekend of September 2nd to September 6th, 2021.&#xD;
+&#xD;
+Countdown to Migration &#xD;
+The Project Team will migrate your site over a weekend – from Friday night to Sunday night. Before migration starts, your SharePoint 2010 site will be converted to Read Only. Plan for you site to be in Read Only mode for 4 days – from Wednesday night to Sunday night.  &#xD;
+We will provide a message template you can use to alert your site contributors and visitors ahead of your site’s conversion to Read Only &#xD;
+You can still view all site contents while in Read Only &#xD;
+You will not be able to change or add content after it is converted to Read Only. If you need to work on a document, you will need to save it in a different location and then upload it to your site in SharePoint Online, after migration is complete.</documentation>
+    </element>
+    <element xsi:type="archimate:WorkPackage" name="Validate and GO! (Work Package)" id="id-03d7449df3784351a9e89f17d20c9955">
+      <documentation>https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/About-the-Migration-Process.aspx&#xD;
+&#xD;
+Validate and GO! &#xD;
+Your Remediation Items checklist may include tasks to complete when your site is in SharePoint Online. In addition to any rebuilding of functionality after your site contents have been replicated in your new SharePoint Online environment, you should check that your contents and their metadata (e.g. Created, Created By, Modified By etc.) have moved successfully, by comparing them with the SharePoint 2010 source. This comparison should include actual content itself and the metadata associated with it. &#xD;
+&#xD;
+&#xD;
+&#xD;
+Your SharePoint Online site is live as soon as migration is complete. Before you advise your site contributors and visitors your site is ready for use, be sure to review it to make sure it is working the way you expected. &#xD;
+&#xD;
+&#xD;
+&#xD;
+Expect some final reminders from the Project Team to guide you through these last steps.  &#xD;
+&#xD;
+Post-Migration Message from the Project Team 	Confirms your migration status with a reminder to validate your site .&#xD;
+Final Project Team Message 	A final message that includes a message template for owners to copy/paste and send to their site contributors/visitors .&#xD;
+Owner Experience Survey 	We need your insight and feedback! Help us enhance the experience for owners in future migration waves. </documentation>
     </element>
   </folder>
   <folder name="Other" id="027d0db1-461f-49c3-90ae-71acc827ae46" type="other">
@@ -12693,7 +12742,6 @@ Includes:&#xD;
     <element xsi:type="archimate:AssociationRelationship" id="id-d21cfdce6d95428d8515bf8d2feeac95" source="id-8b3d7dda05ec4cf0aeb08782afc344e1" target="id-cd84c08983b74eedaa5f6207aee83ae2"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-1594f45307474c72a5b6997291d7a47f" source="id-b908f0d3964a4d60a98b44dcf08d7a16" target="id-7ee947e0598047dbb471e5767d692a0a"/>
     <element xsi:type="archimate:AccessRelationship" id="id-ebc83e4253ef42a68e1a166de0551641" source="id-7ee947e0598047dbb471e5767d692a0a" target="id-347c5e7ed9fc484882aad8d268402160"/>
-    <element xsi:type="archimate:AssociationRelationship" id="id-122fe26d8d0a4c59846e076b4e4b393a" source="id-8b3d7dda05ec4cf0aeb08782afc344e1" target="id-7ee947e0598047dbb471e5767d692a0a"/>
     <element xsi:type="archimate:FlowRelationship" id="id-3019cb97fb674c809a9fbc9693ee0340" source="id-0a259c246c04432590ec9f1a672cd938" target="id-696c7159ce7f4480ad2e6055e311ba43"/>
     <element xsi:type="archimate:FlowRelationship" id="id-f6e76d00f8ec4477a8e937a24b4d49cd" source="id-696c7159ce7f4480ad2e6055e311ba43" target="id-3bab33a63d4244a988d061f5e5a2ba4b"/>
     <element xsi:type="archimate:RealizationRelationship" id="id-903a0d16ca614ed79e9b9ad6fbb77d6b" source="id-3bab33a63d4244a988d061f5e5a2ba4b" target="id-95ddf39e1b1a4966b93bfb7f929e0a82"/>
@@ -12756,6 +12804,10 @@ Includes:&#xD;
     <element xsi:type="archimate:CompositionRelationship" id="id-97adc65a61b14049b44c4c6f38b30f37" source="id-3634342fb1bf4d1eb16d56fddfb44dc1" target="id-1d5f61da1e49424cbdbd2ef850bbd055"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-4a3a858135304f62b0dfe49510de1b94" source="id-1d5f61da1e49424cbdbd2ef850bbd055" target="id-20c9ed40937b4ed78c643d10ff5e0ec2"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-ee2d81929dcc4f4cb9d31772ac8f3638" source="id-1d5f61da1e49424cbdbd2ef850bbd055" target="id-1137d455942f4ba983b4a614a7859adb"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-93edd1fb416a4156b13ea09403610e62" source="id-9e91694dadf34aa1aeb721186e36452e" target="id-853e7bc1ede8440d8c933f45445dd837"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-cf49081b02fc4b8b91698882ae907cb7" source="id-95ddf39e1b1a4966b93bfb7f929e0a82" target="id-03d7449df3784351a9e89f17d20c9955"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-0ef8c9274fc94d18bfc097ca6f9f4103" source="id-8b3d7dda05ec4cf0aeb08782afc344e1" target="id-7ee947e0598047dbb471e5767d692a0a"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-6c1ab43dca18427291a94f4e7a6e3d1a" source="id-ef040f76e8384859aa9b7ca39bf0eeb6" target="id-31dc8f4450a448ac885474d68d3c59b0"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -16631,7 +16683,7 @@ SAS - Migration From SharePoint 2010 (On Premises) To SharePoint Online (M365)</
         </child>
         <child xsi:type="archimate:Note" id="id-bc981c5f73444bb8ab2b458631d43e2a" textPosition="1">
           <bounds x="795" y="84" width="91" height="30"/>
-          <content>v0.1.20210827</content>
+          <content>v0.1.20210830</content>
         </child>
         <child xsi:type="archimate:Note" id="id-19367d9ef2154e60b43cdcf4a8ebe784" font="1|Segoe UI|18.0|1|WINDOWS|1|-30|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#ff0000" textPosition="1">
           <bounds x="900" y="41" width="149" height="73"/>
@@ -16664,10 +16716,10 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-c147b93513484db09f8f982cc93d0767" archimateElement="id-8b3d7dda05ec4cf0aeb08782afc344e1">
-          <bounds x="751" y="291" width="135" height="55"/>
+          <bounds x="36" y="636" width="135" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-89d734a989c7402db690483fef2616f4" source="id-c147b93513484db09f8f982cc93d0767" target="id-8beba2dd2fca476cac10ddcfeaf86a42" archimateRelationship="id-d21cfdce6d95428d8515bf8d2feeac95"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-bb7076bed7004372ba7129e7be8b141c" source="id-c147b93513484db09f8f982cc93d0767" target="id-3ae80922bd40410a86bd40f6e3f298ec" archimateRelationship="id-122fe26d8d0a4c59846e076b4e4b393a"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-bd3bb9b93b384f4e9686029f766d6cde" source="id-c147b93513484db09f8f982cc93d0767" target="id-603eb9e147704ecda8431633b994e35a" archimateRelationship="id-877a7100fbf44463a41058426d9cc5a4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c61073fd8ba94e009aa731a285b4eb25" source="id-c147b93513484db09f8f982cc93d0767" target="id-3ae80922bd40410a86bd40f6e3f298ec" archimateRelationship="id-0ef8c9274fc94d18bfc097ca6f9f4103"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-7da38bed8a4347a390addcf4eecf2aba" archimateElement="id-b908f0d3964a4d60a98b44dcf08d7a16">
           <bounds x="276" y="420" width="1153" height="529"/>
@@ -16679,7 +16731,7 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
           <sourceConnection xsi:type="archimate:Connection" id="id-cc7d91a85fa04de5864bcd2bd370a214" source="id-7da38bed8a4347a390addcf4eecf2aba" target="id-c15fcc1fe511456ea3ce098a27de8c2f" archimateRelationship="id-eb96c3be89414c3896dd609b3ddc91b7"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-c4131b542f3b4bbaa68b3aa0d03afd3a" source="id-7da38bed8a4347a390addcf4eecf2aba" target="id-7aa89a3dd2254cc4b61e85afa8704ad5" archimateRelationship="id-612cd736cb284d3480f3b9c1102ae241"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-1e44e5686fe84179a7d89947023f6793" source="id-7da38bed8a4347a390addcf4eecf2aba" target="id-7338848778634c79b68bc8da04d955de" archimateRelationship="id-027a798af1234be486637f51551bdded"/>
-          <child xsi:type="archimate:DiagramObject" id="id-3ae80922bd40410a86bd40f6e3f298ec" targetConnections="id-30a7dc73e5464de58f4baca5be728016 id-bb7076bed7004372ba7129e7be8b141c" archimateElement="id-7ee947e0598047dbb471e5767d692a0a">
+          <child xsi:type="archimate:DiagramObject" id="id-3ae80922bd40410a86bd40f6e3f298ec" targetConnections="id-30a7dc73e5464de58f4baca5be728016 id-c61073fd8ba94e009aa731a285b4eb25" archimateElement="id-7ee947e0598047dbb471e5767d692a0a">
             <bounds x="16" y="30" width="1125" height="139"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-6060c4ee76274dec808941f8f0933bc6" source="id-3ae80922bd40410a86bd40f6e3f298ec" target="id-b8b5903e829147f1b5f42ffac4609bb2" archimateRelationship="id-ebc83e4253ef42a68e1a166de0551641"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-3d354f3d7b9041cca8fa3b2dcdbf6bd3" source="id-3ae80922bd40410a86bd40f6e3f298ec" target="id-a7684894969d48628c328211b01e33b3" archimateRelationship="id-781433862b6a4f8eaac253ec086a303c"/>
@@ -16765,10 +16817,12 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-7338848778634c79b68bc8da04d955de" targetConnections="id-1e44e5686fe84179a7d89947023f6793" archimateElement="id-ef040f76e8384859aa9b7ca39bf0eeb6">
             <bounds x="964" y="468" width="177" height="49"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-7da1cad14d0045e2b7b5ae8c9d206556" source="id-7338848778634c79b68bc8da04d955de" target="id-4bf959dc903f428f8269509b6d3468ea" archimateRelationship="id-6c1ab43dca18427291a94f4e7a6e3d1a"/>
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-026b7a4b52ce4538a4873a6e34cacc2b" targetConnections="id-b165b07cd81d46f19de8df274f365736" archimateElement="id-95ddf39e1b1a4966b93bfb7f929e0a82">
           <bounds x="984" y="156" width="265" height="73"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5626d479ee774ae68eb15c0a64a6129d" source="id-026b7a4b52ce4538a4873a6e34cacc2b" target="id-a83dfaebbce74accb1046d2e48e06742" archimateRelationship="id-cf49081b02fc4b8b91698882ae907cb7"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-30a06be6c85d4ca2868c79774b32ae74" targetConnections="id-72ab903fe968402ebeb6eab5d2793f38" archimateElement="id-696c7159ce7f4480ad2e6055e311ba43">
           <bounds x="672" y="165" width="120" height="55"/>
@@ -16778,11 +16832,11 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
           <bounds x="828" y="165" width="120" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-b165b07cd81d46f19de8df274f365736" source="id-62e88e0482e04aa79aa21c64e0d1ad4b" target="id-026b7a4b52ce4538a4873a6e34cacc2b" archimateRelationship="id-903a0d16ca614ed79e9b9ad6fbb77d6b"/>
         </child>
-        <child xsi:type="archimate:DiagramObject" id="id-cbbeaee1c3fc47fe974c0e324dc4323f" archimateElement="id-853e7bc1ede8440d8c933f45445dd837">
+        <child xsi:type="archimate:DiagramObject" id="id-cbbeaee1c3fc47fe974c0e324dc4323f" targetConnections="id-5f893d0a92884c8887017dc0ab3b709a" archimateElement="id-853e7bc1ede8440d8c933f45445dd837">
           <bounds x="96" y="158" width="146" height="69"/>
         </child>
         <child xsi:type="archimate:Note" id="id-84c323b34be54248a9aac7ded7a96bb4" textAlignment="1">
-          <bounds x="108" y="492" width="121" height="127"/>
+          <bounds x="36" y="444" width="121" height="127"/>
           <sourceConnection id="id-119af5834b2944029da69afbe62f3c3b" source="id-84c323b34be54248a9aac7ded7a96bb4" target="id-b8b5903e829147f1b5f42ffac4609bb2"/>
           <content>Files managed in SP365, for ease of use in Teams, and to more easily collaborate with others, using the MS-Teams interface.</content>
         </child>
@@ -16799,6 +16853,29 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
         <child xsi:type="archimate:DiagramObject" id="id-3668b533f0414a778c80e74788fdd269" targetConnections="id-ef9c9e36780543a593ed695dd7033381 id-47a4ff1eed3e4d2ab75eb3658e4c60a5" archimateElement="id-d8710cbc44a34a40b548c2166694537c">
           <bounds x="1294" y="342" width="135" height="55"/>
         </child>
+        <child xsi:type="archimate:DiagramObject" id="id-149c3baadea148909a9d9a34faf16417" textPosition="1" archimateElement="id-9e91694dadf34aa1aeb721186e36452e">
+          <bounds x="180" y="252" width="79" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5f893d0a92884c8887017dc0ab3b709a" source="id-149c3baadea148909a9d9a34faf16417" target="id-cbbeaee1c3fc47fe974c0e324dc4323f" archimateRelationship="id-93edd1fb416a4156b13ea09403610e62"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-09b740ee17604e65b676cc6ec3fc0a0b" archimateElement="id-aa10320e41b645df8365eb8593833b62">
+          <bounds x="12" y="260" width="157" height="77"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a83dfaebbce74accb1046d2e48e06742" targetConnections="id-5626d479ee774ae68eb15c0a64a6129d" archimateElement="id-03d7449df3784351a9e89f17d20c9955">
+          <bounds x="1302" y="165" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4bf959dc903f428f8269509b6d3468ea" targetConnections="id-7da1cad14d0045e2b7b5ae8c9d206556" archimateElement="id-31dc8f4450a448ac885474d68d3c59b0">
+          <bounds x="1464" y="888" width="135" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b9c1ed9caefa4ee3ab304f8f1db1541b" archimateElement="id-f934d1bde46d4eb29cbf40fc9c3a92cb">
+          <bounds x="1272" y="972" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0d7c67c9cf524e7b9cc783e4fa2e8c93" archimateElement="id-a1c431503ed641789f199caff12def38">
+          <bounds x="1404" y="972" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a3a671945f6f4a198ea104a6f11dd4af" archimateElement="id-12daca56d7b74f9687e3c5d6e0e3dd16">
+          <bounds x="1140" y="972" width="120" height="55"/>
+        </child>
+        <documentation>https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/About-the-Migration-Process.aspx</documentation>
       </element>
     </folder>
     <folder name="BI/A Platform" id="id-c48a4fd6c1e44c37a9353aaba19e0b4e">
