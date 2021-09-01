@@ -3833,7 +3833,12 @@ property views: Only properties of the content are presented. The authoring tool
 workflow&#xD;
 A customary sequence of steps or tasks that authors follow to produce a content deliverable. If an authoring tool is composed of a collection of applications (e.g. markup editor, image editor, and validation tool), then its workflows may include use of one or more of the applications.</documentation>
     </element>
-    <element xsi:type="archimate:BusinessRole" name="SAS ADO Content Curator (Business Role)" id="id-31dc8f4450a448ac885474d68d3c59b0"/>
+    <element xsi:type="archimate:BusinessRole" name="SAS ADO Content Curator (Business Role)" id="id-31dc8f4450a448ac885474d68d3c59b0">
+      <documentation>Managing content</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="ADO CI/CD Steward (Business Role)" id="id-2cc22b96f27a427fa2c9f944f070d71a">
+      <documentation>Ongoing improvements.</documentation>
+    </element>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -5245,6 +5250,9 @@ Source/URL: For more information, refer to: https://en.wikipedia.org/wiki/Blockc
     <element xsi:type="archimate:Artifact" name="Microsoft Teams Meeting Chats: &lt;ANY,ALL> (Artifact)" id="id-3e851ef265b847739037beb780526de0"/>
     <element xsi:type="archimate:Artifact" name="Microsoft Teams Group Chats: &lt;ANY,ALL> (Artifact)" id="id-2dd59103712346f0bd018f9bc8f85701"/>
     <element xsi:type="archimate:Artifact" name="Microsoft Teams 1-to-1 Chats: &lt;ANY,ALL> (Artifact)" id="id-26ce87daece24c51a530fdee5c589eeb"/>
+    <element xsi:type="archimate:SystemSoftware" name="SharePoint 2010 READ-ONLY (System Software)" id="id-c1260378c6244006af78db91d93d7044"/>
+    <element xsi:type="archimate:Artifact" name="SAS Team's READ-ONLY SharePoint Files and Folders (Artifact)" id="id-51190272cc344236b035f1604dd253bb"/>
+    <element xsi:type="archimate:Artifact" name="SAS Team SharePoint Sub-Site REDIRECT TO NEW (SAS-SAS) (Artifact)" id="id-ef9bf201d87c4934b00fc2f8843cdbe3"/>
   </folder>
   <folder name="Motivation" id="0098779f-eaf3-4d47-a68a-16743a5b13a9" type="motivation">
     <element xsi:type="archimate:Requirement" name="Requirement Catalog" id="207319d9-514d-4655-a27e-7bd92e4b1d49"/>
@@ -12808,6 +12816,9 @@ Includes:&#xD;
     <element xsi:type="archimate:FlowRelationship" id="id-cf49081b02fc4b8b91698882ae907cb7" source="id-95ddf39e1b1a4966b93bfb7f929e0a82" target="id-03d7449df3784351a9e89f17d20c9955"/>
     <element xsi:type="archimate:AssociationRelationship" id="id-0ef8c9274fc94d18bfc097ca6f9f4103" source="id-8b3d7dda05ec4cf0aeb08782afc344e1" target="id-7ee947e0598047dbb471e5767d692a0a"/>
     <element xsi:type="archimate:ServingRelationship" id="id-6c1ab43dca18427291a94f4e7a6e3d1a" source="id-ef040f76e8384859aa9b7ca39bf0eeb6" target="id-31dc8f4450a448ac885474d68d3c59b0"/>
+    <element xsi:type="archimate:AggregationRelationship" id="id-dc6c3628da4e4e609f2aa4e6bf281511" source="id-d29ce12b06f64b6380efe21ceedb4d8e" target="id-c1260378c6244006af78db91d93d7044"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-21ffb4f378054b07af62b65ed5d056f3" source="id-c1260378c6244006af78db91d93d7044" target="id-51190272cc344236b035f1604dd253bb"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-54f2b9183ad143d98d276a1daf6dc353" source="id-c1260378c6244006af78db91d93d7044" target="id-ef9bf201d87c4934b00fc2f8843cdbe3"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -16699,8 +16710,9 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
           <sourceConnection xsi:type="archimate:Connection" id="id-72ab903fe968402ebeb6eab5d2793f38" source="id-cae3c3d6727047b8bf60e066e5dc664f" target="id-30a06be6c85d4ca2868c79774b32ae74" archimateRelationship="id-3019cb97fb674c809a9fbc9693ee0340"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-644225555405412588a03dab83473df7" archimateElement="id-d29ce12b06f64b6380efe21ceedb4d8e">
-          <bounds x="276" y="240" width="361" height="157"/>
+          <bounds x="276" y="240" width="997" height="157"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-8848922e541d4ff397fa7dc25116f2db" source="id-644225555405412588a03dab83473df7" target="id-8beba2dd2fca476cac10ddcfeaf86a42" archimateRelationship="id-c8191b93341d4d7ba873b3bb489768ef"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-cb96921d331a4804a4e50e4ae1e62bc4" source="id-644225555405412588a03dab83473df7" target="id-382b553a5c674d4e9dbbaffbbb38d258" archimateRelationship="id-dc6c3628da4e4e609f2aa4e6bf281511"/>
           <child xsi:type="archimate:DiagramObject" id="id-8beba2dd2fca476cac10ddcfeaf86a42" targetConnections="id-8848922e541d4ff397fa7dc25116f2db id-89d734a989c7402db690483fef2616f4" archimateElement="id-cd84c08983b74eedaa5f6207aee83ae2">
             <bounds x="17" y="30" width="325" height="115"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-8ad5b4e2493541288fd08d8904d1d9f2" source="id-8beba2dd2fca476cac10ddcfeaf86a42" target="id-76792ab82da04f3281d5124367201c6b" archimateRelationship="id-18505d1e9d294e81a3483d6a4f12970f"/>
@@ -16712,6 +16724,17 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
             <child xsi:type="archimate:DiagramObject" id="id-d499dcb9e914492fa6882dc21ae8434e" targetConnections="id-75682a127944402ab9a9cc0f1514940b" textPosition="1" archimateElement="id-38a657b3ed6a4c4bb9f39d3421374da0">
               <bounds x="168" y="24" width="121" height="73"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-7b2bee9a48e845bda24b5d720c62bd52" source="id-d499dcb9e914492fa6882dc21ae8434e" target="id-a7c20200dfe54672ab6680a51248f390" archimateRelationship="id-941a5d0880c2445584b4e42072868607"/>
+            </child>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-382b553a5c674d4e9dbbaffbbb38d258" targetConnections="id-cb96921d331a4804a4e50e4ae1e62bc4" archimateElement="id-c1260378c6244006af78db91d93d7044">
+            <bounds x="684" y="30" width="301" height="115"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-65691cefd85e40a3b3d9a1dc2053df65" source="id-382b553a5c674d4e9dbbaffbbb38d258" target="id-d2b2fa251686471789d3a72966190d74" archimateRelationship="id-21ffb4f378054b07af62b65ed5d056f3"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-ab2f7242489d4b21a5b250983270d924" source="id-382b553a5c674d4e9dbbaffbbb38d258" target="id-8bf9621ca7eb4d70a3ed31f63a1477e2" archimateRelationship="id-54f2b9183ad143d98d276a1daf6dc353"/>
+            <child xsi:type="archimate:DiagramObject" id="id-d2b2fa251686471789d3a72966190d74" targetConnections="id-65691cefd85e40a3b3d9a1dc2053df65" archimateElement="id-51190272cc344236b035f1604dd253bb">
+              <bounds x="156" y="24" width="121" height="73"/>
+            </child>
+            <child xsi:type="archimate:DiagramObject" id="id-8bf9621ca7eb4d70a3ed31f63a1477e2" targetConnections="id-ab2f7242489d4b21a5b250983270d924" archimateElement="id-ef9bf201d87c4934b00fc2f8843cdbe3">
+              <bounds x="24" y="24" width="121" height="73"/>
             </child>
           </child>
         </child>
@@ -16747,6 +16770,16 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
               <bounds x="828" y="24" width="121" height="73"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-3caf292a371d46828aa8e399216a7e9f" source="id-a7c20200dfe54672ab6680a51248f390" target="id-795410f28e4e4420bd176494572715b5" archimateRelationship="id-a7e89774bddc4b41bfff17e3b0b9256b"/>
               <sourceConnection xsi:type="archimate:Connection" id="id-ef9c9e36780543a593ed695dd7033381" source="id-a7c20200dfe54672ab6680a51248f390" target="id-3668b533f0414a778c80e74788fdd269" archimateRelationship="id-7312e00bb56d4355a5a6ae3e536f661f"/>
+            </child>
+            <child xsi:type="archimate:Note" id="id-ad4994b0a4004e01b2fe9565638fd61d" textAlignment="1">
+              <bounds x="540" y="36" width="121" height="91"/>
+              <sourceConnection id="id-06c5754b30394bf68723b629369e8bbf" source="id-ad4994b0a4004e01b2fe9565638fd61d" target="id-a7684894969d48628c328211b01e33b3"/>
+              <content>New MAIN site for SAS-SAS, which will need to be owned &amp; managed wholly by SAS.</content>
+            </child>
+            <child xsi:type="archimate:Note" id="id-57411b253d7842baabc118ea8ee11068" textAlignment="1">
+              <bounds x="996" y="24" width="121" height="91"/>
+              <sourceConnection id="id-452d74606b154b019bdd0a234d2ca1bd" source="id-57411b253d7842baabc118ea8ee11068" target="id-a7c20200dfe54672ab6680a51248f390"/>
+              <content>SAME Folder structure as existed when the files were FROZEN by the migration team.</content>
             </child>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-603eb9e147704ecda8431633b994e35a" targetConnections="id-f4e89ab457224175b4eae706768fadf2 id-bd3bb9b93b384f4e9686029f766d6cde" archimateElement="id-c7c05dfcd84d42a0bdeba68ea67067f4">
@@ -16840,16 +16873,6 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
           <sourceConnection id="id-119af5834b2944029da69afbe62f3c3b" source="id-84c323b34be54248a9aac7ded7a96bb4" target="id-b8b5903e829147f1b5f42ffac4609bb2"/>
           <content>Files managed in SP365, for ease of use in Teams, and to more easily collaborate with others, using the MS-Teams interface.</content>
         </child>
-        <child xsi:type="archimate:Note" id="id-ad4994b0a4004e01b2fe9565638fd61d" textAlignment="1">
-          <bounds x="984" y="306" width="121" height="91"/>
-          <sourceConnection id="id-06c5754b30394bf68723b629369e8bbf" source="id-ad4994b0a4004e01b2fe9565638fd61d" target="id-a7684894969d48628c328211b01e33b3"/>
-          <content>New MAIN site for SAS-SAS, which will need to be owned &amp; managed wholly by SAS.</content>
-        </child>
-        <child xsi:type="archimate:Note" id="id-57411b253d7842baabc118ea8ee11068" textAlignment="1">
-          <bounds x="1116" y="306" width="121" height="91"/>
-          <sourceConnection id="id-452d74606b154b019bdd0a234d2ca1bd" source="id-57411b253d7842baabc118ea8ee11068" target="id-a7c20200dfe54672ab6680a51248f390"/>
-          <content>SAME Folder structure as existed when the files were FROZEN by the migration team.</content>
-        </child>
         <child xsi:type="archimate:DiagramObject" id="id-3668b533f0414a778c80e74788fdd269" targetConnections="id-ef9c9e36780543a593ed695dd7033381 id-47a4ff1eed3e4d2ab75eb3658e4c60a5" archimateElement="id-d8710cbc44a34a40b548c2166694537c">
           <bounds x="1294" y="342" width="135" height="55"/>
         </child>
@@ -16874,6 +16897,9 @@ Diagram Purpose: For discussion purposes only (e.g. HOW migration will take plac
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-a3a671945f6f4a198ea104a6f11dd4af" archimateElement="id-12daca56d7b74f9687e3c5d6e0e3dd16">
           <bounds x="1140" y="972" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-00826099e46e45fc8700520b4047021b" archimateElement="id-2cc22b96f27a427fa2c9f944f070d71a">
+          <bounds x="1536" y="972" width="120" height="55"/>
         </child>
         <documentation>https://014gc.sharepoint.com/sites/SharePoint2010Migration/SitePages/About-the-Migration-Process.aspx</documentation>
       </element>
