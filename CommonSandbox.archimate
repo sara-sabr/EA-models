@@ -1888,6 +1888,14 @@ The ability to define the organisation, skills and administrative needs of the e
 &#xD;
 </documentation>
     </element>
+    <element xsi:type="archimate:CourseOfAction" name="Develop More IT Fact-and-Evidence Based Analyses" id="id-6925c027ccee450095b0a5b0973aa1e4">
+      <documentation>KPI's defined by APM, measured in fact. &#xD;
+Measurable, Reproducible, Automatable.&#xD;
+Formula-driven.&#xD;
+Scale-up to HL Frameworks, i.e. EA's Assessment&#xD;
+Explore Predictive Analytics using the model developed for Technical Debt Remediation. &#xD;
+Aim to change, bring in new things. Opportunity to test that out. EA is more about predictive.</documentation>
+    </element>
   </folder>
   <folder name="Business" id="b450b6a4-519b-4191-a289-4df897ca0a1b" type="business">
     <element xsi:type="archimate:BusinessFunction" name="Test" id="3e3bc277-1fea-40bd-bbc1-35dd96697b2a"/>
@@ -3916,6 +3924,7 @@ A customary sequence of steps or tasks that authors follow to produce a content 
     <element xsi:type="archimate:BusinessRole" name="Viewers (Custom SharePoint Group) (Business Role)" id="id-faa7e661024a442f8fad73dbf608a53c"/>
     <element xsi:type="archimate:BusinessCollaboration" name="Business-Focussed Review" id="id-1fdaff25efcd401db932255d8453745f"/>
     <element xsi:type="archimate:BusinessRole" name="Sr.ADM ISSD" id="id-41b85bee1443484b93953fc6ed5e38f9"/>
+    <element xsi:type="archimate:BusinessObject" name="Technical Debt Risk Reduction Framework" id="id-93364899d4ba45f6b1d1969a385f4618"/>
   </folder>
   <folder name="Application" id="4b1b92bd-7586-4e58-927a-fdad7c2d42fb" type="application">
     <element xsi:type="archimate:ApplicationFunction" name="Code" id="26e87738-80fb-423f-8f10-0570f69f4572"/>
@@ -9759,6 +9768,349 @@ The Contractor must provide confirmation that demonstrates how they will success
     <element xsi:type="archimate:Requirement" name="Target Audience (Requirement)" id="id-e5a50d0e67694bd58d3cea46bcad1564">
       <documentation>Target Audience</documentation>
     </element>
+    <element xsi:type="archimate:Assessment" name="Reduces Technical Debt" id="id-59dd0abac4434d9eac6cdc0b373a7780">
+      <documentation>Description: Proposal reduces key department Technical Debt and/or other technology related risks&#xD;
+&#xD;
+Scoring Guide:&#xD;
+     0 = Adds to Department Technical Debt    &#xD;
+     1 = No impact    &#xD;
+     2 = Reduces Technical Debt for one system    &#xD;
+     3 = Reduces Technical Debt for multiple systems    &#xD;
+     4 = Reduces Technical Debt department-wide &#xD;
+&#xD;
+WHY&#xD;
+2020-23 Departmental IT Plan - English&#xD;
+http://esdc.prv/en/iitb/corporate/plans_reports/doc/2020-23%20Departmental%20IT%20Plan%20-%20English%20-%20for%20iService.pdf&#xD;
+Section 1.2 IT Risk Analysis    &#xD;
+Risk :Technical Debt There is a risk that ESDC does not have the ability to continuously operate, transform, and innovate to adequately deliver on the digital government priorities that support ESDC programs and services and ensure IT Service Continuity.    &#xD;
+Response :. Mature and improve ESDC’s EA, supported by the creation of the departmental EA function and the launch of the Department’s EA Review Board, where EA will facilitate tracking the amount of technical debt against a set of portfolio level standards and/or targets and favour advancing EA-based projects that avoid increasing technical debt.  &#xD;
+&#xD;
+Digital Operations Strategic Plan: 2021-2024&#xD;
+https://www.canada.ca/en/government/system/digital-government/government-canada-digital-operations-strategic-plans/digital-operations-strategic-plan-2021-2024.html&#xD;
+Priority 1.1. Strengthen the overall health of the government’s application portfolio &#xD;
+Several issues can weaken this health and lead to “technical debt.” Technical debt occurs when the vendor hasn’t upgraded and no longer supports an application, or when an application is so old that it’s hard to find people who have the skills to maintain it. In some cases, technical debt makes applications costly to maintain and at risk of performance and security failures. In other cases, it means that applications are too outdated to deliver fully digital services. </documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Following Enterprise SDLC" id="id-9826435d9c1549fb98476be64338c486">
+      <documentation>Description: Proposal operates in a standardized technical environment within department guardrails and standards&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = Creates an exception to established standards    &#xD;
+     1 = Adds to complexity but supports standards    &#xD;
+     2 = Supports standards. No impact on complexity    &#xD;
+     3 = Reduces complexity using a CI/CD pipeline supporting standards    &#xD;
+     4 = Reduces complexity of IT environment using a shared CI/CD pipeline impacting multiple systems/components while supporting standards&#xD;
+&#xD;
+WHY&#xD;
+GC Enterprise Architecture Framework&#xD;
+https://wiki.gccollab.ca/GC_Enterprise_Architecture/Framework&#xD;
+Design for performance, availability and scalability    &#xD;
+ensure response times meet user needs, and critical services are highly available    &#xD;
+support zero‑downtime deployments for planned and unplanned maintenance    &#xD;
+use distributed architectures, assume failure will happen, handle errors gracefully, and monitor performance and behaviour actively    &#xD;
+establish architectures that supports new technology insertion with minimal disruption to existing programs and services    &#xD;
+control technical diversity; design systems based on modern technologies and platforms already in use    &#xD;
+Follow DevSecOps principles    &#xD;
+use continuous integration and continuous deployments    &#xD;
+ensure automated testing occurs for security and functionality    &#xD;
+include your users and other stakeholders as part of the DevSecOps process, which refers to the concept of making software security a core part of the overall software delivery process   &#xD;
+&#xD;
+GC Enterprise Architecture Framework&#xD;
+https://wiki.gccollab.ca/GC_Enterprise_Architecture/Framework&#xD;
+Design for Interoperability &#xD;
+design systems as highly modular and loosely coupled services &#xD;
+expose services, including existing ones, through APIs &#xD;
+make the APIs discoverable to the appropriate stakeholders &#xD;
+Enable Interoperability &#xD;
+expose data and functionality through service interfaces &#xD;
+applications must communicate with each other via those interfaces &#xD;
+services interfaces must be published and discoverable </documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Consolidate Solutions" id="id-2ef9b550db6a4fa7ad226b6460a28473">
+      <documentation>Description: Proposal consolidates business solutions by reducing the total number of solutions in the department application portfolio&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = Proposal adds to portfolio    &#xD;
+     1 = No portfolio impact&#xD;
+     2 = 1 for 1 consolidation / retirement of system&#xD;
+     3 = Consolidation/retirement of 2+ minor systems producing net reduction&#xD;
+     4 = Consolidation / retirement of 2+ major systems producing net reduction&#xD;
+&#xD;
+WHY&#xD;
+2020-23 Departmental IT Plan - English - for iService.pdf (esdc.prv)&#xD;
+http://esdc.prv/en/iitb/corporate/plans_reports/doc/2020-23%20Departmental%20IT%20Plan%20-%20English%20-%20for%20iService.pdf&#xD;
+Section 1.2&#xD;
+Risk Service Delivery   &#xD;
+There is a risk that ESDC will not be able to maintain the delivery of high-quality services while changing how it is delivering them.  &#xD;
+&#xD;
+Utilize the APM methodology to analyze, standardize and modernize IT applications, including:  &#xD;
+develop multi-year plans to decommission and replace redundant application;   &#xD;
+prioritize future IT investments based on risk mitigation, cost efficiency and reusability; and,  &#xD;
+analyze and provide standardized direction for all IT enabled projects through ESDC’s EARB.  &#xD;
+&#xD;
+Utilize a holistic, multidimensional business view of capabilities and associated Business Architecture tools to better position the Department for effective service delivery to Canadians, such that:  &#xD;
+investments and proposed investments are favourably aligned with identified priorities and strategies;   &#xD;
+objectives are measurable and requirements traceable; and,  &#xD;
+enterprise solutions are leveraged where possible to avoid duplication of effort.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Standard Business Process" id="id-1c51c22702b04f5685f34d7c876b79ca">
+      <documentation>Description: Proposes standard business processes    &#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = No process standardization    &#xD;
+     1 = Limited process standardization / single LoB    &#xD;
+     2 = Significant process standardization / single LoB    &#xD;
+     3 = Limited  process standardization / multi LoBs    &#xD;
+     4 = Significant process standardization / multi LoBs    &#xD;
+&#xD;
+WHY&#xD;
+GC Enterprise Architecture Framework&#xD;
+https://wiki.gccollab.ca/GC_Enterprise_Architecture/Framework&#xD;
+Promote horizontal enablement of the enterprise &#xD;
+identify opportunities to enable business services horizontally across the GC enterprise and to provide cohesive experience to users and other stakeholders &#xD;
+reuse common business capabilities, processes and enterprise solutions from across government and private sector &#xD;
+publish in the open all reusable common business capabilities, processes and enterprise solutions for others to develop and leverage cohesive horizontal enterprise services </documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Leverages Cloud Services" id="id-2e21d672ee1e415e80213fa199512b29">
+      <documentation>Proposal leverages Cloud services to reduce IT run costs&#xD;
+Description: SaaS, PaaS, IaaS&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = No cloud  &#xD;
+     1 = IaaS, PaaS    &#xD;
+     2 = IaaS in public cloud using open source solutions &#xD;
+     3 = PaaS in public cloud using open source solutions &#xD;
+     4 = SaaS&#xD;
+&#xD;
+WHY&#xD;
+Use cloud first   &#xD;
+adopt the use of the GC Accelerators to ensure proper security and access controls   &#xD;
+enforce this order of preference: software as a service (SaaS) first, then platform as a service (PaaS), and lastly infrastructure as a service (IaaS)&#xD;
+Fulfil cloud services through SSC Cloud‑Brokering Services   &#xD;
+enforce this order of preference: public cloud first, then hybrid cloud, then private cloud, and lastly non‑cloud (on‑premises) solutions   &#xD;
+design for cloud mobility and develop an exit strategy to avoid vendor lock‑in   &#xD;
+&#xD;
+Use open source solutions hosted in public cloud   &#xD;
+select existing solutions that can be reused over custom built   &#xD;
+contribute all improvements back to the communities   &#xD;
+register open source software to the Open Resource Exchange    &#xD;
+&#xD;
+Use software as a service (SaaS) hosted in public cloud   &#xD;
+choose SaaS that best fit for purpose based on alignment with SaaS capabilities   &#xD;
+choose a SaaS solution that is extendable   &#xD;
+configure SaaS and if customization is necessary extend as open source modules</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Enterprise / Reusable" id="id-fc8a68e552254032803625522115a18e">
+      <documentation>Description:  Proposal implements or leverages an enterprise solution for a key capability that could be leveraged by more than one business line&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = No reuse    &#xD;
+     1 = Limited reuse (e.g., single web service)    &#xD;
+     2 = Moderate reuse    &#xD;
+     3 = Reuses enterprise solution or creates significant reuse opportunity    &#xD;
+     4 = Establishes reusable enterprise solution&#xD;
+&#xD;
+WHY&#xD;
+Digital Operations Strategic Plan: 2021-2024&#xD;
+https://www.canada.ca/en/government/system/digital-government/government-canada-digital-operations-strategic-plans/digital-operations-strategic-plan-2021-2024.html&#xD;
+Strategic Pillar 3: Implement Enterprise &#xD;
+Priority 3.2. Plan and govern for the sustainable and integrated management of service, information, data, IT and cybersecurity &#xD;
+&#xD;
+Integrated planning using the right data, processes and technology, will help provide data‑driven insights across the GC portfolio of investments, assets and services</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="IT Strategic Alignment" id="id-8713a276a6924fe89dc30857a9200228">
+      <documentation>Description: Proposal is aligned with the 2020-23 Departmental IT Plan and Digital Operations Strategic Plan: 2021–2024 &#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = break from direction    &#xD;
+     1 = No impact or alignment demonstrated.    &#xD;
+     2 =limited alignment with a few components New ABBs and SBBs    &#xD;
+     3 = some alignment for multiple components Shared ABBs and SBBS    &#xD;
+     4 = well aligned , all components. Reusable ABBs and SBBs&#xD;
+&#xD;
+WHY&#xD;
+ESDC IT Plan:&#xD;
+Departmental IT Plan: 2020-2023&#xD;
+http://esdc.prv/en/iitb/corporate/plans_reports/doc/2020-23%20Departmental%20IT%20Plan%20-%20English%20-%20for%20iService.pdf&#xD;
+GC IT Plan:&#xD;
+Digital Operations Strategic Plan: 2021-2024&#xD;
+https://www.canada.ca/en/government/system/digital-government/government-canada-digital-operations-strategic-plans/digital-operations-strategic-plan-2021-2024.html&#xD;
+GC Digital Standards website&#xD;
+https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html&#xD;
+GC Enterprise Architecture Framework;    &#xD;
+https://wiki.gccollab.ca/GC_Enterprise_Architecture/Framework</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="TBS-Defined APM Assessment Scores for TIME" id="id-8dfcfcc1cdcc481a80f5c58590ec3bb9">
+      <documentation>TBS defined APM assessment scores for TIME (e.g. Architecture and Security): https://www.gcpedia.gc.ca/gcwiki/images/9/96/Application_Lifecycle_Management_-_English.docx</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Product / Service Type" id="id-6bc9462b378d43ee9899db3cc0854813">
+      <documentation>Description: Does the solution exist at ESDC today?&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = External solution (neither ESDC or SSC)  &#xD;
+     1 = Existing COTS/SaaS  &#xD;
+     2 = Existing Custom  &#xD;
+     3 = New COTS/SaaS  &#xD;
+     4 = New Custom&#xD;
+&#xD;
+WHY&#xD;
+New systems that require ESDC administration are more complex. Custom solutions are more complex than Out of the Box or SaaS solutions.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Solution Deployment" id="id-33511409397d4e23b18bde849a0ea668">
+      <documentation>Description: How is the solution deployed and how widely distributed?  &#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = Cloud-based/external  &#xD;
+     1 = Desktop or browser/Single location OR server-only (no UI)  &#xD;
+     2 = Browser-based/any distribution  &#xD;
+     3 = Desktop component/multiple offices or devices  &#xD;
+     4 = Desktop component/enterprise wide  &#xD;
+&#xD;
+WHY&#xD;
+If the solution requires a desktop client it will be more difficult and complex to manage.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Solution Integration" id="id-b25d3bab06d54e868df145b0b7e7c93a">
+      <documentation>Description: Interfaces with other Solution /partners&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = Completely standalone  &#xD;
+     1 = 3 or less/internal only  &#xD;
+     2 = > 3 internal only  &#xD;
+     3 = Multiple interfaces/internal  and GC  &#xD;
+     4 = Multiple interfaces/multiple internal and/or external partners (non-GoC)  &#xD;
+&#xD;
+WHY&#xD;
+GC Enterprise Architecture Framework&#xD;
+https://wiki.gccollab.ca/GC_Enterprise_Architecture/Framework&#xD;
+Design for Interoperability &#xD;
+design systems as highly modular and loosely coupled services &#xD;
+expose services, including existing ones, through APIs &#xD;
+make the APIs discoverable to the appropriate stakeholders &#xD;
+&#xD;
+Enable Interoperability &#xD;
+expose data and functionality through service interfaces &#xD;
+applications must communicate with each other via those interfaces &#xD;
+services interfaces must be published and discoverable </documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Requirements Maturity" id="id-3a8c96e507bb4f448d6defbac10accae">
+      <documentation>Description: How well are the requirements / business processes defined?&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = No requirements or processes are changing  &#xD;
+     1 = Requirements are understood, documented, and stable  &#xD;
+     2 = Requirements are understood, documented, but subject to change  &#xD;
+     3 = Requirements are understood but not documented  &#xD;
+     4 = Requirements are not understood&#xD;
+&#xD;
+WHY&#xD;
+Important to include both Business and Non-functional requirements in discussion.  Need to be understood by business and developer / operator or complexity rises.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Technology Expertise" id="id-40f0529a85464943abcd763d2e471fe5">
+      <documentation>Description: How well supported is the underlying technology?&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = Well known and supported within ESDC/SSC and the broader industry  &#xD;
+     1 = Known and supported  &#xD;
+     2 = Known but limited support - training and/or additional resources required  &#xD;
+     3 = New to ESDC/SSC or legacy. Limited support available - training required.  &#xD;
+     4 = New to ESDC/SSC or legacy. No support available - training required  &#xD;
+&#xD;
+WHY&#xD;
+&lt;TO BE DRAFTED></documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="System Integrators / Professional Services" id="id-15c51f2863ff4a12a2e828a9266c94fd">
+      <documentation>Description: How will this proposal use professional services / System Integrators?&#xD;
+Scoring Guide: &#xD;
+     0 = None required  &#xD;
+     1 = Staff augmentation with minor role  &#xD;
+     2 = Staff augmentation with major role  &#xD;
+     3 = Partner with systems integrator  &#xD;
+     4 = Project delivered by external partner&#xD;
+&#xD;
+WHY&#xD;
+&lt;TO BE DRAFTED></documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Scheduling / Resources" id="id-0363403b2e3c4d8196ba2583dccb37bb">
+      <documentation>Description: How aggressive is the schedule and are sufficient resources available?&#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = No scheduling or resource concerns  &#xD;
+     1 = Reasonable schedule/resources available  &#xD;
+     2 = Reasonable schedule/significant resource concerns  &#xD;
+     3 =Aggressive schedule/resources available  &#xD;
+     4 = Aggressive schedule/significant resource concerns&#xD;
+&#xD;
+WHY&#xD;
+&lt;TO BE DRAFTED></documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="External Access" id="id-4c47ecae37684ecca5c1a70b6f76e5b3">
+      <documentation>Description: &#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = Custom IAM, no antibot, no MFA, not shared &#xD;
+     1 = Shared Custom, Antibot and MFA controls in place. &#xD;
+     2 = CSP provided, Antibot and MFA controls in place. &#xD;
+     3 = Enterprise ECAS enabled  solution &#xD;
+     4 = iSAMS onboarding roadmap / or no external access &#xD;
+&#xD;
+WHY&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Internal Access" id="id-0566502db2cd4db3af12f95e3e90a5ca">
+      <documentation>Description: &#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = None &#xD;
+     4 = Enterprise Internal Access Controls (AD, IAAM, RBAC, Onboarding, Offboarding) &#xD;
+&#xD;
+WHY&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Edge Protection" id="id-a066f2b0a84544b89b372191611317d3">
+      <documentation>Description: &#xD;
+&#xD;
+Scoring Guide: &#xD;
+     0 = none &#xD;
+     4 = Enterprise Threat Intelligence (SIEM, UEBA, WAF, AI/ML)  &#xD;
+&#xD;
+WHY&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Secure Data Exchange" id="id-a9247c1bbb004b429393647ca94a7d7c">
+      <documentation>Description:  &#xD;
+Scoring Guide: &#xD;
+     0 = Custom exchange manged by point to point partners, no policy enforcement point. &#xD;
+     4 = API LM (API Store and Gateway used for exchange)&#xD;
+&#xD;
+WHY&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Security Operations" id="id-306cd51c8a1847d59b29a733cab1b73f">
+      <documentation>Description:  &#xD;
+Scoring Guide: &#xD;
+     0 = no active monitoring or operations.   &#xD;
+     4 =  Enterprise Cyber Security Operations &#xD;
+&#xD;
+WHY&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Policy Enforcement" id="id-d3a41d2d7d714ca6b52ebc080416ed8f">
+      <documentation>Description:  &#xD;
+Scoring Guide: &#xD;
+     0 = none &#xD;
+     4 = Enterprise Policy Enforcement and Management (Data Encryption, IAM, credentials, Tokens)&#xD;
+&#xD;
+WHY&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Asset Protection" id="id-f31e72aae64d4b0f9197ce4a580cd3d9">
+      <documentation>Description:  &#xD;
+Scoring Guide: &#xD;
+     0 = none or limited. &#xD;
+     4 = Data Encryption, Endpoint protection, Integrated Risk Management, IT Service Management &#xD;
+&#xD;
+WHY&#xD;
+</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="62a4c1d2-579d-448f-8ca7-90420c9e16a5" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Feature Gap" id="9ff8a02c-23f7-41f7-9ee7-0a1373ad231a"/>
@@ -10891,6 +11243,122 @@ Includes:&#xD;
     <element xsi:type="archimate:Grouping" name="HL Solution Requirements (Grouping)" id="id-4975f12552044b2689cc2584a8a95b9f"/>
     <element xsi:type="archimate:Grouping" name="HL Business Requirements (Grouping)" id="id-aa5be81cbd4a4339bcb1b4d09c61bf56"/>
     <element xsi:type="archimate:Grouping" name="SharePoint Online (365) Permission Levels (Grouping)" id="id-ee2b71c20d474c528bbd278fbb664360"/>
+    <element xsi:type="archimate:Grouping" name="Enterprise Architecture Alignment" id="id-67963a9e17f04815a588e1795ec8038c">
+      <documentation>The IM/IT Alignment category is based on a weighted average score across 7 criteria: &#xD;
+1. Reducing Aging IT&#xD;
+2. Simplifying/Standardizing the Environment&#xD;
+3. Consolidating solutions&#xD;
+4. Standardizing business process(es)&#xD;
+5. Lowering overall IM/IT demand&#xD;
+6. Reusability across the Enterprise, and &#xD;
+7. Alignment to GC IM/IT strategic goals</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="IT Complexity" id="id-504ffae776f14e8ab3a881db347b360a">
+      <documentation>A preliminary high-medium-low complexity rating based on workshop consultations and a weighted average score across 7 criteria.&#xD;
+http://architecture/ATS-SAT/ARPLite1516/Shared%20Documents/2015-16/Scoring/Alignment%20Scoring%20-%20Business,%20IT,%20Complexity%20SD%20scores.xlsx</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Security Architecture" id="id-d505386859204aa8bc7f709d441cf4c5"/>
+    <element xsi:type="archimate:Grouping" name="Mandate" id="id-f2da1d93eb9f4267a3c537cc51ef769f">
+      <documentation>1. Core – the proposed solution directly supports core departmental business or is otherwise critical to enabling the department (11-BDM) to deliver its mandate. ​&#xD;
+2. Non-core – the proposed solution is not critical to fulfilling the departmental mandate or is a common, commoditized service not unique to ESDC (11-BDM).</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Architecture Outcome" id="id-b5ec0075c2d847a482d85c7f3fb6f45b">
+      <documentation>1. Enterprise/Strategic – the target state solution/architecture.​&#xD;
+2. Tactical – a solution/architecture that is  a step towards the target state.​&#xD;
+3. Interim – a solution/architecture that is for a period of time  that may or may not move towards the target state.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Deployment Model" id="id-385f5508153f4dedbad696e8c58f2172">
+      <documentation>This is an indication of the preferred deployment model. The deployment models are defined in the GC Cloud Adoption Strategy.​&#xD;
+1. Public Cloud – a commercially available offering procured and security-assessed for the use of all Canadian public sector organizations. Under this deployment model, the public sector will securely share tenancy with private companies, non-profits, and individuals.​&#xD;
+2. Private Cloud – a non-commercially available cloud offering tailored to the GC. Under this deployment model, the GC will be the only tenant residing in the cloud.​&#xD;
+3. Non-Cloud – a traditional IM/IT environment for hosting legacy applications that cannot be deployed to a cloud environment.​</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Data Classification" id="id-c50460d1e2ef43e4892465254807ac59">
+      <documentation>1. Unclassified The data managed by the architecture has a data classification of unclassified.​&#xD;
+2. Protected A The data managed by the architecture has a data classification of Protected A.​&#xD;
+3. Protected B The data managed by the architecture has a data classification of Protected B.​&#xD;
+4. Secret The data managed by the architecture has a data classification of Secret.​</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Run-Grow-Transform" id="id-556c054d706b46878f7d3b55afd2279e">
+      <documentation>From the Government of Canada Application Portfolio Management Strategy, “GC will leverage IM/IT Plan Investment categories Run, Grow and Transform to determine the type of discretionary and non-discretionary investments being made to balance mandatory and discretionary investments to both sustain and renew existing applications and improve service delivery.”​&#xD;
+1. Run – “Non-discretionary investment that is required to sustain regulatory compliance or ongoing operational and maintenance costs to support business outcomes and service delivery.”​&#xD;
+2. Grow – “Discretionary investment that is required to enhance or change existing business outcomes and service delivery.”​&#xD;
+3. Transform – “Discretionary investment that is required to transform business outcomes and service delivery through innovation.”​</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="Capability" id="id-74e67f5279a647f4b1db60f6a4180104">
+      <documentation>Indicates a GC-wide requirement that is not ​unique to ESDC. We should always “act as one” and seek all-of-government solutions wherever possible.​</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="BDM Alignment" id="id-ea1bd8adb6b24dc7ad836ca14fc1bdf2">
+      <documentation>Alignment to BDM Target State Architecture (if applicable):&#xD;
+1. High – high degree of alignment to multiple IM/IT objectives or strong support of a major strategic objective. ​&#xD;
+2. Medium – a good degree of alignment to multiple objectives.​&#xD;
+3. Low – lower impact support for 1 or more objectives. ​&#xD;
+4. Not aligned – vague or ambiguous relationship to objectives.</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="BDM Core" id="id-f776fb34554340e09ac8a40ab0d88562">
+      <documentation>1. Core – the proposed solution directly supports core departmental business or is otherwise critical to enabling the department (11-BDM) to deliver its mandate. ​&#xD;
+2. Non-core – the proposed solution is not critical to fulfilling the departmental mandate or is a common, commoditized service not unique to ESDC (11-BDM).</documentation>
+    </element>
+    <element xsi:type="archimate:Grouping" name="APM Assessment" id="id-54ff5535edc54078864e7f2006542648">
+      <documentation>This area contains Application Portfolio Management (APM) information related to affected applications (if applicable). It is used to highlight the current status of applications plus the short term and long term disposition as follows: ​&#xD;
+&#xD;
+​1. Sustain​ - To leave as is and maintain.​&#xD;
+2. Decommission ​- To retire (sunset) application.​&#xD;
+3. Remediate ​- To improve code quality, developer productivity and overall reliability of application.​&#xD;
+4. Re-Platform ​- To port an application from one technical platform to another by reusing (partially or fully) the code asset in the target platform.​&#xD;
+5. Replace ​- Removing the existing application by decommissioning it and replacing it with another solution​&#xD;
+6. Consolidate ​- Replace an application with another existing application capable of scaling.​&#xD;
+7. Enhance/Expand ​- Reuse and extend functionality via development or additional software components/modules.​&#xD;
+&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+​&#xD;
+&#xD;
+In the APM context, an application is designated as Strategic, Core Delivery, or Supporting based on the top level capability within the Departmental Business Capability Model (DBCM) that it supports. It is deemed mission critical through the Business Impact Analysis (BIA) process according to TBS criteria. ​</documentation>
+    </element>
   </folder>
   <folder name="Relations" id="964c78d0-4d5e-480d-870a-c6e4ef8a9043" type="relations">
     <element xsi:type="archimate:TriggeringRelationship" name="Peer Review" id="e307ac9a-b3a7-4aa5-9133-6cf506203141" source="5e605c46-1cfb-4a61-ba69-9f069110b1e3" target="b29c1bc0-9c06-4484-9748-d797806e08b7"/>
@@ -13263,6 +13731,27 @@ Includes:&#xD;
     <element xsi:type="archimate:FlowRelationship" id="id-09e4ca14dea24502bcb4901c6335d531" source="id-dfd2d45f19284fba85735ee5d6e318e8" target="id-1fdaff25efcd401db932255d8453745f"/>
     <element xsi:type="archimate:FlowRelationship" id="id-b8fa6f037caf4cb7a9465b4eeb7a676c" source="id-1fdaff25efcd401db932255d8453745f" target="id-dfd2d45f19284fba85735ee5d6e318e8"/>
     <element xsi:type="archimate:AggregationRelationship" id="id-07324f96937143f6b14f73f968a24b49" source="id-742c4ae292ba4ac8974bf5c76c33cb6a" target="id-41b85bee1443484b93953fc6ed5e38f9"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-5b756175157d4b999073518bebd95800" source="id-67963a9e17f04815a588e1795ec8038c" target="id-59dd0abac4434d9eac6cdc0b373a7780"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-809eeed5212c436f87cc9e8a74d13c08" source="id-67963a9e17f04815a588e1795ec8038c" target="id-9826435d9c1549fb98476be64338c486"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ea007fb65a2646cd9c9b07be5e5e6db2" source="id-67963a9e17f04815a588e1795ec8038c" target="id-2ef9b550db6a4fa7ad226b6460a28473"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-4afca35bcd574aa68d10b38b04a5fe17" source="id-67963a9e17f04815a588e1795ec8038c" target="id-1c51c22702b04f5685f34d7c876b79ca"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-fbfc3a5afe644c7da5604aa4172a1cec" source="id-67963a9e17f04815a588e1795ec8038c" target="id-2e21d672ee1e415e80213fa199512b29"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8c96db7a16844ee2b4efd57bc6f2a96a" source="id-67963a9e17f04815a588e1795ec8038c" target="id-fc8a68e552254032803625522115a18e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-60f80414fe514d05baf6c4db5d7857d2" source="id-67963a9e17f04815a588e1795ec8038c" target="id-8713a276a6924fe89dc30857a9200228"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d63c7c9bf2e442cd8b245f233b9bbbe1" source="id-504ffae776f14e8ab3a881db347b360a" target="id-6bc9462b378d43ee9899db3cc0854813"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-590ca32101014bae99e23eb25cb3b36e" source="id-504ffae776f14e8ab3a881db347b360a" target="id-33511409397d4e23b18bde849a0ea668"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0aa06b434be24af89558c91691bc57be" source="id-504ffae776f14e8ab3a881db347b360a" target="id-b25d3bab06d54e868df145b0b7e7c93a"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d22bb7d1979b4e9fa4a6a821ff2c10b7" source="id-504ffae776f14e8ab3a881db347b360a" target="id-3a8c96e507bb4f448d6defbac10accae"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d00ecf768df64bd2b21073769eae1da8" source="id-504ffae776f14e8ab3a881db347b360a" target="id-40f0529a85464943abcd763d2e471fe5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-1d8886f848594b3cb38feb91e969a309" source="id-504ffae776f14e8ab3a881db347b360a" target="id-15c51f2863ff4a12a2e828a9266c94fd"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0b099a6e8964416e86cde6e9ae979bac" source="id-504ffae776f14e8ab3a881db347b360a" target="id-0363403b2e3c4d8196ba2583dccb37bb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-0874397d3bb9427c85788f508df5b380" source="id-d505386859204aa8bc7f709d441cf4c5" target="id-4c47ecae37684ecca5c1a70b6f76e5b3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8cd6c8a46ee34ea891c966f9c004f89e" source="id-d505386859204aa8bc7f709d441cf4c5" target="id-0566502db2cd4db3af12f95e3e90a5ca"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7b85c768d1d24dfaaac8abe05f92a706" source="id-d505386859204aa8bc7f709d441cf4c5" target="id-a066f2b0a84544b89b372191611317d3"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d7831659db8f43009aeb5edb20b97d40" source="id-d505386859204aa8bc7f709d441cf4c5" target="id-a9247c1bbb004b429393647ca94a7d7c"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7bd898cd462548e4b2f20bbc8ba21ad5" source="id-d505386859204aa8bc7f709d441cf4c5" target="id-306cd51c8a1847d59b29a733cab1b73f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8614b02499a4436298daf529323884d4" source="id-d505386859204aa8bc7f709d441cf4c5" target="id-d3a41d2d7d714ca6b52ebc080416ed8f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-d08f614a19ba4e9f91d4ad48fa71595d" source="id-d505386859204aa8bc7f709d441cf4c5" target="id-f31e72aae64d4b0f9197ce4a580cd3d9"/>
   </folder>
   <folder name="Views" id="ab3b8318-9412-45a2-b596-d82d60848e7e" type="diagrams">
     <folder name="Highlights" id="f14068ae-d064-4570-b1ee-5c26f9f9ad9a">
@@ -14451,6 +14940,170 @@ Diagram Purpose: For discussion purposes only (e.g. HOW EARB should be lead by S
           <sourceConnection xsi:type="archimate:Connection" id="id-4b58f28fc8a34a938b20aed09859c41d" source="id-3864bb228e574bdba0b26563ae21aa2f" target="id-06ff7f90ce6d43de99afb8672617f522" archimateRelationship="id-4f29d48707a44524a9a93c9afb3002e8"/>
         </child>
         <documentation>Solution Architects playing role of all EA Domains.</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="ESDC EARB EA Scoring (All Domains)" id="id-aebcc3f9b7004337bd9006b07d8f2f55">
+        <child xsi:type="archimate:Note" id="id-b0a975f56e964ce79fdb01625ff8130f" font="1|Segoe UI|13.8|3|WINDOWS|1|-23|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" fillColor="#fcffc6">
+          <bounds x="6" y="11" width="324" height="66"/>
+          <content>ESDC EARB EA Weighted Scoring&#xD;
+(Recommended Solution)</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-f59cdaddec524373b5d71da455852306" textPosition="1">
+          <bounds x="239" y="47" width="91" height="30"/>
+          <content>v0.1.20211020</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-50baefb7e8b546f48ad6230712fd7782" font="1|Segoe UI|18.0|1|WINDOWS|1|-30|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" fontColor="#ffffff" fillColor="#ff0000" textPosition="1">
+          <bounds x="341" y="11" width="109" height="49"/>
+          <content>DRAFT</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-a936168cb2a0401497162500c8deeb18" font="1|Segoe UI Semibold|12.0|2|WINDOWS|1|-20|0|0|0|600|-1|0|0|0|3|2|1|34|Segoe UI Semibold" textAlignment="1">
+          <bounds x="461" y="11" width="464" height="73"/>
+          <content>Diagram Audience: EA Domains (SAS, ESA, IA, CDO, APM, BAAO)&#xD;
+Diagram Purpose: For discussion purposes only (e.g. EARB's EA Assessment Slide's underlying scoring considerations)</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f6fa7467a55f4324a274c2dc4011b6c0" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-67963a9e17f04815a588e1795ec8038c">
+          <bounds x="17" y="120" width="445" height="229"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8b5d6a0fe18e4a8c8e49ca89a9fd453d" source="id-f6fa7467a55f4324a274c2dc4011b6c0" target="id-f6d15e798d0c4ad1a8b2b92f887c88ef" archimateRelationship="id-5b756175157d4b999073518bebd95800"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-48908ff4d9dc4eaeab6025974c329a3b" source="id-f6fa7467a55f4324a274c2dc4011b6c0" target="id-e62a682f3bd74597ac3f71a09465ebaa" archimateRelationship="id-809eeed5212c436f87cc9e8a74d13c08"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-347debbed01f4af1b1efd617622afcd2" source="id-f6fa7467a55f4324a274c2dc4011b6c0" target="id-81500170644c402e969c42dfe2b2d970" archimateRelationship="id-ea007fb65a2646cd9c9b07be5e5e6db2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5159e86ce9484bdaa6d28085104b49fe" source="id-f6fa7467a55f4324a274c2dc4011b6c0" target="id-80d8bdf140a743918566a365f5d8f8c5" archimateRelationship="id-4afca35bcd574aa68d10b38b04a5fe17"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9e72bcdc8184452a8145ebe53b065ecc" source="id-f6fa7467a55f4324a274c2dc4011b6c0" target="id-647cf018863641e1a051e53f0d5e9c9d" archimateRelationship="id-fbfc3a5afe644c7da5604aa4172a1cec"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-671fd1d7d3f9440aabc101f70e4510e2" source="id-f6fa7467a55f4324a274c2dc4011b6c0" target="id-cd9961d1ae6a4483a2130b82a69c977d" archimateRelationship="id-8c96db7a16844ee2b4efd57bc6f2a96a"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-939a6a9f3ba34220bdbf4feebbb9785d" source="id-f6fa7467a55f4324a274c2dc4011b6c0" target="id-1fdae66f636240fdab628fb757d693d0" archimateRelationship="id-60f80414fe514d05baf6c4db5d7857d2"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f6d15e798d0c4ad1a8b2b92f887c88ef" targetConnections="id-8b5d6a0fe18e4a8c8e49ca89a9fd453d" archimateElement="id-59dd0abac4434d9eac6cdc0b373a7780">
+            <bounds x="12" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e62a682f3bd74597ac3f71a09465ebaa" targetConnections="id-48908ff4d9dc4eaeab6025974c329a3b" archimateElement="id-9826435d9c1549fb98476be64338c486">
+            <bounds x="156" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-81500170644c402e969c42dfe2b2d970" targetConnections="id-347debbed01f4af1b1efd617622afcd2" archimateElement="id-2ef9b550db6a4fa7ad226b6460a28473">
+            <bounds x="300" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-80d8bdf140a743918566a365f5d8f8c5" targetConnections="id-5159e86ce9484bdaa6d28085104b49fe" archimateElement="id-1c51c22702b04f5685f34d7c876b79ca">
+            <bounds x="84" y="108" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-647cf018863641e1a051e53f0d5e9c9d" targetConnections="id-9e72bcdc8184452a8145ebe53b065ecc" archimateElement="id-2e21d672ee1e415e80213fa199512b29">
+            <bounds x="228" y="108" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-cd9961d1ae6a4483a2130b82a69c977d" targetConnections="id-671fd1d7d3f9440aabc101f70e4510e2" archimateElement="id-fc8a68e552254032803625522115a18e">
+            <bounds x="84" y="168" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1fdae66f636240fdab628fb757d693d0" targetConnections="id-939a6a9f3ba34220bdbf4feebbb9785d" archimateElement="id-8713a276a6924fe89dc30857a9200228">
+            <bounds x="228" y="168" width="133" height="48"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-05e17c1bfda140ada45d797778f17f5b" archimateElement="id-8dfcfcc1cdcc481a80f5c58590ec3bb9">
+          <bounds x="936" y="34" width="167" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b5aa394fe7c047ad950627e93a3759c1" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-504ffae776f14e8ab3a881db347b360a">
+          <bounds x="17" y="360" width="445" height="253"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-123916ddaf1a46a293940188d3ac73d8" source="id-b5aa394fe7c047ad950627e93a3759c1" target="id-4e2fa3a874b04eb8b64cd682bc6e0549" archimateRelationship="id-d63c7c9bf2e442cd8b245f233b9bbbe1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-95d5630d273e49cbbf9547c20ea581fa" source="id-b5aa394fe7c047ad950627e93a3759c1" target="id-6d01c43f980544728ef4485670953a5d" archimateRelationship="id-590ca32101014bae99e23eb25cb3b36e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5adf9ad2542c43f68bc613ff31c84df1" source="id-b5aa394fe7c047ad950627e93a3759c1" target="id-d513fd80363e4629a0d0b1962c6c52e3" archimateRelationship="id-0aa06b434be24af89558c91691bc57be"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6abafd7a19504e798f9fb78e8920874d" source="id-b5aa394fe7c047ad950627e93a3759c1" target="id-a9a1f11cbc2d4fd38bfa83e72b74f2e8" archimateRelationship="id-d22bb7d1979b4e9fa4a6a821ff2c10b7"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-837fe396aefe4d49b01e83c99b74ab72" source="id-b5aa394fe7c047ad950627e93a3759c1" target="id-e50148f5731c4d5f9401213ec4c0c320" archimateRelationship="id-d00ecf768df64bd2b21073769eae1da8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1c7987dd8b1c4c9b9756a1b965b0caa4" source="id-b5aa394fe7c047ad950627e93a3759c1" target="id-2a6829501982483ea1f9a3bcd5fa029b" archimateRelationship="id-1d8886f848594b3cb38feb91e969a309"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a5569de8671642eba62bdfae2a7128cd" source="id-b5aa394fe7c047ad950627e93a3759c1" target="id-5ef216693aa740ff84ccf55dd37dd4e1" archimateRelationship="id-0b099a6e8964416e86cde6e9ae979bac"/>
+          <child xsi:type="archimate:DiagramObject" id="id-4e2fa3a874b04eb8b64cd682bc6e0549" targetConnections="id-123916ddaf1a46a293940188d3ac73d8" archimateElement="id-6bc9462b378d43ee9899db3cc0854813">
+            <bounds x="12" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-6d01c43f980544728ef4485670953a5d" targetConnections="id-95d5630d273e49cbbf9547c20ea581fa" archimateElement="id-33511409397d4e23b18bde849a0ea668">
+            <bounds x="156" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d513fd80363e4629a0d0b1962c6c52e3" targetConnections="id-5adf9ad2542c43f68bc613ff31c84df1" archimateElement="id-b25d3bab06d54e868df145b0b7e7c93a">
+            <bounds x="300" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a9a1f11cbc2d4fd38bfa83e72b74f2e8" targetConnections="id-6abafd7a19504e798f9fb78e8920874d" archimateElement="id-3a8c96e507bb4f448d6defbac10accae">
+            <bounds x="84" y="108" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e50148f5731c4d5f9401213ec4c0c320" targetConnections="id-837fe396aefe4d49b01e83c99b74ab72" archimateElement="id-40f0529a85464943abcd763d2e471fe5">
+            <bounds x="228" y="108" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2a6829501982483ea1f9a3bcd5fa029b" targetConnections="id-1c7987dd8b1c4c9b9756a1b965b0caa4" archimateElement="id-15c51f2863ff4a12a2e828a9266c94fd">
+            <bounds x="84" y="168" width="133" height="72"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5ef216693aa740ff84ccf55dd37dd4e1" targetConnections="id-a5569de8671642eba62bdfae2a7128cd" archimateElement="id-0363403b2e3c4d8196ba2583dccb37bb">
+            <bounds x="228" y="168" width="133" height="72"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6442d59c3ab249aa9253bcef9267bd24" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-d505386859204aa8bc7f709d441cf4c5">
+          <bounds x="473" y="120" width="445" height="229"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bc35e3276cf94c5aa04b28aa0032c4ea" source="id-6442d59c3ab249aa9253bcef9267bd24" target="id-ede13b00f19648089c6ea593bda75076" archimateRelationship="id-0874397d3bb9427c85788f508df5b380"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-781533a79b234aec89c6b5388a36b34b" source="id-6442d59c3ab249aa9253bcef9267bd24" target="id-e77fe62f32c6454782af1f03beee30f7" archimateRelationship="id-8cd6c8a46ee34ea891c966f9c004f89e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e0849b7b3662464baf7fb6312b5debba" source="id-6442d59c3ab249aa9253bcef9267bd24" target="id-8cefa97fdcef4084848b8ab43b16b95a" archimateRelationship="id-7b85c768d1d24dfaaac8abe05f92a706"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7ffd37ec3b334d158b0489e3bcd53a3c" source="id-6442d59c3ab249aa9253bcef9267bd24" target="id-9c2bfaf791504d97b760b9aa3dbf0c0d" archimateRelationship="id-d7831659db8f43009aeb5edb20b97d40"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d35d8dc1828a4c379008dde5cda2b25a" source="id-6442d59c3ab249aa9253bcef9267bd24" target="id-7d9cdc56b6294b25b9464bbe7e3b1f39" archimateRelationship="id-7bd898cd462548e4b2f20bbc8ba21ad5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4f5e587a2ce44901a140f7bf2424f631" source="id-6442d59c3ab249aa9253bcef9267bd24" target="id-8cf59b15260c490c9ec97c5915b7f359" archimateRelationship="id-8614b02499a4436298daf529323884d4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a7c72d8ac905412fadc7643a7382697e" source="id-6442d59c3ab249aa9253bcef9267bd24" target="id-6e468a9dbb484492882de47461c9fd56" archimateRelationship="id-d08f614a19ba4e9f91d4ad48fa71595d"/>
+          <child xsi:type="archimate:DiagramObject" id="id-ede13b00f19648089c6ea593bda75076" targetConnections="id-bc35e3276cf94c5aa04b28aa0032c4ea" archimateElement="id-4c47ecae37684ecca5c1a70b6f76e5b3">
+            <bounds x="12" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e77fe62f32c6454782af1f03beee30f7" targetConnections="id-781533a79b234aec89c6b5388a36b34b" archimateElement="id-0566502db2cd4db3af12f95e3e90a5ca">
+            <bounds x="156" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8cefa97fdcef4084848b8ab43b16b95a" targetConnections="id-e0849b7b3662464baf7fb6312b5debba" archimateElement="id-a066f2b0a84544b89b372191611317d3">
+            <bounds x="300" y="48" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-9c2bfaf791504d97b760b9aa3dbf0c0d" targetConnections="id-7ffd37ec3b334d158b0489e3bcd53a3c" archimateElement="id-a9247c1bbb004b429393647ca94a7d7c">
+            <bounds x="84" y="108" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7d9cdc56b6294b25b9464bbe7e3b1f39" targetConnections="id-d35d8dc1828a4c379008dde5cda2b25a" archimateElement="id-306cd51c8a1847d59b29a733cab1b73f">
+            <bounds x="228" y="108" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8cf59b15260c490c9ec97c5915b7f359" targetConnections="id-4f5e587a2ce44901a140f7bf2424f631" archimateElement="id-d3a41d2d7d714ca6b52ebc080416ed8f">
+            <bounds x="84" y="168" width="133" height="48"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-6e468a9dbb484492882de47461c9fd56" targetConnections="id-a7c72d8ac905412fadc7643a7382697e" archimateElement="id-f31e72aae64d4b0f9197ce4a580cd3d9">
+            <bounds x="228" y="168" width="133" height="48"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d473ca9015f844f695e98edc192cc086" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-f2da1d93eb9f4267a3c537cc51ef769f">
+          <bounds x="473" y="360" width="445" height="253"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ea9a5c1675c44a07bceb569b14dd1213" archimateElement="id-93364899d4ba45f6b1d1969a385f4618">
+          <bounds x="1116" y="34" width="135" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e4bc2e658af24d758f4624afe321e439" archimateElement="id-6925c027ccee450095b0a5b0973aa1e4">
+          <bounds x="1260" y="34" width="159" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e8745386335d4a25a111c7819fec033d" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-b5ec0075c2d847a482d85c7f3fb6f45b">
+          <bounds x="936" y="120" width="445" height="229"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6d5f30ba857a4e9bb2d54ddf1c416877" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-385f5508153f4dedbad696e8c58f2172">
+          <bounds x="936" y="360" width="445" height="253"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d35bd3fe0cb94afb848625d8980fc622" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-c50460d1e2ef43e4892465254807ac59">
+          <bounds x="17" y="624" width="445" height="229"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-414234eedf2c42bbad2b349bacbe2833" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-556c054d706b46878f7d3b55afd2279e">
+          <bounds x="473" y="624" width="445" height="229"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-30cddc09b11542968e5d58e3aa870510" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-74e67f5279a647f4b1db60f6a4180104">
+          <bounds x="936" y="624" width="445" height="229"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d4bf5cde18df435bb8eb40693ef74f1d" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-ea1bd8adb6b24dc7ad836ca14fc1bdf2">
+          <bounds x="1392" y="360" width="445" height="253"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0d4506a9ba8648ffa600edf18b12fa94" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-f776fb34554340e09ac8a40ab0d88562">
+          <bounds x="1392" y="120" width="445" height="229"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c6ba0e8fac40481583e709fd4afdcd74" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-54ff5535edc54078864e7f2006542648">
+          <bounds x="1392" y="624" width="445" height="229"/>
+        </child>
+        <documentation>This work is tied to the new EA Assessment slide for EARB, modeled off the one for GC EARB, with ESDC-specific icons and assessment methodologies / criteria. &#xD;
+Azure DevOps Links: &#xD;
+1. Feature 2079: EA Alignment Scoring Discussion and Working Group&#xD;
+    https://dev.azure.com/ESDC-IITB-SA/DASHBOARDS/_workitems/edit/2079&#xD;
+&#xD;
+TO DO: Produce a Glossary for this artifact (e.g. what is meant by &quot;Technical Debt&quot;?) &#xD;
+CONSIDER: List, and drill down.&#xD;
+&#xD;
+OVERALL RECOMMENDATION:&#xD;
+This is the overall architecture recommendation:​&#xD;
+1. Proceed – proposal should proceed as proposed.​&#xD;
+2. Significant Changes – proposal may proceed subject to recommendations / constraints.​&#xD;
+3. Change Direction – proposal should be deferred, cancelled, or an alternative solution should be proposed.​&#xD;
+4. Decision Required​&#xD;
+The specific recommendations provide details.​</documentation>
       </element>
     </folder>
     <folder name="ESDC Principles Catalog" id="id-a678b1791fac432f9c0f944e3afd8d03">
