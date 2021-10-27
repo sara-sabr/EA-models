@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>GC Enterprise Architecture Framework - Information Architecture Guide</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>GC Enterprise Architecture Framework - Information Architecture Guide</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Resource"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Resource" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Information Architecture
+
+Information architecture includes both structured and unstructured data. The best practices and principles aim to support the needs of a business service and business capability orientation. To facilitate effective sharing of data and information across government, information architectures should be designed to reflect a consistent approach to data, such as the adoption of federal and international standards. Information architecture should also reflect responsible data management, information management and governance practices, including the source, quality, interoperability, and associated legal and policy obligations related to the data assets. Information architectures should also distinguish between personal and non&#8209;personal data and information as the collection, use, sharing (disclosure), and management of personal information must respect the requirements of the Privacy Act and its related policies.
+
+Collect data to address the needs of the users and other stakeholders
+assess data requirements&#8209;based program objectives, as well users, business and stakeholder needs
+  How to achieve:
+    * Summarize how the architecture meets the data needs of the users and other key stakeholders including:
+        * How does the data asset contribute to outcomes/needs of the user and other stakeholders
+        * Gaps in the existing data assets to meet the needs of the users and other stakeholders and how the architecture addresses these gaps
+        * Gaps in data collection and analysis  and how the architecture is addressing it so that department can ensure that we are serving the members of our society 
+        * Alignment to the data foundation of the departmental information/data architecture practice
+        * Alignment to the theoretical foundation of the departmental information/data architecture practice
+   Tools:
+    * For Data Foundation &#8211; Implement:
+         * Data Catalogue
+         * Benefits Knowledge hub
+         * Data Lake (growth)
+         * Data Science and Machine Platform
+    * Stakeholder Requirements
+    * Solution Requirements
+collect only the minimum set of data needed to support a policy, program, or service
+   How to achieve:
+    * Summarize how the architecture aligns to &#8220;collect with a purpose&#8221;  including:
+         * What is necessary (as opposed to what is sufficient) to meet the stakeholder need
+         * Supporting Performance Information Profiles (PIPs) used to assess a progress towards target and broader objectives
+  Tools:
+    * Value Stream (Value Item and Value Proposition &#8211; Context on What we measure)
+    * KPI  Linked to benefits outcomes and objectives
+reuse existing data assets where permissible and only acquire new data if required
+   How to achieve:
+    * Summarize  reusability of the architecture&#8217;s  data assets given:
+        * Context of data assets and user and stakeholder needs
+        * Data quality and fit for purpose
+        * Privacy and Security  Regulatory Framework
+   Tools: 
+    * Legislative / Regulations
+ensure data collected, including from third-party sources, are of high quality
+   How to achieve:
+    * Summarize how the architecture meets the data quality requirements of third-party sources:
+        * Data quality meets  fit for purpose
+        * Data quality dimensions including:
+             * Relevance,
+             * Timeliness
+             * Consistency,
+             * Reliability,
+             * Interpretability,
+             * Usability
+        * Data quality mechanism 
+   Tools: 
+    * Data Foundation &#8211; Implement (Leverage the  standard definition)
+       * Data Catalogue
+       * Benefits Knowledge hub
+       * Data Lake (growth)
+       * Data Science and Machine Platform
+Manage and reuse data strategically and responsibly
+define and establish clear roles, responsibilities, and accountabilities for data management
+  How to achieve:
+    * Summarize how the architecture assists in  defining  key data management roles  and their responsibilities to ensure data is correct, consistent, and complete including:
+       * Identifies the data steward responsibilities;
+       * Identifies the data consumer responsibilities, and;
+       * Identifies the data custodian responsibilities.
+   Tools: 
+    * Stakeholders
+    * Business Process Model
+    * Functional Requirements
+    * Business Glossary
+identify and document the lineage of data assets
+  How to achieve:
+   * Summarize how the architecture&#8217;s data assets demonstrate alignment with department's data governance and strategy including:
+       * Alignment to the data foundation of the ESDC information/data architecture practice
+       * Alignment to the theoretical foundation of the ESDC information/data architecture practice
+  Tools:
+   * Target state (solution data elements)
+   * Data Foundation &#8211; Implement (Leverage the  standard definition)
+      * Data Catalogue
+      * Benefits Knowledge hub
+      * Data Lake (growth)
+      * Data Science and Machine Platform
+   * Theoretical Foundation
+      * EDRM (Conceptual and Logical)
+      * Business Glossary
+      * Departmental Data Strategy
+define retention and disposition schedules in accordance with business value as well as applicable privacy and security policy and legislation
+  How to achieve:
+   * Summarize  for each key data assets:
+      * Retention and disposition schedules
+      * Disposition process 
+  Tools:
+   * Target state (solution data elements)
+   * Non Functional Requirements
+   * IM Best Practices and Standards
+ensure data are managed to enable interoperability, reuse and sharing to the greatest extent possible within and across departments in government to avoid duplication and maximize utility, while respecting security and privacy requirements
+  How to achieve:
+   * Summarize how the architecture enables interoperability, reuse and sharing to the greatest extent possible within and across departments
+   * Summarize how the architecture avoids data duplication 
+  Tools:
+   * Target State
+   * Data Foundation &#8211; Implement (Leverage the  standard definition)
+       * Data Catalogue
+       * Benefits Knowledge hub
+       * Data Lake (growth)
+contribute to and align with enterprise and international data taxonomy and classification structures to manage, store, search and retrieve data
+  How to achieve:
+   * Summarize the  alignment to departmental/GC:
+      * Data taxonomy structure
+      * Data classification structure
+  Tools:
+   * Data Foundation &#8211; Implement (Leverage the  standard definition)
+       * Data Catalogue
+   * Theoretical Foundation
+       * EDRM (Conceptual and Logical)
+       * Business Glossary
+Use and share data openly in an ethical and secure manner
+share data openly by default as per the Directive on Open Government and Digital Standards, while respecting security and privacy requirements; data shared should adhere to existing enterprise and international standards, including on data quality and ethics
+  How to achieve:
+   * Summarize how the architecture supports sharing data openly by default as per Directive on Open Government and Digital Standards given:
+       * Existing departmental and GC data standards and policies
+       * International data standards;  and the Privacy Act, 
+       * Fitness for purpose
+       * Ethics 
+  Tools:
+   * Data Foundation &#8211; Implement (Leverage the  standard definition)
+       * Data Catalogue
+       * Benefits Knowledge Hub
+       * Data Lake (growth)
+       * Data Science and Machine Platform
+   * Theoretical Foundation
+       * EDRM (Conceptual and Logical)
+       * Business Glossary
+       * Departmental Data Strategy
+ensure data formatting aligns to existing enterprise and international standards on interoperability; where none exist, develop data standards in the open with key subject matter experts
+  How to achieve:
+   * Summarize how the architecture  utilises existing enterprise and international data standards
+   * Summarize how the architecture has developed any data standards through open collaboration with key subject matter experts and the Enterprise Data Community of Practice.
+  Tools:
+   * Data Standards
+       * NIEM
+       * OpenData 
+       * National Address Register
+       * Reference Data Repository
+ensure that combined data does not risk identification or re&#8209;identification of sensitive or personal information
+  How to achieve:
+   * Summarize how the architecture ensures the aggregation and combing of data does not pose a risk to  information  sensitivity or personal information 
+
+Design with privacy in mind for the collection, use and management of personal Information
+ensure alignment with guidance from appropriate institutional ATIP Office with respect to interpretation and application of the Privacy Act and related policy instruments
+  How to achieve:
+   * Describe how the architecture aligns to guidance of the ATIP Office around  personal information  regulatory  framework; policy framework; and consent directives
+assess initiatives to determine if personal information will be collected, used, disclosed, retained, shared, and disposed
+  How to achieve:
+   * Has the initiative assessed  if personal information will be collected, used, disclosed, retained, shared, and disposed
+only collect personal information if it directly relates to the operation of the programs or activities
+  How to achieve:
+   * Summarize how the architecture ensures  the  personal information collected is directly required to the operational of the programs or activities
+notify individuals of the purpose for collection at the point of collection by including a privacy notice
+  How to achieve:
+   * Does the solution&#8217;s privacy notice provide the purpose for collecting this personal information
+   * Does the solution provide a privacy notice at the point of personal information collection 
+personal information should be, wherever possible, collected directly from individuals but can be from other sources where permitted by the Privacy Act
+  How to achieve:
+   * Does the architecture collect personal information directly from the individual
+   * If no, what personal information is collect form other sources  and does it comply with the Privacy Act and the consent directive of the source 
+  Tools:
+   * Target State Architecture
+   * Interim State Architecture
+personal information must be available to facilitate Canadians&#8217; right of access to and correction of government records
+  How to achieve:
+   * Summarize how the architecture facilitates Canadian's right to access their personal information records
+   * Summarize how the architecture facilitates Canadian's right to correct their personal information records
+  Tools:
+   * Target State Architecture
+   * Interim State Architecture
+design access controls into all processes and across all architectural layers from the earliest stages of design to limit the use and disclosure of personal information
+  How to achieve:
+   * Summarize how the architecture limits the use and disclosure of personal information in accordance to the privacy legislative; policy frameworks and consent directives
+design processes so personal information remains accurate, up&#8209;to&#8209;date and as complete as possible, and can be corrected if required
+  How to achieve:
+   * Summarize how the  architecture ensures personal information remains accurate
+   * Summarize how the architecture ensures personal information remains up-to-date
+   * Summarize how the architecture ensures personal information remains complete as possible
+   * Summarize how the architecture ensures personal information can be corrected if required
+  Tools:
+   * Non Functional Requirements
+   * FUnctional Requirements
+de&#8209;identification techniques should be considered prior to sharing personal information
+  How to achieve:
+   * Outline the de-identification techniques used by the architecture in sharing personal information
+in collaboration with appropriate institutional ATIP Office, determine if a Privacy Impact Assessment (PIA) is required to identify and mitigate privacy risks for new or substantially modified programs that impact the privacy of individuals
+  How to achieve:
+   * Describe how the architecture addresses the recommendations of the PIA
+   * If not all recommendations of the PIA are being addressed,  outline how the business will address any residual risks of the PIA
+
+establish procedures to identify and address privacy breaches so they can be reported quickly and responded to efficiently to appropriate institutional ATIP Office
+  How to achieve:
+   * Are procedures established to identify and address privacy breaches
+   * Summarize how the architecture enables/supports these procedures
+  Tools:
+   * Business Process Model</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
