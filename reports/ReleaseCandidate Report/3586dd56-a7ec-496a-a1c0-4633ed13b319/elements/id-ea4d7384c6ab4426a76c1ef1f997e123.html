@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Quality Level Metrics (QLM) Approach</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Quality Level Metrics (QLM) Approach</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Principle"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Principle" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">6.3.	Quality Level Metrics (QLM) Approach
+
+Name:	QLM Approach
+Statement:	Technology implementations require quality level metrics (QLM) negotiations and tradeoff discussions to occur as early as possible in the architecture and design process between business stakeholders and systems stakeholders including application architects, technology architects, service providers and operations and maintenance staff.
+
+Rationale:
+&#8226;	Facilitates non-functional requirements gathering 
+&#8226;	Avoids narrow discussions of requirements - business stakeholders will have a clearer idea of the system they are asking for / getting 
+&#8226;	Better acceptance from the business on the system that is ultimately delivered &#8211; fewer surprises for both the business and I&amp;IT 
+&#8226;	Better fit of applications into the infrastructure 
+&#8226;	Better security
+
+Implications:
+&#8226;	Need to ensure that processes, such as product selections, vendor of record, planning, requirements gathering, have quality level metrics as part of the requirements. The standard QLMs are:
+    o	Scalability - The ability of the solution to scale up or down to meet the increase/ decrease in volume through increasing/decreasing the number of nodes/servers supporting the solution (horizontal scaling) or increasing/decreasing the resources of a single node/server  (vertical scaling)
+    o	Performance - The ability of the solution to meet the load and response time requires
+    o	Availability  - The ability of the solution to meet recovery time objectives, recovery point objectives and system up time
+    o	Recoverability - The ability of the solution to transaction recovery\rollback, guarantee atomicity, transactional checkpoint logging and backup
+    o	Integrity - The accuracy, completeness and timeliness of data at rest or in transit within a solution
+    o	Interoperability - The degree with which the system can connect to, exchange and process data from other systems.
+    o	Usability - The ability and extent the solution can be used by specific users to achieve specified goals effectively and efficiently
+    o	Source-ability - The degree to which equivalent solutions/services/components can be obtained from multiple sources
+    o	Affordability - The characteristics of a product or service that  provides the government value for money and falls within their budget  through the expected life span of the product or service
+    o	Supportability - The ease with which the solution can be operated, configured and maintained by the operational staff during the useful life of the solution
+    o	Adaptiveness / Modifiability-The degree to which a module, component or other work product ban be used in more than one solution.
+    o	Upgradeability - The ease in which the solution in whole or components of the solutions can be modified to take advantage of new service, solution, software or hardware technologies
+    o	Security -The ability in which the solution meets the security objectives and standards 
+&#8226;	Need to document, publish and enforce the requirement for quality level metrics when developing solutions, services and infrastructure</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

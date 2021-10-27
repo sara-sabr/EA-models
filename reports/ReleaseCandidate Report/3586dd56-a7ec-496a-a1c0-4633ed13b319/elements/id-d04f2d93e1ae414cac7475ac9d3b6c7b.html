@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>11. Architecting for Agility</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>11. Architecting for Agility</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Principle"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Principle" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">BDM Architecture Principle 11: 
+Principle:	Architecting for Agility
+Statement:	BDM solutions will be architected for agility, creating modular and flexible architecture and reducing risks of vendor lock-in. 
+Rationale: 	Architecting for agility is a fundamental shift in delivering IT services, moving away from operational inefficiencies to flexible, decoupled solutions. It will position ESDC to adapt to technology changes and ever-changing client and business needs and expectations.
+Our objective is to create a flexible and resilient BDM architecture that enables agility to continuously innovate. An architecture that has greater agility will enable ESDC to have a more fluid and flexible technology landscape, setting us up to be more responsive and adaptable to future changes.
+Implications:	&#8226;	Platforms and products that consist of individually deployable modules will be preferred over monolithic solutions.
+&#8226;	Solutions and modules will be decoupled whenever possible without causing performance or latency issues.
+&#8226;	Architecture decisions will be made just in time to enable procurement and implementation. Making them too early may create undesirable constraints on the scope and technology options.
+&#8226;	BDM will consider alternatives and keep them "open" as long as they remain viable. It should be recognized that not all technical decisions can be made at the same time: there is benefit to making some decisions later when they can be better informed by business decisions and through additional analysis and prototyping. 
+&#8226;	BDM will be prepared to refactor (change) architecture. Architecture work products will evolve and be further developed throughout the BDM Programme lifecycle. We will iterate and improve architecture periodically and as needed.
+&#8226;	BDM will identify and analyze architectural dependencies and incorporate them into a responsive model: we will strive to integrate dependencies through loose coupling and have contingency plan when they are yet to be implemented.
+&#8226;	Caveat: This principle will compete with Principle #3: Favour strategic over interim and tactical solutions. Tactical solutions may be necessary to help us achieve desired level of agility.
+
+
+BDM EA WG: The principle is well received and supported by the architecture community. It communicates that architecture practice is adapting and orienting to help enable business agility.
+Recommendation: Accept</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

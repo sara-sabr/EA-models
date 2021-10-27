@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Security-By-Design</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Security-By-Design</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Principle"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Principle" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">7.1.	Security-by-Design
+
+Name:	Security-by-Design
+Statement:	Enable and protect activities and assets of both people and enterprises are built-in to any business practice and corresponding IT solution
+Rationale:
+&#8226;	ESDC&#8217;s  IM/IT assets are protected against theft, loss, damage, or unauthorized modification, destruction or disclosure to assure public confidence in the Department. 
+&#8226;	When security protection for confidentiality, availability and integrity are considered up front., it is more cost effective and results are more robust and resilient.
+ 
+Implications:
+&#8226;	Controls for the protection of confidentiality, integrity and availability must be designed into all aspects of solutions from initiation, not as an afterthought.  
+&#8226;	Security must be designed in the business processes within which an IT system will be used.
+&#8226;	ESDC&#8217;s business solutions must be compliant with the Privacy Act; MITS; ATIP policies; FAA, etc.
+&#8226;	Security requirements must be determined with all stakeholders. 
+&#8226;	Business driven security requirements based on legislation, policies, and business needs must be supported. 
+&#8226;	A consistent, trusted and effective security model must be developed for use across all applications, data, systems, and infrastructure.
+&#8226;	Security Assessment and Audit (SA&amp;A) , and Statement of Sensitivity (SoS) processes shall be used to identify threats and risks and select cost effective controls which meet control objectives. 
+&#8226;	A Vulnerability Assessment (VA) process shall be used to identifying and quantifying vulnerabilities in a system. 
+&#8226;	Program managers need to have business impact analysis and business continuity planning processes developed and implemented. 
+&#8226;	Program managers need to be part of the process to conduct the business impact analysis and to select contingency and business continuity plans. 
+&#8226;	Business impact analysis should be coordinated with value/risk analysis to identify potential countermeasures to exposures to the ESDC during the design of new business processes. 
+&#8226;	A controlled variance process must be adhered to.
+&#8226;	Accountable parties are responsible for establishing or aligning to authorised purposes for their assets 
+&#8226;	Risk tolerances, breach mitigation and breach outcomes must be clearly defined beforehand.
+&#8226;	Ethically and legally, ESDC is obligated to protect Information / Data under its care to retain the right to manage and use it.
+&#8226;	Information / Data are sheltered from unauthorised access, modification, use, disclosure or destruction.
+&#8226;	Intellectual property and confidentiality is safeguarded.
+&#8226;	Sharing must be balanced against classification, proprietariness or sensitivity of Information / Data.
+&#8226;	Aggregation of Information / Data, such as for residual data must also be reviewed for sensitivity.
+&#8226;	Security must be applied at the appropriate level, i.e., data level versus application level.
+&#8226;	Systems and Information / Data must be safeguarded from malevolent intentions and disaster.
+&#8226;	Emerging technologies such as cloud and data lakes, must be accounted for in modernised policies,  standards and practices, and user awareness and training.
+&#8226;	Anonymization or masking techniques may be necessary and utilised before permitting certain access.
+&#8226;	Security controls must not hinder appropriate and timely access and sharing of assets s (e.g.  Information / data).
+
+GC Security Architecture 
+&#8226;	Information categorization &#8211; As the originator of a record, each department is responsible for a plan, the implementation of information categorization systems and the review of data and information prior to release on the Open Government Portal (the &#8220;Portal&#8221;)
+&#8226;	Should it be third-party information (government to government, government to industry, other), additional release mechanisms are up to department review 
+&#8226;	Training and awareness on the requirements of the Portal is needed (to reduce additional work for other departmental stakeholders such as ATIP officer or Privacy analysts)
+&#8226;	Departments are also responsible to review the metadata and telemetry of datasets, to reduce the risk that combining smaller pieces of the data can enable a malicious user to action one of the risk scenarios
+&#8226;	Legal and policy framework &#8211; Departments must continue to observe all domestic and international laws as they relate to handling resources, and should be respectful when considering which resources are being shared and released on the Portal
+&#8226;	Respect for privacy and persons &#8211; Departments must protect personal information by not releasing it on the Portal
+&#8226;	Departments must ensure that all data and information released on the Portal contains no personal information or is properly de-identified/anonymized
+&#8226;	Departments should be transparent about how data and information will be collected, used and shared on the Portal
+&#8226;	Within an &#8220;Open by Default&#8221; environment, departments must identify situations and datasets which cannot be released or be made open by design
+&#8226;	Forward planning &#8211; Departments should consider privacy and security when releasing records on the Portal.  Considerations should include:
+&#8226;	Consulting internally with business line and data / information owners / stewards to identify risks associated to the public, the organizations and the government as a whole
+&#8226;	Assessing privacy and security on an ongoing basis, as due diligence does not end with uploading a record but rather an ongoing responsibility to maintain the accuracy and completeness of all records
+&#8226;	Making plans prior to the release of records for their maintenance and periodic reviews of the privacy and security implications of the universe of relevant records available on the Portal
+&#8226;	Assigning clear accountabilities within departments and agencies for considering privacy and security implications of open government records
+&#8226;	Security and Privacy Incidents and Remediation &#8211; Departments and agencies will take steps to ensure their ability to respond effectively in the case of a privacy or security incident
+&#8226;	In the event of any real or suspected security incidents, departments and agencies will respond in accordance with the Directive on Departmental Security Management (DDSM), departmental and agency processes and procedures, and when applicable the Cyber Security Event Management Plan (GC CSEMP)  
+&#8226;	In the event of any real or suspected privacy breach, departments and agencies will respond in accordance with the Directive on Privacy Practices. Departments and agencies should apprise themselves of TBS Guidelines for Privacy Breaches and the Privacy Breach Management Toolkit. These privacy instruments identify causes of privacy breaches, provide guidance on how to respond, contain and manage privacy breaches, delineate roles and responsibilities, and include links to relevant supporting documentation
+&#8226;	Considerations for maximizing release &#8211; When considering de-identifying information and data, the following should be noted:
+&#8226;	De-identification needs to be done by trained officials
+&#8226;	Software for de-identification is not always available and may need to be developed
+&#8226;	Effective de-identification may reduce the granularity of records and, as a result, data and information quality may decrease
+&#8226;	De-identification can be costly and require significant investments of resources, time, and data processing
+&#8226;	Extrapolation or aggregation risks may persist in spite of de-identification efforts
+
+References:
+&#8226;	Canada Border Services Agency (CBSA) defined Architecture Principles
+&#8226;	CDO
+&#8226;	See decomposition in Open Web Application Security Project (OWASP)
+&#8226;	GC Security and Privacy Guidelines- https://gcconnex.gc.ca/file/download/29788569</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

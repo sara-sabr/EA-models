@@ -1,0 +1,297 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>BDM Architecture Principles</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>BDM Architecture Principles</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-43dd4db1e054496fa396c8a17f69e077.png" alt="BDM Architecture Principles" usemap="#id-43dd4db1e054496fa396c8a17f69e077map"/>
+			   <map name="id-43dd4db1e054496fa396c8a17f69e077map">
+				  				<area shape="rect" coords="634,322,827,407" href="../elements/id-f58acbceb7ac4f3abee5caf2a67ed827.html"  target="element">
+				  				<area shape="rect" coords="838,226,1031,311" href="../elements/id-c201f5af16c449b39b671e13c4e623e0.html"  target="element">
+				  				<area shape="rect" coords="430,130,623,215" href="../elements/id-eefee88af4ac4b85879630201e232abc.html"  target="element">
+				  				<area shape="rect" coords="224,130,417,215" href="../elements/id-14fc1d0c5c494ce9b5676a6530cb79eb.html"  target="element">
+				  				<area shape="rect" coords="634,130,827,215" href="../elements/id-27c62af6d5e342f98e3e425dae6f4c37.html"  target="element">
+				  				<area shape="rect" coords="22,322,215,407" href="../elements/id-d04f2d93e1ae414cac7475ac9d3b6c7b.html"  target="element">
+				  				<area shape="rect" coords="22,130,215,215" href="../elements/id-3bf938c80d8346c2879be5476065dbab.html"  target="element">
+				  				<area shape="rect" coords="838,130,1031,215" href="../elements/id-5cb8434ed9ed4954a1c93e33b1fae867.html"  target="element">
+				  				<area shape="rect" coords="634,226,827,311" href="../elements/id-a499a11f352d41858bf3d5f3b44fb87c.html"  target="element">
+				  				<area shape="rect" coords="430,226,623,311" href="../elements/id-ea3c30f9e0844254be27c5abd4fbd090.html"  target="element">
+				  				<area shape="rect" coords="224,322,417,407" href="../elements/id-d76ad2aae99f4e55a21c363fc13297b5.html"  target="element">
+				  				<area shape="rect" coords="22,226,215,311" href="../elements/id-c4c39a9080b44970aca7f79a41ea3bce.html"  target="element">
+				  				<area shape="rect" coords="224,226,417,311" href="../elements/id-a6fce31b0e8b4e11ad7f3fad8b78900e.html"  target="element">
+				  				<area shape="rect" coords="430,322,623,407" href="../elements/id-bf82dc1967484d9faa494d8861e7599d.html"  target="element">
+
+				  		<area shape="rect" coords="10,82,1053,428" href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html"  target="element">
+				          <area shape="rect" coords="368,31,477,58" href="../objects/id-bab338624f124861b551ee67f2974adc.html" target="element" >
+				          <area shape="rect" coords="10,10,477,58" href="../objects/id-c0a83c61aee544e598f6361f2595685c.html" target="element" >
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+									        <tr>
+									           <td> <a href="../objects/id-c0a83c61aee544e598f6361f2595685c.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-c0a83c61aee544e598f6361f2595685c.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-bab338624f124861b551ee67f2974adc.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-bab338624f124861b551ee67f2974adc.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+											<tr>
+											    <td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+											    <td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-bf82dc1967484d9faa494d8861e7599d.html" target="element"> 13. Adoption of Event-Driven Architecture </a> </td>
+													    <td> <a href="../elements/id-bf82dc1967484d9faa494d8861e7599d.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a6fce31b0e8b4e11ad7f3fad8b78900e.html" target="element"> 7. Security and Privacy-by-Design </a> </td>
+													    <td> <a href="../elements/id-a6fce31b0e8b4e11ad7f3fad8b78900e.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-c4c39a9080b44970aca7f79a41ea3bce.html" target="element"> 6. Open Solutions and standards </a> </td>
+													    <td> <a href="../elements/id-c4c39a9080b44970aca7f79a41ea3bce.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d76ad2aae99f4e55a21c363fc13297b5.html" target="element"> 12. Maximize Use of Core Technology </a> </td>
+													    <td> <a href="../elements/id-d76ad2aae99f4e55a21c363fc13297b5.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-ea3c30f9e0844254be27c5abd4fbd090.html" target="element"> 8. Integrity &amp; Quality-by-Design </a> </td>
+													    <td> <a href="../elements/id-ea3c30f9e0844254be27c5abd4fbd090.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-a499a11f352d41858bf3d5f3b44fb87c.html" target="element"> 9. Cloud First </a> </td>
+													    <td> <a href="../elements/id-a499a11f352d41858bf3d5f3b44fb87c.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-5cb8434ed9ed4954a1c93e33b1fae867.html" target="element"> 5. Digital First </a> </td>
+													    <td> <a href="../elements/id-5cb8434ed9ed4954a1c93e33b1fae867.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-3bf938c80d8346c2879be5476065dbab.html" target="element"> 1. New Target Operating Model and service continuity during the transition </a> </td>
+													    <td> <a href="../elements/id-3bf938c80d8346c2879be5476065dbab.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-d04f2d93e1ae414cac7475ac9d3b6c7b.html" target="element"> 11. Architecting for Agility </a> </td>
+													    <td> <a href="../elements/id-d04f2d93e1ae414cac7475ac9d3b6c7b.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-27c62af6d5e342f98e3e425dae6f4c37.html" target="element"> 4. Data is at the center of BDM </a> </td>
+													    <td> <a href="../elements/id-27c62af6d5e342f98e3e425dae6f4c37.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-14fc1d0c5c494ce9b5676a6530cb79eb.html" target="element"> 2. BDM will consume GC and ESDC Enterprise Solutions/Services where appropriate and available </a> </td>
+													    <td> <a href="../elements/id-14fc1d0c5c494ce9b5676a6530cb79eb.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-eefee88af4ac4b85879630201e232abc.html" target="element"> 3. Favour strategic over interim and tactical solutions </a> </td>
+													    <td> <a href="../elements/id-eefee88af4ac4b85879630201e232abc.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-c201f5af16c449b39b671e13c4e623e0.html" target="element"> 10. Minimize changes to legacy </a> </td>
+													    <td> <a href="../elements/id-c201f5af16c449b39b671e13c4e623e0.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-f58acbceb7ac4f3abee5caf2a67ed827.html" target="element"> 14. Outcome-Driven </a> </td>
+													    <td> <a href="../elements/id-f58acbceb7ac4f3abee5caf2a67ed827.html" target="element" class="i18n-elementtype-Principle"> </a> </td>
+													</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+																	<tr>
+																		<td> <a href="../elements/id-a9fe7c3170714305831b1e805c1b61c3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-a9fe7c3170714305831b1e805c1b61c3.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-c4c39a9080b44970aca7f79a41ea3bce.html" target="element"> 6. Open Solutions and standards </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-dc0a445952ea4b798b87d96430c00027.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-dc0a445952ea4b798b87d96430c00027.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-5cb8434ed9ed4954a1c93e33b1fae867.html" target="element"> 5. Digital First </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-de7af715d9ab401995d8e047c79bdeb1.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-de7af715d9ab401995d8e047c79bdeb1.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-bf82dc1967484d9faa494d8861e7599d.html" target="element"> 13. Adoption of Event-Driven Architecture </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-afdcd31d28e24dde9c992a26cf96c50d.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-afdcd31d28e24dde9c992a26cf96c50d.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-d04f2d93e1ae414cac7475ac9d3b6c7b.html" target="element"> 11. Architecting for Agility </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-aff2d1d273de40259fe14efe285a853c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-aff2d1d273de40259fe14efe285a853c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-c201f5af16c449b39b671e13c4e623e0.html" target="element"> 10. Minimize changes to legacy </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-62d8f4120a194ff9b2a4cc55adf3a305.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-62d8f4120a194ff9b2a4cc55adf3a305.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-a499a11f352d41858bf3d5f3b44fb87c.html" target="element"> 9. Cloud First </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-de238f03a54a4dd5b3138bb90de14442.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-de238f03a54a4dd5b3138bb90de14442.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-eefee88af4ac4b85879630201e232abc.html" target="element"> 3. Favour strategic over interim and tactical solutions </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-629663adb1794d65b09dc609161bb50c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-629663adb1794d65b09dc609161bb50c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-3bf938c80d8346c2879be5476065dbab.html" target="element"> 1. New Target Operating Model and service continuity during the transition </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-2e006cb8d1dd44afb08bd7ca0ec1b7c8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2e006cb8d1dd44afb08bd7ca0ec1b7c8.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-a6fce31b0e8b4e11ad7f3fad8b78900e.html" target="element"> 7. Security and Privacy-by-Design </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-18e0cee7fe284e4fb276fb62f85b2cec.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-18e0cee7fe284e4fb276fb62f85b2cec.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-d76ad2aae99f4e55a21c363fc13297b5.html" target="element"> 12. Maximize Use of Core Technology </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-29eca3a9234145bfa89b767ad244eb66.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-29eca3a9234145bfa89b767ad244eb66.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-f58acbceb7ac4f3abee5caf2a67ed827.html" target="element"> 14. Outcome-Driven </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-bf6f26b413dc447a87ff6137465effff.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-bf6f26b413dc447a87ff6137465effff.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-27c62af6d5e342f98e3e425dae6f4c37.html" target="element"> 4. Data is at the center of BDM </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-bff79ddfac3743ffb3b2b78d2c3fc7c3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-bff79ddfac3743ffb3b2b78d2c3fc7c3.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-ea3c30f9e0844254be27c5abd4fbd090.html" target="element"> 8. Integrity &amp; Quality-by-Design </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f0c628a193e04d04bc3f63ae0432f7dd.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f0c628a193e04d04bc3f63ae0432f7dd.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-6e339f0fec064e6e8edb46978b1e4d89.html" target="element"> BDM Architecture Principles </a> </td>
+																		<td> <a href="../elements/id-14fc1d0c5c494ce9b5676a6530cb79eb.html" target="element"> 2. BDM will consume GC and ESDC Enterprise Solutions/Services where appropriate and available </a> </td>
+																	</tr>
+
+											
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

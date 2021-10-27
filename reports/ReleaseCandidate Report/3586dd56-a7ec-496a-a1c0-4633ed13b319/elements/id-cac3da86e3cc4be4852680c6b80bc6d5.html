@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>GC Enterprise Architecture Framework - Technology Architecture Guide</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>GC Enterprise Architecture Framework - Technology Architecture Guide</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Resource"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Resource" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Technology architecture
+Technology architecture is an important enabler of highly available and adaptable solutions that must be aligned with the chosen application architecture. Cloud adoption provides many potential advantages by mitigating the logistical constraints that often negatively impacted legacy solutions hosted &#8220;on premises.&#8221; However, the application architecture must be able to enable these advantages.
+
+Use cloud first
+adopt the use of the GC Accelerators to ensure proper security and access controls
+   How to achieve:
+    * Summarize which cloud usage profile  does the architecture align to and why
+    * Summarize which cloud connection pattern does the architecture align to and why
+   Tools:
+    * Cloud Reference Architecture
+    * Cloud Assessment Framework
+    * Summary of Cloud Access Scenarios and Usage Profiles
+
+enforce this order of preference: software as a service (SaaS) first, then platform as a service (PaaS), and lastly infrastructure as a service (IaaS)
+   How to achieve:
+    * Summarize how the architecture, based on the TBS Right Cloud Assessment Tool, allows for cloud service model of how:
+       * The architecture can be implemented using a GC SaaS environment, which has been identified as a possible fit, or
+       * The architecture can be implemented using a Public SaaS environment, which has been identified as a possible fit, or
+       * The architecture can be implemented using a GC PaaS environment, which has been identified as a possible fit, or:
+       * The architecture can be implemented using Public PaaS environment, which  has been identified as a possible fit.
+   Tools:
+    * Cloud Reference Architecture
+    * Cloud Assessment Framework
+
+fulfill cloud services through SSC Cloud&#8209;Brokering Services
+   How to achieve:
+    * Confirm the Team is acquiring cloud services through SSC Cloud Brokering Services. Please include the SSC Request number
+   Tools:
+    * Contact Cloud COE
+
+enforce this order of preference: public cloud first, then hybrid cloud, then private cloud, and lastly non&#8209;cloud (on&#8209;premises) solutions
+   How to achieve:
+    * Summarize how the architecture, based on the TBS Right Cloud Assessment Tool, allows for public cloud, including:
+       * The data, being managed by the architecture, is PBMM or lower, and stakeholders have not raised concerns about deployment to the public cloud.
+       * A costing model / budget that is available to support an Operational Expense Model. The costs will rise and fall with the consumption of resources.
+       * The implementation of application(s), which can operate in a cloud environment and any required virtualized or dedicated hardware, is available in a cloud environment.
+       * The implementation of application(s) which can operate on the standardized offerings and SLAs of public cloud.
+       * The implementation of applications are not susceptible to latency issues, which may arise due to traffic moving through an additional circuit.
+       * The implementation of applications, which do not have voluminous transactions with an on-premises database or application.
+   Tools:
+    * Cloud Reference Architecture
+    * Cloud Assessment Framework
+
+design for cloud mobility and develop an exit strategy to avoid vendor lock&#8209;in
+   How to achieve:
+    * Summary  how the architecture allows for the execution of an exit strategy to off-board from that vendor
+   Tools:
+    * Solution Architecture
+    * Refer YDG GC EARB 
+
+Design for performance, availability and scalability
+ensure response times meet user needs, and critical services are highly available
+   How to achieve:
+    * Summarize how the architecture is able to meet the user response time requirements, and achieve the user response time objectives, including:
+       * The ability to trace how the response time requirements and objectives will be met.
+       * The capacity requirements (e.g. expected normal traffic, peak traffic, expected traffic grow, etc.) that the architecture needs to meet.
+       * The ability to trace how the availability requirements and objectives will be met.
+   Tools:
+    * non-functional requirements
+
+support zero&#8209;downtime deployments for planned and unplanned maintenance
+   How to achieve:
+    * Summarize how the architecture is able to support zero-downtime deployments for planned and unplanned maintenance, including:
+       * The planned Windows maintenance for the solution to support backups and length of Windows maintenance.
+       * The procedure for planning, scheduling and executing the planned downtime.
+       * The ability to be deployed in a manner that minimizes or limits service disruption, and which is known as zero downtime deployments.
+       * The acceptable measures for unplanned downtime.
+   Tools:
+    * non-functional requirements
+
+use distributed architectures, assume failure will happen, handle errors gracefully, and monitor performance and behaviour actively
+   How to achieve:
+    * Summarize how the architecture utilizes distributed architectures, which assume that a failure will happen, handle errors gracefully and monitor actively, including:
+        * The ability to trace how the recoverability requirements and objectives will be met; and,
+        * The ability to be deployed in a distributed environment.
+   Tools:
+    * non-functional requirements
+
+establish architectures that supports new technology insertion with minimal disruption to existing programs and services
+   How to achieve:
+    * Summarize how the architecture allows the insertion of new technology  with minimal disruption 
+   Tools:
+    * non-functional requirements
+
+control technical diversity; design systems based on modern technologies and platforms already in use
+   How to achieve:
+    * Summarize the technology standards&#8217;  state (emerging, baseline, containment or retirement) of the products  required/recommended  to implement the architecture.  For those products in the containment or retired state please provide rational for selecting those products
+    * Identify new technology standards required by the architecture
+   Tools:
+    * non-functional requirements
+
+Follow DevSecOps principles
+use continuous integration and continuous deployments
+   How to achieve:
+    * Summarize how the architecture can be deployed following a continuous integration approach
+    * Summarize how the architecture can be deployed following a continuous deployment approach.
+   Tools:
+    * CICP mesh
+
+ensure automated testing occurs for security and functionality
+   How to achieve:
+    * Summarize the automated security and functionality testing that will be/has been executed on the solution. 
+
+include your users and other stakeholders as part of the DevSecOps process, which refers to the concept of making software security a core part of the overall software delivery process
+   How to achieve:
+    * Summarize the role and responsibilities  users and other stakeholders have in DevSecOps processes. 
+   Tools:
+    * Project Charter</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
