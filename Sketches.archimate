@@ -1198,66 +1198,91 @@ Document Management</content>
       </child>
     </element>
     <element xsi:type="archimate:SketchModel" name="IAAM Sketch" id="17115da0-5c77-4d02-8078-caa93e634c23">
-      <child xsi:type="archimate:SketchModelSticky" id="5d7cb68d-ddf2-4255-854c-a18d2b05fc10" name="Sticky" targetConnections="024e6b81-84f6-40c0-bc85-4db6bf71dcd0" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="396" y="180" width="229" height="361"/>
+      <child xsi:type="archimate:Group" id="6c2d2691-c25f-4b5b-ba7b-8e1b363aba57" name="Enterprise Threat Intelligence" targetConnections="e8d6289f-0b0e-427f-ad4f-4e498cb3ba8b" textAlignment="1">
+        <bounds x="149" y="33" width="824" height="124"/>
+        <sourceConnection id="7d2976eb-8eb0-498b-8854-c94401d917b6" source="6c2d2691-c25f-4b5b-ba7b-8e1b363aba57" target="9bc53369-3f61-48cf-a8a9-67f28384273c" type="9"/>
+        <sourceConnection id="727ffed7-84eb-4689-b238-f9af86dd3c27" source="6c2d2691-c25f-4b5b-ba7b-8e1b363aba57" target="9cdef99c-adec-429d-a00d-97c4b5b64271"/>
+        <child xsi:type="archimate:SketchModelSticky" id="b91c4ce1-9e3c-4c02-a7a7-31b5dc270ddd" name="Sticky" targetConnections="04b7292b-7f1e-471e-8daa-cebd354b3113" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+          <bounds x="72" y="24" width="733" height="34"/>
+          <content>UEBA</content>
+        </child>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="5d7cb68d-ddf2-4255-854c-a18d2b05fc10" name="Sticky" targetConnections="024e6b81-84f6-40c0-bc85-4db6bf71dcd0 91ae2a66-5604-429e-b402-22ca91f20259" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="540" y="174" width="229" height="361"/>
         <sourceConnection id="ca10659c-2199-4c12-bb5a-fd1b86303edb" source="5d7cb68d-ddf2-4255-854c-a18d2b05fc10" target="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" type="1"/>
         <sourceConnection id="dcd3d3e0-47e3-4afa-83b4-d9955066c51e" source="5d7cb68d-ddf2-4255-854c-a18d2b05fc10" target="10994894-82bc-4aec-9e34-7a695ed43763" type="1"/>
         <content>Application</content>
       </child>
       <child xsi:type="archimate:SketchModelActor" id="c7482282-34cf-4722-adc7-695e6aebe35a" name="User">
-        <bounds x="-36" y="279" width="75" height="100"/>
+        <bounds y="273" width="75" height="100"/>
         <sourceConnection id="8f689c73-ad13-4927-86aa-46fb9b7213cd" source="c7482282-34cf-4722-adc7-695e6aebe35a" target="b21a7e26-e0c8-41a6-912d-1a68e75be7a5"/>
+        <sourceConnection id="89350826-aaa8-41d3-b3bc-b7dbe35f66fe" source="c7482282-34cf-4722-adc7-695e6aebe35a" target="b78f1cca-f75f-454c-8c96-a570b743613f">
+          <bendpoint startX="-13" startY="289" endX="-929" endY="7"/>
+        </sourceConnection>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="0e970d7a-a96d-43dd-8a0a-8e835d4efd9f" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="444" y="210" width="135" height="70"/>
+        <bounds x="588" y="204" width="135" height="70"/>
         <content>EI</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="cabc13e6-a465-4f74-897f-ec759f5822ed" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="444" y="294" width="135" height="70"/>
+        <bounds x="588" y="288" width="135" height="70"/>
         <content>SIR</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="e90aea4c-1d3f-4b63-b095-e217ce5bc90f" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="444" y="378" width="135" height="70"/>
+        <bounds x="588" y="372" width="135" height="70"/>
         <content>OAS</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="4eee34fc-2f9c-444f-b311-cfa25102cefa" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="444" y="456" width="135" height="70"/>
+        <bounds x="588" y="450" width="135" height="70"/>
         <content>CPP</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="b78f1cca-f75f-454c-8c96-a570b743613f" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="742" y="576" width="135" height="70"/>
+      <child xsi:type="archimate:SketchModelSticky" id="b78f1cca-f75f-454c-8c96-a570b743613f" name="Sticky" targetConnections="89350826-aaa8-41d3-b3bc-b7dbe35f66fe" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="886" y="570" width="135" height="70"/>
         <sourceConnection id="37dbc0a3-b1de-4aa4-87e1-770c03646046" source="b78f1cca-f75f-454c-8c96-a570b743613f" target="10994894-82bc-4aec-9e34-7a695ed43763" type="1"/>
         <content>PeopleSoft</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" name="Sticky" targetConnections="461d67eb-79e0-4cb9-ae8e-cf58c41e86ef db30a22c-df18-45bc-9c4d-5ced080a50dc ca10659c-2199-4c12-bb5a-fd1b86303edb 35e070c6-1b16-4949-9c54-ab5e377d40e0" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="109" y="78" width="768" height="70"/>
-        <sourceConnection id="727ffed7-84eb-4689-b238-f9af86dd3c27" source="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" target="9cdef99c-adec-429d-a00d-97c4b5b64271"/>
+        <bounds x="216" y="108" width="745" height="34"/>
+        <sourceConnection id="04b7292b-7f1e-471e-8daa-cebd354b3113" source="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" target="b91c4ce1-9e3c-4c02-a7a7-31b5dc270ddd" type="1"/>
         <content>SIEM</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="b21a7e26-e0c8-41a6-912d-1a68e75be7a5" name="Sticky" targetConnections="8f689c73-ad13-4927-86aa-46fb9b7213cd" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="96" y="294" width="135" height="70"/>
+      <child xsi:type="archimate:SketchModelSticky" id="b21a7e26-e0c8-41a6-912d-1a68e75be7a5" name="Sticky" targetConnections="8f689c73-ad13-4927-86aa-46fb9b7213cd 26feb63e-25a8-4e35-8445-b7a81bfd6b92" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="240" y="288" width="135" height="70"/>
         <sourceConnection id="461d67eb-79e0-4cb9-ae8e-cf58c41e86ef" source="b21a7e26-e0c8-41a6-912d-1a68e75be7a5" target="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" type="1"/>
         <sourceConnection id="dd102b98-d021-4f9f-a7f6-80421cbc6ac6" source="b21a7e26-e0c8-41a6-912d-1a68e75be7a5" target="0b8a7dd7-869d-45be-a3b1-772aee36b3d2"/>
         <content>Device</content>
       </child>
-      <child xsi:type="archimate:SketchModelSticky" id="0b8a7dd7-869d-45be-a3b1-772aee36b3d2" name="Sticky" targetConnections="dd102b98-d021-4f9f-a7f6-80421cbc6ac6" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
-        <bounds x="243" y="294" width="135" height="70"/>
+      <child xsi:type="archimate:SketchModelSticky" id="0b8a7dd7-869d-45be-a3b1-772aee36b3d2" name="Sticky" targetConnections="dd102b98-d021-4f9f-a7f6-80421cbc6ac6 319a6e69-e3f1-460d-bc2d-4ac4e0c5ece7" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="387" y="288" width="135" height="70"/>
         <sourceConnection id="db30a22c-df18-45bc-9c4d-5ced080a50dc" source="0b8a7dd7-869d-45be-a3b1-772aee36b3d2" target="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" type="1"/>
         <sourceConnection id="024e6b81-84f6-40c0-bc85-4db6bf71dcd0" source="0b8a7dd7-869d-45be-a3b1-772aee36b3d2" target="5d7cb68d-ddf2-4255-854c-a18d2b05fc10"/>
         <content>Network</content>
       </child>
       <child xsi:type="archimate:SketchModelSticky" id="10994894-82bc-4aec-9e34-7a695ed43763" name="Sticky" targetConnections="37dbc0a3-b1de-4aa4-87e1-770c03646046 dcd3d3e0-47e3-4afa-83b4-d9955066c51e a40095fd-9b9c-41a5-8063-50661133146f 793401fd-fb62-4b04-945e-4c2d964edef1" lineColor="#5c5c5c" textAlignment="1" fillColor="#ffc400">
-        <bounds x="731" y="205" width="135" height="321"/>
-        <sourceConnection id="35e070c6-1b16-4949-9c54-ab5e377d40e0" source="10994894-82bc-4aec-9e34-7a695ed43763" target="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" type="1"/>
+        <bounds x="875" y="199" width="135" height="321"/>
+        <sourceConnection id="35e070c6-1b16-4949-9c54-ab5e377d40e0" source="10994894-82bc-4aec-9e34-7a695ed43763" target="3c3aaf71-b966-4a5d-9c6e-c57ede8fa0f2" type="9"/>
         <content>IAAM</content>
       </child>
-      <child xsi:type="archimate:SketchModelActor" id="9cdef99c-adec-429d-a00d-97c4b5b64271" name="Decion Maker" targetConnections="727ffed7-84eb-4689-b238-f9af86dd3c27">
-        <bounds x="936" y="132" width="75" height="100"/>
+      <child xsi:type="archimate:SketchModelActor" id="9cdef99c-adec-429d-a00d-97c4b5b64271" name="Decion Maker" targetConnections="f9aa9f43-a8b0-4fef-93aa-1df9ef314ec1 727ffed7-84eb-4689-b238-f9af86dd3c27">
+        <bounds x="1110" y="132" width="75" height="100"/>
         <sourceConnection id="a40095fd-9b9c-41a5-8063-50661133146f" source="9cdef99c-adec-429d-a00d-97c4b5b64271" target="10994894-82bc-4aec-9e34-7a695ed43763"/>
       </child>
       <child xsi:type="archimate:SketchModelActor" id="cd172332-d4f3-4647-8356-e29e7e98702a" name="Operator">
-        <bounds x="912" y="372" width="75" height="100"/>
+        <bounds x="1116" y="366" width="75" height="100"/>
         <sourceConnection id="793401fd-fb62-4b04-945e-4c2d964edef1" source="cd172332-d4f3-4647-8356-e29e7e98702a" target="10994894-82bc-4aec-9e34-7a695ed43763"/>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="9bc53369-3f61-48cf-a8a9-67f28384273c" name="Sticky" targetConnections="7d2976eb-8eb0-498b-8854-c94401d917b6" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="1068" y="33" width="135" height="70"/>
+        <sourceConnection id="f9aa9f43-a8b0-4fef-93aa-1df9ef314ec1" source="9bc53369-3f61-48cf-a8a9-67f28384273c" target="9cdef99c-adec-429d-a00d-97c4b5b64271"/>
+        <content>ESDC BI&amp;A</content>
+      </child>
+      <child xsi:type="archimate:SketchModelSticky" id="027221a8-2d34-4e16-b7a0-2a0980e9a0e6" name="Sticky" lineColor="#5c5c5c" textAlignment="1" fillColor="#b5ffff">
+        <bounds x="144" y="408" width="135" height="70"/>
+        <sourceConnection id="26feb63e-25a8-4e35-8445-b7a81bfd6b92" source="027221a8-2d34-4e16-b7a0-2a0980e9a0e6" target="b21a7e26-e0c8-41a6-912d-1a68e75be7a5"/>
+        <sourceConnection id="319a6e69-e3f1-460d-bc2d-4ac4e0c5ece7" source="027221a8-2d34-4e16-b7a0-2a0980e9a0e6" target="0b8a7dd7-869d-45be-a3b1-772aee36b3d2"/>
+        <sourceConnection id="91ae2a66-5604-429e-b402-22ca91f20259" source="027221a8-2d34-4e16-b7a0-2a0980e9a0e6" target="5d7cb68d-ddf2-4255-854c-a18d2b05fc10"/>
+        <sourceConnection id="e8d6289f-0b0e-427f-ad4f-4e498cb3ba8b" source="027221a8-2d34-4e16-b7a0-2a0980e9a0e6" target="6c2d2691-c25f-4b5b-ba7b-8e1b363aba57"/>
+        <content>Policy Enforcement</content>
       </child>
     </element>
   </folder>
