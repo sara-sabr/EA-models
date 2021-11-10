@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Digital First</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Digital First</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Principle"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Principle" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">2.3.	Digital First
+
+Name:	Digital First
+Statement:
+Create and optimize the design of services and communications for delivery via responsive digital channels (i.e., web, mobile, social media, etc.) over the traditional channels, such as mail, fax, or in-person. 
+Rationale:
+&#8226;	Clients expect secure and easy-to-use online options to access services from the information and application stage up to a decision on their file. 
+&#8226;	ESDC is committed to providing Canadians with access to high-quality online services, while ensuring that those who require additional assistance to access services online receive it.
+&#8226;	Clients can complete services using digital self-service.( Goal 1 of the ESDC Service Strategy )
+
+Implications:	Digital First means:
+&#8226;	We must optimize to digital channel
+&#8226;	We must embrace decisions enabling its fullest control
+&#8226;	We must design the channel to support
+&#8226;	We must ensure the full spectrum of services covers the non-digital
+&#8226;	We must enable business transformation to grow take up
+
+GC Digital Architectural Standards
+o	Align to the GC Business Capability model
+    &#61607;	Define program services as business capabilities to establish a common vocabulary between business, development, and operation
+    &#61607;	Identify capabilities that are common to the GC enterprise and can be shared and reused
+    &#61607;	Model business processes using Business Process Modelling Notation (BPMN) to identify common enterprise processes
+o	Design for Users First &amp; Deliver with Multidisciplinary Teams
+    &#61607;	Focus on the needs of users, using agile, iterative, and user-centred methods
+    &#61607;	Conform to both accessibility and official languages requirements
+    &#61607;	Include all skillsets required for delivery, including for requirements, design, development, and operations
+    &#61607;	Work across the entire application lifecycle, from development and testing to deployment and operations
+    &#61607;	Ensure quality is considered throughout the Software Development Lifecycle
+    &#61607;	Ensure accountability for privacy is clear
+    &#61607;	Encourage and adopt Test Driven Development (TDD) to improve the trust between Business and IT
+o	Design Systems to be Measurable and Accountable
+    &#61607;	Publish performance expectations for each IT service
+    &#61607;	Make an audit trail available for all transactions to ensure accountability and non-repudiation 
+    &#61607;	Establish business and IT metrics to enable business outcomes
+    &#61607;	Apply oversight and lifecycle management to digital investments through governance
+o	Data Collection
+    &#61607;	Ensure data is collected in a manner that maximizes use and availability of data
+    &#61607;	Ensure data collected aligns to existing enterprise and international standards
+    &#61607;	Where enterprise or international standards don&#8217;t exist, develop Standards in the open with key subject matter experts 
+    &#61607;	Ensure collection of data yields high quality data as per data quality guidelines
+    &#61607;	Ensure data is collected through ethical practices allowing for use that supports appropriate citizen and business-centric 
+    &#61607;	Data should only be purchased once and should align with international standards 
+    &#61607;	Where necessary, ensure collaboration with department/ agency data stewards/ custodians, other levels of government, &amp; Indigenous people
+o	Data Management 
+    &#61607;	Demonstrate alignment with departmental data governance and strategies.
+    &#61607;	Ensure accountability for data roles and responsibilities
+    &#61607;	Design to maximize data use and availability.
+o	Data Storage 
+    &#61607;	Ensure data is stored in a secure manner in accordance with the National Cyber Security Strategy, and the Privacy Act.
+    &#61607;	Follow existing retention and disposition schedules.
+    &#61607;	Ensure data is stored in a way to facilitate easy data discoverability and accessibility. 
+o	Data Sharing 
+    &#61607;	Data should be shared openly by default as per the Directive on Open Government.
+    &#61607;	Ensure government-held data can be combined with data from other sources enabling interoperability and interpretability through for internal and external use
+    &#61607;	Reduce the collection of redundant data
+    &#61607;	Reuse existing data where possible 
+    &#61607;	Encourage data sharing and collaboration
+o	Use open standards and solutions by default
+    &#61607;	Use open standards and open source software. Avoid lock-in and seek independence and substitutability where open source software or open standards are available.
+    &#61607;	Enforce this order of preference: open source first, then platform-agnostic COTS, then proprietary COTS, and lastly custom-built
+    &#61607;	Make source code open and reusable under an appropriate open source software license
+    &#61607;	Expose public data to implement Open Data and Open Information initiatives
+o	Maximize Reuse
+    &#61607;	Leverage and reuse existing solutions, components, and processes
+    &#61607;	Select enterprise and cluster solutions over department-specific solutions
+    &#61607;	Achieve simplification by minimizing duplication of components and adhering to relevant standards
+    &#61607;	Inform the GC EARB about departmental investments and innovations
+    &#61607;	Share code publicly when appropriate, and when not, share within the Government of Canada
+o	Enable Interoperability 
+    &#61607;	 Expose all functionality as services
+    &#61607;	Use micro services built around business capabilities. Scope each service to a single purpose
+    &#61607;	Run each IT service in its own process and have it communicate with other IT services through a well-defined interface, such as an HTTPS-based application programming interface (API) as per Appendix D: Mandatory Procedures for Application Programming Interfaces 
+    &#61607;	Run applications in containers
+    &#61607;	Leverage the GC Digital Exchange Platform for components such as the API Store, Messaging, and the GC Service Bus
+o	Use Cloud first
+    &#61607;	Enforce this order of preference: Software as a Service (SaaS) first, then Platform as a Service (PaaS), and lastly Infrastructure as a Service (IaaS)
+    &#61607;	Enforce this order of preference: Public cloud first, then Hybrid cloud, then Private cloud, and lastly non-cloud (on-premises) solutions
+    &#61607;	Design for cloud mobility and develop an exit strategy to avoid vendor lock-in
+o	Design for Performance, Availability, and Scalability
+    &#61607;	Design for resiliency
+    &#61607;	Ensure response times meet user needs for availability
+    &#61607;	Support zero-downtime deployments for planned and unplanned maintenance
+    &#61607;	Use distributed architectures, assume failure will happen, handle errors gracefully, and monitor actively
+o	Design for Security and Privacy
+    &#61607;	Implement security across all architectural layers 
+    &#61607;	Categorize data properly to determine appropriate safeguards 
+    &#61607;	Perform a privacy impact assessment (PIA) and mitigate all privacy risks when personal information is involved
+    &#61607;	Balance user and business needs with proportionate security measures and adequate privacy protections. 
+
+&#8226;	Digital Principles (Canada.ca)
+o	Design Ethical  Services 
+    &#61607;	Make sure that everyone receives fair treatment.
+    &#61607;	Comply with ethical guidelines in the design and use of systems which automate decision making (such as the use of artificial intelligence).
+o	Collaborate Widely
+    &#61607;	Create multidisciplinary teams with the range of skills needed to deliver a common goal. 
+    &#61607;	Share and collaborate in the open.
+    &#61607;	 Identify and create partnerships which help deliver value to users.
+References:
+&#8226;	ESDC Service Strategy
+&#8226;	GC Digital Standards
+&#8226;	GC Digital Architectural Standards
+&#8226;	Digital Princples (https://open.canada.ca/en/blog/digital-principles?page=1%2C0)</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

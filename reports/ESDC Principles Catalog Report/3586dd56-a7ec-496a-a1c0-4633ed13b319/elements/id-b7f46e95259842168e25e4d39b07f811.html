@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>GC Enterprise Architecture Framework - Security Architecture Guide</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>GC Enterprise Architecture Framework - Security Architecture Guide</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Resource"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Resource" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Security architecture
+The GC Enterprise Security Architecture program is a government&#8209;wide initiative to provide a standardized approach to developing IT security architecture, ensuring that basic security blocks are implemented across the enterprise as the infrastructure is being renewed.
+
+Build security into the system life cycle across all architectural layers
+identify and categorize information based on the degree of injury that could be expected to result from a compromise of its confidentiality, integrity and availability
+How to achieve:
+Summarize how the architecture ensures the confidentiality of the information based on its categorization and degree of injury
+Summarize how the architecture ensures the integrity of the information based on its categorization and degree of injury
+Summarize how the architecture ensures the availability of the information based on its categorization and degree of injury
+
+implement a continuous security approach, in alignment with Centre for Cyber Security&#8217;s IT Security Risk Management Framework; perform threat modelling to minimize the attack surface by limiting services exposed and information exchanged to the minimum necessary
+How to achieve:
+Summarize how the architecture aligns with the Centre of Cyber Security&#8217;s IT Security Risk Management Framework
+
+apply proportionate security measures that address business and user needs while adequately protecting data at rest and data in transit
+How to achieve:
+Describe the security measures that protect the data at rest while meeting business and users needs
+Describe the security measures that protect the data in transit while meeting business and users needs
+design systems to be resilient and available in order to support service continuity
+How to achieve:
+Outline the architecture&#8217;s resilient characteristics support service continuity objectives
+Outline the architecture&#8217;s availability characteristics support service continuity objectives
+Tools:
+Non-functional Requirements
+Ensure secure access to systems and services
+identify and authenticate individuals, processes or devices to an appropriate level of assurance, based on clearly defined roles, before granting access to information and services; leverage enterprise services such as Government of Canada trusted digital identity solutions that are supported by the Pan&#8209;Canadian Trust Framework 
+How to achieve:
+Summarize how the architectures identifies and authenticates:
+Individuals
+Processes
+Devices
+Summarize the enterprise security services leverage by the architecture
+Summarize how the architecture aligns to the Pan-Canadian Trust Framework
+Tools:
+Target State Architecture
+Interim State Architecture
+constrain service interfaces to authorized entities (users and devices), with clearly defined roles; segment and separate information based on sensitivity of information, in alignment with ITSG&#8209;22 and ITSG&#8209;38. Management interfaces may require increased levels of protection
+How to achieve:
+Summarize how the architecture constrains service interfaces to authorized entities in compliance to:
+ITSG-22, and;
+ITSG-38.
+implement HTTPS for secure web connections and Domain-based Message Authentication, Reporting and Conformance (DMARC) for enhanced email security
+How to achieve:
+Does the architecture use HTTPS for secure web connections
+Does the architecture use and Domain-based Message Authentication, Reporting and Conformance (DMARC) for enhanced email security
+
+establish secure interconnections between systems through secure APIs or leveraging centrally managed hybrid IT connectivity services
+How to achieve:
+Outline what (APIs or centrally managed hybrid IT connectivity services )the architectures established secure interconnections between systems
+Tools:
+Target State Architecture
+Interim State Architecture
+Maintain secure operations
+establish processes to maintain visibility of assets and ensure the prompt application of security&#8209;related patches and updates in order to reduce exposure to vulnerabilities, in accordance with GC Patch Management Guidance
+How to achieve:
+Have processes been established to ensure the prompt application of security related patches and updates?
+Summarize how the architecture supports these processes
+
+enable event logging, in accordance with GC Event Logging Guidance, and perform monitoring of systems and services in order to detect, prevent, and respond to attacks
+How to achieve:
+Summarize how event logging within the architecture aligns to GC Event Logging Guidance in the areas of:
+Attack detection
+Attack prevention
+Attack respond
+establish an incident management plan in alignment with the GC Cyber Security Event Management Plan (GC CSEMP) and report incidents to the Canadian Centre for Cyber Security
+How to achieve:
+Describe how incident management plan aligns to GC Cyber Security Event Management
+Describe how incidents are reported to the Canadian Centre for Cyber Security (CCSB)</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
