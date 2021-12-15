@@ -10,25 +10,25 @@
 	<script type="text/javascript" src="lib/jquery-ui-layout/js/jquery.layout-1.4.4.js"></script>
 	<link type="text/css" rel="stylesheet" href="lib/jquery-ui-layout/css/layout-default-1.4.4.css">
 	<!-- BOOTSTRAP -->
-	<link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap-3.3.2.min.css">
-	<link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.yeti.css">
 	<script type="text/javascript" src="lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
 	<!-- REPORT SPECIFIC -->
 	<link type="text/css" rel="stylesheet" href="css/model.css">
 	<link type="text/css" rel="stylesheet" href="css/i18n.css">
 	<script type="text/javascript" src="js/model.js"></script>
+	<script type="text/javascript" src="js/url-polyfill.min.js"></script>
 </head>
 
 <body>
 	<!-- "ui-layout-north" class set (topbar) -->
 	<div class="ui-layout-north">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-inverse">
 			<div class="navbar-header">
 				<span class="navbar-brand">Sketches</span>
 			</div>
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#myModal" data-toggle="modal" class="btn go"><span class="i18n-about"></span></a></li>
+					<li><a href="#myModal" data-toggle="modal" class="go"><span class="i18n-about"></span></a></li>
 				</ul>
 			</div>
 		</nav>
@@ -47,54 +47,59 @@
 					<b><a href="35db829b-803e-4bf1-bd05-66d739b62b37/elements/model.html" target="view">Sketches</a></b>
 					<ul class="tree">
 					<!-- START OF STRINGTEMPLATE CODE -->
-						<li><span class="i18n-model_content"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+						<li class="tree-folder"><span class="i18n-model_content"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 							<ul>
-                                <li><span class="i18n-strategy"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+                                <li class="tree-folder "><span class="i18n-strategy"><i class="glyphicon glyphicon-triangle-right"></i> </span>
                                     <ul>
                                     </ul>
                                 </li>
-								<li><span class="i18n-business_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+								<li class="tree-folder "><span class="i18n-business_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+									<ul>
+													<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/elements/id-e4cdb7272ed84da99035ce9543516175.html" target="element"> Bot </a></li>
+
+									</ul>
+								</li>
+								<li class="tree-folder "><span class="i18n-application_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 									<ul>
 									</ul>
 								</li>
-								<li><span class="i18n-application_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+								<li class="tree-folder "><span class="i18n-technology_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 									<ul>
 									</ul>
 								</li>
-								<li><span class="i18n-technology_layer"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+								<li class="tree-folder "><span class="i18n-motivation"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 									<ul>
 									</ul>
 								</li>
-								<li><span class="i18n-motivation"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+								<li class="tree-folder "><span class="i18n-implementation"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 									<ul>
 									</ul>
 								</li>
-								<li><span class="i18n-implementation"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+								<li class="tree-folder "><span class="i18n-connectors"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 									<ul>
 									</ul>
 								</li>
-								<li><span class="i18n-connectors"><i class="glyphicon glyphicon-triangle-right"></i> </span>
-									<ul>
-									</ul>
-								</li>
-								<li><span class="i18n-relations"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+								<li class="tree-folder "><span class="i18n-relations"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 									<ul>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li><span class="i18n-views"><i class="glyphicon glyphicon-triangle-right"></i> </span>
+						<li class="tree-folder "><span class="i18n-views"><i class="glyphicon glyphicon-triangle-right"></i> </span>
 							<ul>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/85740660-98cd-4ae7-90ed-9d6fe7e5c605.html" target="view"> Default View </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/49fe06e5-2a03-46da-b38f-73dee9d3669f.html" target="view"> API Gateway </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/3a59a4b5-3ca5-4eff-a126-b52de077ec95.html" target="view"> API LM </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/e1267519-6167-4eb8-81f3-61f2de2ff181.html" target="view"> DFO COVID-19 Benefit Sketch </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/30d4e40d-9419-4b72-8fda-938ad085b01c.html" target="view"> Income Security COVID-19 Benefit Sketch </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/2a00f13d-db08-4ea7-855a-63dc03f05321.html" target="view"> Student COVID -19 Benefit Sketch </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/f5d1b1f9-72c5-423e-b437-93db7d9d6b05.html" target="view"> Apigee Spoke </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/09426eab-ec05-48f5-b6bd-6fa2e1e852cd.html" target="view"> EAPC </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/a5a981c0-4e19-45e3-b2f7-fd04b6b9b5c4.html" target="view"> FWCS Currrent State </a></li>
-											<li class="tree-element"><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/17115da0-5c77-4d02-8078-caa93e634c23.html" target="view"> IAAM Sketch </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/85740660-98cd-4ae7-90ed-9d6fe7e5c605.html" target="view"> Default View </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/49fe06e5-2a03-46da-b38f-73dee9d3669f.html" target="view"> API Gateway </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/3a59a4b5-3ca5-4eff-a126-b52de077ec95.html" target="view"> API LM </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/e1267519-6167-4eb8-81f3-61f2de2ff181.html" target="view"> DFO COVID-19 Benefit Sketch </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/30d4e40d-9419-4b72-8fda-938ad085b01c.html" target="view"> Income Security COVID-19 Benefit Sketch </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/2a00f13d-db08-4ea7-855a-63dc03f05321.html" target="view"> Student COVID -19 Benefit Sketch </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/f5d1b1f9-72c5-423e-b437-93db7d9d6b05.html" target="view"> Apigee Spoke </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/09426eab-ec05-48f5-b6bd-6fa2e1e852cd.html" target="view"> EAPC </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/a5a981c0-4e19-45e3-b2f7-fd04b6b9b5c4.html" target="view"> FWCS Currrent State </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/17115da0-5c77-4d02-8078-caa93e634c23.html" target="view"> IAAM Sketch </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/e6656688-3c94-4978-abfb-ce159c9a7da3.html" target="view"> IAAM w Event Broker </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/id-2c89e32ff26c4ca7a07177b22000d070.html" target="view"> New ArchiMate View </a></li>
+											<li class="tree-element "><a href="35db829b-803e-4bf1-bd05-66d739b62b37/views/id-3e1a1ba6e7ca4190b58e3e83c4216ae0.html" target="view"> Canada.ca </a></li>
 
 							</ul>
 						</li>
