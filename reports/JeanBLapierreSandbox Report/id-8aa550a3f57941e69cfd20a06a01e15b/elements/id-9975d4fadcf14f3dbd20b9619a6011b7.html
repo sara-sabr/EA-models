@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Microservices Log Files</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Microservices Log Files</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-DataObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-DataObject" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Microservice log files
+Each service also creates a log file. API requests are logged both at the platform inbound endpoint (API gate way) as well as within each internal component (service). Debugging information is also logged to aid in tr acing specific behaviour. Examples:
+
+2021-02-01 07:45:31,880 INFO [http-nio-8765-exec-5179] [e76eafec-506f-4645-b6b2-d163ba173379] [lc.api.gateway] [guest] c.s.l.l.a.g.w.RequestLoggingConfiguration$1
+[RequestLoggingConfiguration.java:35] Incoming request [GET /gw-account-web/accounts/5ee8b4e27b56b01e50b71a82/settings?tenant=461371, client=10.228.60.25,
+headers=[host:&#8221;de1-lc-apigw.sdlproducts.com&#8221;, accept:&#8221;*/*&#8221;, authorization:&#8221;masked&#8221;, x-lccaller-app:&#8221;LCUI/2.2.9&#8221;, x-lc-appsid:&#8221;masked&#8221;]]
+
+2021-02-01 07:45:32,004 INFO [http-nio-8080-exec-74] [e76eafec-506f-4645-b6b2-d163ba173379] [lc.account.service] [5ee8b4e27b56b01e50b71a82]
+c.s.l.g.a.s.a.AccountServiceImpl [AccountServiceImpl.java:1484] getAccountSettings &gt;&gt; 5ee8b4e27b56b01e50b71a82
+
+2021-02-01 07:45:32,011 DEBUG [http-nio-8080-exec-74] [e76eafec-506f-4645-b6b2-d163ba173379] [lc.account.service] [5ee8b4e27b56b01e50b71a82]
+c.s.l.g.a.s.r.SubscriptionRepositoryImpl [SubscriptionRepositoryImpl.java:191] There is no subscription in cache for accountId=5ee8b4e27b56b01e50b71a82 sandbox=true</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
