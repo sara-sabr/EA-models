@@ -1233,6 +1233,11 @@ https://sftweb.pwgsc.gc.ca/guides/MSFT%20Requirements%20Gathering%20Checklist.do
 This guide provides operational procedures in running the SFT Client and using the MSFT Service.&#xD;
 https://sftweb.pwgsc.gc.ca/guides/SFT_Operations-User_Guide.pdf</documentation>
     </element>
+    <element xsi:type="archimate:Capability" name="Secure Multilingual Employee Collaboration" id="id-db5010a870e14f3da8127c18c48515d2"/>
+    <element xsi:type="archimate:Capability" name="Multilingual Community Interaction Enablement" id="id-ff9d47f01a7d44e59b84f461ebdc223f"/>
+    <element xsi:type="archimate:Capability" name="Multilingual Capabilities Added to Communication Channels" id="id-5836faca63c948c599d48f628dccc917"/>
+    <element xsi:type="archimate:Capability" name="Personalized Enterprise Translation Portal" id="id-c914d37d7fe349c3bc3e5af7a78b363f"/>
+    <element xsi:type="archimate:Capability" name="Instant Translation of Content" id="id-26bb5e70f60042268024245e2b52a839"/>
   </folder>
   <folder name="Business" id="id-fb9c94c240434273aa6d6f5df1a73407" type="business">
     <element xsi:type="archimate:BusinessEvent" name="EA Requests SAS Feedback" id="id-a7ebf3b84a7545f6a5b2e8eaca445cb6"/>
@@ -1770,6 +1775,50 @@ Moreover, customer departments are responsible for controlling authorization and
 &#xD;
 Rescinded [2019-06-28] - Operational Security Standard: Management of Information Technology Security (MITS)</documentation>
     </element>
+    <element xsi:type="archimate:BusinessObject" name="IITB Intake Proposal - LITE-2021-IITB-47" id="id-e6e2bb63331c47ab99a8c45908db0cba">
+      <documentation>https://gpp-ppm.service.gc.ca/sites/forms-formulaires/PMISformsFormulaires/Lists/IITBProposalIntake/DispForm.aspx?ID=47&#xD;
+https://crm-grc.service.gc.ca/IITB-PPS-DGIIT-SPP/main.aspx&#xD;
+&#xD;
+PROJECT BACKGROUND:&#xD;
+Our current translation management system is MultiTrans 6 (2017) and it does not provide:&#xD;
+Industry standard functionality&#xD;
+An accessible interface&#xD;
+Compatibility with O365 64-bit&#xD;
+Document translation&#xD;
+&#xD;
+PROJECT DESCRIPTION&#xD;
+To replace our current translation management system is MultiTrans 6 (2017) with a modern and flexible product&#xD;
+&#xD;
+PMIS - PROJECT OUTCOMES&#xD;
+A Modern Translation Management System that provides:&#xD;
+Updated translation memory, functionality and workload management&#xD;
+An accessible interface&#xD;
+Support for Office 365 64-bit&#xD;
+End-user document translation&#xD;
+&#xD;
+DEFINITIVE MEDIA LIBRARY (DML)&#xD;
+MultiTrans 2017 Admin Console, MultiTrans 2017 Client, MultiTrans 2017 server&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessRole" name="Document Translation User" id="id-418d90a065974ffbb66b363a3280cbff"/>
+    <element xsi:type="archimate:BusinessCollaboration" name="Document Translation Linguistics Team" id="id-984d3cb278444e5ebebf6f4b1ec48e4f">
+      <documentation>As shown in the commercial offer plus 2 Trados Studio licences per team&#xD;
+22 Linguistics Teams.&#xD;
+Linguistics staff will use both Language Cloud and Language Weaver (for them it's included in Language Cloud's licence) Non-linguistics staff will use Language Weaver for document translation instead of the current array of free and paid online services such as google, bing, DeepL, etc. etc.</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="Trados Studio Licence" id="id-0160e3af4872421d961ef3a673e0f843">
+      <documentation>As shown in the commercial offer plus 2 Trados Studio licences per team</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Document To Be Translated" id="id-b25c6dcecccc4f39ac471d6224f22b58"/>
+    <element xsi:type="archimate:BusinessObject" name="Translated Document" id="id-ab03a7f6925a4ba9bf564de3f5c8dc8e"/>
+    <element xsi:type="archimate:BusinessFunction" name="Workstation Productivity Software Management (WPSM)" id="id-6ba368f7bc8348df8581f2d25491c872">
+      <documentation>WPSM will manage all requests and approvals as is the case with MultiTrans</documentation>
+    </element>
+    <element xsi:type="archimate:Contract" name="RWS Service and Support Contract" id="id-639335a796bc4873934285292b8488dd"/>
+    <element xsi:type="archimate:BusinessProcess" name="Translation Work Assigned" id="id-5201ddadbbe647e19d71e277a85595db"/>
+    <element xsi:type="archimate:BusinessEvent" name="Request For Translation" id="id-912ef70a4e054c168830673403169bc3"/>
+    <element xsi:type="archimate:BusinessProcess" name="Translation of Content" id="id-6e68db27827d49adbd39545744163542"/>
+    <element xsi:type="archimate:BusinessProcess" name="Translation Delivery" id="id-276c02d358f04e38aa8520774b5366ef"/>
   </folder>
   <folder name="Application" id="id-4c073bc2342b490eae44200c8635c571" type="application">
     <element xsi:type="archimate:DataObject" name="Drupal-Sourced Data (Data Object)" id="id-a36acbc1b6124a03991eae20826f88c9">
@@ -1919,6 +1968,107 @@ http://sftweb.pwgsc.gc.ca/VERSION2/sftClient10-2/index.html&#xD;
 &#xD;
 Last Updated: 2013-12-03</documentation>
     </element>
+    <element xsi:type="archimate:ApplicationService" name="RWS Language Cloud" id="id-35a4a9e6e2c24963bb5ccec767011f01">
+      <documentation>https://www.rws.com/localization/language-cloud/</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Termbase" id="id-53919268e0fe45ada1edafb9c671f758">
+      <documentation>Translation &quot;Pairs&quot; (English / French)&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Translation Memory Management" id="id-2c1cafca203f4e5ebb2374faff22c21c"/>
+    <element xsi:type="archimate:ApplicationInterface" name="Online Editor" id="id-1b020a3d881c42b69c21b1a25942b780"/>
+    <element xsi:type="archimate:ApplicationService" name="Workflow Management Service" id="id-626bd9adbf2145fabe3f09f9efcba62b"/>
+    <element xsi:type="archimate:ApplicationService" name="Full Audit Trail" id="id-8b5d27b92fcc44e68c6a645094f7e0a9">
+      <documentation>Audit trails&#xD;
+RWS Language Cloud maintains a full audit tr ail of every file that is processed in the application. In the unlikely e vent&#xD;
+of a security incident, an administrator can query the history of a file as it pr ogressed through the workflow and&#xD;
+determine which workflow tasks were executed on the file and which users accessed it.&#xD;
+&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="UI Log Files" id="id-f746997f2286460fa633980a07ce9363">
+      <documentation>User interface (UI) log files&#xD;
+Log files for users accessing the RWS Language Cloud application user interface are created and stored in standard NCSA Combined log format. An example log entry would be:&#xD;
+&#xD;
+10.228.144.254 - - [31/Jan/2021:03:08:14 +0000] “GET /lc/t/483384/dashboard HTTP/1.1”&#xD;
+200 14196 “-” “Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)&#xD;
+Chrome/87.0.4280.66 Safari/537.36” 761 14548 581839&#xD;
+&#xD;
+These log files contain:&#xD;
+• [host] The IP address or host/subdomain name of the client making the request&#xD;
+• [rfc931] The identifier used to identify the client making the r equest&#xD;
+• [username] The username used by the client for authentication&#xD;
+• [date:time timezone] The date and time stamp of the request&#xD;
+• [request] The requested resource, the method, and the protocol version&#xD;
+• [statuscode] The outcome of the request&#xD;
+• [bytes] The number of bytes of data transferred&#xD;
+• [referrer] The URL which linked the user to the site&#xD;
+• [user_agent] The web browser and platform used by the visitor&#xD;
+• [cookies] One or more cookies passed by the browser</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Microservices Log Files" id="id-9975d4fadcf14f3dbd20b9619a6011b7">
+      <documentation>Microservice log files&#xD;
+Each service also creates a log file. API requests are logged both at the platform inbound endpoint (API gate way) as well as within each internal component (service). Debugging information is also logged to aid in tr acing specific behaviour. Examples:&#xD;
+&#xD;
+2021-02-01 07:45:31,880 INFO [http-nio-8765-exec-5179] [e76eafec-506f-4645-b6b2-d163ba173379] [lc.api.gateway] [guest] c.s.l.l.a.g.w.RequestLoggingConfiguration$1&#xD;
+[RequestLoggingConfiguration.java:35] Incoming request [GET /gw-account-web/accounts/5ee8b4e27b56b01e50b71a82/settings?tenant=461371, client=10.228.60.25,&#xD;
+headers=[host:”de1-lc-apigw.sdlproducts.com”, accept:”*/*”, authorization:”masked”, x-lccaller-app:”LCUI/2.2.9”, x-lc-appsid:”masked”]]&#xD;
+&#xD;
+2021-02-01 07:45:32,004 INFO [http-nio-8080-exec-74] [e76eafec-506f-4645-b6b2-d163ba173379] [lc.account.service] [5ee8b4e27b56b01e50b71a82]&#xD;
+c.s.l.g.a.s.a.AccountServiceImpl [AccountServiceImpl.java:1484] getAccountSettings >> 5ee8b4e27b56b01e50b71a82&#xD;
+&#xD;
+2021-02-01 07:45:32,011 DEBUG [http-nio-8080-exec-74] [e76eafec-506f-4645-b6b2-d163ba173379] [lc.account.service] [5ee8b4e27b56b01e50b71a82]&#xD;
+c.s.l.g.a.s.r.SubscriptionRepositoryImpl [SubscriptionRepositoryImpl.java:191] There is no subscription in cache for accountId=5ee8b4e27b56b01e50b71a82 sandbox=true</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Log Monitoring and Retention" id="id-50ed4ed925524ff7a63e432e28b29878">
+      <documentation>Log monitoring and retention&#xD;
+By default, logs are kept for 90 days in a centralized logging server. Basic log monitoring is in place and internal API errors are monitored automatically, with an alert raised to an internal collaboration tool if the number of errors exceeds a pre-set threshold.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="RWS Account Security" id="id-5fd5253ead8f4685b861ddeede3229a3"/>
+    <element xsi:type="archimate:ApplicationFunction" name="RWS ID" id="id-1de67ac30bf5400f8f15e3f42009de7f">
+      <documentation>RWS ID&#xD;
+RWS ID is a single-sign-on (SSO) solution and is based on a third-party identity platform provided by Auth0.&#xD;
+More information on the security of Auth0 can be found by visiting auth0.com/security</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Federation" id="id-3450ec9a86df4014ae6e13917c3f2970">
+      <documentation>Federation&#xD;
+RWS ID can be federated to a client’s identity provider, which provides the same level of security as is present in the client’s own environment. There are several options for this federation, including (but not limited to) LDAP, ADFS, Azure AD, OpenID Connect, and SAML.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="MFA" id="id-7fd93bcc098646d59fea074331483020">
+      <documentation>Multi-factor authentication&#xD;
+If RWS ID is not federated to the client’s identity provider, multi-factor authentication (MFA) can be implemented on a per-domain basis. MFA is an authentication method in which a user is granted access only after successfully presenting two or more pieces of evidence (factors) to an authentication mechanism:&#xD;
+• Knowledge (something the user knows, such as a password)&#xD;
+• Possession (something the user has, such as a mobile device)&#xD;
+• Inherence (something the user is, usually a biometric factor such as a fingerprint)</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Session Timeout" id="id-886548c92d8e4c869ce6889c8cbdc0aa">
+      <documentation>Session timeout&#xD;
+If a session is left inactive in RWS Language Cloud, it will automatically time out and require the user to reauthenticate to continue working in the application.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="User Permission Management" id="id-11c510fa529b4eaca8b9f76c32500a38">
+      <documentation>User permissions&#xD;
+In RWS Language Cloud, each user belongs to one or more user groups. Each group has a limited set of permissions (a ‘role’) that determines which actions members of the group can execute, and at which level of the organizational structure. The permissions for users who are members of multiple groups are determined by creating a superset of all the&#xD;
+permissions of those groups. All users and groups are managed by account administrators. If clients are using a managed service, these administrators would be RWS personnel who set up the users and groups, but do not subsequently have access to the client data. Clients who want to administer their own accounts can do so without any involvement from&#xD;
+RWS.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Custom Role Management" id="id-7b02bc7bed6840848d14ba8828e750e2">
+      <documentation>Custom roles&#xD;
+In addition to the default roles provided, RWS Language Cloud allows you to create custom roles that can be assigned to groups. A custom role can be granted a set of permissions, allowing for flexibility when determining the actions that can be performed by the members of those groups.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationFunction" name="Encryption At Rest" id="id-a58bf8ad3f174cfbbc295835cf32d8b4">
+      <documentation>Encryption at rest&#xD;
+All data that is resident in the application is encrypted at rest. If projects are downloaded for offline translation, those files are not then guaranteed to be encrypted as they reside on a user’s own system. To mitigate this issue, there is a feature to force users to work online, which will prevent the data from leaving the application server. With this feature enabled on a project, translators and reviewers will only be able to use the browser-based interface.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="RWS Language Weaver Cloud" id="id-b26e3dd2c82a44dda1a3b1b52086e540">
+      <documentation>https://www.rws.com/language-weaver/resources/machine-translation-cloud/&#xD;
+Language Weaver Cloud is part of a holistic ground to cloud Linguistic AI solution for enterprises that need the ability to process high volumes of multilingual content to global audiences.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Neural Machine Translation" id="id-48fb075799d84b12bff20415c448f5cb"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Enterprise-Grade Security &amp; Reliability" id="id-c3561b087ec14671842e816d8b6e5233"/>
+    <element xsi:type="archimate:ApplicationFunction" name="RWS Linguistic AI" id="id-6f0bdb47fc3241ce83449ac82a29d21c"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Easily Fits Into Enterprise Workflows" id="id-d554ad860ca043bb9187b9cde9c22a3f"/>
+    <element xsi:type="archimate:ApplicationFunction" name="Language Pair Chaining" id="id-efef2dfd813745f8ab65236eb39a9cc8"/>
   </folder>
   <folder name="Technology &amp; Physical" id="id-e073686aface40f7a970252f84a16b34" type="technology">
     <element xsi:type="archimate:Artifact" name="Model" id="id-cde5d10003e84d168bae6540d857644c"/>
@@ -1957,6 +2107,13 @@ To proceed with the installation, please contact SFT Support at the following em
     </element>
     <element xsi:type="archimate:Node" name="MSFT Hub Node" id="id-f01a1e01dcb34293a6e47f0b37a076d7"/>
     <element xsi:type="archimate:Node" name="MSFT Target Node(s)" id="id-b41859274bac4674b26ce76a0d1ead98"/>
+    <element xsi:type="archimate:SystemSoftware" name="MultiTrans v2017" id="id-6c1c781b3ddf4c80a63c5908b4daa840"/>
+    <element xsi:type="archimate:SystemSoftware" name="MultiTrans 2017 Admin Console" id="id-fcd8d2fa0f4f46ce92d3096e7db56a0e"/>
+    <element xsi:type="archimate:SystemSoftware" name="MultiTrans 2017 Client" id="id-7568d23e8d4f4ab5a6b0673fd3d2a049"/>
+    <element xsi:type="archimate:SystemSoftware" name="MultiTrans 2017 Server" id="id-b9b0eda2444343b7a4ac67a6290e08cf"/>
+    <element xsi:type="archimate:TechnologyService" name="RWS Hosted SaaS " id="id-5f8020ff787641afbfe2c99260e398da"/>
+    <element xsi:type="archimate:SystemSoftware" name="Trados Studio" id="id-160160e6934742d0a50082734d4559cc"/>
+    <element xsi:type="archimate:SystemSoftware" name="SharePoint Online" id="id-f72ee88178a74332b40d3a6b8ac5c325"/>
   </folder>
   <folder name="Motivation" id="id-f0d4d184e3724f9581f16c817692f2b0" type="motivation">
     <element xsi:type="archimate:Principle" name="GC EA Principles" id="id-9f1bfe4676814b5b9e0db7e61200311f"/>
@@ -2857,6 +3014,607 @@ Information technology continues to rapidly advance in support of greater interc
       <documentation>The Government of Canada is a single entity.&#xD;
 The increased availability of common and shared services can help departments in meeting their security requirements. While this offers the potential for improved efficiency, departments have to recognize that the security decisions they make can impact other organizations.</documentation>
     </element>
+    <element xsi:type="archimate:Driver" name="Minister of Employment, Workforce Development and Disability Inclusion Mandate Letter" id="id-29c1b5269d0d4c52bb093a51642335b0">
+      <documentation>https://pm.gc.ca/en/mandate-letters/2021/12/16/minister-employment-workforce-development-and-disability-inclusion&#xD;
+&#xD;
+Dear Minister Qualtrough:&#xD;
+&#xD;
+Thank you for continuing to serve Canadians as Minister of Employment, Workforce Development and Disability Inclusion.&#xD;
+&#xD;
+From the beginning of this pandemic, Canadians have faced a once-in-a-century challenge. And through it all, from coast to coast to coast, people have met the moment. When it mattered most, Canadians adapted, helped one another, and stayed true to our values of compassion, courage and determination. That is what has defined our path through this pandemic so far. And that is what will pave our way forward.&#xD;
+&#xD;
+During a difficult time, Canadians made a democratic choice. They entrusted us to finish the fight against COVID-19 and support the recovery of a strong middle class. At the same time, they also gave us clear direction: to take bold, concrete action to build a healthier, more resilient future. That is what Canadians have asked us to do and it is exactly what our Government is ready to deliver. We will work to build that brighter future through continued collaboration, engagement, and the use of science and evidence-based decision-making. With an unwavering focus on delivering results, we will work constructively with Parliamentarians and maintain our strong partnerships with provincial, territorial and municipal governments and Indigenous partners. This decade has had an incredibly difficult start, but this is the moment to rebuild a more resilient, inclusive and stronger country for everyone.&#xD;
+&#xD;
+The science is clear. Canadians have been clear. We must not only continue taking real climate action, we must also move faster and go further. As Canadians are increasingly experiencing across the country, climate change is an existential threat. Building a cleaner, greener future will require a sustained and collaborative effort from all of us. As Minister, I expect you to seek opportunities within your portfolio to support our whole-of-government effort to reduce emissions, create clean jobs and address the climate-related challenges communities are already facing.&#xD;
+&#xD;
+This year, Canadians were horrified by the discovery of unmarked graves and burial sites near former residential schools. These discoveries underscore that we must move faster on the path of reconciliation with First Nations, Inuit and Métis Peoples. We know that reconciliation cannot come without truth and our Government will continue to invest in that truth. As Ministers, each of us has a duty to further this work, both collectively and as individuals. Consequently, I am directing every Minister to implement the United Nations Declaration on the Rights of Indigenous Peoples and to work in partnership with Indigenous Peoples to advance their rights.&#xD;
+&#xD;
+We must continue to address the profound systemic inequities and disparities that remain present in the core fabric of our society, including our core institutions. To this effect, it is essential that Canadians in every region of the country see themselves reflected in our Government’s priorities and our work. As Minister, I expect you to include and collaborate with various communities, and actively seek out and incorporate in your work, the diverse views of Canadians. This includes women, Indigenous Peoples, Black and racialized Canadians, newcomers, faith-based communities, persons with disabilities, LGBTQ2 Canadians, and, in both official languages.&#xD;
+&#xD;
+Across our work, we remain committed to ensuring that public policies are informed and developed through an intersectional lens, including applying frameworks such as Gender-based Analysis Plus (GBA Plus) and the quality of life indicators in decision-making.&#xD;
+&#xD;
+Canadians continue to rely on journalists and journalism for accurate and timely news. I expect you to maintain professional and respectful relationships with journalists to ensure that Canadians are well informed and have the information they need to keep themselves and their families safe.&#xD;
+&#xD;
+Throughout the course of the pandemic, Canadians and their governments have adapted to new realities. Governments must draw on lessons learned from the pandemic to further adapt and develop more agile and effective ways to serve Canadians. To this end, I expect all Ministers to evaluate ways we can update our practices to ensure our Government continues to meet the challenges of today and tomorrow.&#xD;
+&#xD;
+The success of this Parliament will require Parliamentarians, both in the House of Commons and the Senate, to work together across all parties to get big things done for Canadians. I expect you to maintain constructive relationships with your Opposition Critics and coordinate any legislation with the Leader of the Government in the House of Commons. As Minister, you are accountable to Parliament both individually, for your style of leadership and the performance of your responsibilities, and collectively, in support of our Ministry and decisions taken by Cabinet. Open and Accountable Government sets out these core principles and the standards of conduct expected of you and your office. I expect you to familiarize yourself with this document, which outlines my expectations for each member of the Ministry.&#xD;
+&#xD;
+Our platform lays out an ambitious agenda. While finishing the fight against the pandemic must remain our central focus, we must continue building a strong middle class and work toward a better future where everyone has a real and fair chance at success and no one is left behind.&#xD;
+&#xD;
+As Minister of Employment, Workforce Development and Disability Inclusion, your immediate priority is to support workers whose work has been interrupted by public health measures. I also expect you to build a better, more inclusive employment insurance system, complete and advance early and significant actions under Canada’s Disability Inclusion Action Plan, and help workers and communities prosper as we move to net-zero, including through the launch of a Clean Jobs Training Centre.&#xD;
+&#xD;
+To realize these objectives, I ask that you achieve results for Canadians by delivering the following commitments.&#xD;
+&#xD;
+Secure passage and ensure implementation of a new Canada Worker Lockdown Benefit to support workers whose work is interrupted due to public health measures.&#xD;
+Work with the Minister of Health and provinces and territories to train up to 50,000 new personal support workers.&#xD;
+Move forward with the design, introduction and implementation of a Canada Disability Benefit Act and Canada Disability Benefit for low-income working age persons with disabilities.&#xD;
+Taking into account input received through consultations on the future of Employment Insurance (EI), by Summer 2022, bring forward and begin implementing a plan to modernize the EI system for the 21st century, building a stronger and more inclusive system that covers all workers, including workers in seasonal employment and persons employed by digital platforms, ensuring the system is simpler and more responsive for workers and employers. In addition to moving forward with extending EI sickness benefits from 15 to 26 weeks, the plan will include:&#xD;
+A new EI benefit for self-employed Canadians that would provide unemployment assistance comparable to EI and lasting for as many as 26 weeks;&#xD;
+A new 15-week benefit for adoptive parents;&#xD;
+A new EI Career Insurance Benefit to provide long-tenured workers who have lost their job with additional income support while they reintegrate into the labour market; and&#xD;
+Consideration of the realities of artists and cultural workers.&#xD;
+Finalize and release Canada’s Disability Inclusion Action Plan, in consultation with the disability community, with early actions in key areas of financial security and employment, creating disability-inclusive spaces and adopting a modern approach to and common definition of disability across the Government of Canada. In addition to measures to be implemented by other ministers, actions will include:&#xD;
+Launching an employment strategy for Canadians with disabilities;&#xD;
+Undertaking a comprehensive review of access to federal disability programs, including for Canadians with mental health challenges;&#xD;
+Supporting national disability organizations to build capacity and partner in efforts to eliminate systemic barriers;&#xD;
+Advancing our commitment to permanently fund support services that ensure equitable access to reading and other published works for Canadians with print disabilities; and&#xD;
+Proceeding with the implementation of the Accessible Canada Act and the harmonization of accessibility standards across Canada.&#xD;
+Permanently eliminate federal interest on Canada Student Loans and Canada Apprentice Loans, increase the repayment assistance threshold to $50,000 for Canada Student Loan borrowers who are single and make appropriate adjustments to the thresholds for other family sizes, and allow new parents to pause repayment of their federal student loans until their youngest child reaches the age of five.&#xD;
+Increase by 50 per cent the maximum debt forgiveness for which family doctors, residents in family medicine, nurse practitioners and nurses who work in rural or remote areas are eligible under the Canada Student Loans Forgiveness program, expand the current list of eligible professionals and undertake a review to ensure that rural communities are fully eligible in order to improve access to health care and social services in rural communities.&#xD;
+To support the future and livelihood of workers and their communities in the transition to a low carbon economy:&#xD;
+Support the Minister of Natural Resources and the Minister of Labour in moving forward with legislation and comprehensive action to achieve a Just Transition, guided by consultations with workers, unions, Indigenous Peoples, employers, communities, and provinces and territories;&#xD;
+Launch a Clean Jobs Training Centre to help workers across sectors upgrade or gain new skills so as to be on the leading edge of the zero carbon industry;&#xD;
+Redesign and implement the Canada Training Benefit; and&#xD;
+Address gaps in training and upskilling to ensure that all Canadian workers can take advantage of sustainable battery industry opportunities.&#xD;
+Double the Union Training and Innovation Program to support more apprenticeship training opportunities and partnerships in the Red Seal trades across Canada, and target greater participation from more diverse populations, including women, Indigenous people, newcomers, persons with disabilities, and Black and racialized Canadians. Continue to advance the Canadian Apprenticeship Service in partnership with provinces, territories, employers and unions so that Red Seal apprentices have sufficient work experience opportunities, including with small and medium-sized employers, to finish their training on time and find well-paying jobs.&#xD;
+Continue to support the work of the national campaign to promote the skilled trades as first choice careers for young people and diverse populations.&#xD;
+With the Minister of Immigration, Refugees and Citizenship, establish a Trusted Employer system for Canadian companies hiring temporary foreign workers and, as part of improving the Global Talent Stream of the Temporary Foreign Worker Program, simplify permit renewals, uphold the two-week processing time and establish an employer hotline. Continue to work with provinces, territories and regulatory bodies to improve foreign credential recognition.&#xD;
+With the support of the Minister of Agriculture and Agri-Food, implement sector-based work permits and strengthen the inspection regime to ensure the health and safety of temporary foreign workers.&#xD;
+Support the Minister of Agriculture and Agri-Food in developing a sector-specific Agricultural Labour Strategy to address persistent and chronic labour shortages in farming and food processing in the short and long term.&#xD;
+Make it easier for women and vulnerable groups to access training by requiring businesses supported through the Sectoral Workforce Solutions Program to include wrap-around supports.&#xD;
+Support the Minister for Women and Gender Equality and Youth in the evaluation process of GBA Plus with the goal of enhancing the framing and parameters of this analytical tool, and with particular attention to the intersectional analysis of race, indigeneity, rurality, disability and sexual identity, among other characteristics.&#xD;
+As Minister, you are also responsible for actively engaging with your Cabinet and Caucus colleagues. As we deliver on our platform commitments, it will be important that members of the Ministry continue to collaborate and work constructively to support rigorous and productive Cabinet decision-making. I expect you to support your colleagues in delivering their commitments, leveraging the expertise of your department and your own lived experiences.&#xD;
+&#xD;
+To best achieve results for Canadians, Ministers must be rigorous and coordinated in our approach to implementation. I would therefore ask that you return to me with a proposed approach for the delivery of your mandate commitments, including priorities for early implementation. Furthermore, to ensure we are accountable for our work, I will be asking you to publicly report to me, and all Canadians, on your progress toward these commitments on a regular basis.&#xD;
+&#xD;
+As we have been reminded throughout the pandemic, adapting to change is not only something government should do, it is something government must do. As you work to fulfil our commitments, I expect you to actively consider new ideas and issues as they emerge, whether through public engagement, your work with Parliamentarians or advice from the public service. I also expect you to work with your Deputy Minister to assess priorities on a continual basis as we build a better future for all Canadians. In addition to achieving results, you are responsible for overseeing the work of your department and ensuring the effective operation of your portfolio.&#xD;
+&#xD;
+As you staff your office and implement outreach and recruitment strategies for federally appointed leadership positions and boards, I ask that you uphold the principles of equity, diversity and inclusion. This helps ensure that federal workplaces are dynamic and reflective of the Canadians we serve. You will also ensure your Minister’s office and portfolio are reflective of our commitment to healthy and safe workplaces.&#xD;
+&#xD;
+Canadians expect us to work hard, speak truthfully and be committed to advancing their interests and aspirations. When we make mistakes – as we all will – Canadians expect us to acknowledge them, and most importantly, to learn from them.&#xD;
+&#xD;
+I know I can count on you to fulfill the important responsibilities entrusted in you, and to turn to me, and the Deputy Prime Minister, early and often to support you in your role as Minister.&#xD;
+&#xD;
+Sincerely,&#xD;
+&#xD;
+Prime Minister of Canada signature&#xD;
+&#xD;
+Rt. Hon. Justin Trudeau, P.C., M.P.&#xD;
+Prime Minister of Canada</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Minister of Families, Children and Social Development Mandate Letter" id="id-905e49fa452f4ecbb7ac8a7f2d5906d8">
+      <documentation>https://pm.gc.ca/en/mandate-letters/2021/12/16/minister-families-children-and-social-development-mandate-letter&#xD;
+&#xD;
+Dear Minister Gould:&#xD;
+&#xD;
+Thank you for agreeing to serve Canadians as Minister of Families, Children and Social Development.&#xD;
+&#xD;
+From the beginning of this pandemic, Canadians have faced a once-in-a-century challenge. And through it all, from coast to coast to coast, people have met the moment. When it mattered most, Canadians adapted, helped one another, and stayed true to our values of compassion, courage and determination. That is what has defined our path through this pandemic so far. And that is what will pave our way forward.&#xD;
+&#xD;
+During a difficult time, Canadians made a democratic choice. They entrusted us to finish the fight against COVID-19 and support the recovery of a strong middle class. At the same time, they also gave us clear direction: to take bold, concrete action to build a healthier, more resilient future. That is what Canadians have asked us to do and it is exactly what our Government is ready to deliver. We will work to build that brighter future through continued collaboration, engagement, and the use of science and evidence-based decision-making. With an unwavering focus on delivering results, we will work constructively with Parliamentarians and maintain our strong partnerships with provincial, territorial and municipal governments and Indigenous partners. This decade has had an incredibly difficult start, but this is the moment to rebuild a more resilient, inclusive and stronger country for everyone.&#xD;
+&#xD;
+The science is clear. Canadians have been clear. We must not only continue taking real climate action, we must also move faster and go further. As Canadians are increasingly experiencing across the country, climate change is an existential threat. Building a cleaner, greener future will require a sustained and collaborative effort from all of us. As Minister, I expect you to seek opportunities within your portfolio to support our whole-of-government effort to reduce emissions, create clean jobs and address the climate-related challenges communities are already facing.&#xD;
+&#xD;
+This year, Canadians were horrified by the discovery of unmarked graves and burial sites near former residential schools. These discoveries underscore that we must move faster on the path of reconciliation with First Nations, Inuit and Métis Peoples. We know that reconciliation cannot come without truth and our Government will continue to invest in that truth. As Ministers, each of us has a duty to further this work, both collectively and as individuals. Consequently, I am directing every Minister to implement the United Nations Declaration on the Rights of Indigenous Peoples and to work in partnership with Indigenous Peoples to advance their rights.&#xD;
+&#xD;
+We must continue to address the profound systemic inequities and disparities that remain present in the core fabric of our society, including our core institutions. To this effect, it is essential that Canadians in every region of the country see themselves reflected in our Government’s priorities and our work. As Minister, I expect you to include and collaborate with various communities, and actively seek out and incorporate in your work, the diverse views of Canadians. This includes women, Indigenous Peoples, Black and racialized Canadians, newcomers, faith-based communities, persons with disabilities, LGBTQ2 Canadians, and, in both official languages.&#xD;
+&#xD;
+Across our work, we remain committed to ensuring that public policies are informed and developed through an intersectional lens, including applying frameworks such as Gender-based Analysis Plus (GBA Plus) and the quality of life indicators in decision-making.&#xD;
+&#xD;
+Canadians continue to rely on journalists and journalism for accurate and timely news. I expect you to maintain professional and respectful relationships with journalists to ensure that Canadians are well informed and have the information they need to keep themselves and their families safe.&#xD;
+&#xD;
+Throughout the course of the pandemic, Canadians and their governments have adapted to new realities. Governments must draw on lessons learned from the pandemic to further adapt and develop more agile and effective ways to serve Canadians. To this end, I expect all Ministers to evaluate ways we can update our practices to ensure our Government continues to meet the challenges of today and tomorrow.&#xD;
+&#xD;
+The success of this Parliament will require Parliamentarians, both in the House of Commons and the Senate, to work together across all parties to get big things done for Canadians. I expect you to maintain constructive relationships with your Opposition Critics and coordinate any legislation with the Leader of the Government in the House of Commons. As Minister, you are accountable to Parliament both individually, for your style of leadership and the performance of your responsibilities, and collectively, in support of our Ministry and decisions taken by Cabinet. Open and Accountable Government sets out these core principles and the standards of conduct expected of you and your office. I expect you to familiarize yourself with this document, which outlines my expectations for each member of the Ministry.&#xD;
+&#xD;
+Our platform lays out an ambitious agenda. While finishing the fight against the pandemic must remain our central focus, we must continue building a strong middle class and work toward a better future where everyone has a real and fair chance at success and no one is left behind.&#xD;
+&#xD;
+As Minister of Families, Children and Social Development, your immediate priority is to build a Canada-wide Early Learning and Child Care system that reduces parent fees, creates more high-quality spaces, recruits and retains skilled educators, and ensures all kids get off to the best possible start. At the same time, you will work with Indigenous partners to implement a culturally appropriate Indigenous Early Learning and Child Care system. You will also focus on implementing the Community Services Recovery Fund to help charities and non-profits adapt and modernize as well as ensure Service Canada provides reliable and accessible services to Canadians, regardless of where they live. &#xD;
+&#xD;
+To realize these objectives, I ask that you achieve results for Canadians by delivering the following commitments.&#xD;
+&#xD;
+Supported by the Minister for Women and Gender Equality and Youth, continue advancing the creation and sustainability of a Canada-wide Early Learning and Child Care system, including:&#xD;
+Concluding negotiations with remaining provinces and territories and implementing agreements:&#xD;
+Reducing fees for regulated child care by 50 per cent on average by the end of 2022 everywhere outside of Quebec,&#xD;
+Reducing regulated child care fees to $10 a day on average by the end of fiscal year 2025-2026 everywhere outside of Quebec, and&#xD;
+Building 250,000 new high-quality child care spaces and hiring 40,000 more early childhood educators by the end of fiscal year 2025-2026;&#xD;
+Introducing federal child care legislation to strengthen and protect a high-quality Canada-wide child care system; &#xD;
+Establishing a National Advisory Council on Early Learning and Child Care;&#xD;
+Continuing to advance work with provinces and territories to reduce fees for families for before and after school care; and&#xD;
+Ensuring the Federal Secretariat on Early Learning and Child Care is fully resourced and operational by early 2023.&#xD;
+Work with Indigenous partners to ensure that Indigenous children have access to a culturally appropriate Indigenous Early Learning and Child Care system that meets the needs of Indigenous families wherever they live, including ensuring more Indigenous families have access to high-quality programming, creating 3,300 new child care spaces, and continuing to support before and after school care for First Nations children on reserve.&#xD;
+Advance the implementation of the Community Services Recovery Fund to help charities and non-profits adapt and modernize as they recover from the pandemic.&#xD;
+Continue advancing the Social Innovation and Social Finance strategy, including fully implementing the Social Finance Fund and launching the Social Innovation Advisory Council.&#xD;
+Through the delivery of Canada’s Poverty Reduction Strategy and other measures, continue leading implementation of the 2030 Agenda for Sustainable Development adopted by the United Nations.&#xD;
+Work with the Minister of Agriculture and Agri-Food and with provinces, territories, municipalities, Indigenous partners and stakeholders to develop a National School Food Policy and to work toward a national school nutritious meal program.&#xD;
+Work with the Minister of Seniors to provide seniors with a single point of access to a wide range of government services and benefits.&#xD;
+As the Minister responsible for Service Canada, lead the development and implementation of modern, resilient, secure and reliable services and benefit delivery systems for Canadians and ensure those services and benefits reach all Canadians regardless of where they live.&#xD;
+Work with the Minister of National Revenue toward the implementation of a real-time e-payroll system, and ensure that businesses of all sizes benefit from this work.&#xD;
+Enhance the capacity and effectiveness of Black-led and Black-serving organizations through the continued implementation of the Supporting Black Canadian Communities Initiative. You will be supported in this work by the Minister of Housing and Diversity and Inclusion.&#xD;
+Work with the Minister for Women and Gender Equality and Youth to ensure the voices and needs of children are represented in our Government’s agenda, as we work to make Canada the best place to grow up.&#xD;
+Work with the Minister for Women and Gender Equality and Youth and the Minister of Mental Health and Addictions to ensure mental health supports are accessible to children and youth as they recover from the impact of the pandemic.&#xD;
+As Minister, you are also responsible for actively engaging with your Cabinet and Caucus colleagues. As we deliver on our platform commitments, it will be important that members of the Ministry continue to collaborate and work constructively to support rigorous and productive Cabinet decision-making. I expect you to support your colleagues in delivering their commitments, leveraging the expertise of your department and your own lived experiences.&#xD;
+&#xD;
+To best achieve results for Canadians, Ministers must be rigorous and coordinated in our approach to implementation. I would therefore ask that you return to me with a proposed approach for the delivery of your mandate commitments, including priorities for early implementation. Furthermore, to ensure we are accountable for our work, I will be asking you to publicly report to me, and all Canadians, on your progress toward these commitments on a regular basis.&#xD;
+&#xD;
+As we have been reminded throughout the pandemic, adapting to change is not only something government should do, it is something government must do. As you work to fulfil our commitments, I expect you to actively consider new ideas and issues as they emerge, whether through public engagement, your work with Parliamentarians or advice from the public service. I also expect you to work with your Deputy Minister to assess priorities on a continual basis as we build a better future for all Canadians. In addition to achieving results, you are responsible for overseeing the work of your department and ensuring the effective operation of your portfolio.&#xD;
+&#xD;
+As you staff your office and implement outreach and recruitment strategies for federally appointed leadership positions and boards, I ask that you uphold the principles of equity, diversity and inclusion. This helps ensure that federal workplaces are dynamic and reflective of the Canadians we serve. You will also ensure your Minister’s office and portfolio are reflective of our commitment to healthy and safe workplaces.&#xD;
+&#xD;
+Canadians expect us to work hard, speak truthfully and be committed to advancing their interests and aspirations. When we make mistakes – as we all will – Canadians expect us to acknowledge them, and most importantly, to learn from them.&#xD;
+&#xD;
+I know I can count on you to fulfill the important responsibilities entrusted in you, and to turn to me, and the Deputy Prime Minister, early and often to support you in your role as Minister.&#xD;
+&#xD;
+Sincerely,&#xD;
+&#xD;
+Prime Minister of Canada signature&#xD;
+&#xD;
+Rt. Hon. Justin Trudeau, P.C., M.P.&#xD;
+Prime Minister of Canada</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Minister of Labour Mandate Letter" id="id-f58350936c9246bbbe230a2ad342ba92">
+      <documentation>https://pm.gc.ca/en/mandate-letters/2021/12/16/minister-labour-mandate-letter&#xD;
+&#xD;
+Dear Minister O’Regan:&#xD;
+&#xD;
+Thank you for agreeing to serve Canadians as Minister of Labour.&#xD;
+&#xD;
+From the beginning of this pandemic, Canadians have faced a once-in-a-century challenge. And through it all, from coast to coast to coast, people have met the moment. When it mattered most, Canadians adapted, helped one another, and stayed true to our values of compassion, courage and determination. That is what has defined our path through this pandemic so far. And that is what will pave our way forward.&#xD;
+&#xD;
+During a difficult time, Canadians made a democratic choice. They entrusted us to finish the fight against COVID-19 and support the recovery of a strong middle class. At the same time, they also gave us clear direction: to take bold, concrete action to build a healthier, more resilient future. That is what Canadians have asked us to do and it is exactly what our Government is ready to deliver. We will work to build that brighter future through continued collaboration, engagement, and the use of science and evidence-based decision-making. With an unwavering focus on delivering results, we will work constructively with Parliamentarians and maintain our strong partnerships with provincial, territorial and municipal governments and Indigenous partners. This decade has had an incredibly difficult start, but this is the moment to rebuild a more resilient, inclusive and stronger country for everyone.&#xD;
+&#xD;
+The science is clear. Canadians have been clear. We must not only continue taking real climate action, we must also move faster and go further. As Canadians are increasingly experiencing across the country, climate change is an existential threat. Building a cleaner, greener future will require a sustained and collaborative effort from all of us. As Minister, I expect you to seek opportunities within your portfolio to support our whole-of-government effort to reduce emissions, create clean jobs and address the climate-related challenges communities are already facing.&#xD;
+&#xD;
+This year, Canadians were horrified by the discovery of unmarked graves and burial sites near former residential schools. These discoveries underscore that we must move faster on the path of reconciliation with First Nations, Inuit and Métis Peoples. We know that reconciliation cannot come without truth and our Government will continue to invest in that truth. As Ministers, each of us has a duty to further this work, both collectively and as individuals. Consequently, I am directing every Minister to implement the United Nations Declaration on the Rights of Indigenous Peoples and to work in partnership with Indigenous Peoples to advance their rights.&#xD;
+&#xD;
+We must continue to address the profound systemic inequities and disparities that remain present in the core fabric of our society, including our core institutions. To this effect, it is essential that Canadians in every region of the country see themselves reflected in our Government’s priorities and our work. As Minister, I expect you to include and collaborate with various communities, and actively seek out and incorporate in your work, the diverse views of Canadians. This includes women, Indigenous Peoples, Black and racialized Canadians, newcomers, faith-based communities, persons with disabilities, LGBTQ2 Canadians, and, in both official languages.&#xD;
+&#xD;
+Across our work, we remain committed to ensuring that public policies are informed and developed through an intersectional lens, including applying frameworks such as Gender-based Analysis Plus (GBA Plus) and the quality of life indicators in decision-making.&#xD;
+&#xD;
+Canadians continue to rely on journalists and journalism for accurate and timely news. I expect you to maintain professional and respectful relationships with journalists to ensure that Canadians are well informed and have the information they need to keep themselves and their families safe.&#xD;
+&#xD;
+Throughout the course of the pandemic, Canadians and their governments have adapted to new realities. Governments must draw on lessons learned from the pandemic to further adapt and develop more agile and effective ways to serve Canadians. To this end, I expect all Ministers to evaluate ways we can update our practices to ensure our Government continues to meet the challenges of today and tomorrow.&#xD;
+&#xD;
+The success of this Parliament will require Parliamentarians, both in the House of Commons and the Senate, to work together across all parties to get big things done for Canadians. I expect you to maintain constructive relationships with your Opposition Critics and coordinate any legislation with the Leader of the Government in the House of Commons. As Minister, you are accountable to Parliament both individually, for your style of leadership and the performance of your responsibilities, and collectively, in support of our Ministry and decisions taken by Cabinet. Open and Accountable Government sets out these core principles and the standards of conduct expected of you and your office. I expect you to familiarize yourself with this document, which outlines my expectations for each member of the Ministry.&#xD;
+&#xD;
+Our platform lays out an ambitious agenda. While finishing the fight against the pandemic must remain our central focus, we must continue building a strong middle class and work toward a better future where everyone has a real and fair chance at success and no one is left behind.&#xD;
+&#xD;
+As Minister of Labour, your immediate priorities are to work with federally regulated workplaces to ensure that COVID-19 vaccinations are enforced for those workers and to advance amendments to the Canada Labour Code to provide 10 paid days of sick leave for all federally regulated workers. I also expect you to work with federally regulated employers and labour groups, and with provincial and territorial counterparts, to make workplaces fairer and safer for everyone across the country as well as lead our efforts to eradicate forced labour from Canadian supply chains.&#xD;
+&#xD;
+To realize these objectives, I ask that you achieve results for Canadians by delivering the following commitments.&#xD;
+&#xD;
+Continue to work with federally regulated workplaces to ensure that COVID-19 vaccination is enforced.&#xD;
+Secure passage of amendments to the Canada Labour Code to provide 10 days of paid sick leave for all federally regulated workers, and convene provinces and territories to develop a national action plan to legislate sick leave across the country while respecting provincial-territorial jurisdiction and the unique needs of small business owners.&#xD;
+Complete the development of a right-to-disconnect policy, in consultation with federally regulated employers and labour groups.&#xD;
+Move forward with and secure passage of amendments to the Canada Labour Code to include mental health as a specific element of occupational health and safety and to require federally regulated employers to take preventative steps to address workplace stress and injury.&#xD;
+Amend the Canada Labour Code to provide up to five new paid leave days for federally regulated employees who experience a miscarriage or still birth, and to strengthen provisions to better support working women who need to be re-assigned during pregnancy and while breast-feeding.&#xD;
+Continue working with provincial and territorial governments to fully implement the International Labour Organization Violence and Harassment Convention, 2019, and continue to support employers and unions to strengthen harassment and violence prevention measures in federally regulated workplaces.&#xD;
+Lead the efforts to provide free menstrual products in federally regulated workplaces to help ensure women’s participation in work.&#xD;
+With the support of the President of the Treasury Board, the Minister of Housing and Diversity and Inclusion and the Minister for Women and Gender Equality and Youth, work to accelerate the review of the Employment Equity Act and ensure timely implementation of improvements.&#xD;
+Modernize the Federal Contractors Program to ensure federal contractors are paying their employees the federal minimum wage in order to fulfill commitments in respect of Environmental, Social and Governance leadership and government procurement.&#xD;
+Continue advancing the implementation of the Pay Equity Act across federally regulated workplaces.&#xD;
+Create a fairer collective bargaining process in federally regulated workplaces by advancing legislation to prohibit the use of replacement workers when a unionized employer has locked out its employees.&#xD;
+Support the Deputy Prime Minister and Minister of Finance to introduce a Labour Mobility Tax Credit to allow workers in the building and construction trades to expense eligible travel and temporary relocation costs.&#xD;
+Work with the Minister of Natural Resources in moving forward with legislation and comprehensive action to achieve a Just Transition. This work will be guided by consultations with workers, unions, Indigenous Peoples, employers, communities, and provinces and territories to support the future and livelihood of workers and their communities in the transition to a low carbon economy. You will be supported by the Minister of Employment, Workforce Development and Disability Inclusion and Ministers responsible for Regional Development Agencies.&#xD;
+Work to advance amendments that entitle workers employed by digital platforms to job protections under the Canada Labour Code. This work will also include collaborating with the Minister of Employment, Workforce Development and Disability Inclusion to ensure better benefits and supports for these workers.&#xD;
+With the support of the Minister of Public Safety, the Minister of Public Services and Procurement and the Minister of International Trade, Export Promotion, Small Business and Economic Development, introduce legislation to eradicate forced labour from Canadian supply chains and ensure that Canadian businesses operating abroad do not contribute to human rights abuses.&#xD;
+As Minister, you are also responsible for actively engaging with your Cabinet and Caucus colleagues. As we deliver on our platform commitments, it will be important that members of the Ministry continue to collaborate and work constructively to support rigorous and productive Cabinet decision-making. I expect you to support your colleagues in delivering their commitments, leveraging the expertise of your department and your own lived experiences.&#xD;
+&#xD;
+To best achieve results for Canadians, Ministers must be rigorous and coordinated in our approach to implementation. I would therefore ask that you return to me with a proposed approach for the delivery of your mandate commitments, including priorities for early implementation. Furthermore, to ensure we are accountable for our work, I will be asking you to publicly report to me, and all Canadians, on your progress toward these commitments on a regular basis.&#xD;
+&#xD;
+As we have been reminded throughout the pandemic, adapting to change is not only something government should do, it is something government must do. As you work to fulfil our commitments, I expect you to actively consider new ideas and issues as they emerge, whether through public engagement, your work with Parliamentarians or advice from the public service. I also expect you to work with your Deputy Minister to assess priorities on a continual basis as we build a better future for all Canadians. In addition to achieving results, you are responsible for overseeing the work of your department and ensuring the effective operation of your portfolio.&#xD;
+&#xD;
+As you staff your office and implement outreach and recruitment strategies for federally appointed leadership positions and boards, I ask that you uphold the principles of equity, diversity and inclusion. This helps ensure that federal workplaces are dynamic and reflective of the Canadians we serve. You will also ensure your Minister’s office and portfolio are reflective of our commitment to healthy and safe workplaces.&#xD;
+&#xD;
+Canadians expect us to work hard, speak truthfully and be committed to advancing their interests and aspirations. When we make mistakes – as we all will – Canadians expect us to acknowledge them, and most importantly, to learn from them.&#xD;
+&#xD;
+I know I can count on you to fulfill the important responsibilities entrusted in you, and to turn to me, and the Deputy Prime Minister, early and often to support you in your role as Minister.&#xD;
+&#xD;
+Sincerely,&#xD;
+&#xD;
+Prime Minister of Canada signature&#xD;
+&#xD;
+Rt. Hon. Justin Trudeau, P.C., M.P.&#xD;
+Prime Minister of Canada</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Minister of Seniors Mandate Letter" id="id-6f0024dc0b71454c9b9136e86a10e624">
+      <documentation>https://pm.gc.ca/en/mandate-letters/2021/12/16/minister-seniors-mandate-letter&#xD;
+&#xD;
+Dear Minister Khera:&#xD;
+&#xD;
+Thank you for agreeing to serve Canadians as Minister of Seniors.&#xD;
+&#xD;
+From the beginning of this pandemic, Canadians have faced a once-in-a-century challenge. And through it all, from coast to coast to coast, people have met the moment. When it mattered most, Canadians adapted, helped one another, and stayed true to our values of compassion, courage and determination. That is what has defined our path through this pandemic so far. And that is what will pave our way forward.&#xD;
+&#xD;
+During a difficult time, Canadians made a democratic choice. They entrusted us to finish the fight against COVID-19 and support the recovery of a strong middle class. At the same time, they also gave us clear direction: to take bold, concrete action to build a healthier, more resilient future. That is what Canadians have asked us to do and it is exactly what our Government is ready to deliver. We will work to build that brighter future through continued collaboration, engagement, and the use of science and evidence-based decision-making. With an unwavering focus on delivering results, we will work constructively with Parliamentarians and maintain our strong partnerships with provincial, territorial and municipal governments and Indigenous partners. This decade has had an incredibly difficult start, but this is the moment to rebuild a more resilient, inclusive and stronger country for everyone.&#xD;
+&#xD;
+The science is clear. Canadians have been clear. We must not only continue taking real climate action, we must also move faster and go further. As Canadians are increasingly experiencing across the country, climate change is an existential threat. Building a cleaner, greener future will require a sustained and collaborative effort from all of us. As Minister, I expect you to seek opportunities within your portfolio to support our whole-of-government effort to reduce emissions, create clean jobs and address the climate-related challenges communities are already facing.&#xD;
+&#xD;
+This year, Canadians were horrified by the discovery of unmarked graves and burial sites near former residential schools. These discoveries underscore that we must move faster on the path of reconciliation with First Nations, Inuit and Métis Peoples. We know that reconciliation cannot come without truth and our Government will continue to invest in that truth. As Ministers, each of us has a duty to further this work, both collectively and as individuals. Consequently, I am directing every Minister to implement the United Nations Declaration on the Rights of Indigenous Peoples and to work in partnership with Indigenous Peoples to advance their rights.&#xD;
+&#xD;
+We must continue to address the profound systemic inequities and disparities that remain present in the core fabric of our society, including our core institutions. To this effect, it is essential that Canadians in every region of the country see themselves reflected in our Government’s priorities and our work. As Minister, I expect you to include and collaborate with various communities, and actively seek out and incorporate in your work, the diverse views of Canadians. This includes women, Indigenous Peoples, Black and racialized Canadians, newcomers, faith-based communities, persons with disabilities, LGBTQ2 Canadians, and, in both official languages.&#xD;
+&#xD;
+Across our work, we remain committed to ensuring that public policies are informed and developed through an intersectional lens, including applying frameworks such as Gender-based Analysis Plus (GBA Plus) and the quality of life indicators in decision-making.&#xD;
+&#xD;
+Canadians continue to rely on journalists and journalism for accurate and timely news. I expect you to maintain professional and respectful relationships with journalists to ensure that Canadians are well informed and have the information they need to keep themselves and their families safe.&#xD;
+&#xD;
+Throughout the course of the pandemic, Canadians and their governments have adapted to new realities. Governments must draw on lessons learned from the pandemic to further adapt and develop more agile and effective ways to serve Canadians. To this end, I expect all Ministers to evaluate ways we can update our practices to ensure our Government continues to meet the challenges of today and tomorrow.&#xD;
+&#xD;
+The success of this Parliament will require Parliamentarians, both in the House of Commons and the Senate, to work together across all parties to get big things done for Canadians. I expect you to maintain constructive relationships with your Opposition Critics and coordinate any legislation with the Leader of the Government in the House of Commons. As Minister, you are accountable to Parliament both individually, for your style of leadership and the performance of your responsibilities, and collectively, in support of our Ministry and decisions taken by Cabinet. Open and Accountable Government sets out these core principles and the standards of conduct expected of you and your office. I expect you to familiarize yourself with this document, which outlines my expectations for each member of the Ministry.&#xD;
+&#xD;
+Our platform lays out an ambitious agenda. While finishing the fight against the pandemic must remain our central focus, we must continue building a strong middle class and work toward a better future where everyone has a real and fair chance at success and no one is left behind.&#xD;
+&#xD;
+As Minister of Seniors, your immediate priority is to support and help advance the Government’s commitment to increase Old Age Security and the Guaranteed Income Supplement. I also expect you to support the Minister of Health in improving the quality and availability of long-term care and to take concrete actions to support seniors who want to age at home. As well, you will continue to create opportunities for seniors to be more connected, supported, and active members of their communities through implementing the New Horizons for Seniors Program.&#xD;
+&#xD;
+To realize these objectives, I ask that you achieve results for Canadians by delivering the following commitments.&#xD;
+&#xD;
+Building on our commitment to old age security, increase the Guaranteed Income Supplement by $500 for single seniors and $750 for couples starting at age 65.&#xD;
+Ensure seniors’ eligibility for the Guaranteed Income Supplement is not negatively impacted by receipt of the Canada Emergency Response Benefit (CERB) and the Canada Recovery Benefit (CRB).&#xD;
+Establish an expert panel to provide recommendations for establishing an Aging at Home Benefit. You will be supported by the Minister of Health in this work.&#xD;
+Assist community-based organizations in providing practical support that helps low-income and otherwise vulnerable seniors age in place, and support regional and national projects that help expand services that have already demonstrated results in helping seniors stay in their homes.&#xD;
+Work with the Minister of Families, Children and Social Development to provide seniors with a single point of access to a wide range of government services and benefits.&#xD;
+Continue to work with the Minister of Justice and Attorney General of Canada to strengthen Canada’s approach to elder abuse by finalizing the national definition of elder abuse, investing in better data collection and establishing new offences and penalties in the Criminal Code related to elder abuse.&#xD;
+Represent the Government of Canada at the Federal, Provincial and Territorial Ministers Responsible for Seniors Forum.&#xD;
+Continue leading work within Employment and Social Development Canada on seniors’ programming including the New Horizons for Seniors Program.&#xD;
+Support the Minister of Health in their work to improve the quality and availability of long-term care homes and beds. This includes working with provinces and territories to improve infection prevention and control measures, identify shared principles, and develop national standards to ensure seniors get the care they deserve.&#xD;
+As Minister, you are also responsible for actively engaging with your Cabinet and Caucus colleagues. As we deliver on our platform commitments, it will be important that members of the Ministry continue to collaborate and work constructively to support rigorous and productive Cabinet decision-making. I expect you to support your colleagues in delivering their commitments, leveraging the expertise of your department and your own lived experiences.&#xD;
+&#xD;
+To best achieve results for Canadians, Ministers must be rigorous and coordinated in our approach to implementation. I would therefore ask that you return to me with a proposed approach for the delivery of your mandate commitments, including priorities for early implementation. Furthermore, to ensure we are accountable for our work, I will be asking you to publicly report to me, and all Canadians, on your progress toward these commitments on a regular basis.&#xD;
+&#xD;
+As we have been reminded throughout the pandemic, adapting to change is not only something government should do, it is something government must do. As you work to fulfil our commitments, I expect you to actively consider new ideas and issues as they emerge, whether through public engagement, your work with Parliamentarians or advice from the public service. I also expect you to work with your Deputy Minister to assess priorities on a continual basis as we build a better future for all Canadians. In addition to achieving results, you are responsible for overseeing the work of your department and ensuring the effective operation of your portfolio.&#xD;
+&#xD;
+As you staff your office and implement outreach and recruitment strategies for federally appointed leadership positions and boards, I ask that you uphold the principles of equity, diversity and inclusion. This helps ensure that federal workplaces are dynamic and reflective of the Canadians we serve. You will also ensure your Minister’s office and portfolio are reflective of our commitment to healthy and safe workplaces.&#xD;
+&#xD;
+Canadians expect us to work hard, speak truthfully and be committed to advancing their interests and aspirations. When we make mistakes – as we all will – Canadians expect us to acknowledge them, and most importantly, to learn from them.&#xD;
+&#xD;
+I know I can count on you to fulfill the important responsibilities entrusted in you, and to turn to me, and the Deputy Prime Minister, early and often to support you in your role as Minister.&#xD;
+&#xD;
+Sincerely,&#xD;
+&#xD;
+Prime Minister of Canada signature&#xD;
+&#xD;
+Rt. Hon. Justin Trudeau, P.C., M.P.&#xD;
+Prime Minister of Canada</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Lettre de mandat de la ministre de l’Emploi, du Développement de la main-d’œuvre et de l’Inclusion des personnes en situation de handicap" id="id-6078cf8beb20460abca1a5c2a52ffeb5">
+      <documentation>https://pm.gc.ca/fr/lettres-de-mandat/2021/12/16/lettre-de-mandat-de-la-ministre-de-lemploi-du-developpement-de-la-main&#xD;
+&#xD;
+Madame la Ministre,&#xD;
+&#xD;
+Je vous remercie de continuer de servir les Canadiens en tant que ministre de l’Emploi, du Développement de la main-d’œuvre et de l’Inclusion des personnes en situation de handicap.&#xD;
+&#xD;
+Depuis le début de la pandémie, les Canadiens ont dû faire face à un défi qui ne se produit qu’une fois par siècle. Malgré tout, les gens ont su se montrer à la hauteur, et ce, d’un océan à l’autre. Lorsque cela comptait le plus, les Canadiens se sont adaptés, se sont entraidés et ont fait preuve de compassion, de courage et de détermination, autant de valeurs qui nous sont chères. C’est ce qui a défini jusqu’à présent notre parcours dans cette pandémie. Et c’est ce qui nous permettra d’aller de l’avant.&#xD;
+&#xD;
+En cette période difficile, les Canadiens se sont prononcés de façon démocratique. Ils nous ont confié le soin de terminer la lutte contre la COVID-19 et de soutenir le rétablissement d’une classe moyenne forte. Ils nous ont, par le fait même, donné une orientation claire : prendre des mesures audacieuses et concrètes afin de bâtir un avenir où la santé et la résilience prévaudront. C’est ce que les Canadiens nous ont demandé, et c’est exactement ce que notre gouvernement est prêt à faire. Nous nous emploierons à bâtir cet avenir meilleur en continuant de miser sur la collaboration, la mobilisation, la science et la prise de décisions fondées sur des données probantes. En nous appliquant sans relâche à obtenir des résultats, nous travaillerons de manière constructive avec les parlementaires et maintiendrons nos solides partenariats avec les gouvernements provinciaux et territoriaux, les administrations municipales et nos partenaires autochtones. Le début de cette nouvelle décennie a été extrêmement difficile, mais le moment est venu de rebâtir un pays plus résilient, plus inclusif et plus fort pour tous.&#xD;
+&#xD;
+La science est claire. Les Canadiens ont été clairs. Nous devons non seulement continuer d’agir concrètement à l’égard des changements climatiques, mais aussi le faire plus vite et aller plus loin à ce chapitre. Comme les Canadiens le constatent de plus en plus partout dans le pays, les changements climatiques constituent une menace existentielle. Afin de bâtir un avenir plus propre et plus vert, il nous faudra tous faire des efforts soutenus et concertés. Je m’attends à ce que vous cherchiez au sein de votre portefeuille, en votre qualité de ministre, des façons de soutenir nos efforts pangouvernementaux visant à réduire les émissions de gaz à effet de serre, à créer des emplois propres et à relever les défis liés au climat avec lesquels les collectivités composent déjà.&#xD;
+&#xD;
+Cette année, les Canadiens ont été horrifiés par la découverte de sépultures non identifiées près d’anciens pensionnats autochtones. Ces découvertes nous rappellent la nécessité d’accélérer la réconciliation avec les Premières Nations, les Inuits et les Métis. Nous savons que cette réconciliation ne peut se faire sans l’obtention de la vérité, et le gouvernement continuera d’investir dans la quête de cette vérité. À titre de ministres, nous avons le devoir de faire progresser les travaux à cet égard, tant collectivement qu’individuellement. Par conséquent, je demande à chaque ministre de mettre en œuvre la Déclaration des Nations Unies sur les droits des peuples autochtones et de travailler en partenariat avec les Autochtones pour faire mieux reconnaître leurs droits.&#xD;
+&#xD;
+Nous devons continuer de nous attaquer aux inégalités et aux disparités systémiques profondes qui demeurent présentes dans notre tissu social, notamment au sein de nos institutions fondamentales. À cet égard, il faut que les Canadiens de chacune des régions du pays puissent se reconnaître dans les priorités de notre gouvernement et dans ce que nous réalisons. Je m’attends à ce que vous collaboriez, en votre qualité de ministre, avec diverses communautés dans un souci d’inclusion et cherchiez activement à obtenir les divers points de vue des Canadiens et à les intégrer dans votre travail. Cela comprend les femmes, les Autochtones, les Canadiens noirs et racisés, les nouveaux arrivants, les groupes confessionnels, les personnes en situation de handicap et les Canadiens LGBTQ2. Bien entendu, le tout doit se faire dans le respect des deux langues officielles.&#xD;
+&#xD;
+Dans tous les aspects de notre travail, nous continuerons de nous assurer que les politiques publiques sont élaborées dans une perspective intersectionnelle, notamment par l’application de l’analyse comparative entre les sexes plus (ACS Plus) et des indicateurs de qualité de vie dans la prise de décisions.&#xD;
+&#xD;
+Les Canadiens continuent de compter sur les journalistes et le journalisme pour obtenir des nouvelles exactes et en temps opportun. Je m’attends à ce que vous entreteniez des relations professionnelles et respectueuses avec les journalistes afin que les Canadiens soient bien informés et disposent des informations dont ils ont besoin pour assurer leur sécurité et celle de leur famille.&#xD;
+&#xD;
+Tout au long de la pandémie, les Canadiens et leurs gouvernements se sont adaptés à de nouvelles réalités. Les gouvernements doivent s’inspirer des leçons tirées de la pandémie pour s’adapter davantage et proposer des moyens plus flexibles et efficaces de servir les Canadiens. À cette fin, je m’attends à ce que tous les ministres se penchent sur des moyens d’actualiser nos façons de faire afin que le gouvernement puisse continuer de relever les défis d’aujourd’hui et de demain.&#xD;
+&#xD;
+Pour assurer le succès de la présente législature, il faudra que les parlementaires, tant à la Chambre des communes qu’au Sénat, travaillent ensemble, tous partis confondus, dans le but de réaliser de grandes choses pour les Canadiens. Je m’attends à ce que vous entreteniez des relations constructives avec les porte-paroles de l’opposition, et à ce que vous coordonniez toute mesure législative avec le leader du gouvernement à la Chambre des communes. Dans votre rôle de ministre, vous êtes responsable devant le Parlement à la fois individuellement, de votre style de leadership et de l’accomplissement de vos responsabilités, et collectivement, à l’appui du Conseil des ministres et des décisions prises par le Cabinet. Le document Pour un gouvernement ouvert et responsable énonce ces principes fondamentaux et les normes de conduite que votre cabinet et vous devez respecter. Je m’attends à ce que vous vous familiarisiez avec ce document, qui décrit mes attentes à l’égard de chaque membre du Conseil des ministres.&#xD;
+&#xD;
+Les engagements pris dans notre programme électoral sont ambitieux. L’achèvement de la lutte contre la pandémie doit demeurer au centre de nos préoccupations; toutefois, nous devons continuer de bâtir une classe moyenne forte et un avenir meilleur où chacun a une chance réelle et équitable de réussir et où personne n’est laissé pour compte.&#xD;
+&#xD;
+En tant que ministre de l’Emploi, du Développement de la main-d’œuvre et de l’Inclusion des personnes en situation de handicap, votre priorité immédiate est de soutenir les travailleurs dont le travail a été interrompu par des mesures de santé publique. Je m’attends à ce que vous mettiez en place un meilleur système d’assurance-emploi qui soit plus inclusif, à ce que vous meniez à bien et fassiez progresser les premières mesures importantes prévues dans le Plan d’action pour l’inclusion des personnes en situation de handicap, et à ce que vous aidiez les travailleurs et les collectivités à prospérer au moment où nous passons à la carboneutralité, notamment par le lancement d’un centre de formation pour les emplois propres.&#xD;
+&#xD;
+Pour atteindre ces objectifs, je vous demande d’obtenir des résultats pour les Canadiens en vous acquittant des engagements suivants.&#xD;
+&#xD;
+Travailler à l’adoption et à la mise en œuvre d’une nouvelle Prestation canadienne pour les travailleurs en cas de confinement pour soutenir les travailleurs touchés par une interruption de travail découlant des mesures de santé publique.&#xD;
+Travailler avec le ministre de la Santé, les provinces et les territoires afin de faire former jusqu’à 50 000 nouveaux préposés aux services de soutien à la personne.&#xD;
+Élaborer et mettre en œuvre une loi sur la prestation canadienne pour les personnes en situation de handicap, ainsi qu'une prestation canadienne pour les personnes en situation de handicap à faible revenu qui sont en âge de travailler.&#xD;
+Tenir compte des commentaires reçus dans le cadre des consultations sur l’avenir du programme d’assurance-emploi, présenter et commencer à mettre en œuvre d’ici l’été 2022 un plan de modernisation du programme d’assurance-emploi adapté au 21e siècle, établir un système plus robuste et plus inclusif dont tous les travailleurs peuvent bénéficier, y compris les travailleurs saisonniers et les travailleurs à l’emploi des plateformes numériques, s’assurer que le système est plus simple et qu’il est répond mieux aux besoins des travailleurs et des employeurs. En plus de prévoir le prolongement des prestations de maladie (de 15 à 26 semaines), le plan comprend :&#xD;
+une nouvelle prestation d’assurance-emploi pour les travailleurs autonomes canadiens, qui fournirait un soutien en cas de chômage comparable à celui qu’offre l’assurance-emploi pouvant s’étendre sur 26 semaines;&#xD;
+une nouvelle prestation de 15 semaines pour les parents adoptifs;&#xD;
+une nouvelle prestation d’assurance-carrière pour offrir aux travailleurs de longue date qui ont perdu leur emploi un revenu d’emploi additionnel pendant qu’ils tentent de réintégrer le marché du travail;&#xD;
+la prise en compte des réalités des artistes et des travailleurs du secteur de la culture.&#xD;
+Finaliser et rendre public le Plan d’action pour l’inclusion des personnes en situation de handicap, en consultation avec la communauté des personnes en situation de handicap. Ce Plan comprend des mesures immédiates dans des secteurs importants comme la sécurité financière et l’emploi et prévoit la création d’espaces inclusifs pour les personnes en situation de handicap et l’adoption d’une approche moderne et d’une définition commune à l’égard de l’invalidité dans l’ensemble du gouvernement du Canada. En plus des mesures qui seront instaurées par d’autres ministres, les mesures à prendre comprennent les suivantes :&#xD;
+Mettre en œuvre une stratégie d’emploi pour les Canadiens en situation de handicap;&#xD;
+Entreprendre un examen complet de l’accès aux programmes d’invalidité fédéraux, notamment pour les personnes ayant des problèmes de santé mentale;&#xD;
+Soutenir les organisations nationales de personnes en situation de handicap afin de renforcer leurs capacités et contribuer aux efforts visant à éliminer les obstacles systémiques;&#xD;
+Mener à bien notre engagement à financer de façon permanente les services de soutien assurant un accès équitable à la lecture et à d’autres œuvres publiées pour les Canadiens incapables de lire des imprimés;&#xD;
+Mettre en œuvre la Loi canadienne sur l’accessibilité et harmoniser les normes en matière d’accessibilité au Canada.&#xD;
+Éliminer définitivement les intérêts sur les prêts d’études canadiens et les prêts canadiens aux apprentis. Faire passer à 50 000 $ le seuil du Programme d’aide au remboursement pour les étudiants emprunteurs qui sont célibataires et apporter les modifications appropriées aux seuils pour les familles de diverses tailles. Et permettre aux nouveaux parents de suspendre le remboursement de leurs prêts étudiants jusqu’à ce que leur plus jeune enfant ait cinq ans.&#xD;
+Faire passer à 50 % l’effacement maximal de la dette auquel les médecins de famille, les résidents en médecine familiale, les infirmiers praticiens ou les infirmiers travaillant en régions rurales ou éloignées sont admissibles en vertu du Programme canadien de dispense de remboursement des prêts d’études. Élargir la liste actuelle des professionnels. Et entreprendre un examen pour s’assurer que les communautés rurales sont pleinement admissibles au programme afin d’améliorer l’accès aux soins de santé et aux services sociaux dans ces communautés.&#xD;
+Pour soutenir l’avenir et la qualité de vie des travailleurs et de leurs communautés dans le cadre de la transition vers une économie à faibles émissions de carbone :&#xD;
+Aider le ministre des Ressources naturelles et le ministre du Travail à favoriser l'adoption d’un projet de loi et de mesures exhaustives pour assurer une transition équitable. Ce travail s’appuiera sur les consultations menées auprès de travailleurs, de syndicats, de peuples autochtones, d’employeurs, de communautés, de provinces et de territoires;&#xD;
+Lancer un Centre de formation pour les emplois propres afin d’aider les travailleurs de tous les secteurs à mettre à niveau leurs compétences ou à en acquérir de nouvelles pour être à la fine pointe de l’industrie du carbone à zéro émission;&#xD;
+Restructurer et mettre en œuvre l’Allocation canadienne pour la formation;&#xD;
+Combler les lacunes en matière de formation et de perfectionnement afin que tous les travailleurs canadiens puissent profiter des débouchés durables offerts par l’industrie des batteries.&#xD;
+Doubler le financement du Programme pour la formation et l’innovation en milieu syndical pour financer davantage de possibilités de formation en apprentissage et davantage de partenariats concernant les métiers du Sceau rouge partout au Canada, et pour accroître la participation de populations plus diverses, notamment des femmes, des Autochtones, des nouveaux arrivants, des personnes en situation de handicap, des Noirs et des Canadiens racisés. Continuer à faire la promotion du Service canadien d’apprentissage en partenariat avec les provinces, les territoires, les employeurs et les syndicats pour que les apprentis du Sceau rouge aient suffisamment d’occasions d’acquérir de l’expérience professionnelle, notamment auprès de petits et moyens employeurs, pour terminer leur formation à temps et trouver des emplois bien rémunérés.&#xD;
+Continuer à soutenir le travail de la campagne nationale visant à promouvoir les métiers spécialisés comme des carrières de premier choix pour les jeunes et les populations diverses.&#xD;
+Avec le ministre de l’Immigration, des Réfugiés et de la Citoyenneté, établir un système d’employeur de confiance pour les entreprises canadiennes embauchant des travailleurs étrangers temporaires et, dans cadre de l’amélioration du Volet des talents mondiaux du Programme des travailleurs étrangers temporaires, simplifier le renouvellement des permis, faire respecter le délai de traitement de deux semaines et créer une ligne d’assistance pour les employeurs. Continuer de travailler avec les provinces, les territoires et les organismes de réglementation pour améliorer la reconnaissance des titres de compétences étrangers.&#xD;
+Avec l’appui de la ministre de l’Agriculture et de l’Agroalimentaire, mettre en œuvre des permis de travail sectoriels et renforcer le régime d’inspection pour assurer la santé et la sécurité des travailleurs étrangers temporaires.&#xD;
+Aider la ministre de l’Agriculture et de l’Agroalimentaire à élaborer une stratégie en matière de main-d’œuvre dans le secteur agricole pour combler les pénuries de main-d’œuvre chroniques et persistantes dans les secteurs de l’agriculture et de la transformation des aliments à court et long terme.&#xD;
+Faciliter l’accès des femmes et des membres de groupes vulnérables à la formation en exigeant des entreprises bénéficiant du Programme de solutions pour la main-d’œuvre sectorielle qu’elles prévoient des mesures de soutien globales.&#xD;
+Appuyer la ministre des Femmes et de l’Égalité des genres et de la Jeunesse dans le processus d’évaluation de l’ACS Plus afin d’améliorer le cadre et les paramètres de cet outil d’analyse, en portant une attention particulière à l’analyse intersectionnelle de diverses caractéristiques, parmi lesquelles l’ethnicité, l’identité autochtone, la ruralité, les handicaps et l’identité sexuelle.&#xD;
+En tant que ministre, vous devez également collaborer activement avec vos collègues du Cabinet et du caucus. Pour remplir nos engagements, il faudra que les membres du Conseil des ministres continuent de collaborer et de travailler de manière constructive pour soutenir un processus décisionnel rigoureux et productif au sein du Cabinet. Je m’attends à ce que vous aidiez vos collègues à s’acquitter de leurs engagements, notamment en tirant parti de l’expertise de votre ministère et de vos propres expériences.&#xD;
+&#xD;
+Pour que les Canadiens obtiennent les meilleurs résultats possible, les ministres doivent faire preuve de rigueur et coordonner leurs efforts de mise en œuvre. Je vous prie donc de m’indiquer la démarche que vous entendez suivre pour réaliser les engagements liés à votre mandat, ainsi que les priorités que vous comptez mettre en œuvre dans les plus brefs délais. De plus, pour que nous soyons responsables de notre travail, je vous demanderai de me communiquer publiquement, ainsi qu’à tous les Canadiens, les progrès accomplis dans la réalisation de ces engagements, et ce, de façon périodique.&#xD;
+&#xD;
+Comme on nous l’a rappelé tout au long de la pandémie, il est non seulement souhaitable mais aussi impératif que le gouvernement s’adapte au changement. Alors que vous vous emploierez à concrétiser nos engagements, je m’attends à ce que vous preniez activement en considération les nouvelles idées et questions qui se font jour, que ce soit à la lumière de consultations menées auprès de la population, de votre travail avec les parlementaires ou de conseils formulés par la fonction publique. Je m’attends également à ce que vous travailliez avec votre sous-ministre pour réévaluer sans cesse les priorités à mesure que nous bâtissons un avenir meilleur pour tous les Canadiens. En plus de l’atteinte des résultats, vous êtes responsable de superviser le travail de votre ministère et de veiller au bon fonctionnement de votre portefeuille.&#xD;
+&#xD;
+Je vous demande de respecter les principes de l’équité, de la diversité et de l’inclusion lorsque vous embaucherez du personnel pour votre cabinet et mettrez en œuvre des stratégies d’information et de recrutement pour les postes de direction et de membres de conseils dont les titulaires sont nommés par le gouvernement fédéral. Nous contribuerons ainsi à faire en sorte que les milieux de travail au gouvernement fédéral soient dynamiques et représentatifs de la population que nous servons. Vous devez également veiller à ce que votre cabinet et votre portefeuille ministériel tiennent compte de notre engagement relativement à des milieux de travail sains et sécuritaires.&#xD;
+&#xD;
+Les Canadiens veulent que nous travaillions fort, que nous parlions avec franchise et que nous ayons à cœur de promouvoir leurs intérêts et aspirations. Lorsque nous commettrons des erreurs, et nous le ferons tous, les Canadiens s’attendent à ce que nous les reconnaissions et, surtout, à ce que nous en tirions des leçons.&#xD;
+&#xD;
+Je sais que je peux compter sur vous pour vous acquitter des importantes responsabilités qui vous sont confiées. Sachez que vous pouvez me consulter ainsi que la vice-première ministre, dès maintenant et souvent, pour que nous puissions vous soutenir dans votre rôle de ministre.&#xD;
+&#xD;
+Je vous prie d’agréer, Madame la Ministre, l’expression de ma considération respectueuse.&#xD;
+&#xD;
+Le très hon. Justin Trudeau, c.p., député&#xD;
+Premier ministre du Canada&#xD;
+&#xD;
+*Cette lettre de mandat a été signée par le premier ministre dans la première langue officielle de la ministre.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Lettre de mandat de la ministre de la Famille, des Enfants et du Développement social" id="id-7ce8d536df8f4113ad40ea9e3d8649bb">
+      <documentation>https://pm.gc.ca/fr/lettres-de-mandat/2021/12/16/lettre-de-mandat-de-la-ministre-de-la-famille-des-enfants-et-du&#xD;
+&#xD;
+Madame la Ministre,&#xD;
+&#xD;
+Je vous remercie d’avoir accepté de servir les Canadiens en tant que ministre de la Famille, des Enfants et du Développement social.&#xD;
+&#xD;
+Depuis le début de la pandémie, les Canadiens ont dû faire face à un défi qui ne se produit qu’une fois par siècle. Malgré tout, les gens ont su se montrer à la hauteur, et ce, d’un océan à l’autre. Lorsque cela comptait le plus, les Canadiens se sont adaptés, se sont entraidés et ont fait preuve de compassion, de courage et de détermination, autant de valeurs qui nous sont chères. C’est ce qui a défini jusqu’à présent notre parcours dans cette pandémie. Et c’est ce qui nous permettra d’aller de l’avant.&#xD;
+&#xD;
+En cette période difficile, les Canadiens se sont prononcés de façon démocratique. Ils nous ont confié le soin de terminer la lutte contre la COVID-19 et de soutenir le rétablissement d’une classe moyenne forte. Ils nous ont, par le fait même, donné une orientation claire : prendre des mesures audacieuses et concrètes afin de bâtir un avenir où la santé et la résilience prévaudront. C’est ce que les Canadiens nous ont demandé, et c’est exactement ce que notre gouvernement est prêt à faire. Nous nous emploierons à bâtir cet avenir meilleur en continuant de miser sur la collaboration, la mobilisation, la science et la prise de décisions fondées sur des données probantes. En nous appliquant sans relâche à obtenir des résultats, nous travaillerons de manière constructive avec les parlementaires et maintiendrons nos solides partenariats avec les gouvernements provinciaux et territoriaux, les administrations municipales et nos partenaires autochtones. Le début de cette nouvelle décennie a été extrêmement difficile, mais le moment est venu de rebâtir un pays plus résilient, plus inclusif et plus fort pour tous.&#xD;
+&#xD;
+La science est claire. Les Canadiens ont été clairs. Nous devons non seulement continuer d’agir concrètement à l’égard des changements climatiques, mais aussi le faire plus vite et aller plus loin à ce chapitre. Comme les Canadiens le constatent de plus en plus partout dans le pays, les changements climatiques constituent une menace existentielle. Afin de bâtir un avenir plus propre et plus vert, il nous faudra tous faire des efforts soutenus et concertés. Je m’attends à ce que vous cherchiez au sein de votre portefeuille, en votre qualité de ministre, des façons de soutenir nos efforts pangouvernementaux visant à réduire les émissions de gaz à effet de serre, à créer des emplois propres et à relever les défis liés au climat avec lesquels les collectivités composent déjà.&#xD;
+&#xD;
+Cette année, les Canadiens ont été horrifiés par la découverte de sépultures non identifiées près d’anciens pensionnats autochtones. Ces découvertes nous rappellent la nécessité d’accélérer la réconciliation avec les Premières Nations, les Inuits et les Métis. Nous savons que cette réconciliation ne peut se faire sans l’obtention de la vérité, et le gouvernement continuera d’investir dans la quête de cette vérité. À titre de ministres, nous avons le devoir de faire progresser les travaux à cet égard, tant collectivement qu’individuellement. Par conséquent, je demande à chaque ministre de mettre en œuvre la Déclaration des Nations Unies sur les droits des peuples autochtones et de travailler en partenariat avec les Autochtones pour faire mieux reconnaître leurs droits.&#xD;
+&#xD;
+Nous devons continuer de nous attaquer aux inégalités et aux disparités systémiques profondes qui demeurent présentes dans notre tissu social, notamment au sein de nos institutions fondamentales. À cet égard, il faut que les Canadiens de chacune des régions du pays puissent se reconnaître dans les priorités de notre gouvernement et dans ce que nous réalisons. Je m’attends à ce que vous collaboriez, en votre qualité de ministre, avec diverses communautés dans un souci d’inclusion et cherchiez activement à obtenir les divers points de vue des Canadiens et à les intégrer dans votre travail. Cela comprend les femmes, les Autochtones, les Canadiens noirs et racisés, les nouveaux arrivants, les groupes confessionnels, les personnes en situation de handicap et les Canadiens LGBTQ2. Bien entendu, le tout doit se faire dans le respect des deux langues officielles.&#xD;
+&#xD;
+Dans tous les aspects de notre travail, nous continuerons de nous assurer que les politiques publiques sont élaborées dans une perspective intersectionnelle, notamment par l’application de l’analyse comparative entre les sexes plus (ACS Plus) et des indicateurs de qualité de vie dans la prise de décisions.&#xD;
+&#xD;
+Les Canadiens continuent de compter sur les journalistes et le journalisme pour obtenir des nouvelles exactes et en temps opportun. Je m’attends à ce que vous entreteniez des relations professionnelles et respectueuses avec les journalistes afin que les Canadiens soient bien informés et disposent des informations dont ils ont besoin pour assurer leur sécurité et celle de leur famille.&#xD;
+&#xD;
+Tout au long de la pandémie, les Canadiens et leurs gouvernements se sont adaptés à de nouvelles réalités. Les gouvernements doivent s’inspirer des leçons tirées de la pandémie pour s’adapter davantage et proposer des moyens plus flexibles et efficaces de servir les Canadiens. À cette fin, je m’attends à ce que tous les ministres se penchent sur des moyens d’actualiser nos façons de faire afin que le gouvernement puisse continuer de relever les défis d’aujourd’hui et de demain.&#xD;
+&#xD;
+Pour assurer le succès de la présente législature, il faudra que les parlementaires, tant à la Chambre des communes qu’au Sénat, travaillent ensemble, tous partis confondus, dans le but de réaliser de grandes choses pour les Canadiens. Je m’attends à ce que vous entreteniez des relations constructives avec les porte-paroles de l’opposition, et à ce que vous coordonniez toute mesure législative avec le leader du gouvernement à la Chambre des communes. Dans votre rôle de ministre, vous êtes responsable devant le Parlement à la fois individuellement, de votre style de leadership et de l’accomplissement de vos responsabilités, et collectivement, à l’appui du Conseil des ministres et des décisions prises par le Cabinet. Le document Pour un gouvernement ouvert et responsable énonce ces principes fondamentaux et les normes de conduite que votre cabinet et vous devez respecter. Je m’attends à ce que vous vous familiarisiez avec ce document, qui décrit mes attentes à l’égard de chaque membre du Conseil des ministres.&#xD;
+&#xD;
+Les engagements pris dans notre programme électoral sont ambitieux. L’achèvement de la lutte contre la pandémie doit demeurer au centre de nos préoccupations; toutefois, nous devons continuer de bâtir une classe moyenne forte et un avenir meilleur où chacun a une chance réelle et équitable de réussir et où personne n’est laissé pour compte.&#xD;
+&#xD;
+En tant que ministre de la Famille, des Enfants et du Développement social, votre priorité immédiate est de mettre en place un système pancanadien d’apprentissage et de garde des jeunes enfants qui permettra de réduire les frais exigés des parents, de créer plus de places de qualité, de recruter et de retenir des éducateurs qualifiés ainsi que de faire en sorte que tous les enfants bénéficient du meilleur départ possible dans la vie. Parallèlement, vous travaillerez avec des partenaires autochtones pour mettre en place un système d’apprentissage et de garde des jeunes enfants adapté à la culture autochtone. Par ailleurs, vous vous concentrerez sur la mise en œuvre du Fonds de relance des services communautaires afin d’aider les organismes de bienfaisance et les organismes sans but lucratif à s’adapter et à se moderniser, et vous veillerez à ce que Service Canada fournisse des services fiables et accessibles aux Canadiens, peu importe où ils vivent.&#xD;
+&#xD;
+Pour atteindre ces objectifs, je vous demande d’obtenir des résultats pour les Canadiens en vous acquittant des engagements suivants.&#xD;
+&#xD;
+Avec l’appui de la ministre des Femmes et de l’Égalité des genres et de la Jeunesse, continuer à promouvoir la création et la durabilité d’un système pancanadien d’apprentissage et de garde des jeunes enfants, en prenant les mesures suivantes :&#xD;
+Conclure les négociations avec les provinces et territoires restants, et mettre en œuvre des ententes :&#xD;
+Réduire de moitié en moyenne les frais des services de garde d’enfants réglementés d’ici la fin de 2022 partout au Canada à l’extérieur du Québec;&#xD;
+Abaisser à 10 $ par jour en moyenne les frais de services de garde d’enfants réglementés d’ici la fin de l’exercice 2025-2026 partout au Canada à l’extérieur du Québec;&#xD;
+Créer 250 000 places en garderie de haute qualité et embaucher 40 000 éducateurs et éducatrices de la petite enfance d’ici la fin de l’exercice 2025-2026;&#xD;
+Présenter un projet de loi sur la garde d’enfants pour renforcer et protéger le système pancanadien de garde des jeunes enfants;&#xD;
+Créer un Conseil consultatif national sur l’apprentissage et la garde des jeunes enfants;&#xD;
+Poursuivre le travail avec les provinces et territoires visant à réduire les frais des familles pour la garde d’enfants avant et après l’école;&#xD;
+S’assurer que le Secrétariat fédéral sur l’apprentissage et la garde des jeunes enfants dispose de toutes les ressources nécessaires et est pleinement fonctionnel d’ici le début de 2023.&#xD;
+Travailler avec les partenaires autochtones pour s’assurer que les jeunes enfants autochtones ont accès à un système d’apprentissage et de garde autochtone culturellement approprié qui répond aux besoins des familles autochtones peu importe où elles vivent, ce qui comprend veiller à ce qu’un plus grand nombre de familles autochtones aient accès à des programmes de grande qualité, créer 3 300 places en garderie et continuer à soutenir les services de garde avant et après l'école pour les enfants des Premières Nations dans les réserves.&#xD;
+Faire avancer la mise en œuvre du Fonds de relance des services communautaires pour aider les organismes de bienfaisance et à but non lucratif à s’adapter et à se moderniser au moment où ils se remettent de la pandémie.&#xD;
+Poursuivre la mise en place de la Stratégie d’innovation sociale et de finance sociale, y compris mettre pleinement en œuvre le Fonds de finance sociale et lancer le Conseil consultatif sur l’innovation sociale.&#xD;
+Grâce au déploiement de la Stratégie de réduction de la pauvreté du Canada et d’autres mesures, continuer de montrer la voie à suivre en ce qui touche la mise en œuvre du Programme de développement durable à l’horizon 2030 adopté par les Nations Unies.&#xD;
+Travailler avec la ministre de l’Agriculture et de l’Agroalimentaire et avec les provinces, les territoires, les municipalités, les partenaires autochtones et les intervenants à l’élaboration d’une politique nationale en matière d’alimentation dans les écoles et d’un programme national de repas nutritifs.&#xD;
+Travailler avec la ministre des Aînés pour fournir aux aînés un point d’accès unique à un vaste éventail de services et de prestations du gouvernement.&#xD;
+En tant que ministre responsable de Service Canada, vous dirigerez l’élaboration et la mise en œuvre de services et systèmes de versement des prestations modernes, sûrs et fiables pour les Canadiens et verrez à ce que tous les Canadiens admissibles y aient accès, peu importe où ils vivent.&#xD;
+Travailler avec la ministre du Revenu national à la mise en œuvre d’un système de paie électronique en temps réel, et veiller à ce que les entreprises de toutes tailles en bénéficient.&#xD;
+Augmenter la capacité et l’efficacité des organismes dirigés par des Noirs et au service des Noirs par une mise en œuvre continue de l’initiative Appuyer les communautés noires du Canada. Pour mener à bien cet engagement, vous aurez l’appui du ministre du Logement et de la Diversité et de l’Inclusion.&#xD;
+Travailler avec la ministre des Femmes et de l’Égalité des genres et de la Jeunesse pour s’assurer que la voix et les besoins des enfants soient pris en compte dans le programme de notre gouvernement au moment où il s’emploie à faire du Canada le meilleur endroit où grandir.&#xD;
+Travailler avec la ministre des Femmes et de l’Égalité des genres et de la Jeunesse et la ministre de la Santé mentale et des Dépendances et ministre associée de la Santé afin de veiller à ce que les enfants et les jeunes aient accès à des services de santé mentale pendant qu'ils se remettent des effets de la pandémie.&#xD;
+En tant que ministre, vous devez également collaborer activement avec vos collègues du Cabinet et du caucus. Pour remplir nos engagements, il faudra que les membres du Conseil des ministres continuent de collaborer et de travailler de manière constructive pour soutenir un processus décisionnel rigoureux et productif au sein du Cabinet. Je m’attends à ce que vous aidiez vos collègues à s’acquitter de leurs engagements, notamment en tirant parti de l’expertise de votre ministère et de vos propres expériences.&#xD;
+&#xD;
+Pour que les Canadiens obtiennent les meilleurs résultats possible, les ministres doivent faire preuve de rigueur et coordonner leurs efforts de mise en œuvre. Je vous prie donc de m’indiquer la démarche que vous entendez suivre pour réaliser les engagements liés à votre mandat, ainsi que les priorités que vous comptez mettre en œuvre dans les plus brefs délais. De plus, pour que nous soyons responsables de notre travail, je vous demanderai de me communiquer publiquement, ainsi qu’à tous les Canadiens, les progrès accomplis dans la réalisation de ces engagements, et ce, de façon périodique.&#xD;
+&#xD;
+Comme on nous l’a rappelé tout au long de la pandémie, il est non seulement souhaitable mais aussi impératif que le gouvernement s’adapte au changement. Alors que vous vous emploierez à concrétiser nos engagements, je m’attends à ce que vous preniez activement en considération les nouvelles idées et questions qui se font jour, que ce soit à la lumière de consultations menées auprès de la population, de votre travail avec les parlementaires ou de conseils formulés par la fonction publique. Je m’attends également à ce que vous travailliez avec votre sous-ministre pour réévaluer sans cesse les priorités à mesure que nous bâtissons un avenir meilleur pour tous les Canadiens. En plus de l’atteinte des résultats, vous êtes responsable de superviser le travail de votre ministère et de veiller au bon fonctionnement de votre portefeuille.&#xD;
+&#xD;
+Je vous demande de respecter les principes de l’équité, de la diversité et de l’inclusion lorsque vous embaucherez du personnel pour votre cabinet et mettrez en œuvre des stratégies d’information et de recrutement pour les postes de direction et de membres de conseils dont les titulaires sont nommés par le gouvernement fédéral. Nous contribuerons ainsi à faire en sorte que les milieux de travail au gouvernement fédéral soient dynamiques et représentatifs de la population que nous servons. Vous devez également veiller à ce que votre cabinet et votre portefeuille ministériel tiennent compte de notre engagement relativement à des milieux de travail sains et sécuritaires.&#xD;
+&#xD;
+Les Canadiens veulent que nous travaillions fort, que nous parlions avec franchise et que nous ayons à cœur de promouvoir leurs intérêts et aspirations. Lorsque nous commettrons des erreurs, et nous le ferons tous, les Canadiens s’attendent à ce que nous les reconnaissions et, surtout, à ce que nous en tirions des leçons.&#xD;
+&#xD;
+Je sais que je peux compter sur vous pour vous acquitter des importantes responsabilités qui vous sont confiées. Sachez que vous pouvez me consulter ainsi que la vice-première ministre, dès maintenant et souvent, pour que nous puissions vous soutenir dans votre rôle de ministre.&#xD;
+&#xD;
+Je vous prie d’agréer, Madame la Ministre, l’expression de ma considération respectueuse.&#xD;
+&#xD;
+Le très hon. Justin Trudeau, c.p., député&#xD;
+Premier ministre du Canada&#xD;
+&#xD;
+*Cette lettre de mandat a été signée par le premier ministre dans la première langue officielle de la ministre.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Lettre de mandat du ministre du Travail" id="id-0c08306c5ecd483ca37824356aca95a6">
+      <documentation>https://pm.gc.ca/fr/lettres-de-mandat/2021/12/16/lettre-de-mandat-du-ministre-du-travail&#xD;
+&#xD;
+Monsieur le Ministre,&#xD;
+&#xD;
+Je vous remercie d’avoir accepté de servir les Canadiens en tant que ministre du Travail.&#xD;
+&#xD;
+Depuis le début de la pandémie, les Canadiens ont dû faire face à un défi qui ne se produit qu’une fois par siècle. Malgré tout, les gens ont su se montrer à la hauteur, et ce, d’un océan à l’autre. Lorsque cela comptait le plus, les Canadiens se sont adaptés, se sont entraidés et ont fait preuve de compassion, de courage et de détermination, autant de valeurs qui nous sont chères. C’est ce qui a défini jusqu’à présent notre parcours dans cette pandémie. Et c’est ce qui nous permettra d’aller de l’avant.&#xD;
+&#xD;
+En cette période difficile, les Canadiens se sont prononcés de façon démocratique. Ils nous ont confié le soin de terminer la lutte contre la COVID-19 et de soutenir le rétablissement d’une classe moyenne forte. Ils nous ont, par le fait même, donné une orientation claire : prendre des mesures audacieuses et concrètes afin de bâtir un avenir où la santé et la résilience prévaudront. C’est ce que les Canadiens nous ont demandé, et c’est exactement ce que notre gouvernement est prêt à faire. Nous nous emploierons à bâtir cet avenir meilleur en continuant de miser sur la collaboration, la mobilisation, la science et la prise de décisions fondées sur des données probantes. En nous appliquant sans relâche à obtenir des résultats, nous travaillerons de manière constructive avec les parlementaires et maintiendrons nos solides partenariats avec les gouvernements provinciaux et territoriaux, les administrations municipales et nos partenaires autochtones. Le début de cette nouvelle décennie a été extrêmement difficile, mais le moment est venu de rebâtir un pays plus résilient, plus inclusif et plus fort pour tous.&#xD;
+&#xD;
+La science est claire. Les Canadiens ont été clairs. Nous devons non seulement continuer d’agir concrètement à l’égard des changements climatiques, mais aussi le faire plus vite et aller plus loin à ce chapitre. Comme les Canadiens le constatent de plus en plus partout dans le pays, les changements climatiques constituent une menace existentielle. Afin de bâtir un avenir plus propre et plus vert, il nous faudra tous faire des efforts soutenus et concertés. Je m’attends à ce que vous cherchiez au sein de votre portefeuille, en votre qualité de ministre, des façons de soutenir nos efforts pangouvernementaux visant à réduire les émissions de gaz à effet de serre, à créer des emplois propres et à relever les défis liés au climat avec lesquels les collectivités composent déjà.&#xD;
+&#xD;
+Cette année, les Canadiens ont été horrifiés par la découverte de sépultures non identifiées près d’anciens pensionnats autochtones. Ces découvertes nous rappellent la nécessité d’accélérer la réconciliation avec les Premières Nations, les Inuits et les Métis. Nous savons que cette réconciliation ne peut se faire sans l’obtention de la vérité, et le gouvernement continuera d’investir dans la quête de cette vérité. À titre de ministres, nous avons le devoir de faire progresser les travaux à cet égard, tant collectivement qu’individuellement. Par conséquent, je demande à chaque ministre de mettre en œuvre la Déclaration des Nations Unies sur les droits des peuples autochtones et de travailler en partenariat avec les Autochtones pour faire mieux reconnaître leurs droits.&#xD;
+&#xD;
+Nous devons continuer de nous attaquer aux inégalités et aux disparités systémiques profondes qui demeurent présentes dans notre tissu social, notamment au sein de nos institutions fondamentales. À cet égard, il faut que les Canadiens de chacune des régions du pays puissent se reconnaître dans les priorités de notre gouvernement et dans ce que nous réalisons. Je m’attends à ce que vous collaboriez, en votre qualité de ministre, avec diverses communautés dans un souci d’inclusion et cherchiez activement à obtenir les divers points de vue des Canadiens et à les intégrer dans votre travail. Cela comprend les femmes, les Autochtones, les Canadiens noirs et racisés, les nouveaux arrivants, les groupes confessionnels, les personnes en situation de handicap et les Canadiens LGBTQ2. Bien entendu, le tout doit se faire dans le respect des deux langues officielles.&#xD;
+&#xD;
+Dans tous les aspects de notre travail, nous continuerons de nous assurer que les politiques publiques sont élaborées dans une perspective intersectionnelle, notamment par l’application de l’analyse comparative entre les sexes plus (ACS Plus) et des indicateurs de qualité de vie dans la prise de décisions.&#xD;
+&#xD;
+Les Canadiens continuent de compter sur les journalistes et le journalisme pour obtenir des nouvelles exactes et en temps opportun. Je m’attends à ce que vous entreteniez des relations professionnelles et respectueuses avec les journalistes afin que les Canadiens soient bien informés et disposent des informations dont ils ont besoin pour assurer leur sécurité et celle de leur famille.&#xD;
+&#xD;
+Tout au long de la pandémie, les Canadiens et leurs gouvernements se sont adaptés à de nouvelles réalités. Les gouvernements doivent s’inspirer des leçons tirées de la pandémie pour s’adapter davantage et proposer des moyens plus flexibles et efficaces de servir les Canadiens. À cette fin, je m’attends à ce que tous les ministres se penchent sur des moyens d’actualiser nos façons de faire afin que le gouvernement puisse continuer de relever les défis d’aujourd’hui et de demain.&#xD;
+&#xD;
+Pour assurer le succès de la présente législature, il faudra que les parlementaires, tant à la Chambre des communes qu’au Sénat, travaillent ensemble, tous partis confondus, dans le but de réaliser de grandes choses pour les Canadiens. Je m’attends à ce que vous entreteniez des relations constructives avec les porte-paroles de l’opposition, et à ce que vous coordonniez toute mesure législative avec le leader du gouvernement à la Chambre des communes. Dans votre rôle de ministre, vous êtes responsable devant le Parlement à la fois individuellement, de votre style de leadership et de l’accomplissement de vos responsabilités, et collectivement, à l’appui du Conseil des ministres et des décisions prises par le Cabinet. Le document Pour un gouvernement ouvert et responsable énonce ces principes fondamentaux et les normes de conduite que votre cabinet et vous devez respecter. Je m’attends à ce que vous vous familiarisiez avec ce document, qui décrit mes attentes à l’égard de chaque membre du Conseil des ministres.&#xD;
+&#xD;
+Les engagements pris dans notre programme électoral sont ambitieux. L’achèvement de la lutte contre la pandémie doit demeurer au centre de nos préoccupations; toutefois, nous devons continuer de bâtir une classe moyenne forte et un avenir meilleur où chacun a une chance réelle et équitable de réussir et où personne n’est laissé pour compte.&#xD;
+&#xD;
+En tant que ministre du Travail, vos priorités immédiates sont de collaborer avec les milieux de travail sous réglementation fédérale pour veiller à ce que la vaccination contre la COVID-19 y soit obligatoire, et de modifier le Code canadien du travail de sorte que tous les travailleurs régis par les lois fédérales aient droit à 10 jours de congés de maladie payés. Je m’attends à ce que vous collaboriez avec les employeurs sous réglementation fédérale et les organisations représentant les travailleurs, ainsi qu’avec vos homologues provinciaux et territoriaux, pour rendre les lieux de travail plus sécuritaires et équitables pour toutes les personnes à l’échelle du pays et à ce que vous chapeautiez nos efforts visant à éliminer le travail forcé des chaînes d’approvisionnement canadiennes.&#xD;
+&#xD;
+Pour atteindre ces objectifs, je vous demande d’obtenir des résultats pour les Canadiens en vous acquittant des engagements suivants.&#xD;
+&#xD;
+Poursuivre la collaboration avec les lieux de travail sous réglementation fédérale pour veiller à ce que la vaccination obligatoire contre la COVID-19 soit mise en œuvre.&#xD;
+Obtenir l’adoption de modifications au Code canadien du travail pour accorder 10 jours de congé de maladie payés à tous les travailleurs sous réglementation fédérale, et convoquer les provinces et les territoires pour élaborer un plan d’action national dans le but de légiférer les congés de maladie dans tout le pays, tout en respectant les compétences provinciales et territoriales et les besoins uniques des propriétaires de petites entreprises.&#xD;
+Terminer l’élaboration d’une politique de droit de se déconnecter, de concert avec les employeurs sous réglementation fédérale et les groupes syndicaux.&#xD;
+Aller de l’avant et obtenir l’adoption de modifications au Code canadien du travail afin d’inclure la santé mentale en tant qu’élément particulier des normes de santé et de sécurité au travail et d’exiger des employeurs sous réglementation fédérale qu’ils prennent des mesures préventives visant à résoudre les problèmes de stress et les risques de blessures au travail.&#xD;
+Modifier le Code canadien du travail afin de prévoir jusqu’à cinq jours de congé payés de plus pour les employés sous réglementation fédérale qui vivent une situation de fausse couche ou de mort à la naissance, et de renforcer les dispositions visant à mieux soutenir les travailleuses qui doivent être réaffectées pendant la grossesse et l’allaitement.&#xD;
+Continuer à travailler avec les gouvernements provinciaux et territoriaux pour mettre pleinement en œuvre la Convention sur la violence et le harcèlement de 2019 de l’Organisation internationale du Travail et continuer à appuyer les employeurs et les syndicats pour renforcer les mesures de prévention du harcèlement et de la violence dans les lieux de travail de compétence fédérale.&#xD;
+Diriger les efforts pour fournir des produits d’hygiène féminine gratuits dans les lieux de travail sous réglementation fédérale afin de favoriser la participation des femmes au travail.&#xD;
+Avec l’appui de la présidente du Conseil du Trésor, du ministre du Logement et de la Diversité et de l’Inclusion et de la ministre des Femmes et de l’Égalité des genres et de la Jeunesse, travailler à accélérer l’examen de la Loi sur l’équité en matière d’emploi et assurer la mise en œuvre rapide des améliorations nécessaires.&#xD;
+Moderniser le Programme de contrats fédéraux pour veiller à ce que les entrepreneurs fédéraux paient à leurs employés le salaire minimum fédéral, de façon à respecter les engagements relatifs au leadership sur les plans environnemental, social et de la gouvernance et à l’approvisionnement du gouvernement.&#xD;
+Continuer à faire progresser la mise en œuvre de la Loi sur l’équité salariale dans les lieux de travail sous réglementation fédérale.&#xD;
+Créer un processus de négociation collective plus équitable dans les lieux de travail sous réglementation fédérale en faisant avancer des mesures législatives qui interdisent le recours à des travailleurs de remplacement lorsqu’un employeur syndiqué met ses employés en lock-out.&#xD;
+Appuyer la vice-première ministre et ministre des Finances dans l’introduction d’un crédit d’impôt pour la mobilité de la main-d’œuvre permettant aux travailleurs des secteurs du bâtiment et de la construction de déduire les frais admissibles de déplacement et de réinstallation temporaire.&#xD;
+Travailler avec le ministre des Ressources naturelles pour favoriser l’adoption d’un projet de loi et de mesures exhaustives pour assurer une transition équitable. Ce travail s’appuiera sur les consultations menées auprès de travailleurs, de syndicats, de peuples autochtones, d’employeurs, de communautés, de provinces et de territoires pour soutenir l’avenir et la qualité de vie des travailleurs et de leurs communautés dans le cadre de la transition vers une économie à faibles émissions de carbone. Vous recevrez l’appui de la ministre de l’Emploi, du Développement de la main-d’œuvre et de l’Inclusion des personnes en situation de handicap et des ministres responsables des agences de développement régional.&#xD;
+Travailler à des modifications qui permettront aux travailleurs à l’emploi de grandes plateformes numériques de bénéficier d’une sécurité d’emploi en vertu du Code canadien du travail. Vous collaborerez également avec la ministre de l’Emploi, du Développement de la main-d’œuvre et de l’Inclusion des personnes en situation de handicap pour veiller à ce que ces travailleurs bénéficient de prestations et de mesures de soutien.&#xD;
+Avec l’appui du ministre de la Sécurité publique, de la ministre des Services publics et de l’Approvisionnement et de la ministre du Commerce international, de la Promotion des exportations, de la Petite Entreprise et du Développement économique, présenter un projet de loi pour éliminer le travail forcé des chaînes d’approvisionnement canadiennes et faire en sorte que les entreprises canadiennes qui mènent des activités à l’étranger ne contribuent pas à des violations des droits de la personne.&#xD;
+En tant que ministre, vous devez également collaborer activement avec vos collègues du Cabinet et du caucus. Pour remplir nos engagements, il faudra que les membres du Conseil des ministres continuent de collaborer et de travailler de manière constructive pour soutenir un processus décisionnel rigoureux et productif au sein du Cabinet. Je m’attends à ce que vous aidiez vos collègues à s’acquitter de leurs engagements, notamment en tirant parti de l’expertise de votre ministère et de vos propres expériences.&#xD;
+&#xD;
+Pour que les Canadiens obtiennent les meilleurs résultats possible, les ministres doivent faire preuve de rigueur et coordonner leurs efforts de mise en œuvre. Je vous prie donc de m’indiquer la démarche que vous entendez suivre pour réaliser les engagements liés à votre mandat, ainsi que les priorités que vous comptez mettre en œuvre dans les plus brefs délais. De plus, pour que nous soyons responsables de notre travail, je vous demanderai de me communiquer publiquement, ainsi qu’à tous les Canadiens, les progrès accomplis dans la réalisation de ces engagements, et ce, de façon périodique.&#xD;
+&#xD;
+Comme on nous l’a rappelé tout au long de la pandémie, il est non seulement souhaitable mais aussi impératif que le gouvernement s’adapte au changement. Alors que vous vous emploierez à concrétiser nos engagements, je m’attends à ce que vous preniez activement en considération les nouvelles idées et questions qui se font jour, que ce soit à la lumière de consultations menées auprès de la population, de votre travail avec les parlementaires ou de conseils formulés par la fonction publique. Je m’attends également à ce que vous travailliez avec votre sous-ministre pour réévaluer sans cesse les priorités à mesure que nous bâtissons un avenir meilleur pour tous les Canadiens. En plus de l’atteinte des résultats, vous êtes responsable de superviser le travail de votre ministère et de veiller au bon fonctionnement de votre portefeuille.&#xD;
+&#xD;
+Je vous demande de respecter les principes de l’équité, de la diversité et de l’inclusion lorsque vous embaucherez du personnel pour votre cabinet et mettrez en œuvre des stratégies d’information et de recrutement pour les postes de direction et de membres de conseils dont les titulaires sont nommés par le gouvernement fédéral. Nous contribuerons ainsi à faire en sorte que les milieux de travail au gouvernement fédéral soient dynamiques et représentatifs de la population que nous servons. Vous devez également veiller à ce que votre cabinet et votre portefeuille ministériel tiennent compte de notre engagement relativement à des milieux de travail sains et sécuritaires.&#xD;
+&#xD;
+Les Canadiens veulent que nous travaillions fort, que nous parlions avec franchise et que nous ayons à cœur de promouvoir leurs intérêts et aspirations. Lorsque nous commettrons des erreurs, et nous le ferons tous, les Canadiens s’attendent à ce que nous les reconnaissions et, surtout, à ce que nous en tirions des leçons.&#xD;
+&#xD;
+Je sais que je peux compter sur vous pour vous acquitter des importantes responsabilités qui vous sont confiées. Sachez que vous pouvez me consulter ainsi que la vice-première ministre, dès maintenant et souvent, pour que nous puissions vous soutenir dans votre rôle de ministre.&#xD;
+&#xD;
+Je vous prie d’agréer, Monsieur le Ministre, l’expression de ma considération respectueuse.&#xD;
+&#xD;
+Le très hon. Justin Trudeau, c.p., député&#xD;
+Premier ministre du Canada&#xD;
+&#xD;
+*Cette lettre de mandat a été signée par le premier ministre dans la première langue officielle du ministre.</documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Lettre de mandat de la ministre des Aînés" id="id-654d1914e2d142fa850e357bc2e03636">
+      <documentation>https://pm.gc.ca/fr/lettres-de-mandat/2021/12/16/lettre-de-mandat-de-la-ministre-des-aines&#xD;
+&#xD;
+Madame la Ministre,&#xD;
+&#xD;
+Je vous remercie d’avoir accepté de servir les Canadiens en tant que ministre des Aînés.&#xD;
+&#xD;
+Depuis le début de la pandémie, les Canadiens ont dû faire face à un défi qui ne se produit qu’une fois par siècle. Malgré tout, les gens ont su se montrer à la hauteur, et ce, d’un océan à l’autre. Lorsque cela comptait le plus, les Canadiens se sont adaptés, se sont entraidés et ont fait preuve de compassion, de courage et de détermination, autant de valeurs qui nous sont chères. C’est ce qui a défini jusqu’à présent notre parcours dans cette pandémie. Et c’est ce qui nous permettra d’aller de l’avant.&#xD;
+&#xD;
+En cette période difficile, les Canadiens se sont prononcés de façon démocratique. Ils nous ont confié le soin de terminer la lutte contre la COVID-19 et de soutenir le rétablissement d’une classe moyenne forte. Ils nous ont, par le fait même, donné une orientation claire : prendre des mesures audacieuses et concrètes afin de bâtir un avenir où la santé et la résilience prévaudront. C’est ce que les Canadiens nous ont demandé, et c’est exactement ce que notre gouvernement est prêt à faire. Nous nous emploierons à bâtir cet avenir meilleur en continuant de miser sur la collaboration, la mobilisation, la science et la prise de décisions fondées sur des données probantes. En nous appliquant sans relâche à obtenir des résultats, nous travaillerons de manière constructive avec les parlementaires et maintiendrons nos solides partenariats avec les gouvernements provinciaux et territoriaux, les administrations municipales et nos partenaires autochtones. Le début de cette nouvelle décennie a été extrêmement difficile, mais le moment est venu de rebâtir un pays plus résilient, plus inclusif et plus fort pour tous.&#xD;
+&#xD;
+La science est claire. Les Canadiens ont été clairs. Nous devons non seulement continuer d’agir concrètement à l’égard des changements climatiques, mais aussi le faire plus vite et aller plus loin à ce chapitre. Comme les Canadiens le constatent de plus en plus partout dans le pays, les changements climatiques constituent une menace existentielle. Afin de bâtir un avenir plus propre et plus vert, il nous faudra tous faire des efforts soutenus et concertés. Je m’attends à ce que vous cherchiez au sein de votre portefeuille, en votre qualité de ministre, des façons de soutenir nos efforts pangouvernementaux visant à réduire les émissions de gaz à effet de serre, à créer des emplois propres et à relever les défis liés au climat avec lesquels les collectivités composent déjà.&#xD;
+&#xD;
+Cette année, les Canadiens ont été horrifiés par la découverte de sépultures non identifiées près d’anciens pensionnats autochtones. Ces découvertes nous rappellent la nécessité d’accélérer la réconciliation avec les Premières Nations, les Inuits et les Métis. Nous savons que cette réconciliation ne peut se faire sans l’obtention de la vérité, et le gouvernement continuera d’investir dans la quête de cette vérité. À titre de ministres, nous avons le devoir de faire progresser les travaux à cet égard, tant collectivement qu’individuellement. Par conséquent, je demande à chaque ministre de mettre en œuvre la Déclaration des Nations Unies sur les droits des peuples autochtones et de travailler en partenariat avec les Autochtones pour faire mieux reconnaître leurs droits.&#xD;
+&#xD;
+Nous devons continuer de nous attaquer aux inégalités et aux disparités systémiques profondes qui demeurent présentes dans notre tissu social, notamment au sein de nos institutions fondamentales. À cet égard, il faut que les Canadiens de chacune des régions du pays puissent se reconnaître dans les priorités de notre gouvernement et dans ce que nous réalisons. Je m’attends à ce que vous collaboriez, en votre qualité de ministre, avec diverses communautés dans un souci d’inclusion et cherchiez activement à obtenir les divers points de vue des Canadiens et à les intégrer dans votre travail. Cela comprend les femmes, les Autochtones, les Canadiens noirs et racisés, les nouveaux arrivants, les groupes confessionnels, les personnes en situation de handicap et les Canadiens LGBTQ2. Bien entendu, le tout doit se faire dans le respect des deux langues officielles.&#xD;
+&#xD;
+Dans tous les aspects de notre travail, nous continuerons de nous assurer que les politiques publiques sont élaborées dans une perspective intersectionnelle, notamment par l’application de l’analyse comparative entre les sexes plus (ACS Plus) et des indicateurs de qualité de vie dans la prise de décisions.&#xD;
+&#xD;
+Les Canadiens continuent de compter sur les journalistes et le journalisme pour obtenir des nouvelles exactes et en temps opportun. Je m’attends à ce que vous entreteniez des relations professionnelles et respectueuses avec les journalistes afin que les Canadiens soient bien informés et disposent des informations dont ils ont besoin pour assurer leur sécurité et celle de leur famille.&#xD;
+&#xD;
+Tout au long de la pandémie, les Canadiens et leurs gouvernements se sont adaptés à de nouvelles réalités. Les gouvernements doivent s’inspirer des leçons tirées de la pandémie pour s’adapter davantage et proposer des moyens plus flexibles et efficaces de servir les Canadiens. À cette fin, je m’attends à ce que tous les ministres se penchent sur des moyens d’actualiser nos façons de faire afin que le gouvernement puisse continuer de relever les défis d’aujourd’hui et de demain.&#xD;
+&#xD;
+Pour assurer le succès de la présente législature, il faudra que les parlementaires, tant à la Chambre des communes qu’au Sénat, travaillent ensemble, tous partis confondus, dans le but de réaliser de grandes choses pour les Canadiens. Je m’attends à ce que vous entreteniez des relations constructives avec les porte-paroles de l’opposition, et à ce que vous coordonniez toute mesure législative avec le leader du gouvernement à la Chambre des communes. Dans votre rôle de ministre, vous êtes responsable devant le Parlement à la fois individuellement, de votre style de leadership et de l’accomplissement de vos responsabilités, et collectivement, à l’appui du Conseil des ministres et des décisions prises par le Cabinet. Le document Pour un gouvernement ouvert et responsable énonce ces principes fondamentaux et les normes de conduite que votre cabinet et vous devez respecter. Je m’attends à ce que vous vous familiarisiez avec ce document, qui décrit mes attentes à l’égard de chaque membre du Conseil des ministres.&#xD;
+&#xD;
+Les engagements pris dans notre programme électoral sont ambitieux. L’achèvement de la lutte contre la pandémie doit demeurer au centre de nos préoccupations; toutefois, nous devons continuer de bâtir une classe moyenne forte et un avenir meilleur où chacun a une chance réelle et équitable de réussir et où personne n’est laissé pour compte.&#xD;
+&#xD;
+En tant que ministre des Aînés, votre priorité immédiate est de soutenir et de faire progresser l’engagement pris par le gouvernement d’augmenter la Sécurité de la vieillesse et le Supplément de revenu garanti. Je m’attends à ce que vous aidiez le ministre de la Santé à améliorer la qualité et la disponibilité des soins de longue durée, et à prendre des mesures concrètes pour soutenir les aînés qui veulent vieillir chez eux. De plus, vous continuerez de créer des possibilités pour les aînés d’entretenir plus de liens, d’obtenir du soutien et d’être des membres actifs de leur communauté en mettant en œuvre le programme Nouveaux Horizons pour les aînés.&#xD;
+&#xD;
+Pour atteindre ces objectifs, je vous demande d’obtenir des résultats pour les Canadiens en vous acquittant des engagements suivants.&#xD;
+&#xD;
+En tablant sur notre engagement à l’égard de la Sécurité de la vieillesse, augmenter le Supplément de revenu garanti de 500 $ pour les aînés vivant seuls et de 750 $ pour les couples, à compter de l’âge de 65 ans.&#xD;
+Veiller à ce que la Prestation canadienne d’urgence (PCU) et la Prestation canadienne de la relance économique (PCRE) n’aient pas d’incidence négative sur l’admissibilité des aînés au Supplément de revenu garanti.&#xD;
+Avec l’appui du ministre de la Santé, créer un comité d’experts chargé de formuler des recommandations sur la mise en œuvre d’une allocation Vieillir chez soi.&#xD;
+Aider les organismes communautaires à fournir un soutien pratique pour aider les aînés à faibles revenus ou autrement vulnérables à vivre chez eux aussi longtemps que possible, et appuyer les projets régionaux et nationaux qui facilitent l’expansion de services ayant déjà fait leurs preuves pour ce qui est d’aider les aînés à demeurer dans leur domicile.&#xD;
+Travailler avec la ministre de la Famille, des Enfants et du Développement social pour fournir aux aînés un point d’accès unique à un vaste éventail de services et de prestations du gouvernement.&#xD;
+Continuer de collaborer avec le ministre de la Justice et procureur général du Canada pour renforcer l’approche du Canada à l’égard de la maltraitance des personnes âgées en mettant la dernière main à la définition nationale des mauvais traitements infligés aux aînés, en investissant des fonds pour améliorer la collecte de données, et en établissant dans le Code criminel de nouvelles infractions et de nouvelles sanctions liées à la maltraitance des aînés.&#xD;
+Représenter le gouvernement du Canada au Forum des ministres fédéral, provinciaux et territoriaux responsables des aînés.&#xD;
+Continuer de diriger les travaux d’Emploi et Développement social Canada portant sur les programmes destinés aux aînés, ce qui comprend le programme Nouveaux Horizons pour les aînés.&#xD;
+Aider le ministre de la Santé à améliorer la qualité et la disponibilité des établissements et des lits de soins de longue durée. Pour ce faire, travailler avec les provinces et territoires pour améliorer les mesures de prévention et de contrôle des infections, définir les principes communs et élaborer des normes nationales afin que les aînés reçoivent les soins qu’ils méritent.&#xD;
+En tant que ministre, vous devez également collaborer activement avec vos collègues du Cabinet et du caucus. Pour remplir nos engagements, il faudra que les membres du Conseil des ministres continuent de collaborer et de travailler de manière constructive pour soutenir un processus décisionnel rigoureux et productif au sein du Cabinet. Je m’attends à ce que vous aidiez vos collègues à s’acquitter de leurs engagements, notamment en tirant parti de l’expertise de votre ministère et de vos propres expériences.&#xD;
+&#xD;
+Pour que les Canadiens obtiennent les meilleurs résultats possible, les ministres doivent faire preuve de rigueur et coordonner leurs efforts de mise en œuvre. Je vous prie donc de m’indiquer la démarche que vous entendez suivre pour réaliser les engagements liés à votre mandat, ainsi que les priorités que vous comptez mettre en œuvre dans les plus brefs délais. De plus, pour que nous soyons responsables de notre travail, je vous demanderai de me communiquer publiquement, ainsi qu’à tous les Canadiens, les progrès accomplis dans la réalisation de ces engagements, et ce, de façon périodique.&#xD;
+&#xD;
+Comme on nous l’a rappelé tout au long de la pandémie, il est non seulement souhaitable mais aussi impératif que le gouvernement s’adapte au changement. Alors que vous vous emploierez à concrétiser nos engagements, je m’attends à ce que vous preniez activement en considération les nouvelles idées et questions qui se font jour, que ce soit à la lumière de consultations menées auprès de la population, de votre travail avec les parlementaires ou de conseils formulés par la fonction publique. Je m’attends également à ce que vous travailliez avec votre sous-ministre pour réévaluer sans cesse les priorités à mesure que nous bâtissons un avenir meilleur pour tous les Canadiens. En plus de l’atteinte des résultats, vous êtes responsable de superviser le travail de votre ministère et de veiller au bon fonctionnement de votre portefeuille.&#xD;
+&#xD;
+Je vous demande de respecter les principes de l’équité, de la diversité et de l’inclusion lorsque vous embaucherez du personnel pour votre cabinet et mettrez en œuvre des stratégies d’information et de recrutement pour les postes de direction et de membres de conseils dont les titulaires sont nommés par le gouvernement fédéral. Nous contribuerons ainsi à faire en sorte que les milieux de travail au gouvernement fédéral soient dynamiques et représentatifs de la population que nous servons. Vous devez également veiller à ce que votre cabinet et votre portefeuille ministériel tiennent compte de notre engagement relativement à des milieux de travail sains et sécuritaires.&#xD;
+&#xD;
+Les Canadiens veulent que nous travaillions fort, que nous parlions avec franchise et que nous ayons à cœur de promouvoir leurs intérêts et aspirations. Lorsque nous commettrons des erreurs, et nous le ferons tous, les Canadiens s’attendent à ce que nous les reconnaissions et, surtout, à ce que nous en tirions des leçons.&#xD;
+&#xD;
+Je sais que je peux compter sur vous pour vous acquitter des importantes responsabilités qui vous sont confiées. Sachez que vous pouvez me consulter ainsi que la vice-première ministre, dès maintenant et souvent, pour que nous puissions vous soutenir dans votre rôle de ministre.&#xD;
+&#xD;
+Je vous prie d’agréer, Madame la Ministre, l’expression de ma considération respectueuse.&#xD;
+&#xD;
+Le très hon. Justin Trudeau, c.p., député&#xD;
+Premier ministre du Canada&#xD;
+&#xD;
+*Cette lettre de mandat a été signée par le premier ministre dans la première langue officielle de la ministre.</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="R1 - Industry Standard Functionality" id="id-3ba1b266644c47d99f9ec3f7def7beaa"/>
+    <element xsi:type="archimate:Requirement" name="R2 - Accessible Interface" id="id-f90c588b227d41f18f4dcdfd63cc58bc"/>
+    <element xsi:type="archimate:Requirement" name="R3 - O365 (64-bit) Compatibility" id="id-e20452708c20457697bd80c7b691e542"/>
+    <element xsi:type="archimate:Requirement" name="R4 - Document Translation" id="id-67481c17664c4a88b99892fe94bf3b97"/>
+    <element xsi:type="archimate:Assessment" name="PMA Review" id="id-5aaa791226a94853944c7d8ee525a05c">
+      <documentation>2021-12-09&#xD;
+Suggest replacting OUTCOMES with the already provided words: 'Support ESDC to meet its Official Languages requirements and enable 117 users who work in 17 Linguistics Services' . &#xD;
+ Reconsider items already listed in OUTCOMES as OBJECTIVES to reach the outcome. </documentation>
+    </element>
+    <element xsi:type="archimate:Driver" name="Meet Official Lanaguage Requirements" id="id-6d46d65124144ff6ae09e489751a5a0a">
+      <documentation>Support ESDC to meet its Official Languages requirements and enable 117 users who work in 17 Linguistics Services</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Enable Linguistics Services Users" id="id-f493d127f4a6416d860cb68147ada454">
+      <documentation>Support ESDC to meet its Official Languages requirements and enable 117 users who work in 17 Linguistics Services</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="RWS Holdings PLC" id="id-15d99a1b35a6407c9fe507416e0cc25d">
+      <documentation>About RWS&#xD;
+RWS Holdings plc is the world’s leading provider of technology-enabled language, content management and intellectual property&#xD;
+services. We help our customers to connect with and bring new ideas to people globally by communicating business critical content&#xD;
+at scale and enabling the protection and realization of their innovations.&#xD;
+Our vision is to help organizations interact effectively with people anywhere in the world by solving their language, content and&#xD;
+market access challenges through our collective global intelligence, deep expertise and smart technology.&#xD;
+Customers include 90 of the globe’s top 100 brands, the top 10 pharmaceutical companies and approximately half of the top&#xD;
+20 patent filers worldwide. Our client base spans Eur ope, Asia Pacific, and North and South America acr oss the technology,&#xD;
+pharmaceutical, medical, legal, chemical, automotive, government and telecommunications sectors, which we serve fr om offices&#xD;
+across five continents.&#xD;
+Founded in 1958, RWS is headquartered in the UK and publicly listed on AIM, the London Stock Ex change regulated market (RWS.L).&#xD;
+For further information, please visit: www.rws.com&#xD;
+© All Rights Reserved. Information contained herein is deemed confidential and the proprietary information of RWS Group*.&#xD;
+*RWS Group shall mean RWS Holdings PLC for and on behalf of its affiliates and subsidiaries.</documentation>
+    </element>
+    <element xsi:type="archimate:Meaning" name="Data Residency: AWS Frankfurt" id="id-2831a4378c67451595e03637c23eb8e3">
+      <documentation>Data residency&#xD;
+RWS Language Cloud is currently hosted in AWS Frankfurt and all client data is held in that location.&#xD;
+&#xD;
+Hosting environment security&#xD;
+RWS Language Cloud is hosted as a software-as-aservice (SaaS) application by our Cloud Operations organization, which is ISO 27001-certified for all our hosted products and has achieved 100% compliance with the controls and objectives of SOC 2 Type 2 attestation. We are further specializing and tailoring security for cloud services by implementing ISO 27017 in 2021.&#xD;
+We have contracted with leading third-party service providers to host our products. These include Amazon Web Services, NTT Communications and Alibaba Cloud, all of which maintain multiple certifications for security including, but not limited to, ISO 27001, SSAE 16, SOC 1, SOC 2, and SOC 3.&#xD;
+In addition to the security measures implemented by our hosting partners, we also have policies and procedures covering:&#xD;
+• Access control&#xD;
+• Physical protection&#xD;
+• Logical protection&#xD;
+• Data backup&#xD;
+• Data security&#xD;
+• Availability and proactive monitoring&#xD;
+• Risk assessment&#xD;
+&#xD;
+Cloud Operations also has a collection of security tools and capabilities to ensure the security of our clients’ data. These include:&#xD;
+• Event management monitoring tools to perform anomaly detection&#xD;
+• Perimeter firewalls and integrated Network Threat Protection (NTP) with anti-virus&#xD;
+• 24/7 operation to support real-time event management activities&#xD;
+• Industry recommended tools for threat visibility&#xD;
+• A state-of-the-art vulnerability and penetration security testing scanner&#xD;
+• An IT Infrastructure Library (ITIL) compliant ticketing tool for incident management</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Unclassified Information ONLY" id="id-29e0b0ab25f346f3b5e4b62d536bd617"/>
+    <element xsi:type="archimate:Meaning" name="Existing Systems In Use" id="id-20f4bd55c4404f9d9af586efa23f2288"/>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-861798a5dcc2418eab64cdaefdeeb080" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Unmanaged Data (Gap)" id="id-ed4e79d466fd4551a90d4cbfb6784e74">
@@ -3220,6 +3978,9 @@ Peoples, and remain focused on implementing the commitments made in 2019.</docum
 Operational Security Standard: Management of Information Technology Security (MITS)&#xD;
 http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12328</documentation>
     </element>
+    <element xsi:type="archimate:Grouping" name="Mandate Letters For ESDC Ministers" id="id-a3598e9bb37040de8c27f6f94297bd1a"/>
+    <element xsi:type="archimate:Grouping" name="LITE-2021-IITB-47 REQUIREMENTS" id="id-2dde2944368e4de58f73d40dc26e7293"/>
+    <element xsi:type="archimate:Grouping" name="LITE-2021-IITB-47 LANGUAGE WEAVER CLOUD CAPABILITIES" id="id-30561fc50b7f4cc78414dc8a913b22f9"/>
   </folder>
   <folder name="Relations" id="id-2ea02f25b8764d039f4b3e7e236fed25" type="relations">
     <element xsi:type="archimate:SpecializationRelationship" id="id-1fc9998b537248f0ab8efd6853b77d65" source="id-bbea9bb53b0d449e8af710c22edf18bc" target="id-a7f8beac2a2c416c96b351c66b79510c"/>
@@ -3941,6 +4702,57 @@ http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12328</documentation>
     <element xsi:type="archimate:CompositionRelationship" id="id-7a01467f58bd4910930282def6ededaf" source="id-d1b094e93f2446b39578c71310398fc6" target="id-8640c57c4cbb4c75976e1e2b4da4a4a6"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-2673983be6d74338991ebbf8ed92a546" source="id-6d519542480d4503af53317657b2bb3e" target="id-7672e3265b014ffeb1d3d3274747ee26"/>
     <element xsi:type="archimate:CompositionRelationship" id="id-5ab1ea2d9c9e4fada656df7f1c244e41" source="id-d1b094e93f2446b39578c71310398fc6" target="id-73e295b9c3524c0f986c513980233fc7"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f84329dbec1a469494abc0000d6d3de1" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-905e49fa452f4ecbb7ac8a7f2d5906d8"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-42872ded3f0a43c1ae743b9f39a3a94c" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-7ce8d536df8f4113ad40ea9e3d8649bb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-55f2bd678766440295868e63a947c7b5" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-6078cf8beb20460abca1a5c2a52ffeb5"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-10400e24078a4993b48bf33e8696ad87" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-29c1b5269d0d4c52bb093a51642335b0"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-bf628e1fbc6147428998a0c2c1c053d4" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-6f0024dc0b71454c9b9136e86a10e624"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-094bd0f911984692be3d58714fcdf632" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-654d1914e2d142fa850e357bc2e03636"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-31e3a82dfc0842bda8f5f85741b99693" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-f58350936c9246bbbe230a2ad342ba92"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-8ba4f0269a6a42808da91015c0fc9917" source="id-a3598e9bb37040de8c27f6f94297bd1a" target="id-0c08306c5ecd483ca37824356aca95a6"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-11eca6090f08456bb03b896c1aa35cb2" source="id-2dde2944368e4de58f73d40dc26e7293" target="id-f90c588b227d41f18f4dcdfd63cc58bc"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-2de949f4efb042beb42fd0d9f6a8a4fe" source="id-2dde2944368e4de58f73d40dc26e7293" target="id-67481c17664c4a88b99892fe94bf3b97"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-27cda3b92f8c494c9b3e23ef3c925edd" source="id-2dde2944368e4de58f73d40dc26e7293" target="id-3ba1b266644c47d99f9ec3f7def7beaa"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7eae7dd801d24c96a839be7779d808b4" source="id-2dde2944368e4de58f73d40dc26e7293" target="id-e20452708c20457697bd80c7b691e542"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-ed1bd5dac6af4f43b6fb90026a4d036f" source="id-5aaa791226a94853944c7d8ee525a05c" target="id-6d46d65124144ff6ae09e489751a5a0a"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-3def7789d9a448d58435ce0f5ec6a614" source="id-5aaa791226a94853944c7d8ee525a05c" target="id-f493d127f4a6416d860cb68147ada454"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-225a7c775ed440f081a77f81b0aa236b" source="id-6c1c781b3ddf4c80a63c5908b4daa840" target="id-fcd8d2fa0f4f46ce92d3096e7db56a0e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ca42cacd52b64d4584c6fa64ff707ab1" source="id-6c1c781b3ddf4c80a63c5908b4daa840" target="id-7568d23e8d4f4ab5a6b0673fd3d2a049"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e59f7308cead4775b55fa82cf5495ce4" source="id-6c1c781b3ddf4c80a63c5908b4daa840" target="id-b9b0eda2444343b7a4ac67a6290e08cf"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-9d630b0eb4874489ae782cffe857a591" source="id-984d3cb278444e5ebebf6f4b1ec48e4f" target="id-0160e3af4872421d961ef3a673e0f843"/>
+    <element xsi:type="archimate:AssociationRelationship" name="Manage Requests" id="id-9c58f04c49344ecc9b594958003e01d5" source="id-6ba368f7bc8348df8581f2d25491c872" target="id-0160e3af4872421d961ef3a673e0f843"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-497695fd188e4361a5b81de4a74ba91d" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-53919268e0fe45ada1edafb9c671f758"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-c60620adbaa04908943cedba29e86fdc" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-626bd9adbf2145fabe3f09f9efcba62b"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-e5496e3cc38a4092bf4099c38f1ffe3d" source="id-418d90a065974ffbb66b363a3280cbff" target="id-984d3cb278444e5ebebf6f4b1ec48e4f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-e07b37227b914fc38a0f2632a73b35b6" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-8b5d27b92fcc44e68c6a645094f7e0a9"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-c1eb3a47dc7b401b93814990026c109d" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-f746997f2286460fa633980a07ce9363"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7be73ac689ff4e68bcf8f2591dfa6883" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-50ed4ed925524ff7a63e432e28b29878"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-573653475d144d4eaddf4ce7fdba9b6b" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-9975d4fadcf14f3dbd20b9619a6011b7"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-7e1ea65f144a42ad8b3fdc4b8bb7ff3d" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-5fd5253ead8f4685b861ddeede3229a3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-a795bf9e200142dfa9086460bfea1e34" source="id-2831a4378c67451595e03637c23eb8e3" target="id-35a4a9e6e2c24963bb5ccec767011f01"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-808f6fd1cf554146a52610cf4dc91f62" source="id-2831a4378c67451595e03637c23eb8e3" target="id-29e0b0ab25f346f3b5e4b62d536bd617"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f7269c55574c4551bdeacedf4d4052f2" source="id-b26e3dd2c82a44dda1a3b1b52086e540" target="id-48fb075799d84b12bff20415c448f5cb"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ea16d61de8c145149800d7b9c757c989" source="id-30561fc50b7f4cc78414dc8a913b22f9" target="id-c914d37d7fe349c3bc3e5af7a78b363f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-f176a578a9ba45e09f19e32ba52cf789" source="id-30561fc50b7f4cc78414dc8a913b22f9" target="id-5836faca63c948c599d48f628dccc917"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-317bf319b2844fdfa84dd4021cb52f8e" source="id-30561fc50b7f4cc78414dc8a913b22f9" target="id-ff9d47f01a7d44e59b84f461ebdc223f"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-04a5302c3e16412d947d7a8e6b42f450" source="id-30561fc50b7f4cc78414dc8a913b22f9" target="id-26bb5e70f60042268024245e2b52a839"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-4a2b6a01ee45467c95751bf617fc8dbf" source="id-30561fc50b7f4cc78414dc8a913b22f9" target="id-db5010a870e14f3da8127c18c48515d2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-ad8d6a5c90b4475e877989ff3f2c1def" source="id-6c1c781b3ddf4c80a63c5908b4daa840" target="id-20f4bd55c4404f9d9af586efa23f2288"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-4f63159b337d4d6c806df19a9c1bcce9" source="id-5f8020ff787641afbfe2c99260e398da" target="id-35a4a9e6e2c24963bb5ccec767011f01"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-32938daa75004520856e8ff4d1cf8b16" source="id-5f8020ff787641afbfe2c99260e398da" target="id-b26e3dd2c82a44dda1a3b1b52086e540"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-0d054741f88545cc8b9534168186a0f0" source="id-15d99a1b35a6407c9fe507416e0cc25d" target="id-5f8020ff787641afbfe2c99260e398da"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-29f9830b241748bdb652f8a34f6a273b" source="id-15d99a1b35a6407c9fe507416e0cc25d" target="id-639335a796bc4873934285292b8488dd"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-80fbe0a43042463c9539e2875c154f5f" source="id-0160e3af4872421d961ef3a673e0f843" target="id-639335a796bc4873934285292b8488dd"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-7c3ea513e14146768d176e48c0b6fd83" source="id-912ef70a4e054c168830673403169bc3" target="id-b25c6dcecccc4f39ac471d6224f22b58"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-b123b66d169f471abf0bc2e3054d677f" source="id-276c02d358f04e38aa8520774b5366ef" target="id-ab03a7f6925a4ba9bf564de3f5c8dc8e"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-85a8d285982e456b98b5290fec9a5700" source="id-912ef70a4e054c168830673403169bc3" target="id-5201ddadbbe647e19d71e277a85595db"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-537c1e225f95446c991df90214001c5a" source="id-5201ddadbbe647e19d71e277a85595db" target="id-6e68db27827d49adbd39545744163542"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="id-69c694c16a084f9ab4178fe6bd8c2291" source="id-6e68db27827d49adbd39545744163542" target="id-276c02d358f04e38aa8520774b5366ef"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-b1b4c9ed9fff4fe893f8bf467301a614" source="id-f72ee88178a74332b40d3a6b8ac5c325" target="id-b25c6dcecccc4f39ac471d6224f22b58"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-243c7065be0a46c3b9e4595c35cad732" source="id-f72ee88178a74332b40d3a6b8ac5c325" target="id-ab03a7f6925a4ba9bf564de3f5c8dc8e"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-25dd3c0bd3be48fd9a9038f3655f32d9" source="id-35a4a9e6e2c24963bb5ccec767011f01" target="id-6e68db27827d49adbd39545744163542"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-80d69f277820418f95b01bc61f4019ea" source="id-b26e3dd2c82a44dda1a3b1b52086e540" target="id-30561fc50b7f4cc78414dc8a913b22f9"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-e982e537d05841baaeedd27308eeb01a" source="id-b26e3dd2c82a44dda1a3b1b52086e540" target="id-6e68db27827d49adbd39545744163542"/>
   </folder>
   <folder name="Views" id="id-e95b9bd9af9641dd95e8d88989249a9c" type="diagrams">
     <folder name="Lite Projects" id="id-0524b6ac40be4d9cbf85d362d0facaad">
@@ -4294,6 +5106,243 @@ OBJECTS SOURCED FROM HL REQUIREMENTS DOCUMENT: &#xD;
 SDIV-MVP2 CSLP_High-Level-Business-Requirements v1.0.3(DRAFT).docx&#xD;
 This high-level business requirements document will server as the scope of the solution and used as an artifact for the Lite Project approval process at PPOC (Project Portfolio Operations Committee).&#xD;
 The intention of this document is to catalogue all business and stakeholder requirements for the SDIV-MVP2 CLSP project and to define the solution requirements at a high-level, to set the scope for definition of detailed solution design requirements by the implementation team. </documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Lite-2021-IITB-47 TMM" id="id-c330c3e8ca8448d49d84a8a539191e72">
+        <child xsi:type="archimate:Note" id="id-67c4ca9f9411487f9d546da1f9e40065" font="1|Segoe UI|16.2|1|WINDOWS|1|-27|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1">
+          <bounds x="22" width="699" height="75"/>
+          <content>Lite-2021-IITB-47 Translation Management Modernization&#xD;
+Modernisation de la gestion de la traduction</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-413af1e633d64f0dbdd4a39f0a4b6e1c" textPosition="1">
+          <bounds x="536" y="51" width="185" height="24"/>
+          <content>EA Assessment Due: 2022-01-19</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7d70afc47a944a82a3ce0823899d1bbf" archimateElement="id-e6e2bb63331c47ab99a8c45908db0cba">
+          <bounds x="24" y="108" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0ec777cc21ed4a57ad80727257b611db" textAlignment="1" archimateElement="id-2dde2944368e4de58f73d40dc26e7293">
+          <bounds x="156" y="108" width="265" height="145"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-12519c6badd24386b58d73bcd46e0c18" source="id-0ec777cc21ed4a57ad80727257b611db" target="id-a39c051fca694ccbb99b0c51083356f6" archimateRelationship="id-11eca6090f08456bb03b896c1aa35cb2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bb0a188edf0a4f419df3661ca78314ab" source="id-0ec777cc21ed4a57ad80727257b611db" target="id-b85d34d22b0344269818ed3887ba8908" archimateRelationship="id-2de949f4efb042beb42fd0d9f6a8a4fe"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e329bf0d24234b3e845ae1bcfb45e0ae" source="id-0ec777cc21ed4a57ad80727257b611db" target="id-f21f5855837b4f8bae76beec995ca86f" archimateRelationship="id-27cda3b92f8c494c9b3e23ef3c925edd"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8c8c9e4c65f64ec18735f7b0299ea2c0" source="id-0ec777cc21ed4a57ad80727257b611db" target="id-5ce26776516540e799619859b5ed4790" archimateRelationship="id-7eae7dd801d24c96a839be7779d808b4"/>
+          <child xsi:type="archimate:DiagramObject" id="id-a39c051fca694ccbb99b0c51083356f6" targetConnections="id-12519c6badd24386b58d73bcd46e0c18" archimateElement="id-f90c588b227d41f18f4dcdfd63cc58bc">
+            <bounds x="136" y="24" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b85d34d22b0344269818ed3887ba8908" targetConnections="id-bb0a188edf0a4f419df3661ca78314ab" archimateElement="id-67481c17664c4a88b99892fe94bf3b97">
+            <bounds x="139" y="84" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f21f5855837b4f8bae76beec995ca86f" targetConnections="id-e329bf0d24234b3e845ae1bcfb45e0ae" archimateElement="id-3ba1b266644c47d99f9ec3f7def7beaa">
+            <bounds x="12" y="24" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5ce26776516540e799619859b5ed4790" targetConnections="id-8c8c9e4c65f64ec18735f7b0299ea2c0" archimateElement="id-e20452708c20457697bd80c7b691e542">
+            <bounds x="12" y="84" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3f050d37d64a4d81ac79170932cb36c8" archimateElement="id-5aaa791226a94853944c7d8ee525a05c">
+          <bounds x="444" y="162" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5d983ae9dbbf43218a25f562c0ac447a" source="id-3f050d37d64a4d81ac79170932cb36c8" target="id-69d54ae8adfb4c44b759fd63fa66389d" archimateRelationship="id-ed1bd5dac6af4f43b6fb90026a4d036f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ef37814539264ef488d05fab5b3c51de" source="id-3f050d37d64a4d81ac79170932cb36c8" target="id-39f458bc11524d469cf83f7495d56ba5" archimateRelationship="id-3def7789d9a448d58435ce0f5ec6a614"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-69d54ae8adfb4c44b759fd63fa66389d" targetConnections="id-5d983ae9dbbf43218a25f562c0ac447a" archimateElement="id-6d46d65124144ff6ae09e489751a5a0a">
+          <bounds x="601" y="126" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-39f458bc11524d469cf83f7495d56ba5" targetConnections="id-ef37814539264ef488d05fab5b3c51de" archimateElement="id-f493d127f4a6416d860cb68147ada454">
+          <bounds x="601" y="192" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-31726b62496e4c06aad70860c58a129a" targetConnections="id-654ff54ad63244df9ab2bf149368067c id-250d0050cd0a49c3bcfe971e27605bfd" archimateElement="id-35a4a9e6e2c24963bb5ccec767011f01">
+          <bounds x="588" y="326" width="325" height="208"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3c769bd2e15d4abd90906772e6f2851e" source="id-31726b62496e4c06aad70860c58a129a" target="id-f9c3d4900b984ff0be51f5bfb1f541e6" archimateRelationship="id-497695fd188e4361a5b81de4a74ba91d"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d028b72a3a01421b802ad82cdcbbee55" source="id-31726b62496e4c06aad70860c58a129a" target="id-b0b89310f3e04334b155ae05455f9c80" archimateRelationship="id-c60620adbaa04908943cedba29e86fdc"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bd7e1a143734497e80a28b48545f8b3e" source="id-31726b62496e4c06aad70860c58a129a" target="id-c4d751c0a361455b90f0f7ca6b98a3b3" archimateRelationship="id-e07b37227b914fc38a0f2632a73b35b6"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c13526bd44ac44b4a33c208fd50b38ae" source="id-31726b62496e4c06aad70860c58a129a" target="id-8223e5f24a6d4350a0c5e76997d03073" archimateRelationship="id-c1eb3a47dc7b401b93814990026c109d"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-93259de1e0254ef6907dc6bf0eae4927" source="id-31726b62496e4c06aad70860c58a129a" target="id-c99e22a436364681bf48e24867c6fd26" archimateRelationship="id-7be73ac689ff4e68bcf8f2591dfa6883"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f7e2c115b7924744983495c9a0da9fc8" source="id-31726b62496e4c06aad70860c58a129a" target="id-a2bd69b5f4434607bbd7317edfd4fbb2" archimateRelationship="id-573653475d144d4eaddf4ce7fdba9b6b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-69dfbbcb7c824769b7f6e1c08c27f9f3" source="id-31726b62496e4c06aad70860c58a129a" target="id-8444db0fa5d645b88652c150d9b54583" archimateRelationship="id-7e1ea65f144a42ad8b3fdc4b8bb7ff3d"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6b2418d19cf64ed594d6860667bc73e9" source="id-31726b62496e4c06aad70860c58a129a" target="id-6fdfc2996b97407e882abb36d6ce067b" archimateRelationship="id-25dd3c0bd3be48fd9a9038f3655f32d9"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f9c3d4900b984ff0be51f5bfb1f541e6" targetConnections="id-3c769bd2e15d4abd90906772e6f2851e" archimateElement="id-53919268e0fe45ada1edafb9c671f758">
+            <bounds x="12" y="24" width="82" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b025ca5e7f4e4e0780a5893479a35664" archimateElement="id-2c1cafca203f4e5ebb2374faff22c21c">
+            <bounds x="108" y="24" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c9bcbe0f0f2e43a8b48799c3cad375a8" archimateElement="id-1b020a3d881c42b69c21b1a25942b780">
+            <bounds x="12" y="84" width="82" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b0b89310f3e04334b155ae05455f9c80" targetConnections="id-d028b72a3a01421b802ad82cdcbbee55" archimateElement="id-626bd9adbf2145fabe3f09f9efcba62b">
+            <bounds x="108" y="84" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c4d751c0a361455b90f0f7ca6b98a3b3" targetConnections="id-bd7e1a143734497e80a28b48545f8b3e" archimateElement="id-8b5d27b92fcc44e68c6a645094f7e0a9">
+            <bounds x="240" y="24" width="75" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8223e5f24a6d4350a0c5e76997d03073" targetConnections="id-c13526bd44ac44b4a33c208fd50b38ae" archimateElement="id-f746997f2286460fa633980a07ce9363">
+            <bounds x="240" y="84" width="75" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c99e22a436364681bf48e24867c6fd26" targetConnections="id-93259de1e0254ef6907dc6bf0eae4927" archimateElement="id-50ed4ed925524ff7a63e432e28b29878">
+            <bounds x="112" y="145" width="119" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a2bd69b5f4434607bbd7317edfd4fbb2" targetConnections="id-f7e2c115b7924744983495c9a0da9fc8" archimateElement="id-9975d4fadcf14f3dbd20b9619a6011b7">
+            <bounds x="235" y="145" width="80" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-6a23d8b14b424e0e9e9b0364cb44c93d" archimateElement="id-a58bf8ad3f174cfbbc295835cf32d8b4">
+            <bounds x="12" y="144" width="97" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0cb4fed2acb1418ab500feb1e7b00f2f" archimateElement="id-15d99a1b35a6407c9fe507416e0cc25d">
+          <bounds x="198" y="474" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6b945bad83e54079b7a77bf65c641e4c" source="id-0cb4fed2acb1418ab500feb1e7b00f2f" target="id-4ef0e56cf19a47a4804cbf71a4aa69c1" archimateRelationship="id-0d054741f88545cc8b9534168186a0f0"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5422acbd6c2d4ea8930edfbe3ce99444" source="id-0cb4fed2acb1418ab500feb1e7b00f2f" target="id-435de2da1db340ae999a33377530550c" archimateRelationship="id-29f9830b241748bdb652f8a34f6a273b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ea4e09f204ea4829aa1f22212e1a148d" archimateElement="id-418d90a065974ffbb66b363a3280cbff">
+          <bounds x="44" y="420" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1e18ef7e73584899a896475b6aeae582" source="id-ea4e09f204ea4829aa1f22212e1a148d" target="id-cfdb6a0c5e7d49bfbab3c7ee94b295b7" archimateRelationship="id-e5496e3cc38a4092bf4099c38f1ffe3d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e79e058612244f0da1032d8ca147d6eb" archimateElement="id-6c1c781b3ddf4c80a63c5908b4daa840">
+          <bounds x="768" y="24" width="409" height="94"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-64a4d3091fca4b9ba6d619d34c9812b2" source="id-e79e058612244f0da1032d8ca147d6eb" target="id-e4cbb7a41f7545ac84bafd5aff53a09e" archimateRelationship="id-225a7c775ed440f081a77f81b0aa236b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b49bf85990414a22a2bc0794183a1b06" source="id-e79e058612244f0da1032d8ca147d6eb" target="id-d9e7237bd10f40b8b3de62fb737566f4" archimateRelationship="id-ca42cacd52b64d4584c6fa64ff707ab1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-589f443fd86a40ff8b6b0afd82464fbd" source="id-e79e058612244f0da1032d8ca147d6eb" target="id-863432ad3d7f466cbae5c6f002a304c6" archimateRelationship="id-e59f7308cead4775b55fa82cf5495ce4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a7ebf644718b45e0b9c38d44da8f01af" source="id-e79e058612244f0da1032d8ca147d6eb" target="id-d9a774c97ddb4283bcd7e018a54c9d20" archimateRelationship="id-ad8d6a5c90b4475e877989ff3f2c1def"/>
+          <child xsi:type="archimate:DiagramObject" id="id-e4cbb7a41f7545ac84bafd5aff53a09e" targetConnections="id-64a4d3091fca4b9ba6d619d34c9812b2" archimateElement="id-fcd8d2fa0f4f46ce92d3096e7db56a0e">
+            <bounds x="12" y="24" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d9e7237bd10f40b8b3de62fb737566f4" targetConnections="id-b49bf85990414a22a2bc0794183a1b06" archimateElement="id-7568d23e8d4f4ab5a6b0673fd3d2a049">
+            <bounds x="276" y="24" width="120" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-863432ad3d7f466cbae5c6f002a304c6" targetConnections="id-589f443fd86a40ff8b6b0afd82464fbd" archimateElement="id-b9b0eda2444343b7a4ac67a6290e08cf">
+            <bounds x="144" y="24" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cfdb6a0c5e7d49bfbab3c7ee94b295b7" targetConnections="id-1e18ef7e73584899a896475b6aeae582" archimateElement="id-984d3cb278444e5ebebf6f4b1ec48e4f">
+          <bounds x="40" y="348" width="128" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b5e4d6ff4231402ca9ddbd901b7cc630" source="id-cfdb6a0c5e7d49bfbab3c7ee94b295b7" target="id-768902e2b80d4d28a12e8a0bc61b15ae" archimateRelationship="id-9d630b0eb4874489ae782cffe857a591"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-585f8e1424f24b0387b08a8d41058184" source="id-cfdb6a0c5e7d49bfbab3c7ee94b295b7" target="id-768902e2b80d4d28a12e8a0bc61b15ae" archimateRelationship="id-9d630b0eb4874489ae782cffe857a591"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-768902e2b80d4d28a12e8a0bc61b15ae" targetConnections="id-b5e4d6ff4231402ca9ddbd901b7cc630 id-585f8e1424f24b0387b08a8d41058184 id-f6dcc01b33ef400c81ea2279176d0c40" archimateElement="id-0160e3af4872421d961ef3a673e0f843">
+          <bounds x="320" y="276" width="103" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0e6b8acfb3c54c3a8204a99ab3f1c1a2" source="id-768902e2b80d4d28a12e8a0bc61b15ae" target="id-435de2da1db340ae999a33377530550c" archimateRelationship="id-80fbe0a43042463c9539e2875c154f5f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4ef0e56cf19a47a4804cbf71a4aa69c1" targetConnections="id-6b945bad83e54079b7a77bf65c641e4c" archimateElement="id-5f8020ff787641afbfe2c99260e398da">
+          <bounds x="370" y="474" width="91" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-250d0050cd0a49c3bcfe971e27605bfd" source="id-4ef0e56cf19a47a4804cbf71a4aa69c1" target="id-31726b62496e4c06aad70860c58a129a" archimateRelationship="id-4f63159b337d4d6c806df19a9c1bcce9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-92ac6dbfe0474b5381808fc860db8bed" source="id-4ef0e56cf19a47a4804cbf71a4aa69c1" target="id-7942f10dad0d4a42b856c1c5ce6f0200" archimateRelationship="id-32938daa75004520856e8ff4d1cf8b16"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f0fd0f4815ae4c62998fba894ee8a745" targetConnections="id-70c7d96a50dd4cc9a053aecbe8fee427 id-8765301b45ea4ea0a860777749a4fd11" archimateElement="id-b25c6dcecccc4f39ac471d6224f22b58">
+          <bounds x="53" y="672" width="83" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-fcd5d827ee2d43f0a24e0af9e8c08d36" targetConnections="id-43a8098d62184398996b15a0a3416d9e id-bdb6d5927899478995f61cc91077e120" archimateElement="id-ab03a7f6925a4ba9bf564de3f5c8dc8e">
+          <bounds x="432" y="672" width="83" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4e7d3501069d4dcf9165e17f3b43d757" archimateElement="id-6ba368f7bc8348df8581f2d25491c872">
+          <bounds x="24" y="276" width="159" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f6dcc01b33ef400c81ea2279176d0c40" source="id-4e7d3501069d4dcf9165e17f3b43d757" target="id-768902e2b80d4d28a12e8a0bc61b15ae" archimateRelationship="id-9c58f04c49344ecc9b594958003e01d5"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8444db0fa5d645b88652c150d9b54583" targetConnections="id-69dfbbcb7c824769b7f6e1c08c27f9f3" archimateElement="id-5fd5253ead8f4685b861ddeede3229a3">
+          <bounds x="960" y="346" width="253" height="167"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f5084e342b8a4d1e8188c3db85fdba15" archimateElement="id-1de67ac30bf5400f8f15e3f42009de7f">
+            <bounds x="12" y="23" width="99" height="33"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7243fcd1b53e4d889a3947f9af592408" archimateElement="id-7fd93bcc098646d59fea074331483020">
+            <bounds x="12" y="95" width="99" height="33"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-629f62a93fd34ae696413279ec6950b8" archimateElement="id-3450ec9a86df4014ae6e13917c3f2970">
+            <bounds x="12" y="58" width="99" height="33"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-dbeb49922ca945cba28d84448b371721" archimateElement="id-886548c92d8e4c869ce6889c8cbdc0aa">
+            <bounds x="120" y="23" width="114" height="37"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e6550d232b024da582da9ca377c86038" archimateElement="id-11c510fa529b4eaca8b9f76c32500a38">
+            <bounds x="120" y="71" width="114" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-60077d06b9dd4202baa0dd91a4be35e1" archimateElement="id-7b02bc7bed6840848d14ba8828e750e2">
+            <bounds x="12" y="132" width="222" height="25"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cade15364c124c0889564ce264e54cc3" textPosition="1" archimateElement="id-2831a4378c67451595e03637c23eb8e3">
+          <bounds x="792" y="228" width="109" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-654ff54ad63244df9ab2bf149368067c" source="id-cade15364c124c0889564ce264e54cc3" target="id-31726b62496e4c06aad70860c58a129a" archimateRelationship="id-a795bf9e200142dfa9086460bfea1e34"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c8160a993cce44739818322dc3d7a3cd" source="id-cade15364c124c0889564ce264e54cc3" target="id-cafd139045814798bb427a4002a2fbf8" archimateRelationship="id-808f6fd1cf554146a52610cf4dc91f62"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cafd139045814798bb427a4002a2fbf8" targetConnections="id-c8160a993cce44739818322dc3d7a3cd" archimateElement="id-29e0b0ab25f346f3b5e4b62d536bd617">
+          <bounds x="938" y="231" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7942f10dad0d4a42b856c1c5ce6f0200" targetConnections="id-92ac6dbfe0474b5381808fc860db8bed" archimateElement="id-b26e3dd2c82a44dda1a3b1b52086e540">
+          <bounds x="589" y="555" width="324" height="146"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-890a4672a6aa4beb8ca9ae232b016847" source="id-7942f10dad0d4a42b856c1c5ce6f0200" target="id-e26a4ea49d3041c199a37bcbbd089ce7" archimateRelationship="id-f7269c55574c4551bdeacedf4d4052f2"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1a0e1728f1a847fdb227b69a0c6f2328" source="id-7942f10dad0d4a42b856c1c5ce6f0200" target="id-0f78b742c8204910bf596fbe2687dbc3" archimateRelationship="id-80d69f277820418f95b01bc61f4019ea"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-164492fc791142b3899f5050afde5369" source="id-7942f10dad0d4a42b856c1c5ce6f0200" target="id-6fdfc2996b97407e882abb36d6ce067b" archimateRelationship="id-e982e537d05841baaeedd27308eeb01a">
+            <bendpoint startX="-258" startY="-28" endX="150" endY="-12"/>
+          </sourceConnection>
+          <child xsi:type="archimate:DiagramObject" id="id-e26a4ea49d3041c199a37bcbbd089ce7" targetConnections="id-890a4672a6aa4beb8ca9ae232b016847" archimateElement="id-48fb075799d84b12bff20415c448f5cb">
+            <bounds x="12" y="24" width="103" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-3ed7ab551fbf47ca86e196b0765135d9" archimateElement="id-6f0bdb47fc3241ce83449ac82a29d21c">
+            <bounds x="12" y="84" width="105" height="37"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-3a3c7f3cec8c4381b083992623723885" archimateElement="id-c3561b087ec14671842e816d8b6e5233">
+            <bounds x="144" y="24" width="168" height="37"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-52557cedcefb48a2a7a29dda786b43a6" archimateElement="id-d554ad860ca043bb9187b9cde9c22a3f">
+            <bounds x="144" y="66" width="168" height="43"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-52ae4ac61aef4bdebba74a6fe414e180" archimateElement="id-efef2dfd813745f8ab65236eb39a9cc8">
+            <bounds x="142" y="114" width="168" height="25"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-32f171ac8689453498e0443f39ff49a5" archimateElement="id-160160e6934742d0a50082734d4559cc">
+          <bounds x="456" y="402" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-435de2da1db340ae999a33377530550c" targetConnections="id-5422acbd6c2d4ea8930edfbe3ce99444 id-0e6b8acfb3c54c3a8204a99ab3f1c1a2" archimateElement="id-639335a796bc4873934285292b8488dd">
+          <bounds x="444" y="276" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0f78b742c8204910bf596fbe2687dbc3" targetConnections="id-1a0e1728f1a847fdb227b69a0c6f2328" textAlignment="1" archimateElement="id-30561fc50b7f4cc78414dc8a913b22f9">
+          <bounds x="948" y="555" width="361" height="145"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ff7d04e5d4864d8f8dcc3cb882b163a4" source="id-0f78b742c8204910bf596fbe2687dbc3" target="id-38effd82d6ca4e48907207001d732bf5" archimateRelationship="id-ea16d61de8c145149800d7b9c757c989"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-be0609719d3b420381c3db7507f2dac5" source="id-0f78b742c8204910bf596fbe2687dbc3" target="id-6b9c3b364d3c48c5889777e58055d100" archimateRelationship="id-f176a578a9ba45e09f19e32ba52cf789"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8b006d057f654f21b09ecab282947e34" source="id-0f78b742c8204910bf596fbe2687dbc3" target="id-aedb4516611645bcbfcc08dde5a7801d" archimateRelationship="id-317bf319b2844fdfa84dd4021cb52f8e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1b500464b92d4fe9af06e0998de0bd4c" source="id-0f78b742c8204910bf596fbe2687dbc3" target="id-913b6b44c4864c0aae8f1555b6f7c307" archimateRelationship="id-04a5302c3e16412d947d7a8e6b42f450"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e2961b517a674929a598116d14465cca" source="id-0f78b742c8204910bf596fbe2687dbc3" target="id-ad32376c22594527a7d4677cb55187f0" archimateRelationship="id-4a2b6a01ee45467c95751bf617fc8dbf"/>
+          <child xsi:type="archimate:DiagramObject" id="id-38effd82d6ca4e48907207001d732bf5" targetConnections="id-ff7d04e5d4864d8f8dcc3cb882b163a4" archimateElement="id-c914d37d7fe349c3bc3e5af7a78b363f">
+            <bounds x="202" y="84" width="144" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-6b9c3b364d3c48c5889777e58055d100" targetConnections="id-be0609719d3b420381c3db7507f2dac5" archimateElement="id-5836faca63c948c599d48f628dccc917">
+            <bounds x="12" y="84" width="179" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-aedb4516611645bcbfcc08dde5a7801d" targetConnections="id-8b006d057f654f21b09ecab282947e34" archimateElement="id-ff9d47f01a7d44e59b84f461ebdc223f">
+            <bounds x="238" y="24" width="109" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-913b6b44c4864c0aae8f1555b6f7c307" targetConnections="id-1b500464b92d4fe9af06e0998de0bd4c" archimateElement="id-26bb5e70f60042268024245e2b52a839">
+            <bounds x="130" y="24" width="97" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-ad32376c22594527a7d4677cb55187f0" targetConnections="id-e2961b517a674929a598116d14465cca" archimateElement="id-db5010a870e14f3da8127c18c48515d2">
+            <bounds x="12" y="24" width="107" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d9a774c97ddb4283bcd7e018a54c9d20" targetConnections="id-a7ebf644718b45e0b9c38d44da8f01af" textPosition="1" archimateElement="id-20f4bd55c4404f9d9af586efa23f2288">
+          <bounds x="1236" y="24" width="85" height="94"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-7024eab289f54267b0b98b4c2486b8fe" targetConnections="id-3fde393bc24347a5971923ecfdbbf4d1" archimateElement="id-5201ddadbbe647e19d71e277a85595db">
+          <bounds x="171" y="564" width="98" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-772ecdd1c193439ea6e17f75de671231" source="id-7024eab289f54267b0b98b4c2486b8fe" target="id-6fdfc2996b97407e882abb36d6ce067b" archimateRelationship="id-537c1e225f95446c991df90214001c5a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-af7d8c93770140c29c48d148b71589f2" archimateElement="id-912ef70a4e054c168830673403169bc3">
+          <bounds x="44" y="546" width="101" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-70c7d96a50dd4cc9a053aecbe8fee427" source="id-af7d8c93770140c29c48d148b71589f2" target="id-f0fd0f4815ae4c62998fba894ee8a745" archimateRelationship="id-7c3ea513e14146768d176e48c0b6fd83"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3fde393bc24347a5971923ecfdbbf4d1" source="id-af7d8c93770140c29c48d148b71589f2" target="id-7024eab289f54267b0b98b4c2486b8fe" archimateRelationship="id-85a8d285982e456b98b5290fec9a5700"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6fdfc2996b97407e882abb36d6ce067b" targetConnections="id-772ecdd1c193439ea6e17f75de671231 id-6b2418d19cf64ed594d6860667bc73e9 id-164492fc791142b3899f5050afde5369" archimateElement="id-6e68db27827d49adbd39545744163542">
+          <bounds x="292" y="586" width="103" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d7a087b3de0d4f2f9e0754b5c4ac32a8" source="id-6fdfc2996b97407e882abb36d6ce067b" target="id-cf9f500cb4db469cadc01926901d46e5" archimateRelationship="id-69c694c16a084f9ab4178fe6bd8c2291"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cf9f500cb4db469cadc01926901d46e5" targetConnections="id-d7a087b3de0d4f2f9e0754b5c4ac32a8" archimateElement="id-276c02d358f04e38aa8520774b5366ef">
+          <bounds x="424" y="618" width="100" height="43"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-43a8098d62184398996b15a0a3416d9e" source="id-cf9f500cb4db469cadc01926901d46e5" target="id-fcd5d827ee2d43f0a24e0af9e8c08d36" archimateRelationship="id-b123b66d169f471abf0bc2e3054d677f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-90733affd52a48258c571f36b642b76e" archimateElement="id-f72ee88178a74332b40d3a6b8ac5c325">
+          <bounds x="198" y="684" width="173" height="31"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8765301b45ea4ea0a860777749a4fd11" source="id-90733affd52a48258c571f36b642b76e" target="id-f0fd0f4815ae4c62998fba894ee8a745" archimateRelationship="id-b1b4c9ed9fff4fe893f8bf467301a614"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-bdb6d5927899478995f61cc91077e120" source="id-90733affd52a48258c571f36b642b76e" target="id-fcd5d827ee2d43f0a24e0af9e8c08d36" archimateRelationship="id-243c7065be0a46c3b9e4595c35cad732"/>
+        </child>
       </element>
     </folder>
     <folder name="AEA-DTiG Conference" id="id-74e9492d36164a83981af6dc125acd39">
@@ -6736,6 +7785,59 @@ For more information, visit the MSFT home or the ITS Product Catalogue or contac
             <bounds x="10" y="98" width="132" height="74"/>
           </child>
         </child>
+      </element>
+    </folder>
+    <folder name="Mandate Letters" id="id-c9d894159a064479b8512c70b04dbde6">
+      <element xsi:type="archimate:ArchimateDiagramModel" name="ESDC Mandate Letters 2021-12-16" id="id-e34e25a1a1a04ea38969be7a9bd542ee">
+        <child xsi:type="archimate:Note" id="id-9d74b21c73c14f65a909a58817c1cf4c" font="1|Segoe UI|18.0|3|WINDOWS|1|-30|0|0|0|700|-1|0|0|0|3|2|1|34|Segoe UI" textAlignment="1">
+          <bounds x="24" width="433" height="109"/>
+          <content>ESDC Ministers Mandate Letters&#xD;
+https://pm.gc.ca/en/mandate-letters</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-828a25aa4fbf429aaedd85d4259dad6f" font="1|Segoe UI|12.0|1|WINDOWS|1|-20|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textPosition="1">
+          <bounds x="348" y="73" width="109" height="36"/>
+          <content>2021-12-16</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2d92687867ce4512b24899cfb40b4bda" font="1|Segoe UI|13.8|1|WINDOWS|1|-23|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1" archimateElement="id-a3598e9bb37040de8c27f6f94297bd1a">
+          <bounds x="468" width="853" height="229"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c51acf226d8749b9964fc31e6f307561" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-2e80b55d39b342a6a6f44380ed9ccf62" archimateRelationship="id-f84329dbec1a469494abc0000d6d3de1"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7446b09bb3bd417f94318bed26a88fc4" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-0706e3e5560f4ecf871790512796f92d" archimateRelationship="id-42872ded3f0a43c1ae743b9f39a3a94c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2f016e4cb5e8495e87b2842c24f2c711" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-9a67e6af33f6440cb2ba7b1ea717ea5f" archimateRelationship="id-55f2bd678766440295868e63a947c7b5"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fd575f5c026841d983bcf544e92f4513" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-d9c6aacf722e4f8d882015a5a7f1ec29" archimateRelationship="id-10400e24078a4993b48bf33e8696ad87"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e405920782484906a114d5034280b573" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-9f67377ee79046d0ace9ab9039b33e3f" archimateRelationship="id-bf628e1fbc6147428998a0c2c1c053d4"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-483c7a612d1646fc8ffe73740ebbbd1d" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-f6ad607b4262409fb0f0b0b9c38ed086" archimateRelationship="id-094bd0f911984692be3d58714fcdf632"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-8eace0b2cb2348a4a90d6473fc7ad8cc" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-14019488d1e7482280182a9f4a2c0b8e" archimateRelationship="id-31e3a82dfc0842bda8f5f85741b99693"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6aeeaae826ef469f932bb6a00199a64a" source="id-2d92687867ce4512b24899cfb40b4bda" target="id-deedd957f24f43c78334a7949a83989a" archimateRelationship="id-8ba4f0269a6a42808da91015c0fc9917"/>
+          <child xsi:type="archimate:DiagramObject" id="id-2e80b55d39b342a6a6f44380ed9ccf62" targetConnections="id-c51acf226d8749b9964fc31e6f307561" archimateElement="id-905e49fa452f4ecbb7ac8a7f2d5906d8">
+            <bounds x="227" y="36" width="180" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0706e3e5560f4ecf871790512796f92d" targetConnections="id-7446b09bb3bd417f94318bed26a88fc4" archimateElement="id-7ce8d536df8f4113ad40ea9e3d8649bb">
+            <bounds x="227" y="124" width="180" height="100"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-9a67e6af33f6440cb2ba7b1ea717ea5f" targetConnections="id-2f016e4cb5e8495e87b2842c24f2c711" archimateElement="id-6078cf8beb20460abca1a5c2a52ffeb5">
+            <bounds x="12" y="124" width="180" height="100"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d9c6aacf722e4f8d882015a5a7f1ec29" targetConnections="id-fd575f5c026841d983bcf544e92f4513" archimateElement="id-29c1b5269d0d4c52bb093a51642335b0">
+            <bounds x="12" y="36" width="180" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-9f67377ee79046d0ace9ab9039b33e3f" targetConnections="id-e405920782484906a114d5034280b573" archimateElement="id-6f0024dc0b71454c9b9136e86a10e624">
+            <bounds x="659" y="36" width="180" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f6ad607b4262409fb0f0b0b9c38ed086" targetConnections="id-483c7a612d1646fc8ffe73740ebbbd1d" archimateElement="id-654d1914e2d142fa850e357bc2e03636">
+            <bounds x="659" y="124" width="180" height="100"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-14019488d1e7482280182a9f4a2c0b8e" targetConnections="id-8eace0b2cb2348a4a90d6473fc7ad8cc" archimateElement="id-f58350936c9246bbbe230a2ad342ba92">
+            <bounds x="443" y="36" width="180" height="77"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-deedd957f24f43c78334a7949a83989a" targetConnections="id-6aeeaae826ef469f932bb6a00199a64a" archimateElement="id-0c08306c5ecd483ca37824356aca95a6">
+            <bounds x="443" y="124" width="180" height="100"/>
+          </child>
+        </child>
+        <documentation>https://pm.gc.ca/en/mandate-letters&#xD;
+Mandate letters outline the objectives that each minister will work to accomplish, as well as the pressing challenges they will address in their role.&#xD;
+&#xD;
+https://pm.gc.ca/fr/lettres-de-mandat&#xD;
+Les lettres de mandat énoncent les objectifs que tous les ministres chercheront à atteindre, ainsi que les défis urgents qu’ils devront relever dans le cadre de leurs fonctions.</documentation>
       </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="Top-Level Hierarchy of ArchiMate Concepts" id="id-d10f3fb17612466abc4e8fa9563db2a9">
