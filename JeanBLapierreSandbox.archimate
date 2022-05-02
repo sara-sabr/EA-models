@@ -1298,6 +1298,11 @@ d) Federating with learning platforms deployed by OGDs&#xD;
     <element xsi:type="archimate:CourseOfAction" name="Complete Security Assessment and Authorization in partnership with TBS, SSC and CCCS" id="id-31116dc640d34411841058f059b0b122">
       <documentation>Complete Security Assessment and Authorization in partnership with TBS, SSC and CCCS</documentation>
     </element>
+    <element xsi:type="archimate:Resource" name="NIIS Business Requirements For CCT Pension Forms (2022)" id="id-a517133b8d34440a83b39f53985ef957">
+      <documentation>Business Solutions Operations&#xD;
+NIIS BR (Pension forms) for IITB / NIIS&#xD;
+Updated: March 9, 2022</documentation>
+    </element>
   </folder>
   <folder name="Business" id="id-fb9c94c240434273aa6d6f5df1a73407" type="business">
     <element xsi:type="archimate:BusinessEvent" name="EA Requests SAS Feedback" id="id-a7ebf3b84a7545f6a5b2e8eaca445cb6"/>
@@ -2234,6 +2239,12 @@ Language Weaver Cloud is part of a holistic ground to cloud Linguistic AI soluti
     <element xsi:type="archimate:ApplicationService" name="SAP Qualtrics" id="id-d9d6e57315504ac9a08902ca361feeff">
       <documentation>School has also procured SAP Qualtrics via PSPC multi-departmental contract as a cloud-based SaaS survey/evaluation solution to replace Simple Survey.</documentation>
     </element>
+    <element xsi:type="archimate:DataObject" name="NIIS - Mainframe Reports" id="id-30ed5f417afe43baaa3ac49ce9251892"/>
+    <element xsi:type="archimate:ApplicationInterface" name="NIIS - Intranet Web" id="id-d700215374284849a44b92fe4e6cfb03"/>
+    <element xsi:type="archimate:ApplicationInterface" name="NIIS - Mainframe Online" id="id-187162a4e4e24e06badb15e0d162752e"/>
+    <element xsi:type="archimate:ApplicationInterface" name="&lt;&lt;NEW>> NIIS Screen for CCT Templates" id="id-a1621088e96646fab0643cad6b9a0e02">
+      <documentation>The IITB NIIS team will create a new NIIS Screen enabling users to select from a list of available templates stored in CCT.</documentation>
+    </element>
   </folder>
   <folder name="Technology &amp; Physical" id="id-e073686aface40f7a970252f84a16b34" type="technology">
     <element xsi:type="archimate:Artifact" name="Model" id="id-cde5d10003e84d168bae6540d857644c"/>
@@ -2298,6 +2309,50 @@ To proceed with the installation, please contact SFT Support at the following em
     <element xsi:type="archimate:Node" name="ESDC EDC" id="id-2a4fd859e175462f85d5ec8f8465a73c"/>
     <element xsi:type="archimate:SystemSoftware" name="EAS Workload Management &lt;&lt;Azure DevOps On Prem>>" id="id-ff6de9bc0de14bf7b354d616343ea5ba"/>
     <element xsi:type="archimate:SystemSoftware" name="BDM EA Workload Management &lt;&lt;MS Planner>>" id="id-0585cc8e29ee4fabb4f4a8d09b342dea"/>
+    <element xsi:type="archimate:Node" name="National Integrity Investigation System (NIIS)" id="id-89bc202ab59b4458bc352457d72aeb46">
+      <documentation>https://dialogue.spprod.service.gc.ca/grp/APM-GPA/Site%20Pages%20Library/CSD_SolutionView.aspx?SolutionID=140&#xD;
+Create a new IC74 screen in order to enable NIIS users to create, edit, save, display, print and delete (CCT) Pensions Forms and Questionnaires.</documentation>
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="NIIS - Oracle DB" id="id-2bf9bd9e29d64b1f885fcb732bb525de"/>
+    <element xsi:type="archimate:SystemSoftware" name="NIIS - Mainframe DB" id="id-45ef292a21d1425ab986dc95f74143d6"/>
+    <element xsi:type="archimate:TechnologyService" name="NIIS - Web Service" id="id-c6b4365927104f43b65919ed68b7aeff"/>
+    <element xsi:type="archimate:Node" name="Corporate Correspondence Tool (CCT) EngageOne System" id="id-a8ce57b1532a4e5a81be806748dd4116">
+      <documentation>https://dialogue.spprod.service.gc.ca/grp/APM-GPA/Site%20Pages%20Library/CSD_SolutionView.aspx?SolutionID=670&#xD;
+&#xD;
+Description (Purpose of business)    &#xD;
+The on-going need to modify a large number of existing correspondence systems to meet changing business requirements, along with the desire to discontinue the creation of custom applications for each business line, ESDC’s Innovation, Information and Technology Branch (IITB) seeks to implement an enterprise-wide correspondence solution to allow Service Canada and ESDC to receive and disseminate data through multiple and varied channels - print (mail), fax, email, SMS (text) or Web (html).&#xD;
+&#xD;
+This solution would allow flexibility to meet both internal and external needs quickly and to manage correspondence based on business needs, as well as decouple the systems integration needs from business processes and rules.  Therefore as business rules change the entire system does not have to change, rather one system process.  This would allow for the implementation of a solution that can be reused by all business lines as well as easily adjustable to future system and business changes.&#xD;
+&#xD;
+Internal Clients: 640&#xD;
+ESDC Branch: ESDC - Innovation, Information and Technology&#xD;
+&#xD;
+Presentation&#xD;
+Solutions Linked to Corporate Correspondence Tool - CCT - EngageOne &#xD;
+Solution |  Lifecycle Status | Solution ID&#xD;
+National Integrity Investigation System | In Production | 140 | https://dialogue.spprod.service.gc.ca/grp/APM-GPA/Site%20Pages%20Library/CSD_SolutionView.aspx?SolutionID=140&#xD;
+Labour Market Impact Assessment / Foreign Worker System | In Production | 292 | https://dialogue.spprod.service.gc.ca/grp/APM-GPA/Site%20Pages%20Library/CSD_SolutionView.aspx?SolutionID=292&#xD;
+Canada’s Volunteer Awards | In Production | 486 | https://dialogue.spprod.service.gc.ca/grp/APM-GPA/Site%20Pages%20Library/CSD_SolutionView.aspx?SolutionID=486&#xD;
+Integrity Case Management system | In Production | 896 | https://dialogue.spprod.service.gc.ca/grp/APM-GPA/Site%20Pages%20Library/CSD_SolutionView.aspx?SolutionID=896</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Form-Based Fields Data Service" id="id-594e9d99f92446fca891582f36af4cbf">
+      <documentation>A web service between NIIS and CCT will populate some of the fields of the Form selected template based on some of the data elements available in NIIS.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="CCT EngageOne Editor" id="id-9312907218294eb880b0dfed7a6317d8">
+      <documentation>The CCT web service will send a URL to NIIS in order for NIIS to open a new window in the CCT EngageOne Editor. The requested form with select populated fields will be displayed in the Editor.  Users can update, save, and confirm delivery the form using the editor.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Update Saved Forms Not Yet Sent" id="id-f262c19a910045318130736597db5c5b">
+      <documentation>An additional web service method will enable users to update forms that have been saved but not confirm delivered.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Fetch Previously Delivered PDF Copy" id="id-ebe01a9febf249e195e693d6247c87f4">
+      <documentation>Another web service method will enable users to request a PDF copy of any previously confirm delivered form that can be saved and/or printed locally.  </documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Delete Forms Not Confirmed Delivered" id="id-5797df74326243a78580aa307726203e">
+      <documentation>A final web service method will allow users to delete forms that have been created and saved, but that have not had delivery confirmed...  Confirm delivery forms cannot be deleted once the confirm delivery button has been pressed for the form in EngageOne.</documentation>
+    </element>
+    <element xsi:type="archimate:Node" name="Labour Market Impact Assessment" id="id-b56be493a1c34c7f8aa54b0161f3f6ee"/>
+    <element xsi:type="archimate:Node" name="Canada’s Volunteer Awards" id="id-0ab13ac29c764e93a16df28f6f35a1a2"/>
+    <element xsi:type="archimate:Node" name="Integrity Case Management System" id="id-f4a0acee4e6f4035bb6e379d328ce0d6"/>
   </folder>
   <folder name="Motivation" id="id-f0d4d184e3724f9581f16c817692f2b0" type="motivation">
     <element xsi:type="archimate:Principle" name="GC EA Principles" id="id-9f1bfe4676814b5b9e0db7e61200311f"/>
@@ -4014,6 +4069,55 @@ Offer departments a learning management solution through multitenancy on common 
     <element xsi:type="archimate:Value" name="Courseware Information is Stored in Standard Formats Allowing Interoperability" id="id-1df61fd3ca814c089bc60dcd09ce2bcd">
       <documentation>Information for the courseware is stored in standard formats that allow interoperability</documentation>
     </element>
+    <element xsi:type="archimate:Assessment" name="Manual, Outdated Process" id="id-6beb47e32b244ac4a49c00fd6f45357f">
+      <documentation>B.	Main Drivers: Manual, outdated process. Opportunity to modernize and help work better, smarter and faster.</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Modernize Process of Creating Pensions Letters" id="id-b9c39e3b145f41eca18fa8bb5e69ee09">
+      <documentation>C.	Main Goals &amp; Outcomes: &#xD;
+a.	Creating a web service from NIIS to ACS/CCT letters will modernize the processes of creating Pensions letters.  &#xD;
+b.	A web service will populate data in the letters passing existing data from NIIS case to ACS/CCT letter by using the NIIS case number. &#xD;
+c.	This will eliminate some of the manual entries and help speed up the process of generating pension letters. &#xD;
+d.	A future phase could be introduced to enable Bulk Printing of letters/questionnaires.</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Extract NIIS Case Data, Load Into ACS/CCT Letter (Based On NIIS Case Number)" id="id-fcdc228578f84a8da8e691734603cacd">
+      <documentation>C.	Main Goals &amp; Outcomes: &#xD;
+a.	Creating a web service from NIIS to ACS/CCT letters will modernize the processes of creating Pensions letters.  &#xD;
+b.	A web service will populate data in the letters passing existing data from NIIS case to ACS/CCT letter by using the NIIS case number. &#xD;
+c.	This will eliminate some of the manual entries and help speed up the process of generating pension letters. &#xD;
+d.	A future phase could be introduced to enable Bulk Printing of letters/questionnaires.</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Eliminate Manual Entry, Speed Up Pension Letter Generation" id="id-c80c0ab26dd140818fb00b38620a7ba5">
+      <documentation>C.	Main Goals &amp; Outcomes: &#xD;
+a.	Creating a web service from NIIS to ACS/CCT letters will modernize the processes of creating Pensions letters.  &#xD;
+b.	A web service will populate data in the letters passing existing data from NIIS case to ACS/CCT letter by using the NIIS case number. &#xD;
+c.	This will eliminate some of the manual entries and help speed up the process of generating pension letters. &#xD;
+d.	A future phase could be introduced to enable Bulk Printing of letters/questionnaires.</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Enable Bulk Printing of Letters / Questionnaires" id="id-0f5c78ceb91a4a2795e5b87c1ed2726c">
+      <documentation>C.	Main Goals &amp; Outcomes: &#xD;
+a.	Creating a web service from NIIS to ACS/CCT letters will modernize the processes of creating Pensions letters.  &#xD;
+b.	A web service will populate data in the letters passing existing data from NIIS case to ACS/CCT letter by using the NIIS case number. &#xD;
+c.	This will eliminate some of the manual entries and help speed up the process of generating pension letters. &#xD;
+d.	A future phase could be introduced to enable Bulk Printing of letters/questionnaires.</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="EA Assessment" id="id-957949601b2046eabe09cb4d2d34e41b">
+      <documentation>EA Assessment Summary:&#xD;
+Enterprise Architecture (EA) considers this project as fully aligned to EA principles, standards and best practices, with opportunity for further alignment under tactical and strategic recommendations.&#xD;
+&#xD;
+Project/Proposal Background:&#xD;
+High Level Project/Proposal Notes: NIIS Pensions Web Service for Pensions OAS and CPP Letters [CSD: National Integrity Investigation System]&#xD;
+A.	IITB Proposal Intake Form: IITB Lite-Branch Initiative Proposal Intake Form&#xD;
+B.	Main Drivers: Manual, outdated process. Opportunity to modernize and help work better, smarter and faster.  &#xD;
+C.	Main Goals &amp; Outcomes: &#xD;
+     a. Creating a web service from NIIS to ACS/CCT letters will modernize the processes of creating Pensions letters.  &#xD;
+     b. A web service will populate data in the letters passing existing data from NIIS case to ACS/CCT letter by using the NIIS case number. &#xD;
+     c. This will eliminate some of the manual entries and help speed up the process of generating pension letters. &#xD;
+     d. A future phase could be introduced to enable Bulk Printing of letters/questionnaires.&#xD;
+D.	Current Status: Project/Proposal is in pre-development using ACS/CCT, Web Services and an updated NIIS form.&#xD;
+E.	Support Model: NIIS and CCT/ACS&#xD;
+F.	Costing Model: No additional cost. Existing license.&#xD;
+G.	Data Sensitivity: Protected-B</documentation>
+    </element>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-861798a5dcc2418eab64cdaefdeeb080" type="implementation_migration">
     <element xsi:type="archimate:Gap" name="Unmanaged Data (Gap)" id="id-ed4e79d466fd4551a90d4cbfb6784e74">
@@ -5320,6 +5424,22 @@ http://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=12328</documentation>
     <element xsi:type="archimate:FlowRelationship" id="id-9381cf15fc3344b3b510acb1604cd938" source="id-5e4144e079614813b1f929d87e0c2811" target="id-9f2dcfd2358246628f539857e4ca6f2a"/>
     <element xsi:type="archimate:FlowRelationship" id="id-b9a0598378604751a23d25c7db7a0467" source="id-9f2dcfd2358246628f539857e4ca6f2a" target="id-ff6de9bc0de14bf7b354d616343ea5ba"/>
     <element xsi:type="archimate:FlowRelationship" id="id-afdab3fc1620404bb336a4d0275218f3" source="id-ff6de9bc0de14bf7b354d616343ea5ba" target="id-9f2dcfd2358246628f539857e4ca6f2a"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-047cdee9c0194dadbe020c42e4e36f53" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-30ed5f417afe43baaa3ac49ce9251892"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-631ea00190944d80aaed3965658b0468" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-d700215374284849a44b92fe4e6cfb03"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-9c41e82b05ab42e6b2ddd9fdc233bc59" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-187162a4e4e24e06badb15e0d162752e"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-095797847b7d4ee89ab1678a39f4d75e" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-2bf9bd9e29d64b1f885fcb732bb525de"/>
+    <element xsi:type="archimate:CompositionRelationship" id="id-ef45adf27cfd4808b87209b852c1ad2c" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-45ef292a21d1425ab986dc95f74143d6"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-023a79f108c2486da8148b3724d86e45" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-c6b4365927104f43b65919ed68b7aeff"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-9cc391639727479095896ab32e6c7f8c" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-a1621088e96646fab0643cad6b9a0e02"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-6854146f7f654cda8a0e0113069a4f6c" source="id-89bc202ab59b4458bc352457d72aeb46" target="id-594e9d99f92446fca891582f36af4cbf"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-7a7d7ae8a24c4a13a04ec7208adb78c7" source="id-594e9d99f92446fca891582f36af4cbf" target="id-a8ce57b1532a4e5a81be806748dd4116"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-eb6d8b77415340a1ae273e07484bf1dd" source="id-a8ce57b1532a4e5a81be806748dd4116" target="id-9312907218294eb880b0dfed7a6317d8"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-7b3a81a14f1e4ef7b52b6c774d29c8a9" source="id-a8ce57b1532a4e5a81be806748dd4116" target="id-f262c19a910045318130736597db5c5b"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-d84d30bfa0c04893b396c56b489e1ba7" source="id-a8ce57b1532a4e5a81be806748dd4116" target="id-ebe01a9febf249e195e693d6247c87f4"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-cc499f8ce4db4b13a534b5b20238ef9c" source="id-a8ce57b1532a4e5a81be806748dd4116" target="id-5797df74326243a78580aa307726203e"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-aa387f9792c74a788d88f49fa4e85a3b" source="id-a8ce57b1532a4e5a81be806748dd4116" target="id-b56be493a1c34c7f8aa54b0161f3f6ee"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-bb54bad2b0d845a99f0ef7edb11f4f29" source="id-a8ce57b1532a4e5a81be806748dd4116" target="id-0ab13ac29c764e93a16df28f6f35a1a2"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-8525ed2fada54c65b093ba200680fa49" source="id-a8ce57b1532a4e5a81be806748dd4116" target="id-f4a0acee4e6f4035bb6e379d328ce0d6"/>
   </folder>
   <folder name="Views" id="id-e95b9bd9af9641dd95e8d88989249a9c" type="diagrams">
     <folder name="Lite Projects" id="id-0524b6ac40be4d9cbf85d362d0facaad">
@@ -5965,6 +6085,118 @@ Modernisation de la gestion de la traduction</content>
           <bounds x="1323" y="216" width="119" height="55"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-1526d7b2926f42dd8369da0cdc5b8078" source="id-5d546197d64248f39de1b05865c37592" target="id-7024eab289f54267b0b98b4c2486b8fe" archimateRelationship="id-654f284e44bb4db7aa59165fcbb26591"/>
         </child>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="Lite-2021-IITB-52 NIIS-CCT Auto-Fill Forms" id="id-6eb1d17d849a4590a1231069b512c467">
+        <child xsi:type="archimate:Note" id="id-365454e0d9f7479ab9d8ac02eab38c28" font="1|Segoe UI|16.2|1|WINDOWS|1|-27|0|0|0|700|0|0|0|0|3|2|1|34|Segoe UI" textAlignment="1">
+          <bounds x="32" y="10" width="513" height="75"/>
+          <content>Lite-2021-IITB-52 NIIS Pensions Web Service&#xD;
+for Pensions OAS and CPP Letters</content>
+        </child>
+        <child xsi:type="archimate:Note" id="id-b4f026fb2ab04c6b9fde87bba09649a5" textPosition="1">
+          <bounds x="360" y="61" width="185" height="24"/>
+          <content>EA Assessment Due: 2022-05-03</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3346689580cd4e31a1819ab6d96b83fb" archimateElement="id-89bc202ab59b4458bc352457d72aeb46">
+          <bounds x="192" y="262" width="277" height="165"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-dccd6c9e60124eedb47653c873833bd4" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-ed0bebb8582f4470a622b7f85d39a2b8" archimateRelationship="id-047cdee9c0194dadbe020c42e4e36f53"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9267c5ea15514399a1c351e064b6e4a1" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-02143728061942d5a9b9fb7af62e8605" archimateRelationship="id-631ea00190944d80aaed3965658b0468"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-df25353087184cd8b2505cc62fdd306f" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-69815b0f505d4efb8286fe730c3a2df8" archimateRelationship="id-9c41e82b05ab42e6b2ddd9fdc233bc59"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9ff1ba537f244f58b443574808f95136" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-acaddcc8b20d46109701aedb7e3cbfa0" archimateRelationship="id-095797847b7d4ee89ab1678a39f4d75e"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4a55f6c99a6d472d9475dd0f31580f01" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-d353dc90e94d4cd3a98f2124cfb82627" archimateRelationship="id-ef45adf27cfd4808b87209b852c1ad2c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-ca677ed4d0814fb89a75d0463821ea68" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-f323dbaaeffe4ee19a9efb49b66409c9" archimateRelationship="id-023a79f108c2486da8148b3724d86e45"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-45f9f0b02c8e4861816f1feeb0341f01" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-571c037ed6ac4869b5df1df90929bd7d" archimateRelationship="id-9cc391639727479095896ab32e6c7f8c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0a3beac63e2b44dcafb78c16e0ad84e6" source="id-3346689580cd4e31a1819ab6d96b83fb" target="id-2d782845c47b421790183fd8c00dffa2" archimateRelationship="id-6854146f7f654cda8a0e0113069a4f6c"/>
+          <child xsi:type="archimate:DiagramObject" id="id-acaddcc8b20d46109701aedb7e3cbfa0" targetConnections="id-9ff1ba537f244f58b443574808f95136" archimateElement="id-2bf9bd9e29d64b1f885fcb732bb525de">
+            <bounds x="144" y="36" width="100" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d353dc90e94d4cd3a98f2124cfb82627" targetConnections="id-4a55f6c99a6d472d9475dd0f31580f01" archimateElement="id-45ef292a21d1425ab986dc95f74143d6">
+            <bounds x="144" y="96" width="100" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-f323dbaaeffe4ee19a9efb49b66409c9" targetConnections="id-ca677ed4d0814fb89a75d0463821ea68" archimateElement="id-c6b4365927104f43b65919ed68b7aeff">
+            <bounds x="12" y="72" width="120" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ed0bebb8582f4470a622b7f85d39a2b8" targetConnections="id-dccd6c9e60124eedb47653c873833bd4" archimateElement="id-30ed5f417afe43baaa3ac49ce9251892">
+          <bounds x="373" y="480" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-02143728061942d5a9b9fb7af62e8605" targetConnections="id-9267c5ea15514399a1c351e064b6e4a1" archimateElement="id-d700215374284849a44b92fe4e6cfb03">
+          <bounds x="48" y="298" width="108" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-69815b0f505d4efb8286fe730c3a2df8" targetConnections="id-df25353087184cd8b2505cc62fdd306f" archimateElement="id-187162a4e4e24e06badb15e0d162752e">
+          <bounds x="48" y="360" width="110" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b43d8a0005384b449abf7610b8ea7bba" archimateElement="id-6beb47e32b244ac4a49c00fd6f45357f">
+          <bounds x="379" y="96" width="108" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2d301e01d5504217868a9f32094cfd55" archimateElement="id-b9c39e3b145f41eca18fa8bb5e69ee09">
+          <bounds x="32" y="180" width="158" height="61"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1ae80ce83408431bbd8882b29fb2c3cb" archimateElement="id-fcdc228578f84a8da8e691734603cacd">
+          <bounds x="192" y="96" width="158" height="85"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4669eea380b64a348ab2d764920431cb" archimateElement="id-c80c0ab26dd140818fb00b38620a7ba5">
+          <bounds x="32" y="96" width="158" height="85"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-22507a466b824356863c413bae9e8134" fillColor="#c0c0c0" archimateElement="id-0f5c78ceb91a4a2795e5b87c1ed2726c">
+          <bounds x="192" y="180" width="158" height="61"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d5087d3a6ebf4ecca72eba34cef13b06" archimateElement="id-a517133b8d34440a83b39f53985ef957">
+          <bounds x="516" y="96" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-571c037ed6ac4869b5df1df90929bd7d" targetConnections="id-45f9f0b02c8e4861816f1feeb0341f01" archimateElement="id-a1621088e96646fab0643cad6b9a0e02">
+          <bounds x="21" y="454" width="150" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-eb2dd66bb0e94d278e527f837c9ef684" targetConnections="id-043f2ee801874c65bf18b3e832057acf" archimateElement="id-a8ce57b1532a4e5a81be806748dd4116">
+          <bounds x="636" y="262" width="307" height="181"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e31309920c5a436199c05116c87affa6" source="id-eb2dd66bb0e94d278e527f837c9ef684" target="id-f18cb2105784415d93203285b51b0361" archimateRelationship="id-eb6d8b77415340a1ae273e07484bf1dd"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b67e18353012444eb1ea7b3b96b6e3b4" source="id-eb2dd66bb0e94d278e527f837c9ef684" target="id-1453948bb0174c40bee7dfa39ee144a9" archimateRelationship="id-7b3a81a14f1e4ef7b52b6c774d29c8a9"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1b4bfa1d38594ae784037fb6072a1653" source="id-eb2dd66bb0e94d278e527f837c9ef684" target="id-b67b6b866a64427082d701a726238446" archimateRelationship="id-d84d30bfa0c04893b396c56b489e1ba7"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-296000fdc5d64c6eb277c0abe60e2fdd" source="id-eb2dd66bb0e94d278e527f837c9ef684" target="id-867d858470c245d4aabe94836c619fb9" archimateRelationship="id-cc499f8ce4db4b13a534b5b20238ef9c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c04f0bd054704194a76b2e2cfc391110" source="id-eb2dd66bb0e94d278e527f837c9ef684" target="id-222e92c5369a4792b8a2a9148c9e1188" archimateRelationship="id-aa387f9792c74a788d88f49fa4e85a3b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3575e83c6d4c4da793d5b29bb2a7f997" source="id-eb2dd66bb0e94d278e527f837c9ef684" target="id-517045a5bf92492d93d39f237a9cf815" archimateRelationship="id-bb54bad2b0d845a99f0ef7edb11f4f29"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-750c5422bc4b4726b91d7811687b0a9a" source="id-eb2dd66bb0e94d278e527f837c9ef684" target="id-ecf672a8e5b849138f4abb0b2570b1dc" archimateRelationship="id-8525ed2fada54c65b093ba200680fa49"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f18cb2105784415d93203285b51b0361" targetConnections="id-e31309920c5a436199c05116c87affa6" archimateElement="id-9312907218294eb880b0dfed7a6317d8">
+            <bounds x="12" y="44" width="121" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1453948bb0174c40bee7dfa39ee144a9" targetConnections="id-b67e18353012444eb1ea7b3b96b6e3b4" archimateElement="id-f262c19a910045318130736597db5c5b">
+            <bounds x="12" y="110" width="121" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b67b6b866a64427082d701a726238446" targetConnections="id-1b4bfa1d38594ae784037fb6072a1653" archimateElement="id-ebe01a9febf249e195e693d6247c87f4">
+            <bounds x="143" y="44" width="134" height="55"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-867d858470c245d4aabe94836c619fb9" targetConnections="id-296000fdc5d64c6eb277c0abe60e2fdd" archimateElement="id-5797df74326243a78580aa307726203e">
+            <bounds x="143" y="110" width="134" height="55"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2d782845c47b421790183fd8c00dffa2" targetConnections="id-0a3beac63e2b44dcafb78c16e0ad84e6" archimateElement="id-594e9d99f92446fca891582f36af4cbf">
+          <bounds x="492" y="317" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-043f2ee801874c65bf18b3e832057acf" source="id-2d782845c47b421790183fd8c00dffa2" target="id-eb2dd66bb0e94d278e527f837c9ef684" archimateRelationship="id-7a7d7ae8a24c4a13a04ec7208adb78c7"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-03ae9623988b46619cb8e7bdfe7f9ff3" archimateElement="id-957949601b2046eabe09cb4d2d34e41b">
+          <bounds x="698" y="38" width="120" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-222e92c5369a4792b8a2a9148c9e1188" targetConnections="id-c04f0bd054704194a76b2e2cfc391110" fillColor="#008000" archimateElement="id-b56be493a1c34c7f8aa54b0161f3f6ee">
+          <bounds x="1032" y="192" width="132" height="84"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-517045a5bf92492d93d39f237a9cf815" targetConnections="id-3575e83c6d4c4da793d5b29bb2a7f997" fillColor="#008000" archimateElement="id-0ab13ac29c764e93a16df28f6f35a1a2">
+          <bounds x="1032" y="298" width="132" height="84"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ecf672a8e5b849138f4abb0b2570b1dc" targetConnections="id-750c5422bc4b4726b91d7811687b0a9a" fillColor="#008000" archimateElement="id-f4a0acee4e6f4035bb6e379d328ce0d6">
+          <bounds x="1032" y="414" width="132" height="84"/>
+        </child>
+        <documentation>*Description (Purpose of business)*&#xD;
+This is an on-line system with batch components for keeping records and reporting on all cases dealt with by HRCC Investigation and Control Units.  This system avoids duplicate data keying, calculates revised overpayments automatically and eliminates some&#xD;
+Internal Clients 10,000&#xD;
+ESDC Branch:  Service Canada - Integrity Services &#xD;
+&#xD;
+Project Background: Hundreds of Pensions letters and questionaire are manually created. Creation of web service would modernize and help Integrity work faster and smarter. &#xD;
+Project Description: Users would access the NIIS case number. And via a new NIIS screen the users would have access to different drop down menus to access Pensions Letters or Questionaires to be sent to the client. Once a Form selected the clients information would populate the form via a CCT window. The user would have acapacity to preview, edit, save and print the form. This would be possible due to an NIIS web service build by IITB NIIS team. This work would use a similar process used in TFWP Dynamics system and would modernize the pensions letters operations significantly. &#xD;
+&#xD;
+PMIS - Project Outcomes: Creating a web service from NIIS to ACS/CCT letters will modernize the processus of creating Pensions letters. They are over 100 templates manually populated when contacting pensioners. A web service will populate data in the letters passing existing data from NIIS case to ACS/CCT letter by using the NIIS case number. This will eliminate some of the manual entries and help speed the process of pensions letters. A future phase could be introduced to enable Bulk Printing of letters/questionaires. &#xD;
+ &#xD;
+Problem/Opportunity: Manual, outdated process. Opportunity to modernize and help work better, smarter and faster. &#xD;
+&#xD;
+</documentation>
       </element>
     </folder>
     <folder name="AEA-DTiG Conference" id="id-74e9492d36164a83981af6dc125acd39">
