@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Reference Data</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Reference Data</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-DataObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-DataObject" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">DESCRIPTION:
+Reference Data is any data used to organise or categorise other data, or for relating data to information both within and beyond the boundaries of the enterprise. Usually consists of codes and descriptions or definitions.
+
+Source: DAMA DM_BOK
+http://www.dama.org
+
+Reference data consists typically of a small, discrete set of values that are not updated as part of business transactions but are usually used to impose consistent classi&#64257;cation. Reference data normally has a low update frequency. Reference data is relevant across more than one business systems belonging to different organisations and sectors 
+[Source: J. Jordan &amp; C. Ellen (2009). Business need, data and business intelligence].
+
+INTEROPERABILITY SALIENCY:
+The Reference Data ABB is salient for semantic interoperability because it can be shared and reused (e.g. in the form of taxonomies or controlled vocabularies) between organisation to agree on some  basic information. Management of reference data is a priority as suggested by EIF's recommendation 31: "Put in place an information management strategy at the highest possible level to avoid fragmentation and duplication. Management of metadata, master data and reference data should be prioritised."
+
+EXAMPLES:
+The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): 
+
+EUROSTAT - Nomenclature of Territorial Units for Statistics (NUTS) 
+Principle 1: Population thresholds
+The NUTS regulation defines minimum and maximum population thresholds for the size of the NUTS regions:
+
+Level        Minimum        Maximum
+NUTS 1        3 000 000        7 000 000
+NUTS 2        800 000        3 000 000
+NUTS 3        150 000        150 000
+
+For administrative levels of NUTS, it is sufficient if the average size of the corresponding regions lies within the thresholds; in case of non-administrative levels, each individual region should do so. Exceptions exist however in case of geographical, socio-economic, historical, cultural or environmental circumstances.
+Despite the aim of ensuring that regions of comparable size all appear at the same NUTS level, each level still contains regions which differ greatly in terms of population.
+Principle 2: NUTS favours administrative divisions
+For practical reasons the NUTS classification generally mirrors the territorial administrative division of the Member States. This supports the availability of data and the implementation capacity of policy.
+Principle 3: Regular and extraordinary amendments
+The NUTS classification can be amended, but generally not more frequently than every three years. The amendments are usually based on changes of the territorial structure in one or more Member States.
+In case of a substantial reorganisation of the administrative structure of a Member State, amendments to the NUTS may be adopted at intervals of less than three years. This has only happened once so far, in 2014 for Portugal.
+http://ec.europa.eu/eurostat/web/nuts/overview
+http://ec.europa.eu/eurostat/web/nuts/principles-and-characteristics</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td> ID </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">ABB27</xmp> </td></tr><tr><td> dct:type </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">eira:ReferenceData</xmp> </td></tr><tr><td> dct:publisher </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> dct:modified </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:reusability </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (70-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:actual_use </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Currently used | Use planned | No ]</xmp> </td></tr><tr><td> eira:ABB_Status </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">Obsolete</xmp> </td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

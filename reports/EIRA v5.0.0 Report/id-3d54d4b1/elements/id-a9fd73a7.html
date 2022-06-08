@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Logging Service</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Logging Service</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationService"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationService" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Shares the functionality of tracing all events and user actions impacting a data entity throughout its lifecycle (from its creation to its disposal). It can be used to reproduce a certain state of a data entity at a certain moment in time.
+Logging = To record details of information or events in an organized record-keeping system, usually sequenced in the order in which they occurred.
+
+Based on ISACA
+https://www.isaca.org 
+
+The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB):
+Graylog2 - open source log management platform
+Graylog2 is an open source log management platform. Each message is saved in an Elasticsearch database and a web interface allows to manage and analyse the logs.
+Graylog2 is divided into two parts: graylog2-server and graylog2-web-interface. The first is a Java application that accepts messages on different protocols: UDP, TCP, GELF, AMQP... Each message is analysed and saved in the Elasticsearch database. A Rest API is also integrated into the tool and is used in particular by the web-interface part. This allows to manage users, streams and dashboards. 
+Some possible uses: 
+&#8226;	Centralization of the logs: several types of inputs: syslog, GELF, raw... Rather than having to connect to each of the servers to consult the error logs, they can be configured to send all the messages in Graylog2.
+&#8226;	Debug application
+&#8226;	Exception handling
+&#8226;	Log analysis
+For example, it can easily list the clients who are still using the deprecated version of an API. Another search can e.g. allow you to list the largest consumers or the most used parts of an API.
+Graylog Enterprise is built on top of the Graylog open source platform and offers additional features: 
+&#8226;	Archiving: automatically archive the data that are not searched through very often. Store this data on more cost-effective, slower hard disks and make it available for search in Graylog only when needed.
+&#8226;	Audit Log: Graylog Enterprise also offers Audit Log capabilities. Audit Log records and stores actions taken by a user or administrator that make changes in the Graylog system.
+https://www.graylog.org/</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td> ID </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">ABB59</xmp> </td></tr><tr><td> dct:type </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">eira:LoggingService</xmp> </td></tr><tr><td> dct:publisher </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> dct:modified </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:status </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Exists | Development planned ]</xmp> </td></tr><tr><td> eira:reusability </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Reusable | Not reusable ]</xmp> </td></tr><tr><td> eira:reuse_status </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Exposed for reuse as main service | Exposed for reuse as supporting service | Reused ]</xmp> </td></tr><tr><td> eira:ABB_Status </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">Obsolete</xmp> </td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
