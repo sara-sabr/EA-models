@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Data Publication Component</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Data Publication Component</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationComponent"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationComponent" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">DEFINITION:
+Data Publication Component ABB is an Application Component implementing the functionality of making data available for common use.
+
+Source: DAMA
+(http://www.dama.org/)
+
+INTEROPERABILITY SALIENCY:
+IoP Dimension: Structural IoP
+The Data Pubblication Component ABB &#160;is salient for technical interoperability because it provides the implementation of the functionalities to make public data freely available for use and reuse by others unless restriction aoply as stated in the EIF recommendation n.2: "Publish the data you own as open data unless certain restrictions apply."
+
+EXAMPLES:
+The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB):
+CKAN 
+CKAN is a data management system that makes data accessible by providing tools to streamline publishing, sharing, finding and using data.
+This is a tool for making open data websites. It helps you manage and publish collections of data. It is used by national and local governments, research institutions, and other organizations who collect a lot of data.
+Once your data is published, users can use its faceted search features to browse and find the data they need, and preview it using maps, graphs and tables &#8211; whether they are developers, journalists, researchers, NGOs, citizens, or even your own staff.
+CKAN is open source and free software, with an active community of contributors who develop and maintain its core technology. CKAN is modified and extended by an even larger community of developers who contribute to a growing library of CKAN extensions.
+Source: 
+(https://ckan.org/)
+
+The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB):
+Globus
+Globus is a leading provider of research data management software application and platform services.
+Globus publication capabilities are delivered through a hosted service. Published data is stored on campus, institutional, and group resources that are often managed and operated by different administrators. To associate storage resources with a data collection simply use Globus shared endpoints and associate them with the data repository to publish. Published datasets are organized by "communities" and their member "collections". Globus users can create and manage their own communities and collections through the data publication service. A collection enables the submission of datasets with policies regarding access.
+A dataset comprises data and metadata. Policies can be set on communities or collections to manage:
+-	Metadata (schema, requirements)
+-	Access control (user and group based)
+-	Curation workflow
+-	Submission and distribution licenses
+-	Storage
+Datasets undergo curation based on a workflow defined by the community that will publish the data. Workflows may be customized by each community to capture their specific metadata and to reflect the community's review process. After the dataset is published, it is discoverable using a faceted search that allows the researcher to progressively filter results and rapidly focus in on the data of interest. The data may then be transferred to a Globus endpoint where the investigator can inspect and further process the data.
+Data publication is a premium feature available with a Globus Subscription
+
+Source: (https://www.globus.org/data-publication)</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td> ID </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">ABB209</xmp> </td></tr><tr><td> dct:type </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">eira:DataPublicationComponent</xmp> </td></tr><tr><td> dct:publisher </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> dct:modified </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:status </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Exists | Development planned ]</xmp> </td></tr><tr><td> eira:data_quality_level </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (75-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:data_quality_score </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:reusability_level </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (75-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:reusability_score </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:iop_level </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (75-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:iop_score </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:actual_reuse </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Already reused | Reuse planned | No]</xmp> </td></tr><tr><td> eira:view </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">Technical view - Infrastructure</xmp> </td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

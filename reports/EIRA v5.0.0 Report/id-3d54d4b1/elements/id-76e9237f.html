@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Identification Component</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Identification Component</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-ApplicationComponent"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-ApplicationComponent" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">DEFINITION:
+Identification Component ABB is an Application Component implementing the functionality of user authentication.
+&#8216;Electronic identification&#8217; means the process of using person identification data in electronic form uniquely representing either a natural or legal person, or a natural person representing a legal person;
+&#8216;Authentication&#8217; means an electronic process that enables the electronic identification of a natural or legal person, or the origin and integrity of data in electronic form to be confirmed;
+
+Source: eIDAS - REGULATION (EU) No 910/2014 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC.
+(http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2014.257.01.0073.01.ENG)
+
+Syn. Authentication Component, eID
+
+INTEROPERABILITY SALIENCY:
+IoP Dimension: Structural IoP
+The Identity Management Component ABB &#160;is salient for technical interoperability because it provides the functionalities of user authentication. 
+
+EXAMPLES:
+The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB):
+
+OpenIAM Identity Manager
+The OpenIAM Identity Manager automates the task of managing identities across the various devices and applications used by the enterprise. This includes applications within the enterprise such as Active Directory and Exchange, and cloud based applications such as Google Apps.
+OpenIAM Identity Manager provides capabilities such as:
+&#8226;	Provisioning, De-provisioning, Workflow
+&#8226;	Password Management, Password Policies, Synchronization
+&#8226;	Self-Service, allowing locked users to reset their accounts, manage their profiles, challenge response security questions
+&#8226;	Audit, Attestation, Reporting
+&#8226;	Delegated Administration
+
+Source:
+(http://www.openiam.com/products/identity-manager/idm-overview/)</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td> ID </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">ABB158</xmp> </td></tr><tr><td> dct:type </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">eira:IdentificationComponent</xmp> </td></tr><tr><td> dct:publisher </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> dct:modified </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:status </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Exists | Development planned ]</xmp> </td></tr><tr><td> eira:data_quality_level </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (75-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:data_quality_score </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:reusability_level </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (75-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:reusability_score </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:iop_level </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (75-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:actual_reuse </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Already reused | Reuse planned | No]</xmp> </td></tr><tr><td> eira:view </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">Technical view - Infrastructure</xmp> </td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Core Data Model</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Core Data Model</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessObject" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">DEFINITION:
+Core Data Model ABB is a Business Object capturing the fundamental characteristics of an entity or a core set of entities.
+
+Source: Core Vocabularies Handbook
+(https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/)
+
+INTEROPERABILITY SALIENCY:
+IoP Dimension: Structural IoP, Behavioral IoP, Governance IoP
+The Core Data ABB is salient for semantic interoperability because it supports semantic interoperability by providing simplified, reusable and extensible data models that capture the fundamental characteristics of a data entity in a context-neutral and syntax-neutral fashion.
+
+EXAMPLES:
+The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): 
+
+ISA2 Core Vocabularies
+
+Core Vocabularies are simplified, re-usable and extensible data models that capture the fundamental characteristics of an entity in a context-neutral fashion. 
+Public administrations can use and extend the Core Vocabularies in the following contexts:
+&#8226;	Development of new systems: the Core Vocabularies can be used as a default starting point for designing the conceptual and logical data models in newly developed information systems.
+&#8226;	Information exchange between systems: the Core Vocabularies can become the basis of a context-specific data model used to exchange data among existing information systems.
+&#8226;	Data integration: the Core Vocabularies can be used to integrate data that comes from disparate data sources and create a data mash-up.
+&#8226;	Open data publishing: the Core Vocabularies can be used as the foundation of a common export format for data in base registries like cadastres, business registers and service portals. 
+&#8226;	ISA&#178; has developed the Core Vocabularies for public administrations in an open process with the active involvement of specific working groups. The Core Vocabularies developed are the following:
+-	Core Person: captures the fundamental characteristics of a person, e.g. name, gender, date of birth, location.
+-	Registered organisation: captures the fundamental characteristics of a legal entity (e.g. its identifier, activities) which is created through a formal registration process, typically in a national or regional register.
+-	Core Location: captures the fundamental characteristics of a location, represented as an address, a geographic name or geometry.
+-	Core Public service: captures the fundamental characteristics of a service offered by a public administration.
+-	Core Criterion and Core Evidence: describe the principles and the means that a private entity must fulfil to become eligible or qualified to perform public services. A Criterion is a rule or a principle that is used to judge, evaluate or test something. An Evidence is a means to prove a Criterion.
+-	Core Public organisation: describes public organisations in the European Union.
+
+Source: (https://ec.europa.eu/isa2/solutions/core-vocabularies_en)</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td> ID </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">ABB194</xmp> </td></tr><tr><td> dct:type </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">eira:CoreDataModel</xmp> </td></tr><tr><td> dct:publisher </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> dct:modified </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:url </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:identifier </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:body </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:domain </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:view </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">Semantic view</xmp> </td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

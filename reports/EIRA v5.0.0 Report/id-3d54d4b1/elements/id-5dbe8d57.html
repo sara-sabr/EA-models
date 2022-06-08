@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Data Set Catalogue</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Data Set Catalogue</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-DataObject"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-DataObject" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">DEFINITION:
+Data Set Catalogue ABB is a Data Object aiming to index an inventory of data sets with comprehensiveness and trustiness value.
+This ABB is a key interoperability enabler (*) for sharing/PROVISIONING and reusing/CONSUMING Data.
+
+Source: W3C
+(http://www.w3.org/TR/vocab-dcat/#class-catalog) 
+
+(*)DECISION (EU) 2015/2240 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 25 November 2015 establishing a programme on interoperability solutions and common frameworks for European public administrations, businesses and citizens (ISA2 programme) as a means for modernising the public sector
+
+Syn. Data Set Registry, Data Set Inventory
+
+INTEROPERABILITY SALIENCY:
+IoP Dimension: Structural IoP
+The Data Set catalogue  ABB is a key interoperability enabler because it supports to achieve semantic structural interoperability by ensuring the provision/consumption of  data by digital public services.
+
+EXAMPLES:
+The following implementation is an example on how this specific Architecture Building Block (ABB) can be instantiated as a Solution Building Block (SBB): 
+
+Agricultural and Vegetable Catalogue
+The seed of varieties of agricultural and plant species and varieties of vegetable species that are published in the EU level common catalogue is subject to no marketing restrictions with the Community. Publication in the catalogue must be approved as fulfilling minimum requirements laid down in legislation. Data is published on the contents of the catalogues for agricultural and vegetal species and maintainers with details of the reference list.
+
+Source: (https://data.europa.eu/euodp/data/dataset/7A98oEqVa83q6L7tHQ)</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td> ID </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">ABB24</xmp> </td></tr><tr><td> dct:type </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">eira:DataSetCatalogue</xmp> </td></tr><tr><td> dct:publisher </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> dct:modified </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap"></xmp> </td></tr><tr><td> eira:reusability </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Excellent (90-100%) | Very good (70-89,9%) | Fair (50-74,9%) | Poor (0-49,9%) ]</xmp> </td></tr><tr><td> eira:actual_use </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">[ Currently used | Use planned | No ]</xmp> </td></tr><tr><td> eira:view </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">Semantic view</xmp> </td></tr>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
