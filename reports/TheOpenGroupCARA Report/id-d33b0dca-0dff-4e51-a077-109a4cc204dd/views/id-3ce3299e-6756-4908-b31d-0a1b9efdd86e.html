@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Cargo Data Diagram</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Cargo Data Diagram</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-application_usage"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_application_usage" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-3ce3299e-6756-4908-b31d-0a1b9efdd86e.png" alt="Cargo Data Diagram" usemap="#id-3ce3299e-6756-4908-b31d-0a1b9efdd86emap"/>
+			   <map name="id-3ce3299e-6756-4908-b31d-0a1b9efdd86emap">
+				  		<area shape="rect" coords="10,112,82,167" href="../elements/id-fd39b139-f4e7-4dd8-bc35-12f859453f4b.html"  target="element">
+				  		<area shape="rect" coords="133,112,219,167" href="../elements/id-92175772-aca4-4f64-8177-ced842c81f4a.html"  target="element">
+				  		<area shape="rect" coords="130,10,221,65" href="../elements/id-e3ed447f-69bd-4b90-9087-ea77b5e1e340.html"  target="element">
+				  		<area shape="rect" coords="382,58,467,113" href="../elements/id-a7de89f3-6154-494d-96b7-9f68f7fd0823.html"  target="element">
+				  		<area shape="rect" coords="514,58,581,113" href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html"  target="element">
+				  		<area shape="rect" coords="274,58,341,113" href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">This depicts the Data Architecture of the Cargo Capability (Domain). All information objects related to this capability are included in this representation. Furthermore, Baggage, Unit Load Device, Aircraft, Freight Document, and Cargo are directly related to the Freight entity. All information objects which are generated during the execution of the process are included in entities or found in the Data Architecture.
+
+This illustrates important information objects, which are related to ground operations and their relationships. Regarding the business process of the Ground Operations Capability (Domain) the derived sub-processes produce information objects; e.g., freight documents or a passenger list. The objects were modeled into entities and are represented in the data model above. In the center is the entity Aircraft, to which the entities Flight, Seat Map, Fleet, and Freight are directly connected. A crew rotation is assigned directly to a flight. Freight is related to Cargo/Mail, Freight Document, and Baggage. The Data Architecture describes the structure of the Ground Operations Capability (Domain), whereas the business capabilities depict the behavior of the domain.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element"> Freight </a> </td>
+											    <td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+											    <td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-a7de89f3-6154-494d-96b7-9f68f7fd0823.html" target="element"> Unit Load Device </a> </td>
+											    <td> <a href="../elements/id-a7de89f3-6154-494d-96b7-9f68f7fd0823.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-e3ed447f-69bd-4b90-9087-ea77b5e1e340.html" target="element"> Freight Document </a> </td>
+											    <td> <a href="../elements/id-e3ed447f-69bd-4b90-9087-ea77b5e1e340.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-92175772-aca4-4f64-8177-ced842c81f4a.html" target="element"> Cargo/Mail </a> </td>
+											    <td> <a href="../elements/id-92175772-aca4-4f64-8177-ced842c81f4a.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-fd39b139-f4e7-4dd8-bc35-12f859453f4b.html" target="element"> Load Document </a> </td>
+											    <td> <a href="../elements/id-fd39b139-f4e7-4dd8-bc35-12f859453f4b.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-6007910c-cb0f-4f8d-afd9-da34a61e2fa4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6007910c-cb0f-4f8d-afd9-da34a61e2fa4.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+																		<td> <a href="../elements/id-a7de89f3-6154-494d-96b7-9f68f7fd0823.html" target="element"> Unit Load Device </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-9ee70e40-1662-4dc4-bf09-5d6ef1ca1dd7.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9ee70e40-1662-4dc4-bf09-5d6ef1ca1dd7.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a7de89f3-6154-494d-96b7-9f68f7fd0823.html" target="element"> Unit Load Device </a> </td>
+																		<td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element"> Freight </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-04de62bd-107b-4abf-b59a-5047abc79a5a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-04de62bd-107b-4abf-b59a-5047abc79a5a.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-e3ed447f-69bd-4b90-9087-ea77b5e1e340.html" target="element"> Freight Document </a> </td>
+																		<td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element"> Freight </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-82187ba9-d0a6-47f3-9041-e1833d94e5d3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-82187ba9-d0a6-47f3-9041-e1833d94e5d3.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-92175772-aca4-4f64-8177-ced842c81f4a.html" target="element"> Cargo/Mail </a> </td>
+																		<td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element"> Freight </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-9fdf4a81-51fe-409f-b597-6e645c1d451c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9fdf4a81-51fe-409f-b597-6e645c1d451c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-fd39b139-f4e7-4dd8-bc35-12f859453f4b.html" target="element"> Load Document </a> </td>
+																		<td> <a href="../elements/id-92175772-aca4-4f64-8177-ced842c81f4a.html" target="element"> Cargo/Mail </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Operations Planning & Control</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Operations Planning &amp; Control</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Capability"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Capability" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Operations Planning &amp; Control is part of the Flight Operations Capability (Domain). An operational flight plan is required to ensure an airplane meets all of the operational regulations for a specific flight, to give the flight crew information to help them conduct the flight safely, and to coordinate with air traffic control (ATC). 
+A flight plan includes the route the crew will fly and specifies altitudes and speeds. It also provides calculations for how much fuel the airplane will use and the additional fuel it will need to carry to meet various requirements for safety. Minimum information on an operational flight plan
+1)	What speed to fly (possibly varying along the route)
+2)	How much fuel the airplane will burn ("trip fuel")
+3)	Total departure fuel, and how it is allocated &#8212; fuel to alternate, contingency fuel, and other allocations that vary between airlines and regulatory rules
+4)	What route (ground track) to fly
+5)	What profile (altitudes along the route) to fly 
+By varying the route (i.e., ground track), altitudes, speeds, and amount of departure fuel, an effective flight plan can reduce fuel costs, time-based costs, overflight costs (to obtain the right to fly over a country&#8217;s airspace), and lost revenue from payload that can't be carried. These variations are subject to airplane performance, weather, allowed route and altitude structure, schedule constraints, and operational constraints.
+Ensuring that the aircraft and the pilot are in the right place at the right time, both currently qualified and serviceable, is what an operations manager does. Multiply that by the number of flights per day, and that&#8217;s what the operations control department does &#8211; it keeps the airline working from moment to moment despite disruption by weather and a thousand other possible occurrences or mishaps.
+Take so-called low cost carriers as (somewhat) simple examples. They can be big (300+ aircraft), but are designed for engineering and operations simplicity. They always aim to run single-type fleets with the cabin configuration completely standardized, so any aircraft in the fleet can perform any route, and all flight and cabin crew are type-rated on every aircraft. They are mainly short-haul, and if there are no mishaps every crew finishes each day going home rather than to a hotel. The ops departments can be rather small.
+On the other hand, the ops staff at a big intercontinental carrier faces a far more complex task. For example, big carriers have to deal with a lot of aircraft with various different basic types, both short and long haul, and within those type groups there are multiple cabin configurations and &#8211; sometimes &#8211; different engine fits. Just because a route is normally served by a Boeing 777, if the scheduled one falls out, the ops department has to ensure that a schedule on which First Class tickets are sold is matched with a four-class configured 777 rather than a three-class version.
+Operations control solves problems. It matches the airline&#8217;s assets &#8211; human and hardware, to the promised schedule, come what may. It takes just the smallest twitch of the weather somewhere in the world, or pilots and cabin crew reporting sick, or an unexpected component failure on an aircraft, for the carefully choreographed system to start tumbling unless a way can be found to arrest it.
+It&#8217;s like juggling, but instead of balls, clubs, rings etc, the props are aircrafts with their maintenance schedules, pilots with their rosters, duty time limitations and recurrent training requirements, cabin crew likewise, airports with curfews, notams and changing weather forecasts, down-route accommodation for crew, passenger management &#8211; especially in the case of delay or cancellation, onboard medical emergencies, cargo management, aircraft weight and balance, dispatch coordination, and diversions. 
+Big, intercontinental carriers have to manage thousands of departures a day around the globe, carrying hundreds of thousands of passengers. It doesn&#8217;t require a lot of imagination to understand that every decision, action or inaction of the operations control department has a serious impact on the overall performance of an airline.
+In summary, the following tasks are within the scope of this Capability (Group). It is responsible for calculating operational flight plan (flight path) under consideration of slots, info by ATC, Over-flight rights, Weather, Costs, Flight time. Furthermore it announces operational Flight Plan to ATC and computes payload and minimum fuel. It also provides flight and navigation information to pilots. It prepares and provides briefing documents to crew. It monitors flight plan, identify and evaluate irregularities, i.e. delays caused by ATC or weather. Furthermore it handles irregularities keeping schedule deviation impact and costs as little as possible and interferes with flight plan to minimize disruptions (aircraft change, crew recovery). It is responsible for optimizing the fuel usage and coordinating ATC-slots with Eurocontrol. Lastly, it plans emergency response and does the Flight Dispatch and Crew dispatch.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Pre-Departure</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Pre-Departure</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessProcess"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessProcess" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">As the scheduled departure time approaches, the Captain, lead gate agent and ground crew chief coordinate their efforts to see that all pre-departure requirements are met. The pilots finalize the FMS and autoflight parameters by obtaining an update on weather conditions and runway utilization through the Airport Terminal Information Service. In addition, the crew must receive confirmation of the flight&#8217;s routing from ATC. Prior to the scheduled departure (usually at least a few hours before), the airline&#8217;s dispatch office files a requested routing based on their flight plan optimization with ATC. Approximately 20 minutes prior to departure, the ATC route clearance is requested, preferably through an ACARS function. The ATC route clearance received by the crew may differ from the filed routing and the changes must be addressed (fuel/performance/dispatch considerations) and reprogrammed. In addition to possible routing changes, ATC may also adjust the planned departure time as a result of current airspace dynamics or weather conditions.
+Latest at this stage, the cockpit will receive a signed load sheet from the loading agent. This typically includes finalized aircraft and fuel weights, stabilizer trim settings, center of gravity data, passenger count, cargo loading and live animal and security information. The First Officer uses the updated information to calculate finalized take-off performance data. The FO will also reset the stabilizer trim and set take-off reference speeds. In cases where the load sheet weights are greater than planned, adjustments may have to be made to the flap and/or power settings, or an alternate runway may be required. The load sheet is a critical document, because errors on it can have catastrophic consequences (e.g. plane crash due to wrong trimmings). Therefore, in many countries, the crew is obliged to cross-check the calculations for gross errors and, depending on regulations, the captain has to indicate concurrence with the figures by signing the load sheet. Often, copies of the signed load sheet are taken by various parties (e.g. load agent, airline, etc.) and kept for a defined period of time.
+Once the clearance is received, the crew can perform the &#8220;Before Starting Engines&#8221; checklist. At approximately 10 minutes prior to departure, the Captain turns on the Fasten Seat Belt sign which signals the Flight Attendants to ready the cabin for departure and deliver the requisite PA announcements.
+In order to prepare the aircraft for movement, the ground crew completes the baggage and cargo loading, including late bags, and closes the cargo doors. If necessary, any required external power or air is removed from the aircraft, unless required for engine start. The tug is connected to the aircraft via a towbar unless a &#8220;powerback&#8221; is planned. The flight deck crew performs the &#8220;just prior to pushback&#8221; portion of the checklist which includes, among other things, confirmation that all the doors are closed and that the anti-collision (red flashing) beacon is operating. At this time the flight attendants arm the escape slide mechanism of the entry doors in case a ground evacuation becomes necessary. When the checks are complete and the aircraft is ready for gate departure, the ground crew becomes the pushback crew.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

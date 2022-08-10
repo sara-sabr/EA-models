@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Flight Support</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Flight Support</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-Capability"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-Capability" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Flight Support is part of the Flight Operations Capability (Domain). The major components needing to be coordinated for any given flight include the aircraft and support equipment, cockpit and cabin crews (together known as the &#8220;flight crew&#8221;), maintenance, and ground service personnel. Although the maintenance and ground crew activities are critical to support flight operations, the emphasis in this Capability (Group) is on the regulation and scheduling of the flight crews to conduct a given flight.
+In many cases, crewmembers may have never worked together prior to a particular flight. In order to maintain a safe, smoothly functioning and efficient operation, airlines and regulators have developed very detailed procedures to be executed by crewmembers that leave very little room for improvisation. These procedures, including normal, abnormal, and emergency conditions, are detailed in the crewmember&#8217;s operating manuals and backed up through a system of checklists which are cross-checked between flight crewmembers. It is the responsibility of the training or flight standards department to establish crewmember proficiency and currency. The Captain, however, is always ultimately responsible for the safe and efficient conduct of the flight and in extraordinary circumstances may deviate from a procedure or regulation under his or her command authority (Captain&#8217;s Emergency Authority).
+The cabin crew is primarily responsible for passenger safety during the flight. Other duties include providing customer service products (meals, entertainment, etc.) and assistance with boarding. Flight attendants receive specialized training in aircraft emergencies, evacuation procedures, medical issues and health hazards, care of special needs passengers, flight regulations and meal service.
+Activities before take-off include flight planning, passenger processing, aircraft preflight, fueling, and other required ground processes. The preflight activities are orchestrated so as to achieve an &#8220;on-schedule&#8221; pushback from the departure gate, although any maintenance and gate hold issues must also be considered.
+While taxiing to the departure runway, the cockpit crew prepares the aircraft for take-off and updates the take-off performance parameters with actual load data. In addition, any departure delays, aircraft icing, and environmental conditions such as runway contamination may need to be addressed.
+The take-off is a highly critical maneuver where a number of factors must be taken into consideration including airport/runway, environmental, and emergency/abnormal contingencies. Departure from the terminal area, which may include route and speed restrictions, is followed by the climb to cruise altitude. The optimum cruise altitude is determined by a number of factors including efficiency, ride comfort, other traffic and/or airspace limitations. During cruise flight, the cockpit crew must continually evaluate contingency options in the event of a passenger or mechanical disruption. In addition, some flight situations require adherence to specialized procedures including international routing, mountainous terrain, and extended overwater operations.
+During descent, the crew begins preparing the cockpit and cabin for landing. In addition to conforming to ATC (Air Traffic Control) restrictions, the cockpit crew plans the approach to landing which includes consideration of the destination weather, the approach procedures available, and the equipment available on the aircraft to safely and legally complete the arrival. Factors include environmental conditions (visibility, presence of convective weather, runway conditions, etc.), availability of approach aids, aircraft mechanical condition and, if necessary, available fuel for holding. In the event of an unsuccessful approach, diversion to a more suitable landing point may have to be considered.
+After landing, the aircraft is taxied to the arrival gate while the crew readies the cockpit and cabin for parking. Once the aircraft is parked, passenger disembarkation is completed as well as baggage/cargo unloading. The flight crews proceed to the next departure gate, or to the ground transportation area if their duty day is complete.
+The following tasks are within the scope of this sub domain. It is responsible for Cockpit and Cabin onboard flight preparation, flight operation and Cockpit and Cabin Onboard Communication. It also does the Signature of the Load Sheet by the Captain. Lastly, it manages Onboard Flight Reporting and Onboard Passenger support</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

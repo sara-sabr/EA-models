@@ -1,0 +1,455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Aviation Core Data Architecture</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Aviation Core Data Architecture</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-b6c48708-e604-4066-a053-c840d5c0b1b4.png" alt="Aviation Core Data Architecture" usemap="#id-b6c48708-e604-4066-a053-c840d5c0b1b4map"/>
+			   <map name="id-b6c48708-e604-4066-a053-c840d5c0b1b4map">
+				  		<area shape="rect" coords="547,190,619,245" href="../elements/id-76a55069-f366-483d-9e7f-97883680c96b.html"  target="element">
+				  		<area shape="rect" coords="10,348,71,399" href="../elements/id-45e841d3-b9b0-40d0-9f54-a94ce7e61b7f.html"  target="element">
+				  		<area shape="rect" coords="126,538,183,593" href="../elements/id-503bc729-f22f-4c16-8ebb-4bba897734e8.html"  target="element">
+				  		<area shape="rect" coords="122,442,183,497" href="../elements/id-699fe184-e730-41fd-87f7-878cc6b16e81.html"  target="element">
+				  		<area shape="rect" coords="122,346,184,401" href="../elements/id-24ec5009-c8f3-4357-927a-9e383b9434e4.html"  target="element">
+				  		<area shape="rect" coords="122,250,184,305" href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html"  target="element">
+				  				<area shape="rect" coords="670,130,791,165" href="../elements/id-ebbd61b5-2cc5-4799-8c1d-5d2ae70f12e4.html"  target="element">
+				  				<area shape="rect" coords="670,58,790,99" href="../elements/id-e9cca1d8-d28f-49b4-84d8-5c0cd79b02e5.html"  target="element">
+
+				  		<area shape="rect" coords="658,10,807,175" href="../elements/id-a869b38c-0e5a-48f9-b4bc-365995bbac2f.html"  target="element">
+				  				<area shape="rect" coords="466,118,586,155" href="../elements/id-289dc269-6563-4eef-a08b-699937669c12.html"  target="element">
+				  				<area shape="rect" coords="466,58,586,95" href="../elements/id-0455ee75-c7ad-46ee-8d76-4fe15b30f148.html"  target="element">
+
+				  		<area shape="rect" coords="454,10,600,175" href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html"  target="element">
+				  		<area shape="rect" coords="547,250,619,305" href="../elements/id-e00cf969-8403-4a80-8d38-0980ea07a9a7.html"  target="element">
+				  		<area shape="rect" coords="545,346,620,401" href="../elements/id-ff1086c4-1355-4c8e-82b3-55f5a8e8d776.html"  target="element">
+				  		<area shape="rect" coords="390,250,461,305" href="../elements/id-25d3e8fd-edec-4b95-900b-40b86eb1bbb3.html"  target="element">
+				  		<area shape="rect" coords="391,346,461,401" href="../elements/id-911c223e-80b6-4025-a3c6-105d94637d53.html"  target="element">
+				  		<area shape="rect" coords="262,442,329,497" href="../elements/id-7340762d-3a1f-4d7e-b5c5-855f96878ba0.html"  target="element">
+				  		<area shape="rect" coords="259,346,332,401" href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html"  target="element">
+				  		<area shape="rect" coords="259,46,329,101" href="../elements/id-4e7f8722-5752-4043-a444-cdc2c70b59bd.html"  target="element">
+				  		<area shape="rect" coords="259,250,332,305" href="../elements/id-5a1f1a70-b2f0-484a-a0f8-2e503e656a94.html"  target="element">
+				  		<area shape="rect" coords="259,142,332,197" href="../elements/id-47642e1f-1552-44c2-a024-02eadbb5498e.html"  target="element">
+				  		<area shape="rect" coords="118,142,188,197" href="../elements/id-e97fea3e-1684-4fa7-b560-2349174f7518.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">The Data Architecture is structured by means of a core model and extensions for specific business domains. The core model contains and describes the top-level business objects for the Commercial Aviation Industry. Specific extensions add information objects to the core model for the sake of clarification and more detailed considerations.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-e97fea3e-1684-4fa7-b560-2349174f7518.html" target="element"> Baggage </a> </td>
+											    <td> <a href="../elements/id-e97fea3e-1684-4fa7-b560-2349174f7518.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-47642e1f-1552-44c2-a024-02eadbb5498e.html" target="element"> Passenger </a> </td>
+											    <td> <a href="../elements/id-47642e1f-1552-44c2-a024-02eadbb5498e.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5a1f1a70-b2f0-484a-a0f8-2e503e656a94.html" target="element"> Ticket </a> </td>
+											    <td> <a href="../elements/id-5a1f1a70-b2f0-484a-a0f8-2e503e656a94.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-4e7f8722-5752-4043-a444-cdc2c70b59bd.html" target="element"> Customer </a> </td>
+											    <td> <a href="../elements/id-4e7f8722-5752-4043-a444-cdc2c70b59bd.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+											    <td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-7340762d-3a1f-4d7e-b5c5-855f96878ba0.html" target="element"> Crew Rotation </a> </td>
+											    <td> <a href="../elements/id-7340762d-3a1f-4d7e-b5c5-855f96878ba0.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-911c223e-80b6-4025-a3c6-105d94637d53.html" target="element"> Flight Leg </a> </td>
+											    <td> <a href="../elements/id-911c223e-80b6-4025-a3c6-105d94637d53.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-25d3e8fd-edec-4b95-900b-40b86eb1bbb3.html" target="element"> Network </a> </td>
+											    <td> <a href="../elements/id-25d3e8fd-edec-4b95-900b-40b86eb1bbb3.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-ff1086c4-1355-4c8e-82b3-55f5a8e8d776.html" target="element"> Airport </a> </td>
+											    <td> <a href="../elements/id-ff1086c4-1355-4c8e-82b3-55f5a8e8d776.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-e00cf969-8403-4a80-8d38-0980ea07a9a7.html" target="element"> Codeshare </a> </td>
+											    <td> <a href="../elements/id-e00cf969-8403-4a80-8d38-0980ea07a9a7.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Point of Sale </a> </td>
+											    <td> <a href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-0455ee75-c7ad-46ee-8d76-4fe15b30f148.html" target="element"> Sales Channel </a> </td>
+													    <td> <a href="../elements/id-0455ee75-c7ad-46ee-8d76-4fe15b30f148.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-289dc269-6563-4eef-a08b-699937669c12.html" target="element"> Accounts </a> </td>
+													    <td> <a href="../elements/id-289dc269-6563-4eef-a08b-699937669c12.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-a869b38c-0e5a-48f9-b4bc-365995bbac2f.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Offering </a> </td>
+											    <td> <a href="../elements/id-a869b38c-0e5a-48f9-b4bc-365995bbac2f.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-e9cca1d8-d28f-49b4-84d8-5c0cd79b02e5.html" target="element"> Service </a> </td>
+													    <td> <a href="../elements/id-e9cca1d8-d28f-49b4-84d8-5c0cd79b02e5.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+													<tr>
+													    <td> <a href="../elements/id-ebbd61b5-2cc5-4799-8c1d-5d2ae70f12e4.html" target="element"> Air/Ground Products </a> </td>
+													    <td> <a href="../elements/id-ebbd61b5-2cc5-4799-8c1d-5d2ae70f12e4.html" target="element" class="i18n-elementtype-BusinessObject">
+													    </a> </td>
+													</tr>
+
+											
+											<tr>
+											    <td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element"> Freight </a> </td>
+											    <td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-24ec5009-c8f3-4357-927a-9e383b9434e4.html" target="element"> Aircraft </a> </td>
+											    <td> <a href="../elements/id-24ec5009-c8f3-4357-927a-9e383b9434e4.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-699fe184-e730-41fd-87f7-878cc6b16e81.html" target="element"> Seat Map </a> </td>
+											    <td> <a href="../elements/id-699fe184-e730-41fd-87f7-878cc6b16e81.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-503bc729-f22f-4c16-8ebb-4bba897734e8.html" target="element"> Seat </a> </td>
+											    <td> <a href="../elements/id-503bc729-f22f-4c16-8ebb-4bba897734e8.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-45e841d3-b9b0-40d0-9f54-a94ce7e61b7f.html" target="element"> Fleet </a> </td>
+											    <td> <a href="../elements/id-45e841d3-b9b0-40d0-9f54-a94ce7e61b7f.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-76a55069-f366-483d-9e7f-97883680c96b.html" target="element"> Market </a> </td>
+											    <td> <a href="../elements/id-76a55069-f366-483d-9e7f-97883680c96b.html" target="element" class="i18n-elementtype-BusinessObject">
+											    </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-db8efc4f-716c-4afe-86c7-52bff09fcc02.html" target="element"> &lt;&lt;1To1&gt;&gt; resolves to </a> </td>
+																		<td> <a href="../elements/id-db8efc4f-716c-4afe-86c7-52bff09fcc02.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-47642e1f-1552-44c2-a024-02eadbb5498e.html" target="element"> Passenger </a> </td>
+																		<td> <a href="../elements/id-4e7f8722-5752-4043-a444-cdc2c70b59bd.html" target="element"> Customer </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-ae9021c7-d55b-4267-b841-33ef5bdeea1f.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-ae9021c7-d55b-4267-b841-33ef5bdeea1f.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-47642e1f-1552-44c2-a024-02eadbb5498e.html" target="element"> Passenger </a> </td>
+																		<td> <a href="../elements/id-e97fea3e-1684-4fa7-b560-2349174f7518.html" target="element"> Baggage </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-e06c9ec6-ef92-4880-a05d-1fe34c7a5da0.html" target="element"> &lt;&lt;1To1&gt;&gt; holds </a> </td>
+																		<td> <a href="../elements/id-e06c9ec6-ef92-4880-a05d-1fe34c7a5da0.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5a1f1a70-b2f0-484a-a0f8-2e503e656a94.html" target="element"> Ticket </a> </td>
+																		<td> <a href="../elements/id-47642e1f-1552-44c2-a024-02eadbb5498e.html" target="element"> Passenger </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-9cf24281-0270-4f2a-8bb4-918f444f0374.html" target="element"> services </a> </td>
+																		<td> <a href="../elements/id-9cf24281-0270-4f2a-8bb4-918f444f0374.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-4e7f8722-5752-4043-a444-cdc2c70b59bd.html" target="element"> Customer </a> </td>
+																		<td> <a href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Point of Sale </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-57f33207-e4b6-4267-8221-689301febf1c.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-57f33207-e4b6-4267-8221-689301febf1c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+																		<td> <a href="../elements/id-911c223e-80b6-4025-a3c6-105d94637d53.html" target="element"> Flight Leg </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-3ef3e739-8376-40fa-ad2b-494cc10544a3.html" target="element"> &lt;&lt;1To1&gt;&gt;assigned to </a> </td>
+																		<td> <a href="../elements/id-3ef3e739-8376-40fa-ad2b-494cc10544a3.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+																		<td> <a href="../elements/id-7340762d-3a1f-4d7e-b5c5-855f96878ba0.html" target="element"> Crew Rotation </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-f729962b-7980-4433-a040-4de9737f05d2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f729962b-7980-4433-a040-4de9737f05d2.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+																		<td> <a href="../elements/id-5a1f1a70-b2f0-484a-a0f8-2e503e656a94.html" target="element"> Ticket </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-c41afbae-bdfb-4351-bc50-bf2c2e8b6673.html" target="element"> services </a> </td>
+																		<td> <a href="../elements/id-c41afbae-bdfb-4351-bc50-bf2c2e8b6673.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-911c223e-80b6-4025-a3c6-105d94637d53.html" target="element"> Flight Leg </a> </td>
+																		<td> <a href="../elements/id-ff1086c4-1355-4c8e-82b3-55f5a8e8d776.html" target="element"> Airport </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-f1d64e4e-87c8-48f9-b15c-78b55e53523c.html" target="element"> extended by </a> </td>
+																		<td> <a href="../elements/id-f1d64e4e-87c8-48f9-b15c-78b55e53523c.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-25d3e8fd-edec-4b95-900b-40b86eb1bbb3.html" target="element"> Network </a> </td>
+																		<td> <a href="../elements/id-e00cf969-8403-4a80-8d38-0980ea07a9a7.html" target="element"> Codeshare </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-39721183-3307-4bb3-a81b-9835b75a459e.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-39721183-3307-4bb3-a81b-9835b75a459e.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-25d3e8fd-edec-4b95-900b-40b86eb1bbb3.html" target="element"> Network </a> </td>
+																		<td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-a2e5c9db-0df0-49d6-857e-cfe60b5b3f68.html" target="element"> sells </a> </td>
+																		<td> <a href="../elements/id-a2e5c9db-0df0-49d6-857e-cfe60b5b3f68.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Point of Sale </a> </td>
+																		<td> <a href="../elements/id-a869b38c-0e5a-48f9-b4bc-365995bbac2f.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Offering </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-51a96d15-ab40-4437-bb6e-a8e5ce480f21.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-51a96d15-ab40-4437-bb6e-a8e5ce480f21.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Point of Sale </a> </td>
+																		<td> <a href="../elements/id-0455ee75-c7ad-46ee-8d76-4fe15b30f148.html" target="element"> Sales Channel </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-0ae6480d-f125-4f6d-b342-3278feb284f0.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0ae6480d-f125-4f6d-b342-3278feb284f0.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Point of Sale </a> </td>
+																		<td> <a href="../elements/id-289dc269-6563-4eef-a08b-699937669c12.html" target="element"> Accounts </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-cf89bd14-a9d9-4316-88c6-49481fb9c7d4.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-cf89bd14-a9d9-4316-88c6-49481fb9c7d4.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-289dc269-6563-4eef-a08b-699937669c12.html" target="element"> Accounts </a> </td>
+																				<td> <a href="../elements/id-0455ee75-c7ad-46ee-8d76-4fe15b30f148.html" target="element"> Sales Channel </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-8bef725e-87e5-485d-899a-a479f50d5358.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-8bef725e-87e5-485d-899a-a479f50d5358.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a869b38c-0e5a-48f9-b4bc-365995bbac2f.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Offering </a> </td>
+																		<td> <a href="../elements/id-e9cca1d8-d28f-49b4-84d8-5c0cd79b02e5.html" target="element"> Service </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-6f05c8a4-8224-4e75-86d9-2eb1debc2236.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-6f05c8a4-8224-4e75-86d9-2eb1debc2236.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-a869b38c-0e5a-48f9-b4bc-365995bbac2f.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Offering </a> </td>
+																		<td> <a href="../elements/id-ebbd61b5-2cc5-4799-8c1d-5d2ae70f12e4.html" target="element"> Air/Ground Products </a> </td>
+																	</tr>
+
+																			<tr>
+																				<td> <a href="../elements/id-2c4e4359-a958-4fb3-8da7-f68c253f91ef.html" target="element">  </a> </td>
+																				<td> <a href="../elements/id-2c4e4359-a958-4fb3-8da7-f68c253f91ef.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
+																				<td> <a href="../elements/id-ebbd61b5-2cc5-4799-8c1d-5d2ae70f12e4.html" target="element"> Air/Ground Products </a> </td>
+																				<td> <a href="../elements/id-e9cca1d8-d28f-49b4-84d8-5c0cd79b02e5.html" target="element"> Service </a> </td>
+																			</tr>
+
+											
+																	<tr>
+																		<td> <a href="../elements/id-fd8ca33e-48ac-49a1-88af-5f7b8605cfd3.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-fd8ca33e-48ac-49a1-88af-5f7b8605cfd3.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element"> Freight </a> </td>
+																		<td> <a href="../elements/id-e97fea3e-1684-4fa7-b560-2349174f7518.html" target="element"> Baggage </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-c0605ada-8ba0-42e7-bcad-dbe9d43bb28f.html" target="element"> carries </a> </td>
+																		<td> <a href="../elements/id-c0605ada-8ba0-42e7-bcad-dbe9d43bb28f.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-24ec5009-c8f3-4357-927a-9e383b9434e4.html" target="element"> Aircraft </a> </td>
+																		<td> <a href="../elements/id-da02eacd-890a-4b61-a010-28b10ab98796.html" target="element"> Freight </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-84f6ea08-fd55-4828-a61b-fe60dbe86ff3.html" target="element"> &lt;&lt;1To1&gt;&gt; </a> </td>
+																		<td> <a href="../elements/id-84f6ea08-fd55-4828-a61b-fe60dbe86ff3.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-24ec5009-c8f3-4357-927a-9e383b9434e4.html" target="element"> Aircraft </a> </td>
+																		<td> <a href="../elements/id-cfc36ffc-1037-4124-9b51-17c896519529.html" target="element"> Flight </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-415611b1-f511-4ae9-87f5-6cfad8656e3e.html" target="element"> &lt;&lt;1To1&gt;&gt; current </a> </td>
+																		<td> <a href="../elements/id-415611b1-f511-4ae9-87f5-6cfad8656e3e.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-699fe184-e730-41fd-87f7-878cc6b16e81.html" target="element"> Seat Map </a> </td>
+																		<td> <a href="../elements/id-24ec5009-c8f3-4357-927a-9e383b9434e4.html" target="element"> Aircraft </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-7d1d0203-bb44-4249-9872-ea00e26520ce.html" target="element"> &lt;&lt;1To1&gt;&gt; </a> </td>
+																		<td> <a href="../elements/id-7d1d0203-bb44-4249-9872-ea00e26520ce.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-503bc729-f22f-4c16-8ebb-4bba897734e8.html" target="element"> Seat </a> </td>
+																		<td> <a href="../elements/id-699fe184-e730-41fd-87f7-878cc6b16e81.html" target="element"> Seat Map </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-743d0ab0-1383-463f-af9f-b85cd2bb02eb.html" target="element"> &lt;&lt;1To1&gt;&gt; </a> </td>
+																		<td> <a href="../elements/id-743d0ab0-1383-463f-af9f-b85cd2bb02eb.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-503bc729-f22f-4c16-8ebb-4bba897734e8.html" target="element"> Seat </a> </td>
+																		<td> <a href="../elements/id-5a1f1a70-b2f0-484a-a0f8-2e503e656a94.html" target="element"> Ticket </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-c6f0bb29-6b38-4217-b0b7-2956cd5b8cf8.html" target="element"> &lt;&lt;1To1&gt;&gt; </a> </td>
+																		<td> <a href="../elements/id-c6f0bb29-6b38-4217-b0b7-2956cd5b8cf8.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-45e841d3-b9b0-40d0-9f54-a94ce7e61b7f.html" target="element"> Fleet </a> </td>
+																		<td> <a href="../elements/id-24ec5009-c8f3-4357-927a-9e383b9434e4.html" target="element"> Aircraft </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-329b2601-123b-48c3-ab87-e6829253496a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-329b2601-123b-48c3-ab87-e6829253496a.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-76a55069-f366-483d-9e7f-97883680c96b.html" target="element"> Market </a> </td>
+																		<td> <a href="../elements/id-a7f8c444-205a-4b46-b168-1d5a5b934796.html" target="element"> &lt;&lt;InformationObject&gt;&gt; Point of Sale </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

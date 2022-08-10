@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Cruise</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Cruise</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessProcess"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessProcess" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">As cruise altitude is reached, the power settings/Mach target are established, and the crews will report level to ATC. The crew also performs various administrative duties, including downlinking any departure delay ACARS codes and recording the engine monitor log (if not automated).
+During cruise, the crew must maintain a time/fuel log in order to compare planned time and fuel burn performance with the actual time of arrival (ATA) and fuel on board (FOB) over each flight plan waypoint. The baseline departure time and take-off FOB is used to generate the ETA/EFOB (Estimated Time of Arrival/Estimated Fuel On Board) log which is usually very accurate. Consideration must be given by the cockpit crew to the possible causes of any deviations from the waypoint ETAs/EFOBs (including fuel imbalance) and the effect on the destination arrival time and fuel. Potential sources of time/burn variation include winds aloft greater or less than forecast, cruise speed or altitude different than planned or mechanical problems such as a fuel leak. The cockpit crew also continuously evaluates altitude options. As the aircraft weight decreases due to fuel burn, the optimum cruise altitude typically increases due to better engine efficiency at higher altitudes. Available altitude options may be limited by ATC.
+On international flights, transitioning through airspace boundaries under the jurisdiction of other national sovereignties may require supplementary procedures to address local restrictions. These FIR (Flight Information Region) boundaries normally require advance notification via the flight planning process (filed flight plan), and preliminary contact by the aircraft as the flight approaches the boundary. Generally, separate ATC clearances must be issued at each boundary crossing, including entering the oceanic airspace. Before entering such airspace, it is the responsibility of the crew to familiarize themselves with any specific procedural requirements including position reporting, use of datalink, radio communications, and any other airspeed or operational limitations (holding speeds, speed limit below a given altitude, etc.).
+The need to deviate from the desired track due to adverse weather is always a possibility. The nature of hazardous weather en-route varies with the geographical region (e.g. transcontinental, Caribbean, North Atlantic, etc.) as well as the type of aircraft and the equipment on board. The procedures and available options for coping with adverse weather is also airspace-dependent.
+As in other phases of flight, the crew must be constantly prepared for the possibility of contingencies requiring diversion of the aircraft to an en-route alternate airport. In addition to the possible closure of the destination airport (due to weather, power outages, or other field situations), reasons for diverting include medical emergencies (sick passengers/crew), aircraft equipment problems, terrorist activities inflight, unacceptable holding times, fuel diversion due to wind or traffic delays. The decision to divert usually includes input from dispatch and must include a clearance from the controller &#8211; unless the Captain declares an emergency. If the situation warrants the declaration of an emergency, the flight is given priority handling en-route, and the necessary ground and rescue services are assembled to meet the aircraft upon arrival.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
