@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Climb</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Climb</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessProcess"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessProcess" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Climb	The dynamics of the flight environment, including accommodation of ATC directives, require the crew to continuously monitor aircraft performance in order to realize the best possible flight profile. At some point during the climb, the cockpit crew checks the FMS and/or performance charts to compare the optimal and maximum cruise altitudes with the planned data and desired cruise Mach. This information is used to coordinate an optimal cruise altitude with ATC. Other factors include wind data and ride (turbulence) conditions, en-route convective weather, MEL contingencies, traffic-induced speed restrictions and fuel consumption issues. Winds aloft notwithstanding, in most cases higher altitudes provide for more efficient engine operation. If the flight is restricted to a lower altitude due to weather or traffic, the crew must consider the effects on total fuel burn and reserves. In addition, some aircraft types are more fuel sensitive to off-optimal cruise Mach than others, which may also limit the cruise altitude options.
+Passenger-related activities during the climb include beginning the meal and/or beverage service, delivering any marketing PA announcements and activating any entertainment systems. In addition, the Captain usually makes a PA describing en-route flight time and weather conditions, points of interest, arrival estimate, destination weather and, if applicable, any information concerning the presence of an augmented crew. Seat belt sign usage is at the Captain&#8217;s discretion and is typically activated in the presence of adverse ride conditions, or at the flight attendants&#8217; request such as during the meal service. The segment of the Captain&#8217;s PA which informs the passengers that &#8220;while in their seats they are to keep their seatbelts fastened&#8221; is included by many airlines as a standard procedure and a mandatory disclaimer.</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>

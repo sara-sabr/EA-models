@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Flight Crew Process</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Flight Crew Process</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-elementtype-BusinessProcess"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-BusinessProcess" target="hint"></a>
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">During this stage, the flight deck crew receives the so-called briefing package (containing the flight plan, current weather and fuel information, etc.) and cabin crew the passenger lists. This information is either printed out or, if available, electronic devices of the crew are updated with the information.
+The crew must determine the airworthiness of the aircraft and address any open issues before departure. The term &#8220;preflight&#8221; is typically used to describe the interior and exterior inspections of the aircraft, but in a general sense can be used to describe any activity involved with preparing the aircraft for departure. The aircraft inspection is usually divided among the cockpit crew and includes an exterior walkaround examination, interior cockpit set-up, and systems checks. These preflight inspections are outlined in a checklist.
+The preflight also includes verification that all required manuals and paperwork are onboard and complete. The aircraft mechanical logbook serves as a means for flight and cabin crews to convey mechanical discrepancies to station maintenance personnel and subsequent flight crews. Any discrepancy entered into the logbook must be balanced with an entry by a certified aircraft mechanic who either resolve the problem or defer it according to specified guidelines. Some items can be deferred based on time (hours of flight, or days/weeks), type of maintenance available, or whether they are listed in the Minimum Equipment List (MEL). The MEL identifies the components which may be inoperative on a given aircraft while still maintaining legality for dispatch as well as the deferral rules. Crew responses associated with MEL items range from simple awareness to complex critical procedural changes.
+The Configuration Deviation List (CDL) is similar to the MEL, but references airframe components that are more structural in nature (e.g. missing flap track fairing).
+Modern aircraft have extensive autoflight capabilities that allow many of the navigation and performance optimization tasks to be handled automatically if desired. Autoflight initialization and Flight Management System (FMS) programming are conducted during the pre-flight phase.
+Some airlines have information systems which allow information required to initialize the autoflight systems to be uploaded automatically via an ACARS (Aircraft Communication and Reporting System) datalink unit. In general, the use of ACARS by air carriers satisfies the requirement that their aircraft are continuously able to be contacted by dispatch during the entire flight. Initialization of this system is also part of the cockpit setup procedures.
+Communication between the cockpit and cabin crewmembers is critical to the safety and efficiency of the flight. At some point during or before preflight activities and passenger boarding, the Captain conducts a briefing with the Purser or senior &#8220;#1&#8221; flight attendant. This includes standard information covering en-route flight time and destination weather, as well as taxi-out time (in the case of a short taxi, the flight attendants must start the safety video/demonstration as early as practicable), security issues and alerts, ride conditions and turbulence, inoperative cabin components, requirement of overwater flight passenger life vest demonstrations, augmented crew, crew meal service and any other relevant safety or operational issues. The Captain may also discuss adherence to the sterile cockpit period in which access to the flight deck is limited to reduce distractions during critical flight phases, nominally anytime the aircraft is below 10,000 feet above Mean Sea Level (MSL).</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
