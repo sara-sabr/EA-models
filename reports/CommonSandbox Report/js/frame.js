@@ -140,10 +140,10 @@ $(document).ready(function() {
 		setRootPanelHeight();
 		e.stopPropagation();
 	});
-	
+
 	// Create links in this class
     $('.convertlinks').each(function() {
-        $(this).html(createLinks($(this).text()));
+        $(this).html(createLinks($(this).html()));
     });
 
 	// Replace Hint URL
@@ -168,7 +168,9 @@ $(document).ready(function() {
 		parent.window.postMessage('view-id=' + viewId, '*');
 
 		// *** DIAGRAM ZOOM ***
-		initZoomSlider();
+		//initZoomSlider();
+		//window.addEventListener('load', initZoomSlider);
+		setTimeout(initZoomSlider, 50);
 	}
 
 	function initZoomSlider() {
@@ -210,5 +212,14 @@ $(document).ready(function() {
 			slider.value = ((parseInt(slider.value)) + step);
 			setZoom();
 		}
+		// Register events wheel on root-panel-body
+		document.getElementsByClassName("root-panel-body")[0].addEventListener("wheel", function(e) {
+			// Zooming happens here
+			if (e.ctrlKey) {
+				e.preventDefault()
+				slider.value = ((parseInt(slider.value)) - e.deltaY/10)
+				setZoom()
+			}
+		})
 	}
 });
