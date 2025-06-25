@@ -1,5 +1,7 @@
-﻿function setRootPanelHeight() {
-	$('.root-panel-body').css('height', $('.root-panel').outerHeight() - $('.root-panel-heading').outerHeight());
+function setRootPanelHeight() {
+    rootPanelHeight = $('.root-panel').outerHeight() || 0;
+    rootPanelHeadingHeight = $('.root-panel-heading').outerHeight() || 0;
+    $('.root-panel-body').css('height', rootPanelHeight - rootPanelHeadingHeight);
 }
 
 function strcmp(a, b){
@@ -50,13 +52,13 @@ $(document).ready(function() {
       resizable: false
     },
     west: {
-			size: 350,
+			size: 400,
 			spacing_open: 8
 		},
     west__childOptions: {
       maskContents: true,
       south: {
-	      minSize: 50,
+	      minSize: 100,
 				size: 250,
 				spacing_open: 8
 			},
@@ -74,7 +76,7 @@ $(document).ready(function() {
 	$('.hide-true').remove();
 	let topTreeFolders = $('.tree > li');
 	topTreeFolders.each(function(index) {
-		if (! $(this).find(' > ul > li').size()) {
+		if (! $(this).find(' > ul > li').length) {
 			$(this).remove();
 		}
 	});
